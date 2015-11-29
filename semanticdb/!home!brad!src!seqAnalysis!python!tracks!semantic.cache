@@ -1,0 +1,155 @@
+;; Object tracks/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tracks/"
+  :tables (list 
+   (semanticdb-table "trackCorrelate.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [122 132])
+            ("os" include nil nil [133 142])
+            ("re" include nil nil [143 152])
+            ("shutil" include nil nil [153 166])
+            ("argparse" include nil nil [167 182])
+            ("tempfile" include nil nil [183 198])
+            ("pdb" include nil nil [199 209])
+            ("itertools" include nil nil [210 226])
+            ("pysam" include nil nil [227 239])
+            ("signal_utils" include nil nil [240 259])
+            ("math" include nil nil [260 271])
+            ("numpy" include nil nil [272 290])
+            ("scipy.signal" include nil nil [291 316])
+            ("scipy.stats" include nil nil [317 344])
+            ("tables" include nil nil [345 364])
+            ("multiprocessing" include nil nil [365 397])
+            ("feature_path" variable nil nil [399 448])
+            ("out_path" variable nil nil [449 495])
+            ("cross_track" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [610 630])
+                            ("self" variable nil (reparse-symbol indented_block_body) [639 659])
+                            ("self" variable nil (reparse-symbol indented_block_body) [668 690])
+                            ("self" variable nil (reparse-symbol indented_block_body) [699 721])
+                            ("self" variable nil (reparse-symbol indented_block_body) [730 758])
+                            ("self" variable nil (reparse-symbol indented_block_body) [767 793]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [538 542])
+                            ("file_a" variable nil (reparse-symbol function_parameters) [544 550])
+                            ("file_b" variable nil (reparse-symbol function_parameters) [552 558])
+                            ("track_a" variable nil (reparse-symbol function_parameters) [560 567])
+                            ("track_b" variable nil (reparse-symbol function_parameters) [569 576])
+                            ("res_reduce" variable nil (reparse-symbol function_parameters) [578 588])
+                            ("corr_type" variable nil (reparse-symbol function_parameters) [590 599]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [525 798])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [811 815]))                          )
+                        (reparse-symbol indented_block_body) [803 2785]))                  
+                :type "class")
+                nil [497 2785])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [2799 2803]))              ) nil [2790 3646])
+            ("if" code nil nil [3653 3699]))          
+    :file "trackCorrelate.py"
+    :pointmax 3699
+    :fsize 3698
+    :lastmodtime '(21345 30662 692286 884000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "signal_utils.py"
+    :file "signal_utils.py"
+    :fsize 2631
+    :lastmodtime '(21345 30662 620286 882000)
+    )
+   (semanticdb-table "corrGenome.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [25 35])
+            ("os" include nil nil [36 45])
+            ("shutil" include nil nil [46 59])
+            ("argparse" include nil nil [60 75])
+            ("tempfile" include nil nil [76 91])
+            ("pdb" include nil nil [92 102])
+            ("math" include nil nil [103 114])
+            ("numpy" include nil nil [115 133])
+            ("scipy.stats.stats" include nil nil [134 164])
+            ("tables" include nil nil [165 184])
+            ("multiprocessing" include nil nil [185 217])
+            ("feature_path" variable nil nil [219 268])
+            ("out_path" variable nil nil [269 316])
+            ("corr_genome" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [545 557])
+                            ("self" variable nil (reparse-symbol indented_block_body) [566 586])
+                            ("self" variable nil (reparse-symbol indented_block_body) [595 615])
+                            ("self" variable nil (reparse-symbol indented_block_body) [624 647])
+                            ("if" code nil (reparse-symbol indented_block_body) [656 872])
+                            ("self" variable nil (reparse-symbol indented_block_body) [880 905])
+                            ("self" variable nil (reparse-symbol indented_block_body) [914 935])
+                            ("self" variable nil (reparse-symbol indented_block_body) [944 978])
+                            ("self" variable nil (reparse-symbol indented_block_body) [987 1042])
+                            ("if" code nil (reparse-symbol indented_block_body) [1051 1116])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1124 1227])
+                            ("if" code nil (reparse-symbol indented_block_body) [1236 1368])
+                            ("h5_data" variable nil (reparse-symbol indented_block_body) [1408 1433])
+                            ("sample1" variable nil (reparse-symbol indented_block_body) [1442 1480])
+                            ("sample2" variable nil (reparse-symbol indented_block_body) [1489 1527])
+                            ("sample1_chrs" variable nil (reparse-symbol indented_block_body) [1536 1598])
+                            ("sample2_chrs" variable nil (reparse-symbol indented_block_body) [1607 1669])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1703 1762]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [477 481])
+                            ("h5" variable nil (reparse-symbol function_parameters) [483 485])
+                            ("track1" variable nil (reparse-symbol function_parameters) [487 493])
+                            ("track2" variable nil (reparse-symbol function_parameters) [495 501])
+                            ("data_type" variable nil (reparse-symbol function_parameters) [503 512])
+                            ("method" variable nil (reparse-symbol function_parameters) [514 520])
+                            ("window" variable nil (reparse-symbol function_parameters) [522 528])
+                            ("step" variable nil (reparse-symbol function_parameters) [530 534]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [464 1763])
+                    ("file_combine" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1858 1862]))                          )
+                        (reparse-symbol indented_block_body) [1841 2161]))                  
+                :type "class")
+                nil [441 2161])
+            ("compute_by_chrom" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [2183 2186]))              ) nil [2162 2501])
+            ("compute_worker" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [2521 2524])
+                ("chr_tbp" variable nil (reparse-symbol function_parameters) [2526 2533]))              ) nil [2502 3738])
+            ("corr_wrapper" function (:arguments 
+              ( ("func" variable nil (reparse-symbol function_parameters) [3756 3760])
+                ("args" variable nil (reparse-symbol function_parameters) [3762 3767]))              ) nil [3739 3794])
+            ("val_ratio" function (:arguments 
+              ( ("v1" variable nil (reparse-symbol function_parameters) [3811 3813])
+                ("v2" variable nil (reparse-symbol function_parameters) [3815 3817]))              ) nil [3797 4157])
+            ("val_diff" function (:arguments 
+              ( ("v1" variable nil (reparse-symbol function_parameters) [4175 4177])
+                ("v2" variable nil (reparse-symbol function_parameters) [4179 4181]))              ) nil [4162 4215])
+            ("val_fraction" function (:arguments 
+              ( ("v1" variable nil (reparse-symbol function_parameters) [4237 4239])
+                ("v2" variable nil (reparse-symbol function_parameters) [4241 4243]))              ) nil [4220 4423])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [4437 4441]))              ) nil [4428 5037])
+            ("if" code nil nil [5044 5090]))          
+    :file "corrGenome.py"
+    :pointmax 5090
+    :fsize 5089
+    :lastmodtime '(21345 30662 416286 879000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!seqAnalysis!python!tracks!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

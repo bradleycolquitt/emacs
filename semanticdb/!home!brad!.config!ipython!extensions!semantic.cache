@@ -1,0 +1,33 @@
+;; Object extensions/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "extensions/"
+  :tables (list 
+   (semanticdb-table "line_profiler_ext.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("line_profiler" include nil nil [1 21])
+            ("load_ipython_extension" function (:arguments 
+              ( ("ip" variable nil (reparse-symbol function_parameters) [50 52]))              ) nil [23 111]))          
+    :file "line_profiler_ext.py"
+    :pointmax 111
+    :fsize 110
+    :lastmodtime '(21585 17355 330952 81000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "memory_profiler_ext.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("memory_profiler" include nil nil [1 23])
+            ("load_ipython_extension" function (:arguments 
+              ( ("ip" variable nil (reparse-symbol function_parameters) [52 54]))              ) nil [25 173]))          
+    :file "memory_profiler_ext.py"
+    :pointmax 173
+    :fsize 172
+    :lastmodtime '(21585 17375 566951 787000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!.config!ipython!extensions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

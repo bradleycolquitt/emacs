@@ -1,0 +1,21 @@
+;; Object hgsql/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hgsql/"
+  :tables (list 
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("kentSrc" variable (:default-value ("../..")) nil [1 17])
+            ("A" variable (:default-value ("hgsql")) nil [17 27])
+            ("$(kentSrc)/inc/userApp.mk" include nil nil [27 61]))          
+    :file "makefile"
+    :pointmax 61
+    :fsize 60
+    :lastmodtime '(21689 48066 557006 915000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!kent!src!hg!hgsql!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

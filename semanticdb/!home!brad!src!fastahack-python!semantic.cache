@@ -1,0 +1,22 @@
+;; Object fastahack-python/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fastahack-python/"
+  :tables (list 
+   (semanticdb-table "setup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("distutils.core" include nil nil [1 33])
+            ("distutils.extension" include nil nil [34 75])
+            ("Cython.Distutils" include nil nil [76 114])
+            ("setup" code nil nil [116 722]))          
+    :file "setup.py"
+    :pointmax 723
+    :fsize 722
+    :lastmodtime '(21717 30180 852682 945000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!fastahack-python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

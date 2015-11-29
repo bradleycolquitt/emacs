@@ -1,0 +1,26 @@
+;; Object trans_hiseq/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "trans_hiseq/"
+  :tables (list 
+   (semanticdb-table "find_by_accession.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [25 35])
+            ("re" include nil nil [36 45])
+            ("pdb" include nil nil [46 56])
+            ("collections" include nil nil [57 92])
+            ("Bio.Blast" include nil nil [93 122])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [133 137]))              ) nil [124 1508])
+            ("if" code nil nil [1510 1556]))          
+    :file "find_by_accession.py"
+    :pointmax 586
+    :fsize 1555
+    :lastmodtime '(21640 41995 62798 665000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!media!data!soapdenovo-trans!trans_hiseq!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,34 @@
+;; Object seq_utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "seq_utils/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CXX" variable (:default-value ("g++")) nil [1 9])
+            ("SRC" variable (:default-value ("src")) nil [9 17])
+            ("BIN" variable (:default-value ("bin")) nil [17 25])
+            ("DEBUG" variable (:default-value ("-g")) nil [25 34])
+            ("CXXFLAGS" variable (:default-value ("-W" "-Wall" "-Wno-long-long" "-pedantic" "-Wno-variadic-macros")) nil [34 99])
+            ("CXXFLAGS" variable (:default-value ("-I.")) nil [99 113])
+            ("LDFLAGS" variable (:default-value ("-lz")) nil [113 126])
+            ("LDFLAGS" variable (:default-value ("-lboost_iostreams")) nil [126 153])
+            ("all" function (:arguments ("seq_lengths" "seq_lengths2")) nil [153 183])
+            ("debug" function (:arguments ("CXXFLAGS+=" "-DDEBUG")) nil [184 210])
+            ("debug" function (:arguments ("all")) nil [210 221])
+            ("clock" function (:arguments ("CXXFLAGS+=" "-DCLOCK")) nil [222 248])
+            ("clock" function (:arguments ("all")) nil [248 259])
+            ("seq_lengths" function (:arguments ("$(SRC)/seq_lengths.cpp" ";" "$(CXX)" "$(CXXFLAGS)" "$(SRC)/seq_lengths.cpp" "-o" "$(BIN)/seq_lengths" "$(LDFLAGS)")) nil [260 373])
+            ("seq_lengths2" function (:arguments ("$(SRC)/seq_lengths.cpp" ";" "$(CXX)" "$(CXXFLAGS)" "$(SRC)/seq_lengths2.cpp" "-o" "$(BIN)/seq_lengths2" "$(LDFLAGS)")) nil [374 490])
+            ("clean" function (:arguments (";" "rm" "-f" "$(BIN)/seq_lengths.o" "$(BIN)/seq_lengths")) nil [491 546]))          
+    :file "Makefile"
+    :pointmax 573
+    :fsize 572
+    :lastmodtime '(21581 7447 30906 834000)
+    :unmatched-syntax '((symbol 567 . 572) (symbol 563 . 566) (symbol 555 . 562) (punctuation 553 . 554) (symbol 547 . 553) (bol 547 . 547))
+    )
+    )
+  :file "!home!brad!src!seq_utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

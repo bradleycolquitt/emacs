@@ -1,0 +1,72 @@
+;; Object seqan/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "seqan/"
+  :tables (list 
+   (semanticdb-table "seq_io.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CORE_INCLUDE_SEQAN_SEQ_IO_H_" variable (:constant-flag t) nil [2210 2238])
+            ("seqan/basic.h" include (:system-flag t) nil [2417 2441])
+            ("seqan/stream.h" include (:system-flag t) nil [2442 2467])
+            ("seqan/seq_io/guess_stream_format.h" include (:system-flag t) nil [2695 2740])
+            ("seqan/seq_io/read_fasta_fastq.h" include (:system-flag t) nil [2742 2784])
+            ("seqan/seq_io/read_embl.h" include (:system-flag t) nil [2785 2820])
+            ("seqan/seq_io/read_genbank.h" include (:system-flag t) nil [2821 2859])
+            ("seqan/seq_io/write_fasta_fastq.h" include (:system-flag t) nil [2861 2904])
+            ("seqan/seq_io/sequence_stream_impl.h" include (:system-flag t) nil [3083 3129])
+            ("seqan/seq_io/sequence_stream.h" include (:system-flag t) nil [3130 3171])
+            ("seqan/seq_io/simple_read_fasta.h" include (:system-flag t) nil [3359 3402])
+            ("seqan/seq_io/genomic_region.h" include (:system-flag t) nil [3581 3621])
+            ("seqan/seq_io/fai_index.h" include (:system-flag t) nil [3795 3830]))          
+    :file "seq_io.h"
+    :pointmax 3872
+    :fsize 3871
+    :lastmodtime '(21577 15160 894605 419000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CORE_INCLUDE_SEQAN_SEQ_IO_H_")
+          )
+
+    )
+   (semanticdb-table "stream.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_STREAM_H_" variable (:constant-flag t) nil [2648 2663])
+            ("SEQAN_STREAM_H_" variable (:constant-flag t) nil [2648 2663])
+            ("seqan/basic.h" include (:system-flag t) nil [3799 3823])
+            ("seqan/file.h" include (:system-flag t) nil [3824 3847])
+            ("seqan/sequence.h" include (:system-flag t) nil [3848 3875])
+            ("seqan/stream/concept_stream.h" include (:system-flag t) nil [4100 4140])
+            ("seqan/stream/adapt_cstdio.h" include (:system-flag t) nil [4142 4180])
+            ("seqan/stream/adapt_fstream.h" include (:system-flag t) nil [4181 4220])
+            ("seqan/stream/adapt_iostream.h" include (:system-flag t) nil [4221 4261])
+            ("seqan/stream/adapt_sstream.h" include (:system-flag t) nil [4262 4301])
+            ("seqan/stream/stream_base.h" include (:system-flag t) nil [4303 4340])
+            ("seqan/stream/stream_put.h" include (:system-flag t) nil [4341 4377])
+            ("seqan/stream/stream_char_array.h" include (:system-flag t) nil [4378 4421])
+            ("seqan/stream/adapt_mmap.h" include (:system-flag t) nil [4423 4459])
+            ("seqan/stream/file_stream.h" include (:system-flag t) nil [4824 4861])
+            ("seqan/stream/record_reader_base.h" include (:system-flag t) nil [5066 5110])
+            ("seqan/stream/record_reader_single.h" include (:system-flag t) nil [5111 5157])
+            ("seqan/stream/record_reader_single_mmap.h" include (:system-flag t) nil [5158 5209])
+            ("seqan/stream/record_reader_double.h" include (:system-flag t) nil [5210 5256])
+            ("seqan/stream/record_reader_double_mmap.h" include (:system-flag t) nil [5257 5308])
+            ("seqan/stream/read_auto_format.h" include (:system-flag t) nil [5310 5352])
+            ("seqan/stream/is.h" include (:system-flag t) nil [5535 5563])
+            ("seqan/stream/tokenize.h" include (:system-flag t) nil [5583 5617])
+            ("seqan/stream/lexical_cast.h" include (:system-flag t) nil [5618 5656]))          
+    :file "stream.h"
+    :pointmax 5685
+    :fsize 5684
+    :lastmodtime '(21577 15160 898605 419000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEQAN_STREAM_H_")
+          )
+
+    )
+   )
+  :file "!usr!local!seqan!core!include!seqan!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

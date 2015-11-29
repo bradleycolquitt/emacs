@@ -1,0 +1,24 @@
+;; Object jvmti/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "jvmti/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CFLAGS" variable (:default-value ("@OP_CFLAGS@")) nil [1 25])
+            ("pkglib_LTLIBRARIES" variable (:default-value ("libjvmti_oprofile.la")) nil [26 68])
+            ("libjvmti_oprofile_la_CFLAGS" variable (:default-value ("$(AM_CFLAGS)" "-fPIC")) nil [69 118])
+            ("libjvmti_oprofile_la_LIBADD" variable (:default-value ("../../libopagent/libopagent.la")) nil [119 180])
+            ("libjvmti_oprofile_la_SOURCES" variable (:default-value ("libjvmti_oprofile.c")) nil [181 232])
+            ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libopagent" "-I" "@JAVA_HOMEDIR@/include" "-I" "@JAVA_HOMEDIR@/include/linux")) nil [233 360]))          
+    :file "Makefile.am"
+    :pointmax 360
+    :fsize 359
+    :lastmodtime '(21523 1471 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!agents!jvmti!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,129 @@
+;; Object predef/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "predef/"
+  :tables (list 
+   (semanticdb-table "version_number.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_VERSION_NUMBER_H" variable (:constant-flag t) nil [272 301])
+            ("BOOST_VERSION_NUMBER" variable (:constant-flag t) nil [1136 1156])
+            ("BOOST_VERSION_NUMBER_MAX" variable (:constant-flag t) nil [1264 1288])
+            ("BOOST_VERSION_NUMBER_ZERO" variable (:constant-flag t) nil [1338 1363])
+            ("BOOST_VERSION_NUMBER_MIN" variable (:constant-flag t) nil [1407 1431])
+            ("BOOST_VERSION_NUMBER_AVAILABLE" variable (:constant-flag t) nil [1475 1505])
+            ("BOOST_VERSION_NUMBER_NOT_AVAILABLE" variable (:constant-flag t) nil [1546 1580]))          
+    :file "version_number.h"
+    :pointmax 1621
+    :fsize 1620
+    :lastmodtime '(21208 1650 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_VERSION_NUMBER" (spp-arg-list ("major" "minor" "patch") 1156 . 1175) . ((semantic-list "( (((major)%100)*10000000) + (((minor)%100)*100000) + ((patch)%100000) )" 1182 . 1254)))
+          ("BOOST_VERSION_NUMBER_MAX" . ((symbol "BOOST_VERSION_NUMBER" 1295 . 1315) (semantic-list "(99,99,99999)" 1315 . 1328)))
+          ("BOOST_VERSION_NUMBER_MIN" . ((symbol "BOOST_VERSION_NUMBER" 1438 . 1458) (semantic-list "(0,0,1)" 1458 . 1465)))
+          ("BOOST_VERSION_NUMBER_AVAILABLE" . ((symbol "BOOST_VERSION_NUMBER_MIN" 1512 . 1536)))
+          ("BOOST_VERSION_NUMBER_NOT_AVAILABLE" . ((symbol "BOOST_VERSION_NUMBER_ZERO" 1587 . 1612)))
+          ("BOOST_PREDEF_VERSION_NUMBER_H")
+          ("BOOST_VERSION_NUMBER_ZERO" . ((symbol "BOOST_VERSION_NUMBER" 1370 . 1390) (semantic-list "(0,0,0)" 1390 . 1397)))
+          )
+
+    )
+   (semanticdb-table "make.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("boost/predef/detail/test.h" include (:system-flag t) nil [198 235])
+            ("BOOST_PREDEF_MAKE_H" variable (:constant-flag t) nil [273 292])
+            ("BOOST_PREDEF_MAKE_0X_VRP" variable (:constant-flag t) nil [973 997])
+            ("BOOST_PREDEF_MAKE_0X_VVRP" variable (:constant-flag t) nil [1102 1127])
+            ("BOOST_PREDEF_MAKE_0X_VRPP" variable (:constant-flag t) nil [1233 1258])
+            ("BOOST_PREDEF_MAKE_0X_VVRR" variable (:constant-flag t) nil [1367 1392])
+            ("BOOST_PREDEF_MAKE_0X_VRRPPPP" variable (:constant-flag t) nil [1492 1520])
+            ("BOOST_PREDEF_MAKE_0X_VVRRP" variable (:constant-flag t) nil [1639 1665])
+            ("BOOST_PREDEF_MAKE_0X_VRRPP000" variable (:constant-flag t) nil [1778 1807])
+            ("BOOST_PREDEF_MAKE_10_VPPP" variable (:constant-flag t) nil [1932 1957])
+            ("BOOST_PREDEF_MAKE_10_VRP" variable (:constant-flag t) nil [2053 2077])
+            ("BOOST_PREDEF_MAKE_10_VRP000" variable (:constant-flag t) nil [2183 2210])
+            ("BOOST_PREDEF_MAKE_10_VRPP" variable (:constant-flag t) nil [2327 2352])
+            ("BOOST_PREDEF_MAKE_10_VRR" variable (:constant-flag t) nil [2458 2482])
+            ("BOOST_PREDEF_MAKE_10_VRRPP" variable (:constant-flag t) nil [2578 2604])
+            ("BOOST_PREDEF_MAKE_10_VRR000" variable (:constant-flag t) nil [2715 2742])
+            ("BOOST_PREDEF_MAKE_10_VV00" variable (:constant-flag t) nil [2847 2872])
+            ("BOOST_PREDEF_MAKE_10_VVRR" variable (:constant-flag t) nil [2962 2987])
+            ("BOOST_PREDEF_MAKE_10_VVRRPP" variable (:constant-flag t) nil [3085 3112])
+            ("BOOST_PREDEF_MAKE_10_VVRR0PP00" variable (:constant-flag t) nil [3227 3257])
+            ("BOOST_PREDEF_MAKE_10_VVRR0PPPP" variable (:constant-flag t) nil [3384 3414])
+            ("BOOST_PREDEF_MAKE_10_VVRR00PP00" variable (:constant-flag t) nil [3538 3569])
+            ("BOOST_PREDEF_MAKE_DATE" variable (:constant-flag t) nil [3989 4011])
+            ("BOOST_PREDEF_MAKE_YYYYMMDD" variable (:constant-flag t) nil [4119 4145])
+            ("BOOST_PREDEF_MAKE_YYYY" variable (:constant-flag t) nil [4256 4278])
+            ("BOOST_PREDEF_MAKE_YYYYMM" variable (:constant-flag t) nil [4357 4381]))          
+    :file "make.h"
+    :pointmax 4431
+    :fsize 4430
+    :lastmodtime '(21208 1650 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_PREDEF_MAKE_10_VRR" (spp-arg-list ("V") 2482 . 2485) . ((symbol "BOOST_VERSION_NUMBER" 2486 . 2506) (semantic-list "(((V)/100)%10,(V)%100,0)" 2506 . 2530)))
+          ("BOOST_PREDEF_MAKE_0X_VVRP" (spp-arg-list ("V") 1127 . 1130) . ((symbol "BOOST_VERSION_NUMBER" 1131 . 1151) (semantic-list "((V&0xFF00)>>8,(V&0xF0)>>4,(V&0xF))" 1151 . 1186)))
+          ("BOOST_PREDEF_MAKE_10_VRRPP" (spp-arg-list ("V") 2604 . 2607) . ((symbol "BOOST_VERSION_NUMBER" 2608 . 2628) (semantic-list "(((V)/10000)%10,((V)/100)%100,(V)%100)" 2628 . 2666)))
+          ("BOOST_PREDEF_MAKE_10_VV00" (spp-arg-list ("V") 2872 . 2875) . ((symbol "BOOST_VERSION_NUMBER" 2876 . 2896) (semantic-list "(((V)/100)%100,0,0)" 2896 . 2915)))
+          ("BOOST_PREDEF_MAKE_YYYYMM" (spp-arg-list ("V") 4381 . 4384) . ((symbol "BOOST_PREDEF_MAKE_DATE" 4385 . 4407) (semantic-list "((V)/100,(V),1)" 4407 . 4422)))
+          ("BOOST_PREDEF_MAKE_H")
+          ("BOOST_PREDEF_MAKE_0X_VVRR" (spp-arg-list ("V") 1392 . 1395) . ((symbol "BOOST_VERSION_NUMBER" 1396 . 1416) (semantic-list "((V&0xFF00)>>8,(V&0xFF),0)" 1416 . 1442)))
+          ("BOOST_PREDEF_MAKE_0X_VRRPPPP" (spp-arg-list ("V") 1520 . 1523) . ((symbol "BOOST_VERSION_NUMBER" 1524 . 1544) (semantic-list "((V&0xF000000)>>24,(V&0xFF0000)>>16,(V&0xFFFF))" 1544 . 1591)))
+          ("BOOST_PREDEF_MAKE_10_VRP000" (spp-arg-list ("V") 2210 . 2213) . ((symbol "BOOST_VERSION_NUMBER" 2214 . 2234) (semantic-list "(((V)/100000)%10,((V)/10000)%10,((V)/1000)%10)" 2234 . 2280)))
+          ("BOOST_PREDEF_MAKE_10_VRPP" (spp-arg-list ("V") 2352 . 2355) . ((symbol "BOOST_VERSION_NUMBER" 2356 . 2376) (semantic-list "(((V)/1000)%10,((V)/100)%10,(V)%100)" 2376 . 2412)))
+          ("BOOST_PREDEF_MAKE_10_VVRR00PP00" (spp-arg-list ("V") 3569 . 3572) . ((symbol "BOOST_VERSION_NUMBER" 3573 . 3593) (semantic-list "(((V)/100000000)%100,((V)/1000000)%100,((V)/100)%100)" 3593 . 3646)))
+          ("BOOST_PREDEF_MAKE_YYYY" (spp-arg-list ("V") 4278 . 4281) . ((symbol "BOOST_PREDEF_MAKE_DATE" 4282 . 4304) (semantic-list "(V,1,1)" 4304 . 4311)))
+          ("BOOST_PREDEF_MAKE_0X_VRP" (spp-arg-list ("V") 997 . 1000) . ((symbol "BOOST_VERSION_NUMBER" 1001 . 1021) (semantic-list "((V&0xF00)>>8,(V&0xF0)>>4,(V&0xF))" 1021 . 1055)))
+          ("BOOST_PREDEF_MAKE_DATE" (spp-arg-list ("Y" "M" "D") 4011 . 4018) . ((symbol "BOOST_VERSION_NUMBER" 4019 . 4039) (semantic-list "((Y)%10000-1970,(M)%100,(D)%100)" 4039 . 4071)))
+          ("BOOST_PREDEF_MAKE_0X_VRRPP000" (spp-arg-list ("V") 1807 . 1810) . ((symbol "BOOST_VERSION_NUMBER" 1811 . 1831) (semantic-list "((V&0xF0000000)>>28,(V&0xFF00000)>>20,(V&0xFF000)>>12)" 1831 . 1885)))
+          ("BOOST_PREDEF_MAKE_10_VRR000" (spp-arg-list ("V") 2742 . 2745) . ((symbol "BOOST_VERSION_NUMBER" 2746 . 2766) (semantic-list "(((V)/100000)%10,((V)/1000)%100,0)" 2766 . 2800)))
+          ("BOOST_PREDEF_MAKE_YYYYMMDD" (spp-arg-list ("V") 4145 . 4148) . ((symbol "BOOST_PREDEF_MAKE_DATE" 4149 . 4171) (semantic-list "(((V)/10000)%10000,((V)/100)%100,(V)%100)" 4171 . 4212)))
+          ("BOOST_PREDEF_MAKE_10_VVRR" (spp-arg-list ("V") 2987 . 2990) . ((symbol "BOOST_VERSION_NUMBER" 2991 . 3011) (semantic-list "(((V)/100)%100,(V)%100,0)" 3011 . 3036)))
+          ("BOOST_PREDEF_MAKE_10_VVRRPP" (spp-arg-list ("V") 3112 . 3115) . ((symbol "BOOST_VERSION_NUMBER" 3116 . 3136) (semantic-list "(((V)/10000)%100,((V)/100)%100,(V)%100)" 3136 . 3175)))
+          ("BOOST_PREDEF_MAKE_10_VVRR0PPPP" (spp-arg-list ("V") 3414 . 3417) . ((symbol "BOOST_VERSION_NUMBER" 3418 . 3438) (semantic-list "(((V)/10000000)%100,((V)/100000)%100,(V)%10000)" 3438 . 3485)))
+          ("BOOST_PREDEF_MAKE_0X_VVRRP" (spp-arg-list ("V") 1665 . 1668) . ((symbol "BOOST_VERSION_NUMBER" 1669 . 1689) (semantic-list "((V&0xFF000)>>12,(V&0xFF0)>>4,(V&0xF))" 1689 . 1727)))
+          ("BOOST_PREDEF_MAKE_10_VRP" (spp-arg-list ("V") 2077 . 2080) . ((symbol "BOOST_VERSION_NUMBER" 2081 . 2101) (semantic-list "(((V)/100)%10,((V)/10)%10,(V)%10)" 2101 . 2134)))
+          ("BOOST_PREDEF_MAKE_0X_VRPP" (spp-arg-list ("V") 1258 . 1261) . ((symbol "BOOST_VERSION_NUMBER" 1262 . 1282) (semantic-list "((V&0xF000)>>12,(V&0xF00)>>8,(V&0xFF))" 1282 . 1320)))
+          ("BOOST_PREDEF_MAKE_10_VPPP" (spp-arg-list ("V") 1957 . 1960) . ((symbol "BOOST_VERSION_NUMBER" 1961 . 1981) (semantic-list "(((V)/1000)%10,0,(V)%1000)" 1981 . 2007)))
+          ("BOOST_PREDEF_MAKE_10_VVRR0PP00" (spp-arg-list ("V") 3257 . 3260) . ((symbol "BOOST_VERSION_NUMBER" 3261 . 3281) (semantic-list "(((V)/10000000)%100,((V)/100000)%100,((V)/100)%100)" 3281 . 3332)))
+          )
+
+    )
+   (semanticdb-table "architecture.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_H" variable (:constant-flag t) nil [243 270])
+            ("boost/predef/architecture/alpha.h" include (:system-flag t) nil [272 316])
+            ("boost/predef/architecture/arm.h" include (:system-flag t) nil [317 359])
+            ("boost/predef/architecture/blackfin.h" include (:system-flag t) nil [360 407])
+            ("boost/predef/architecture/convex.h" include (:system-flag t) nil [408 453])
+            ("boost/predef/architecture/ia64.h" include (:system-flag t) nil [454 497])
+            ("boost/predef/architecture/m68k.h" include (:system-flag t) nil [498 541])
+            ("boost/predef/architecture/mips.h" include (:system-flag t) nil [542 585])
+            ("boost/predef/architecture/parisc.h" include (:system-flag t) nil [586 631])
+            ("boost/predef/architecture/ppc.h" include (:system-flag t) nil [632 674])
+            ("boost/predef/architecture/pyramid.h" include (:system-flag t) nil [675 721])
+            ("boost/predef/architecture/rs6k.h" include (:system-flag t) nil [722 765])
+            ("boost/predef/architecture/sparc.h" include (:system-flag t) nil [766 810])
+            ("boost/predef/architecture/superh.h" include (:system-flag t) nil [811 856])
+            ("boost/predef/architecture/sys370.h" include (:system-flag t) nil [857 902])
+            ("boost/predef/architecture/sys390.h" include (:system-flag t) nil [903 948])
+            ("boost/predef/architecture/x86.h" include (:system-flag t) nil [949 991])
+            ("boost/predef/architecture/z.h" include (:system-flag t) nil [992 1032]))          
+    :file "architecture.h"
+    :pointmax 1085
+    :fsize 1084
+    :lastmodtime '(21208 1650 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_PREDEF_ARCHITECTURE_H")
+          )
+
+    )
+   )
+  :file "!usr!include!boost!predef!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

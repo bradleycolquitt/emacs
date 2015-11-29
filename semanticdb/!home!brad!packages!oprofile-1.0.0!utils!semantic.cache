@@ -1,0 +1,27 @@
+;; Object utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utils/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libop" "-I" "${top_srcdir}/libutil" "@OP_CPPFLAGS@")) nil [1 81])
+            ("AM_CFLAGS" variable (:default-value ("@OP_CFLAGS@")) nil [82 106])
+            ("AM_LDFLAGS" variable (:default-value ("@OP_LDFLAGS@")) nil [106 132])
+            ("LIBS" variable (:default-value ("@POPT_LIBS@" "@LIBERTY_LIBS@")) nil [133 165])
+            ("bin_PROGRAMS" variable (:default-value ("ophelp")) nil [166 208])
+            ("op_check_perfevents_SOURCES" variable (:default-value ("op_perf_events_checker.c")) nil [209 264])
+            ("op_check_perfevents_CPPFLAGS" variable (:default-value ("${AM_CFLAGS}" "@PERF_EVENT_FLAGS@")) nil [264 327])
+            ("ophelp_SOURCES" variable (:default-value ("ophelp.c")) nil [328 354])
+            ("ophelp_LDADD" variable (:default-value ("../libop/libop.a" "../libutil/libutil.a")) nil [354 407]))          
+    :file "Makefile.am"
+    :pointmax 407
+    :fsize 406
+    :lastmodtime '(21523 1471 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

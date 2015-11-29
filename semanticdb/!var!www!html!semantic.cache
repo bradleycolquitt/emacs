@@ -1,0 +1,20 @@
+;; Object html/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "html/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("UCSC Genome Browser Home_www" section nil nil [635 826])
+            ("#include virtual=\"inc/home.topbar.html\"-->" section nil nil [826 5307]))          
+    :file "index.html"
+    :pointmax 5307
+    :fsize 5306
+    :lastmodtime '(21697 25361 440146 546000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!var!www!html!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

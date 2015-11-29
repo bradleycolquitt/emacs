@@ -1,0 +1,22 @@
+;; Object libpe_utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libpe_utils/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libutil" "-I" "${top_srcdir}/libutil++" "-I" "${top_srcdir}/libop" "-I" "${top_srcdir}/libpe_utils" "-I" "${top_srcdir}/libperf_events" "@PERF_EVENT_FLAGS@" "@OP_CPPFLAGS@")) nil [26 230])
+            ("AM_CXXFLAGS" variable (:default-value ("@OP_CXXFLAGS@")) nil [231 259])
+            ("noinst_LIBRARIES" variable (:default-value ("libpe_utils.a")) nil [260 293])
+            ("libpe_utils_a_SOURCES" variable (:default-value ("op_pe_utils.h" "op_pe_utils.cpp")) nil [293 354]))          
+    :file "Makefile.am"
+    :pointmax 362
+    :fsize 361
+    :lastmodtime '(21523 1457 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!libpe_utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

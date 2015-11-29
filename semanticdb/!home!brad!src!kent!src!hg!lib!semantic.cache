@@ -1,0 +1,4139 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "hdb.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("common.h" include nil nil [184 203])
+            ("obscure.h" include nil nil [204 224])
+            ("hash.h" include nil nil [225 242])
+            ("portable.h" include nil nil [243 264])
+            ("linefile.h" include nil nil [265 286])
+            ("binRange.h" include nil nil [287 308])
+            ("jksql.h" include nil nil [309 327])
+            ("dnautil.h" include nil nil [328 348])
+            ("dnaseq.h" include nil nil [349 368])
+            ("nib.h" include nil nil [369 385])
+            ("hdb.h" include nil nil [386 402])
+            ("hgRelate.h" include nil nil [403 424])
+            ("fa.h" include nil nil [425 440])
+            ("hgConfig.h" include nil nil [441 462])
+            ("trackDb.h" include nil nil [463 483])
+            ("hCommon.h" include nil nil [484 504])
+            ("dbDb.h" include nil nil [505 522])
+            ("blatServers.h" include nil nil [523 547])
+            ("bed.h" include nil nil [548 564])
+            ("defaultDb.h" include nil nil [565 587])
+            ("scoredRef.h" include nil nil [588 610])
+            ("maf.h" include nil nil [611 627])
+            ("ra.h" include nil nil [628 643])
+            ("liftOver.h" include nil nil [644 665])
+            ("liftOverChain.h" include nil nil [666 692])
+            ("grp.h" include nil nil [693 709])
+            ("twoBit.h" include nil nil [710 729])
+            ("ra.h" include nil nil [730 745])
+            ("genbank.h" include nil nil [746 766])
+            ("chromInfo.h" include nil nil [767 789])
+            ("axtInfo.h" include nil nil [806 826])
+            ("ctgPos.h" include nil nil [827 846])
+            ("hubConnect.h" include nil nil [847 870])
+            ("customTrack.h" include nil nil [871 895])
+            ("hgFind.h" include nil nil [896 915])
+            ("hui.h" include nil nil [937 953])
+            ("trackHub.h" include nil nil [954 975])
+            ("udc.h" include nil nil [976 992])
+            ("paraFetch.h" include nil nil [993 1015])
+            ("filePath.h" include nil nil [1016 1037])
+            ("DEFAULT_PROTEINS" variable (:constant-flag t) nil [1159 1175])
+            ("DEFAULT_GENOME" variable (:constant-flag t) nil [1195 1209])
+            ("hdbCc" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("sqlConnCache" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1227 1268])
+            ("centralCc" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("sqlConnCache" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1314 1359])
+            ("centralDb" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [1360 1390])
+            ("centralArchiveCc" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("sqlConnCache" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1391 1443])
+            ("centralArchiveDb" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [1444 1481])
+            ("cartCc" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("sqlConnCache" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1482 1524])
+            ("cartDb" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [1575 1602])
+            ("hdbTrackDb" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [1603 1634])
+            ("tableList" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("hash" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2003 2040])
+            ("tableListProfChecked" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("hash" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2066 2114])
+            ("lookupChromInfo" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2193 2202])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2203 2215]))                  
+                :type ("chromInfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2152 2767])
+            ("hGetChromInfo" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2801 2810])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2811 2823]))                  
+                :type ("chromInfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2769 3792])
+            ("mustGetChromInfo" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3836 3845])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3846 3858]))                  
+                :type ("chromInfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3794 4087])
+            ("hgOfficialChromName" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4115 4124])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4125 4136]))                  
+                :type "char")
+                nil [4089 4494])
+            ("hgIsOfficialChromName" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4526 4535])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4536 4547]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [4496 4749])
+            ("hGetMinIndexLength" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4775 4784]))                  
+                :type "int")
+                nil [4752 5356])
+            ("hTrackDbPath" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5358 5706])
+            ("hTrackDbList" function
+               (:pointer 1
+                :type ("slName" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5708 5926])
+            ("hSetTrackDbName" function
+               (:arguments 
+                  ( ("trackDbName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5949 5967]))                  
+                :type "void")
+                nil [5928 6057])
+            ("hTrackTablesOfType" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6093 6120])
+                    ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6121 6132]))                  
+                :type ("slName" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6059 7038])
+            ("hArchiveDbExists" function
+               (:arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7065 7080]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [7040 7481])
+            ("hDbExists" function
+               (:arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7501 7516]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [7483 8471])
+            ("hDbIsActive" function
+               (:arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8493 8508]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [8473 9243])
+            ("hDefaultDbForGenome" function
+               (:pointer 1
+                :arguments 
+                  ( ("genome" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9271 9284]))                  
+                :type "char")
+                nil [9245 10779])
+            ("hDefaultGenomeForClade" function
+               (:pointer 1
+                :arguments 
+                  ( ("clade" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10810 10822]))                  
+                :type "char")
+                nil [10781 11568])
+            ("hDbForSciName" function
+               (:pointer 1
+                :arguments 
+                  ( ("sciName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11590 11604]))                  
+                :type "char")
+                nil [11570 11993])
+            ("hDbForTaxon" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12013 12040])
+                    ("taxon" variable (:type "int") (reparse-symbol arg-sub-list) [12041 12051]))                  
+                :type "char")
+                nil [11995 12831])
+            ("hDefaultDb" function
+               (:pointer 1
+                :type "char")
+                nil [12833 13003])
+            ("hDefaultChrom" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13025 13034]))                  
+                :type "char")
+                nil [13005 13578])
+            ("hChromCount" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13596 13605]))                  
+                :type "int")
+                nil [13580 13894])
+            ("hAllocConn" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13929 13938]))                  
+                :type ("sqlConnection" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13896 14095])
+            ("hAllocConnMaybe" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14135 14144]))                  
+                :type ("sqlConnection" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [14097 14365])
+            ("hAllocConnProfile" function
+               (:pointer 1
+                :arguments 
+                  ( ("profileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14407 14425])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14426 14435]))                  
+                :type ("sqlConnection" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [14367 14658])
+            ("hAllocConnProfileMaybe" function
+               (:pointer 1
+                :arguments 
+                  ( ("profileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14705 14723])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14724 14733]))                  
+                :type ("sqlConnection" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [14660 15001])
+            ("getTrackProfileName" function
+               (:pointer 1
+                :arguments 
+                  ( ("tdb" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15029 15049]))                  
+                :type "char")
+                nil [15003 15299])
+            ("hAllocConnTrack" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15339 15348])
+                    ("tdb" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15349 15369]))                  
+                :type ("sqlConnection" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [15301 15571])
+            ("hAllocConnProfileTblInternal" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15631 15640])
+                    ("spec" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15641 15652])
+                    ("tableRet" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15653 15669])
+                    ("abortOnError" variable (:type "bool") (reparse-symbol arg-sub-list) [15670 15688]))                  
+                :type ("sqlConnection" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [15573 16230])
+            ("hAllocConnProfileTbl" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16275 16284])
+                    ("spec" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16285 16296])
+                    ("tableRet" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16297 16313]))                  
+                :type ("sqlConnection" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [16232 16578])
+            ("hAllocConnProfileTblMaybe" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16628 16637])
+                    ("spec" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16638 16649])
+                    ("tableRet" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16650 16666]))                  
+                :type ("sqlConnection" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [16580 16970])
+            ("hAllocConnDbTbl" function
+               (:pointer 1
+                :arguments 
+                  ( ("spec" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17010 17021])
+                    ("tableRet" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17022 17038])
+                    ("defaultDb" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17039 17055]))                  
+                :type ("sqlConnection" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [16972 17603])
+            ("hFreeConn" function
+               (:arguments 
+                  ( ("pConn" variable
+                       (:pointer 2
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17620 17649]))                  
+                :type "void")
+                nil [17605 17788])
+            ("hCentralMkCache" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [17790 19083])
+            ("hConnectCentral" function
+               (:pointer 1
+                :type ("sqlConnection" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [19085 19377])
+            ("hDisconnectCentral" function
+               (:arguments 
+                  ( ("pConn" variable
+                       (:pointer 2
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19403 19432]))                  
+                :type "void")
+                nil [19379 19536])
+            ("hArchiveCentralMkCache" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [19538 20443])
+            ("hConnectArchiveCentral" function
+               (:pointer 1
+                :type ("sqlConnection" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [20445 20715])
+            ("hDisconnectArchiveCentral" function
+               (:arguments 
+                  ( ("pConn" variable
+                       (:pointer 2
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20748 20777]))                  
+                :type "void")
+                nil [20717 20888])
+            ("hCartMkCache" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [20890 21802])
+            ("hConnectCart" function
+               (:pointer 1
+                :type ("sqlConnection" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [21804 22081])
+            ("hDisconnectCart" function
+               (:arguments 
+                  ( ("pConn" variable
+                       (:pointer 2
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22104 22133]))                  
+                :type "void")
+                nil [22083 22234])
+            ("hCanHaveSplitTables" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22264 22273]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [22236 22508])
+            ("tableListHashAdd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dbTblHash" variable
+                       (:pointer 1
+                        :type ("hash" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22539 22562])
+                    ("profile" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22563 22577])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22578 22587]))                  
+                :type "void")
+                nil [22510 23850])
+            ("tableListGetDbHash" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23891 23900]))                  
+                :type ("hash" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [23852 24346])
+            ("tableListProcessTblProfile" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("profile" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24387 24401])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24402 24411]))                  
+                :type "void")
+                nil [24348 24856])
+            ("hTableExists" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24879 24888])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24889 24901]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [24858 25449])
+            ("hTableForTrack" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25472 25481])
+                    ("trackName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25482 25498]))                  
+                :type "char")
+                nil [25451 25969])
+            ("hTableOrSplitExists" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25999 26008])
+                    ("track" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26009 26021]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [25971 26250])
+            ("hParseTableName" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26273 26282])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26283 26295])
+                    ("trackName" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26296 26333])
+                    ("chrom" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26341 26374]))                  
+                :type "void")
+                nil [26252 28406])
+            ("hChromSize" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28423 28432])
+                    ("chromName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28433 28449]))                  
+                :type "int")
+                nil [28408 28559])
+            ("hNibForChrom" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28579 28588])
+                    ("chromName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28589 28605])
+                    ("retNibName" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28606 28643]))                  
+                :type "void")
+                nil [28561 29749])
+            ("hNibForChromFromPath" function
+               (:arguments 
+                  ( ("nibPath" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29777 29791])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29792 29801])
+                    ("chromName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29802 29818])
+                    ("retNibName" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29824 29861]))                  
+                :type "void")
+                nil [29751 30349])
+            ("fetchTwoBitSeq" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30389 30404])
+                    ("seqName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30405 30419])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [30420 30430])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [30431 30439]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [30352 30769])
+            ("hFetchSeqMixed" function
+               (:pointer 1
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30801 30816])
+                    ("seqName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30817 30831])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [30832 30842])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [30843 30851]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [30771 31184])
+            ("hFetchSeq" function
+               (:pointer 1
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31211 31226])
+                    ("seqName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31227 31241])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [31242 31252])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [31253 31261]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31186 31664])
+            ("hChromSeqMixed" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31696 31705])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31706 31718])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [31719 31729])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [31730 31738]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31666 31934])
+            ("hChromSeqMixedFromPath" function
+               (:pointer 1
+                :arguments 
+                  ( ("nibPath" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31974 31988])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31989 31998])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31999 32011])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [32022 32032])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [32033 32041]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31936 32282])
+            ("hChromSeq" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32309 32318])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32319 32331])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [32332 32342])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [32343 32351]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [32284 32519])
+            ("hChromSeqFromPath" function
+               (:pointer 1
+                :arguments 
+                  ( ("nibPath" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32554 32568])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32569 32578])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32579 32591])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [32597 32607])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [32608 32616]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [32521 32800])
+            ("hSeqForBed" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32828 32837])
+                    ("bed" variable
+                       (:pointer 1
+                        :type ("bed" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32838 32854]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [32802 33954])
+            ("hChromBandConn" function
+               (:arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33979 34006])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34008 34020])
+                    ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [34021 34029])
+                    ("retBand" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34030 34064]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [33956 34662])
+            ("hChromBand" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34683 34692])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34693 34705])
+                    ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [34706 34714])
+                    ("retBand" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34715 34749]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [34664 35103])
+            ("hScaffoldPos" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35126 35135])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35136 35148])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [35149 35159])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [35160 35168])
+                    ("retScaffold" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35190 35209])
+                    ("retStart" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [35210 35224])
+                    ("retEnd" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [35225 35237]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [35105 36889])
+            ("hDnaFromSeq" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [36918 36927])
+                    ("seqName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [36928 36942])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [36943 36953])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [36954 36962])
+                    ("dnaCase" variable (:type ("dnaCase" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [36963 36984]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [36891 37221])
+            ("hLoadChrom" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37249 37258])
+                    ("chromName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37259 37275]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [37223 37414])
+            ("hAllChromNames" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37446 37455]))                  
+                :type ("slName" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [37416 37919])
+            ("hReplaceGbdbLocal" function
+               (:pointer 1
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37945 37960]))                  
+                :type "char")
+                nil [37921 38472])
+            ("hReplaceGbdb" function
+               (:pointer 1
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38493 38508]))                  
+                :type "char")
+                nil [38474 39482])
+            ("hReplaceGbdbSeqDir" function
+               (:pointer 1
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39509 39520])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39521 39530]))                  
+                :type "char")
+                nil [39484 40218])
+            ("hReplaceGbdbMustDownload" function
+               (:pointer 1
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40251 40262]))                  
+                :type "char")
+                nil [40220 41322])
+            ("hTryExtFileNameC" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41347 41374])
+                    ("extFileTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41375 41394])
+                    ("extFileId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [41395 41414])
+                    ("abortOnError" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41415 41436]))                  
+                :type "char")
+                nil [41324 42794])
+            ("hMayExtFileNameC" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42819 42846])
+                    ("extFileTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42847 42866])
+                    ("extFileId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [42867 42886]))                  
+                :type "char")
+                nil [42796 42953])
+            ("hExtFileNameC" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42975 43002])
+                    ("extFileTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43003 43022])
+                    ("extFileId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [43023 43042]))                  
+                :type "char")
+                nil [42955 43108])
+            ("hExtFileName" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43129 43138])
+                    ("extFileTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43139 43158])
+                    ("extFileId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [43159 43178]))                  
+                :type "char")
+                nil [43110 43554])
+            ("SEQ_TBL_SET" variable (:constant-flag t) nil [43629 43640])
+            ("GBSEQ_TBL_SET" variable (:constant-flag t) nil [43653 43666])
+            ("largeSeqFile" type
+               (:members 
+                  ( ("next" variable
+                       (:pointer 1
+                        :type ("largeSeqFile" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [43885 43911])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [43937 43948])
+                    ("extTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [43995 44010])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [44053 44062])
+                    ("id" variable (:type ("HGID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [44124 44132])
+                    ("fd" variable
+                       (:pointer 1
+                        :type ("udcFile" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [44183 44202]))                  
+                :type "struct")
+                nil [43670 44236])
+            ("largeFileList" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("largeSeqFile" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [44238 44280])
+            ("largeFileHandle" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44360 44387])
+                    ("extId" variable (:type ("HGID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44388 44399])
+                    ("extTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44400 44415]))                  
+                :type ("largeSeqFile" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [44316 45294])
+            ("readOpenFileSection" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable
+                       (:pointer 1
+                        :type ("udcFile" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45329 45348])
+                    ("offset" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45349 45362])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45363 45375])
+                    ("fileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45376 45391])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45392 45402]))                  
+                :type "void")
+                nil [45296 45663])
+            ("dbTblParse" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("defaultDb" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45689 45705])
+                    ("tbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45706 45716])
+                    ("tblRet" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45717 45731])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45756 45766])
+                    ("bufSize" variable (:type "int") (reparse-symbol arg-sub-list) [45767 45779]))                  
+                :type "char")
+                nil [45665 46341])
+            ("seqGet" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46365 46374])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46375 46385])
+                    ("isDna" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46386 46400])
+                    ("seqTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46401 46414])
+                    ("extFileTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46415 46432]))                  
+                :type ("bioSeq" type (:type "class") nil nil))
+                nil [46343 47630])
+            ("seqMustGet" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [47658 47667])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [47668 47678])
+                    ("isDna" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47679 47693])
+                    ("seqTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [47694 47707])
+                    ("extFileTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [47708 47725]))                  
+                :type ("bioSeq" type (:type "class") nil nil))
+                nil [47632 48118])
+            ("hDnaSeqGet" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48146 48155])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48156 48166])
+                    ("seqTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48167 48180])
+                    ("extFileTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48181 48198]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [48120 48492])
+            ("hDnaSeqMustGet" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48524 48533])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48534 48544])
+                    ("seqTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48545 48558])
+                    ("extFileTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48559 48576]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [48494 48868])
+            ("hPepSeqGet" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48888 48897])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48898 48908])
+                    ("seqTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48909 48922])
+                    ("extFileTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48923 48940]))                  
+                :type ("aaSeq" type (:type "class") nil nil))
+                nil [48870 49232])
+            ("hPepSeqMustGet" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49256 49265])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49266 49276])
+                    ("seqTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49277 49290])
+                    ("extFileTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49291 49308]))                  
+                :type ("aaSeq" type (:type "class") nil nil))
+                nil [49234 49597])
+            ("querySeqInfo" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49627 49654])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49655 49665])
+                    ("seqTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49666 49679])
+                    ("extFileFld" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49680 49697])
+                    ("retId" variable
+                       (:pointer 1
+                        :type ("HGID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49726 49738])
+                    ("retExtId" variable
+                       (:pointer 1
+                        :type ("HGID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49739 49754])
+                    ("retSize" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49755 49771])
+                    ("retOffset" variable
+                       (:pointer 1
+                        :type ("off_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49772 49789]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [49599 50578])
+            ("getSeqAndId" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [50605 50632])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [50633 50643])
+                    ("retId" variable
+                       (:pointer 1
+                        :type ("HGID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50644 50656]))                  
+                :type "char")
+                nil [50580 51369])
+            ("mustGetSeqAndId" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [51400 51427])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51428 51438])
+                    ("retId" variable
+                       (:pointer 1
+                        :type ("HGID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51468 51480]))                  
+                :type "char")
+                nil [51371 51715])
+            ("hGetSeqAndId" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [51736 51763])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51764 51774])
+                    ("retId" variable
+                       (:pointer 1
+                        :type ("HGID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51775 51787]))                  
+                :type "char")
+                nil [51717 51928])
+            ("hRnaSeqAndIdx" function
+               (:arguments 
+                  ( ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51948 51958])
+                    ("retSeq" variable
+                       (:pointer 2
+                        :type ("dnaSeq" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [51959 51982])
+                    ("retId" variable
+                       (:pointer 1
+                        :type ("HGID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51983 51995])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [51996 52023]))                  
+                :type "int")
+                nil [51930 52218])
+            ("hRnaSeqAndId" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52238 52247])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52248 52258])
+                    ("retSeq" variable
+                       (:pointer 2
+                        :type ("dnaSeq" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [52259 52282])
+                    ("retId" variable
+                       (:pointer 1
+                        :type ("HGID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52283 52295]))                  
+                :type "void")
+                nil [52220 52491])
+            ("hExtSeq" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52516 52525])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52526 52536]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [52493 52660])
+            ("hExtSeqPart" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52689 52698])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52699 52709])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [52710 52720])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [52721 52729]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [52662 53047])
+            ("hRnaSeq" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53072 53081])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53082 53092]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [53049 53152])
+            ("hPepSeq" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53169 53178])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53179 53189]))                  
+                :type ("aaSeq" type (:type "class") nil nil))
+                nil [53154 53376])
+            ("checkIfInTable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [53408 53435])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53436 53446])
+                    ("column" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53477 53490])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53491 53503]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [53378 53838])
+            ("hGenBankHaveSeq" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53864 53873])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53874 53884])
+                    ("compatTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53885 53903]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [53840 54844])
+            ("loadSeqFromTable" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [54885 54912])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [54952 54962])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [54963 54975]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [54846 55354])
+            ("hGenBankGetMrnaC" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [55390 55417])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [55418 55428])
+                    ("compatTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [55429 55447]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [55358 56257])
+            ("hGenBankGetMrna" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [56291 56300])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [56301 56311])
+                    ("compatTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [56312 56330]))                  
+                :type ("dnaSeq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [56260 56881])
+            ("hGenBankGetPepC" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [56908 56935])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [56936 56946])
+                    ("compatTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [56947 56965]))                  
+                :type ("aaSeq" type (:type "class") nil nil))
+                nil [56885 57756])
+            ("hGenBankGetPep" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [57781 57790])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [57791 57801])
+                    ("compatTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [57802 57820]))                  
+                :type ("aaSeq" type (:type "class") nil nil))
+                nil [57759 58348])
+            ("hGenBankGetDesc" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58372 58381])
+                    ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58382 58392])
+                    ("native" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58393 58408]))                  
+                :type "char")
+                nil [58350 59326])
+            ("hGetCtBedRange" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [59355 59364])
+                    ("browserDb" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [59365 59381])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [59382 59394])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [59395 59407])
+                    ("chromStart" variable (:type "int") (reparse-symbol arg-sub-list) [59408 59423])
+                    ("chromEnd" variable (:type "int") (reparse-symbol arg-sub-list) [59430 59443])
+                    ("sqlConstraints" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [59444 59465]))                  
+                :type ("bed" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [59328 67324])
+            ("hGetBedRange" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [67351 67360])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [67361 67373])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [67374 67386])
+                    ("chromStart" variable (:type "int") (reparse-symbol arg-sub-list) [67387 67402])
+                    ("chromEnd" variable (:type "int") (reparse-symbol arg-sub-list) [67409 67422])
+                    ("sqlConstraints" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [67423 67444]))                  
+                :type ("bed" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [67326 67774])
+            ("hGetBedRangeCount" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [67798 67807])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [67808 67820])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [67821 67833])
+                    ("chromStart" variable (:type "int") (reparse-symbol arg-sub-list) [67834 67849])
+                    ("chromEnd" variable (:type "int") (reparse-symbol arg-sub-list) [67854 67867])
+                    ("sqlConstraints" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [67868 67889]))                  
+                :type "int")
+                nil [67776 69628])
+            ("hGetFullBed" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [69654 69663])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [69664 69676]))                  
+                :type ("bed" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [69630 70156])
+            ("hPdbFromGdb" function
+               (:pointer 1
+                :arguments 
+                  ( ("genomeDb" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [70176 70191]))                  
+                :type "char")
+                nil [70158 70410])
+            ("hFreezeDbConversion" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [70445 70460])
+                    ("freeze" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [70461 70474]))                  
+                :type "char")
+                nil [70412 71346])
+            ("hFreezeFromDb" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [71369 71384]))                  
+                :type "char")
+                nil [71349 71571])
+            ("hDbFromFreeze" function
+               (:pointer 1
+                :arguments 
+                  ( ("freeze" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [71593 71606]))                  
+                :type "char")
+                nil [71573 71700])
+            ("hgNearOk" function
+               (:arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [71719 71734]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [71702 72052])
+            ("hgPcrOk" function
+               (:arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [72070 72085]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [72054 72400])
+            ("hArchiveOrCentralDbDbOptionalField" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [72443 72458])
+                    ("field" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [72459 72471])
+                    ("archive" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72472 72488]))                  
+                :type "char")
+                nil [72402 73213])
+            ("hArchiveDbDbOptionalField" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [73247 73262])
+                    ("field" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [73263 73275]))                  
+                :type "char")
+                nil [73215 73437])
+            ("hDbDbOptionalField" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [73464 73479])
+                    ("field" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [73480 73492]))                  
+                :type "char")
+                nil [73439 74066])
+            ("hDbDbField" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [74085 74100])
+                    ("field" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [74101 74113]))                  
+                :type "char")
+                nil [74068 74342])
+            ("hDefaultPos" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [74362 74377]))                  
+                :type "char")
+                nil [74344 74546])
+            ("hOrganism" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [74564 74579]))                  
+                :type "char")
+                nil [74548 74814])
+            ("hArchiveOrganism" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [74839 74854]))                  
+                :type "char")
+                nil [74816 75060])
+            ("hGenomeOrArchive" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75085 75100]))                  
+                :type "char")
+                nil [75062 75304])
+            ("hDbDbNibPath" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75325 75340]))                  
+                :type "char")
+                nil [75306 75733])
+            ("hGenome" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75749 75764]))                  
+                :type "char")
+                nil [75735 75895])
+            ("hScientificName" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75919 75934]))                  
+                :type "char")
+                nil [75897 76150])
+            ("hHtmlPath" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76168 76183]))                  
+                :type "char")
+                nil [76152 76473])
+            ("hFreezeDate" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76493 76508]))                  
+                :type "char")
+                nil [76475 76617])
+            ("hFreezeDateOpt" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76640 76655]))                  
+                :type "char")
+                nil [76619 76803])
+            ("hOrganismID" function
+               (:arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76821 76836]))                  
+                :type "int")
+                nil [76805 77174])
+            ("hGotCladeConn" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [77205 77232]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [77176 77375])
+            ("hGotClade" function (:type ("boolean" type (:type "class") nil nil)) nil [77377 77592])
+            ("hClade" function
+               (:pointer 1
+                :arguments 
+                  ( ("genome" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [77607 77620]))                  
+                :type "char")
+                nil [77594 78608])
+            ("hDbDb" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [78629 78644]))                  
+                :type ("dbDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [78610 79159])
+            ("hDbDbListMaybeCheck" function
+               (:pointer 1
+                :arguments 
+                  ( ("doCheck" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79194 79210]))                  
+                :type ("dbDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [79161 79946])
+            ("hDbDbList" function
+               (:pointer 1
+                :type ("dbDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [79948 80186])
+            ("hDbDbListDeadOrAlive" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("dbDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [80188 80460])
+            ("archiveDbDbLoad" function
+               (:pointer 1
+                :arguments 
+                  ( ("row" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [80491 80502]))                  
+                :type ("dbDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [80462 81254])
+            ("hArchiveDbDbList" function
+               (:pointer 1
+                :type ("dbDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [81256 82306])
+            ("hDbDbHash" function
+               (:pointer 1
+                :type ("hash" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [82308 82706])
+            ("hDbDbAndArchiveHash" function
+               (:pointer 1
+                :type ("hash" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [82708 83099])
+            ("hDbDbCmpOrderKey" function
+               (:arguments 
+                  ( ("va" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [83122 83137])
+                    ("vb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [83138 83153]))                  
+                :type "int")
+                nil [83101 83394])
+            ("hDbList" function
+               (:pointer 1
+                :type ("slName" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [83396 83750])
+            ("hPreviousAssembly" function
+               (:pointer 1
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [83776 83791]))                  
+                :type "char")
+                nil [83752 84326])
+            ("fitField" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hash" variable
+                       (:pointer 1
+                        :type ("hash" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [84353 84371])
+                    ("fieldName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [84372 84388])
+                    ("retField" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [84390 84426]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [84329 84698])
+            ("fitFields" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hash" variable
+                       (:pointer 1
+                        :type ("hash" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [84725 84743])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [84744 84756])
+                    ("start" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [84757 84769])
+                    ("end" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [84770 84780])
+                    ("retChrom" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [84782 84818])
+                    ("retStart" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [84819 84855])
+                    ("retEnd" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [84856 84890]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [84700 85224])
+            ("hFieldIndex" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85242 85251])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85252 85264])
+                    ("field" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85265 85277]))                  
+                :type "int")
+                nil [85226 85471])
+            ("hHasField" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85491 85500])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85501 85513])
+                    ("field" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85514 85526]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [85473 85610])
+            ("hIsBinned" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85630 85639])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85640 85652]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [85612 85732])
+            ("hFieldHasIndex" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85757 85766])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85767 85779])
+                    ("field" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85780 85792]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [85734 86257])
+            ("hFindBed12FieldsAndBinWithConn" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [86305 86332])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86333 86345])
+                    ("retChrom" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86347 86383])
+                    ("retStart" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86385 86421])
+                    ("retEnd" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86423 86457])
+                    ("retName" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86459 86494])
+                    ("retScore" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86496 86532])
+                    ("retStrand" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86534 86571])
+                    ("retCdsStart" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86580 86619])
+                    ("retCdsEnd" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86621 86658])
+                    ("retCount" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86660 86696])
+                    ("retStarts" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86698 86735])
+                    ("retEndsSizes" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86737 86777])
+                    ("retSpan" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86786 86821])
+                    ("retBinned" variable
+                       (:pointer 1
+                        :type ("boolean" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86822 86841]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [86259 90515])
+            ("hFindFieldsAndBinWithConn" function
+               (:arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [90551 90578])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [90579 90588])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [90589 90601])
+                    ("retChrom" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [90603 90639])
+                    ("retStart" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [90641 90677])
+                    ("retEnd" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [90678 90712])
+                    ("retBinned" variable
+                       (:pointer 1
+                        :type ("boolean" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90714 90733]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [90517 91417])
+            ("hFindChromStartEndFieldsWithConn" function
+               (:arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [91460 91487])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91488 91497])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91498 91510])
+                    ("retChrom" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91512 91548])
+                    ("retStart" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91550 91586])
+                    ("retEnd" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91587 91621]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [91419 92298])
+            ("hFindBed12FieldsAndBin" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92331 92340])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92341 92353])
+                    ("retChrom" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92355 92391])
+                    ("retStart" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92393 92429])
+                    ("retEnd" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92431 92465])
+                    ("retName" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92467 92502])
+                    ("retScore" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92504 92540])
+                    ("retStrand" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92542 92579])
+                    ("retCdsStart" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92588 92627])
+                    ("retCdsEnd" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92629 92666])
+                    ("retCount" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92668 92704])
+                    ("retStarts" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92706 92743])
+                    ("retEndsSizes" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92745 92785])
+                    ("retSpan" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92794 92829])
+                    ("retBinned" variable
+                       (:pointer 1
+                        :type ("boolean" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92830 92849]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [92300 93457])
+            ("hFindFieldsAndBin" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [93485 93494])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [93495 93507])
+                    ("retChrom" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [93509 93545])
+                    ("retStart" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [93547 93583])
+                    ("retEnd" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [93584 93618])
+                    ("retBinned" variable
+                       (:pointer 1
+                        :type ("boolean" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93620 93639]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [93459 94313])
+            ("hFindChromStartEndFields" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [94348 94357])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [94358 94370])
+                    ("retChrom" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [94372 94408])
+                    ("retStart" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [94410 94446])
+                    ("retEnd" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [94447 94481]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [94315 95148])
+            ("hFindTableInfo" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [95184 95193])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [95194 95206])
+                    ("rootName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [95207 95222]))                  
+                :type ("hTableInfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [95150 95509])
+            ("hFindTableInfoWithConn" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [95553 95580])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [95581 95593])
+                    ("rootName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [95594 95609]))                  
+                :type ("hTableInfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [95511 98729])
+            ("hTableInfoBedFieldCount" function
+               (:arguments 
+                  ( ("hti" variable
+                       (:pointer 1
+                        :type ("hTableInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [98759 98782]))                  
+                :type "int")
+                nil [98731 99074])
+            ("hFindSplitTable" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99102 99111])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99112 99124])
+                    ("rootName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99125 99140])
+                    ("retTableBuf" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99142 99181])
+                    ("hasBin" variable
+                       (:pointer 1
+                        :type ("boolean" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99182 99198]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [99078 99741])
+            ("hSplitTableNames" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99775 99784])
+                    ("rootName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99785 99800]))                  
+                :type ("slName" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [99743 100143])
+            ("hHttpHost" function
+               (:pointer 1
+                :type "char")
+                nil [100145 100461])
+            ("hHostHasPrefix" function
+               (:arguments 
+                  ( ("prefix" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [100487 100500]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [100464 100724])
+            ("hIsPrivateHost" function (:type ("boolean" type (:type "class") nil nil)) nil [100726 101080])
+            ("hIsBetaHost" function (:type ("boolean" type (:type "class") nil nil)) nil [101082 101278])
+            ("hIsBrowserbox" function (:type ("boolean" type (:type "class") nil nil)) nil [101280 101418])
+            ("hIsPreviewHost" function (:type ("boolean" type (:type "class") nil nil)) nil [101420 101695])
+            ("hBrowserName" function
+               (:pointer 1
+                :type "char")
+                nil [101697 101892])
+            ("hOffsetPastBin" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [101913 101922])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [101923 101935])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [101936 101948]))                  
+                :type "int")
+                nil [101894 102139])
+            ("hFindBin" function
+               (:arguments 
+                  ( ("start" variable (:type "int") (reparse-symbol arg-sub-list) [102625 102635])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [102636 102644]))                  
+                :type "int")
+                nil [102612 102978])
+            ("hAddBinToQueryStandard" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("binField" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [103015 103030])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [103031 103041])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [103042 103050])
+                    ("query" variable
+                       (:pointer 1
+                        :type ("dyString" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [103052 103075])
+                    ("selfContained" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [103076 103098]))                  
+                :type "void")
+                nil [102980 103919])
+            ("hAddBinToQueryExtended" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("binField" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [103956 103971])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [103972 103982])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [103983 103991])
+                    ("query" variable
+                       (:pointer 1
+                        :type ("dyString" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [103993 104016]))                  
+                :type "void")
+                nil [103921 104909])
+            ("hAddBinToQueryGeneral" function
+               (:arguments 
+                  ( ("binField" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [104938 104953])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [104954 104964])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [104965 104973])
+                    ("query" variable
+                       (:pointer 1
+                        :type ("dyString" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [104975 104998]))                  
+                :type "void")
+                nil [104911 105223])
+            ("hAddBinToQuery" function
+               (:arguments 
+                  ( ("start" variable (:type "int") (reparse-symbol arg-sub-list) [105245 105255])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [105256 105264])
+                    ("query" variable
+                       (:pointer 1
+                        :type ("dyString" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [105265 105288]))                  
+                :type "void")
+                nil [105225 105404])
+            ("hExtendedRangeQuery" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [105446 105473])
+                    ("rootTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [105503 105519])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [105565 105577])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [105578 105588])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [105589 105597])
+                    ("extraWhere" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [105613 105630])
+                    ("order" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [105686 105700])
+                    ("fields" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [105759 105772])
+                    ("retRowOffset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [105825 105843]))                  
+                :type ("sqlResult" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [105406 107800])
+            ("hRangeQuery" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [107832 107859])
+                    ("rootTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [107861 107877])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [107878 107890])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [107892 107902])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [107903 107911])
+                    ("extraWhere" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [107912 107929])
+                    ("retRowOffset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [107930 107948]))                  
+                :type ("sqlResult" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [107802 108135])
+            ("hOrderedRangeQuery" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [108174 108201])
+                    ("rootTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [108203 108219])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [108220 108232])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [108234 108244])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [108245 108253])
+                    ("extraWhere" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [108254 108271])
+                    ("retRowOffset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [108272 108290]))                  
+                :type ("sqlResult" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [108137 108531])
+            ("hExtendedChromQuery" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [108573 108600])
+                    ("rootTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [108630 108646])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [108692 108704])
+                    ("extraWhere" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [108732 108749])
+                    ("order" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [108805 108819])
+                    ("fields" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [108878 108891])
+                    ("retRowOffset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [108944 108962]))                  
+                :type ("sqlResult" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [108533 110166])
+            ("hChromQuery" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [110198 110225])
+                    ("rootTable" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [110227 110243])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [110244 110256])
+                    ("extraWhere" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [110258 110275])
+                    ("retRowOffset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [110276 110294]))                  
+                :type ("sqlResult" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [110168 110495])
+            ("hTrackOnChrom" function
+               (:arguments 
+                  ( ("tdb" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [110519 110539])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [110540 110552]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [110497 110778])
+            ("loadOneTrackDb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [110810 110819])
+                    ("where" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [110820 110832])
+                    ("tblSpec" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [110833 110847])
+                    ("tdbList" variable
+                       (:pointer 2
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [110878 110903])
+                    ("loaded" variable
+                       (:pointer 1
+                        :type ("hash" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [110904 110924]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [110780 111938])
+            ("loadTrackDb" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [111975 111984])
+                    ("where" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [111985 111997]))                  
+                :type ("trackDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [111940 112769])
+            ("trackDataAccessible" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [112806 112821])
+                    ("tdb" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [112822 112842]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [112771 113043])
+            ("addTrackIfDataAccessible" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [113082 113097])
+                    ("tdb" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [113098 113118])
+                    ("privateHost" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [113127 113147])
+                    ("tdbRetList" variable
+                       (:pointer 2
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [113148 113176]))                  
+                :type "void")
+                nil [113045 113903])
+            ("inheritFromSuper" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("subtrackTdb" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [114608 114636])
+                    ("compositeTdb" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [114644 114673]))                  
+                :type "void")
+                nil [114579 115858])
+            ("rInheritFields" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("tdbList" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [115887 115911]))                  
+                :type "void")
+                nil [115860 116295])
+            ("trackDbContainerMarkup" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [116332 116355])
+                    ("tdbList" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [116356 116380]))                  
+                :type "void")
+                nil [116297 117208])
+            ("pruneEmpties" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("tdbList" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [117247 117271])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [117272 117281])
+                    ("privateHost" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117283 117303])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [117304 117314]))                  
+                :type ("trackDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [117211 117859])
+            ("rFindTrack" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [117895 117905])
+                    ("tdbList" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [117906 117930])
+                    ("track" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [117931 117943]))                  
+                :type ("trackDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [117861 118540])
+            ("addChildRefsToParents" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("tdbList" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [119078 119102]))                  
+                :type "void")
+                nil [119044 119594])
+            ("trackDbPolishAfterLinkup" function
+               (:pointer 1
+                :arguments 
+                  ( ("tdbList" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [119637 119661])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [119662 119671]))                  
+                :type ("trackDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [119596 119997])
+            ("hTrackDb" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [120024 120033]))                  
+                :type ("trackDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [119999 121618])
+            ("loadAndLookupTrackDb" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [121664 121691])
+                    ("where" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [121701 121713]))                  
+                :type ("trackDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [121620 121836])
+            ("loadTrackDbForTrack" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [121881 121908])
+                    ("track" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [121917 121929]))                  
+                :type ("trackDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [121838 122288])
+            ("tdbForTrack" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [122318 122327])
+                    ("track" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [122328 122340])
+                    ("tdbList" variable
+                       (:pointer 2
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [122340 122365]))                  
+                :type ("trackDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [122290 123402])
+            ("hTrackDbForTrackAndAncestors" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [123449 123458])
+                    ("track" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [123459 123471]))                  
+                :type ("trackDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [123404 125550])
+            ("hCompositeTrackDbForSubtrack" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [125597 125606])
+                    ("sTdb" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [125607 125628]))                  
+                :type ("trackDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [125552 126241])
+            ("hgParseChromRange" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [126269 126278])
+                    ("spec" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [126279 126290])
+                    ("retChromName" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [126291 126311])
+                    ("retWinStart" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [126313 126330])
+                    ("retWinEnd" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [126331 126346]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [126243 127530])
+            ("hgIsChromRange" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [127555 127564])
+                    ("spec" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [127565 127576]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [127532 127727])
+            ("hMaybeTrackInfo" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [127761 127788])
+                    ("trackName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [127789 127805]))                  
+                :type ("trackDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [127729 128353])
+            ("hTrackInfo" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [128382 128409])
+                    ("trackName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [128410 128426]))                  
+                :type ("trackDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [128355 128629])
+            ("hTrackCanPack" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [128688 128697])
+                    ("trackName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [128698 128714]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [128666 129068])
+            ("hTrackOpenVis" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [129090 129099])
+                    ("trackName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [129100 129116]))                  
+                :type "char")
+                nil [129070 129235])
+            ("makeTrackSettingsHash" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [129279 129288]))                  
+                :type ("hash" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [129237 130559])
+            ("hTdbGetTrackSettingsHash" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [130599 130608]))                  
+                :type ("hash" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [130561 131148])
+            ("makeDbTableToTrackHash" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [131193 131202]))                  
+                :type ("hash" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [131150 132012])
+            ("hGetTrackForTable" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132038 132047])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132048 132060]))                  
+                :type "char")
+                nil [132014 132444])
+            ("hGetTableForTrack" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132470 132479])
+                    ("track" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132480 132492]))                  
+                :type "char")
+                nil [132446 132851])
+            ("hGetIndexedDbsMaybeClade" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("theDb" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132898 132910]))                  
+                :type ("dbDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [132853 134035])
+            ("hGetIndexedDatabases" function
+               (:pointer 1
+                :type ("dbDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [134037 134193])
+            ("hGetIndexedDatabasesForClade" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [134237 134246]))                  
+                :type ("dbDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [134195 134375])
+            ("hGetCladeOptions" function
+               (:pointer 1
+                :type ("slPair" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [134377 135120])
+            ("hGetGenomeOptionsForClade" function
+               (:pointer 1
+                :arguments 
+                  ( ("clade" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [135163 135175]))                  
+                :type ("slPair" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [135122 136377])
+            ("hGetDbOptionsForGenome" function
+               (:pointer 1
+                :arguments 
+                  ( ("genome" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [136417 136430]))                  
+                :type ("slPair" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [136379 137306])
+            ("hLiftOverFromDbs" function
+               (:pointer 1
+                :type ("slName" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [137308 137679])
+            ("hLiftOverToDbs" function
+               (:pointer 1
+                :arguments 
+                  ( ("fromDb" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [137711 137724]))                  
+                :type ("slName" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [137681 138129])
+            ("hLiftOverOrgs" function
+               (:pointer 1
+                :arguments 
+                  ( ("from" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [138160 138173])
+                    ("fromDb" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [138174 138187]))                  
+                :type ("slName" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [138131 138521])
+            ("hLiftOverFromOrgs" function
+               (:pointer 1
+                :type ("slName" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [138523 138700])
+            ("hLiftOverToOrgs" function
+               (:pointer 1
+                :arguments 
+                  ( ("fromDb" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [138733 138746]))                  
+                :type ("slName" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [138702 138950])
+            ("hGetDatabaseRank" function
+               (:pointer 1
+                :type ("hash" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [138953 139674])
+            ("hGetLiftOverFromDatabases" function
+               (:pointer 1
+                :type ("dbDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [139676 141244])
+            ("hGetLiftOverToDatabases" function
+               (:pointer 1
+                :arguments 
+                  ( ("fromDb" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [141283 141296]))                  
+                :type ("dbDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [141246 142736])
+            ("hGetAxtInfoDbs" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [142782 142791]))                  
+                :type ("dbDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [142754 145539])
+            ("hGetAxtAlignments" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [145575 145584])
+                    ("otherDb" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [145585 145599]))                  
+                :type ("axtInfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [145541 146278])
+            ("hGetAxtAlignmentsChrom" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [146319 146328])
+                    ("otherDb" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [146329 146343])
+                    ("chrom" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [146344 146356]))                  
+                :type ("axtInfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [146280 147027])
+            ("hGetBlatIndexedDatabases" function
+               (:pointer 1
+                :type ("dbDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [147050 148008])
+            ("hIsBlatIndexedDatabase" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [148041 148050]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [148010 148377])
+            ("hFindBlatServer" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [148419 148428])
+                    ("isTrans" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148429 148445]))                  
+                :type ("blatServerTable" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [148379 149955])
+            ("sqlGetField" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [149975 149984])
+                    ("tblName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [149985 149999])
+                    ("fldName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [150000 150014])
+                    ("condition" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [150028 150044]))                  
+                :type "char")
+                nil [149957 150650])
+            ("hChromSizeHash" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [150680 150689]))                  
+                :type ("hash" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [150652 151097])
+            ("hChromSizeHashFromFile" function
+               (:pointer 1
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [151135 151150]))                  
+                :type ("hash" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [151099 151473])
+            ("hChromList" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [151501 151510]))                  
+                :type ("slName" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [151475 151743])
+            ("hgDirForOrg" function
+               (:pointer 1
+                :arguments 
+                  ( ("org" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [151763 151773]))                  
+                :type "char")
+                nil [151745 151940])
+            ("hgReadRa" function
+               (:pointer 1
+                :arguments 
+                  ( ("genome" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [151964 151977])
+                    ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [151978 151993])
+                    ("rootDir" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [151994 152008])
+                    ("rootName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [152010 152025])
+                    ("retHashOfHash" variable
+                       (:pointer 2
+                        :type ("hash" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [152026 152054]))                  
+                :type ("hash" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [151942 153142])
+            ("addCommasToPos" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [153165 153174])
+                    ("position" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [153175 153190]))                  
+                :type "char")
+                nil [153144 153807])
+            ("isAllDigits" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [153836 153846]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [153816 153992])
+            ("parsePosition" function
+               (:arguments 
+                  ( ("position" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [154016 154031])
+                    ("retChrom" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [154032 154048])
+                    ("retStart" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [154049 154064])
+                    ("retEnd" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [154065 154078]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [153994 154749])
+            ("loadGrps" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [154779 154788])
+                    ("confName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [154789 154804])
+                    ("defaultTbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [154805 154822]))                  
+                :type ("grp" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [154751 155851])
+            ("hLoadGrps" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [155875 155884]))                  
+                :type ("grp" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [155853 156086])
+            ("chrStrippedCmp" function
+               (:arguments 
+                  ( ("chrA" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [156107 156118])
+                    ("chrB" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [156119 156130]))                  
+                :type "int")
+                nil [156088 157033])
+            ("chrNameCmp" function
+               (:arguments 
+                  ( ("str1" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [157051 157062])
+                    ("str2" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [157063 157074]))                  
+                :type "int")
+                nil [157036 158656])
+            ("chrSlNameCmp" function
+               (:arguments 
+                  ( ("el1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [158675 158691])
+                    ("el2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [158692 158708]))                  
+                :type "int")
+                nil [158658 159038])
+            ("chrNameCmpWithAltRandom" function
+               (:arguments 
+                  ( ("str1" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [159068 159079])
+                    ("str2" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [159080 159091]))                  
+                :type "int")
+                nil [159040 161446])
+            ("chrSlNameCmpWithAltRandom" function
+               (:arguments 
+                  ( ("el1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [161478 161494])
+                    ("el2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [161495 161511]))                  
+                :type "int")
+                nil [161448 161849])
+            ("bedCmpExtendedChr" function
+               (:arguments 
+                  ( ("va" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [161873 161888])
+                    ("vb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [161889 161904]))                  
+                :type "int")
+                nil [161851 162244])
+            ("getTableSize" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [162263 162272])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [162273 162285]))                  
+                :type "int")
+                nil [162246 162458])
+            ("compareDbs" function
+               (:arguments 
+                  ( ("dbA" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [162475 162485])
+                    ("dbB" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [162486 162496]))                  
+                :type "int")
+                nil [162460 162986])
+            ("getDomainList" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [163077 163104])
+                    ("ucscGeneId" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [163105 163122])
+                    ("domainDb" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [163124 163139]))                  
+                :type ("slName" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [163048 163706])
+            ("getPfamDomainList" function
+               (:pointer 1
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [163741 163768])
+                    ("ucscGeneId" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [163769 163786]))                  
+                :type ("slName" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [163708 164294])
+            ("isUnknownChrom" function
+               (:arguments 
+                  ( ("dataBase" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [164319 164334])
+                    ("chromName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [164335 164351]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [164296 164507])
+            ("hGenbankModDate" function
+               (:pointer 1
+                :arguments 
+                  ( ("acc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [164531 164541])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [164542 164569]))                  
+                :type "char")
+                nil [164509 164824])
+            ("findTdbForTable" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [164858 164867])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [164867 164890])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [164890 164902])
+                    ("" variable
+                       (:pointer 1
+                        :type ("customTrack" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [164903 164938]))                  
+                :type ("trackDb" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [164826 165826])
+            ("findTypeForTable" function
+               (:pointer 1
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [165851 165860])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [165860 165883])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [165883 165895])
+                    ("" variable
+                       (:pointer 1
+                        :type ("customTrack" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [165896 165931]))                  
+                :type "char")
+                nil [165828 166310])
+            ("trackIsType" function
+               (:arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [166332 166347])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [166348 166360])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [166361 166384])
+                    ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [166385 166396])
+                    ("" variable
+                       (:pointer 1
+                        :type ("customTrack" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [166397 166432]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [166312 166867])
+            ("hIsBigBed" function
+               (:arguments 
+                  ( ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [166887 166902])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [166903 166915])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [166916 166939])
+                    ("" variable
+                       (:pointer 1
+                        :type ("customTrack" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [166940 166975]))                  
+                :type ("boolean" type (:type "class") nil nil))
+                nil [166869 167304])
+            ("bbiNameFromTableChrom" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [167341 167368])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [167369 167381])
+                    ("seqName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [167382 167396]))                  
+                :type "char")
+                nil [167306 168670])
+            ("bbiNameFromSettingOrTableChrom" function
+               (:pointer 1
+                :arguments 
+                  ( ("tdb" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [168709 168729])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [168730 168757])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [168758 168770])
+                    ("seqName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [168780 168794]))                  
+                :type "char")
+                nil [168672 169137])
+            ("bbiNameFromSettingOrTable" function
+               (:pointer 1
+                :arguments 
+                  ( ("tdb" variable
+                       (:pointer 1
+                        :type ("trackDb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [169171 169191])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("sqlConnection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [169192 169219])
+                    ("table" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [169220 169232]))                  
+                :type "char")
+                nil [169139 169355]))          
+    :file "hdb.c"
+    :pointmax 169356
+    :fsize 169355
+    :lastmodtime '(21689 48066 861006 921000)
+    :unmatched-syntax '((semantic-list 166975 . 166988) (semantic-list 166960 . 166975) (semantic-list 166432 . 166445) (semantic-list 166417 . 166432) (semantic-list 165931 . 165944) (semantic-list 165916 . 165931) (semantic-list 164938 . 164951) (semantic-list 164923 . 164938) (symbol 153809 . 153815))
+    :lexical-table 
+        '(("DEFAULT_GENOME" . ((string "\"Human\"" 1210 . 1217)))
+          ("DEFAULT_PROTEINS" . ((string "\"proteins\"" 1176 . 1186)))
+          ("SEQ_TBL_SET" . ((number "1" 43643 . 43644)))
+          ("GBSEQ_TBL_SET" . ((number "2" 43667 . 43668)))
+          )
+
+    )
+   )
+  :file "!home!brad!src!kent!src!hg!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

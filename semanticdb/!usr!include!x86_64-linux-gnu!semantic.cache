@@ -1,0 +1,128 @@
+;; Object x86_64-linux-gnu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "x86_64-linux-gnu/"
+  :tables (list 
+   (semanticdb-table "zconf.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ZCONF_H" variable (:constant-flag t) nil [226 233])
+            ("STDC" variable (:constant-flag t) nil [7197 7201])
+            ("z_const" variable (:constant-flag t) nil [7839 7846])
+            ("MAX_MEM_LEVEL" variable (:constant-flag t) nil [8159 8172])
+            ("MAX_WBITS" variable (:constant-flag t) nil [8447 8456])
+            ("OF" variable (:constant-flag t) nil [9229 9231])
+            ("Z_ARG" variable (:constant-flag t) nil [9405 9410])
+            ("ZEXTERN" variable (:constant-flag t) nil [11566 11573])
+            ("ZEXPORT" variable (:constant-flag t) nil [11614 11621])
+            ("ZEXPORTVA" variable (:constant-flag t) nil [11657 11666])
+            ("FAR" variable (:constant-flag t) nil [11697 11700])
+            ("Byte" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [11736 11764])
+            ("uInt" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [11786 11814])
+            ("uLong" type
+               (:typedef ("unsigned long")
+                :superclasses "unsigned long"
+                :type "typedef")
+                nil [11838 11867])
+            ("Bytef" type
+               (:typedef ("Byte" type (:type "class") nil nil)
+                :superclasses "Byte"
+                :type "typedef")
+                nil [12020 12044])
+            ("charf" type
+               (:typedef ("char")
+                :superclasses "char"
+                :type "typedef")
+                nil [12052 12076])
+            ("intf" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [12077 12100])
+            ("uIntf" type
+               (:typedef ("uInt" type (:type "class") nil nil)
+                :superclasses "uInt"
+                :type "typedef")
+                nil [12101 12125])
+            ("uLongf" type
+               (:typedef ("uLong" type (:type "class") nil nil)
+                :superclasses "uLong"
+                :type "typedef")
+                nil [12126 12151])
+            ("voidpc" type
+               (:typedef ("void")
+                :pointer 1
+                :superclasses "void"
+                :type "typedef")
+                nil [12168 12195])
+            ("voidpf" type
+               (:typedef ("void")
+                :pointer 1
+                :superclasses "void"
+                :type "typedef")
+                nil [12199 12226])
+            ("voidp" type
+               (:typedef ("void")
+                :pointer 1
+                :superclasses "void"
+                :type "typedef")
+                nil [12230 12256])
+            ("limits.h" include (:system-flag t) nil [12419 12440])
+            ("Z_U4" variable (:constant-flag t) nil [12486 12490])
+            ("Z_U4" variable (:constant-flag t) nil [12548 12552])
+            ("Z_U4" variable (:constant-flag t) nil [12615 12619])
+            ("z_crc_t" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [12667 12688])
+            ("Z_HAVE_UNISTD_H" variable (:constant-flag t) nil [12794 12809])
+            ("Z_HAVE_STDARG_H" variable (:constant-flag t) nil [12875 12890])
+            ("sys/types.h" include (:system-flag t) nil [12928 12954])
+            ("stdarg.h" include (:system-flag t) nil [13056 13079])
+            ("unistd.h" include (:system-flag t) nil [13840 13863])
+            ("z_off_t" variable (:constant-flag t) nil [14026 14033])
+            ("SEEK_SET" variable (:constant-flag t) nil [14387 14395])
+            ("SEEK_CUR" variable (:constant-flag t) nil [14457 14465])
+            ("SEEK_END" variable (:constant-flag t) nil [14526 14534])
+            ("z_off64_t" variable (:constant-flag t) nil [14840 14849]))          
+    :file "zconf.h"
+    :pointmax 15473
+    :fsize 15472
+    :lastmodtime '(20880 57294 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("Z_HAVE_UNISTD_H")
+          ("z_off_t" . ((symbol "off_t" 14034 . 14039)))
+          ("z_off64_t" . ((symbol "z_off_t" 14850 . 14857)))
+          ("z_const")
+          ("ZEXTERN" . ((EXTERN "extern" 11574 . 11580)))
+          ("SEEK_CUR" . ((number "1" 14473 . 14474)))
+          ("ZEXPORT")
+          ("MAX_WBITS" . ((number "15" 8459 . 8461)))
+          ("Z_U4" . ((UNSIGNED "unsigned" 12620 . 12628) (SHORT "short" 12629 . 12634)))
+          ("Z_HAVE_STDARG_H")
+          ("STDC")
+          ("ZCONF_H")
+          ("Z_ARG" (spp-arg-list ("args") 9410 . 9416) . ((symbol "args" 9418 . 9422)))
+          ("MAX_MEM_LEVEL" . ((number "9" 8173 . 8174)))
+          ("OF" (spp-arg-list ("args") 9231 . 9237) . ((symbol "args" 9239 . 9243)))
+          ("SEEK_SET" . ((number "0" 14403 . 14404)))
+          ("FAR")
+          ("SEEK_END" . ((number "2" 14542 . 14543)))
+          ("ZEXPORTVA")
+          )
+
+    )
+   )
+  :file "!usr!include!x86_64-linux-gnu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

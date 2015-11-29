@@ -1,0 +1,25 @@
+;; Object libregex/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libregex/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("." "tests")) nil [1 19])
+            ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libutil++" "@OP_CPPFLAGS@")) nil [20 75])
+            ("AM_CXXFLAGS" variable (:default-value ("@OP_CXXFLAGS@")) nil [75 103])
+            ("noinst_LIBRARIES" variable (:default-value ("libop_regex.a")) nil [104 137])
+            ("libop_regex_a_SOURCES" variable (:default-value ("op_regex.cpp" "op_regex.h" "demangle_symbol.h" "demangle_symbol.cpp" "demangle_java_symbol.h" "demangle_java_symbol.cpp")) nil [138 290])
+            ("datadir" variable (:default-value ("$(prefix)/share/oprofile")) nil [291 326])
+            ("nodist_data_DATA" variable (:default-value ("stl.pat")) nil [326 353]))          
+    :file "Makefile.am"
+    :pointmax 353
+    :fsize 352
+    :lastmodtime '(21523 1471 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!libregex!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,26 @@
+;; Object libopagent/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libopagent/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("pkglib_LTLIBRARIES" variable (:default-value ("libopagent.la")) nil [1 36])
+            ("include_HEADERS" variable (:default-value ("opagent.h")) nil [78 106])
+            ("libopagent_la_SOURCES" variable (:default-value ("opagent.c" "jitdump.h" "opagent.h")) nil [107 171])
+            ("EXTRA_DIST" variable (:default-value ("opagent_symbols.ver")) nil [172 205])
+            ("libopagent_la_CFLAGS" variable (:default-value ("-fPIC")) nil [207 236])
+            ("libopagent_la_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libop" "-I" "${top_srcdir}/libutil" "@OP_CPPFLAGS@")) nil [236 329])
+            ("libopagent_la_LIBADD" variable (:default-value ("$(BFD_LIBS)")) nil [330 365])
+            ("libopagent_la_LDFLAGS" variable (:default-value ("-version-info" "1:1:0" "-Wl,--version-script=${top_srcdir}/libopagent/opagent_symbols.ver" "@OP_LDFLAGS@")) nil [891 1025]))          
+    :file "Makefile.am"
+    :pointmax 1027
+    :fsize 1026
+    :lastmodtime '(21523 1459 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!libopagent!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

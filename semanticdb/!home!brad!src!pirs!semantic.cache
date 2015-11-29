@@ -1,0 +1,31 @@
+;; Object pirs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pirs/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("all" function (:arguments ("simulator" "stator" "symlinks")) nil [1 32])
+            ("PERL_LIST" variable (:default-value ("stator/baseCallingMatrix/baseCalling_Matrix_analyzer" "stator/baseCallingMatrix/baseCalling_Matrix_calculator" "stator/baseCallingMatrix/baseCalling_Matrix_merger" "stator/alignment_stator" "stator/indelstat_sam_bam" "stator/gcContCvgBias/gc_coverage_bias_plot")) nil [33 311])
+            ("simulator" function nil nil [312 364])
+            ("stator" function nil nil [365 415])
+            ("symlinks" function nil nil [416 698])
+            ("test" function (:arguments ("all")) nil [699 802])
+            ("distclean" function nil nil [803 933])
+            ("tDATE" variable (:default-value ("$(shell date +%Y%m%d)")) nil [934 965])
+            ("tTIME" variable (:default-value ("$(shell date +%H%M%S)")) nil [965 996])
+            ("dist" function (:arguments ("all" "distclean")) nil [996 1186])
+            ("clean" function (:arguments ("distclean")) nil [1187 1391])
+            (".PHONY" function nil nil [1392 1463])
+            ("push" function nil nil [1392 1463]))          
+    :file "Makefile"
+    :pointmax 1464
+    :fsize 1463
+    :lastmodtime '(21722 40149 92820 618000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!pirs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

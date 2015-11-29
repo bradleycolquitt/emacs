@@ -1,0 +1,28 @@
+;; Object pyalsaaudio-0.8.2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pyalsaaudio-0.8.2/"
+  :tables (list 
+   (semanticdb-table "setup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("'''This package contains wrappers for accessing the ALSA API from Python.
+It is fairly complete for PCM devices and Mixer access.
+'''" code nil nil [24 157])
+            ("distutils.core" include nil nil [159 191])
+            ("distutils.extension" include nil nil [192 233])
+            ("sys" include nil nil [234 257])
+            ("pyalsa_version" variable nil nil [259 283])
+            ("sys" include nil nil [379 402])
+            ("if" code nil nil [403 566])
+            ("if" code nil nil [567 1732]))          
+    :file "setup.py"
+    :pointmax 1732
+    :fsize 1731
+    :lastmodtime '(21847 11698 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!third-party!pyalsaaudio-0.8.2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

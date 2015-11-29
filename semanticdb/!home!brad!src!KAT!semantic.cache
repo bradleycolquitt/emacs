@@ -1,0 +1,29 @@
+;; Object KAT/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "KAT/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [62 86])
+            ("$(top_srcdir)/aminclude.am" include nil nil [105 140])
+            ("EXTRA_DIST" variable (:default-value ("README.md" "COPYING" "AUTHORS" "NEWS" "doxygen.cfg")) nil [172 228])
+            ("dist_noinst_SCRIPTS" variable (:default-value ("autogen.sh" "clean.sh")) nil [252 294])
+            ("dist_bin_SCRIPTS" variable (:default-value ("scripts/kat_comp_reads.sh" "scripts/dist_analysis.py")) nil [323 413])
+            ("SUBDIRS" variable (:default-value ("src" "tests")) nil [425 445]))          
+    :file "Makefile.am"
+    :pointmax 447
+    :fsize 446
+    :lastmodtime '(21643 8732 106202 116000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "aminclude.am"
+    :file "aminclude.am"
+    :fsize 4733
+    :lastmodtime '(21643 8732 106202 116000)
+    )
+   )
+  :file "!home!brad!src!KAT!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

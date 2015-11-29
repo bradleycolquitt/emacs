@@ -1,0 +1,25 @@
+;; Object pe_counting/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pe_counting/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("LIBS" variable (:default-value ("@LIBERTY_LIBS@" "@PFM_LIB@" "@RT_LIB@")) nil [1 40])
+            ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libutil" "-I" "${top_srcdir}/libutil++" "-I" "${top_srcdir}/libop" "-I" "${top_srcdir}/libperf_events" "-I" "${top_srcdir}/libpe_utils" "@PERF_EVENT_FLAGS@" "@OP_CPPFLAGS@")) nil [65 269])
+            ("ocount_SOURCES" variable (:default-value ("ocount.cpp" "ocount_counter.h" "ocount_counter.cpp")) nil [270 340])
+            ("AM_CXXFLAGS" variable (:default-value ("@OP_CXXFLAGS@")) nil [342 370])
+            ("AM_LDFLAGS" variable (:default-value ("@OP_LDFLAGS@")) nil [370 396])
+            ("bin_PROGRAMS" variable (:default-value ("ocount")) nil [397 419])
+            ("ocount_LDADD" variable (:default-value ("../libpe_utils/libpe_utils.a" "../libpe_utils/libpe_utils.a" "../libop/libop.a" "../libutil/libutil.a" "../libutil++/libutil++.a")) nil [419 567]))          
+    :file "Makefile.am"
+    :pointmax 574
+    :fsize 573
+    :lastmodtime '(21523 1459 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!pe_counting!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

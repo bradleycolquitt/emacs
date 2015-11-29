@@ -1,0 +1,130 @@
+;; Object PyScreen/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PyScreen/"
+  :tables (list 
+   (semanticdb-table "PyRecordMenu.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("PyQt4" include nil nil [235 266])
+            ("try" code nil nil [268 375])
+            ("try" code nil nil [376 690])
+            ("Ui_MainWindow" type
+               (:superclasses ("object")
+                :members 
+                  ( ("setupUi" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [736 740])
+                            ("MainWindow" variable nil (reparse-symbol function_parameters) [742 752]))                          )
+                        (reparse-symbol indented_block_body) [724 5221])
+                    ("retranslateUi" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5244 5248])
+                            ("MainWindow" variable nil (reparse-symbol function_parameters) [5250 5260]))                          )
+                        (reparse-symbol indented_block_body) [5226 6198]))                  
+                :type "class")
+                nil [691 6198]))          
+    :file "PyRecordMenu.py"
+    :pointmax 6271
+    :fsize 6384
+    :lastmodtime '(21920 33186 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Py_CBS.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [2 12])
+            ("PyQt4.QtGui" include nil nil [13 57])
+            ("PyQt4" include nil nil [58 89])
+            ("PyRecordMenu" include nil nil [90 128])
+            ("AudioRecorderFunctions" include nil nil [129 165])
+            ("GlobalVars" include nil nil [166 183])
+            ("RescanInputsButtonPushed" function nil nil [187 374])
+            ("StopPushButton" function nil nil [382 807])
+            ("StartPushButton" function nil nil [808 1324])
+            ("ThresholdLineEditChanged" function (:arguments 
+              ( ("newvalue" variable nil (reparse-symbol function_parameters) [1354 1362]))              ) nil [1325 1426])
+            ("BufferTimeSpinBoxChanged" function (:arguments 
+              ( ("newvalue" variable nil (reparse-symbol function_parameters) [1456 1464]))              ) nil [1427 1529])
+            ("InputSelectionSpinBoxChanged" function (:arguments 
+              ( ("newvalue" variable nil (reparse-symbol function_parameters) [1567 1575]))              ) nil [1534 1646])
+            ("BirdNameLineEditChanged" function (:arguments 
+              ( ("newvalue" variable nil (reparse-symbol function_parameters) [1677 1685]))              ) nil [1649 1748])
+            ("WorkingDirpushButtonClicked" function nil nil [1749 2133])
+            ("app" variable nil nil [2135 2163])
+            ("window" variable nil nil [2164 2182])
+            ("ui" variable nil nil [2183 2203])
+            ("ui" code nil nil [2204 2222])
+            ("GlobalVars" variable nil nil [2223 2246])
+            ("GlobalVars" variable nil nil [2247 2273])
+            ("GlobalVars" variable nil nil [2274 2302])
+            ("GlobalVars" variable nil nil [2303 2332])
+            ("ui" code nil nil [2337 2533])
+            ("ui" code nil nil [2535 2705])
+            ("ui" code nil nil [2707 2880])
+            ("ui" code nil nil [2882 3079])
+            ("ui" code nil nil [3081 3275])
+            ("ui" code nil nil [3316 3510])
+            ("ui" code nil nil [3513 3719])
+            ("ui" code nil nil [3729 3924])
+            ("window" code nil nil [3925 3938])
+            ("sys" code nil nil [3939 3960]))          
+    :file "Py_CBS.py"
+    :pointmax 3970
+    :fsize 4094
+    :lastmodtime '(21920 33426 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AudioRecorderFunctions.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("PyQt4" include nil nil [2 25])
+            ("pyaudio" include nil nil [26 40])
+            ("wave" include nil nil [42 53])
+            ("audioop" include nil nil [54 68])
+            ("collections" include nil nil [69 98])
+            ("os" include nil nil [99 108])
+            ("time" include nil nil [109 120])
+            ("math" include nil nil [121 132])
+            ("GlobalVars" include nil nil [133 150])
+            ("CHUNK" variable nil nil [153 165])
+            ("FORMAT" variable nil nil [211 235])
+            ("CHANNELS" variable nil nil [296 308])
+            ("RATE" variable nil nil [329 341])
+            ("MIN_DUR" variable nil nil [539 548])
+            ("MAX_DUR" variable nil nil [578 588])
+            ("RescanInputs" function nil nil [610 1234])
+            ("TriggeredRecordAudio" function (:arguments 
+              ( ("ui" variable nil (reparse-symbol function_parameters) [1260 1262]))              ) nil [1235 3377])
+            ("save_audio" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [3393 3397]))              ) nil [3378 3914]))          
+    :file "AudioRecorderFunctions.py"
+    :pointmax 3981
+    :fsize 4120
+    :lastmodtime '(21929 39812 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "GlobalVars.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("global" code nil nil [2 18])
+            ("global" code nil nil [19 36])
+            ("global" code nil nil [37 56])
+            ("global" code nil nil [57 80])
+            ("global" code nil nil [81 96])
+            ("global" code nil nil [97 112])
+            ("global" code nil nil [113 129])
+            ("global" code nil nil [130 147])
+            ("global" code nil nil [148 159]))          
+    :file "GlobalVars.py"
+    :pointmax 160
+    :fsize 169
+    :lastmodtime '(21866 12450 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!bird-trigger!PyScreen!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

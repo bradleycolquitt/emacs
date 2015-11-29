@@ -1,0 +1,124 @@
+;; Object gperftools/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gperftools/"
+  :tables (list 
+   (semanticdb-table "profiler.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BASE_PROFILER_H_" variable (:constant-flag t) nil [2512 2528])
+            ("time.h" include (:system-flag t) nil [2530 2547])
+            ("PERFTOOLS_DLL_DECL" variable (:constant-flag t) nil [2765 2783])
+            ("ProfilerOptions" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("filter_in_thread" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4017 4052])
+                    ("filter_in_thread_arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [4055 4082]))                  )
+                (reparse-symbol extern-c-contents) [3233 4085])
+            ("ProfilerStart" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4313 4331]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4295 4332])
+            ("ProfilerStartWithOptions" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4776 4794])
+                    ("options" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ProfilerOptions" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4795 4833]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4742 4834])
+            ("ProfilerStop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4986 5006])
+            ("ProfilerFlush" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5155 5176])
+            ("ProfilerEnable" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5324 5346])
+            ("ProfilerDisable" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5366 5389])
+            ("ProfilingIsEnabledForAllThreads" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5483 5521])
+            ("ProfilerRegisterThread" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5604 5634])
+            ("ProfilerState" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("enabled" variable (:type "int") (reparse-symbol classsubparts) [5727 5742])
+                    ("start_time" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5795 5813])
+                    ("profile_name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5871 5897])
+                    ("samples_gathered" variable (:type "int") (reparse-symbol classsubparts) [5951 5975]))                  )
+                (reparse-symbol extern-c-contents) [5702 6028])
+            ("ProfilerGetCurrentState" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :type ("ProfilerState" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6077 6105]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6048 6106]))          
+    :file "profiler.h"
+    :pointmax 6183
+    :fsize 6182
+    :lastmodtime '(21233 24673 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PERFTOOLS_DLL_DECL")
+          ("BASE_PROFILER_H_")
+          )
+
+    )
+   )
+  :file "!usr!include!gperftools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

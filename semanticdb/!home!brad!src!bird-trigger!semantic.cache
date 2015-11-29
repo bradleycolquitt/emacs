@@ -1,0 +1,470 @@
+;; Object bird-trigger/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bird-trigger/"
+  :tables (list 
+   (semanticdb-table "set_target.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [1 11])
+            ("Tkinter" include nil nil [12 32])
+            ("cv2" include nil nil [33 43])
+            ("pdb" include nil nil [44 54])
+            ("logging" include nil nil [55 69])
+            ("numpy" include nil nil [70 88])
+            ("multiprocessing" include nil nil [89 117])
+            ("collections" include nil nil [118 147])
+            ("triggers" include nil nil [149 164])
+            ("\"\"\"
+
+\"\"\"" code nil nil [165 173])
+            ("PLATFORM" variable nil nil [175 196])
+            ("ENTER" variable nil nil [197 205])
+            ("ESC" variable nil nil [206 212])
+            ("if" code nil nil [213 253])
+            ("module_logger" variable nil nil [291 340])
+            ("module_logger" code nil nil [341 378])
+            ("formatter" variable nil nil [379 464])
+            ("logdir" variable nil nil [465 481])
+            ("SuperGui" type
+               (:superclasses ("tk.Frame")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [541 560])
+                            ("self" variable nil (reparse-symbol indented_block_body) [569 597])
+                            ("start_feed_button" variable nil (reparse-symbol indented_block_body) [607 731])
+                            ("self" variable nil (reparse-symbol indented_block_body) [740 779])
+                            ("self" variable nil (reparse-symbol indented_block_body) [788 830])
+                            ("self" variable nil (reparse-symbol indented_block_body) [839 893])
+                            ("self" variable nil (reparse-symbol indented_block_body) [902 962])
+                            ("start_feed_button" code nil (reparse-symbol indented_block_body) [972 1010])
+                            ("self" code nil (reparse-symbol indented_block_body) [1019 1060])
+                            ("self" code nil (reparse-symbol indented_block_body) [1069 1110])
+                            ("self" code nil (reparse-symbol indented_block_body) [1119 1157])
+                            ("self" code nil (reparse-symbol indented_block_body) [1166 1204])
+                            ("self" code nil (reparse-symbol indented_block_body) [1214 1234]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [526 530]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [513 1235])
+                    ("start_feed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1255 1259]))                          )
+                        (reparse-symbol indented_block_body) [1240 1608])
+                    ("launch_target_window" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1638 1642]))                          )
+                        (reparse-symbol indented_block_body) [1613 1681])
+                    ("start_targets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1704 1708]))                          )
+                        (reparse-symbol indented_block_body) [1686 1749])
+                    ("stop_targets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1771 1775]))                          )
+                        (reparse-symbol indented_block_body) [1754 1815]))                  
+                :type "class")
+                nil [483 1815])
+            ("FeedGui" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1902 1922])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1931 1947])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1956 1981])
+                            ("add_target_button" variable nil (reparse-symbol indented_block_body) [1991 2133])
+                            ("start_targets_button" variable nil (reparse-symbol indented_block_body) [2142 2287])
+                            ("stop_targets_button" variable nil (reparse-symbol indented_block_body) [2296 2438])
+                            ("add_target_button" code nil (reparse-symbol indented_block_body) [2547 2585])
+                            ("start_targets_button" code nil (reparse-symbol indented_block_body) [2594 2635])
+                            ("stop_targets_button" code nil (reparse-symbol indented_block_body) [2644 2684]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1848 1852])
+                            ("parent" variable nil (reparse-symbol function_parameters) [1854 1860])
+                            ("feed" variable nil (reparse-symbol function_parameters) [1862 1866]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1835 2685])
+                    ("launch_target_window" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2746 2750]))                          )
+                        (reparse-symbol indented_block_body) [2721 2789])
+                    ("start_targets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2812 2816]))                          )
+                        (reparse-symbol indented_block_body) [2794 2853])
+                    ("stop_targets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2875 2879]))                          )
+                        (reparse-symbol indented_block_body) [2858 2915]))                  
+                :type "class")
+                nil [1816 2915])
+            ("TargetGui" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2973 2993])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3002 3025])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3034 3052])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3061 3112])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3121 3179])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3188 3260])
+                            ("self" code nil (reparse-symbol indented_block_body) [3270 3287])
+                            ("self" code nil (reparse-symbol indented_block_body) [3296 3313])
+                            ("self" code nil (reparse-symbol indented_block_body) [3322 3340])
+                            ("self" code nil (reparse-symbol indented_block_body) [3350 3369]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2950 2954])
+                            ("parent" variable nil (reparse-symbol function_parameters) [2956 2962]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2937 3370])
+                    ("define_target" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3393 3397]))                          )
+                        (reparse-symbol indented_block_body) [3375 3482]))                  
+                :type "class")
+                nil [2916 3482])
+            ("SuperFeed" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3560 3590])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3599 3614])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3623 3648])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3677 3690])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3779 3802])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3836 3891])
+                            ("self" code nil (reparse-symbol indented_block_body) [3900 3937])
+                            ("fh" variable nil (reparse-symbol indented_block_body) [3946 3992])
+                            ("fh" code nil (reparse-symbol indented_block_body) [4001 4026])
+                            ("fh" code nil (reparse-symbol indented_block_body) [4035 4061])
+                            ("self" code nil (reparse-symbol indented_block_body) [4070 4098])
+                            ("self" code nil (reparse-symbol indented_block_body) [4108 4169]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3545 3549]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3532 4170])
+                    ("add_feed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4188 4192])
+                            ("feed_name" variable nil (reparse-symbol function_parameters) [4194 4203])
+                            ("device" variable nil (reparse-symbol function_parameters) [4205 4211]))                          )
+                        (reparse-symbol indented_block_body) [4175 4370])
+                    ("activate_feed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4393 4397])
+                            ("device" variable nil (reparse-symbol function_parameters) [4399 4405]))                          )
+                        (reparse-symbol indented_block_body) [4375 4668])
+                    ("deactivate_feed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4693 4697])
+                            ("device" variable nil (reparse-symbol function_parameters) [4699 4705]))                          )
+                        (reparse-symbol indented_block_body) [4673 4953])
+                    ("deactivate_all_feeds" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4983 4987]))                          )
+                        (reparse-symbol indented_block_body) [4958 5077])
+                    ("start_all_feeds" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5102 5106]))                          )
+                        (reparse-symbol indented_block_body) [5082 5355])
+                    ("_start_all_feeds" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5503 5507]))                          )
+                        (reparse-symbol indented_block_body) [5482 5861])
+                    ("start_subset_feeds" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5889 5893]))                          )
+                        (reparse-symbol indented_block_body) [5866 6285])
+                    ("_start_subset_feeds" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6418 6422])
+                            ("queue" variable nil (reparse-symbol function_parameters) [6424 6429]))                          )
+                        (reparse-symbol indented_block_body) [6394 6899])
+                    ("start_all_targets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6926 6930]))                          )
+                        (reparse-symbol indented_block_body) [6904 7230])
+                    ("stop_feeds" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7250 7254]))                          )
+                        (reparse-symbol indented_block_body) [7235 7306])
+                    ("remove_feed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7327 7331])
+                            ("device" variable nil (reparse-symbol function_parameters) [7333 7339]))                          )
+                        (reparse-symbol indented_block_body) [7311 7376]))                  
+                :type "class")
+                nil [3511 7376])
+            ("MainFeed" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [7454 7474])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7483 7509])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7518 7538])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7547 7564])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7573 7588])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7597 7614])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7623 7650])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7659 7694])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7728 7806])
+                            ("self" code nil (reparse-symbol indented_block_body) [7815 7851])
+                            ("fh" variable nil (reparse-symbol indented_block_body) [7860 7928])
+                            ("fh" code nil (reparse-symbol indented_block_body) [7937 7962])
+                            ("fh" code nil (reparse-symbol indented_block_body) [7971 7997])
+                            ("self" code nil (reparse-symbol indented_block_body) [8006 8033]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7410 7414])
+                            ("parent" variable nil (reparse-symbol function_parameters) [7416 7422])
+                            ("feed_name" variable nil (reparse-symbol function_parameters) [7424 7433])
+                            ("device" variable nil (reparse-symbol function_parameters) [7435 7441]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7397 8034])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8048 8052]))                          )
+                        (reparse-symbol indented_block_body) [8039 8135])
+                    ("activate_targets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8211 8215]))                          )
+                        (reparse-symbol indented_block_body) [8190 8307])
+                    ("deactivate_targets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8335 8339]))                          )
+                        (reparse-symbol indented_block_body) [8312 8434])
+                    ("add_target" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8741 8745])
+                            ("target_name" variable nil (reparse-symbol function_parameters) [8747 8758])
+                            ("mode" variable nil (reparse-symbol function_parameters) [8760 8764]))                          
+                        :documentation "Allows user to define target region using mouse")
+                        (reparse-symbol indented_block_body) [8726 9574])
+                    ("define_target" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9597 9601])
+                            ("target_name" variable nil (reparse-symbol function_parameters) [9603 9614])
+                            ("positions" variable nil (reparse-symbol function_parameters) [9616 9625])
+                            ("mode" variable nil (reparse-symbol function_parameters) [9627 9631]))                          
+                        :documentation "Target defined by given positions")
+                        (reparse-symbol indented_block_body) [9579 9981])
+                    ("start_targets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10004 10008]))                          )
+                        (reparse-symbol indented_block_body) [9986 10294])
+                    ("stop_targets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10316 10320]))                          )
+                        (reparse-symbol indented_block_body) [10299 10464])
+                    ("read_targets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10944 10948])
+                            ("queue" variable nil (reparse-symbol function_parameters) [10950 10955]))                          )
+                        (reparse-symbol indented_block_body) [10927 11288]))                  
+                :type "class")
+                nil [7377 11288])
+            ("Target" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [11380 11400])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11409 11435])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11444 11474])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11483 11501])
+                            ("self, self, self, self" code nil (reparse-symbol indented_block_body) [11510 11558])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11567 11584])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11593 11614])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11623 11663])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11673 11708])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11717 11733]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11320 11324])
+                            ("parent" variable nil (reparse-symbol function_parameters) [11326 11332])
+                            ("feed_name" variable nil (reparse-symbol function_parameters) [11334 11343])
+                            ("target_name" variable nil (reparse-symbol function_parameters) [11345 11356])
+                            ("frame" variable nil (reparse-symbol function_parameters) [11358 11363])
+                            ("mode" variable nil (reparse-symbol function_parameters) [11365 11369]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [11307 11734])
+                    ("draw_rectangle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11758 11762])
+                            ("event" variable nil (reparse-symbol function_parameters) [11764 11769])
+                            ("x" variable nil (reparse-symbol function_parameters) [11771 11772])
+                            ("y" variable nil (reparse-symbol function_parameters) [11774 11775])
+                            ("flags" variable nil (reparse-symbol function_parameters) [11777 11782])
+                            ("param" variable nil (reparse-symbol function_parameters) [11784 11789]))                          )
+                        (reparse-symbol indented_block_body) [11739 12071])
+                    ("mouse_none" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12091 12095])
+                            ("event" variable nil (reparse-symbol function_parameters) [12097 12102])
+                            ("x" variable nil (reparse-symbol function_parameters) [12104 12105])
+                            ("y" variable nil (reparse-symbol function_parameters) [12107 12108])
+                            ("flags" variable nil (reparse-symbol function_parameters) [12110 12115])
+                            ("param" variable nil (reparse-symbol function_parameters) [12117 12122]))                          
+                        :documentation "Null function for mouse callback")
+                        (reparse-symbol indented_block_body) [12076 12185])
+                    ("set_target_coords" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12212 12216])
+                            ("coords" variable nil (reparse-symbol function_parameters) [12218 12224]))                          )
+                        (reparse-symbol indented_block_body) [12190 12504])
+                    ("get_target_coords" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12531 12535]))                          
+                        :documentation "Get coordinates of defined target region")
+                        (reparse-symbol indented_block_body) [12509 12732])
+                    ("get_roi_pixels" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12760 12764]))                          
+                        :documentation "Return pixels of stored frame within defined target ")
+                        (reparse-symbol indented_block_body) [12741 12944])
+                    ("check_target" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12966 12970])
+                            ("frame" variable nil (reparse-symbol function_parameters) [12972 12977]))                          )
+                        (reparse-symbol indented_block_body) [12949 13152])
+                    ("check_target_detect" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13181 13185])
+                            ("frame" variable nil (reparse-symbol function_parameters) [13187 13192]))                          
+                        :documentation "Continually compute the mean pixel value within defined target
+        Trigger sound playback whenever mean exceeds threshold
+        ")
+                        (reparse-symbol indented_block_body) [13157 13813])
+                    ("check_target_motion" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13842 13846])
+                            ("frame" variable nil (reparse-symbol function_parameters) [13848 13853]))                          
+                        :documentation "Compute absolute difference between series of images to detect motion")
+                        (reparse-symbol indented_block_body) [13818 14303])
+                    ("trigger_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14326 14330]))                          )
+                        (reparse-symbol indented_block_body) [14308 14346]))                  
+                :type "class")
+                nil [11289 14346])
+            ("capture_grey" function (:arguments 
+              ( ("cap" variable nil (reparse-symbol function_parameters) [14364 14367]))              ) nil [14347 14486])
+            ("diff_image_ratio" function (:arguments 
+              ( ("images" variable nil (reparse-symbol function_parameters) [14508 14514]))              ) nil [14487 14759])
+            ("diff_image_ratio2" function (:arguments 
+              ( ("images" variable nil (reparse-symbol function_parameters) [14886 14892]))              ) nil [14864 15023])
+            ("detect_motion" function (:arguments 
+              ( ("motion" variable nil (reparse-symbol function_parameters) [15145 15151])
+                ("max_deviation" variable nil (reparse-symbol function_parameters) [15153 15166]))              ) nil [15127 15381])
+            ("test_roi" function (:arguments 
+              ( ("target_obj" variable nil (reparse-symbol function_parameters) [15395 15405]))              ) nil [15382 15850]))          
+    :file "set_target.py"
+    :pointmax 15850
+    :fsize 15849
+    :lastmodtime '(21778 1680 694196 772000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "trigger.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("opencv2/opencv.hpp" include nil nil [1 30])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [32 51])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [52 72])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [83 87])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [88 95]))                  
+                :type "int")
+                nil [74 553]))          
+    :file "trigger.cpp"
+    :pointmax 222
+    :fsize 553
+    :lastmodtime '(21767 42735 609895 928000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tests.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("time" include nil nil [25 36])
+            ("set_target" include nil nil [37 60])
+            ("setup_two_feeds" function nil nil [62 179])
+            ("define_targets" function nil nil [180 450])
+            ("test_start_all_feeds" function (:arguments 
+              ( ("sf" variable nil (reparse-symbol function_parameters) [476 478]))              ) nil [451 506])
+            ("test_activate_feed" function (:arguments 
+              ( ("sf" variable nil (reparse-symbol function_parameters) [530 532]))              ) nil [507 587])
+            ("test_activate2_feed" function (:arguments 
+              ( ("sf" variable nil (reparse-symbol function_parameters) [612 614]))              ) nil [588 686])
+            ("test_target_event" function (:arguments 
+              ( ("sf" variable nil (reparse-symbol function_parameters) [709 711]))              ) nil [687 781])
+            ("test_target_active" function (:arguments 
+              ( ("sf" variable nil (reparse-symbol function_parameters) [805 807]))              ) nil [782 905]))          
+    :file "tests.py"
+    :pointmax 905
+    :fsize 904
+    :lastmodtime '(21777 64487 978147 399000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "triggers.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("trigger_playback" function nil nil [31 640]))          
+    :file "triggers.py"
+    :pointmax 640
+    :fsize 639
+    :lastmodtime '(21777 63088 630122 80000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!bird-trigger!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

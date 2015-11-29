@@ -1,0 +1,54 @@
+;; Object x86/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "x86/"
+  :tables (list 
+   (semanticdb-table "32.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_X86_32_H" variable (:constant-flag t) nil [250 284])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [286 326])
+            ("boost/predef/make.h" include (:system-flag t) nil [327 357])
+            ("BOOST_ARCH_X86_32" variable (:constant-flag t) nil [1204 1221])
+            ("BOOST_ARCH_X86_32_NAME" variable (:constant-flag t) nil [2510 2532])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [2549 2586])
+            ("boost/predef/architecture/x86.h" include (:system-flag t) nil [2656 2698]))          
+    :file "32.h"
+    :pointmax 2707
+    :fsize 2706
+    :lastmodtime '(21208 1656 0 0)
+    :unmatched-syntax '((semantic-list 2612 . 2654) (symbol 2587 . 2612) (string "\"Intel x86-32\"" 2631 . 2653))
+    :lexical-table 
+        '(("BOOST_ARCH_X86_32" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 1222 . 1256)))
+          ("BOOST_ARCH_X86_32_NAME" . ((string "\"Intel x86-32\"" 2533 . 2547)))
+          ("BOOST_PREDEF_ARCHITECTURE_X86_32_H")
+          )
+
+    )
+   (semanticdb-table "64.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_X86_64_H" variable (:constant-flag t) nil [250 284])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [286 326])
+            ("boost/predef/make.h" include (:system-flag t) nil [327 357])
+            ("BOOST_ARCH_X86_64" variable (:constant-flag t) nil [742 759])
+            ("BOOST_ARCH_X86_64" variable (:constant-flag t) nil [953 970])
+            ("BOOST_ARCH_X86_64_NAME" variable (:constant-flag t) nil [1087 1109])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1126 1163])
+            ("boost/predef/architecture/x86.h" include (:system-flag t) nil [1233 1275]))          
+    :file "64.h"
+    :pointmax 1284
+    :fsize 1283
+    :lastmodtime '(21208 1656 0 0)
+    :unmatched-syntax '((semantic-list 1189 . 1231) (symbol 1164 . 1189) (string "\"Intel x86-64\"" 1208 . 1230) (semantic-list 905 . 913) (symbol 898 . 905) (punctuation 890 . 891) (punctuation 889 . 890) (semantic-list 879 . 888) (symbol 872 . 879) (punctuation 870 . 871) (punctuation 869 . 870) (semantic-list 857 . 868) (symbol 850 . 857))
+    :lexical-table 
+        '(("BOOST_ARCH_X86_64_NAME" . ((string "\"Intel x86-64\"" 1110 . 1124)))
+          ("BOOST_PREDEF_ARCHITECTURE_X86_64_H")
+          ("BOOST_ARCH_X86_64" . ((symbol "BOOST_VERSION_NUMBER_AVAILABLE" 971 . 1001)))
+          )
+
+    )
+   )
+  :file "!usr!include!boost!predef!architecture!x86!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

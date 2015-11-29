@@ -1,0 +1,31 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("phony" function (:arguments ("lib")) nil [1 12])
+            ("lib" function (:arguments ("libgam.la")) nil [13 28])
+            ("INCLUDES" variable (:default-value ("-I./include" "-I." "-DMIN_ALIGNMENT=100" "-DMIN_HOMOLOGY=85" "-DMIN_ALIGNMENT_QUOTIENT=0.00" "-DFULL_ALIGNMENT_SIZE_PERCENTAGE=85")) nil [183 333])
+            ("BASE_SRC" variable (:default-value ("src/assembly.cc" "src/pctg_ctg_alignment.cc" "src/frame.cc" "src/normal_distribution.cc" "src/paired_contig.cc" "src/pairing_evidences.cc" "src/paired_contig_descriptor.cc" "src/paired_graph.cc" "src/partition_functions.cc" "src/pctg_builder.cc" "src/psctg_strand_fixer.cc" "src/relative_strand.cc" "src/relative_strand_evidences.cc" "src/strand_probability.cc" "src/supercontig_descriptor.cc" "src/paired_supercontig_descriptor.cc" "src/pctg_builder_functions.cc" "src/psctg_graph.cc" "src/contig.cc" "src/contig_id.cc" "src/ctgid_to_pctgs.cc" "src/file_map_functions.cc" "src/block_vector.cc" "src/alignment.cc" "src/aligner.cc" "src/smith_waterman.cc" "src/ablast.cc" "src/assembly_graph.cc" "src/nucleotide.cc" "src/block.cc" "src/paired_sctg.cc" "src/negative_gap_remover.cc" "src/numeric_type.cc" "src/contig_in_contig.cc" "src/pctg_in_pctg.cc" "src/psctg_negative_gap_solver.cc" "src/consecutive_pctg_merger.cc")) nil [334 1430])
+            ("IO_SRC" variable (:default-value ("src/io_contig.cc" "src/io_functions.cc" "src/io_paired_contig.cc" "src/io_paired_contig_descriptor.cc" "src/io_supercontig_descriptor.cc" "src/io_paired_graph.cc" "src/io_paired_supercontig_descriptor.cc" "src/io_contig_in_contig.cc" "src/io_pctg_in_pctg.cc")) nil [1431 1743])
+            ("noinst_LTLIBRARIES" variable nil nil [1744 1765])
+            ("lib_LTLIBRARIES" variable (:default-value ("libgam.la")) nil [1766 1794])
+            ("libgam_la_LIBADD" variable (:default-value ("$(noinst_LTLIBRARIES)")) nil [1794 1835])
+            ("libgam_la_SOURCES" variable (:default-value ("$(BASE_SRC)" "$(IO_SRC)")) nil [1835 1877])
+            ("nodist_EXTRA_libgam_la_SOURCES" variable (:default-value ("dummy.cc")) nil [1877 1919])
+            ("EXTRA_DIST" variable nil nil [1920 1935])
+            ("bin_PROGRAMS" variable nil nil [1935 1951])
+            ("include_HEADERS" variable nil nil [1951 1969]))          
+    :file "Makefile.am"
+    :pointmax 1969
+    :fsize 1968
+    :lastmodtime '(21697 58033 192159 868000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!GAM!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,91 @@
+;; Object platform/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "platform/"
+  :tables (list 
+   (semanticdb-table "platform_gcc.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PLATFORM_GCC" variable (:constant-flag t) nil [2016 2028])
+            ("_FILE_OFFSET_BITS" variable (:constant-flag t) nil [2116 2133])
+            ("_LARGEFILE_SOURCE" variable (:constant-flag t) nil [2181 2198])
+            ("SEQAN_IS_64_BIT" variable (:constant-flag t) nil [2408 2423])
+            ("SEQAN_IS_32_BIT" variable (:constant-flag t) nil [2434 2449])
+            ("inttypes.h" include (:system-flag t) nil [2682 2703])
+            ("finline" variable (:constant-flag t) nil [2713 2720])
+            ("__int64" type
+               (:typedef ("int64_t" type (:type "class") nil nil)
+                :superclasses "int64_t"
+                :type "typedef")
+                nil [2755 2779])
+            ("__uint64" type
+               (:typedef ("uint64_t" type (:type "class") nil nil)
+                :superclasses "uint64_t"
+                :type "typedef")
+                nil [2780 2806])
+            ("__int32" type
+               (:typedef ("int32_t" type (:type "class") nil nil)
+                :superclasses "int32_t"
+                :type "typedef")
+                nil [2830 2854])
+            ("__uint32" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :superclasses "uint32_t"
+                :type "typedef")
+                nil [2855 2881])
+            ("__int16" type
+               (:typedef ("int16_t" type (:type "class") nil nil)
+                :superclasses "int16_t"
+                :type "typedef")
+                nil [2905 2929])
+            ("__uint16" type
+               (:typedef ("uint16_t" type (:type "class") nil nil)
+                :superclasses "uint16_t"
+                :type "typedef")
+                nil [2930 2956])
+            ("__int8" type
+               (:typedef ("int8_t" type (:type "class") nil nil)
+                :superclasses "int8_t"
+                :type "typedef")
+                nil [2979 3001])
+            ("__uint8" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :superclasses "uint8_t"
+                :type "typedef")
+                nil [3002 3026])
+            ("SEQAN_SWITCH_USE_FORWARDS" variable (:constant-flag t) nil [3098 3123])
+            ("platform_generated_forwards.h" include nil nil [3125 3165]))          
+    :file "platform_gcc.h"
+    :pointmax 3321
+    :fsize 3320
+    :lastmodtime '(20320 47780 0 0)
+    :unmatched-syntax '((symbol 3304 . 3313) (symbol 3299 . 3303) (symbol 3295 . 3298) (symbol 3292 . 3294) (string 3276 . 3291) (symbol 3268 . 3275) (symbol 3265 . 3267) (symbol 3260 . 3264) (symbol 3254 . 3259) (symbol 3250 . 3253) (symbol 3242 . 3249) (symbol 3236 . 3241) (symbol 3232 . 3235) (symbol 3228 . 3231) (symbol 3225 . 3227) (symbol 3219 . 3224) (punctuation 3218 . 3219))
+    :lexical-table 
+        '(("SEQAN_IS_32_BIT" . ((number "0" 2450 . 2451)))
+          ("finline" . ((symbol "__inline__" 2721 . 2731)))
+          ("SEQAN_SWITCH_USE_FORWARDS")
+          ("_FILE_OFFSET_BITS" . ((number "64" 2134 . 2136)))
+          ("SEQAN_IS_64_BIT" . ((number "1" 2424 . 2425)))
+          ("PLATFORM_GCC")
+          ("_LARGEFILE_SOURCE")
+          )
+
+    )
+   (semanticdb-table "platform_generated_forwards.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_HEADER_PLATFORM_GENERATED_FORWARDS_H" variable (:constant-flag t) nil [1974 2016]))          
+    :file "platform_generated_forwards.h"
+    :pointmax 2573
+    :fsize 2572
+    :lastmodtime '(20320 47780 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEQAN_HEADER_PLATFORM_GENERATED_FORWARDS_H")
+          )
+
+    )
+   )
+  :file "!usr!include!seqan!platform!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

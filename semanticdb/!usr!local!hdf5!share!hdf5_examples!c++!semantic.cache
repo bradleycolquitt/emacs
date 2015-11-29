@@ -1,0 +1,106 @@
+;; Object c++/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c++/"
+  :tables (list 
+   (semanticdb-table "create.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1171 1190])
+            ("string" include (:system-flag t) nil [1191 1208])
+            ("H5Cpp.h" include nil nil [1210 1228])
+            ("H5" using (:type ("H5" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1258 1277])
+            ("indexData" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2197 2204])
+                    ("file_name" variable (:type ("H5std_string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2224 2247])
+                    ("dataset_name" variable (:type ("H5std_string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2251 2277])
+                    ("file" variable (:type ("H5File" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2281 2293])
+                    ("indexData" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type ("file_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2328 2338]))                          
+                        :type ("indexData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2317 2410])
+                    ("indexData" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type ("file_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2425 2435])
+                            ("" variable (:type ("dataset_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2436 2449]))                          
+                        :type ("indexData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2414 2450])
+                    ("indexData" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2472 2564])
+                    ("getId" function
+                       (:prototype-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2582 2597])
+                    ("getBarcode" function
+                       (:prototype-flag t
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2601 2623])
+                    ("getUMI" function
+                       (:prototype-flag t
+                        :type ("String" type
+                             (:template-specifier 
+                                ( ("Dna" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2627 2648])
+                    ("getChrom" function
+                       (:prototype-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2699 2717])
+                    ("getPosition" function
+                       (:prototype-flag t
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2721 2744])
+                    ("insertReadData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rd" variable (:type ("readData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2782 2794]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2762 2795])
+                    ("setFileName" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2814 2833])
+                    ("setDatasetName" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2837 2859])
+                    ("setName" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2863 2878])
+                    ("setBarcode" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2882 2900])
+                    ("setUMI" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2904 2918]))                  
+                :type "class")
+                nil [2177 2952])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2964 2969]))                  
+                :type "int")
+                nil [2954 5271]))          
+    :file "create.cpp"
+    :pointmax 4541
+    :fsize 3856
+    :lastmodtime '(21477 8722 155333 571000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!local!hdf5!share!hdf5_examples!c++!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

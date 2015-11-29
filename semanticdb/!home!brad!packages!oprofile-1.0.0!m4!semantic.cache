@@ -1,0 +1,19 @@
+;; Object m4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "m4/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("binutils.m4" "builtinexpect.m4" "compileroption.m4" "copyifchange.m4" "docbook.m4" "extradirs.m4" "mallocattribute.m4" "poptconst.m4" "precompiledheader.m4" "resultyn.m4" "sstream.m4" "typedef.m4")) nil [74 297]))          
+    :file "Makefile.am"
+    :pointmax 297
+    :fsize 296
+    :lastmodtime '(21523 1459 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!m4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

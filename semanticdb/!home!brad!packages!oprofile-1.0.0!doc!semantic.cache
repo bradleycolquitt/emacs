@@ -1,0 +1,45 @@
+;; Object doc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "doc/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("RM" variable (:default-value ("rm")) nil [1 7])
+            ("MANDIR" variable (:default-value ("$(DESTDIR)@mandir@/man1")) nil [7 38])
+            ("XSLTPROC" variable (:default-value ("xsltproc")) nil [39 57])
+            ("XSLTPROC_FLAGS" variable (:default-value ("@XSLTPROC_FLAGS@")) nil [57 89])
+            ("XHTML_STYLESHEET" variable (:default-value ("$(srcdir)/xsl/xhtml.xsl")) nil [89 130])
+            ("CHUNK_XHTML_STYLESHEET" variable (:default-value ("$(srcdir)/xsl/xhtml-chunk.xsl")) nil [130 183])
+            ("XML_CATALOG_FILES" variable (:default-value ("xsl/catalog.xml")) nil [183 217])
+            ("STYLESHEETS" variable (:default-value ("$(CHUNK_XHTML_STYLESHEET)" "$(srcdir)/xsl/xhtml-common.xsl")) nil [217 286])
+            ("man_MANS" variable (:default-value ("oprofile.1" "opreport.1" "opannotate.1" "opgprof.1" "ophelp.1" "op-check-perfevents.1" "oparchive.1" "opimport.1")) nil [287 421])
+            ("man_MANS" variable (:default-value ("operf.1" "ocount.1")) nil [446 480])
+            ("htmldir" variable (:default-value ("$(prefix)/share/doc/oprofile")) nil [487 526])
+            ("dist_html_DATA" variable (:default-value ("oprofile.html" "internals.html" "opreport.xsd" "ophelp.xsd" "op-jit-devel.html")) nil [526 614])
+            ("oprofile.html" function (:arguments ("${top_srcdir}/doc/oprofile.xml")) nil [633 810])
+            ("op-jit-devel.html" function (:arguments ("${top_srcdir}/doc/op-jit-devel.xml")) nil [811 996])
+            ("internals.html" function (:arguments ("${top_srcdir}/doc/internals.xml")) nil [997 1176])
+            ("doc/index.html" function (:arguments ("${top_srcdir}/doc/oprofile.xml")) nil [1224 1384])
+            ("doc/devel/index.html" function (:arguments ("${top_srcdir}/doc/op-jit-devel.xml")) nil [1385 1567])
+            ("doc/internals/index.html" function (:arguments ("${top_srcdir}/doc/internals.xml")) nil [1568 1759])
+            ("chunk" function (:arguments ("doc/index.html" "doc/internals/index.html" "doc/devel/index.html")) nil [1760 1877])
+            ("oprofile.html" function nil nil [1884 1909])
+            ("internals.html" function nil nil [1910 1936])
+            ("op-jit-devel.html" function nil nil [1937 1966])
+            ("chunk" function nil nil [1967 1974])
+            ("distclean-local" function nil nil [1982 2043])
+            ("clean-local" function nil nil [2044 2085])
+            ("uninstall-local" function nil nil [2149 2271])
+            ("EXTRA_DIST" variable (:default-value ("oprofile.1" "oprofile.1.in" "oprofile.xml" "op-jit-devel.xml" "internals.xml" "buffers.png" "xsl/catalog-1.xml.in" "xsl/xhtml.xsl" "xsl/xhtml-common.xsl" "xsl/xhtml-chunk.xsl" "srcdoc/Doxyfile.in" "srcdoc/Makefile")) nil [2272 2513]))          
+    :file "Makefile.am"
+    :pointmax 2513
+    :fsize 2512
+    :lastmodtime '(21523 1471 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!doc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

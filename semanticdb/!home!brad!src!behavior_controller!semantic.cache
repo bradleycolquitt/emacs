@@ -1,0 +1,575 @@
+;; Object behavior_controller/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "behavior_controller/"
+  :tables (list 
+   (semanticdb-table "behavior_controller.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("scipy" include nil nil [1 19])
+            ("numpy" include nil nil [20 38])
+            ("scipy" include nil nil [39 67])
+            ("os" include nil nil [68 77])
+            ("serial" include nil nil [78 91])
+            ("serial.tools" include nil nil [92 127])
+            ("time" include nil nil [128 139])
+            ("datetime" include nil nil [140 155])
+            ("io" include nil nil [156 165])
+            ("json" include nil nil [166 177])
+            ("ConfigParser" include nil nil [178 197])
+            ("sys" include nil nil [198 208])
+            ("pdb" include nil nil [209 219])
+            ("multiprocessing" include nil nil [220 255])
+            ("lib.soundout_tools" include nil nil [256 287])
+            ("lib.serial_tools" include nil nil [288 317])
+            ("lib.usb_tools" include nil nil [318 344])
+            ("lib.arduino_tools" include nil nil [345 375])
+            ("loop_iterations" include nil nil [376 406])
+            ("trial_generators" include nil nil [407 439])
+            ("lib.audiorecord" include nil nil [440 468])
+            ("baud_rate" variable nil nil [508 525])
+            ("time_tollerance" variable nil nil [526 548])
+            ("debug" variable nil nil [549 561])
+            ("beep" variable nil nil [562 574])
+            ("mode_definitions" variable nil nil [588 629])
+            ("default_stimuli_dir" variable nil nil [970 1021])
+            ("default_data_dir" variable nil nil [1022 1067])
+            ("BehaviorController" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1135 1155])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1198 1241])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1276 1301])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1310 1330])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1339 1358])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1367 1388])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1398 1430])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1481 1503])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1512 1535])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1582 1602])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1611 1632])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1641 1666])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1675 1701])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1741 1762])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1772 1794])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1803 1822])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1873 1891])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1900 1923])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1974 1990])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1999 2025])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2034 2088])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2098 2140])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2149 2197])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2249 2283])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2332 2367])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2409 2437])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2447 2482])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2491 2533])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2543 2582])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2591 2629])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2679 2722])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2748 2793])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2802 2836])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2845 2879])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2888 2919])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2928 2961])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2970 3015])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3064 3093])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3102 3149])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3158 3191])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3200 3228])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3274 3289])
+                            ("self" code nil (reparse-symbol indented_block_body) [3298 3325]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1120 1124]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1107 3326])
+                    ("set_bird_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3351 3355])
+                            ("birdname" variable nil (reparse-symbol function_parameters) [3357 3365]))                          )
+                        (reparse-symbol indented_block_body) [3333 3468])
+                    ("generate_file_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3496 3500]))                          )
+                        (reparse-symbol indented_block_body) [3473 3915])
+                    ("ready_to_run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3937 3941]))                          )
+                        (reparse-symbol indented_block_body) [3920 4307])
+                    ("n_trials" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4339 4343]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4312 4388])
+                    ("load_stimsets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4411 4415]))                          )
+                        (reparse-symbol indented_block_body) [4393 4700])
+                    ("list_stimuli" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4722 4726])
+                            ("stimset_idxs" variable nil (reparse-symbol function_parameters) [4728 4740]))                          )
+                        (reparse-symbol indented_block_body) [4705 5081])
+                    ("que_next_trial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5105 5109]))                          )
+                        (reparse-symbol indented_block_body) [5086 5380])
+                    ("store_current_trial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5409 5413]))                          )
+                        (reparse-symbol indented_block_body) [5385 5572])
+                    ("return_log_fid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5596 5600]))                          )
+                        (reparse-symbol indented_block_body) [5577 5759])
+                    ("return_events_fid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5786 5790]))                          )
+                        (reparse-symbol indented_block_body) [5764 5957])
+                    ("save_config_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5983 5987]))                          )
+                        (reparse-symbol indented_block_body) [5962 6632])
+                    ("save_events_to_log_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6665 6669])
+                            ("events_since_last" variable nil (reparse-symbol function_parameters) [6672 6689]))                          )
+                        (reparse-symbol indented_block_body) [6637 7437])
+                    ("save_trial_to_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7465 7469])
+                            ("trial" variable nil (reparse-symbol function_parameters) [7471 7476]))                          )
+                        (reparse-symbol indented_block_body) [7442 7641])
+                    ("calculate_performance_statistics" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7683 7687])
+                            ("n_trials_back" variable nil (reparse-symbol function_parameters) [7689 7702]))                          )
+                        (reparse-symbol indented_block_body) [7646 9616]))                  
+                :type "class")
+                nil [1069 9616])
+            ("BehaviorBox" type
+               (:documentation "this object holds the present state of the behavior Arduino
+    and contains the methods to change the pins of the box"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [9827 9850])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9860 10043])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10052 10151])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10160 10182])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10192 10214])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10223 10246])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10255 10278])
+                            ("self" code nil (reparse-symbol indented_block_body) [10287 10311])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10320 10343])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10352 10380])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10389 10414])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10423 10443])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10452 10473])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10482 10500])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10510 10533])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10543 10563])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10573 10593])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10602 10622])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10632 10664]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9800 9804]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9787 10665])
+                    ("ready_to_run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10687 10691]))                          )
+                        (reparse-symbol indented_block_body) [10670 10898])
+                    ("serial_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10935 10939]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [10903 11034])
+                    ("current_time" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11070 11074]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [11039 11104])
+                    ("select_box" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11124 11128])
+                            ("box" variable nil (reparse-symbol function_parameters) [11130 11133]))                          )
+                        (reparse-symbol indented_block_body) [11109 11740])
+                    ("select_serial_port" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11768 11772])
+                            ("port" variable nil (reparse-symbol function_parameters) [11774 11778]))                          )
+                        (reparse-symbol indented_block_body) [11745 12342])
+                    ("connect_to_serial_port" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12374 12378]))                          )
+                        (reparse-symbol indented_block_body) [12347 13096])
+                    ("return_list_of_sound_cards" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13132 13136]))                          )
+                        (reparse-symbol indented_block_body) [13101 13176])
+                    ("select_sound_card" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13203 13207])
+                            ("cardname" variable nil (reparse-symbol function_parameters) [13209 13217]))                          )
+                        (reparse-symbol indented_block_body) [13181 13681])
+                    ("parse_event_from_line" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13922 13926])
+                            ("line" variable nil (reparse-symbol function_parameters) [13927 13931]))                          )
+                        (reparse-symbol indented_block_body) [13896 14897])
+                    ("query_events" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14919 14923])
+                            ("timeout" variable nil (reparse-symbol function_parameters) [14925 14932]))                          )
+                        (reparse-symbol indented_block_body) [14902 15928])
+                    ("write_command" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15952 15956])
+                            ("command" variable nil (reparse-symbol function_parameters) [15958 15965]))                          )
+                        (reparse-symbol indented_block_body) [15934 16071])
+                    ("feeder_on" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16090 16094]))                          )
+                        (reparse-symbol indented_block_body) [16076 16200])
+                    ("feeder_off" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16220 16224])
+                            ("do_warning" variable nil (reparse-symbol function_parameters) [16226 16236]))                          )
+                        (reparse-symbol indented_block_body) [16205 16414])
+                    ("light_on" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16440 16444]))                          )
+                        (reparse-symbol indented_block_body) [16427 16549])
+                    ("light_off" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16567 16571]))                          )
+                        (reparse-symbol indented_block_body) [16553 16676])
+                    ("pulse_on" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16693 16697]))                          )
+                        (reparse-symbol indented_block_body) [16680 16791])
+                    ("pulse_off" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16809 16813]))                          )
+                        (reparse-symbol indented_block_body) [16795 16907])
+                    ("pulse_on_trigger" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16932 16936]))                          )
+                        (reparse-symbol indented_block_body) [16911 17030])
+                    ("set_pulse_period" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17055 17059])
+                            ("period" variable nil (reparse-symbol function_parameters) [17061 17067]))                          )
+                        (reparse-symbol indented_block_body) [17034 17147])
+                    ("set_pulse_width" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17171 17175])
+                            ("width" variable nil (reparse-symbol function_parameters) [17177 17182]))                          )
+                        (reparse-symbol indented_block_body) [17151 17261])
+                    ("sync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17275 17279]))                          )
+                        (reparse-symbol indented_block_body) [17266 17883])
+                    ("play_stim" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17902 17906])
+                            ("stimset" variable nil (reparse-symbol function_parameters) [17908 17915])
+                            ("stimulus" variable nil (reparse-symbol function_parameters) [17917 17925]))                          )
+                        (reparse-symbol indented_block_body) [17888 18129])
+                    ("play_sound" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18149 18153])
+                            ("filename" variable nil (reparse-symbol function_parameters) [18155 18163]))                          )
+                        (reparse-symbol indented_block_body) [18134 18524])
+                    ("beep" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18538 18542]))                          )
+                        (reparse-symbol indented_block_body) [18529 18601])
+                    ("beep_warning" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18631 18635]))                          )
+                        (reparse-symbol indented_block_body) [18614 18704])
+                    ("stop_sounds" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18725 18729]))                          )
+                        (reparse-symbol indented_block_body) [18709 18933])
+                    ("is_playing" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18953 18957]))                          )
+                        (reparse-symbol indented_block_body) [18938 19123])
+                    ("reload_arduino_firmware" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19157 19161]))                          )
+                        (reparse-symbol indented_block_body) [19129 19277]))                  
+                :type "class")
+                nil [9627 19277])
+            ("run_box" function (:arguments 
+              ( ("controller" variable nil (reparse-symbol function_parameters) [19293 19303])
+                ("box" variable nil (reparse-symbol function_parameters) [19305 19308]))              ) nil [19281 19982])
+            ("main_loop" function (:arguments 
+              ( ("controller" variable nil (reparse-symbol function_parameters) [19997 20007])
+                ("box" variable nil (reparse-symbol function_parameters) [20009 20012]))              ) nil [19983 22283])
+            ("load_and_verify_stimset" function
+               (:documentation "loads and verifys that the stimset 'stim_name', and checks that
+    the stimset is properly formatted, that all stimuli exist, ext"
+                :arguments 
+                  ( ("stimuli_dir" variable nil (reparse-symbol function_parameters) [22314 22325])
+                    ("stim_name" variable nil (reparse-symbol function_parameters) [22327 22336]))                  )
+                nil [22286 24196])
+            ("if" code nil nil [24199 28435]))          
+    :file "behavior_controller.py"
+    :pointmax 28582
+    :fsize 28581
+    :lastmodtime '(21991 13056 538618 426000)
+    :unmatched-syntax '((INDENT_BLOCK 24087 . 24172) (NEWLINE 24086 . 24087) (COLON 24085 . 24086) (TRY 22879 . 22882) (AS 24081 . 24083) (INDENT_BLOCK 22268 . 22283) (NEWLINE 22267 . 22268) (COLON 22266 . 22267) (AS 22262 . 22264) (EXCEPT 22245 . 22251) (INDENT_BLOCK 21867 . 22241) (NEWLINE 21822 . 21823) (COLON 21821 . 21822) (TRY 20019 . 20022) (AS 21817 . 21819))
+    )
+   (semanticdb-table "loop_iterations.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("time" include nil nil [1 12])
+            ("datetime" include nil nil [13 28])
+            ("numpy" include nil nil [29 47])
+            ("scipy" include nil nil [48 66])
+            ("iterations" variable nil nil [164 179])
+            ("discrimination_iteration" function
+               (:documentation " This function runs int the main loop in discrimination mode"
+                :arguments 
+                  ( ("controller" variable nil (reparse-symbol function_parameters) [209 219])
+                    ("box" variable nil (reparse-symbol function_parameters) [221 224])
+                    ("events_since_last" variable nil (reparse-symbol function_parameters) [226 243]))                  )
+                nil [180 5177])
+            ("iterations" variable nil nil [5177 5232])
+            ("discrimination_singleport_iteration" function
+               (:documentation " This function runs int the main loop in discrimination mode"
+                :arguments 
+                  ( ("controller" variable nil (reparse-symbol function_parameters) [5274 5284])
+                    ("box" variable nil (reparse-symbol function_parameters) [5286 5289])
+                    ("events_since_last" variable nil (reparse-symbol function_parameters) [5291 5308]))                  )
+                nil [5234 9606])
+            ("iterations" variable nil nil [9606 9683])
+            ("tutoring_iteration" function (:arguments 
+              ( ("controller" variable nil (reparse-symbol function_parameters) [14092 14102])
+                ("box" variable nil (reparse-symbol function_parameters) [14104 14107])
+                ("events_since_last" variable nil (reparse-symbol function_parameters) [14109 14126]))              ) nil [14069 17227])
+            ("iterations" variable nil nil [17227 17270])
+            ("song_plus_food_iteration" function (:arguments 
+              ( ("controller" variable nil (reparse-symbol function_parameters) [17301 17311])
+                ("box" variable nil (reparse-symbol function_parameters) [17313 17316])
+                ("events_since_last" variable nil (reparse-symbol function_parameters) [17318 17335]))              ) nil [17272 19479])
+            ("iterations" variable nil nil [19479 19534])
+            ("sequence_iteration" function (:arguments 
+              ( ("controller" variable nil (reparse-symbol function_parameters) [19559 19569])
+                ("box" variable nil (reparse-symbol function_parameters) [19571 19574])
+                ("events_since_last" variable nil (reparse-symbol function_parameters) [19576 19593]))              ) nil [19536 22840])
+            ("iterations" variable nil nil [22840 22883])
+            ("sequence_singleport_iteration" function (:arguments 
+              ( ("controller" variable nil (reparse-symbol function_parameters) [22920 22930])
+                ("box" variable nil (reparse-symbol function_parameters) [22932 22935])
+                ("events_since_last" variable nil (reparse-symbol function_parameters) [22937 22954]))              ) nil [22886 26203])
+            ("iterations" variable nil nil [26203 26268])
+            ("DiscriminationStateMachine" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("pass" code nil (reparse-symbol indented_block_body) [26345 26349]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26330 26334]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [26317 26350])
+                    ("waiting_for_trial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26376 26380])
+                            ("box" variable nil (reparse-symbol function_parameters) [26382 26385]))                          )
+                        (reparse-symbol indented_block_body) [26354 26950])
+                    ("playing_song" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26972 26976]))                          )
+                        (reparse-symbol indented_block_body) [26955 27596])
+                    ("waiting_for_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27626 27630]))                          )
+                        (reparse-symbol indented_block_body) [27601 29285])
+                    ("time_out" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29376 29380]))                          )
+                        (reparse-symbol indented_block_body) [29363 29778])
+                    ("reward" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29832 29836]))                          )
+                        (reparse-symbol indented_block_body) [29821 30076]))                  
+                :type "class")
+                nil [26271 30076])
+            ("discrimination_laser_iteration" function
+               (:documentation " This function runs int the main loop in discrimination mode"
+                :arguments 
+                  ( ("controller" variable nil (reparse-symbol function_parameters) [30157 30167])
+                    ("box" variable nil (reparse-symbol function_parameters) [30169 30172])
+                    ("events_since_last" variable nil (reparse-symbol function_parameters) [30174 30191]))                  )
+                nil [30122 35152])
+            ("iterations" variable nil nil [35152 35219])
+            ("playback_and_count_iteration" function (:arguments 
+              ( ("controller" variable nil (reparse-symbol function_parameters) [35255 35265])
+                ("box" variable nil (reparse-symbol function_parameters) [35267 35270])
+                ("events_since_last" variable nil (reparse-symbol function_parameters) [35272 35289]))              ) nil [35222 38451])
+            ("iterations" variable nil nil [38451 38514]))          
+    :file "loop_iterations.py"
+    :pointmax 38914
+    :fsize 38913
+    :lastmodtime '(21991 13056 546618 426000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "trial_generators.py"
+    :file "trial_generators.py"
+    :fsize 16148
+    :lastmodtime '(21979 47329 577348 770000)
+    )
+   (semanticdb-table "audiorecord_aa.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("alsaaudio" include nil nil [1 23])
+            ("wave" include nil nil [24 35])
+            ("audioop" include nil nil [36 50])
+            ("collections" include nil nil [51 80])
+            ("os" include nil nil [81 90])
+            ("time" include nil nil [91 102])
+            ("math" include nil nil [103 114])
+            ("weakref" include nil nil [115 129])
+            ("CHUNK" variable nil nil [132 143])
+            ("FORMAT" variable nil nil [189 218])
+            ("CHANNELS" variable nil nil [279 291])
+            ("RATE" variable nil nil [312 324])
+            ("THRESHOLD" variable nil nil [345 361])
+            ("SILENCE_LIMIT" variable nil nil [384 401])
+            ("PREV_AUDIO" variable nil nil [460 476])
+            ("MIN_DUR" variable nil nil [518 527])
+            ("INPUT" variable nil nil [556 570])
+            ("OUTPUT_DIR" variable nil nil [571 592])
+            ("AudioRecord" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [658 685])
+                            ("self" variable nil (reparse-symbol indented_block_body) [694 743])
+                            ("self" variable nil (reparse-symbol indented_block_body) [752 786])
+                            ("self" variable nil (reparse-symbol indented_block_body) [795 812])
+                            ("self" variable nil (reparse-symbol indented_block_body) [821 838])
+                            ("self" variable nil (reparse-symbol indented_block_body) [847 904])
+                            ("self" variable nil (reparse-symbol indented_block_body) [913 978])
+                            ("self" variable nil (reparse-symbol indented_block_body) [987 1046])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1055 1108])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1117 1167])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1176 1194]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [630 634])
+                            ("box" variable nil (reparse-symbol function_parameters) [636 639])
+                            ("config" variable nil (reparse-symbol function_parameters) [641 647]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [617 1195])
+                    ("audio_int" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1214 1218])
+                            ("num_samples" variable nil (reparse-symbol function_parameters) [1220 1231]))                          
+                        :documentation " Gets max audio intensity for a bunch of chunks of data. Useful for setting threshold.
+        ")
+                        (reparse-symbol indented_block_body) [1200 1977])
+                    ("record_song" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1998 2002]))                          )
+                        (reparse-symbol indented_block_body) [1982 4244]))                  
+                :type "class")
+                nil [594 4244])
+            ("save_audio" function
+               (:documentation " Saves mic data to  WAV file. Returns filename of saved
+ file "
+                :arguments 
+                  ( ("data" variable nil (reparse-symbol function_parameters) [4260 4264]))                  )
+                nil [4245 4640])
+            ("if" code nil nil [4642 4758]))          
+    :file "audiorecord_aa.py"
+    :pointmax 4670
+    :fsize 3410
+    :lastmodtime '(21975 41563 824063 471000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_sound.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [1 11])
+            ("PyQt4.QtGui" include nil nil [12 56])
+            ("PyQt4" include nil nil [57 88])
+            ("qt.liveaudio" include nil nil [89 126])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [250 254]))              ) nil [241 516])
+            ("if" code nil nil [517 563]))          
+    :file "test_sound.py"
+    :pointmax 563
+    :fsize 562
+    :lastmodtime '(21991 13056 546618 426000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!behavior_controller!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

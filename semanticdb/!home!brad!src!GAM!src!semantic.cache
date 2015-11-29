@@ -1,0 +1,39 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(top_srcdir)/include" "-I$(top_srcdir)/lib" "-I$(top_srcdir)/lib/include")) nil [1 84])
+            ("LDADD" variable (:default-value ("-L$(top_srcdir)/lib" "-lgam")) nil [84 118])
+            ("AM_CXXFLAGS" variable (:default-value ("-Wall" "-O3" "-pthread" "-fno-strict-aliasing")) nil [182 236])
+            ("AM_LDFLAGS" variable nil nil [262 275])
+            ("phony" function (:arguments ("build_paired_PCAP_ctgs" "build_paired_Arachne_ctgs" "build_paired_PCAP_sctgs_from_pctgs" "build_paired_Arachne_sctgs_from_pctgs" "fix_negative_gaps" "fix_negative_gaps_psctgs")) nil [276 479])
+            ("PCAP_PCTGS_SRC" variable (:default-value ("build_paired_PCAP_ctgs.cc")) nil [480 526])
+            ("ARACHNE_PCTGS_SRC" variable (:default-value ("build_paired_Arachne_ctgs.cc")) nil [526 577])
+            ("PCAP_PSCTGS_FROM_PCTGS_SRC" variable (:default-value ("build_paired_PCAP_sctgs_from_pctgs.cc")) nil [577 647])
+            ("ARACHNE_PSCTGS_FROM_PCTGS_SRC" variable (:default-value ("build_paired_Arachne_sctgs_from_pctgs.cc")) nil [647 723])
+            ("FIX_NEGATIVE_GAPS_SRC" variable (:default-value ("fix_negative_gaps.cc")) nil [723 770])
+            ("FIX_NEGATIVE_GAPS_PSCTGS_SRC" variable (:default-value ("fix_negative_gaps_psctgs.cc")) nil [770 831])
+            ("COMMON_SRC" variable (:default-value ("common_functions.cc" "threaded_build_pctg.cc" "threaded_negative_gap_remover.cc" "threaded_psctg_negative_gap_solver.cc")) nil [831 986])
+            ("build_paired_PCAP_ctgs_SOURCES" variable (:default-value ("$(COMMON_SRC)" "$(PCAP_PCTGS_SRC)")) nil [987 1052])
+            ("build_paired_Arachne_ctgs_SOURCES" variable (:default-value ("$(COMMON_SRC)" "$(ARACHNE_PCTGS_SRC)")) nil [1052 1123])
+            ("build_paired_PCAP_sctgs_from_pctgs_SOURCES" variable (:default-value ("$(COMMON_SRC)" "$(PCAP_PSCTGS_FROM_PCTGS_SRC)")) nil [1123 1259])
+            ("build_paired_Arachne_sctgs_from_pctgs_SOURCES" variable (:default-value ("$(COMMON_SRC)" "$(ARACHNE_PSCTGS_FROM_PCTGS_SRC)")) nil [1259 1404])
+            ("fix_negative_gaps_SOURCES" variable (:default-value ("$(COMMON_SRC)" "$(FIX_NEGATIVE_GAPS_SRC)")) nil [1404 1471])
+            ("fix_negative_gaps_psctgs_SOURCES" variable (:default-value ("$(COMMON_SRC)" "$(FIX_NEGATIVE_GAPS_PSCTGS_SRC)")) nil [1471 1552])
+            ("EXTRA_DIST" variable nil nil [1553 1568])
+            ("bin_PROGRAMS" variable (:default-value ("build_paired_PCAP_ctgs")) nil [1568 1804])
+            ("include_HEADERS" variable nil nil [1804 1822]))          
+    :file "Makefile.am"
+    :pointmax 1822
+    :fsize 1821
+    :lastmodtime '(21697 58032 116159 868000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!GAM!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

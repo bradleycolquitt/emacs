@@ -1,0 +1,727 @@
+;; Object bartab/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bartab/"
+  :tables (list 
+   (semanticdb-table "bartab.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__bartab__" variable (:constant-flag t) nil [171 181])
+            ("vector" include (:system-flag t) nil [183 200])
+            ("string" include (:system-flag t) nil [201 218])
+            ("cmath" include (:system-flag t) nil [219 235])
+            ("map" include (:system-flag t) nil [236 250])
+            ("iostream" include (:system-flag t) nil [251 270])
+            ("fstream" include (:system-flag t) nil [271 289])
+            ("UAlert.h" include nil nil [291 310])
+            ("UGetopts.h" include nil nil [311 332])
+            ("db_con.h" include nil nil [333 352])
+            ("bartab_params.h" include nil nil [353 379])
+            ("xplor" type
+               (:members 
+                  ( ("gParameters" variable (:type ("XSStringMap" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [399 423])
+                    ("gDBCon" variable
+                       (:pointer 1
+                        :type ("db_con" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [424 439])
+                    ("main" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [451 460])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [461 481]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [441 482])
+                    ("init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("opts" variable
+                               (:reference 1
+                                :type ("UGetopts" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [493 508]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [483 509])
+                    ("breakdown" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [510 527])
+                    ("config_dbcon" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [528 548])
+                    ("output_stats" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seq_len" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [567 593])
+                            ("trim_len" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [594 621]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [549 622])
+                    ("parse_dbnames" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("opts" variable
+                               (:reference 1
+                                :type ("UGetopts" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [642 657]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [623 658])
+                    ("parse_arguments" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("opts" variable
+                               (:reference 1
+                                :type ("UGetopts" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [680 695]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [659 696])
+                    ("check_options" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [697 718])
+                    ("open_files" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [719 737])
+                    ("show_help" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [738 755])
+                    ("show_help_line" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sw" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [776 791])
+                            ("line1" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [792 810])
+                            ("line2" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [811 830])
+                            ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [831 846])
+                            ("line3" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [848 867])
+                            ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [868 883]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [756 885])
+                    ("output_params" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("io" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [905 922]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [886 923])
+                    ("new_process_sequences" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [924 953])
+                    ("process_sequences" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [954 979])
+                    ("export_files" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seqs" variable
+                               (:reference 1
+                                :type ("std::multimap" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil)
+                                          ("XSNucSeq" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [998 1041]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [980 1042])
+                    ("rename" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nuc" variable
+                               (:reference 1
+                                :type ("XSNucSeq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1055 1069])
+                            ("rename_str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1070 1094]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1043 1095])
+                    ("derep_files" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1096 1115])
+                    ("derep_file" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("in_fa" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1132 1150]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1116 1151])
+                    ("add_to_master" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("primary_key" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1171 1196])
+                            ("tag_key" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1197 1218])
+                            ("nuc" variable
+                               (:pointer 1
+                                :type ("XSNucSeq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1219 1233]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1152 1234])
+                    ("export_data" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1235 1254])
+                    ("count_tagmap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tm" variable
+                               (:reference 1
+                                :type ("tagmap_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1272 1285]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1255 1286])
+                    ("read_map_file" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1351 1372])
+                    ("make_multimap_file" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1373 1399])
+                    ("barcode_for_shortbarcode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nuc" variable
+                               (:reference 1
+                                :type ("XSNucSeq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1437 1451])
+                            ("sbc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1452 1475]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1400 1476])
+                    ("init_params" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1477 1496])
+                    ("params_from_globals" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1497 1524])
+                    ("globals_from_params" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1525 1552])
+                    ("read_defaults" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1553 1574])
+                    ("write_defaults" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1575 1597])
+                    ("dump_barmeta" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("io" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1616 1633]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1598 1634])
+                    ("accept_length" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seq" variable
+                               (:reference 1
+                                :type ("XSNucSeq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1723 1737])
+                            ("trim5" variable
+                               (:reference 1
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1738 1752])
+                            ("trim3" variable
+                               (:reference 1
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1753 1767]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1704 1768])
+                    ("accept_barcode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bar" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1789 1806]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1769 1807])
+                    ("save_sequences" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seqs" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("XSNucSeq" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1936 1964])
+                            ("seq_path" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1965 1987])
+                            ("qual_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1988 2017])
+                            ("strip_repcount" variable (:type "bool") (reparse-symbol arg-sub-list) [2018 2038]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1916 2039])
+                    ("save_sequence" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seq" variable
+                               (:reference 1
+                                :type ("XSNucSeq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2059 2073])
+                            ("seq_path" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2074 2096])
+                            ("qual_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2097 2126])
+                            ("strip_repcount" variable (:type "bool") (reparse-symbol arg-sub-list) [2127 2147]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2040 2148])
+                    ("save_sequence" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seq" variable
+                               (:reference 1
+                                :type ("XSNucSeq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2168 2182])
+                            ("seq_stream" variable
+                               (:reference 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2183 2209])
+                            ("qual_stream" variable
+                               (:reference 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2210 2237])
+                            ("strip_repcount" variable (:type "bool") (reparse-symbol arg-sub-list) [2238 2258]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2149 2259])
+                    ("is_ambiguous" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seq" variable
+                               (:reference 1
+                                :type ("XSNucSeq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2278 2292])
+                            ("trim5" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2293 2306])
+                            ("trim3" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2307 2320]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2260 2321])
+                    ("describe" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("io" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2345 2362]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2322 2363])
+                    ("test" function
+                       (:prototype-flag t
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2364 2385]))                  
+                :type "namespace")
+                nil [381 2431]))          
+    :file "bartab.h"
+    :pointmax 2439
+    :fsize 2438
+    :lastmodtime '(20225 10823 0 0)
+    :unmatched-syntax '((semantic-list 879 . 883) (punctuation 866 . 867) (semantic-list 842 . 846) (punctuation 829 . 830))
+    :lexical-table 
+        '(("__bartab__")
+          )
+
+    )
+   (semanticdb-table "db_con.h"
+    :file "db_con.h"
+    :fsize 2049
+    :lastmodtime '(20225 10824 0 0)
+    )
+   (semanticdb-table "bartab_params.h"
+    :file "bartab_params.h"
+    :fsize 6262
+    :lastmodtime '(20235 21618 0 0)
+    )
+   (semanticdb-table "bartab.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("bartab.h" include nil nil [146 165])
+            ("UMapFile.h" include nil nil [166 187])
+            ("UTimer.h" include nil nil [188 207])
+            ("db_con.h" include nil nil [208 227])
+            ("dbflat_con.h" include nil nil [228 251])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [253 273])
+            ("xplor" using (:type ("xplor" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [274 296])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [309 318])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [319 339]))                  
+                :type "int")
+                nil [299 1093])
+            ("init" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("opts" variable
+                       (:reference 1
+                        :type ("UGetopts" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1112 1127]))                  
+                :type "void")
+                nil [1095 1562])
+            ("make_multimap_file" function
+               (:parent "xplor"
+                :type "bool")
+                nil [1564 2029])
+            ("breakdown" function
+               (:parent "xplor"
+                :type "void")
+                nil [2032 2076])
+            ("config_dbcon" function
+               (:parent "xplor"
+                :type "bool")
+                nil [2078 2401])
+            ("params_from_globals" function
+               (:parent "xplor"
+                :type "void")
+                nil [2403 3321])
+            ("globals_from_params" function
+               (:parent "xplor"
+                :type "void")
+                nil [3323 4203])
+            ("read_defaults" function
+               (:parent "xplor"
+                :type "void")
+                nil [4205 4363])
+            ("write_defaults" function
+               (:parent "xplor"
+                :type "void")
+                nil [4365 4501])
+            ("new_process_sequences" function
+               (:parent "xplor"
+                :type "bool")
+                nil [4503 10839])
+            ("export_files" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("seqs" variable
+                       (:reference 1
+                        :type ("std::multimap" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("XSNucSeq" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10867 10910]))                  
+                :type "bool")
+                nil [10841 12389])
+            ("process_sequences" function
+               (:parent "xplor"
+                :type "bool")
+                nil [12392 17875])
+            ("barcode_for_shortbarcode" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("nuc" variable
+                       (:reference 1
+                        :type ("XSNucSeq" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17922 17936])
+                    ("sbc" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17937 17960]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [17878 19049])
+            ("derep_files" function
+               (:parent "xplor"
+                :type "bool")
+                nil [19052 19930])
+            ("derep_file" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("in_fa" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19955 19973]))                  
+                :type "bool")
+                nil [19932 22267])
+            ("add_to_master" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("primary_key" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22296 22321])
+                    ("tag_key" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22322 22343])
+                    ("nuc" variable
+                       (:pointer 1
+                        :type ("XSNucSeq" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22344 22358]))                  
+                :type "bool")
+                nil [22270 23165])
+            ("count_tagmap" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("tm" variable
+                       (:reference 1
+                        :type ("tagmap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23191 23204]))                  
+                :type "int")
+                nil [23167 23337])
+            ("rename" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("nuc" variable
+                       (:reference 1
+                        :type ("XSNucSeq" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23358 23372])
+                    ("rename_str" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23373 23397]))                  
+                :type "bool")
+                nil [23339 24314])
+            ("export_data" function
+               (:parent "xplor"
+                :type "bool")
+                nil [24316 28307])
+            ("output_stats" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("seq_len" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28334 28360])
+                    ("trim_len" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28361 28388]))                  
+                :type "void")
+                nil [28309 31157])
+            ("accept_length" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("seq" variable
+                       (:reference 1
+                        :type ("XSNucSeq" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31186 31200])
+                    ("trim5" variable
+                       (:reference 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31201 31215])
+                    ("trim3" variable
+                       (:reference 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31216 31230]))                  
+                :type "bool")
+                nil [31159 32725])
+            ("is_ambiguous" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("seq" variable
+                       (:reference 1
+                        :type ("XSNucSeq" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32753 32767])
+                    ("trim5" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32768 32781])
+                    ("trim3" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32782 32795]))                  
+                :type "bool")
+                nil [32727 33017])
+            ("save_sequences" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("seqs" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("XSNucSeq" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [33046 33074])
+                    ("seq_path" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33075 33097])
+                    ("qual_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33098 33127])
+                    ("strip_repcount" variable (:type "bool") (reparse-symbol arg-sub-list) [33128 33148]))                  
+                :type "bool")
+                nil [33019 33457])
+            ("save_sequence" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("seq" variable
+                       (:reference 1
+                        :type ("XSNucSeq" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33487 33501])
+                    ("seq_path" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33502 33524])
+                    ("qual_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33525 33554])
+                    ("strip_repcount" variable (:type "bool") (reparse-symbol arg-sub-list) [33555 33575]))                  
+                :type "bool")
+                nil [33460 34180])
+            ("save_sequence" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("seq" variable
+                       (:reference 1
+                        :type ("XSNucSeq" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34334 34348])
+                    ("seq_stream" variable
+                       (:reference 1
+                        :type ("std::ofstream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34349 34375])
+                    ("qual_stream" variable
+                       (:reference 1
+                        :type ("std::ofstream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34376 34403])
+                    ("strip_repcount" variable (:type "bool") (reparse-symbol arg-sub-list) [34404 34424]))                  
+                :type "bool")
+                nil [34307 34928])
+            ("read_map_file" function
+               (:parent "xplor"
+                :type "bool")
+                nil [34932 39788])
+            ("dump_barmeta" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("io" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39815 39832]))                  
+                :type "void")
+                nil [39790 40188])
+            ("parse_dbnames" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("opts" variable
+                       (:reference 1
+                        :type ("UGetopts" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40216 40231]))                  
+                :type "bool")
+                nil [40190 40860])
+            ("parse_arguments" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("opts" variable
+                       (:reference 1
+                        :type ("UGetopts" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40890 40905]))                  
+                :type "bool")
+                nil [40862 43497])
+            ("check_options" function
+               (:parent "xplor"
+                :type "bool")
+                nil [43499 44658])
+            ("open_files" function
+               (:parent "xplor"
+                :type "void")
+                nil [44660 47830])
+            ("output_params" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("io" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47858 47870]))                  
+                :type "void")
+                nil [47832 50830])
+            ("describe" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("io" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50862 50879]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [50832 51084])
+            ("show_help" function
+               (:parent "xplor"
+                :type "bool")
+                nil [51086 55052])
+            ("show_help_line" function
+               (:parent "xplor"
+                :arguments 
+                  ( ("sw" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55081 55096])
+                    ("line1" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55097 55115])
+                    ("line2" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55116 55134])
+                    ("line3" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55135 55153]))                  
+                :type "bool")
+                nil [55054 55517])
+            ("test" function
+               (:parent "xplor"
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [55519 56459]))          
+    :file "bartab.cpp"
+    :pointmax 56460
+    :fsize 56459
+    :lastmodtime '(20235 22342 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dbflat_con.h"
+    :file "dbflat_con.h"
+    :fsize 1354
+    :lastmodtime '(20225 10824 0 0)
+    )
+   )
+  :file "!home!brad!third-party!xstk!xstkcpp!app_src!bartab!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

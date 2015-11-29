@@ -1,0 +1,16 @@
+;; Object config_files/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config_files/"
+  :tables (list 
+   (semanticdb-table "playback_test2.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "playback_test2.c"
+    :pointmax 1
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!behavior_controller!config_files!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

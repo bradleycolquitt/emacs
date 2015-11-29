@@ -1,0 +1,666 @@
+;; Object python/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python/"
+  :tables (list 
+   (semanticdb-table "bc_test.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("unittest" include nil nil [25 40])
+            ("sys" include nil nil [42 52])
+            ("sqlite3" include nil nil [53 67])
+            ("traceback" include nil nil [68 90])
+            ("subprocess" include nil nil [91 119])
+            ("pyximport" include nil nil [121 137])
+            ("bc_splitter_cy" include nil nil [159 186])
+            ("bam_sql_cy" include nil nil [187 210])
+            ("path" variable nil nil [212 251])
+            ("base" variable nil nil [252 275])
+            ("test_fastq" variable nil nil [276 323])
+            ("test_bam" variable nil nil [324 364])
+            ("test_db" variable nil nil [365 403])
+            ("BarcodeSplitterTest" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [465 469]))                          )
+                        (reparse-symbol indented_block_body) [455 653])
+                    ("test_read_fastq_sql" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [682 686]))                          )
+                        (reparse-symbol indented_block_body) [658 793])
+                    ("test_bam_sql" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [815 819]))                          )
+                        (reparse-symbol indented_block_body) [798 1263]))                  
+                :type "class")
+                nil [405 1263])
+            ("if" code nil nil [1265 1421]))          
+    :file "bc_test.py"
+    :pointmax 1421
+    :fsize 1420
+    :lastmodtime '(21650 309 941629 937000)
+    :unmatched-syntax '((INDENT_BLOCK 1131 . 1263) (NEWLINE 1130 . 1131) (COLON 1129 . 1130) (FINALLY 1122 . 1129))
+    )
+   (semanticdb-table "bc_splitter_cy.pyx"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [273 283])
+            ("os" include nil nil [284 293])
+            ("pdb" include nil nil [294 304])
+            ("sqlite3" include nil nil [305 319])
+            ("Levenshtein" include nil nil [320 345])
+            ("pyximport" include nil nil [347 363])
+            ("bc_util_cy" include nil nil [385 413])
+            ("fasta_cy" include nil nil [414 438])
+            ("bool" code nil nil [461 465])
+            ("BARCODES" variable nil nil [467 504])
+            ("extracter" type
+               (:members 
+                  ( ("fastq_num_records" code nil (reparse-symbol indented_block_body) [628 645])
+                    ("barcodes" code nil (reparse-symbol indented_block_body) [660 668])
+                    ("bc_sub" code nil (reparse-symbol indented_block_body) [684 690])
+                    ("umi_sub" code nil (reparse-symbol indented_block_body) [706 713])
+                    ("sseq" code nil (reparse-symbol indented_block_body) [727 731])
+                    ("nofilter_bc" code nil (reparse-symbol indented_block_body) [746 757])
+                    ("nofilter_umi" code nil (reparse-symbol indented_block_body) [772 784])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [907 937])
+                            ("self" variable nil (reparse-symbol indented_block_body) [974 1002])
+                            ("if" code nil (reparse-symbol indented_block_body) [1011 1086])
+                            ("if" code nil (reparse-symbol indented_block_body) [1205 1598])
+                            ("try" code nil (reparse-symbol indented_block_body) [1635 1781])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1789 1807])
+                            ("for" code nil (reparse-symbol indented_block_body) [1816 1925])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1961 1991])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2000 2032])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2072 2092])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2101 2121])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2130 2150]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [803 807])
+                            ("fastq_fname" variable nil (reparse-symbol function_parameters) [809 820])
+                            ("dest_fname" variable nil (reparse-symbol function_parameters) [822 832])
+                            ("barcodes" variable nil (reparse-symbol function_parameters) [834 842])
+                            ("nofilter_bc" variable nil (reparse-symbol function_parameters) [844 855])
+                            ("nofilter_umi" variable nil (reparse-symbol function_parameters) [857 869]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [790 2151])
+                    ("initialize_dest" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2176 2180]))                          )
+                        (reparse-symbol indented_block_body) [2156 2376])
+                    ("get_umi" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4579 4583])
+                            ("seq" variable nil (reparse-symbol function_parameters) [4585 4588])
+                            ("qual" variable nil (reparse-symbol function_parameters) [4590 4594]))                          )
+                        (reparse-symbol indented_block_body) [4567 4802]))                  
+                :type "class")
+                nil [531 5063]))          
+    :file "bc_splitter_cy.pyx"
+    :pointmax 5063
+    :fsize 5062
+    :lastmodtime '(21678 58396 111298 99000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "setup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("distutils.core" include nil nil [1 33])
+            ("Cython.Build" include nil nil [73 107])
+            ("setup" code nil nil [109 201]))          
+    :file "setup.py"
+    :pointmax 163
+    :fsize 201
+    :lastmodtime '(21636 59102 329285 263000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "load_to_db.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [25 35])
+            ("os" include nil nil [36 45])
+            ("argparse" include nil nil [46 61])
+            ("traceback" include nil nil [62 84])
+            ("pyximport" include nil nil [86 102])
+            ("bam_sql_cy2" include nil nil [153 177])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [188 192]))              ) nil [179 1405])
+            ("if" code nil nil [1409 1455]))          
+    :file "load_to_db.py"
+    :pointmax 1440
+    :fsize 1393
+    :lastmodtime '(21677 54312 980119 360000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bam_sql_cy.pyx"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [126 135])
+            ("pysam" include nil nil [136 148])
+            ("pdb" include nil nil [149 159])
+            ("sqlite3" include nil nil [160 174])
+            ("pyximport" include nil nil [176 192])
+            ("bc_util_cy" include nil nil [214 242])
+            ("array" code nil nil [265 270])
+            ("bool" code nil nil [292 296])
+            ("BARCODES" variable nil nil [323 360])
+            ("bam_db" type
+               (:members 
+                  ( ("bam_fname" code nil (reparse-symbol indented_block_body) [394 403])
+                    ("bam" code nil (reparse-symbol indented_block_body) [420 423])
+                    ("refs" code nil (reparse-symbol indented_block_body) [439 443])
+                    ("bam_counts" code nil (reparse-symbol indented_block_body) [458 468])
+                    ("dest_fname" code nil (reparse-symbol indented_block_body) [482 492])
+                    ("conn" code nil (reparse-symbol indented_block_body) [509 513])
+                    ("c" code nil (reparse-symbol indented_block_body) [530 531])
+                    ("barcodes" code nil (reparse-symbol indented_block_body) [546 554])
+                    ("nofilter_bc" code nil (reparse-symbol indented_block_body) [569 580])
+                    ("nofilter_umi" code nil (reparse-symbol indented_block_body) [595 607])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [649 675])
+                            ("print" code nil (reparse-symbol indented_block_body) [684 704])
+                            ("self" variable nil (reparse-symbol indented_block_body) [713 760])
+                            ("self" variable nil (reparse-symbol indented_block_body) [769 800])
+                            ("self" variable nil (reparse-symbol indented_block_body) [809 843])
+                            ("self" variable nil (reparse-symbol indented_block_body) [853 881])
+                            ("self" variable nil (reparse-symbol indented_block_body) [891 957])
+                            ("self" variable nil (reparse-symbol indented_block_body) [966 993])
+                            ("try" code nil (reparse-symbol indented_block_body) [1031 1177])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1185 1203])
+                            ("for" code nil (reparse-symbol indented_block_body) [1212 1321])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1357 1387])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1396 1428]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [626 630])
+                            ("bam_fname" variable nil (reparse-symbol function_parameters) [632 641])
+                            ("dest_fname" variable nil (reparse-symbol function_parameters) [643 653])
+                            ("barcodes" variable nil (reparse-symbol function_parameters) [655 663])
+                            ("nofilter_bc" variable nil (reparse-symbol function_parameters) [665 676])
+                            ("nofilter_umi" variable nil (reparse-symbol function_parameters) [678 690]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [613 1481])
+                    ("create_reftable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4174 4178]))                          )
+                        (reparse-symbol indented_block_body) [4154 4618])
+                    ("create_indices" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4642 4646]))                          )
+                        (reparse-symbol indented_block_body) [4623 4904]))                  
+                :type "class")
+                nil [367 4904]))          
+    :file "bam_sql_cy.pyx"
+    :pointmax 4698
+    :fsize 3483
+    :lastmodtime '(21678 16966 503786 823000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "group_by_umi.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [586 595])
+            ("sys" include nil nil [596 606])
+            ("sqlite3" include nil nil [607 621])
+            ("pdb" include nil nil [622 632])
+            ("argparse" include nil nil [633 648])
+            ("traceback" include nil nil [649 671])
+            ("statement_summary" variable nil nil [673 1679])
+            ("statement_full" variable nil nil [1681 2658])
+            ("execute_join" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [2677 2679])
+                ("build" variable nil (reparse-symbol function_parameters) [2681 2686])
+                ("statement" variable nil (reparse-symbol function_parameters) [2688 2697]))              ) nil [2660 4290])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [4300 4304]))              ) nil [4291 4760])
+            ("if" code nil nil [4761 4807]))          
+    :file "group_by_umi.py"
+    :pointmax 4807
+    :fsize 4806
+    :lastmodtime '(21638 31315 561957 80000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "fasta_cy.pyx"
+    :major-mode 'python-mode
+    :tags 
+        '( ("numpy" include nil nil [25 43])
+            ("subprocess" include nil nil [44 61])
+            ("cStringIO" include nil nil [63 79])
+            ("io_method" variable nil nil [80 110]))          
+    :file "fasta_cy.pyx"
+    :pointmax 460
+    :fsize 459
+    :lastmodtime '(21678 58393 747298 127000)
+    :unmatched-syntax '((INDENT_BLOCK 361 . 460) (NAME 335 . 338) (NAME 339 . 352) (COLON 359 . 360) (INDENT_BLOCK 219 . 328) (NAME 203 . 210) (COLON 217 . 218) (INDENT_BLOCK 142 . 196) (NAME 112 . 117) (NAME 118 . 121) (NAME 122 . 130) (COLON 140 . 141) (INDENT_BLOCK 357 . 456) (NAME 331 . 334) (NAME 335 . 348) (COLON 355 . 356) (INDENT_BLOCK 215 . 324) (NAME 199 . 206) (COLON 213 . 214) (INDENT_BLOCK 138 . 192) (NAME 112 . 117) (NAME 118 . 121) (NAME 122 . 130) (COLON 136 . 137))
+    )
+   (semanticdb-table "bam_sql_cy2.pyx"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [25 34])
+            ("sys" include nil nil [35 45])
+            ("pysam" include nil nil [46 58])
+            ("pdb" include nil nil [59 69])
+            ("sqlite3" include nil nil [70 84])
+            ("re" include nil nil [85 94])
+            ("pyximport" include nil nil [96 112])
+            ("bc_util_cy" include nil nil [134 162])
+            ("array" code nil nil [185 190])
+            ("bool" code nil nil [212 216])
+            ("BARCODES" variable nil nil [218 255])
+            ("bam_db" type
+               (:members 
+                  ( ("bam_fname" code nil (reparse-symbol indented_block_body) [289 298])
+                    ("bam" code nil (reparse-symbol indented_block_body) [315 318])
+                    ("refs" code nil (reparse-symbol indented_block_body) [334 338])
+                    ("bam_counts" code nil (reparse-symbol indented_block_body) [353 363])
+                    ("dest_fname" code nil (reparse-symbol indented_block_body) [377 387])
+                    ("conn" code nil (reparse-symbol indented_block_body) [404 408])
+                    ("c" code nil (reparse-symbol indented_block_body) [425 426])
+                    ("barcodes" code nil (reparse-symbol indented_block_body) [441 449])
+                    ("nofilter_bc" code nil (reparse-symbol indented_block_body) [464 475])
+                    ("nofilter_umi" code nil (reparse-symbol indented_block_body) [490 502])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [585 611])
+                            ("print" code nil (reparse-symbol indented_block_body) [620 640])
+                            ("self" variable nil (reparse-symbol indented_block_body) [649 696])
+                            ("self" variable nil (reparse-symbol indented_block_body) [705 736])
+                            ("self" variable nil (reparse-symbol indented_block_body) [745 779])
+                            ("self" variable nil (reparse-symbol indented_block_body) [789 817])
+                            ("self" variable nil (reparse-symbol indented_block_body) [827 893])
+                            ("self" variable nil (reparse-symbol indented_block_body) [902 929])
+                            ("try" code nil (reparse-symbol indented_block_body) [967 1113])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1121 1139])
+                            ("for" code nil (reparse-symbol indented_block_body) [1148 1257])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1293 1323])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1332 1364]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [521 525])
+                            ("bam_fname" variable nil (reparse-symbol function_parameters) [527 536])
+                            ("dest_fname" variable nil (reparse-symbol function_parameters) [538 548])
+                            ("barcodes" variable nil (reparse-symbol function_parameters) [550 558])
+                            ("nofilter_bc" variable nil (reparse-symbol function_parameters) [560 571])
+                            ("nofilter_umi" variable nil (reparse-symbol function_parameters) [573 585]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [508 1376])
+                    ("readno" variable nil (reparse-symbol indented_block_body) [5029 5039])
+                    ("self" code nil (reparse-symbol indented_block_body) [5048 5072])
+                    ("self" code nil (reparse-symbol indented_block_body) [5131 5152])
+                    ("self" code nil (reparse-symbol indented_block_body) [5257 5279])
+                    ("create_reftable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5305 5309]))                          )
+                        (reparse-symbol indented_block_body) [5285 5655])
+                    ("create_indices" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5679 5683]))                          )
+                        (reparse-symbol indented_block_body) [5660 5852]))                  
+                :type "class")
+                nil [262 5852]))          
+    :file "bam_sql_cy2.pyx"
+    :pointmax 5852
+    :fsize 5851
+    :lastmodtime '(21693 44499 34394 606000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "group_by_umi2.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [586 595])
+            ("sys" include nil nil [596 606])
+            ("sqlite3" include nil nil [607 621])
+            ("pdb" include nil nil [622 632])
+            ("argparse" include nil nil [633 648])
+            ("traceback" include nil nil [649 671])
+            ("statement_summary" variable nil nil [673 1614])
+            ("statement_full" variable nil nil [1616 2529])
+            ("execute_join" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [2548 2550])
+                ("build" variable nil (reparse-symbol function_parameters) [2552 2557])
+                ("statement" variable nil (reparse-symbol function_parameters) [2559 2568]))              ) nil [2531 4160])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [4170 4174]))              ) nil [4161 4630])
+            ("if" code nil nil [4631 4677]))          
+    :file "group_by_umi2.py"
+    :pointmax 4677
+    :fsize 4676
+    :lastmodtime '(21693 64079 890802 592000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "load_to_db2.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [25 35])
+            ("os" include nil nil [36 45])
+            ("argparse" include nil nil [46 61])
+            ("traceback" include nil nil [62 84])
+            ("pyximport" include nil nil [86 102])
+            ("bam_sql_cy2" include nil nil [153 177])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [188 192]))              ) nil [179 1348])
+            ("if" code nil nil [1352 1398]))          
+    :file "load_to_db2.py"
+    :pointmax 1398
+    :fsize 1397
+    :lastmodtime '(21683 17894 179910 410000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "group_by_umi3.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [597 606])
+            ("sys" include nil nil [607 617])
+            ("sqlite3" include nil nil [618 632])
+            ("pdb" include nil nil [633 643])
+            ("argparse" include nil nil [644 659])
+            ("traceback" include nil nil [660 682])
+            ("sql_utils" include nil nil [684 727])
+            ("debug" variable nil nil [729 742])
+            ("statement_summary" variable nil nil [744 1903])
+            ("statement_full" variable nil nil [1916 3170])
+            ("execute_join" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [3189 3191])
+                ("build" variable nil (reparse-symbol function_parameters) [3193 3198])
+                ("statement" variable nil (reparse-symbol function_parameters) [3200 3209])
+                ("anno" variable nil (reparse-symbol function_parameters) [3211 3215]))              ) nil [3172 5017])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [5027 5031]))              ) nil [5018 5589])
+            ("if" code nil nil [5590 5636]))          
+    :file "group_by_umi3.py"
+    :pointmax 5636
+    :fsize 5392
+    :lastmodtime '(21792 36139 179421 300000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sql_utils.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [1 11])
+            ("apsw" include nil nil [28 39])
+            ("printExplainQueryPlan" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [67 69])
+                ("stmt" variable nil (reparse-symbol function_parameters) [71 75])
+                ("bindings" variable nil (reparse-symbol function_parameters) [77 85]))              ) nil [41 236])
+            ("read_sql" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [282 287]))              ) nil [269 351]))          
+    :file "sql_utils.py"
+    :pointmax 351
+    :fsize 350
+    :lastmodtime '(21804 14466 774290 209000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "anno_join.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [597 606])
+            ("sys" include nil nil [607 617])
+            ("sqlite3" include nil nil [618 632])
+            ("pdb" include nil nil [633 643])
+            ("argparse" include nil nil [644 659])
+            ("traceback" include nil nil [660 682])
+            ("sql_utils" include nil nil [684 727])
+            ("debug" variable nil nil [729 741])
+            ("statement_summary" variable nil nil [743 1902])
+            ("create_table_full" variable nil nil [1904 2374])
+            ("execute_join" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [3896 3898])
+                ("build" variable nil (reparse-symbol function_parameters) [3900 3905])
+                ("statement" variable nil (reparse-symbol function_parameters) [3907 3916])
+                ("anno" variable nil (reparse-symbol function_parameters) [3918 3922]))              ) nil [3879 6022])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [6032 6036]))              ) nil [6023 6594])
+            ("if" code nil nil [6595 6641]))          
+    :file "anno_join.py"
+    :pointmax 5670
+    :fsize 5669
+    :lastmodtime '(21798 43609 264635 470000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "anno_join_chrom.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [597 606])
+            ("sys" include nil nil [607 617])
+            ("sqlite3" include nil nil [618 632])
+            ("pdb" include nil nil [633 643])
+            ("argparse" include nil nil [644 659])
+            ("traceback" include nil nil [660 682])
+            ("sql_utils" include nil nil [684 727])
+            ("debug" variable nil nil [729 741])
+            ("statement_summary" variable nil nil [743 1902])
+            ("statement_full" variable nil nil [1904 3179])
+            ("execute_join" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [3198 3200])
+                ("build" variable nil (reparse-symbol function_parameters) [3202 3207])
+                ("statement" variable nil (reparse-symbol function_parameters) [3209 3218])
+                ("anno" variable nil (reparse-symbol function_parameters) [3220 3224]))              ) nil [3181 5051])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [5061 5065]))              ) nil [5052 5623])
+            ("if" code nil nil [5624 5670]))          
+    :file "anno_join_chrom.py"
+    :pointmax 5670
+    :fsize 5669
+    :lastmodtime '(21798 56157 392384 242000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "anno_join_chrom2.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [597 606])
+            ("sys" include nil nil [607 617])
+            ("apsw" include nil nil [618 629])
+            ("pdb" include nil nil [630 640])
+            ("argparse" include nil nil [641 656])
+            ("traceback" include nil nil [657 679])
+            ("sql_utils" include nil nil [681 704])
+            ("EXEC_PATH" variable nil nil [705 760])
+            ("debug" variable nil nil [762 774])
+            ("execute_join" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [793 795])
+                ("build" variable nil (reparse-symbol function_parameters) [797 802])
+                ("statement" variable nil (reparse-symbol function_parameters) [804 813])
+                ("anno" variable nil (reparse-symbol function_parameters) [815 819]))              ) nil [776 3333])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [3604 3608]))              ) nil [3595 4166])
+            ("if" code nil nil [4167 4213]))          
+    :file "anno_join_chrom2.py"
+    :pointmax 4140
+    :fsize 4142
+    :lastmodtime '(21804 14250 718293 349000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "aggregate_umi.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [25 34])
+            ("sys" include nil nil [35 45])
+            ("sqlite3" include nil nil [46 60])
+            ("pdb" include nil nil [61 71])
+            ("argparse" include nil nil [72 87])
+            ("traceback" include nil nil [88 110])
+            ("sql_utils" include nil nil [112 135])
+            ("EXEC_PATH" variable nil nil [136 191])
+            ("debug" variable nil nil [193 205])
+            ("execute_join" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [224 226])
+                ("build" variable nil (reparse-symbol function_parameters) [228 233]))              ) nil [207 1603])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [1614 1618]))              ) nil [1605 1947])
+            ("if" code nil nil [1948 1994]))          
+    :file "aggregate_umi.py"
+    :pointmax 1767
+    :fsize 1993
+    :lastmodtime '(21799 10106 571994 125000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "split_bc.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [25 35])
+            ("argparse" include nil nil [36 51])
+            ("pyximport" include nil nil [53 69])
+            ("split_bc_to_file" include nil nil [91 120])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [131 135]))              ) nil [122 322])
+            ("if" code nil nil [323 369]))          
+    :file "split_bc.py"
+    :pointmax 369
+    :fsize 368
+    :lastmodtime '(21636 59557 97270 609000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "split_bc_to_file.pyx"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [244 254])
+            ("os" include nil nil [255 264])
+            ("pdb" include nil nil [265 275])
+            ("gzip" include nil nil [276 287])
+            ("Levenshtein" include nil nil [288 313])
+            ("pyximport" include nil nil [315 331])
+            ("bc_util_cy" include nil nil [353 381])
+            ("fasta_cy" include nil nil [382 406])
+            ("BARCODES" variable nil nil [408 452])
+            ("extracter" type
+               (:members 
+                  ( ("fastq_num_records" code nil (reparse-symbol indented_block_body) [695 712])
+                    ("barcodes" code nil (reparse-symbol indented_block_body) [727 735])
+                    ("bc_end" code nil (reparse-symbol indented_block_body) [749 755])
+                    ("output_files" code nil (reparse-symbol indented_block_body) [770 782])
+                    ("bc_sub" code nil (reparse-symbol indented_block_body) [798 804])
+                    ("umi_sub" code nil (reparse-symbol indented_block_body) [820 827])
+                    ("sseq" code nil (reparse-symbol indented_block_body) [841 845])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [919 949])
+                            ("print" code nil (reparse-symbol indented_block_body) [958 989])
+                            ("barcodes_file" variable nil (reparse-symbol indented_block_body) [1027 1057])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1066 1084])
+                            ("for" code nil (reparse-symbol indented_block_body) [1093 1222])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1230 1262])
+                            ("if" code nil (reparse-symbol indented_block_body) [1299 1361])
+                            ("basename" variable nil (reparse-symbol indented_block_body) [1369 1413])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1422 1444])
+                            ("for" code nil (reparse-symbol indented_block_body) [1454 1604])
+                            ("self" code nil (reparse-symbol indented_block_body) [1612 1696])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1735 1755])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1764 1784])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1793 1813]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [864 868])
+                            ("fastq_fname" variable nil (reparse-symbol function_parameters) [870 881]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [851 1814])
+                    ("get_umi" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3177 3181])
+                            ("seq" variable nil (reparse-symbol function_parameters) [3183 3186])
+                            ("qual" variable nil (reparse-symbol function_parameters) [3188 3192]))                          )
+                        (reparse-symbol indented_block_body) [3165 3374]))                  
+                :type "class")
+                nil [598 3574]))          
+    :file "split_bc_to_file.pyx"
+    :pointmax 3574
+    :fsize 3573
+    :lastmodtime '(21809 5749 165653 536000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "load_feature_counts.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [25 35])
+            ("re" include nil nil [36 45])
+            ("argparse" include nil nil [46 61])
+            ("sqlite3" include nil nil [62 76])
+            ("create_table" variable nil nil [78 290])
+            ("insert_record" variable nil nil [292 345])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [436 440]))              ) nil [427 1579])
+            ("if" code nil nil [1581 1627]))          
+    :file "load_feature_counts.py"
+    :pointmax 959
+    :fsize 1626
+    :lastmodtime '(21808 22270 118366 55000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "umi_pipeline.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+read in metadata file containing:
+    date
+    i7
+    read1 fastq.gz
+    read2 bam
+    gtf
+    output
+
+featureCounts
+bam_hash2
+\"\"\"" code nil nil [25 159])
+            ("os" include nil nil [162 171])
+            ("sys" include nil nil [172 182])
+            ("re" include nil nil [183 192])
+            ("shutil" include nil nil [193 206])
+            ("argparse" include nil nil [207 222])
+            ("pdb" include nil nil [223 233])
+            ("subprocess" include nil nil [234 262])
+            ("multiprocessing" include nil nil [263 295])
+            ("Meta" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [353 386])
+                            ("self" variable nil (reparse-symbol indented_block_body) [395 409])
+                            ("header" variable nil (reparse-symbol indented_block_body) [418 471])
+                            ("i" variable nil (reparse-symbol indented_block_body) [512 517])
+                            ("for" code nil (reparse-symbol indented_block_body) [526 825])
+                            ("for" code nil (reparse-symbol indented_block_body) [834 1373]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [326 330])
+                            ("meta_fname" variable nil (reparse-symbol function_parameters) [332 342]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [313 1373])
+                    ("runFeatureCounts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1399 1403]))                          )
+                        (reparse-symbol indented_block_body) [1378 2691]))                  
+                :type "class")
+                nil [297 2691])
+            ("runBamHashWorker" function (:arguments 
+              ( ("element" variable nil (reparse-symbol function_parameters) [2713 2720]))              ) nil [2692 3304])
+            ("runBamHash" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [3320 3323]))              ) nil [3305 3524])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [3534 3538]))              ) nil [3525 3728])
+            ("if" code nil nil [3730 3776]))          
+    :file "umi_pipeline.py"
+    :pointmax 3776
+    :fsize 3775
+    :lastmodtime '(21990 9981 889377 5000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!umi!python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

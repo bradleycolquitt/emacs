@@ -1,0 +1,1844 @@
+;; Object bowtie2-2.2.4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bowtie2-2.2.4/"
+  :tables (list 
+   (semanticdb-table "bt2_io.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("string" include (:system-flag t) nil [736 753])
+            ("stdexcept" include (:system-flag t) nil [754 774])
+            ("iostream" include (:system-flag t) nil [775 794])
+            ("fstream" include (:system-flag t) nil [795 813])
+            ("stdlib.h" include (:system-flag t) nil [814 833])
+            ("bt2_idx.h" include nil nil [834 854])
+            ("iomanip" include (:system-flag t) nil [855 873])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [875 895])
+            ("readIntoMemory" function
+               (:parent "Ebwt"
+                :arguments 
+                  ( ("color" variable (:type "int") (reparse-symbol arg-sub-list) [1174 1184])
+                    ("needEntireRev" variable (:type "int") (reparse-symbol arg-sub-list) [1186 1204])
+                    ("loadSASamp" variable (:type "bool") (reparse-symbol arg-sub-list) [1206 1222])
+                    ("loadFtab" variable (:type "bool") (reparse-symbol arg-sub-list) [1224 1238])
+                    ("loadRstarts" variable (:type "bool") (reparse-symbol arg-sub-list) [1240 1257])
+                    ("justHeader" variable (:type "bool") (reparse-symbol arg-sub-list) [1259 1275])
+                    ("params" variable
+                       (:pointer 1
+                        :type ("EbwtParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1277 1296])
+                    ("mmSweep" variable (:type "bool") (reparse-symbol arg-sub-list) [1298 1311])
+                    ("loadNames" variable (:type "bool") (reparse-symbol arg-sub-list) [1313 1328])
+                    ("startVerbose" variable (:type "bool") (reparse-symbol arg-sub-list) [1330 1348]))                  
+                :type "void")
+                nil [1146 20060])
+            ("readEbwtRefnames" function
+               (:arguments 
+                  ( ("fin" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20200 20210])
+                    ("refnames" variable
+                       (:reference 1
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20211 20235]))                  
+                :type "void")
+                nil [20178 22431])
+            ("readEbwtRefnames" function
+               (:arguments 
+                  ( ("instr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22554 22574])
+                    ("refnames" variable
+                       (:reference 1
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22575 22599]))                  
+                :type "void")
+                nil [22532 22899])
+            ("readFlags" function
+               (:parent "Ebwt"
+                :arguments 
+                  ( ("instr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22991 23011]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [22967 23751])
+            ("readEbwtColor" function
+               (:arguments 
+                  ( ("instr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23862 23882]))                  
+                :type "bool")
+                nil [23843 24022])
+            ("readEntireReverse" function
+               (:arguments 
+                  ( ("instr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24144 24164]))                  
+                :type "bool")
+                nil [24121 24309])
+            ("writeFromMemory" function
+               (:parent "Ebwt"
+                :arguments 
+                  ( ("justHeader" variable (:type "bool") (reparse-symbol arg-sub-list) [24556 24572])
+                    ("out1" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24600 24614])
+                    ("out2" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24642 24656]))                  
+                :type "void")
+                nil [24529 27420])
+            ("writeFromMemory" function
+               (:parent "Ebwt"
+                :arguments 
+                  ( ("justHeader" variable (:type "bool") (reparse-symbol arg-sub-list) [27877 27893])
+                    ("out1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27921 27940])
+                    ("out2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27968 27987]))                  
+                :type "void")
+                nil [27850 29837])
+            ("szsToDisk" function
+               (:parent "Ebwt"
+                :arguments 
+                  ( ("szs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("RefRecord" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29934 29962])
+                    ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29963 29975])
+                    ("reverse" variable (:type "int") (reparse-symbol arg-sub-list) [29976 29988]))                  
+                :type "void")
+                nil [29913 30802]))          
+    :file "bt2_io.cpp"
+    :pointmax 30803
+    :fsize 30802
+    :lastmodtime '(21370 42054 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bt2_idx.h"
+    :file "bt2_idx.h"
+    :fsize 96240
+    :lastmodtime '(21370 42054 0 0)
+    )
+   (semanticdb-table "bt2_search.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [736 755])
+            ("iostream" include (:system-flag t) nil [756 775])
+            ("fstream" include (:system-flag t) nil [776 794])
+            ("string" include (:system-flag t) nil [795 812])
+            ("cassert" include (:system-flag t) nil [813 831])
+            ("stdexcept" include (:system-flag t) nil [832 852])
+            ("getopt.h" include (:system-flag t) nil [853 872])
+            ("math.h" include (:system-flag t) nil [873 890])
+            ("utility" include (:system-flag t) nil [891 909])
+            ("limits" include (:system-flag t) nil [910 927])
+            ("alphabet.h" include nil nil [928 949])
+            ("assert_helpers.h" include nil nil [950 977])
+            ("endian_swap.h" include nil nil [978 1002])
+            ("bt2_idx.h" include nil nil [1003 1023])
+            ("formats.h" include nil nil [1024 1044])
+            ("sequence_io.h" include nil nil [1045 1069])
+            ("tokenize.h" include nil nil [1070 1091])
+            ("aln_sink.h" include nil nil [1092 1113])
+            ("pat.h" include nil nil [1114 1130])
+            ("threading.h" include nil nil [1131 1153])
+            ("ds.h" include nil nil [1154 1169])
+            ("aligner_metrics.h" include nil nil [1170 1198])
+            ("sam.h" include nil nil [1199 1215])
+            ("aligner_seed.h" include nil nil [1216 1241])
+            ("aligner_seed_policy.h" include nil nil [1242 1274])
+            ("aligner_driver.h" include nil nil [1275 1302])
+            ("aligner_sw.h" include nil nil [1303 1326])
+            ("aligner_sw_driver.h" include nil nil [1327 1357])
+            ("aligner_cache.h" include nil nil [1358 1384])
+            ("util.h" include nil nil [1385 1402])
+            ("pe.h" include nil nil [1403 1418])
+            ("simple_func.h" include nil nil [1419 1443])
+            ("presets.h" include nil nil [1444 1464])
+            ("opts.h" include nil nil [1465 1482])
+            ("outq.h" include nil nil [1483 1500])
+            ("aligner_seed2.h" include nil nil [1501 1527])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1529 1549])
+            ("mates1" variable
+               (:typemodifiers ("static")
+                :type ("EList" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1551 1579])
+            ("mates2" variable
+               (:typemodifiers ("static")
+                :type ("EList" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1609 1637])
+            ("mates12" variable
+               (:typemodifiers ("static")
+                :type ("EList" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1668 1697])
+            ("adjIdxBase" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [1745 1770])
+            ("gColor" variable (:type "bool") nil [1771 1783])
+            ("gVerbose" variable (:type "int") nil [1827 1840])
+            ("startVerbose" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [1869 1894])
+            ("gQuiet" variable (:type "int") nil [1922 1933])
+            ("sanityCheck" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1984 2007])
+            ("format" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2044 2062])
+            ("origString" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [2102 2127])
+            ("seed" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2162 2178])
+            ("timing" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2206 2224])
+            ("metricsIval" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2271 2294])
+            ("metricsFile" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [2362 2388])
+            ("metricsStderr" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [2431 2457])
+            ("metricsPerRead" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [2500 2527])
+            ("allHits" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [2569 2589])
+            ("showVersion" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [2629 2653])
+            ("ipause" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2687 2705])
+            ("qUpto" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2738 2760])
+            ("gTrim5" variable (:type "int") nil [2792 2803])
+            ("gTrim3" variable (:type "int") nil [2848 2859])
+            ("offRate" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2904 2923])
+            ("solexaQuals" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [2954 2978])
+            ("phred64Quals" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [3053 3078])
+            ("integerQuals" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [3137 3162])
+            ("nthreads" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [3233 3253])
+            ("outType" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [3304 3323])
+            ("noRefNames" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [3349 3372])
+            ("khits" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [3421 3443])
+            ("mhits" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [3493 3515])
+            ("partitionSz" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [3565 3588])
+            ("useSpinlock" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [3635 3659])
+            ("fileParallel" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [3721 3746])
+            ("useShmem" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [3805 3826])
+            ("useMm" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [3870 3888])
+            ("mmSweep" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [3941 3961])
+            ("gMinInsert" variable (:type "int") nil [4030 4045])
+            ("gMaxInsert" variable (:type "int") nil [4079 4094])
+            ("gMate1fw" variable (:type "bool") nil [4128 4142])
+            ("gMate2fw" variable (:type "bool") nil [4203 4217])
+            ("gFlippedMatesOK" variable (:type "bool") nil [4278 4299])
+            ("gDovetailMatesOK" variable (:type "bool") nil [4340 4362])
+            ("gContainMatesOK" variable (:type "bool") nil [4419 4440])
+            ("gOlapMatesOK" variable (:type "bool") nil [4500 4518])
+            ("gExpandToFrag" variable (:type "bool") nil [4568 4587])
+            ("gReportDiscordant" variable (:type "bool") nil [4651 4674])
+            ("gReportMixed" variable (:type "bool") nil [4729 4747])
+            ("cacheLimit" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [4811 4838])
+            ("cacheSize" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [4885 4911])
+            ("skipReads" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [4945 4971])
+            ("gNofw" variable (:type "bool") nil [5008 5019])
+            ("gNorc" variable (:type "bool") nil [5058 5069])
+            ("fastaContLen" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [5108 5137])
+            ("fastaContFreq" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [5138 5168])
+            ("hadoopOut" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5169 5191])
+            ("fuzzy" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5236 5254])
+            ("fullRef" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5255 5275])
+            ("samTruncQname" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5276 5302])
+            ("samOmitSecSeqQual" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5345 5375])
+            ("samNoUnal" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5416 5438])
+            ("samNoHead" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5482 5504])
+            ("samNoSQ" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5551 5571])
+            ("sam_print_as" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5606 5631])
+            ("sam_print_xs" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5632 5657])
+            ("sam_print_xss" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5667 5693])
+            ("sam_print_yn" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5711 5736])
+            ("sam_print_xn" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5755 5780])
+            ("sam_print_cs" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5781 5806])
+            ("sam_print_cq" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5807 5832])
+            ("sam_print_x0" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5833 5858])
+            ("sam_print_x1" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5859 5884])
+            ("sam_print_xm" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5885 5910])
+            ("sam_print_xo" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5911 5936])
+            ("sam_print_xg" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5937 5962])
+            ("sam_print_nm" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5963 5988])
+            ("sam_print_md" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [5989 6014])
+            ("sam_print_yf" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6015 6040])
+            ("sam_print_yi" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6041 6066])
+            ("sam_print_ym" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6067 6092])
+            ("sam_print_yp" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6093 6118])
+            ("sam_print_yt" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6119 6144])
+            ("sam_print_ys" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6145 6170])
+            ("sam_print_zs" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6171 6196])
+            ("sam_print_xr" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6197 6222])
+            ("sam_print_xt" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6223 6248])
+            ("sam_print_xd" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6249 6274])
+            ("sam_print_xu" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6275 6300])
+            ("sam_print_yl" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6301 6326])
+            ("sam_print_ye" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6327 6352])
+            ("sam_print_yu" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6353 6378])
+            ("sam_print_xp" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6379 6404])
+            ("sam_print_yr" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6405 6430])
+            ("sam_print_zb" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6431 6456])
+            ("sam_print_zr" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6457 6482])
+            ("sam_print_zf" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6483 6508])
+            ("sam_print_zm" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6509 6534])
+            ("sam_print_zi" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6535 6560])
+            ("sam_print_zp" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6561 6586])
+            ("sam_print_zu" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6587 6612])
+            ("sam_print_zt" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6613 6638])
+            ("bwaSwLike" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6639 6661])
+            ("bwaSwLikeC" variable
+               (:typemodifiers ("static")
+                :type "float")
+                nil [6662 6686])
+            ("bwaSwLikeT" variable
+               (:typemodifiers ("static")
+                :type "float")
+                nil [6687 6711])
+            ("qcFilter" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [6712 6733])
+            ("gReportOverhangs" variable (:type "bool") nil [6734 6756])
+            ("rgid" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [6844 6863])
+            ("rgs" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [6909 6927])
+            ("rgs_optflag" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [6974 7000])
+            ("msample" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [7056 7076])
+            ("gGapBarrier" variable (:type "int") nil [7151 7172])
+            ("qualities" variable
+               (:typemodifiers ("static")
+                :type ("EList" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7233 7264])
+            ("qualities1" variable
+               (:typemodifiers ("static")
+                :type ("EList" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7265 7297])
+            ("qualities2" variable
+               (:typemodifiers ("static")
+                :type ("EList" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7298 7330])
+            ("polstr" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [7331 7352])
+            ("msNoCache" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [7399 7422])
+            ("bonusMatchType" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [7460 7488])
+            ("bonusMatch" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [7515 7539])
+            ("penMmcType" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [7591 7615])
+            ("penMmcMax" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [7651 7674])
+            ("penMmcMin" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [7699 7722])
+            ("penNType" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [7747 7769])
+            ("penN" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [7811 7829])
+            ("penNCatPair" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [7880 7905])
+            ("localAlign" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [7951 7975])
+            ("noisyHpolymer" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [8015 8042])
+            ("penRdGapConst" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [8168 8195])
+            ("penRfGapConst" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [8246 8273])
+            ("penRdGapLinear" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [8329 8357])
+            ("penRfGapLinear" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [8417 8445])
+            ("scoreMin" variable
+               (:typemodifiers ("static")
+                :type ("SimpleFunc" type (:type "class") nil nil))
+                nil [8504 8531])
+            ("nCeil" variable
+               (:typemodifiers ("static")
+                :type ("SimpleFunc" type (:type "class") nil nil))
+                nil [8581 8605])
+            ("msIval" variable
+               (:typemodifiers ("static")
+                :type ("SimpleFunc" type (:type "class") nil nil))
+                nil [8655 8680])
+            ("descConsExp" variable
+               (:typemodifiers ("static")
+                :type "double")
+                nil [8735 8761])
+            ("descPrioritizeRoots" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [8848 8880])
+            ("descLanding" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [8931 8957])
+            ("descentTotSz" variable
+               (:typemodifiers ("static")
+                :type ("SimpleFunc" type (:type "class") nil nil))
+                nil [9032 9063])
+            ("descentTotFmops" variable
+               (:typemodifiers ("static")
+                :type ("SimpleFunc" type (:type "class") nil nil))
+                nil [9117 9151])
+            ("multiseedMms" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [9200 9227])
+            ("multiseedLen" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [9274 9301])
+            ("multiseedOff" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [9333 9360])
+            ("seedCacheLocalMB" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [9399 9432])
+            ("seedCacheCurrentMB" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [9489 9524])
+            ("exactCacheCurrentMB" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [9575 9611])
+            ("maxhalf" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [9662 9684])
+            ("seedSumm" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [9729 9750])
+            ("doUngapped" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [9820 9843])
+            ("maxIters" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [9875 9898])
+            ("maxUg" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [9952 9972])
+            ("maxDp" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [10020 10040])
+            ("maxItersIncr" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [10078 10105])
+            ("maxEeStreak" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [10150 10176])
+            ("maxUgStreak" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [10230 10256])
+            ("maxDpStreak" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [10305 10331])
+            ("maxStreakIncr" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [10377 10405])
+            ("maxMateStreak" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [10447 10475])
+            ("doExtend" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [10528 10549])
+            ("enable8" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [10578 10598])
+            ("cminlen" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [10641 10663])
+            ("cpow2" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [10705 10725])
+            ("doTri" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [10763 10781])
+            ("defaultPreset" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [10822 10850])
+            ("ignoreQuals" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [10891 10915])
+            ("wrapper" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [10971 10993])
+            ("queries" variable
+               (:typemodifiers ("static")
+                :type ("EList" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [11058 11087])
+            ("outfile" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [11111 11133])
+            ("mapqv" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [11174 11191])
+            ("tighten" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [11232 11251])
+            ("doExactUpFront" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [11311 11338])
+            ("do1mmUpFront" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [11395 11420])
+            ("do1mmMinLen" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [11477 11503])
+            ("seedBoostThresh" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [11555 11582])
+            ("nSeedRounds" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [11650 11676])
+            ("reorder" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [11697 11717])
+            ("sampleFrac" variable
+               (:typemodifiers ("static")
+                :type "float")
+                nil [11766 11790])
+            ("arbitraryRandom" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [11841 11869])
+            ("bowtie2p5" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [11929 11951])
+            ("logDps" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [11952 11973])
+            ("logDpsOpp" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [12030 12054])
+            ("bt2index" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [12109 12132])
+            ("extra_opts" variable
+               (:typemodifiers ("static")
+                :type ("EList" type
+                     (:template-specifier 
+                        ( ("pair" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [12189 12233])
+            ("extra_opts_cur" variable
+               (:typemodifiers ("static")
+                :type ("size_t" type (:type "class") nil nil))
+                nil [12234 12263])
+            ("DMAX" variable (:constant-flag t) nil [12273 12277])
+            ("resetOptions" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [12314 22022])
+            ("short_options" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [22024 22124])
+            ("long_options" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("option" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [22126 35449])
+            ("printArgDesc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35583 35596]))                  
+                :type "void")
+                nil [35558 36370])
+            ("printUsage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36467 36480]))                  
+                :type "void")
+                nil [36444 46173])
+            ("parseInt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lower" variable (:type "int") (reparse-symbol arg-sub-list) [46388 46398])
+                    ("upper" variable (:type "int") (reparse-symbol arg-sub-list) [46399 46409])
+                    ("errmsg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46410 46429])
+                    ("arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46430 46446]))                  
+                :type "int")
+                nil [46368 46720])
+            ("parseInt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lower" variable (:type "int") (reparse-symbol arg-sub-list) [46786 46796])
+                    ("errmsg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46797 46816])
+                    ("arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46817 46833]))                  
+                :type "int")
+                nil [46766 46908])
+            ("parse" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46974 46988]))                  )
+                nil [46945 47046])
+            ("parsePair" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("pair" type
+                     (:template-specifier 
+                        ( ("T" type nil nil nil)
+                          ("T" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [47166 47182])
+                    ("delim" variable (:type "char") (reparse-symbol arg-sub-list) [47183 47194]))                  )
+                nil [47124 47365])
+            ("parseTuple" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [47480 47496])
+                    ("delim" variable (:type "char") (reparse-symbol arg-sub-list) [47497 47508])
+                    ("ret" variable
+                       (:reference 1
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47509 47523]))                  )
+                nil [47443 47673])
+            ("applyPreset" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sorig" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47701 47721])
+                    ("presets" variable
+                       (:reference 1
+                        :type ("Presets" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47722 47739]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [47675 48086])
+            ("saw_M" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [48088 48106])
+            ("saw_a" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [48107 48125])
+            ("saw_k" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [48126 48144])
+            ("presetList" variable
+               (:typemodifiers ("static")
+                :type ("EList" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [48145 48177])
+            ("parseOption" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("next_option" variable (:type "int") (reparse-symbol arg-sub-list) [48539 48555])
+                    ("arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48556 48572]))                  
+                :type "void")
+                nil [48515 63881])
+            ("parseOptions" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [63947 63956])
+                    ("argv" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [63957 63975]))                  
+                :type "void")
+                nil [63922 69375])
+            ("argv0" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [69377 69409])
+            ("createPatsrcFactory" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("_patsrc" variable
+                       (:reference 1
+                        :type ("PairedPatternSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69590 69619])
+                    ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [69620 69628]))                  
+                :type ("PatternSourcePerThreadFactory" type (:type "class") nil nil))
+                nil [69532 69790])
+            ("PTHREAD_ATTRS" variable (:constant-flag t) nil [69800 69813])
+            ("multiseed_patsrc" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("PairedPatternSource" type (:type "class") nil nil))
+                nil [69867 69916])
+            ("multiseed_ebwtFw" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("Ebwt" type (:type "class") nil nil))
+                nil [69917 69966])
+            ("multiseed_ebwtBw" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("Ebwt" type (:type "class") nil nil))
+                nil [69967 70016])
+            ("multiseed_sc" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("Scoring" type (:type "class") nil nil))
+                nil [70017 70062])
+            ("multiseed_refs" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("BitPairReference" type (:type "class") nil nil))
+                nil [70063 70110])
+            ("multiseed_ca" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("AlignmentCache" type (:type "class") nil nil))
+                nil [70111 70156])
+            ("multiseed_msink" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("AlnSink" type (:type "class") nil nil))
+                nil [70171 70219])
+            ("multiseed_metricsOfb" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("OutFileBuf" type (:type "class") nil nil))
+                nil [70220 70273])
+            ("OuterLoopMetrics" type
+               (:members 
+                  ( ("OuterLoopMetrics" function
+                       (:constructor-flag t
+                        :type ("OuterLoopMetrics" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [70387 70424])
+                    ("reset" function (:type "void") (reparse-symbol classsubparts) [70464 70560])
+                    ("merge" function
+                       (:arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("OuterLoopMetrics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [70749 70775])
+                            ("getLock" variable (:type "bool") (reparse-symbol arg-sub-list) [70778 70792])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70793 70799]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [70735 71017])
+                    ("reads" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71020 71035])
+                    ("bases" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71054 71069])
+                    ("srreads" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71088 71105])
+                    ("srbases" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71126 71143])
+                    ("freads" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71164 71180])
+                    ("fbases" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71201 71217])
+                    ("ureads" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71238 71254])
+                    ("ubases" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71277 71293])
+                    ("mutex_m" variable (:type ("MUTEX_T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71316 71332]))                  
+                :type "struct")
+                nil [70359 71335])
+            ("PerfMetrics" type
+               (:members 
+                  ( ("PerfMetrics" function
+                       (:constructor-flag t
+                        :type ("PerfMetrics" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [71454 71494])
+                    ("reset" function (:type "void") (reparse-symbol classsubparts) [71534 72272])
+                    ("merge" function
+                       (:arguments 
+                          ( ("ol" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("OuterLoopMetrics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [72353 72380])
+                            ("sd" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("SeedSearchMetrics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [72383 72411])
+                            ("wl" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("WalkMetrics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [72414 72436])
+                            ("swSeed" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("SwMetrics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [72439 72463])
+                            ("swMate" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("SwMetrics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [72466 72490])
+                            ("rm" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("ReportingMetrics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [72493 72520])
+                            ("dpSse8Ex" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("SSEMetrics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [72523 72550])
+                            ("dpSse8Ma" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("SSEMetrics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [72553 72580])
+                            ("dpSse16Ex" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("SSEMetrics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [72583 72611])
+                            ("dpSse16Ma" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("SSEMetrics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [72614 72642])
+                            ("nbtfiltst_" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72645 72665])
+                            ("nbtfiltsc_" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72668 72688])
+                            ("nbtfiltdo_" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72691 72711])
+                            ("getLock" variable (:type "bool") (reparse-symbol arg-sub-list) [72714 72727]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [72339 73462])
+                    ("reportInterval" function
+                       (:arguments 
+                          ( ("o" variable
+                               (:pointer 1
+                                :type ("OutFileBuf" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [73709 73723])
+                            ("metricsStderr" variable (:type "bool") (reparse-symbol arg-sub-list) [73759 73778])
+                            ("total" variable (:type "bool") (reparse-symbol arg-sub-list) [73817 73828])
+                            ("sync" variable (:type "bool") (reparse-symbol arg-sub-list) [73888 73898])
+                            ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("BTString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [73935 73956]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [73686 104731])
+                    ("mergeIncrementals" function (:type "void") (reparse-symbol classsubparts) [104735 105414])
+                    ("olm" variable (:type ("OuterLoopMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [105446 105468])
+                    ("sdm" variable (:type ("SeedSearchMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [105491 105513])
+                    ("wlm" variable (:type ("WalkMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [105554 105576])
+                    ("swmSeed" variable (:type ("SwMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [105650 105676])
+                    ("swmMate" variable (:type ("SwMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [105726 105752])
+                    ("rpm" variable (:type ("ReportingMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [105803 105825])
+                    ("dpSse8Seed" variable (:type ("SSEMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [105861 105890])
+                    ("dpSse8Mate" variable (:type ("SSEMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [105922 105951])
+                    ("dpSse16Seed" variable (:type ("SSEMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [105980 106010])
+                    ("dpSse16Mate" variable (:type ("SSEMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106042 106072])
+                    ("nbtfiltst" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106101 106129])
+                    ("nbtfiltsc" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106131 106159])
+                    ("nbtfiltdo" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106161 106189])
+                    ("olmu" variable (:type ("OuterLoopMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106223 106246])
+                    ("sdmu" variable (:type ("SeedSearchMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106268 106291])
+                    ("wlmu" variable (:type ("WalkMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106331 106354])
+                    ("swmuSeed" variable (:type ("SwMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106427 106454])
+                    ("swmuMate" variable (:type ("SwMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106503 106530])
+                    ("rpmu" variable (:type ("ReportingMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106580 106603])
+                    ("dpSse8uSeed" variable (:type ("SSEMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106638 106668])
+                    ("dpSse8uMate" variable (:type ("SSEMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106700 106730])
+                    ("dpSse16uSeed" variable (:type ("SSEMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106757 106788])
+                    ("dpSse16uMate" variable (:type ("SSEMetrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106820 106851])
+                    ("nbtfiltst_u" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106878 106908])
+                    ("nbtfiltsc_u" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106910 106940])
+                    ("nbtfiltdo_u" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106942 106972])
+                    ("mutex_m" variable (:type ("MUTEX_T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106975 107001])
+                    ("first" variable (:type "bool") (reparse-symbol classsubparts) [107028 107052])
+                    ("lastElapsed" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107082 107112]))                  
+                :type "struct")
+                nil [71431 107173])
+            ("metrics" variable
+               (:typemodifiers ("static")
+                :type ("PerfMetrics" type (:type "class") nil nil))
+                nil [107175 107202])
+            ("ROTL" variable (:constant-flag t) nil [107232 107236])
+            ("ROTR" variable (:constant-flag t) nil [107284 107288])
+            ("printMmsSkipMsg" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("ps" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PatternSourcePerThread" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107366 107399])
+                    ("paired" variable (:type "bool") (reparse-symbol arg-sub-list) [107401 107413])
+                    ("mate1" variable (:type "bool") (reparse-symbol arg-sub-list) [107415 107426])
+                    ("seedmms" variable (:type "int") (reparse-symbol arg-sub-list) [107428 107440]))                  
+                :type "void")
+                nil [107329 108033])
+            ("printLenSkipMsg" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("ps" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PatternSourcePerThread" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108072 108105])
+                    ("paired" variable (:type "bool") (reparse-symbol arg-sub-list) [108107 108119])
+                    ("mate1" variable (:type "bool") (reparse-symbol arg-sub-list) [108121 108132]))                  
+                :type "void")
+                nil [108035 108525])
+            ("printLocalScoreMsg" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("ps" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PatternSourcePerThread" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108567 108600])
+                    ("paired" variable (:type "bool") (reparse-symbol arg-sub-list) [108602 108614])
+                    ("mate1" variable (:type "bool") (reparse-symbol arg-sub-list) [108616 108627]))                  
+                :type "void")
+                nil [108527 109124])
+            ("printEEScoreMsg" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("ps" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PatternSourcePerThread" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109163 109196])
+                    ("paired" variable (:type "bool") (reparse-symbol arg-sub-list) [109198 109210])
+                    ("mate1" variable (:type "bool") (reparse-symbol arg-sub-list) [109212 109223]))                  
+                :type "void")
+                nil [109126 109730])
+            ("setupMinScores" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ps" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PatternSourcePerThread" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109894 109927])
+                    ("paired" variable (:type "bool") (reparse-symbol arg-sub-list) [109929 109941])
+                    ("localAlign" variable (:type "bool") (reparse-symbol arg-sub-list) [109943 109959])
+                    ("sc" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Scoring" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109961 109979])
+                    ("rdlens" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109981 110002])
+                    ("minsc" variable
+                       (:pointer 1
+                        :type ("TAlScore" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110004 110020])
+                    ("maxpen" variable
+                       (:pointer 1
+                        :type ("TAlScore" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110022 110039]))                  
+                :type "void")
+                nil [109865 111565])
+            ("MERGE_METRICS" variable (:constant-flag t) nil [111575 111588])
+            ("MERGE_SW" variable (:constant-flag t) nil [112073 112081])
+            ("multiseedSearchWorker" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("vp" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [112893 112902]))                  
+                :type "void")
+                nil [112859 153979])
+            ("multiseedSearchWorker_2p5" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("vp" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [154019 154028]))                  
+                :type "void")
+                nil [153981 165711])
+            ("multiseedSearch" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sc" variable
+                       (:reference 1
+                        :type ("Scoring" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [165914 165926])
+                    ("patsrc" variable
+                       (:reference 1
+                        :type ("PairedPatternSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [165928 165956])
+                    ("msink" variable
+                       (:reference 1
+                        :type ("AlnSink" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [165977 165992])
+                    ("ebwtFw" variable
+                       (:reference 1
+                        :type ("Ebwt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [166018 166031])
+                    ("ebwtBw" variable
+                       (:reference 1
+                        :type ("Ebwt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [166075 166088])
+                    ("metricsOfb" variable
+                       (:pointer 1
+                        :type ("OutFileBuf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [166130 166153]))                  
+                :type "void")
+                nil [165884 168368])
+            ("argstr" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [168370 168391])
+            ("driver" function
+               (:template 
+                  ( ("TStr" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [168438 168456])
+                    ("bt2indexBase" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [168458 168485])
+                    ("outfile" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [168487 168509]))                  
+                :typemodifiers ("static"))
+                nil [168393 177287])
+            ("bowtie" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [177583 177592])
+                    ("argv" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [177593 177611]))                  )
+                (reparse-symbol extern-c-contents) [177572 181777]))          
+    :file "bt2_search.cpp"
+    :pointmax 181806
+    :fsize 181805
+    :lastmodtime '(21545 39638 0 0)
+    :unmatched-syntax '((punctuation 70791 . 70792))
+    :lexical-table 
+        '(("MERGE_SW" (spp-arg-list ("x") 112081 . 112084) . ((semantic-list "{ \\
+	x.merge( \\
+		sseU8ExtendMet, \\
+		sseU8MateMet, \\
+		sseI16ExtendMet, \\
+		sseI16MateMet, \\
+		nbtfiltst, \\
+		nbtfiltsc, \\
+		nbtfiltdo); \\
+	x.resetCounters(); \\
+}" 112085 . 112248)))
+          ("ROTL" (spp-arg-list ("n" "x") 107236 . 107242) . ((semantic-list "(((x) << (n)) | ((x) >> (32-n)))" 107243 . 107275)))
+          ("DMAX" . 
+              ((symbol "std" 12278 . 12281) (punctuation ":" 12281 . 12282) (punctuation ":" 12282 . 12283) (symbol "numeric_limits" 12283 . 12297) (punctuation "<" 12297 . 12298) (DOUBLE "double" 12298 . 12304) (punctuation ">" 12304 . 12305) (punctuation ":" 12305 . 12306) (punctuation ":" 12306 . 12307) (symbol "max" 12307 . 12310) (semantic-list "()" 12310 . 12312)))
+          ("MERGE_METRICS" (spp-arg-list ("met" "sync") 111588 . 111599) . ((semantic-list "{ \\
+	msink.mergeMetrics(rpm); \\
+	met.merge( \\
+		&olm, \\
+		&sdm, \\
+		&wlm, \\
+		&swmSeed, \\
+		&swmMate, \\
+		&rpm, \\
+		&sseU8ExtendMet, \\
+		&sseU8MateMet, \\
+		&sseI16ExtendMet, \\
+		&sseI16MateMet, \\
+		nbtfiltst, \\
+		nbtfiltsc, \\
+		nbtfiltdo, \\
+		sync); \\
+	olm.reset(); \\
+	sdm.reset(); \\
+	wlm.reset(); \\
+	swmSeed.reset(); \\
+	swmMate.reset(); \\
+	rpm.reset(); \\
+	sseU8ExtendMet.reset(); \\
+	sseU8MateMet.reset(); \\
+	sseI16ExtendMet.reset(); \\
+	sseI16MateMet.reset(); \\
+}" 111600 . 112063)))
+          ("ROTR" (spp-arg-list ("n" "x") 107288 . 107294) . ((semantic-list "(((x) >> (n)) | ((x) << (32-n)))" 107295 . 107327)))
+          ("PTHREAD_ATTRS" . ((semantic-list "(PTHREAD_CREATE_JOINABLE | PTHREAD_CREATE_DETACHED)" 69814 . 69865)))
+          )
+
+    )
+   (semanticdb-table "alphabet.h"
+    :file "alphabet.h"
+    :fsize 5619
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "assert_helpers.h"
+    :file "assert_helpers.h"
+    :fsize 9553
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "endian_swap.h"
+    :file "endian_swap.h"
+    :fsize 3732
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "formats.h"
+    :file "formats.h"
+    :fsize 1144
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "sequence_io.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQUENCE_IO_H_" variable (:constant-flag t) nil [767 781])
+            ("string" include (:system-flag t) nil [783 800])
+            ("stdexcept" include (:system-flag t) nil [801 821])
+            ("fstream" include (:system-flag t) nil [822 840])
+            ("stdio.h" include (:system-flag t) nil [841 859])
+            ("assert_helpers.h" include nil nil [860 887])
+            ("ds.h" include nil nil [888 903])
+            ("filebuf.h" include nil nil [904 924])
+            ("sstring.h" include nil nil [925 945])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [947 967])
+            ("parseFastaLens" function
+               (:template 
+                  ( ("TFnStr" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("infile" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TFnStr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1074 1096])
+                    ("namelens" variable
+                       (:reference 1
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1112 1136])
+                    ("seqlens" variable
+                       (:reference 1
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1176 1199]))                  
+                :typemodifiers ("static"))
+                nil [1019 1731])
+            ("parseFasta" function
+               (:template 
+                  ( ("TFnStr" type (:type "class") nil nil)
+                    ("TNameStr" type (:type "class") nil nil)
+                    ("TSeqStr" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("infile" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TFnStr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1960 1984])
+                    ("names" variable
+                       (:reference 1
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("TNameStr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2000 2023])
+                    ("namelens" variable
+                       (:reference 1
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2059 2085])
+                    ("seqs" variable
+                       (:reference 1
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("TSeqStr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2125 2147])
+                    ("seqlens" variable
+                       (:reference 1
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2188 2213]))                  
+                :typemodifiers ("static"))
+                nil [1872 3015])
+            ("parseFastas" function
+               (:template 
+                  ( ("TFnStr" type (:type "class") nil nil)
+                    ("TNameStr" type (:type "class") nil nil)
+                    ("TSeqStr" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("infiles" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("TFnStr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3246 3275])
+                    ("names" variable
+                       (:reference 1
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("TNameStr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3290 3313])
+                    ("namelens" variable
+                       (:reference 1
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3349 3375])
+                    ("seqs" variable
+                       (:reference 1
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("TSeqStr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3415 3437])
+                    ("seqlens" variable
+                       (:reference 1
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3478 3503]))                  
+                :typemodifiers ("static"))
+                nil [3156 3700]))          
+    :file "sequence_io.h"
+    :pointmax 3728
+    :fsize 3727
+    :lastmodtime '(21245 26176 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEQUENCE_IO_H_")
+          )
+
+    )
+   (semanticdb-table "tokenize.h"
+    :file "tokenize.h"
+    :fsize 1757
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "aln_sink.h"
+    :file "aln_sink.h"
+    :fsize 45835
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "pat.h"
+    :file "pat.h"
+    :fsize 40060
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "threading.h"
+    :file "threading.h"
+    :fsize 1381
+    :lastmodtime '(21540 28520 0 0)
+    )
+   (semanticdb-table "ds.h"
+    :file "ds.h"
+    :fsize 87505
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "aligner_metrics.h"
+    :file "aligner_metrics.h"
+    :fsize 11250
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "sam.h"
+    :file "sam.h"
+    :fsize 12176
+    :lastmodtime '(21545 38008 0 0)
+    )
+   (semanticdb-table "aligner_seed.h"
+    :file "aligner_seed.h"
+    :fsize 45652
+    :lastmodtime '(21545 38008 0 0)
+    )
+   (semanticdb-table "aligner_seed_policy.h"
+    :file "aligner_seed_policy.h"
+    :fsize 7554
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "aligner_driver.h"
+    :file "aligner_driver.h"
+    :fsize 10359
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "aligner_sw.h"
+    :file "aligner_sw.h"
+    :fsize 25658
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "aligner_sw_driver.h"
+    :file "aligner_sw_driver.h"
+    :fsize 20517
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "aligner_cache.h"
+    :file "aligner_cache.h"
+    :fsize 23983
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "util.h"
+    :file "util.h"
+    :fsize 1503
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "pe.h"
+    :file "pe.h"
+    :fsize 9778
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "simple_func.h"
+    :file "simple_func.h"
+    :fsize 3475
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "presets.h"
+    :file "presets.h"
+    :fsize 1571
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "opts.h"
+    :file "opts.h"
+    :fsize 6499
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "outq.h"
+    :file "outq.h"
+    :fsize 3319
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "aligner_seed2.h"
+    :file "aligner_seed2.h"
+    :fsize 71070
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "bt2_util.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("string" include (:system-flag t) nil [736 753])
+            ("stdexcept" include (:system-flag t) nil [754 774])
+            ("iostream" include (:system-flag t) nil [775 794])
+            ("fstream" include (:system-flag t) nil [795 813])
+            ("stdlib.h" include (:system-flag t) nil [814 833])
+            ("string.h" include (:system-flag t) nil [834 853])
+            ("bt2_idx.h" include nil nil [854 874])
+            ("sanityCheckUpToSide" function
+               (:parent "Ebwt"
+                :arguments 
+                  ( ("upToSide" variable (:type ("TIndexOff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1299 1318]))                  
+                :type "void")
+                nil [1268 2694])
+            ("sanityCheckAll" function
+               (:parent "Ebwt"
+                :arguments 
+                  ( ("reverse" variable (:type "int") (reparse-symbol arg-sub-list) [2773 2785]))                  
+                :type "void")
+                nil [2747 4366])
+            ("restore" function
+               (:parent "Ebwt"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :type ("SString" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4627 4644]))                  
+                :type "void")
+                nil [4608 5248])
+            ("checkOrigs" function
+               (:parent "Ebwt"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("EList" type
+                             (:template-specifier 
+                                ( ("SString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5417 5449])
+                    ("color" variable (:type "bool") (reparse-symbol arg-sub-list) [5451 5462])
+                    ("mirror" variable (:type "bool") (reparse-symbol arg-sub-list) [5464 5476]))                  
+                :type "void")
+                nil [5393 6437]))          
+    :file "bt2_util.cpp"
+    :pointmax 6438
+    :fsize 6437
+    :lastmodtime '(21245 26176 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "filebuf.h"
+    :file "filebuf.h"
+    :fsize 15921
+    :lastmodtime '(21245 26176 0 0)
+    )
+   (semanticdb-table "sstring.h"
+    :file "sstring.h"
+    :fsize 76772
+    :lastmodtime '(21245 26176 0 0)
+    )
+   )
+  :file "!home!brad!packages!bowtie2-2.2.4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

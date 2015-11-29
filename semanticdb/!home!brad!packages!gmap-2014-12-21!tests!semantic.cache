@@ -1,0 +1,26 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("defs" "ss.chr17test" "ss.her2" "align.test.ok" "coords1.test.ok" "setup.genomecomp.ok" "setup.ref123positions.ok" "map.test.ok" "fa.iittest" "iittest.iit.ok" "iit_get.out.ok")) nil [3 230])
+            ("CLEANFILES" variable (:default-value ("align.test.out" "coords.chr17test" "gmap_setup" "gmapindex" "chr17test/chr17test.*" "Makefile.chr17test" "map.test.out" "iittest.iit" "iit_get.out" "iit_dump.out")) nil [231 448])
+            ("TESTS" variable (:default-value ("align.test" "coords1.test" "setup1.test" "iit.test" "bioinfo.splicing.test")) nil [463 548])
+            ("TESTS" variable (:default-value ("align.test" "coords1.test" "setup1.test" "iit.test")) nil [553 607])
+            ("TESTS_ENVIRONMENT" variable (:default-value ("top_builddir=$(top_builddir)")) nil [614 663])
+            ("testsubdir" variable (:default-value ("testSubDir")) nil [664 688])
+            ("distclean-local" function nil nil [689 728])
+            ("okay" function nil nil [729 791]))          
+    :file "Makefile.am"
+    :pointmax 1320
+    :fsize 1319
+    :lastmodtime '(21688 28234 0 0)
+    :unmatched-syntax '((shell-command 1290 . 1319) (bol 1289 . 1289) (shell-command 1243 . 1288) (bol 1242 . 1242) (shell-command 1203 . 1241) (bol 1202 . 1202) (shell-command 1145 . 1201) (bol 1144 . 1144) (shell-command 1097 . 1143) (bol 1096 . 1096) (shell-command 1057 . 1095) (bol 1056 . 1056) (shell-command 1004 . 1055) (bol 1003 . 1003) (shell-command 959 . 1002) (bol 958 . 958))
+    )
+   )
+  :file "!home!brad!packages!gmap-2014-12-21!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

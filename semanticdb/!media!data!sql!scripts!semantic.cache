@@ -1,0 +1,32 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables (list 
+   (semanticdb-table "insert_data_from_csv.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("'''
+Basic utility to insert data into a sample_db table from a csv file.
+Expects the first line to be a header exactly corresponding to the column names
+    of the destination table.
+'''" code nil nil [25 211])
+            ("sys" include nil nil [213 223])
+            ("MySQLdb" include nil nil [224 245])
+            ("pdb" include nil nil [246 256])
+            ("argparse" include nil nil [257 272])
+            ("format_type" function (:arguments 
+              ( ("element" variable nil (reparse-symbol function_parameters) [290 297]))              ) nil [274 574])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [584 588]))              ) nil [575 1799])
+            ("if" code nil nil [1800 1846]))          
+    :file "insert_data_from_csv.py"
+    :pointmax 1846
+    :fsize 1845
+    :lastmodtime '(21921 28263 50953 880000)
+    :unmatched-syntax '(($EOI 1846 . 1846) ($EOI 1704 . 1704) ($EOI 1692 . 1692))
+    )
+   )
+  :file "!media!data!sql!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

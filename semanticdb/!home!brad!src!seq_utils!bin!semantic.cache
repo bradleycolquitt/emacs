@@ -1,0 +1,19 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("../Makefile.rules" include nil nil [1 27]))          
+    :file "Makefile"
+    :pointmax 100
+    :fsize 99
+    :lastmodtime '(21580 4409 259903 673000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!seq_utils!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

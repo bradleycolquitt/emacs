@@ -1,0 +1,48 @@
+;; Object MUMmer3.23/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "MUMmer3.23/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("SHELL" variable (:default-value ("/bin/sh")) nil [862 878])
+            ("VERSION" variable (:default-value ("3.23")) nil [878 894])
+            ("TOP_DIR" variable (:default-value ("$(CURDIR)")) nil [896 921])
+            ("BIN_DIR" variable (:default-value ("$(TOP_DIR)")) nil [921 947])
+            ("AUX_BIN_DIR" variable (:default-value ("$(TOP_DIR)/aux_bin")) nil [947 981])
+            ("DOC_DIR" variable (:default-value ("$(TOP_DIR)/docs")) nil [982 1015])
+            ("SCRIPT_DIR" variable (:default-value ("$(TOP_DIR)/scripts")) nil [1015 1051])
+            ("TIGR_SRC_DIR" variable (:default-value ("$(TOP_DIR)/src/tigr")) nil [1051 1088])
+            ("KURTZ_SRC_DIR" variable (:default-value ("$(TOP_DIR)/src/kurtz")) nil [1088 1126])
+            ("CC" variable (:default-value ("$(filter /%,$(shell /bin/sh -c 'type gcc'))")) nil [1127 1179])
+            ("CXX" variable (:default-value ("$(filter /%,$(shell /bin/sh -c 'type g++'))")) nil [1179 1231])
+            ("SED" variable (:default-value ("$(filter /%,$(shell /bin/sh -c 'type sed'))")) nil [1231 1283])
+            ("CSH" variable (:default-value ("$(filter /%,$(shell /bin/sh -c 'type csh'))")) nil [1283 1335])
+            ("PERL" variable (:default-value ("$(filter /%,$(shell /bin/sh -c 'type perl'))")) nil [1335 1388])
+            ("AR" variable (:default-value ("$(filter /%,$(shell /bin/sh -c 'type ar'))")) nil [1388 1439])
+            ("CXXFLAGS" variable (:default-value ("-O3")) nil [1440 1455])
+            ("CFLAGS" variable (:default-value ("-O3")) nil [1455 1468])
+            ("LDFLAGS" variable nil nil [1468 1479])
+            ("FLATS" variable (:default-value ("ACKNOWLEDGEMENTS" "COPYRIGHT" "INSTALL" "LICENSE" "Makefile" "README" "ChangeLog")) nil [1480 1557])
+            (".PHONY" function (:arguments ("all" "check" "clean" "dist" "scripts" "uninstall")) nil [1688 1735])
+            ("all" function (:arguments ("kurtz" "tigr" "scripts")) nil [1737 1761])
+            ("check" function nil nil [1763 1770])
+            ("clean" function nil nil [2230 2387])
+            ("dist" function (:arguments ("DISTDIR" "=" "MUMmer$(VERSION)")) nil [2389 2422])
+            ("dist" function nil nil [2422 2679])
+            ("install" function (:arguments ("all")) nil [2681 2694])
+            ("kurtz" function nil nil [2696 2740])
+            ("scripts" function nil nil [2742 2782])
+            ("tigr" function nil nil [2784 2823])
+            ("uninstall" function (:arguments ("clean")) nil [2825 2842]))          
+    :file "Makefile"
+    :pointmax 2868
+    :fsize 2867
+    :lastmodtime '(21822 42258 173491 972000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!third-party!MUMmer3.23!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,433 @@
+;; Object device/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "device/"
+  :tables (list 
+   (semanticdb-table "null.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_NULL_HPP_INCLUDED" variable (:constant-flag t) nil [451 484])
+            ("boost/iostreams/categories.hpp" include (:system-flag t) nil [552 593])
+            ("boost/iostreams/detail/ios.hpp" include (:system-flag t) nil [594 635])
+            ("boost/iostreams/positioning.hpp" include (:system-flag t) nil [661 703])
+            ("boost" type
+               (:members 
+                  ( ("iostreams" type
+                       (:members 
+                          ( ("basic_null_device" type
+                               (:template 
+                                  ( ("Ch" type (:type "class") nil nil)
+                                    ("Mode" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [809 816])
+                                    ("char_type" type
+                                       (:typedef ("Ch" type (:type "class") nil nil)
+                                        :superclasses "Ch"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [821 842])
+                                    ("category" type
+                                       (:superclasses 
+                                          ( ("Mode" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("device_tag" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("closable_tag" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [847 957])
+                                    ("read" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("Ch" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [983 987])
+                                            ("" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [988 1004]))                                          
+                                        :type ("std::streamsize" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [962 1018])
+                                    ("write" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("Ch" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1045 1055])
+                                            ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1056 1074]))                                          
+                                        :type ("std::streamsize" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1023 1088])
+                                    ("seek" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1114 1128])
+                                            ("" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1129 1148])
+                                            ("" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1174 1195])
+                                            ("" variable (:type ("BOOST_IOS::in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1226 1241])
+                                            ("" variable (:type ("BOOST_IOS::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1242 1258]))                                          
+                                        :type ("std::streampos" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1093 1278])
+                                    ("close" function (:type "void") (reparse-symbol classsubparts) [1283 1299])
+                                    ("close" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1315 1335]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1304 1339]))                                  )
+                                (reparse-symbol namespacesubparts) [746 1342])
+                            ("basic_null_source" type
+                               (:template 
+                                  ( ("Ch" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("char_type" type
+                                       (:typedef ("Ch" type (:type "class") nil nil)
+                                        :superclasses "Ch"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1436 1466])
+                                    ("category" type
+                                       (:typedef ("source_tag" type (:type "class") nil nil)
+                                        :superclasses "source_tag"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1471 1500])
+                                    ("basic_null_device::read" variable (:type "int") (reparse-symbol classsubparts) [1511 1546])
+                                    ("basic_null_device::close" variable (:type "int") (reparse-symbol classsubparts) [1557 1593]))                                  
+                                :superclasses 
+                                  ( ("basic_null_device" type
+                                       (:protection "private"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1344 1596])
+                            ("null_source" type
+                               (:typedef ("basic_null_source" type
+                                     (:template-specifier 
+                                        ( ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "basic_null_source"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1598 1646])
+                            ("wnull_source" type
+                               (:typedef ("basic_null_source" type
+                                     (:template-specifier 
+                                        ( ("wchar_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "basic_null_source"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1647 1696])
+                            ("basic_null_sink" type
+                               (:template 
+                                  ( ("Ch" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("char_type" type
+                                       (:typedef ("Ch" type (:type "class") nil nil)
+                                        :superclasses "Ch"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1789 1817])
+                                    ("category" type
+                                       (:typedef ("sink_tag" type (:type "class") nil nil)
+                                        :superclasses "sink_tag"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1822 1849])
+                                    ("basic_null_device::write" variable (:type "int") (reparse-symbol classsubparts) [1860 1897])
+                                    ("basic_null_device::close" variable (:type "int") (reparse-symbol classsubparts) [1908 1945]))                                  
+                                :superclasses 
+                                  ( ("basic_null_device" type
+                                       (:protection "private"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1698 1948])
+                            ("null_sink" type
+                               (:typedef ("basic_null_sink" type
+                                     (:template-specifier 
+                                        ( ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "basic_null_sink"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1950 1994])
+                            ("wnull_sink" type
+                               (:typedef ("basic_null_sink" type
+                                     (:template-specifier 
+                                        ( ("wchar_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "basic_null_sink"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1995 2040]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [723 2043]))                  
+                :type "namespace")
+                nil [705 2045]))          
+    :file "null.hpp"
+    :pointmax 2135
+    :fsize 2134
+    :lastmodtime '(21413 1116 0 0)
+    :unmatched-syntax '((USING 1902 . 1907) (USING 1854 . 1859) (USING 1551 . 1556) (USING 1505 . 1510) (punctuation 1240 . 1241) (punctuation 1194 . 1195))
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_NULL_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "array.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_ARRAY_HPP_INCLUDED" variable (:constant-flag t) nil [382 416])
+            ("boost/config.hpp" include (:system-flag t) nil [484 511])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [563 601])
+            ("cstddef" include (:system-flag t) nil [602 620])
+            ("utility" include (:system-flag t) nil [654 672])
+            ("boost/iostreams/categories.hpp" include (:system-flag t) nil [699 740])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [741 778])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [779 813])
+            ("boost/type_traits/is_convertible.hpp" include (:system-flag t) nil [814 861])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [862 902])
+            ("boost" type
+               (:members 
+                  ( ("iostreams" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("array_adapter" type
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("Ch" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1024 1031])
+                                            ("char_type" type
+                                               (:typedef ("Ch" type (:type "class") nil nil)
+                                                :superclasses "Ch"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1036 1089])
+                                            ("pair_type" type
+                                               (:typedef ("std::pair" type
+                                                     (:template-specifier 
+                                                        ( ("char_type" type (:pointer 1) nil nil)
+                                                          ("char_type" type (:pointer 1) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "std::pair"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1094 1147])
+                                            ("category" type
+                                               (:superclasses 
+                                                  ( ("Mode" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil)
+                                                    ("device_tag" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil)
+                                                    ("direct_tag" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [1152 1260])
+                                            ("array_adapter" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("begin" variable
+                                                       (:pointer 1
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1279 1296])
+                                                    ("end" variable
+                                                       (:pointer 1
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1297 1312]))                                                  
+                                                :type ("array_adapter" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1265 1313])
+                                            ("array_adapter" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("begin" variable
+                                                       (:pointer 1
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1332 1349])
+                                                    ("length" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1350 1369]))                                                  
+                                                :type ("array_adapter" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1318 1370])
+                                            ("array_adapter" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("begin" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1389 1412])
+                                                    ("end" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1413 1434]))                                                  
+                                                :type ("array_adapter" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1375 1435])
+                                            ("array_adapter" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("begin" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1454 1477])
+                                                    ("length" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1478 1497]))                                                  
+                                                :type ("array_adapter" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1440 1498])
+                                            ("input_sequence" function
+                                               (:prototype-flag t
+                                                :type ("pair_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1658 1685])
+                                            ("output_sequence" function
+                                               (:prototype-flag t
+                                                :type ("pair_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1690 1718])
+                                            ("private" label nil (reparse-symbol classsubparts) [1719 1727])
+                                            ("begin_" variable
+                                               (:pointer 1
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1732 1750])
+                                            ("end_" variable
+                                               (:pointer 1
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1755 1771]))                                          )
+                                        (reparse-symbol namespacesubparts) [965 1774]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [945 1777])
+                            ("BOOST_IOSTREAMS_ARRAY_CTOR" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2050 2076])
+                            ("BOOST_IOSTREAMS_ARRAY" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2102 2123])
+                            ("detail::array_adapter" variable (:type "int") (reparse-symbol namespacesubparts) [3136 3187])
+                            ("array_source" variable (:type "int") (reparse-symbol namespacesubparts) [3136 3187])
+                            ("BOOST_PP_CAT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                                    ("" variable (:type ("name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3136 3187])
+                            ("detail::array_adapter" variable (:type "int") (reparse-symbol namespacesubparts) [3188 3238])
+                            ("array_sink" variable (:type "int") (reparse-symbol namespacesubparts) [3188 3238])
+                            ("BOOST_PP_CAT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                                    ("" variable (:type ("name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3188 3238])
+                            ("detail::array_adapter" variable (:type "int") (reparse-symbol namespacesubparts) [3239 3277])
+                            ("array" variable (:type "int") (reparse-symbol namespacesubparts) [3239 3277])
+                            ("BOOST_PP_CAT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                                    ("" variable (:type ("name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3239 3277])
+                            ("detail" type
+                               (:members 
+                                  ( ("array_adapter" function
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("Ch" type (:type "class") nil nil))                                          
+                                        :type ("array_adapter" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("begin" variable
+                                               (:pointer 1
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3526 3543])
+                                            ("end" variable
+                                               (:pointer 1
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3544 3559]))                                          
+                                        :parent "array_adapter"
+                                        :constructor-flag t)
+                                        (reparse-symbol namespacesubparts) [3445 3600])
+                                    ("array_adapter" function
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("Ch" type (:type "class") nil nil))                                          
+                                        :type ("array_adapter" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("begin" variable
+                                               (:pointer 1
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3683 3700])
+                                            ("length" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3701 3720]))                                          
+                                        :parent "array_adapter"
+                                        :constructor-flag t)
+                                        (reparse-symbol namespacesubparts) [3602 3772])
+                                    ("array_adapter" function
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("Ch" type (:type "class") nil nil))                                          
+                                        :type ("array_adapter" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("begin" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3855 3878])
+                                            ("end" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3879 3900]))                                          
+                                        :parent "array_adapter"
+                                        :constructor-flag t)
+                                        (reparse-symbol namespacesubparts) [3774 4108])
+                                    ("array_adapter" function
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("Ch" type (:type "class") nil nil))                                          
+                                        :type ("array_adapter" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("begin" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4191 4214])
+                                            ("length" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4215 4234]))                                          
+                                        :parent "array_adapter"
+                                        :constructor-flag t)
+                                        (reparse-symbol namespacesubparts) [4110 4452])
+                                    ("input_sequence" function
+                                       (:parent "array_adapter"
+                                        :type ("pair_type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4525 4673])
+                                    ("output_sequence" function
+                                       (:parent "array_adapter"
+                                        :type ("pair_type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4746 4896]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [3425 4899]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [922 5009]))                  
+                :type "namespace")
+                nil [904 5011]))          
+    :file "array.hpp"
+    :pointmax 5102
+    :fsize 5101
+    :lastmodtime '(21413 1116 0 0)
+    :unmatched-syntax '((punctuation 4745 . 4746) (punctuation 4744 . 4745) (punctuation 4743 . 4744) (symbol 4741 . 4743) (punctuation 4739 . 4740) (symbol 4735 . 4739) (punctuation 4734 . 4735) (symbol 4721 . 4734) (TYPENAME 4712 . 4720) (punctuation 4710 . 4711) (symbol 4708 . 4710) (TYPENAME 4699 . 4707) (punctuation 4697 . 4698) (symbol 4693 . 4697) (TYPENAME 4684 . 4692) (punctuation 4683 . 4684) (TEMPLATE 4675 . 4683) (punctuation 4524 . 4525) (punctuation 4523 . 4524) (punctuation 4522 . 4523) (symbol 4520 . 4522) (punctuation 4518 . 4519) (symbol 4514 . 4518) (punctuation 4513 . 4514) (symbol 4500 . 4513) (TYPENAME 4491 . 4499) (punctuation 4489 . 4490) (symbol 4487 . 4489) (TYPENAME 4478 . 4486) (punctuation 4476 . 4477) (symbol 4472 . 4476) (TYPENAME 4463 . 4471) (punctuation 4462 . 4463) (TEMPLATE 4454 . 4462) (punctuation ">" 3239 . 3277) (WCHAR "wchar_t" 3239 . 3277) (punctuation "<" 3239 . 3277) (semantic-list #("(basic_, name)" 0 1 (macros (("mode" symbol "seekable" 3268 . 3276) ("name" symbol "array" 3261 . 3266)))) 3239 . 3277) (symbol "BOOST_PP_CAT" 3239 . 3277) (TYPEDEF "typedef" 3239 . 3277) (punctuation ">" 3239 . 3277) (CHAR "char" 3239 . 3277) (punctuation "<" 3239 . 3277) (semantic-list #("(basic_, name)" 0 1 (macros (("mode" symbol "seekable" 3268 . 3276) ("name" symbol "array" 3261 . 3266)))) 3239 . 3277) (symbol "BOOST_PP_CAT" 3239 . 3277) (TYPEDEF "typedef" 3239 . 3277) (punctuation ":" 3239 . 3277) (semantic-list #("(basic_, name)" 0 1 (macros (("mode" symbol "seekable" 3268 . 3276) ("name" symbol "array" 3261 . 3266)))) 3239 . 3277) (symbol "BOOST_PP_CAT" 3239 . 3277) (STRUCT "struct" 3239 . 3277) (punctuation ">" 3239 . 3277) (symbol "Ch" 3239 . 3277) (TYPENAME "typename" 3239 . 3277) (punctuation "<" 3239 . 3277) (TEMPLATE "template" 3239 . 3277) (punctuation ">" 3188 . 3238) (WCHAR "wchar_t" 3188 . 3238) (punctuation "<" 3188 . 3238) (semantic-list #("(basic_, name)" 0 1 (macros (("mode" symbol "output_seekable" 3222 . 3237) ("name" symbol "array_sink" 3210 . 3220)))) 3188 . 3238) (symbol "BOOST_PP_CAT" 3188 . 3238) (TYPEDEF "typedef" 3188 . 3238) (punctuation ">" 3188 . 3238) (CHAR "char" 3188 . 3238) (punctuation "<" 3188 . 3238) (semantic-list #("(basic_, name)" 0 1 (macros (("mode" symbol "output_seekable" 3222 . 3237) ("name" symbol "array_sink" 3210 . 3220)))) 3188 . 3238) (symbol "BOOST_PP_CAT" 3188 . 3238) (TYPEDEF "typedef" 3188 . 3238) (punctuation ":" 3188 . 3238) (semantic-list #("(basic_, name)" 0 1 (macros (("mode" symbol "output_seekable" 3222 . 3237) ("name" symbol "array_sink" 3210 . 3220)))) 3188 . 3238) (symbol "BOOST_PP_CAT" 3188 . 3238) (STRUCT "struct" 3188 . 3238) (punctuation ">" 3188 . 3238) (symbol "Ch" 3188 . 3238) (TYPENAME "typename" 3188 . 3238) (punctuation "<" 3188 . 3238) (TEMPLATE "template" 3188 . 3238) (punctuation ">" 3136 . 3187) (WCHAR "wchar_t" 3136 . 3187) (punctuation "<" 3136 . 3187) (semantic-list #("(basic_, name)" 0 1 (macros (("mode" symbol "input_seekable" 3172 . 3186) ("name" symbol "array_source" 3158 . 3170)))) 3136 . 3187) (symbol "BOOST_PP_CAT" 3136 . 3187) (TYPEDEF "typedef" 3136 . 3187) (punctuation ">" 3136 . 3187) (CHAR "char" 3136 . 3187) (punctuation "<" 3136 . 3187) (semantic-list #("(basic_, name)" 0 1 (macros (("mode" symbol "input_seekable" 3172 . 3186) ("name" symbol "array_source" 3158 . 3170)))) 3136 . 3187) (symbol "BOOST_PP_CAT" 3136 . 3187) (TYPEDEF "typedef" 3136 . 3187) (punctuation ":" 3136 . 3187) (semantic-list #("(basic_, name)" 0 1 (macros (("mode" symbol "input_seekable" 3172 . 3186) ("name" symbol "array_source" 3158 . 3170)))) 3136 . 3187) (symbol "BOOST_PP_CAT" 3136 . 3187) (STRUCT "struct" 3136 . 3187) (punctuation ">" 3136 . 3187) (symbol "Ch" 3136 . 3187) (TYPENAME "typename" 3136 . 3187) (punctuation "<" 3136 . 3187) (TEMPLATE "template" 3136 . 3187))
+    :lexical-table 
+        '(("mode"nil ;; bogus macro found.
+)
+          ("name"nil ;; bogus macro found.
+)
+          ("BOOST_IOSTREAMS_ARRAY_HPP_INCLUDED")
+          )
+
+    )
+   )
+  :file "!usr!include!boost!iostreams!device!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

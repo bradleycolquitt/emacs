@@ -1,0 +1,23 @@
+;; Object libdb/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libdb/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("." "tests")) nil [1 17])
+            ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libop" "-I" "${top_srcdir}/libutil" "@OP_CPPFLAGS@")) nil [18 103])
+            ("AM_CFLAGS" variable (:default-value ("@OP_CFLAGS@")) nil [104 128])
+            ("noinst_LIBRARIES" variable (:default-value ("libodb.a")) nil [129 157])
+            ("libodb_a_SOURCES" variable (:default-value ("db_manage.c" "db_insert.c" "db_travel.c" "db_debug.c" "db_stat.c" "odb.h")) nil [158 258]))          
+    :file "Makefile.am"
+    :pointmax 259
+    :fsize 258
+    :lastmodtime '(21523 1458 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!libdb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

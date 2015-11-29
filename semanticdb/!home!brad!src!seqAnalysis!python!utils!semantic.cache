@@ -1,0 +1,67 @@
+;; Object utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utils/"
+  :tables (list 
+   (semanticdb-table "rmskOut2GTF.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [25 35])
+            ("re" include nil nil [36 45])
+            ("pdb" include nil nil [46 56])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [66 70]))              ) nil [57 703])
+            ("if" code nil nil [704 750]))          
+    :file "rmskOut2GTF.py"
+    :pointmax 645
+    :fsize 749
+    :lastmodtime '(21743 30328 988277 600000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "splitGTF.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [25 39])
+            ("os" include nil nil [25 39])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [50 54]))              ) nil [41 543])
+            ("if" code nil nil [544 590]))          
+    :file "splitGTF.py"
+    :pointmax 590
+    :fsize 589
+    :lastmodtime '(21345 30662 620286 882000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "split_gff_records.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [79 89])
+            ("re" include nil nil [90 99])
+            ("random" include nil nil [100 113])
+            ("pdb" include nil nil [114 124])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [135 139]))              ) nil [126 735])
+            ("if" code nil nil [736 782]))          
+    :file "split_gff_records.py"
+    :pointmax 546
+    :fsize 545
+    :lastmodtime '(21754 19022 709238 863000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "gff_merge.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [173 183])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [194 198]))              ) nil [185 540])
+            ("if" code nil nil [554 600]))          
+    :file "gff_merge.py"
+    :pointmax 531
+    :fsize 530
+    :lastmodtime '(21776 43312 684578 471000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!seqAnalysis!python!utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

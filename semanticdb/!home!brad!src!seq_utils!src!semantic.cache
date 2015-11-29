@@ -1,0 +1,164 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "seq_lengths.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("fstream" include (:system-flag t) nil [1 19])
+            ("iostream" include (:system-flag t) nil [20 39])
+            ("vector" include (:system-flag t) nil [40 57])
+            ("boost/iostreams/filtering_streambuf.hpp" include (:system-flag t) nil [58 108])
+            ("boost/iostreams/copy.hpp" include (:system-flag t) nil [109 144])
+            ("boost/iostreams/filter/gzip.hpp" include (:system-flag t) nil [145 187])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [210 219])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [220 232]))                  
+                :type "int")
+                nil [200 2056]))          
+    :file "seq_lengths.cpp"
+    :pointmax 2057
+    :fsize 1980
+    :lastmodtime '(21581 7542 502905 447000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "seq_lengths2.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("fstream" include (:system-flag t) nil [159 177])
+            ("iostream" include (:system-flag t) nil [178 197])
+            ("zlib.h" include (:system-flag t) nil [198 215])
+            ("kseq/kseq.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [230 252])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [293 302])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [303 315]))                  
+                :type "int")
+                nil [283 1864]))          
+    :file "seq_lengths2.cpp"
+    :pointmax 1865
+    :fsize 1864
+    :lastmodtime '(21920 8456 24520 499000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bc_splitter.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "bc_splitter.cpp"
+    :pointmax 524
+    :fsize 523
+    :lastmodtime '(21597 33291 55288 271000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "h5_create.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1171 1190])
+            ("string" include (:system-flag t) nil [1191 1208])
+            ("H5Cpp.h" include nil nil [1210 1228])
+            ("H5" using (:type ("H5" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1258 1277])
+            ("indexData" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2197 2204])
+                    ("file_name" variable (:type ("H5std_string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2224 2247])
+                    ("dataset_name" variable (:type ("H5std_string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2251 2277])
+                    ("file" variable (:type ("H5File" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2281 2293])
+                    ("indexData" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type ("file_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2328 2338]))                          
+                        :type ("indexData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2317 2410])
+                    ("indexData" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type ("file_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2425 2435])
+                            ("" variable (:type ("dataset_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2436 2449]))                          
+                        :type ("indexData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2414 2450])
+                    ("indexData" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2472 2564])
+                    ("getId" function
+                       (:prototype-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2582 2597])
+                    ("getBarcode" function
+                       (:prototype-flag t
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2601 2623])
+                    ("getUMI" function
+                       (:prototype-flag t
+                        :type ("String" type
+                             (:template-specifier 
+                                ( ("Dna" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2627 2648])
+                    ("getChrom" function
+                       (:prototype-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2699 2717])
+                    ("getPosition" function
+                       (:prototype-flag t
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2721 2744])
+                    ("insertReadData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rd" variable (:type ("readData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2782 2794]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2762 2795])
+                    ("setFileName" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2814 2833])
+                    ("setDatasetName" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2837 2859])
+                    ("setName" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2863 2878])
+                    ("setBarcode" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2882 2900])
+                    ("setUMI" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2904 2918]))                  
+                :type "class")
+                nil [2177 2952])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2964 2969]))                  
+                :type "int")
+                nil [2954 5271]))          
+    :file "h5_create.cpp"
+    :pointmax 5273
+    :fsize 5272
+    :lastmodtime '(21597 33291 55288 271000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!seq_utils!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

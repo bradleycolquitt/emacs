@@ -1,0 +1,23 @@
+;; Object jvmpi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "jvmpi/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("pkglib_LTLIBRARIES" variable (:default-value ("libjvmpi_oprofile.la")) nil [1 43])
+            ("libjvmpi_oprofile_la_CXXFLAGS" variable (:default-value ("-W" "-Wall" "-fPIC")) nil [44 91])
+            ("libjvmpi_oprofile_la_SOURCES" variable (:default-value ("jvmpi_oprofile.cpp")) nil [92 142])
+            ("libjvmpi_oprofile_la_LIBADD" variable (:default-value ("../../libopagent/libopagent.la")) nil [143 204])
+            ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libopagent" "-I" "@JAVA_HOMEDIR@/include" "-I" "@JAVA_HOMEDIR@/include/linux")) nil [205 332]))          
+    :file "Makefile.am"
+    :pointmax 332
+    :fsize 331
+    :lastmodtime '(21523 1471 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!agents!jvmpi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

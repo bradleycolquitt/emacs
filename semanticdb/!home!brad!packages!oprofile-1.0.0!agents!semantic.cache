@@ -1,0 +1,24 @@
+;; Object agents/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "agents/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable nil nil [2 12])
+            ("SUBDIRS" variable (:default-value ("jvmti")) nil [34 52])
+            ("SUBDIRS" variable (:default-value ("jvmpi")) nil [80 102])
+            ("INSTALL_EXEC_HOOK" variable nil nil [109 129])
+            ("INSTALL_EXEC_HOOK" variable (:default-value ("__install-exec-hook")) nil [147 188])
+            ("__install-exec-hook" function nil nil [195 1205]))          
+    :file "Makefile.am"
+    :pointmax 1246
+    :fsize 1245
+    :lastmodtime '(21523 1471 0 0)
+    :unmatched-syntax '((semantic-list 1226 . 1245) (punctuation 1225 . 1226) (punctuation 1223 . 1224) (symbol 1206 . 1223) (bol 1206 . 1206))
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!agents!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

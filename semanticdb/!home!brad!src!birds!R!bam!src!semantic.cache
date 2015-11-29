@@ -1,0 +1,227 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "bam.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Rcpp.h" include (:system-flag t) nil [1 18])
+            ("csignal" include (:system-flag t) nil [19 37])
+            ("vector" include (:system-flag t) nil [38 55])
+            ("sstream" include (:system-flag t) nil [56 74])
+            ("exception" include (:system-flag t) nil [75 95])
+            ("fstream" include (:system-flag t) nil [96 114])
+            ("iostream" include (:system-flag t) nil [115 134])
+            ("boost/regex.hpp" include (:system-flag t) nil [135 161])
+            ("htslib/sam.h" include (:system-flag t) nil [162 185])
+            ("Rcpp" using (:type ("Rcpp" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [186 207])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [208 228])
+            ("intHandler" function
+               (:arguments 
+                  ( ("dummy" variable (:type "int") (reparse-symbol arg-sub-list) [246 256]))                  
+                :type "void")
+                nil [230 358])
+            ("count_region" function
+               (:arguments 
+                  ( ("bam" variable
+                       (:pointer 1
+                        :type ("samFile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [387 400])
+                    ("header" variable
+                       (:pointer 1
+                        :type ("bam_hdr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [401 419])
+                    ("idx" variable
+                       (:pointer 1
+                        :type ("hts_idx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [420 435])
+                    ("region" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [436 455]))                  
+                :type ("NumericVector" type (:type "class") nil nil))
+                nil [360 999])
+            ("bam_density_mult" function
+               (:arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1061 1079])
+                    ("regions" variable (:type ("CharacterVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1080 1104]))                  
+                :type ("List" type (:type "class") nil nil))
+                nil [1039 2032])
+            ("bam_density" function
+               (:arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2208 2226])
+                    ("region" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2227 2246]))                  
+                :type ("NumericVector" type (:type "class") nil nil))
+                nil [2182 4029])
+            ("split" function
+               (:arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4171 4192])
+                    ("delim" variable (:type "char") (reparse-symbol arg-sub-list) [4193 4204])
+                    ("elems" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4205 4237]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4139 4363])
+            ("split" function
+               (:arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4387 4403])
+                    ("delim" variable (:type "char") (reparse-symbol arg-sub-list) [4404 4415]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4366 4479])
+            ("pileupRecord" type
+               (:members 
+                  ( ("chrom" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4506 4519])
+                    ("pos" variable (:type "unsigned int") (reparse-symbol classsubparts) [4522 4539])
+                    ("ref" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4542 4553])
+                    ("read_depth" variable (:type "unsigned int") (reparse-symbol classsubparts) [4556 4580])
+                    ("comparison" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4583 4601])
+                    ("quality" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4604 4619])
+                    ("pileupRecord" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("chrom" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4638 4651])
+                            ("pos" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4668 4685])
+                            ("ref" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4701 4712])
+                            ("read_depth" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4728 4752])
+                            ("comparison" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4768 4786])
+                            ("quality" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4802 4817]))                          
+                        :type ("pileupRecord" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [4625 5048]))                  
+                :type "struct")
+                nil [4482 5051])
+            ("Pileup" type
+               (:members 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [5070 5088])
+                    ("records" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("pileupRecord" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5091 5120])
+                    ("num_records" variable (:type "int") (reparse-symbol classsubparts) [5123 5139])
+                    ("public" label nil (reparse-symbol classsubparts) [5142 5149])
+                    ("Pileup" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5161 5179]))                          
+                        :type ("Pileup" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5154 5419])
+                    ("read_file" function (:type "int") (reparse-symbol classsubparts) [5429 6036])
+                    ("get_num_records" function (:type "int") (reparse-symbol classsubparts) [6063 6118])
+                    ("get_records_p" function
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("pileupRecord" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6128 6196])
+                    ("insert_record" function
+                       (:arguments 
+                          ( ("pu" variable
+                               (:reference 1
+                                :type ("pileupRecord" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6225 6242]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6206 6279]))                  
+                :type "class")
+                nil [5053 6282])
+            ("sum_errors" function
+               (:arguments 
+                  ( ("pile" variable
+                       (:pointer 1
+                        :type ("Pileup" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6300 6313])
+                    ("mm" variable
+                       (:reference 1
+                        :type ("NumericVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6314 6332])
+                    ("indels" variable
+                       (:reference 1
+                        :type ("NumericVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6333 6355]))                  
+                :type "void")
+                nil [6284 7311])
+            ("normalize_errors" function
+               (:arguments 
+                  ( ("pile" variable
+                       (:pointer 1
+                        :type ("Pileup" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7335 7348])
+                    ("mm2" variable
+                       (:reference 1
+                        :type ("NumericVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7349 7368])
+                    ("indels2" variable
+                       (:reference 1
+                        :type ("NumericVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7369 7392]))                  
+                :type "void")
+                nil [7313 7754])
+            ("parse_pileup_c" function
+               (:arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7795 7813]))                  
+                :type ("List" type (:type "class") nil nil))
+                nil [7775 8296]))          
+    :file "bam.cpp"
+    :pointmax 8297
+    :fsize 8336
+    :lastmodtime '(21680 25266 338142 726000)
+    :unmatched-syntax '((string 2246 . 2252) (punctuation 2245 . 2246) (number 256 . 257) (punctuation 255 . 256) (semantic-list 4416 . 4479) (semantic-list 4386 . 4415) (semantic-list 4238 . 4363) (semantic-list 4170 . 4237))
+    )
+   )
+  :file "!home!brad!src!birds!R!bam!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

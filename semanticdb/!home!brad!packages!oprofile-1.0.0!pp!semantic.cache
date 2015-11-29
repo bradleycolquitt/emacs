@@ -1,0 +1,33 @@
+;; Object pp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pp/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libop" "-I" "${top_srcdir}/libutil" "-I" "${top_srcdir}/libdb" "-I" "${top_srcdir}/libopt++" "-I" "${top_srcdir}/libutil++" "-I" "${top_srcdir}/libregex" "-I" "${top_srcdir}/libpp" "@OP_CPPFLAGS@")) nil [1 226])
+            ("AM_CXXFLAGS" variable (:default-value ("@OP_CXXFLAGS@")) nil [227 255])
+            ("AM_LDFLAGS" variable (:default-value ("@OP_LDFLAGS@")) nil [255 281])
+            ("bin_PROGRAMS" variable (:default-value ("opreport")) nil [282 335])
+            ("LIBS" variable (:default-value ("@POPT_LIBS@" "@BFD_LIBS@")) nil [336 364])
+            ("pp_common" variable (:default-value ("common_option.cpp" "common_option.h")) nil [365 411])
+            ("common_libs" variable (:default-value ("../libpp/libpp.a")) nil [412 595])
+            ("opreport_SOURCES" variable (:default-value ("opreport.cpp" "opreport_options.h" "opreport_options.cpp" "$(pp_common)")) nil [596 687])
+            ("opreport_LDADD" variable (:default-value ("$(common_libs)")) nil [687 719])
+            ("opannotate_SOURCES" variable (:default-value ("opannotate.cpp" "opannotate_options.h" "opannotate_options.cpp" "$(pp_common)")) nil [720 819])
+            ("opannotate_LDADD" variable (:default-value ("$(common_libs)")) nil [819 853])
+            ("opgprof_SOURCES" variable (:default-value ("opgprof.cpp" "opgprof_options.h" "opgprof_options.cpp" "$(pp_common)")) nil [854 941])
+            ("opgprof_LDADD" variable (:default-value ("$(common_libs)")) nil [941 972])
+            ("oparchive_SOURCES" variable (:default-value ("oparchive.cpp" "oparchive_options.h" "oparchive_options.cpp" "$(pp_common)")) nil [973 1068])
+            ("oparchive_LDADD" variable (:default-value ("$(common_libs)")) nil [1068 1101]))          
+    :file "Makefile.am"
+    :pointmax 1101
+    :fsize 1100
+    :lastmodtime '(21523 1458 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!pp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

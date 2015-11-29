@@ -1,0 +1,29 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "threshold_renyi.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("image.h" include (:system-flag t) nil [99 117])
+            ("SWAP_INT" variable (:constant-flag t) nil [155 163])
+            ("threshold_renyi" function
+               (:arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Image" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [627 646]))                  
+                :type "int")
+                nil [605 5559]))          
+    :file "threshold_renyi.c"
+    :pointmax 5577
+    :fsize 5576
+    :lastmodtime '(18460 61754 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!fourier_0.8!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

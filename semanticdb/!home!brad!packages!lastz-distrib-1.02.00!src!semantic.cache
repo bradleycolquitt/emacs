@@ -1,0 +1,44 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("../make-include.mak" include nil nil [1 29])
+            ("version.mak" include nil nil [29 49])
+            ("CC" variable (:default-value ("gcc")) nil [50 57])
+            ("default" function (:arguments ("lastz" "lastz_D")) nil [77 100])
+            ("definedForAll" variable (:default-value ("-Wall" "-Wextra" "-D_FILE_OFFSET_BITS=64" "-D_LARGEFILE_SOURCE")) nil [558 631])
+            ("VERSION_FLAGS" variable (:default-value ("-DVERSION_MAJOR=\"\\\"${VERSION_MAJOR}\"\\\"" "-DVERSION_MINOR=\"\\\"${VERSION_MINOR}\"\\\"" "-DVERSION_SUBMINOR=\"\\\"${VERSION_SUBMINOR}\"\\\"" "-DREVISION_DATE=\"\\\"${REVISION_DATE}\"\\\"" "-DSUBVERSION_REV=\"\\\"${SUBVERSION_REV}\"\\\"")) nil [633 866])
+            ("CFLAGS" variable (:default-value ("-O3" "${definedForAll}" "${VERSION_FLAGS}")) nil [868 915])
+            ("srcFiles" variable (:default-value ("lastz" "infer_scores" "seeds" "pos_table" "quantum" "seed_search" "diag_hash" "chain" "gapped_extend" "tweener" "masking" "segment" "edit_script" "identity_dist" "coverage_dist" "continuity_dist" "output" "gfa" "lav" "axt" "maf" "cigar" "sam" "genpaf" "text_align" "align_diffs" "utilities" "dna_utilities" "sequences" "capsule")) nil [917 1382])
+            ("incFiles" variable (:default-value ("lastz.h" "infer_scores.h" "seeds.h" "pos_table.h" "quantum.h" "seed_search.h" "diag_hash.h" "chain.h" "gapped_extend.h" "tweener.h" "masking.h" "segment.h" "edit_script.h" "identity_dist.h" "coverage_dist.h" "continuity_dist.h" "output.h" "gfa.h" "lav.h" "axt.h" "maf.h" "sam.h" "cigar.h" "genpaf.h" "text_align.h" "align_diffs.h" "utilities.h" "dna_utilities.h" "sequences.h" "capsule.h")) nil [1383 1960])
+            ("%.o" function (:arguments ("%.c" "version.mak" "${incFiles}")) nil [1961 2042])
+            ("%_D.o" function (:arguments ("%.c" "version.mak" "${incFiles}")) nil [2043 2126])
+            ("lastz" function (:arguments ("$(foreach part,${srcFiles},${part}.o)")) nil [2128 2228])
+            ("lastz_D" function (:arguments ("$(foreach part,${srcFiles},${part}_D.o)")) nil [2229 2335])
+            ("clean" function (:arguments ("cleano" "clean_builds" "clean_test")) nil [2347 2385])
+            ("cleano" function nil nil [2386 2405])
+            ("clean_builds" function nil nil [2406 2448])
+            ("install" function (:arguments ("lastz" "lastz_D")) nil [2529 2654])
+            ("install_lastz" function (:arguments ("lastz")) nil [2655 2740])
+            ("install_D" function (:arguments ("lastz_D")) nil [2741 2828])
+            ("clean_test" function nil nil [3075 3123])
+            ("test" function (:arguments ("lastz")) nil [3124 3554]))          
+    :file "Makefile"
+    :pointmax 3563
+    :fsize 3554
+    :lastmodtime '(21697 38514 816151 910000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "version.mak"
+    :file "version.mak"
+    :fsize 102
+    :lastmodtime '(19277 64537 0 0)
+    )
+   )
+  :file "!home!brad!packages!lastz-distrib-1.02.00!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

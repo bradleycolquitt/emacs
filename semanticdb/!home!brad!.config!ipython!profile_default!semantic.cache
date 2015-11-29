@@ -1,0 +1,41 @@
+;; Object profile_default/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "profile_default/"
+  :tables (list 
+   (semanticdb-table "ipython_config.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("c" variable nil nil [36 52])
+            ("c" variable nil nil [1647 1735])
+            ("c" variable nil nil [5326 5413]))          
+    :file "ipython_config.py"
+    :pointmax 19046
+    :fsize 19045
+    :lastmodtime '(21585 17496 774950 25000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ipython_notebook_config.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("c" variable nil nil [45 61])
+            ("c" variable nil nil [442 480])
+            ("c" variable nil nil [1608 1642])
+            ("c" variable nil nil [2109 2134])
+            ("c" variable nil nil [2566 2601])
+            ("c" variable nil nil [2651 2716])
+            ("c" variable nil nil [3423 3480])
+            ("c" variable nil nil [3764 3850])
+            ("c" variable nil nil [6195 6217])
+            ("c" variable nil nil [6338 6368])
+            ("c" variable nil nil [22884 22952]))          
+    :file "ipython_notebook_config.py"
+    :pointmax 22953
+    :fsize 22952
+    :lastmodtime '(22080 60155 338475 980000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!.config!ipython!profile_default!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

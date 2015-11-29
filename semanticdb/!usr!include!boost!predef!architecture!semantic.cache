@@ -1,0 +1,370 @@
+;; Object architecture/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "architecture/"
+  :tables (list 
+   (semanticdb-table "alpha.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_ALPHA_H" variable (:constant-flag t) nil [249 282])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [284 324])
+            ("boost/predef/make.h" include (:system-flag t) nil [325 355])
+            ("BOOST_ARCH_ALPHA" variable (:constant-flag t) nil [754 770])
+            ("BOOST_ARCH_ALPHA_NAME" variable (:constant-flag t) nil [1484 1505])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1519 1556]))          
+    :file "alpha.h"
+    :pointmax 1632
+    :fsize 1631
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 1582 . 1622) (symbol 1557 . 1582) (string "\"DEC Alpha\"" 1600 . 1621))
+    :lexical-table 
+        '(("BOOST_PREDEF_ARCHITECTURE_ALPHA_H")
+          ("BOOST_ARCH_ALPHA" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 771 . 805)))
+          ("BOOST_ARCH_ALPHA_NAME" . ((string "\"DEC Alpha\"" 1506 . 1517)))
+          )
+
+    )
+   (semanticdb-table "arm.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_ARM_H" variable (:constant-flag t) nil [247 278])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [280 320])
+            ("boost/predef/make.h" include (:system-flag t) nil [321 351])
+            ("BOOST_ARCH_ARM" variable (:constant-flag t) nil [790 804])
+            ("BOOST_ARCH_ARM_NAME" variable (:constant-flag t) nil [1455 1474])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1482 1519]))          
+    :file "arm.h"
+    :pointmax 1591
+    :fsize 1590
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 1545 . 1581) (symbol 1520 . 1545) (string "\"ARM\"" 1561 . 1580))
+    :lexical-table 
+        '(("BOOST_PREDEF_ARCHITECTURE_ARM_H")
+          ("BOOST_ARCH_ARM" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 805 . 839)))
+          ("BOOST_ARCH_ARM_NAME" . ((string "\"ARM\"" 1475 . 1480)))
+          )
+
+    )
+   (semanticdb-table "blackfin.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_BLACKFIN_H" variable (:constant-flag t) nil [245 281])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [283 323])
+            ("boost/predef/make.h" include (:system-flag t) nil [324 354])
+            ("BOOST_ARCH_BLACKFIN" variable (:constant-flag t) nil [669 688])
+            ("BOOST_ARCH_BLACKFIN_NAME" variable (:constant-flag t) nil [989 1013])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1026 1063]))          
+    :file "blackfin.h"
+    :pointmax 1145
+    :fsize 1144
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 1089 . 1135) (symbol 1064 . 1089) (string "\"Blackfin\"" 1110 . 1134))
+    :lexical-table 
+        '(("BOOST_ARCH_BLACKFIN_NAME" . ((string "\"Blackfin\"" 1014 . 1024)))
+          ("BOOST_ARCH_BLACKFIN" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 689 . 723)))
+          ("BOOST_PREDEF_ARCHITECTURE_BLACKFIN_H")
+          )
+
+    )
+   (semanticdb-table "convex.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_CONVEX_H" variable (:constant-flag t) nil [248 282])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [284 324])
+            ("boost/predef/make.h" include (:system-flag t) nil [325 355])
+            ("BOOST_ARCH_CONVEX" variable (:constant-flag t) nil [753 770])
+            ("BOOST_ARCH_CONVEX_NAME" variable (:constant-flag t) nil [1716 1738])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1758 1795]))          
+    :file "convex.h"
+    :pointmax 1874
+    :fsize 1873
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 1821 . 1863) (symbol 1796 . 1821) (string "\"Convex Computer\"" 1840 . 1862))
+    :lexical-table 
+        '(("BOOST_ARCH_CONVEX_NAME" . ((string "\"Convex Computer\"" 1739 . 1756)))
+          ("BOOST_PREDEF_ARCHITECTURE_CONVEX_H")
+          ("BOOST_ARCH_CONVEX" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 771 . 805)))
+          )
+
+    )
+   (semanticdb-table "ia64.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_IA64_H" variable (:constant-flag t) nil [248 280])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [282 322])
+            ("boost/predef/make.h" include (:system-flag t) nil [323 353])
+            ("BOOST_ARCH_IA64" variable (:constant-flag t) nil [780 795])
+            ("BOOST_ARCH_IA64_NAME" variable (:constant-flag t) nil [1133 1153])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1174 1211]))          
+    :file "ia64.h"
+    :pointmax 1284
+    :fsize 1283
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 1237 . 1275) (symbol 1212 . 1237) (string "\"Intel Itanium 64\"" 1254 . 1274))
+    :lexical-table 
+        '(("BOOST_ARCH_IA64" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 796 . 830)))
+          ("BOOST_ARCH_IA64_NAME" . ((string "\"Intel Itanium 64\"" 1154 . 1172)))
+          ("BOOST_PREDEF_ARCHITECTURE_IA64_H")
+          )
+
+    )
+   (semanticdb-table "m68k.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_M68K_H" variable (:constant-flag t) nil [248 280])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [282 322])
+            ("boost/predef/make.h" include (:system-flag t) nil [323 353])
+            ("BOOST_ARCH_M68K" variable (:constant-flag t) nil [1114 1129])
+            ("BOOST_ARCH_M68K_NAME" variable (:constant-flag t) nil [2442 2462])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [2479 2516]))          
+    :file "m68k.h"
+    :pointmax 2590
+    :fsize 2589
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 2542 . 2580) (symbol 2517 . 2542) (string "\"Motorola 68k\"" 2559 . 2579))
+    :lexical-table 
+        '(("BOOST_PREDEF_ARCHITECTURE_M68K_H")
+          ("BOOST_ARCH_M68K" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 1130 . 1164)))
+          ("BOOST_ARCH_M68K_NAME" . ((string "\"Motorola 68k\"" 2463 . 2477)))
+          )
+
+    )
+   (semanticdb-table "mips.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_MIPS_H" variable (:constant-flag t) nil [248 280])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [282 322])
+            ("boost/predef/make.h" include (:system-flag t) nil [323 353])
+            ("BOOST_ARCH_MIPS" variable (:constant-flag t) nil [964 979])
+            ("BOOST_ARCH_MIPS_NAME" variable (:constant-flag t) nil [2068 2088])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [2097 2134]))          
+    :file "mips.h"
+    :pointmax 2208
+    :fsize 2207
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 2160 . 2198) (symbol 2135 . 2160) (string "\"MIPS\"" 2177 . 2197))
+    :lexical-table 
+        '(("BOOST_ARCH_MIPS_NAME" . ((string "\"MIPS\"" 2089 . 2095)))
+          ("BOOST_ARCH_MIPS" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 980 . 1014)))
+          ("BOOST_PREDEF_ARCHITECTURE_MIPS_H")
+          )
+
+    )
+   (semanticdb-table "parisc.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_PARISC_H" variable (:constant-flag t) nil [250 284])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [286 326])
+            ("boost/predef/make.h" include (:system-flag t) nil [327 357])
+            ("BOOST_ARCH_PARISC" variable (:constant-flag t) nil [902 919])
+            ("BOOST_ARCH_PARISC_NAME" variable (:constant-flag t) nil [1752 1774])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1789 1826]))          
+    :file "parisc.h"
+    :pointmax 1904
+    :fsize 1903
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 1852 . 1894) (symbol 1827 . 1852) (string "\"HP/PA RISC\"" 1871 . 1893))
+    :lexical-table 
+        '(("BOOST_PREDEF_ARCHITECTURE_PARISC_H")
+          ("BOOST_ARCH_PARISC" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 920 . 954)))
+          ("BOOST_ARCH_PARISC_NAME" . ((string "\"HP/PA RISC\"" 1775 . 1787)))
+          )
+
+    )
+   (semanticdb-table "ppc.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_PPC_H" variable (:constant-flag t) nil [247 278])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [280 320])
+            ("boost/predef/make.h" include (:system-flag t) nil [321 351])
+            ("BOOST_ARCH_PPC" variable (:constant-flag t) nil [1087 1101])
+            ("BOOST_ARCH_PPC_NAME" variable (:constant-flag t) nil [2019 2038])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [2050 2087]))          
+    :file "ppc.h"
+    :pointmax 2159
+    :fsize 2158
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 2113 . 2149) (symbol 2088 . 2113) (string "\"PowerPC\"" 2129 . 2148))
+    :lexical-table 
+        '(("BOOST_ARCH_PPC" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 1102 . 1136)))
+          ("BOOST_ARCH_PPC_NAME" . ((string "\"PowerPC\"" 2039 . 2048)))
+          ("BOOST_PREDEF_ARCHITECTURE_PPC_H")
+          )
+
+    )
+   (semanticdb-table "pyramid.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_PYRAMID_H" variable (:constant-flag t) nil [249 284])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [286 326])
+            ("boost/predef/make.h" include (:system-flag t) nil [327 357])
+            ("BOOST_ARCH_PYRAMID" variable (:constant-flag t) nil [534 552])
+            ("BOOST_ARCH_PYRAMID_NAME" variable (:constant-flag t) nil [783 806])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [823 860]))          
+    :file "pyramid.h"
+    :pointmax 940
+    :fsize 939
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 886 . 930) (symbol 861 . 886) (string "\"Pyramid 9810\"" 906 . 929))
+    :lexical-table 
+        '(("BOOST_ARCH_PYRAMID_NAME" . ((string "\"Pyramid 9810\"" 807 . 821)))
+          ("BOOST_PREDEF_ARCHITECTURE_PYRAMID_H")
+          ("BOOST_ARCH_PYRAMID" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 553 . 587)))
+          )
+
+    )
+   (semanticdb-table "rs6k.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_RS6K_H" variable (:constant-flag t) nil [248 280])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [282 322])
+            ("boost/predef/make.h" include (:system-flag t) nil [323 353])
+            ("BOOST_ARCH_RS6000" variable (:constant-flag t) nil [740 757])
+            ("BOOST_ARCH_RS6000_NAME" variable (:constant-flag t) nil [1088 1110])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1122 1159])
+            ("BOOST_ARCH_PWR" variable (:constant-flag t) nil [1237 1251])
+            ("BOOST_ARCH_PWR_NAME" variable (:constant-flag t) nil [1342 1361]))          
+    :file "rs6k.h"
+    :pointmax 1393
+    :fsize 1392
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 1185 . 1227) (symbol 1160 . 1185) (string "\"RS/6000\"" 1204 . 1226))
+    :lexical-table 
+        '(("BOOST_PREDEF_ARCHITECTURE_RS6K_H")
+          ("BOOST_ARCH_RS6000" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 758 . 792)))
+          ("BOOST_ARCH_PWR_NAME" . ((symbol "BOOST_ARCH_RS6000_NAME" 1362 . 1384)))
+          ("BOOST_ARCH_RS6000_NAME" . ((string "\"RS/6000\"" 1111 . 1120)))
+          ("BOOST_ARCH_PWR" . ((symbol "BOOST_ARCH_RS6000" 1252 . 1269)))
+          )
+
+    )
+   (semanticdb-table "sparc.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_SPARC_H" variable (:constant-flag t) nil [249 282])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [284 324])
+            ("boost/predef/make.h" include (:system-flag t) nil [325 355])
+            ("BOOST_ARCH_SPARC" variable (:constant-flag t) nil [665 681])
+            ("BOOST_ARCH_SPARC_NAME" variable (:constant-flag t) nil [1234 1255])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1265 1302]))          
+    :file "sparc.h"
+    :pointmax 1378
+    :fsize 1377
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 1328 . 1368) (symbol 1303 . 1328) (string "\"SPARC\"" 1346 . 1367))
+    :lexical-table 
+        '(("BOOST_ARCH_SPARC_NAME" . ((string "\"SPARC\"" 1256 . 1263)))
+          ("BOOST_ARCH_SPARC" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 682 . 716)))
+          ("BOOST_PREDEF_ARCHITECTURE_SPARC_H")
+          )
+
+    )
+   (semanticdb-table "superh.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_SUPERH_H" variable (:constant-flag t) nil [250 284])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [286 326])
+            ("boost/predef/make.h" include (:system-flag t) nil [327 357])
+            ("BOOST_ARCH_SH" variable (:constant-flag t) nil [779 792])
+            ("BOOST_ARCH_SH_NAME" variable (:constant-flag t) nil [1671 1689])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1700 1737]))          
+    :file "superh.h"
+    :pointmax 1807
+    :fsize 1806
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 1763 . 1797) (symbol 1738 . 1763) (string "\"SuperH\"" 1778 . 1796))
+    :lexical-table 
+        '(("BOOST_PREDEF_ARCHITECTURE_SUPERH_H")
+          ("BOOST_ARCH_SH" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 793 . 827)))
+          ("BOOST_ARCH_SH_NAME" . ((string "\"SuperH\"" 1690 . 1698)))
+          )
+
+    )
+   (semanticdb-table "sys370.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_SYS370_H" variable (:constant-flag t) nil [250 284])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [286 326])
+            ("boost/predef/make.h" include (:system-flag t) nil [327 357])
+            ("BOOST_ARCH_SYS370" variable (:constant-flag t) nil [623 640])
+            ("BOOST_ARCH_SYS370_NAME" variable (:constant-flag t) nil [895 917])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [932 969]))          
+    :file "sys370.h"
+    :pointmax 1047
+    :fsize 1046
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 995 . 1037) (symbol 970 . 995) (string "\"System/370\"" 1014 . 1036))
+    :lexical-table 
+        '(("BOOST_ARCH_SYS370" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 641 . 675)))
+          ("BOOST_ARCH_SYS370_NAME" . ((string "\"System/370\"" 918 . 930)))
+          ("BOOST_PREDEF_ARCHITECTURE_SYS370_H")
+          )
+
+    )
+   (semanticdb-table "sys390.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_SYS390_H" variable (:constant-flag t) nil [250 284])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [286 326])
+            ("boost/predef/make.h" include (:system-flag t) nil [327 357])
+            ("BOOST_ARCH_SYS390" variable (:constant-flag t) nil [622 639])
+            ("BOOST_ARCH_SYS390_NAME" variable (:constant-flag t) nil [893 915])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [930 967]))          
+    :file "sys390.h"
+    :pointmax 1045
+    :fsize 1044
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 993 . 1035) (symbol 968 . 993) (string "\"System/390\"" 1012 . 1034))
+    :lexical-table 
+        '(("BOOST_PREDEF_ARCHITECTURE_SYS390_H")
+          ("BOOST_ARCH_SYS390" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 640 . 674)))
+          ("BOOST_ARCH_SYS390_NAME" . ((string "\"System/390\"" 916 . 928)))
+          )
+
+    )
+   (semanticdb-table "x86.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_X86_H" variable (:constant-flag t) nil [247 278])
+            ("boost/predef/architecture/x86/32.h" include (:system-flag t) nil [280 325])
+            ("boost/predef/architecture/x86/64.h" include (:system-flag t) nil [326 371])
+            ("BOOST_ARCH_X86" variable (:constant-flag t) nil [577 591])
+            ("BOOST_ARCH_X86_NAME" variable (:constant-flag t) nil [832 851])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [865 902]))          
+    :file "x86.h"
+    :pointmax 973
+    :fsize 972
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 928 . 964) (symbol 903 . 928) (string "\"Intel x86\"" 944 . 963))
+    :lexical-table 
+        '(("BOOST_ARCH_X86" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 592 . 626)))
+          ("BOOST_ARCH_X86_NAME" . ((string "\"Intel x86\"" 852 . 863)))
+          ("BOOST_PREDEF_ARCHITECTURE_X86_H")
+          )
+
+    )
+   (semanticdb-table "z.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_ARCHITECTURE_Z_H" variable (:constant-flag t) nil [245 274])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [276 316])
+            ("boost/predef/make.h" include (:system-flag t) nil [317 347])
+            ("BOOST_ARCH_Z" variable (:constant-flag t) nil [578 590])
+            ("BOOST_ARCH_Z_NAME" variable (:constant-flag t) nil [808 825])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [844 881]))          
+    :file "z.h"
+    :pointmax 949
+    :fsize 948
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 907 . 939) (symbol 882 . 907) (string "\"z/Architecture\"" 921 . 938))
+    :lexical-table 
+        '(("BOOST_PREDEF_ARCHITECTURE_Z_H")
+          ("BOOST_ARCH_Z_NAME" . ((string "\"z/Architecture\"" 826 . 842)))
+          ("BOOST_ARCH_Z" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 591 . 625)))
+          )
+
+    )
+   )
+  :file "!usr!include!boost!predef!architecture!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

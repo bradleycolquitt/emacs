@@ -1,0 +1,272 @@
+;; Object seq_io/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "seq_io/"
+  :tables (list 
+   (semanticdb-table "test_seq_io.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("seqan/basic.h" include (:system-flag t) nil [2051 2075])
+            ("seqan/file.h" include (:system-flag t) nil [2076 2099])
+            ("test_seq_io_generic.h" include nil nil [2101 2133])
+            ("test_sequence_stream.h" include nil nil [2135 2168])
+            ("test_genomic_region.h" include nil nil [2169 2201])
+            ("test_fai_index.h" include nil nil [2202 2229])
+            ("test_stream_record_reader_fasta.h" include nil nil [2230 2274])
+            ("test_stream_record_reader_fastq.h" include nil nil [2275 2319])
+            ("test_stream_guess_stream_format.h" include nil nil [2320 2364])
+            ("test_stream_write_fasta.h" include nil nil [2365 2401])
+            ("test_stream_read_embl.h" include nil nil [2402 2436])
+            ("test_stream_read_genbank.h" include nil nil [2437 2474])
+            ("test_stream_read_auto_format.h" include nil nil [2475 2516])
+            ("SEQAN_BEGIN_TESTSUITE" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2540 2552]))                  
+                :type "int")
+                nil [2518 9394]))          
+    :file "test_seq_io.cpp"
+    :pointmax 9415
+    :fsize 9414
+    :lastmodtime '(21578 39702 249295 988000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_seq_io_generic.h"
+    :file "test_seq_io_generic.h"
+    :fsize 6975
+    :lastmodtime '(21578 39702 249295 988000)
+    )
+   (semanticdb-table "test_sequence_stream.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CORE_TESTS_SEQ_IO_TEST_EASY_SEQ_IO_H_" variable (:constant-flag t) nil [2105 2142])
+            ("seqan/basic.h" include (:system-flag t) nil [2144 2168])
+            ("seqan/sequence.h" include (:system-flag t) nil [2169 2196])
+            ("seqan/seq_io.h" include (:system-flag t) nil [2197 2222])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_read_fasta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2516 2539]))                  
+                :type "int")
+                nil [2498 2855])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_recognize_file_type_text_fasta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3079 3138]))                  
+                :type "int")
+                nil [3061 3629])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_recognize_file_type_gz_fasta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3649 3706]))                  
+                :type "int")
+                nil [3631 4246])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_recognize_file_type_bz2_fasta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4266 4324]))                  
+                :type "int")
+                nil [4248 4869])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_recognize_file_format_text_fasta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5095 5156]))                  
+                :type "int")
+                nil [5077 5647])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_recognize_file_format_text_fastq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5667 5728]))                  
+                :type "int")
+                nil [5649 6219])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_read_record_text_fasta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6441 6492]))                  
+                :type "int")
+                nil [6423 7288])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_read_batch_text_fasta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7308 7358]))                  
+                :type "int")
+                nil [7290 8249])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_read_all_text_fasta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8269 8317]))                  
+                :type "int")
+                nil [8251 9107])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_write_record_text_fasta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9329 9381]))                  
+                :type "int")
+                nil [9311 10371])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_write_all_text_fasta" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10391 10440]))                  
+                :type "int")
+                nil [10373 11430])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_write_record_text_fastq_no_qual" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11450 11510]))                  
+                :type "int")
+                nil [11432 12500])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_write_record_text_fastq_with_qual" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12520 12582]))                  
+                :type "int")
+                nil [12502 13742])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_write_all_text_fastq_no_qual" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13762 13819]))                  
+                :type "int")
+                nil [13744 14809])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_seq_io_sequence_stream_write_all_text_fastq_with_qual" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14829 14888]))                  
+                :type "int")
+                nil [14811 16048]))          
+    :file "test_sequence_stream.h"
+    :pointmax 16100
+    :fsize 16099
+    :lastmodtime '(21578 39702 249295 988000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CORE_TESTS_SEQ_IO_TEST_EASY_SEQ_IO_H_")
+          )
+
+    )
+   (semanticdb-table "test_genomic_region.h"
+    :file "test_genomic_region.h"
+    :fsize 4095
+    :lastmodtime '(21578 39702 249295 988000)
+    )
+   (semanticdb-table "test_fai_index.h"
+    :file "test_fai_index.h"
+    :fsize 5927
+    :lastmodtime '(21578 39702 249295 988000)
+    )
+   (semanticdb-table "test_stream_record_reader_fasta.h"
+    :file "test_stream_record_reader_fasta.h"
+    :fsize 11993
+    :lastmodtime '(21578 39702 249295 988000)
+    )
+   (semanticdb-table "test_stream_record_reader_fastq.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("TEST_STREAM_TEST_STREAM_READ_FASTQ_H_" variable (:constant-flag t) nil [2233 2270])
+            ("FASTQ_TEST" function
+               (:template 
+                  ( ("TRecordReader" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("reader" variable
+                       (:reference 1
+                        :type ("TRecordReader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2322 2345]))                  )
+                nil [2272 3257])
+            ("FASTQ_TEST_BATCH" function
+               (:template 
+                  ( ("TRecordReader" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("reader" variable
+                       (:reference 1
+                        :type ("TRecordReader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3315 3338]))                  )
+                nil [3259 4346])
+            ("FASTQ_TEST_BATCH_CONCAT" function
+               (:template 
+                  ( ("TRecordReader" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("reader" variable
+                       (:reference 1
+                        :type ("TRecordReader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4411 4434]))                  )
+                nil [4348 5558])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_stream_record_reader_fastq_single_fstream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5578 5625]))                  
+                :type "int")
+                nil [5560 5885])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_stream_record_reader_fastq_double_fstream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5905 5952]))                  
+                :type "int")
+                nil [5887 6212])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_stream_record_reader_fastq_batch_single_fstream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6232 6285]))                  
+                :type "int")
+                nil [6214 6551])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_stream_record_reader_fastq_batch_double_fstream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6571 6624]))                  
+                :type "int")
+                nil [6553 6890])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_stream_record_reader_fastq_single_mmap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6910 6954]))                  
+                :type "int")
+                nil [6892 7341])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_stream_record_reader_fastq_double_mmap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7361 7405]))                  
+                :type "int")
+                nil [7343 7792])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_stream_record_reader_fastq_batch_single_mmap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7812 7862]))                  
+                :type "int")
+                nil [7794 8255])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_stream_record_reader_fastq_batch_single_concat_mmap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8275 8332]))                  
+                :type "int")
+                nil [8257 8732])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_stream_record_reader_fastq_batch_double_mmap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8752 8802]))                  
+                :type "int")
+                nil [8734 9195])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_stream_record_reader_fastq_batch_double_concat_mmap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9215 9272]))                  
+                :type "int")
+                nil [9197 9672])
+            ("SEQAN_DEFINE_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_stream_record_reader_fastq_check_stream_format" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9692 9744]))                  
+                :type "int")
+                nil [9674 10285]))          
+    :file "test_stream_record_reader_fastq.h"
+    :pointmax 10339
+    :fsize 10338
+    :lastmodtime '(21578 39702 249295 988000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TEST_STREAM_TEST_STREAM_READ_FASTQ_H_")
+          )
+
+    )
+   (semanticdb-table "test_stream_guess_stream_format.h"
+    :file "test_stream_guess_stream_format.h"
+    :fsize 3926
+    :lastmodtime '(21578 39702 249295 988000)
+    )
+   (semanticdb-table "test_stream_write_fasta.h"
+    :file "test_stream_write_fasta.h"
+    :fsize 12247
+    :lastmodtime '(21578 39702 249295 988000)
+    )
+   (semanticdb-table "test_stream_read_embl.h"
+    :file "test_stream_read_embl.h"
+    :fsize 24500
+    :lastmodtime '(21578 39702 249295 988000)
+    )
+   (semanticdb-table "test_stream_read_genbank.h"
+    :file "test_stream_read_genbank.h"
+    :fsize 28493
+    :lastmodtime '(21578 39702 249295 988000)
+    )
+   (semanticdb-table "test_stream_read_auto_format.h"
+    :file "test_stream_read_auto_format.h"
+    :fsize 8464
+    :lastmodtime '(21578 39702 249295 988000)
+    )
+   )
+  :file "!usr!local!seqan!core!tests!seq_io!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

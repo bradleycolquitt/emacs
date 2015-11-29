@@ -1,0 +1,22 @@
+;; Object cufflinks-2.2.1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cufflinks-2.2.1/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("ALWAYS_BUILT" variable (:default-value ("src")) nil [2 21])
+            ("SUBDIRS" variable (:default-value ("$(ALWAYS_BUILT)")) nil [21 47])
+            ("DIST_SUBDIRS" variable (:default-value ("$(ALWAYS_BUILT)")) nil [47 79])
+            ("EXTRA_DIST" variable (:default-value ("LICENSE")) nil [80 101]))          
+    :file "Makefile.am"
+    :pointmax 116
+    :fsize 115
+    :lastmodtime '(21512 42516 0 0)
+    :unmatched-syntax '((symbol 110 . 115) (punctuation 108 . 109) (symbol 102 . 108) (bol 102 . 102))
+    )
+   )
+  :file "!home!brad!packages!cufflinks-2.2.1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

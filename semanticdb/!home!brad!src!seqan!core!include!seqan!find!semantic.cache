@@ -1,0 +1,485 @@
+;; Object find/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "find/"
+  :tables (list 
+   (semanticdb-table "find_pex.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_HEADER_FIND_PEX_H" variable (:constant-flag t) nil [2077 2100])
+            ("SEQAN_NAMESPACE_MAIN" type
+               (:members 
+                  ( ("Hierarchical" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2207 2227])
+                    ("NonHierarchical" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2231 2254])
+                    ("Pex" type
+                       (:template 
+                          ( ("TVerification" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [2257 2336])
+                    ("PexHierarchical" type
+                       (:typedef ("Pex" type
+                             (:template-specifier 
+                                ( ("Hierarchical" type nil nil nil)
+                                  ("AhoCorasick" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Pex"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2338 2397])
+                    ("PexNonHierarchical" type
+                       (:typedef ("Pex" type
+                             (:template-specifier 
+                                ( ("NonHierarchical" type nil nil nil)
+                                  ("AhoCorasick" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Pex"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2398 2460])
+                    ("FindBeginPatternSpec" type
+                       (:template 
+                          ( ("TNeedle" type (:type "class") nil nil)
+                            ("TVerification" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :superclasses 
+                          ( ("DefaultFindBeginPatternSpec" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("Pattern" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2542 2738])
+                    ("PexMultiFinder" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [4356 4399])
+                    ("PexMultiFinder" type
+                       (:template 
+                          ( ("TNeedle" type (:type "class") nil nil)
+                            ("TVerification" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Type" type
+                               (:typedef ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("String" type nil nil nil)
+                                          ("TMultiFinder" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "Pattern"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4558 4621]))                          
+                        :template-specifier 
+                          ( ("Pattern" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4401 4624])
+                    ("PexRange_" type
+                       (:template 
+                          ( ("TPosition" type (:type "class") nil nil)
+                            ("TScore" type (:type "class") nil nil)
+                            ("TVerifier" type (:type "class") nil nil)
+                            ("TNeedle" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("end" variable (:type ("TPosition" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4808 4828])
+                            ("start" variable (:type ("TPosition" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4808 4828])
+                            ("error" variable (:type ("TScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4831 4844])
+                            ("verifier" variable (:type ("TVerifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4847 4866]))                          )
+                        (reparse-symbol namespacesubparts) [4707 4869])
+                    ("Pattern" type
+                       (:template 
+                          ( ("TNeedle" type (:type "class") nil nil)
+                            ("TVerification" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8903 8910])
+                            ("TPosition" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8950 8965])
+                            ("TScore" type
+                               (:typedef ("unsigned int")
+                                :superclasses "unsigned int"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8969 8993])
+                            ("TVerifier" type
+                               (:typedef ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("MyersUkkonen" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "Pattern"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8997 9047])
+                            ("TMFinder" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9198 9212])
+                            ("limit" variable (:type ("TScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9253 9266])
+                            ("data_host" variable (:type ("Holder" type
+                                 (:template-specifier 
+                                    ( ("TNeedle" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9300 9326])
+                            ("multiPattern" variable (:type ("TMFinder" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9380 9402])
+                            ("splitted_needles" variable (:type ("String" type
+                                 (:template-specifier 
+                                    ( ("Segment" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9449 9493])
+                            ("range_table" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("unsigned int" type nil nil nil)
+                                      ("PexRange_" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9579 9658])
+                            ("leaf_map" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("unsigned int" type nil nil nil)
+                                      ("unsigned int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9715 9753])
+                            ("segment_store" variable (:type ("String" type
+                                 (:template-specifier 
+                                    ( ("Segment" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9800 9840])
+                            ("lastFPos" variable (:type "unsigned int") (reparse-symbol classsubparts) [9904 9922])
+                            ("lastFNdl" variable (:type "unsigned int") (reparse-symbol classsubparts) [9926 9944])
+                            ("patternNeedsInit" variable (:type "bool") (reparse-symbol classsubparts) [10011 10042])
+                            ("findNext" variable (:type "bool") (reparse-symbol classsubparts) [10011 10042])
+                            ("needleLength" variable (:type "unsigned int") (reparse-symbol classsubparts) [10048 10070])
+                            ("Pattern" function
+                               (:constructor-flag t
+                                :type ("Pattern" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10075 10087])
+                            ("Pattern" function
+                               (:template 
+                                  ( ("TNeedle2" type (:type "class") nil nil))                                  
+                                :type ("Pattern" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("ndl" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TNeedle2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10132 10153]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [10092 10205])
+                            ("Pattern" function
+                               (:template 
+                                  ( ("TNeedle2" type (:type "class") nil nil))                                  
+                                :type ("Pattern" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("ndl" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TNeedle2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10250 10271])
+                                    ("_limit" variable (:type "int") (reparse-symbol arg-sub-list) [10272 10284]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [10210 10364])
+                            ("Pattern" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [10369 10409]))                          
+                        :superclasses 
+                          ( ("FindBegin_" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("TNeedle" type nil nil nil)
+                            ("Pex" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [8691 10412])
+                    ("setHost" function
+                       (:template 
+                          ( ("TNeedle" type (:type "class") nil nil)
+                            ("TNeedle2" type (:type "class") nil nil)
+                            ("TVerification" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("me" variable
+                               (:reference 1
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10602 10659])
+                            ("needle" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TNeedle2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10660 10684]))                          )
+                        (reparse-symbol namespacesubparts) [10494 10936])
+                    ("setHost" function
+                       (:template 
+                          ( ("TNeedle" type (:type "class") nil nil)
+                            ("TNeedle2" type (:type "class") nil nil)
+                            ("TVerification" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("me" variable
+                               (:reference 1
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11046 11103])
+                            ("needle" variable
+                               (:reference 1
+                                :type ("TNeedle2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11104 11122]))                          )
+                        (reparse-symbol namespacesubparts) [10938 11185])
+                    ("host" function
+                       (:arguments 
+                          ( ("me" variable
+                               (:reference 1
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11431 11488]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11418 11539])
+                    ("host" function
+                       (:arguments 
+                          ( ("me" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11710 11773]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11697 11824])
+                    ("_getRoot" function
+                       (:template 
+                          ( ("TNeedle" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("me" variable
+                               (:reference 1
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11970 12030]))                          )
+                        (reparse-symbol namespacesubparts) [11906 12090])
+                    ("_getRoot" function
+                       (:template 
+                          ( ("TNeedle" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12156 12210]))                          )
+                        (reparse-symbol namespacesubparts) [12092 12244])
+                    ("getScore" function
+                       (:template 
+                          ( ("TNeedle" type (:type "class") nil nil)
+                            ("TVerification" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("me" variable
+                               (:reference 1
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12501 12558]))                          )
+                        (reparse-symbol namespacesubparts) [12413 12638])
+                    ("scoreLimit" function
+                       (:template 
+                          ( ("TNeedle" type (:type "class") nil nil)
+                            ("TVerification" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("me" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12909 12972]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [12811 13020])
+                    ("setScoreLimit" function
+                       (:template 
+                          ( ("TNeedle" type (:type "class") nil nil)
+                            ("TScoreValue" type (:type "class") nil nil)
+                            ("TVerification" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("me" variable
+                               (:reference 1
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13323 13380])
+                            ("_limit" variable (:type ("TScoreValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13387 13406]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [13200 13482])
+                    ("_patternInit" function
+                       (:template 
+                          ( ("TNeedle" type (:type "class") nil nil)
+                            ("TFinder" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("me" variable
+                               (:reference 1
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13767 13826])
+                            ("" variable
+                               (:reference 1
+                                :type ("TFinder" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13827 13837]))                          )
+                        (reparse-symbol namespacesubparts) [13680 16560])
+                    ("find" function
+                       (:template 
+                          ( ("TFinder" type (:type "class") nil nil)
+                            ("TNeedle" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("finder" variable
+                               (:reference 1
+                                :type ("TFinder" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16729 16746])
+                            ("me" variable
+                               (:reference 1
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [16747 16807]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [16642 19114])
+                    ("_createTree" function
+                       (:template 
+                          ( ("TNeedle" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("me" variable
+                               (:reference 1
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22180 22236])
+                            ("start" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22243 22258])
+                            ("end" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22259 22272])
+                            ("k" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22278 22289])
+                            ("parent" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22296 22312])
+                            ("direction" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22319 22338])
+                            ("idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22344 22357])
+                            ("plen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22364 22378]))                          )
+                        (reparse-symbol namespacesubparts) [22112 23520])
+                    ("_patternInit" function
+                       (:template 
+                          ( ("TNeedle" type (:type "class") nil nil)
+                            ("TFinder" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("me" variable
+                               (:reference 1
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [23609 23665])
+                            ("" variable
+                               (:reference 1
+                                :type ("TFinder" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23666 23676]))                          )
+                        (reparse-symbol namespacesubparts) [23522 24961])
+                    ("find" function
+                       (:template 
+                          ( ("TFinder" type (:type "class") nil nil)
+                            ("TNeedle" type (:type "class") nil nil)
+                            ("TMultiFinder" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("finder" variable
+                               (:reference 1
+                                :type ("TFinder" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25130 25147])
+                            ("me" variable
+                               (:reference 1
+                                :type ("Pattern" type
+                                     (:template-specifier 
+                                        ( ("TNeedle" type nil nil nil)
+                                          ("Pex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [25148 25205]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [25043 28635]))                  
+                :type "namespace")
+                nil [2172 28639]))          
+    :file "find_pex.h"
+    :pointmax 28708
+    :fsize 28707
+    :lastmodtime '(21578 59088 685014 172000)
+    :unmatched-syntax '((punctuation 11696 . 11697) (punctuation 11695 . 11696) (punctuation 11694 . 11695) (CONST 11689 . 11694) (punctuation 11687 . 11688) (punctuation 11685 . 11686) (symbol 11672 . 11684) (punctuation 11671 . 11672) (symbol 11658 . 11671) (punctuation 11657 . 11658) (symbol 11654 . 11657) (punctuation 11652 . 11653) (symbol 11645 . 11652) (punctuation 11644 . 11645) (symbol 11637 . 11644) (punctuation 11636 . 11637) (symbol 11632 . 11636) (TYPENAME 11623 . 11631) (INLINE 11616 . 11622) (punctuation 11614 . 11615) (symbol 11602 . 11614) (TYPENAME 11593 . 11601) (punctuation 11591 . 11592) (symbol 11578 . 11591) (TYPENAME 11569 . 11577) (punctuation 11567 . 11568) (symbol 11560 . 11567) (TYPENAME 11551 . 11559) (punctuation 11550 . 11551) (TEMPLATE 11541 . 11549) (punctuation 11417 . 11418) (punctuation 11416 . 11417) (punctuation 11415 . 11416) (punctuation 11413 . 11414) (punctuation 11411 . 11412) (symbol 11398 . 11410) (punctuation 11397 . 11398) (symbol 11384 . 11397) (punctuation 11383 . 11384) (symbol 11380 . 11383) (punctuation 11378 . 11379) (symbol 11371 . 11378) (punctuation 11370 . 11371) (symbol 11363 . 11370) (punctuation 11362 . 11363) (symbol 11358 . 11362) (TYPENAME 11349 . 11357) (INLINE 11342 . 11348) (punctuation 11340 . 11341) (symbol 11328 . 11340) (TYPENAME 11319 . 11327) (punctuation 11317 . 11318) (symbol 11304 . 11317) (TYPENAME 11295 . 11303) (punctuation 11293 . 11294) (symbol 11286 . 11293) (TYPENAME 11277 . 11285) (punctuation 11276 . 11277) (TEMPLATE 11267 . 11275) (number 10286 . 10287) (punctuation 10285 . 10286) (punctuation 10283 . 10284) (punctuation 9714 . 9715) (punctuation 9713 . 9714) (punctuation 9578 . 9579) (punctuation 9577 . 9578) (punctuation 9197 . 9198) (punctuation 9196 . 9197) (punctuation 9195 . 9196) (punctuation 9158 . 9159) (punctuation 9156 . 9157) (symbol 9143 . 9155) (punctuation 9142 . 9143) (symbol 9129 . 9142) (punctuation 9128 . 9129) (symbol 9125 . 9128) (punctuation 9123 . 9124) (symbol 9116 . 9123) (punctuation 9115 . 9116) (symbol 9108 . 9115) (punctuation 9082 . 9083) (symbol 9068 . 9082) (TYPENAME 9059 . 9067) (TYPEDEF 9051 . 9058) (punctuation 8949 . 8950) (punctuation 8948 . 8949) (punctuation 8947 . 8948) (symbol 8940 . 8947) (punctuation 8939 . 8940) (symbol 8931 . 8939) (TYPENAME 8922 . 8930) (TYPEDEF 8914 . 8921) (punctuation 11417 . 11418) (punctuation 11416 . 11417) (punctuation 11415 . 11416) (punctuation 11413 . 11414) (punctuation 11411 . 11412) (symbol 11398 . 11410) (punctuation 11397 . 11398) (symbol 11384 . 11397) (punctuation 11383 . 11384) (symbol 11380 . 11383) (punctuation 11378 . 11379) (symbol 11371 . 11378) (punctuation 11370 . 11371) (symbol 11363 . 11370) (punctuation 11362 . 11363) (symbol 11358 . 11362) (TYPENAME 11349 . 11357) (INLINE 11342 . 11348) (punctuation 11340 . 11341) (symbol 11328 . 11340) (TYPENAME 11319 . 11327) (punctuation 11317 . 11318) (symbol 11304 . 11317) (TYPENAME 11295 . 11303) (punctuation 11293 . 11294) (symbol 11286 . 11293) (TYPENAME 11277 . 11285) (punctuation 11276 . 11277) (TEMPLATE 11267 . 11275) (number 10286 . 10287) (punctuation 10285 . 10286) (punctuation 10283 . 10284) (punctuation 9714 . 9715) (punctuation 9713 . 9714) (punctuation 9578 . 9579) (punctuation 9577 . 9578) (punctuation 9197 . 9198) (punctuation 9196 . 9197) (punctuation 9195 . 9196) (punctuation 9158 . 9159) (punctuation 9156 . 9157) (symbol 9143 . 9155) (punctuation 9142 . 9143) (symbol 9129 . 9142) (punctuation 9128 . 9129) (symbol 9125 . 9128) (punctuation 9123 . 9124) (symbol 9116 . 9123) (punctuation 9115 . 9116) (symbol 9108 . 9115) (punctuation 9082 . 9083) (symbol 9068 . 9082) (TYPENAME 9059 . 9067) (TYPEDEF 9051 . 9058) (punctuation 8949 . 8950) (punctuation 8948 . 8949) (punctuation 8947 . 8948) (symbol 8940 . 8947) (punctuation 8939 . 8940) (symbol 8931 . 8939) (TYPENAME 8922 . 8930) (TYPEDEF 8914 . 8921))
+    :lexical-table 
+        '(("SEQAN_HEADER_FIND_PEX_H")
+          )
+
+    )
+   )
+  :file "!home!brad!src!seqan!core!include!seqan!find!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

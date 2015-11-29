@@ -1,0 +1,31 @@
+;; Object old/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "old/"
+  :tables (list 
+   (semanticdb-table "sql_utils.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("sql_utils.h" include (:system-flag t) nil [1 23])
+            ("get_selfpath" function (:type ("string" type (:type "class") nil nil)) nil [1325 1607])
+            ("read_sql" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1630 1648]))                  
+                :type "char")
+                nil [1609 2041]))          
+    :file "sql_utils.cpp"
+    :pointmax 2042
+    :fsize 2041
+    :lastmodtime '(21800 10805 996112 839000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!umi!old!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

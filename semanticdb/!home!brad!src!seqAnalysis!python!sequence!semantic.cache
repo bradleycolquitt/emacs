@@ -1,0 +1,115 @@
+;; Object sequence/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sequence/"
+  :tables (list 
+   (semanticdb-table "fasta_utils.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("pdb" include nil nil [1 11])
+            ("format_fasta" function
+               (:documentation "Format fasta string for width characters per line"
+                :arguments 
+                  ( ("fa" variable nil (reparse-symbol function_parameters) [30 32])
+                    ("start" variable nil (reparse-symbol function_parameters) [34 39])
+                    ("width" variable nil (reparse-symbol function_parameters) [41 46]))                  )
+                nil [13 476])
+            ("write_segment" function (:arguments 
+              ( ("seq" variable nil (reparse-symbol function_parameters) [496 499])
+                ("start" variable nil (reparse-symbol function_parameters) [501 506])
+                ("out" variable nil (reparse-symbol function_parameters) [508 511])
+                ("gap_size" variable nil (reparse-symbol function_parameters) [513 521]))              ) nil [478 689])
+            ("complement" variable nil nil [690 743])
+            ("reverse_complement" function (:arguments 
+              ( ("seq" variable nil (reparse-symbol function_parameters) [767 770]))              ) nil [744 907]))          
+    :file "fasta_utils.py"
+    :pointmax 939
+    :fsize 906
+    :lastmodtime '(21725 19562 36892 389000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "indexAndConvertReads.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [25 43])
+            ("sys" include nil nil [25 43])
+            ("re" include nil nil [25 43])
+            ("indexSplitter" include nil nil [44 64])
+            ("indexSplitter2" include nil nil [65 86])
+            ("argparse" include nil nil [87 102])
+            ("qseq" include nil nil [103 114])
+            ("periodToN" include nil nil [115 131])
+            ("subprocess" include nil nil [132 160])
+            ("multiprocessing" include nil nil [161 193])
+            ("qseq_dir" variable nil nil [195 233])
+            ("fastq_dir" variable nil nil [234 274])
+            ("index_class" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [353 369])
+                            ("self" variable nil (reparse-symbol indented_block_body) [378 398])
+                            ("self" variable nil (reparse-symbol indented_block_body) [407 427])
+                            ("self" variable nil (reparse-symbol indented_block_body) [436 448])
+                            ("self" variable nil (reparse-symbol indented_block_body) [457 499])
+                            ("self" variable nil (reparse-symbol indented_block_body) [508 552])
+                            ("self" code nil (reparse-symbol indented_block_body) [561 606])
+                            ("self" variable nil (reparse-symbol indented_block_body) [615 667])
+                            ("if" code nil (reparse-symbol indented_block_body) [676 740])
+                            ("if" code nil (reparse-symbol indented_block_body) [748 814]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [312 316])
+                            ("date" variable nil (reparse-symbol function_parameters) [318 322])
+                            ("sample" variable nil (reparse-symbol function_parameters) [324 330])
+                            ("demult" variable nil (reparse-symbol function_parameters) [332 338])
+                            ("se" variable nil (reparse-symbol function_parameters) [340 342]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [299 814])
+                    ("split" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [833 837]))                          )
+                        (reparse-symbol indented_block_body) [823 1200])
+                    ("convert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1217 1221]))                          )
+                        (reparse-symbol indented_block_body) [1205 2910])
+                    ("pToN" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2940 2944]))                          )
+                        (reparse-symbol indented_block_body) [2931 4415]))                  
+                :type "class")
+                nil [276 4415])
+            ("index" function (:arguments 
+              ( ("date" variable nil (reparse-symbol function_parameters) [4439 4443])
+                ("sample" variable nil (reparse-symbol function_parameters) [4445 4451])
+                ("demult" variable nil (reparse-symbol function_parameters) [4453 4459])
+                ("se" variable nil (reparse-symbol function_parameters) [4461 4463]))              ) nil [4429 4712])
+            ("convert_worker" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [4746 4750]))              ) nil [4727 4783])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [4797 4801]))              ) nil [4788 5603])
+            ("if" code nil nil [5604 5650]))          
+    :file "indexAndConvertReads.py"
+    :pointmax 5650
+    :fsize 5649
+    :lastmodtime '(21345 30662 416286 879000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "indexSplitter.py"
+    :file "indexSplitter.py"
+    :fsize 4495
+    :lastmodtime '(21345 30662 416286 879000)
+    )
+   (semanticdb-table "indexSplitter2.py"
+    :file "indexSplitter2.py"
+    :fsize 4373
+    :lastmodtime '(21345 30662 416286 879000)
+    )
+   )
+  :file "!home!brad!src!seqAnalysis!python!sequence!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

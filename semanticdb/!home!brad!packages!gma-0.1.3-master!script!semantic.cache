@@ -1,0 +1,31 @@
+;; Object script/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "script/"
+  :tables (list 
+   (semanticdb-table "prepro.chr.mod.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [23 33])
+            ("os" include nil nil [34 43])
+            ("i" variable nil nil [45 50])
+            ("ovlpstr" variable nil nil [51 63])
+            ("ovlpln" variable nil nil [64 75])
+            ("chnkln" variable nil nil [94 106])
+            ("start" variable nil nil [124 133])
+            ("end" variable nil nil [134 141])
+            ("chr" variable nil nil [142 150])
+            ("dna" variable nil nil [151 159])
+            ("filenum" variable nil nil [160 171])
+            ("chr_num" variable nil nil [172 183])
+            ("for" code nil nil [227 3457]))          
+    :file "prepro.chr.mod.py"
+    :pointmax 3457
+    :fsize 3456
+    :lastmodtime '(21511 27927 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!gma-0.1.3-master!script!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

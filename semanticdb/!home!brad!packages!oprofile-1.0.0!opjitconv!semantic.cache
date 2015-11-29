@@ -1,0 +1,26 @@
+;; Object opjitconv/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "opjitconv/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libopagent" "-I" "${top_srcdir}/libutil" "@OP_CPPFLAGS@")) nil [1 89])
+            ("AM_CFLAGS" variable (:default-value ("@OP_CFLAGS@")) nil [90 114])
+            ("AM_LDFLAGS" variable (:default-value ("@OP_LDFLAGS@")) nil [114 140])
+            ("bin_PROGRAMS" variable (:default-value ("opjitconv")) nil [141 166])
+            ("LIBS" variable (:default-value ("@BFD_LIBS@")) nil [167 185])
+            ("needed_libs" variable (:default-value ("../libutil/libutil.a")) nil [186 225])
+            ("opjitconv_LDADD" variable (:default-value ("$(needed_libs)")) nil [226 259])
+            ("opjitconv_SOURCES" variable (:default-value ("opjitconv.c" "opjitconv.h" "conversion.c" "parse_dump.c" "jitsymbol.c" "create_bfd.c" "debug_line.c")) nil [260 389]))          
+    :file "Makefile.am"
+    :pointmax 389
+    :fsize 388
+    :lastmodtime '(21523 1459 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!opjitconv!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

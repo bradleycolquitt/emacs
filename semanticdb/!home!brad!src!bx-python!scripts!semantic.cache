@@ -1,0 +1,450 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables (list 
+   (semanticdb-table "maf_thread_for_species.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Read a maf file from stdin and write out a new maf with only blocks having all of
+the passed in species, after dropping any other species and removing columns 
+containing only gaps. By default this will attempt to fuse together any blocks
+which are adjacent after the unwanted species have been dropped. 
+
+usage: %prog species1 species2 ... < maf 
+    -n, --nofuse: Don't attempt to join blocks, just remove rows.
+\"\"\"" code nil nil [24 445])
+            ("psyco_full" include nil nil [447 464])
+            ("bx.align.maf" include nil nil [466 485])
+            ("copy" include nil nil [486 497])
+            ("sys" include nil nil [498 508])
+            ("bx.align.tools.thread" include nil nil [510 545])
+            ("bx.align.tools.fuse" include nil nil [546 579])
+            ("itertools" include nil nil [581 604])
+            ("bx.cookbook" include nil nil [606 642])
+            ("main" function nil nil [644 1510])
+            ("if" code nil nil [1515 1549]))          
+    :file "maf_thread_for_species.py"
+    :pointmax 1549
+    :fsize 1548
+    :lastmodtime '(21719 53162 808745 759000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "prefix_lines.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Simple script to add a prefix to every line in a file.
+\"\"\"" code nil nil [24 86])
+            ("sys" include nil nil [88 98])
+            ("for" code nil nil [100 149]))          
+    :file "prefix_lines.py"
+    :pointmax 149
+    :fsize 148
+    :lastmodtime '(21719 53162 836745 759000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "maf_species_in_all_files.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Takes a list of maf filenames on the command line and prints a comma separated
+list of the species that occur in all of the mafs. 
+
+usage %prog maf1 maf2 ...
+\"\"\"" code nil nil [27 192])
+            ("operator" include nil nil [194 209])
+            ("sys" include nil nil [210 220])
+            ("bx.align.maf" include nil nil [221 240])
+            ("files" variable nil nil [242 262])
+            ("sets" variable nil nil [263 272])
+            ("for" code nil nil [274 494])
+            ("inter" variable nil nil [495 532])
+            ("print" code nil nil [533 556]))          
+    :file "maf_species_in_all_files.py"
+    :pointmax 557
+    :fsize 556
+    :lastmodtime '(21719 53162 800745 759000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "maf_to_axt.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Application to convert MAF file to AXT file, projecting to any two species. 
+Reads a MAF file from standard input and writes an AXT file to standard out;  
+some statistics are written to standard error.  The user must specify the 
+two species of interest.
+
+usage: %prog primary_species secondary_species < maf_file > axt_file
+\"\"\"" code nil nil [23 356])
+            ("__author__" variable nil nil [358 405])
+            ("sys" include nil nil [407 417])
+            ("copy" include nil nil [418 429])
+            ("bx.align.maf" include nil nil [430 449])
+            ("bx.align.axt" include nil nil [450 469])
+            ("usage" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [481 482]))              ) nil [471 663])
+            ("main" function nil nil [665 1961])
+            ("clone_component" function (:arguments 
+              ( ("c" variable nil (reparse-symbol function_parameters) [1983 1984]))              ) nil [1963 2110])
+            ("remove_mutual_gaps" function (:arguments 
+              ( ("block" variable nil (reparse-symbol function_parameters) [2136 2141]))              ) nil [2112 2472])
+            ("if" code nil nil [2474 2508]))          
+    :file "maf_to_axt.py"
+    :pointmax 2509
+    :fsize 2508
+    :lastmodtime '(21719 53162 808745 759000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "maf_percent_identity.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Read a PAIRWISE maf from stdin and print the percent identity of each
+alignment, where percent identity is defined as the number of matching columns
+over the number of aligned (non-gap) columns.
+
+TODO: Generalize for more than two species
+
+usage: %prog < maf > out
+\"\"\"" code nil nil [27 299])
+            ("__future__" include nil nil [301 332])
+            ("sys" include nil nil [334 344])
+            ("psyco_full" include nil nil [346 363])
+            ("bx.align" include nil nil [365 389])
+            ("__main__" function nil nil [392 830])
+            ("if" code nil nil [832 870]))          
+    :file "maf_percent_identity.py"
+    :pointmax 870
+    :fsize 869
+    :lastmodtime '(21719 53162 800745 759000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "maf_mean_length_ungapped_piece.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Read a MAF from standard input and determine the mean length of ungapped pieces
+in each block.
+
+usage: %prog < maf > out
+\"\"\"" code nil nil [27 155])
+            ("__future__" include nil nil [157 188])
+            ("sys" include nil nil [190 200])
+            ("bx.align.maf" include nil nil [201 220])
+            ("main" function nil nil [222 708])
+            ("if" code nil nil [710 744]))          
+    :file "maf_mean_length_ungapped_piece.py"
+    :pointmax 744
+    :fsize 743
+    :lastmodtime '(21719 53162 800745 759000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "maf_region_coverage_by_src.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Reads a list of intervals and a set of indexed mafs. For each interval print
+the amount covered by each species other than the reference.
+
+usage: %prog maf_files  [options] < interval_file
+   -s, --src=s:      Use this src for all intervals
+   -p, --prefix=p:   Prepend this to each src before lookup
+\"\"\"" code nil nil [24 332])
+            ("__future__" include nil nil [334 365])
+            ("psyco_full" include nil nil [367 384])
+            ("bx.cookbook" include nil nil [386 422])
+            ("bx.align.maf" include nil nil [424 443])
+            ("bx" include nil nil [444 468])
+            ("bx" include nil nil [469 488])
+            ("sys" include nil nil [489 499])
+            ("__main__" function nil nil [501 1861])
+            ("if" code nil nil [1863 1901]))          
+    :file "maf_region_coverage_by_src.py"
+    :pointmax 1901
+    :fsize 1900
+    :lastmodtime '(21719 53162 800745 759000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "maf_gap_frequency.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Read a MAF from standard input and print the fraction of gap columns in 
+each block.
+
+usage: %prog < maf > out
+\"\"\"" code nil nil [24 142])
+            ("__future__" include nil nil [144 175])
+            ("sys" include nil nil [177 187])
+            ("bx.align.maf" include nil nil [188 207])
+            ("main" function nil nil [210 420])
+            ("if" code nil nil [421 455]))          
+    :file "maf_gap_frequency.py"
+    :pointmax 455
+    :fsize 454
+    :lastmodtime '(21719 53162 800745 759000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "maf_tile.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+'Tile' the blocks of a maf file over each of a set of intervals. The
+highest scoring block that covers any part of a region will be used, and 
+pieces not covered by any block filled with \"-\" or optionally \"*\". The list
+of species to tile is specified by `tree` (either a tree or just a comma
+separated list). The `seq_db` is a lookup table mapping chromosome names
+to nib file for filling in the reference species. Maf files must be indexed.
+
+NOTE: See maf_tile_2.py for a more sophisticated version of this program, I
+      think this one will be eliminated in the future. 
+
+usage: %prog tree maf_files...
+    -m, --missingData: Inserts wildcards for missing block rows instead of '-'
+\"\"\"" code nil nil [24 717])
+            ("psyco_full" include nil nil [719 736])
+            ("bx.cookbook" include nil nil [738 774])
+            ("bx.align.maf" include nil nil [776 795])
+            ("bx.align" include nil nil [796 820])
+            ("bx" include nil nil [821 840])
+            ("bx.seq.nib" include nil nil [841 858])
+            ("os" include nil nil [859 868])
+            ("string" include nil nil [869 882])
+            ("sys" include nil nil [883 893])
+            ("tree_tx" variable nil nil [895 937])
+            ("main" function nil nil [939 1496])
+            ("load_seq_db" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [1514 1519]))              ) nil [1497 1707])
+            ("do_interval" function (:arguments 
+              ( ("sources" variable nil (reparse-symbol function_parameters) [1725 1732])
+                ("index" variable nil (reparse-symbol function_parameters) [1734 1739])
+                ("out" variable nil (reparse-symbol function_parameters) [1741 1744])
+                ("ref_src" variable nil (reparse-symbol function_parameters) [1746 1753])
+                ("start" variable nil (reparse-symbol function_parameters) [1755 1760])
+                ("end" variable nil (reparse-symbol function_parameters) [1762 1765])
+                ("seq_db" variable nil (reparse-symbol function_parameters) [1767 1773])
+                ("missing_data" variable nil (reparse-symbol function_parameters) [1775 1787]))              ) nil [1708 4231])
+            ("intervals_from_mask" function (:arguments 
+              ( ("mask" variable nil (reparse-symbol function_parameters) [4258 4262]))              ) nil [4233 4480])
+            ("main" code nil nil [4481 4487]))          
+    :file "maf_tile.py"
+    :pointmax 4488
+    :fsize 4487
+    :lastmodtime '(21719 53162 808745 759000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "maf_tile_2.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+'Tile' the blocks of a maf file over each of a set of intervals. The
+highest scoring block that covers any part of a region will be used, and 
+pieces not covered by any block filled with \"-\" or optionally \"*\". 
+
+This version uses synteny annotation if found on the alignment blocks, and
+will attempt to fill gaps with special characters depending on the type of
+gap, similar to the projected alignment display of the UCSC genome browser: 
+'*' for new, '=' for inverse/inset, '#' for contig, 'X' for missing. 
+
+- The list of species to tile is specified by the first argument (either a 
+  newick tree or just a comma separated list). 
+  
+- The `seq_db` is a lookup table mapping species and chromosome names
+  to nib file for filling in the reference species sequence. In this file
+  column 1 contains the species, column 2 the chromomsome or contig, and
+  column 4 the directory containing the sequences in nib format.
+  
+- The remaining arguments are a list of maf files which must have 
+  corresponding \".index\" files.
+
+TODO: The seq_db format is specific to something old and obsure at PSU, 
+      need to standardize.
+
+usage: %prog list,of,species,to,keep seq_db_file indexed_maf_files ...
+    -m, --missingData: Inserts wildcards for missing block rows instead of '-'
+    -s, --strand:      Use strand information for intervals, reveres complement if '-'
+\"\"\"" code nil nil [24 1391])
+            ("psyco_full" include nil nil [1393 1410])
+            ("cookbook" include nil nil [1412 1445])
+            ("operator" include nil nil [1447 1462])
+            ("bx.align.maf" include nil nil [1464 1490])
+            ("bx.align" include nil nil [1491 1515])
+            ("bx" include nil nil [1516 1535])
+            ("bx.seq.nib" include nil nil [1536 1553])
+            ("os" include nil nil [1554 1563])
+            ("string" include nil nil [1564 1577])
+            ("sys" include nil nil [1578 1588])
+            ("tree_tx" variable nil nil [1590 1632])
+            ("main" function nil nil [1634 2362])
+            ("load_seq_db" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [2380 2385]))              ) nil [2363 2573])
+            ("get_fill_char" function
+               (:documentation "
+    Return the character that should be used to fill between blocks
+    having a given status
+    "
+                :arguments 
+                  ( ("maf_status" variable nil (reparse-symbol function_parameters) [2597 2607]))                  )
+                nil [2578 3455])
+            ("guess_fill_char" function
+               (:documentation "
+    For the case where there is no annotated synteny we will try to guess it
+    "
+                :arguments 
+                  ( ("left_comp" variable nil (reparse-symbol function_parameters) [3477 3486])
+                    ("right_comp" variable nil (reparse-symbol function_parameters) [3488 3498]))                  )
+                nil [3456 4115])
+            ("remove_all_gap_columns" function
+               (:documentation "
+    Remove any columns containing only gaps from alignment texts
+    "
+                :arguments 
+                  ( ("texts" variable nil (reparse-symbol function_parameters) [4152 4157]))                  )
+                nil [4124 4672])
+            ("do_interval" function
+               (:documentation "
+    Join together alignment blocks to create a semi human projected local 
+    alignment (small reference sequence deletions are kept as supported by 
+    the local alignment).
+    "
+                :arguments 
+                  ( ("sources" variable nil (reparse-symbol function_parameters) [4690 4697])
+                    ("index" variable nil (reparse-symbol function_parameters) [4699 4704])
+                    ("out" variable nil (reparse-symbol function_parameters) [4706 4709])
+                    ("ref_src" variable nil (reparse-symbol function_parameters) [4711 4718])
+                    ("start" variable nil (reparse-symbol function_parameters) [4720 4725])
+                    ("end" variable nil (reparse-symbol function_parameters) [4727 4730])
+                    ("seq_db" variable nil (reparse-symbol function_parameters) [4732 4738])
+                    ("missing_data" variable nil (reparse-symbol function_parameters) [4740 4752])
+                    ("strand" variable nil (reparse-symbol function_parameters) [4754 4760]))                  )
+                nil [4673 11783])
+            ("main" code nil nil [11788 11794]))          
+    :file "maf_tile_2.py"
+    :pointmax 11795
+    :fsize 11794
+    :lastmodtime '(21719 53162 808745 759000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "maf_tile_2bit.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+'Tile' the blocks of a maf file over each of a set of intervals. The
+highest scoring block that covers any part of a region will be used, and 
+pieces not covered by any block filled with \"-\" or optionally \"*\". 
+
+This version uses synteny annotation if found on the alignment blocks, and
+will attempt to fill gaps with special characters depending on the type of
+gap, similar to the projected alignment display of the UCSC genome browser: 
+'*' for new, '=' for inverse/inset, '#' for contig, 'X' for missing. 
+
+- The list of species to tile is specified by the first argument (either a 
+  newick tree or just a comma separated list). 
+  
+- a 2bit file is expected for the reference species to fill in missing
+  sequence
+
+- The remaining arguments are a list of maf files which must have 
+  corresponding \".index\" files.
+
+TODO: The seq_db format is specific to something old and obsure at PSU, 
+      need to standardize.
+
+usage: %prog list,of,species,to,keep ref.2bit indexed_maf_files ...
+    -m, --missingData: Inserts wildcards for missing block rows instead of '-'
+    -s, --strand:      Use strand information for intervals, reveres complement if '-'
+\"\"\"" code nil nil [24 1186])
+            ("psyco_full" include nil nil [1188 1205])
+            ("bx.cookbook" include nil nil [1207 1243])
+            ("operator" include nil nil [1245 1260])
+            ("bx.align.maf" include nil nil [1262 1288])
+            ("bx.align" include nil nil [1289 1313])
+            ("bx.seq.twobit" include nil nil [1314 1334])
+            ("bx" include nil nil [1335 1354])
+            ("bx.seq.nib" include nil nil [1355 1372])
+            ("os" include nil nil [1373 1382])
+            ("string" include nil nil [1383 1396])
+            ("sys" include nil nil [1397 1407])
+            ("pdb" include nil nil [1408 1418])
+            ("tree_tx" variable nil nil [1420 1462])
+            ("main" function nil nil [1464 2217])
+            ("get_fill_char" function
+               (:documentation "
+    Return the character that should be used to fill between blocks
+    having a given status
+    "
+                :arguments 
+                  ( ("maf_status" variable nil (reparse-symbol function_parameters) [2237 2247]))                  )
+                nil [2218 3095])
+            ("guess_fill_char" function
+               (:documentation "
+    For the case where there is no annotated synteny we will try to guess it
+    "
+                :arguments 
+                  ( ("left_comp" variable nil (reparse-symbol function_parameters) [3117 3126])
+                    ("right_comp" variable nil (reparse-symbol function_parameters) [3128 3138]))                  )
+                nil [3096 3755])
+            ("remove_all_gap_columns" function
+               (:documentation "
+    Remove any columns containing only gaps from alignment texts
+    "
+                :arguments 
+                  ( ("texts" variable nil (reparse-symbol function_parameters) [3792 3797]))                  )
+                nil [3764 4312])
+            ("do_interval" function
+               (:documentation "
+    Join together alignment blocks to create a semi human projected local 
+    alignment (small reference sequence deletions are kept as supported by 
+    the local alignment).
+    "
+                :arguments 
+                  ( ("sources" variable nil (reparse-symbol function_parameters) [4330 4337])
+                    ("index" variable nil (reparse-symbol function_parameters) [4339 4344])
+                    ("out" variable nil (reparse-symbol function_parameters) [4346 4349])
+                    ("ref_src" variable nil (reparse-symbol function_parameters) [4351 4358])
+                    ("start" variable nil (reparse-symbol function_parameters) [4360 4365])
+                    ("end" variable nil (reparse-symbol function_parameters) [4367 4370])
+                    ("ref_2bit" variable nil (reparse-symbol function_parameters) [4372 4380])
+                    ("missing_data" variable nil (reparse-symbol function_parameters) [4382 4394])
+                    ("strand" variable nil (reparse-symbol function_parameters) [4396 4402]))                  )
+                nil [4313 11525])
+            ("main" code nil nil [11530 11536]))          
+    :file "maf_tile_2bit.py"
+    :pointmax 11526
+    :fsize 11536
+    :lastmodtime '(21735 55192 604919 210000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "maf_build_index.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Build an index file for a set of MAF alignment blocks.
+
+If index_file is not provided maf_file.index is used.
+
+usage: %prog maf_file index_file
+    -s, --species=a,b,c: only index the position of the block in the listed species
+\"\"\"" code nil nil [25 260])
+            ("psyco_full" include nil nil [262 279])
+            ("bx.cookbook" include nil nil [281 317])
+            ("sys" include nil nil [319 329])
+            ("os.path" include nil nil [330 344])
+            ("bx" include nil nil [346 380])
+            ("bx.align.maf" include nil nil [381 400])
+            ("bx.misc.seekbzip2" include nil nil [401 448])
+            ("main" function nil nil [450 2722])
+            ("if" code nil nil [2723 2757]))          
+    :file "maf_build_index.py"
+    :pointmax 2757
+    :fsize 2755
+    :lastmodtime '(21719 53162 808745 759000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!bx-python!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

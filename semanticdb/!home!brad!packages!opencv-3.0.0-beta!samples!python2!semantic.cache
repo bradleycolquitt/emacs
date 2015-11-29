@@ -1,0 +1,193 @@
+;; Object python2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python2/"
+  :tables (list 
+   (semanticdb-table "video_threaded.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("'''
+Multithreaded video processing sample.
+Usage:
+   video_threaded.py {<video device number>|<video file name>}
+
+   Shows how python threading capabilities can be used
+   to organize parallel captured frame processing pipeline
+   for smoother playback.
+
+Keyboard shortcuts:
+
+   ESC - exit
+   space - switch between multi and single threaded processing
+'''" code nil nil [24 380])
+            ("numpy" include nil nil [383 401])
+            ("cv2" include nil nil [402 412])
+            ("multiprocessing.pool" include nil nil [414 457])
+            ("collections" include nil nil [458 487])
+            ("common" include nil nil [489 534])
+            ("video" include nil nil [535 547])
+            ("DummyTask" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [605 621]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [584 588])
+                            ("data" variable nil (reparse-symbol function_parameters) [590 594]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [571 622])
+                    ("ready" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [636 640]))                          )
+                        (reparse-symbol indented_block_body) [626 663])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [675 679]))                          )
+                        (reparse-symbol indented_block_body) [667 707]))                  
+                :type "class")
+                nil [550 707])
+            ("if" code nil nil [708 2276])
+            ("cv2" code nil nil [2276 2299]))          
+    :file "video_threaded.py"
+    :pointmax 2300
+    :fsize 2299
+    :lastmodtime '(21596 61910 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "common.py"
+    :file "common.py"
+    :fsize 6350
+    :lastmodtime '(21596 61910 0 0)
+    )
+   (semanticdb-table "video.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("'''
+Video capture sample.
+
+Sample shows how VideoCapture class can be used to acquire video
+frames from a camera of a movie file. Also the sample provides
+an example of procedural video generation by an object, mimicking
+the VideoCapture interface (see Chess class).
+
+'create_capture' is a convinience function for capture creation,
+falling back to procedural video in case of error.
+
+Usage:
+    video.py [--shotdir <shot path>] [source0] [source1] ...'
+
+    sourceN is an
+     - integer number for camera capture
+     - name of video file
+     - synth:<params> for procedural video
+
+Synth examples:
+    synth:bg=../data/lena.jpg:noise=0.1
+    synth:class=chess:bg=../data/lena.jpg:noise=0.1:size=640x480
+
+Keys:
+    ESC    - exit
+    SPACE  - save current frame to <shot path> directory
+
+'''" code nil nil [24 815])
+            ("numpy" include nil nil [817 835])
+            ("numpy" include nil nil [836 866])
+            ("cv2" include nil nil [868 878])
+            ("time" include nil nil [899 921])
+            ("common" include nil nil [939 952])
+            ("VideoSynthBase" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1059 1073])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1082 1110])
+                            ("if" code nil (reparse-symbol indented_block_body) [1119 1252])
+                            ("if" code nil (reparse-symbol indented_block_body) [1261 1423])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1432 1457]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1001 1005])
+                            ("size" variable nil (reparse-symbol function_parameters) [1007 1011])
+                            ("noise" variable nil (reparse-symbol function_parameters) [1018 1023])
+                            ("bg" variable nil (reparse-symbol function_parameters) [1029 1031])
+                            ("params" variable nil (reparse-symbol function_parameters) [1040 1048]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [988 1458])
+                    ("render" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1474 1478])
+                            ("dst" variable nil (reparse-symbol function_parameters) [1480 1483]))                          )
+                        (reparse-symbol indented_block_body) [1463 1499])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1513 1517])
+                            ("dst" variable nil (reparse-symbol function_parameters) [1519 1522]))                          )
+                        (reparse-symbol indented_block_body) [1504 1941])
+                    ("isOpened" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1959 1963]))                          )
+                        (reparse-symbol indented_block_body) [1946 1986]))                  
+                :type "class")
+                nil [954 1986])
+            ("Chess" type
+               (:superclasses ("VideoSynthBase")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [2054 2087])
+                            ("w, h" code nil (reparse-symbol indented_block_body) [2097 2119])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2129 2160])
+                            ("white_quads" variable nil (reparse-symbol indented_block_body) [2169 2185])
+                            ("black_quads" variable nil (reparse-symbol indented_block_body) [2194 2210])
+                            ("for" code nil (reparse-symbol indented_block_body) [2219 2382])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2390 2432])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2441 2483])
+                            ("fx" variable nil (reparse-symbol indented_block_body) [2493 2501])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2510 2644])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2654 2700])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2709 2719]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2033 2037])
+                            ("kw" variable nil (reparse-symbol function_parameters) [2039 2043]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2020 2720])
+                    ("draw_quads" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2740 2744])
+                            ("img" variable nil (reparse-symbol function_parameters) [2746 2749])
+                            ("quads" variable nil (reparse-symbol function_parameters) [2751 2756])
+                            ("color" variable nil (reparse-symbol function_parameters) [2758 2763]))                          )
+                        (reparse-symbol indented_block_body) [2725 3047])
+                    ("render" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3063 3067])
+                            ("dst" variable nil (reparse-symbol function_parameters) [3069 3072]))                          )
+                        (reparse-symbol indented_block_body) [3052 3667]))                  
+                :type "class")
+                nil [1987 3667])
+            ("classes" variable nil nil [3669 3696])
+            ("presets" variable nil nil [3698 3862])
+            ("create_capture" function (:arguments 
+              ( ("source" variable nil (reparse-symbol function_parameters) [3884 3890])
+                ("fallback" variable nil (reparse-symbol function_parameters) [3896 3904]))              ) nil [3865 4998])
+            ("if" code nil nil [4999 5833]))          
+    :file "video.py"
+    :pointmax 5833
+    :fsize 5832
+    :lastmodtime '(21596 61910 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!opencv-3.0.0-beta!samples!python2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

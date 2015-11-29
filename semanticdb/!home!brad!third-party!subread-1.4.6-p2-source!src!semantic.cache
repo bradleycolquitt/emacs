@@ -1,0 +1,1583 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "hashtable.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_HASHTABLE_H" variable (:constant-flag t) nil [487 499])
+            ("KeyValuePair" type
+               (:typedef ("KeyValuePair_struct" type (:type "struct") nil nil)
+                :superclasses "KeyValuePair_struct"
+                :type "typedef")
+                nil [635 763])
+            ("KeyValuePair_struct" type
+               (:members 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [676 692])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [697 709])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("KeyValuePair_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [714 747]))                  
+                :type "struct")
+                nil [635 763])
+            ("HashTable" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("numOfBuckets" variable (:type "long") (reparse-symbol classsubparts) [786 804])
+                          ("numOfElements" variable (:type "long") (reparse-symbol classsubparts) [809 828])
+                          ("bucketArray" variable
+                             (:pointer 2
+                              :type ("KeyValuePair" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [833 860])
+                          ("upperRehashThreshold" variable (:type "float") (reparse-symbol classsubparts) [865 926])
+                          ("lowerRehashThreshold" variable (:type "float") (reparse-symbol classsubparts) [865 926])
+                          ("idealRatio" variable (:type "float") (reparse-symbol classsubparts) [865 926])
+                          ("keycmp" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [931 981])
+                          ("valuecmp" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [986 1042])
+                          ("hashFunction" variable
+                             (:functionpointer-flag t
+                              :type "unsigned long")
+                              (reparse-symbol classsubparts) [1047 1094])
+                          ("keyDeallocator" variable
+                             (:functionpointer-flag t
+                              :type "void")
+                              (reparse-symbol classsubparts) [1099 1133])
+                          ("valueDeallocator" variable
+                             (:functionpointer-flag t
+                              :type "void")
+                              (reparse-symbol classsubparts) [1138 1176])
+                          ("appendix1" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [1182 1199])
+                          ("appendix2" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [1204 1221])
+                          ("appendix3" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [1226 1243])
+                          ("counter1" variable (:type "long int") (reparse-symbol classsubparts) [1253 1271])
+                          ("counter2" variable (:type "long int") (reparse-symbol classsubparts) [1281 1299])
+                          ("counter3" variable (:type "long int") (reparse-symbol classsubparts) [1309 1327]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [765 1340])
+            ("HashTableCreate" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("numOfBuckets" variable (:type "long") (reparse-symbol arg-sub-list) [2836 2854]))                  
+                :type ("HashTable" type (:type "class") nil nil))
+                nil [2809 2855])
+            ("HashTableDestroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3288 3309]))                  
+                :type "void")
+                nil [3266 3310])
+            ("HashTableContainsKey" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4104 4131])
+                    ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4132 4148]))                  
+                :type "int")
+                nil [4079 4149])
+            ("HashTableContainsValue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5061 5088])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5089 5107]))                  
+                :type "int")
+                nil [5034 5108])
+            ("HashTablePut" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6126 6147])
+                    ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6148 6164])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6165 6177]))                  
+                :type "int")
+                nil [6109 6178])
+            ("HashTablePutReplace" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6203 6224])
+                    ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6225 6241])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6242 6254])
+                    ("replace_key" variable (:type "int") (reparse-symbol arg-sub-list) [6255 6271]))                  
+                :type "int")
+                nil [6179 6272])
+            ("HashTableGet" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7065 7092])
+                    ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7093 7109]))                  
+                :type "void")
+                nil [7046 7110])
+            ("HashTableRemove" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7877 7898])
+                    ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7899 7915]))                  
+                :type "void")
+                nil [7856 7916])
+            ("HashTableRemoveAll" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8485 8506]))                  
+                :type "void")
+                nil [8461 8507])
+            ("HashTableIsEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9093 9120]))                  
+                :type "int")
+                nil [9072 9121])
+            ("HashTableSize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9737 9764]))                  
+                :type "long")
+                nil [9718 9765])
+            ("HashTableGetNumBuckets" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10497 10524]))                  
+                :type "long")
+                nil [10469 10525])
+            ("HashTableSetKeyComparisonFunction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11481 11502])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [11532 11545]))                  
+                :type "void")
+                nil [11442 11583])
+            ("HashTableSetValueComparisonFunction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12553 12574])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [12598 12613]))                  
+                :type "void")
+                nil [12512 12655])
+            ("HashTableSetHashFunction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13748 13769])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [13800 13829]))                  
+                :type "void")
+                nil [13718 13848])
+            ("HashTableRehash" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15248 15269])
+                    ("numOfBuckets" variable (:type "long") (reparse-symbol arg-sub-list) [15270 15288]))                  
+                :type "void")
+                nil [15227 15289])
+            ("HashTableSetIdealRatio" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17639 17660])
+                    ("idealRatio" variable (:type "float") (reparse-symbol arg-sub-list) [17661 17678])
+                    ("lowerRehashThreshold" variable (:type "float") (reparse-symbol arg-sub-list) [17707 17734])
+                    ("upperRehashThreshold" variable (:type "float") (reparse-symbol arg-sub-list) [17763 17790]))                  
+                :type "void")
+                nil [17611 17791])
+            ("HashTableSetDeallocationFunctions" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hashTable" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19265 19286])
+                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [19326 19348])
+                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [19400 19424]))                  
+                :type "void")
+                nil [19226 19439])
+            ("HashTableStringHashFunction" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20093 20109]))                  
+                :type "unsigned long")
+                nil [20051 20110])
+            ("free_values_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tab" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20137 20153]))                  
+                :type "void")
+                nil [20112 20154]))          
+    :file "hashtable.h"
+    :pointmax 20183
+    :fsize 20182
+    :lastmodtime '(21565 64457 0 0)
+    :unmatched-syntax '((semantic-list 19424 . 19437) (semantic-list 19405 . 19424) (semantic-list 19348 . 19359) (semantic-list 19331 . 19348) (semantic-list 13829 . 13846) (semantic-list 13814 . 13829) (semantic-list 12613 . 12653) (semantic-list 12602 . 12613) (semantic-list 11545 . 11581) (semantic-list 11536 . 11545) (LONG 1304 . 1308) (LONG 1276 . 1280) (LONG 1248 . 1252))
+    :lexical-table 
+        '(("_HASHTABLE_H")
+          )
+
+    )
+   (semanticdb-table "index-builder.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [726 744])
+            ("ctype.h" include (:system-flag t) nil [745 763])
+            ("string.h" include (:system-flag t) nil [764 783])
+            ("getopt.h" include (:system-flag t) nil [784 803])
+            ("signal.h" include (:system-flag t) nil [804 823])
+            ("unistd.h" include (:system-flag t) nil [824 843])
+            ("sys/types.h" include (:system-flag t) nil [844 866])
+            ("hashtable.h" include nil nil [867 889])
+            ("gene-value-index.h" include nil nil [890 919])
+            ("gene-algorithms.h" include nil nil [920 948])
+            ("sorted-hashtable.h" include nil nil [949 978])
+            ("input-files.h" include nil nil [979 1003])
+            ("NO_GENE_DEBUG_" variable (:constant-flag t) nil [1013 1027])
+            ("_GENE_DEBUG_SIZE_" variable (:constant-flag t) nil [1036 1053])
+            ("MIN_READ_SPLICING" variable (:constant-flag t) nil [1068 1085])
+            ("MAX_KEY_MATCH" variable (:constant-flag t) nil [1104 1117])
+            ("GENE_SLIDING_STEP" variable (:type "int") nil [1135 1161])
+            ("IS_COLOR_SPACE" variable (:type "int") nil [1162 1185])
+            ("VALUE_ARRAY_INDEX" variable (:type "int") nil [1186 1212])
+            ("QUICK_BUILD" variable (:type "int") nil [1213 1233])
+            ("MARK_NONINFORMATIVE_SUBREADS" variable (:type "int") nil [1234 1271])
+            ("IS_FORCED_ONE_BLOCK" variable (:type "int") nil [1272 1300])
+            ("NEXT_READ" variable (:constant-flag t) nil [1310 1319])
+            ("NEXT_FILE" variable (:constant-flag t) nil [1330 1339])
+            ("FULL_PARTITION" variable (:constant-flag t) nil [1350 1364])
+            ("print_build_log" function
+               (:arguments 
+                  ( ("finished_rate" variable (:type "double") (reparse-symbol arg-sub-list) [1390 1411])
+                    ("read_per_second" variable (:type "double") (reparse-symbol arg-sub-list) [1412 1435])
+                    ("expected_seconds" variable (:type "double") (reparse-symbol arg-sub-list) [1436 1460])
+                    ("" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [1461 1483])
+                    ("total_reads" variable (:type "int") (reparse-symbol arg-sub-list) [1480 1496]))                  
+                :type "void")
+                nil [1369 1687])
+            ("copy_non_informative_subread" function
+               (:arguments 
+                  ( ("index_table" variable
+                       (:pointer 1
+                        :type ("gehash_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1723 1746])
+                    ("noninf_table" variable
+                       (:pointer 1
+                        :type ("gehash_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1747 1771]))                  
+                :type "void")
+                nil [1689 2241])
+            ("MAX_BASES_IN_INDEX" variable (:constant-flag t) nil [2252 2270])
+            ("build_gene_index" function
+               (:arguments 
+                  ( ("index_prefix" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2306 2333])
+                    ("chro_files" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2334 2353])
+                    ("chro_file_number" variable (:type "int") (reparse-symbol arg-sub-list) [2354 2375])
+                    ("memory_megabytes" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2376 2406])
+                    ("threshold" variable (:type "int") (reparse-symbol arg-sub-list) [2407 2421])
+                    ("huge_table" variable
+                       (:pointer 1
+                        :type ("gehash_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2422 2444])
+                    ("chro_lens" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [2445 2470]))                  
+                :type "int")
+                nil [2285 10893])
+            ("add_repeated_subread" function
+               (:arguments 
+                  ( ("tab" variable
+                       (:pointer 1
+                        :type ("gehash_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10920 10936])
+                    ("subr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10937 10955])
+                    ("huge_index" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [10956 10984]))                  
+                :type "int")
+                nil [10895 11577])
+            ("scan_gene_index" function
+               (:arguments 
+                  ( ("index_prefix" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11600 11627])
+                    ("chro_files" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11628 11647])
+                    ("chro_file_number" variable (:type "int") (reparse-symbol arg-sub-list) [11648 11669])
+                    ("threshold" variable (:type "int") (reparse-symbol arg-sub-list) [11670 11684])
+                    ("huge_table" variable
+                       (:pointer 1
+                        :type ("gehash_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11685 11706]))                  
+                :type "int")
+                nil [11580 16419])
+            ("rtrim" function
+               (:pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16434 16442]))                  
+                :type "char")
+                nil [16422 16531])
+            ("ERROR_FOUND_IN_FASTA" variable (:type "int") nil [16533 16562])
+            ("CHAR_ESC" variable (:constant-flag t) nil [16571 16579])
+            ("check_and_convert_warn" function
+               (:arguments 
+                  ( ("FN" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16611 16621])
+                    ("" variable (:type "long long") (reparse-symbol arg-sub-list) [16622 16635])
+                    ("fpos_line_head" variable (:type "int") (reparse-symbol arg-sub-list) [16632 16651])
+                    ("line_no" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16652 16669])
+                    ("line_pos" variable (:type "int") (reparse-symbol arg-sub-list) [16670 16683])
+                    ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16684 16695])
+                    ("log_fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16696 16710]))                  
+                :type "void")
+                nil [16583 18610])
+            ("check_and_convert_FastA" function
+               (:arguments 
+                  ( ("input_fas" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18640 18658])
+                    ("fa_number" variable (:type "int") (reparse-symbol arg-sub-list) [18659 18673])
+                    ("out_fa" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18674 18688])
+                    ("chrom_lens" variable
+                       (:pointer 2
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [18689 18716])
+                    ("log_fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18717 18731])
+                    ("log_fn" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18732 18746]))                  
+                :type "int")
+                nil [18612 24384])
+            ("tmp_file_for_signal" variable
+               (:pointer 1
+                :type "char")
+                nil [24386 24413])
+            ("SIGINT_hook" function
+               (:arguments 
+                  ( ("param" variable (:type "int") (reparse-symbol arg-sub-list) [24432 24442]))                  
+                :type "void")
+                nil [24415 24739])
+            ("ib_long_options" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("option" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [24741 24798])
+            ("main_buildindex" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [24881 24890])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24890 24903]))                  
+                :type "int")
+                nil [24861 30802]))          
+    :file "index-builder.c"
+    :pointmax 30804
+    :fsize 30803
+    :lastmodtime '(21565 64456 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NEXT_READ" . ((number "1" 1320 . 1321)))
+          ("FULL_PARTITION" . ((number "4" 1365 . 1366)))
+          ("CHAR_ESC" . ((number "27" 16580 . 16582)))
+          ("NO_GENE_DEBUG_")
+          ("NEXT_FILE" . ((number "2" 1340 . 1341)))
+          ("MAX_BASES_IN_INDEX" . ((number "4294900000.0" 2271 . 2283)))
+          ("_GENE_DEBUG_SIZE_" . ((number "40000" 1054 . 1059)))
+          ("MIN_READ_SPLICING" . ((number "2000000" 1086 . 1093)))
+          ("MAX_KEY_MATCH" . ((symbol "GENE_VOTE_SPACE" 1118 . 1133)))
+          )
+
+    )
+   (semanticdb-table "gene-value-index.h"
+    :file "gene-value-index.h"
+    :fsize 3392
+    :lastmodtime '(21565 64457 0 0)
+    )
+   (semanticdb-table "gene-algorithms.h"
+    :file "gene-algorithms.h"
+    :fsize 10008
+    :lastmodtime '(21565 64457 0 0)
+    )
+   (semanticdb-table "sorted-hashtable.h"
+    :file "sorted-hashtable.h"
+    :fsize 4796
+    :lastmodtime '(21565 64457 0 0)
+    )
+   (semanticdb-table "input-files.h"
+    :file "input-files.h"
+    :fsize 7197
+    :lastmodtime '(21565 64457 0 0)
+    )
+   (semanticdb-table "readSummary.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_GNU_SOURCE" variable (:constant-flag t) nil [734 745])
+            ("stdio.h" include (:system-flag t) nil [746 764])
+            ("stdlib.h" include (:system-flag t) nil [765 784])
+            ("assert.h" include (:system-flag t) nil [785 804])
+            ("string.h" include (:system-flag t) nil [805 824])
+            ("unistd.h" include (:system-flag t) nil [825 844])
+            ("ctype.h" include (:system-flag t) nil [845 863])
+            ("R.h" include (:system-flag t) nil [890 906])
+            ("zlib.h" include (:system-flag t) nil [915 932])
+            ("math.h" include (:system-flag t) nil [933 950])
+            ("pthread.h" include (:system-flag t) nil [951 971])
+            ("getopt.h" include (:system-flag t) nil [972 991])
+            ("subread.h" include nil nil [992 1012])
+            ("interval_merge.h" include nil nil [1013 1040])
+            ("core.h" include nil nil [1041 1058])
+            ("gene-algorithms.h" include nil nil [1059 1087])
+            ("sambam-file.h" include nil nil [1088 1112])
+            ("input-files.h" include nil nil [1113 1137])
+            ("hashtable.h" include nil nil [1138 1160])
+            ("HelperFunctions.h" include nil nil [1161 1189])
+            ("FEATURE_NAME_LENGTH" variable (:constant-flag t) nil [1662 1681])
+            ("CHROMOSOME_NAME_LENGTH" variable (:constant-flag t) nil [1696 1718])
+            ("MAX_LINE_LENGTH" variable (:constant-flag t) nil [1732 1747])
+            ("FILE_TYPE_RSUBREAD" variable (:constant-flag t) nil [1761 1779])
+            ("FILE_TYPE_GTF" variable (:constant-flag t) nil [1791 1804])
+            ("ALLOW_ALL_MULTI_MAPPING" variable (:constant-flag t) nil [1818 1841])
+            ("ALLOW_PRIMARY_MAPPING" variable (:constant-flag t) nil [1852 1873])
+            ("MAX_HIT_NUMBER" variable (:constant-flag t) nil [1885 1899])
+            ("fc_feature_info_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("feature_name_pos" variable (:type "unsigned int") (reparse-symbol classsubparts) [1924 1954])
+                          ("start" variable (:type "unsigned int") (reparse-symbol classsubparts) [1956 1975])
+                          ("end" variable (:type "unsigned int") (reparse-symbol classsubparts) [1977 1994])
+                          ("sorted_order" variable (:type "unsigned int") (reparse-symbol classsubparts) [1996 2022])
+                          ("chro_name_pos_delta" variable (:type "unsigned short") (reparse-symbol classsubparts) [2025 2060])
+                          ("is_negative_strand" variable (:type "char") (reparse-symbol classsubparts) [2062 2086]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1906 2107])
+            ("fc_read_counters" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("assigned_reads" variable (:type "unsigned long long") (reparse-symbol classsubparts) [2127 2161])
+                          ("unassigned_ambiguous" variable (:type "unsigned long long") (reparse-symbol classsubparts) [2163 2203])
+                          ("unassigned_multimapping" variable (:type "unsigned long long") (reparse-symbol classsubparts) [2205 2248])
+                          ("unassigned_nofeatures" variable (:type "unsigned long long") (reparse-symbol classsubparts) [2250 2291])
+                          ("unassigned_unmapped" variable (:type "unsigned long long") (reparse-symbol classsubparts) [2293 2332])
+                          ("unassigned_mappingquality" variable (:type "unsigned long long") (reparse-symbol classsubparts) [2334 2379])
+                          ("unassigned_fragmentlength" variable (:type "unsigned long long") (reparse-symbol classsubparts) [2381 2426])
+                          ("unassigned_chimericreads" variable (:type "unsigned long long") (reparse-symbol classsubparts) [2428 2472])
+                          ("unassigned_secondary" variable (:type "unsigned long long") (reparse-symbol classsubparts) [2474 2514])
+                          ("unassigned_nonjunction" variable (:type "unsigned long long") (reparse-symbol classsubparts) [2516 2558])
+                          ("unassigned_duplicate" variable (:type "unsigned long long") (reparse-symbol classsubparts) [2560 2600]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2109 2620])
+            ("fc_thread_thread_context_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("thread_id" variable (:type "unsigned short") (reparse-symbol classsubparts) [2640 2665])
+                          ("line_buffer1" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [2667 2687])
+                          ("line_buffer2" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [2689 2709])
+                          ("nreads_mapped_to_exon" variable (:type "long int") (reparse-symbol classsubparts) [2725 2756])
+                          ("all_reads" variable (:type "long int") (reparse-symbol classsubparts) [2772 2791])
+                          ("count_table" variable
+                             (:pointer 1
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [2873 2900])
+                          ("chunk_read_ptr" variable (:type "unsigned int") (reparse-symbol classsubparts) [2902 2930])
+                          ("thread_object" variable (:type ("pthread_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2932 2956])
+                          ("input_buffer" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [2959 2979])
+                          ("input_buffer_remainder" variable (:type "unsigned int") (reparse-symbol classsubparts) [2981 3017])
+                          ("input_buffer_write_ptr" variable (:type "unsigned int") (reparse-symbol classsubparts) [3019 3055])
+                          ("input_buffer_lock" variable (:type ("pthread_spinlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3058 3095])
+                          ("hits_total_length1" variable
+                             (:dereference 1
+                              :type "short")
+                              (reparse-symbol classsubparts) [3099 3140])
+                          ("hits_total_length2" variable
+                             (:dereference 1
+                              :type "short")
+                              (reparse-symbol classsubparts) [3142 3183])
+                          ("hits_indices1" variable
+                             (:dereference 1
+                              :type "long")
+                              (reparse-symbol classsubparts) [3185 3221])
+                          ("hits_indices2" variable
+                             (:dereference 1
+                              :type "long")
+                              (reparse-symbol classsubparts) [3223 3259])
+                          ("decision_table_ids" variable
+                             (:dereference 1
+                              :type "long")
+                              (reparse-symbol classsubparts) [3261 3302])
+                          ("decision_table_votes" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [3304 3356])
+                          ("decision_table_exon_ids" variable
+                             (:dereference 1
+                              :type "long")
+                              (reparse-symbol classsubparts) [3358 3404])
+                          ("uniq_gene_exonid_table" variable
+                             (:dereference 1
+                              :type "long")
+                              (reparse-symbol classsubparts) [3406 3451])
+                          ("uniq_gene_table" variable
+                             (:dereference 1
+                              :type "long")
+                              (reparse-symbol classsubparts) [3453 3491])
+                          ("chro_name_buff" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [3494 3516])
+                          ("strm_buffer" variable
+                             (:pointer 1
+                              :type ("z_stream" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3518 3541])
+                          ("read_counters" variable (:type ("fc_read_counters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3544 3575])
+                          ("aln_buffer" variable (:type ("SamBam_Alignment" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3578 3606]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2622 3636])
+            ("REVERSE_TABLE_BUCKET_LENGTH" variable (:constant-flag t) nil [3646 3673])
+            ("REDUCE_TO_5_PRIME_END" variable (:constant-flag t) nil [3689 3710])
+            ("REDUCE_TO_3_PRIME_END" variable (:constant-flag t) nil [3721 3742])
+            ("fc_chromosome_index_info" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("chro_number" variable (:type "unsigned int") (reparse-symbol classsubparts) [3764 3789])
+                          ("chro_features" variable (:type "unsigned int") (reparse-symbol classsubparts) [3791 3818])
+                          ("chro_feature_table_start" variable (:type "unsigned int") (reparse-symbol classsubparts) [3820 3858])
+                          ("chro_block_table_start" variable (:type "unsigned int") (reparse-symbol classsubparts) [3860 3896])
+                          ("chro_block_table_end" variable (:type "unsigned int") (reparse-symbol classsubparts) [3898 3932])
+                          ("chro_possible_length" variable (:type "unsigned int") (reparse-symbol classsubparts) [3934 3968])
+                          ("chro_reverse_table_current_size" variable (:type "unsigned short") (reparse-symbol classsubparts) [3971 4018])
+                          ("reverse_table_start_index" variable
+                             (:pointer 1
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [4020 4061]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3746 4132])
+            ("fc_thread_global_context_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("is_gene_level" variable (:type "int") (reparse-symbol classsubparts) [4152 4170])
+                          ("is_paired_end_data" variable (:type "int") (reparse-symbol classsubparts) [4172 4195])
+                          ("is_multi_overlap_allowed" variable (:type "int") (reparse-symbol classsubparts) [4197 4226])
+                          ("is_strand_checked" variable (:type "int") (reparse-symbol classsubparts) [4228 4250])
+                          ("is_both_end_required" variable (:type "int") (reparse-symbol classsubparts) [4252 4277])
+                          ("is_chimertc_disallowed" variable (:type "int") (reparse-symbol classsubparts) [4279 4306])
+                          ("is_PE_distance_checked" variable (:type "int") (reparse-symbol classsubparts) [4308 4335])
+                          ("is_multi_mapping_allowed" variable (:type "int") (reparse-symbol classsubparts) [4337 4366])
+                          ("is_input_file_resort_needed" variable (:type "int") (reparse-symbol classsubparts) [4368 4400])
+                          ("is_SAM_file" variable (:type "int") (reparse-symbol classsubparts) [4402 4418])
+                          ("is_read_details_out" variable (:type "int") (reparse-symbol classsubparts) [4420 4444])
+                          ("is_unpaired_warning_shown" variable (:type "int") (reparse-symbol classsubparts) [4446 4476])
+                          ("is_stake_warning_shown" variable (:type "int") (reparse-symbol classsubparts) [4478 4505])
+                          ("is_split_alignments_only" variable (:type "int") (reparse-symbol classsubparts) [4507 4536])
+                          ("is_duplicate_ignored" variable (:type "int") (reparse-symbol classsubparts) [4538 4563])
+                          ("reduce_5_3_ends_to_one" variable (:type "int") (reparse-symbol classsubparts) [4565 4592])
+                          ("isCVersion" variable (:type "int") (reparse-symbol classsubparts) [4594 4609])
+                          ("min_mapping_quality_score" variable (:type "int") (reparse-symbol classsubparts) [4612 4642])
+                          ("min_paired_end_distance" variable (:type "int") (reparse-symbol classsubparts) [4644 4672])
+                          ("max_paired_end_distance" variable (:type "int") (reparse-symbol classsubparts) [4674 4702])
+                          ("feature_block_size" variable (:type "int") (reparse-symbol classsubparts) [4704 4727])
+                          ("read_length" variable (:type "int") (reparse-symbol classsubparts) [4729 4745])
+                          ("line_length" variable (:type "int") (reparse-symbol classsubparts) [4747 4763])
+                          ("longest_chro_name" variable (:type "int") (reparse-symbol classsubparts) [4765 4787])
+                          ("five_end_extension" variable (:type "int") (reparse-symbol classsubparts) [4789 4812])
+                          ("three_end_extension" variable (:type "int") (reparse-symbol classsubparts) [4814 4838])
+                          ("overlap_length_required" variable (:type "int") (reparse-symbol classsubparts) [4840 4868])
+                          ("all_reads" variable (:type "long int") (reparse-symbol classsubparts) [4885 4904])
+                          ("thread_number" variable (:type "unsigned short") (reparse-symbol classsubparts) [4907 4936])
+                          ("thread_contexts" variable
+                             (:pointer 1
+                              :type ("fc_thread_thread_context_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4938 4983])
+                          ("is_all_finished" variable (:type "int") (reparse-symbol classsubparts) [4985 5005])
+                          ("input_buffer_max_size" variable (:type "unsigned int") (reparse-symbol classsubparts) [5007 5042])
+                          ("sambam_chro_table" variable
+                             (:pointer 1
+                              :type ("SamBam_Reference_Info" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5044 5086])
+                          ("debug_command" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [5089 5110])
+                          ("unistr_buffer_space" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [5112 5139])
+                          ("unistr_buffer_size" variable (:type "unsigned int") (reparse-symbol classsubparts) [5141 5173])
+                          ("unistr_buffer_used" variable (:type "unsigned int") (reparse-symbol classsubparts) [5175 5207])
+                          ("gene_name_table" variable
+                             (:pointer 1
+                              :type ("HashTable" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5210 5238])
+                          ("annot_chro_name_alias_table" variable
+                             (:pointer 1
+                              :type ("HashTable" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5268 5308])
+                          ("alias_file_name" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [5351 5377])
+                          ("input_file_name" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [5379 5405])
+                          ("raw_input_file_name" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [5407 5437])
+                          ("output_file_name" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [5439 5466])
+                          ("gene_name_array" variable
+                             (:pointer 2
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [5468 5501])
+                          ("exontable_chro_table" variable
+                             (:pointer 1
+                              :type ("HashTable" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5542 5575])
+                          ("exontable_nchrs" variable (:type "int") (reparse-symbol classsubparts) [5697 5717])
+                          ("exontable_exons" variable (:type "int") (reparse-symbol classsubparts) [5719 5739])
+                          ("exontable_geneid" variable
+                             (:pointer 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [5741 5764])
+                          ("exontable_strand" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [5766 5790])
+                          ("exontable_chr" variable
+                             (:pointer 2
+                              :type "char")
+                              (reparse-symbol classsubparts) [5792 5814])
+                          ("exontable_start" variable
+                             (:pointer 1
+                              :type "long")
+                              (reparse-symbol classsubparts) [5816 5839])
+                          ("exontable_stop" variable
+                             (:pointer 1
+                              :type "long")
+                              (reparse-symbol classsubparts) [5841 5863])
+                          ("feature_name_column" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [5865 5895])
+                          ("gene_id_column" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [5897 5922])
+                          ("exontable_block_end_index" variable
+                             (:pointer 1
+                              :type "long")
+                              (reparse-symbol classsubparts) [5925 5958])
+                          ("exontable_block_max_end" variable
+                             (:pointer 1
+                              :type "long")
+                              (reparse-symbol classsubparts) [5960 5991])
+                          ("exontable_block_min_start" variable
+                             (:pointer 1
+                              :type "long")
+                              (reparse-symbol classsubparts) [5993 6026])
+                          ("exontable_anno_chrs" variable
+                             (:pointer 2
+                              :type "char")
+                              (reparse-symbol classsubparts) [6029 6057])
+                          ("exontable_anno_chr_2ch" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [6059 6089])
+                          ("exontable_anno_chr_heads" variable
+                             (:pointer 1
+                              :type "long")
+                              (reparse-symbol classsubparts) [6091 6123])
+                          ("SAM_output_fp" variable
+                             (:pointer 1
+                              :type ("FILE" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [6126 6147])
+                          ("start_time" variable (:type "double") (reparse-symbol classsubparts) [6149 6167])
+                          ("cmd_rebuilt" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [6170 6189])
+                          ("redo" variable (:type "char") (reparse-symbol classsubparts) [6192 6204])
+                          ("read_counters" variable (:type ("fc_read_counters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6207 6238]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [4134 6270])
+            ("tick_time" variable (:type "unsigned int") nil [6272 6302])
+            ("unistr_cpy" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6329 6373])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6374 6385])
+                    ("strl" variable (:type "int") (reparse-symbol arg-sub-list) [6386 6395]))                  
+                :type "unsigned int")
+                nil [6305 7124])
+            ("print_FC_configuration" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7154 7198])
+                    ("annot" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7199 7212])
+                    ("sam" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7213 7224])
+                    ("out" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7225 7236])
+                    ("is_sam" variable (:type "int") (reparse-symbol arg-sub-list) [7237 7248])
+                    ("is_GTF" variable (:type "int") (reparse-symbol arg-sub-list) [7249 7260])
+                    ("n_input_files" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [7261 7280])
+                    ("isReadSummaryReport" variable (:type "int") (reparse-symbol arg-sub-list) [7281 7305]))                  
+                :type "void")
+                nil [7126 11977])
+            ("print_FC_results" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12001 12045]))                  
+                :type "void")
+                nil [11979 13244])
+            ("fc_strcmp" function
+               (:arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13260 13276])
+                    ("s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13277 13293]))                  
+                :type "int")
+                nil [13246 13335])
+            ("is_comment_line" function
+               (:arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13358 13373])
+                    ("file_type" variable (:type "int") (reparse-symbol arg-sub-list) [13374 13388])
+                    ("lineno" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13389 13409]))                  
+                :type "int")
+                nil [13338 13818])
+            ("load_feature_info" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14103 14146])
+                    ("annotation_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14147 14176])
+                    ("file_type" variable (:type "int") (reparse-symbol arg-sub-list) [14177 14191])
+                    ("loaded_features" variable
+                       (:pointer 2
+                        :type ("fc_feature_info_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14192 14229]))                  
+                :type "int")
+                nil [14081 22747])
+            ("find_or_insert_gene_name" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22778 22822])
+                    ("feature_name" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [22823 22852]))                  
+                :type "int")
+                nil [22749 23361])
+            ("register_reverse_table" function
+               (:arguments 
+                  ( ("block_no" variable (:type "int") (reparse-symbol arg-sub-list) [23391 23404])
+                    ("this_block_min_start" variable (:type "long") (reparse-symbol arg-sub-list) [23405 23431])
+                    ("this_block_max_end" variable (:type "long") (reparse-symbol arg-sub-list) [23432 23456])
+                    ("chro_inf" variable
+                       (:pointer 1
+                        :type ("fc_chromosome_index_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23457 23493]))                  
+                :type "void")
+                nil [23363 24075])
+            ("feature_merge" function
+               (:arguments 
+                  ( ("arrv" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [24096 24108])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [24109 24119])
+                    ("items" variable (:type "int") (reparse-symbol arg-sub-list) [24120 24130])
+                    ("items2" variable (:type "int") (reparse-symbol arg-sub-list) [24131 24142]))                  
+                :type "void")
+                nil [24077 26027])
+            ("feature_sort_compare" function
+               (:arguments 
+                  ( ("arrv" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [26055 26067])
+                    ("l" variable (:type "int") (reparse-symbol arg-sub-list) [26068 26074])
+                    ("r" variable (:type "int") (reparse-symbol arg-sub-list) [26075 26081]))                  
+                :type "int")
+                nil [26030 26268])
+            ("feature_sort_exchange" function
+               (:arguments 
+                  ( ("arrv" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [26297 26309])
+                    ("l" variable (:type "int") (reparse-symbol arg-sub-list) [26310 26316])
+                    ("r" variable (:type "int") (reparse-symbol arg-sub-list) [26317 26323]))                  
+                :type "void")
+                nil [26270 27002])
+            ("sort_feature_info" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27029 27073])
+                    ("features" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27074 27096])
+                    ("loaded_features" variable
+                       (:pointer 1
+                        :type ("fc_feature_info_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27097 27133])
+                    ("sorted_chr_names" variable
+                       (:pointer 3
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27134 27160])
+                    ("sorted_entrezid" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [27161 27184])
+                    ("sorted_start" variable
+                       (:pointer 2
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [27185 27206])
+                    ("sorted_end" variable
+                       (:pointer 2
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [27207 27226])
+                    ("sorted_strand" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [27227 27258])
+                    ("anno_chr_2ch" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27259 27280])
+                    ("anno_chrs" variable
+                       (:pointer 3
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27281 27300])
+                    ("anno_chr_head" variable
+                       (:pointer 2
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [27301 27323])
+                    ("block_end_index" variable
+                       (:pointer 2
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [27324 27348])
+                    ("block_min_start_pos" variable
+                       (:pointer 2
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [27349 27377])
+                    ("block_max_end_pos" variable
+                       (:pointer 2
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [27378 27404]))                  
+                :type "void")
+                nil [27006 35705])
+            ("strcmp_slash" function
+               (:arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35757 35767])
+                    ("s2" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35768 35778]))                  
+                :type "int")
+                nil [35740 35905])
+            ("process_line_buffer" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35933 35977])
+                    ("thread_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_thread_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35978 36022]))                  
+                :type "void")
+                nil [35908 61718])
+            ("feature_count_worker" function
+               (:pointer 1
+                :arguments 
+                  ( ("vargs" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [61748 61761]))                  
+                :type "void")
+                nil [61720 67786])
+            ("fc_thread_merge_results" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67817 67861])
+                    ("nreads" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [67862 67885])
+                    ("" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [67886 67908])
+                    ("nreads_mapped_to_exon" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [67905 67932])
+                    ("my_read_counter" variable
+                       (:pointer 1
+                        :type ("fc_read_counters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67933 67968]))                  
+                :type "void")
+                nil [67788 71809])
+            ("load_alias_table" function
+               (:pointer 1
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [71840 71853]))                  
+                :type ("HashTable" type (:type "class") nil nil))
+                nil [71811 72768])
+            ("fc_thread_init_global_context" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72805 72849])
+                    ("buffer_size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [72850 72875])
+                    ("threads" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [72876 72899])
+                    ("line_length" variable (:type "int") (reparse-symbol arg-sub-list) [72900 72917])
+                    ("is_PE_data" variable (:type "int") (reparse-symbol arg-sub-list) [72918 72933])
+                    ("min_pe_dist" variable (:type "int") (reparse-symbol arg-sub-list) [72934 72950])
+                    ("max_pe_dist" variable (:type "int") (reparse-symbol arg-sub-list) [72951 72967])
+                    ("is_gene_level" variable (:type "int") (reparse-symbol arg-sub-list) [72968 72986])
+                    ("is_overlap_allowed" variable (:type "int") (reparse-symbol arg-sub-list) [72987 73010])
+                    ("is_strand_checked" variable (:type "int") (reparse-symbol arg-sub-list) [73011 73033])
+                    ("output_fname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [73034 73054])
+                    ("is_sam_out" variable (:type "int") (reparse-symbol arg-sub-list) [73055 73070])
+                    ("is_both_end_required" variable (:type "int") (reparse-symbol arg-sub-list) [73071 73096])
+                    ("is_chimertc_disallowed" variable (:type "int") (reparse-symbol arg-sub-list) [73097 73124])
+                    ("is_PE_distance_checked" variable (:type "int") (reparse-symbol arg-sub-list) [73125 73152])
+                    ("feature_name_column" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [73153 73179])
+                    ("gene_id_column" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [73180 73202])
+                    ("min_map_qual_score" variable (:type "int") (reparse-symbol arg-sub-list) [73203 73226])
+                    ("is_multi_mapping_allowed" variable (:type "int") (reparse-symbol arg-sub-list) [73227 73256])
+                    ("is_SAM" variable (:type "int") (reparse-symbol arg-sub-list) [73257 73268])
+                    ("alias_file_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [73269 73292])
+                    ("cmd_rebuilt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [73293 73312])
+                    ("is_input_file_resort_needed" variable (:type "int") (reparse-symbol arg-sub-list) [73313 73345])
+                    ("feature_block_size" variable (:type "int") (reparse-symbol arg-sub-list) [73346 73369])
+                    ("isCVersion" variable (:type "int") (reparse-symbol arg-sub-list) [73370 73385])
+                    ("fiveEndExtension" variable (:type "int") (reparse-symbol arg-sub-list) [73386 73407])
+                    ("threeEndExtension" variable (:type "int") (reparse-symbol arg-sub-list) [73409 73431])
+                    ("minReadOverlap" variable (:type "int") (reparse-symbol arg-sub-list) [73432 73451])
+                    ("is_split_alignments_only" variable (:type "int") (reparse-symbol arg-sub-list) [73452 73481])
+                    ("reduce_5_3_ends_to_one" variable (:type "int") (reparse-symbol arg-sub-list) [73482 73509])
+                    ("debug_command" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [73510 73531])
+                    ("is_duplicate_ignored" variable (:type "int") (reparse-symbol arg-sub-list) [73532 73557]))                  
+                :type "void")
+                nil [72770 76606])
+            ("fc_thread_start_threads" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76635 76679])
+                    ("et_exons" variable (:type "int") (reparse-symbol arg-sub-list) [76680 76693])
+                    ("et_geneid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [76694 76710])
+                    ("et_chr" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76711 76726])
+                    ("et_start" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [76727 76743])
+                    ("et_stop" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [76744 76759])
+                    ("et_strand" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [76760 76786])
+                    ("et_anno_chr_2ch" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76787 76810])
+                    ("et_anno_chrs" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76811 76832])
+                    ("et_anno_chr_heads" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [76833 76858])
+                    ("et_bk_end_index" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [76859 76882])
+                    ("et_bk_min_start" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [76883 76906])
+                    ("et_bk_max_end" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [76907 76928])
+                    ("read_length" variable (:type "int") (reparse-symbol arg-sub-list) [76929 76945]))                  
+                :type "int")
+                nil [76607 80789])
+            ("fc_thread_destroy_thread_context" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80829 80873]))                  
+                :type "void")
+                nil [80791 81604])
+            ("fc_thread_wait_threads" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81633 81677]))                  
+                :type "void")
+                nil [81605 81822])
+            ("resort_input_file" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81846 81890]))                  
+                :type "int")
+                nil [81824 83448])
+            ("fc_write_final_gene_results" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83484 83528])
+                    ("et_geneid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [83529 83545])
+                    ("et_chr" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [83546 83561])
+                    ("et_start" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [83562 83578])
+                    ("et_stop" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [83579 83594])
+                    ("et_strand" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [83595 83621])
+                    ("out_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [83622 83644])
+                    ("features" variable (:type "int") (reparse-symbol arg-sub-list) [83645 83658])
+                    ("column_numbers" variable
+                       (:pointer 2
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [83659 83690])
+                    ("file_list" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [83691 83708])
+                    ("n_input_files" variable (:type "int") (reparse-symbol arg-sub-list) [83709 83727])
+                    ("loaded_features" variable
+                       (:pointer 1
+                        :type ("fc_feature_info_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83728 83764])
+                    ("header_out" variable (:type "int") (reparse-symbol arg-sub-list) [83765 83780]))                  
+                :type "void")
+                nil [83451 89668])
+            ("fc_write_final_counts" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89697 89741])
+                    ("out_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [89742 89764])
+                    ("nfiles" variable (:type "int") (reparse-symbol arg-sub-list) [89765 89776])
+                    ("file_list" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [89777 89794])
+                    ("column_numbers" variable
+                       (:pointer 2
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [89795 89826])
+                    ("read_counters" variable
+                       (:pointer 1
+                        :type ("fc_read_counters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89827 89859])
+                    ("isCVersion" variable (:type "int") (reparse-symbol arg-sub-list) [89860 89875]))                  
+                :type "void")
+                nil [89670 91028])
+            ("fc_write_final_results" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91057 91101])
+                    ("out_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91102 91124])
+                    ("features" variable (:type "int") (reparse-symbol arg-sub-list) [91125 91138])
+                    ("column_numbers" variable
+                       (:pointer 2
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [91139 91170])
+                    ("file_list" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91171 91188])
+                    ("n_input_files" variable (:type "int") (reparse-symbol arg-sub-list) [91189 91207])
+                    ("loaded_features" variable
+                       (:pointer 1
+                        :type ("fc_feature_info_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91208 91244])
+                    ("header_out" variable (:type "int") (reparse-symbol arg-sub-list) [91245 91260]))                  
+                :type "void")
+                nil [91029 92717])
+            ("long_options" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("option" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [92719 93114])
+            ("print_usage" function (:type "void") nil [93116 102779])
+            ("readSummary_single_file" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [102811 102855])
+                    ("column_numbers" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [102856 102886])
+                    ("nexons" variable (:type "int") (reparse-symbol arg-sub-list) [102887 102898])
+                    ("geneid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [102900 102913])
+                    ("chr" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [102914 102926])
+                    ("start" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [102927 102940])
+                    ("stop" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [102941 102953])
+                    ("sorted_strand" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [102954 102984])
+                    ("anno_chr_2ch" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [102985 103005])
+                    ("anno_chrs" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [103006 103024])
+                    ("anno_chr_head" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [103025 103046])
+                    ("block_end_index" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [103047 103070])
+                    ("block_min_start" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [103071 103095])
+                    ("block_max_end" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [103096 103117])
+                    ("my_read_counter" variable
+                       (:pointer 1
+                        :type ("fc_read_counters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [103118 103153]))                  
+                :type "int")
+                nil [102783 103154])
+            ("readSummary" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [103172 103181])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [103181 103194]))                  
+                :type "int")
+                nil [103156 114049])
+            ("readSummary_single_file" function
+               (:arguments 
+                  ( ("global_context" variable
+                       (:pointer 1
+                        :type ("fc_thread_global_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114091 114135])
+                    ("column_numbers" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [114136 114166])
+                    ("nexons" variable (:type "int") (reparse-symbol arg-sub-list) [114167 114178])
+                    ("geneid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [114180 114193])
+                    ("chr" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [114194 114206])
+                    ("start" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [114207 114220])
+                    ("stop" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [114221 114233])
+                    ("sorted_strand" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [114234 114264])
+                    ("anno_chr_2ch" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [114265 114285])
+                    ("anno_chrs" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [114286 114304])
+                    ("anno_chr_head" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [114305 114326])
+                    ("block_end_index" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [114327 114350])
+                    ("block_min_start" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [114351 114375])
+                    ("block_max_end" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [114376 114397])
+                    ("my_read_counter" variable
+                       (:pointer 1
+                        :type ("fc_read_counters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114398 114433]))                  
+                :type "int")
+                nil [114063 128546])
+            ("feature_count_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [128634 128643])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [128644 128657]))                  
+                :type "int")
+                nil [128611 136255]))          
+    :file "readSummary.c"
+    :pointmax 136258
+    :fsize 136257
+    :lastmodtime '(21565 64456 0 0)
+    :unmatched-syntax '((LONG 4880 . 4884) (UNSIGNED 4871 . 4879) (LONG 2767 . 2771) (UNSIGNED 2758 . 2766) (LONG 2720 . 2724) (UNSIGNED 2711 . 2719))
+    :lexical-table 
+        '(("_GNU_SOURCE")
+          ("FEATURE_NAME_LENGTH" . ((number "256" 1683 . 1686)))
+          ("CHROMOSOME_NAME_LENGTH" . ((number "256" 1719 . 1722)))
+          ("FILE_TYPE_GTF" . ((number "100" 1805 . 1808)))
+          ("REDUCE_TO_3_PRIME_END" . ((number "3" 3743 . 3744)))
+          ("ALLOW_PRIMARY_MAPPING" . ((number "2" 1874 . 1875)))
+          ("ALLOW_ALL_MULTI_MAPPING" . ((number "1" 1842 . 1843)))
+          ("REDUCE_TO_5_PRIME_END" . ((number "5" 3711 . 3712)))
+          ("MAX_LINE_LENGTH" . ((number "3000" 1748 . 1752)))
+          ("FILE_TYPE_RSUBREAD" . ((number "10" 1780 . 1782)))
+          ("MAX_HIT_NUMBER" . ((number "3000" 1900 . 1904)))
+          ("REVERSE_TABLE_BUCKET_LENGTH" . ((number "131072" 3674 . 3680)))
+          )
+
+    )
+   (semanticdb-table "subread.h"
+    :file "subread.h"
+    :fsize 10611
+    :lastmodtime '(21565 64457 0 0)
+    )
+   (semanticdb-table "interval_merge.h"
+    :file "interval_merge.h"
+    :fsize 849
+    :lastmodtime '(21565 64457 0 0)
+    )
+   (semanticdb-table "core.h"
+    :file "core.h"
+    :fsize 14986
+    :lastmodtime '(21775 16746 0 0)
+    )
+   (semanticdb-table "sambam-file.h"
+    :file "sambam-file.h"
+    :fsize 6539
+    :lastmodtime '(21565 64457 0 0)
+    )
+   (semanticdb-table "HelperFunctions.h"
+    :file "HelperFunctions.h"
+    :fsize 2436
+    :lastmodtime '(21565 64457 0 0)
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("all" function nil nil [3 703]))          
+    :file "Makefile"
+    :pointmax 703
+    :fsize 701
+    :lastmodtime '(21565 64456 0 0)
+    :unmatched-syntax '((shell-command 697 . 702) (bol 696 . 696) (bol 1 . 1) (shell-command 696 . 701) (bol 695 . 695))
+    )
+   )
+  :file "!home!brad!third-party!subread-1.4.6-p2-source!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

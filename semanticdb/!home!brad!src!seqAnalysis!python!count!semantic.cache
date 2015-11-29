@@ -1,0 +1,279 @@
+;; Object count/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "count/"
+  :tables (list 
+   (semanticdb-table "normalize_bam.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Filters out BAM records above coverage threshold
+Usage: %prog bam thresh
+
+Outputs [bam basename]_C[thresh].bam in current working directory
+\"\"\"" code nil nil [25 172])
+            ("sys" include nil nil [174 184])
+            ("os" include nil nil [185 194])
+            ("pysam" include nil nil [195 207])
+            ("argparse" include nil nil [208 223])
+            ("thresh" function (:arguments 
+              ( ("ifname" variable nil (reparse-symbol function_parameters) [236 242])
+                ("threshin" variable nil (reparse-symbol function_parameters) [244 252]))              ) nil [225 750])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [760 764]))              ) nil [751 884])
+            ("if" code nil nil [885 930]))          
+    :file "normalize_bam.py"
+    :pointmax 1065
+    :fsize 929
+    :lastmodtime '(21738 36856 340633 674000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "BAMtoWindow.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Converts a BAM file to a WIG or Hdf5 track file by
+    counting the number of fragments that lie within nonoverlapping genomic windows.
+    A fragment is defined as a pair of reads for paired-end samples and
+    an extended single-end read for single-end samples
+
+Single-end samples: 
+   Reads are extended by a given amount (param 'extend') and
+   the midpoint of that extension is used to place a fragment in a genomic bin
+
+Paired-end samples:
+   The midpoint of a given pair of reads is used to determine fragment placement
+
+Window counts are normalized by
+    1. The number of reads (in millions) in the sample
+    2. The window size to yield read number per kilobase
+      - this allows comparison of values generated from different windows
+
+WIGs and track files are outputted to separate directories
+\"\"\"" code nil nil [24 837])
+            ("sys" include nil nil [839 849])
+            ("os" include nil nil [850 859])
+            ("re" include nil nil [860 869])
+            ("sam" include nil nil [870 880])
+            ("argparse" include nil nil [881 896])
+            ("pysam" include nil nil [897 909])
+            ("pdb" include nil nil [910 920])
+            ("track_util" include nil nil [921 938])
+            ("signal_utils" include nil nil [939 958])
+            ("numpy" include nil nil [959 977])
+            ("numpy.ma" include nil nil [978 999])
+            ("tables" include nil nil [1000 1019])
+            ("utils" include nil nil [1020 1047])
+            ("subprocess" include nil nil [1048 1076])
+            ("scipy.stats.mstats" include nil nil [1077 1113])
+            ("multiprocessing" include nil nil [1114 1162])
+            ("string" include nil nil [1163 1183])
+            ("wig_dir" variable nil nil [1268 1304])
+            ("h5_dir" variable nil nil [1305 1333])
+            ("windower" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1540 1562])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1571 1620])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1630 1652])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1661 1691])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1700 1717])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1727 1755])
+                            ("if" code nil (reparse-symbol indented_block_body) [1764 2172])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2181 2217])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2226 2238])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2247 2272])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2282 2315])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2325 2345])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2354 2370])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2379 2399])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2408 2440])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2449 2471])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2506 2530])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2539 2590])
+                            ("if" code nil (reparse-symbol indented_block_body) [2599 2786])
+                            ("if" code nil (reparse-symbol indented_block_body) [2795 3147])
+                            ("print" code nil (reparse-symbol indented_block_body) [3155 3172])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3182 3221])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3230 3250])
+                            ("for" code nil (reparse-symbol indented_block_body) [3259 3403]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1368 1372])
+                            ("bamname" variable nil (reparse-symbol function_parameters) [1374 1381])
+                            ("outname" variable nil (reparse-symbol function_parameters) [1383 1390])
+                            ("track_name" variable nil (reparse-symbol function_parameters) [1392 1402])
+                            ("window_size" variable nil (reparse-symbol function_parameters) [1422 1433])
+                            ("extend" variable nil (reparse-symbol function_parameters) [1435 1441])
+                            ("pe" variable nil (reparse-symbol function_parameters) [1443 1445])
+                            ("pseudo" variable nil (reparse-symbol function_parameters) [1447 1453])
+                            ("ends" variable nil (reparse-symbol function_parameters) [1472 1476])
+                            ("smooth" variable nil (reparse-symbol function_parameters) [1478 1484])
+                            ("norm_by_mean" variable nil (reparse-symbol function_parameters) [1486 1498])
+                            ("no_norm" variable nil (reparse-symbol function_parameters) [1500 1507])
+                            ("output_type" variable nil (reparse-symbol function_parameters) [1509 1520]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1355 3403])
+                    ("window" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3467 3471]))                          )
+                        (reparse-symbol indented_block_body) [3456 3548])
+                    ("write_norm_vals" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3727 3731]))                          )
+                        (reparse-symbol indented_block_body) [3707 3979]))                  
+                :type "class")
+                nil [1335 3979])
+            ("window_core" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [3996 3999])
+                ("chrom" variable nil (reparse-symbol function_parameters) [4001 4006]))              ) nil [3980 5113])
+            ("write_values" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [5131 5134])
+                ("pos_vect" variable nil (reparse-symbol function_parameters) [5136 5144])
+                ("chrom" variable nil (reparse-symbol function_parameters) [5146 5151])
+                ("chr_length" variable nil (reparse-symbol function_parameters) [5153 5163]))              ) nil [5114 5994])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [6004 6008]))              ) nil [5995 9318])
+            ("if" code nil nil [9319 9365]))          
+    :file "BAMtoWindow.py"
+    :pointmax 9364
+    :fsize 9363
+    :lastmodtime '(21915 683 978773 980000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sam.py"
+    :file "sam.py"
+    :fsize 12613
+    :lastmodtime '(21594 27463 174231 29000)
+    )
+   (semanticdb-table "BAMtoWIG.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Converts a BAM file to a WIG file by
+    counting the number of fragments that lie within nonoverlapping genomic windows.
+    A fragment is defined as a pair of reads for paired-end samples and
+    an extended single-end read for single-end samles
+
+Single-end samples: 
+   Reads are extended by a given amount (param 'extend') and
+   the midpoint of that extension is used to place a fragment in a genomic bin
+
+Paired-end samples:
+   The midpoint of a given pair of reads is used to determine fragment placement
+
+Window counts are normalized by
+    1. The number of reads (in millions) in the sample
+    2. The window size to yield read number per kilobase
+      - this allows comparison of values generated from different windows
+
+WIGs are outputted to a common directory
+\"\"\"" code nil nil [24 804])
+            ("sys" include nil nil [806 816])
+            ("os" include nil nil [817 826])
+            ("re" include nil nil [827 836])
+            ("sam" include nil nil [837 847])
+            ("argparse" include nil nil [848 863])
+            ("pysam" include nil nil [864 876])
+            ("pdb" include nil nil [877 887])
+            ("file_util" include nil nil [888 904])
+            ("signal_utils" include nil nil [905 924])
+            ("numpy" include nil nil [925 943])
+            ("numpy.ma" include nil nil [944 965])
+            ("subprocess" include nil nil [966 994])
+            ("scipy.stats.mstats" include nil nil [995 1031])
+            ("multiprocessing" include nil nil [1032 1080])
+            ("string" include nil nil [1081 1101])
+            ("bam_dir" variable nil nil [1231 1280])
+            ("wig_dir" variable nil nil [1329 1365])
+            ("tdf_dir" variable nil nil [1366 1402])
+            ("windower" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1588 1610])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1619 1662])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1671 1693])
+                            ("if" code nil (reparse-symbol indented_block_body) [1702 1766])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1774 1871])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1880 1916])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1925 1937])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1994 2019])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2029 2062])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2071 2090])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2099 2117])
+                            ("if" code nil (reparse-symbol indented_block_body) [2126 2172])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2180 2200])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2209 2225])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2234 2250])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2259 2279])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2288 2320])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2329 2351])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2360 2386])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2429 2453])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2462 2513])
+                            ("if" code nil (reparse-symbol indented_block_body) [2522 2709])
+                            ("if" code nil (reparse-symbol indented_block_body) [2726 3078])
+                            ("print" code nil (reparse-symbol indented_block_body) [3086 3103])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3112 3151])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3160 3180])
+                            ("for" code nil (reparse-symbol indented_block_body) [3189 3333]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1437 1441])
+                            ("bamname" variable nil (reparse-symbol function_parameters) [1443 1450])
+                            ("wigname" variable nil (reparse-symbol function_parameters) [1452 1459])
+                            ("window_size" variable nil (reparse-symbol function_parameters) [1461 1472])
+                            ("extend" variable nil (reparse-symbol function_parameters) [1474 1480])
+                            ("pe" variable nil (reparse-symbol function_parameters) [1482 1484])
+                            ("bed" variable nil (reparse-symbol function_parameters) [1486 1489])
+                            ("pseudo" variable nil (reparse-symbol function_parameters) [1491 1497])
+                            ("full" variable nil (reparse-symbol function_parameters) [1516 1520])
+                            ("ends" variable nil (reparse-symbol function_parameters) [1522 1526])
+                            ("smooth" variable nil (reparse-symbol function_parameters) [1528 1534])
+                            ("norm_by_mean" variable nil (reparse-symbol function_parameters) [1536 1548])
+                            ("no_norm" variable nil (reparse-symbol function_parameters) [1550 1557])
+                            ("no_output" variable nil (reparse-symbol function_parameters) [1559 1568]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1424 3333])
+                    ("window" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3397 3401]))                          )
+                        (reparse-symbol indented_block_body) [3386 3814])
+                    ("write_norm_vals" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3905 3909]))                          )
+                        (reparse-symbol indented_block_body) [3885 4157])
+                    ("tdf" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4211 4215]))                          )
+                        (reparse-symbol indented_block_body) [4203 4365]))                  
+                :type "class")
+                nil [1404 4365])
+            ("window_core" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [4390 4393])
+                ("chrom" variable nil (reparse-symbol function_parameters) [4395 4400]))              ) nil [4374 5761])
+            ("window_full" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [5786 5789])
+                ("chrom" variable nil (reparse-symbol function_parameters) [5791 5796]))              ) nil [5770 8032])
+            ("window_bed" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [8052 8055]))              ) nil [8037 11097])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [11107 11111]))              ) nil [11098 13966])
+            ("if" code nil nil [13979 14025]))          
+    :file "BAMtoWIG.py"
+    :pointmax 14025
+    :fsize 14024
+    :lastmodtime '(21345 30662 184286 875000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!seqAnalysis!python!count!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

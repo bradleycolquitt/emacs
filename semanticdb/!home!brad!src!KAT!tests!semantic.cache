@@ -1,0 +1,27 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("subdir-objects")) nil [1 35])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4" "${ACLOCAL_FLAGS}")) nil [35 76])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src/inc" "-I$(top_srcdir)/src" "@TEST_CPPFLAGS@" "@AM_CPPFLAGS@")) nil [141 227])
+            ("AM_CXXFLAGS" variable (:default-value ("-Wno-conversion-null" "-Wno-unused-result" "-Wno-unused-function" "-Wno-sign-compare" "-Wnon-virtual-dtor" "@AM_CXXFLAGS@")) nil [227 351])
+            ("LIBS" variable (:default-value ("@TEST_LIBS@")) nil [351 368])
+            ("TESTS" variable (:default-value ("check_comp" "check_sect")) nil [369 399])
+            ("check_PROGRAMS" variable (:default-value ("check_comp")) nil [399 438])
+            ("check_comp_SOURCES" variable (:default-value ("check_comp.cc")) nil [439 474])
+            ("check_sect_SOURCES" variable (:default-value ("check_sect.cc")) nil [474 509]))          
+    :file "Makefile.am"
+    :pointmax 509
+    :fsize 508
+    :lastmodtime '(21643 8732 118202 117000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!KAT!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

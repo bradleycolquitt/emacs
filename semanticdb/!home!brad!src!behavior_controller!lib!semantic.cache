@@ -1,0 +1,309 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "soundout_tools.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("wave" include nil nil [11 22])
+            ("multiprocessing" include nil nil [23 65])
+            ("subprocess" include nil nil [66 83])
+            ("numpy" include nil nil [84 102])
+            ("if" code nil nil [114 229])
+            ("playwf" function (:arguments 
+              ( ("stopsig" variable nil (reparse-symbol function_parameters) [253 260])
+                ("cardidx" variable nil (reparse-symbol function_parameters) [262 269])
+                ("filename" variable nil (reparse-symbol function_parameters) [271 279])
+                ("filetype" variable nil (reparse-symbol function_parameters) [281 289])
+                ("rate" variable nil (reparse-symbol function_parameters) [291 295])
+                ("pulse" variable nil (reparse-symbol function_parameters) [297 302])
+                ("pulse_type" variable nil (reparse-symbol function_parameters) [312 322]))              ) nil [242 2715])
+            ("sendwf" function (:arguments 
+              ( ("cardidx" variable nil (reparse-symbol function_parameters) [2727 2734])
+                ("wavefile" variable nil (reparse-symbol function_parameters) [2736 2744])
+                ("filetype" variable nil (reparse-symbol function_parameters) [2746 2754])
+                ("rate" variable nil (reparse-symbol function_parameters) [2756 2760])
+                ("pulse" variable nil (reparse-symbol function_parameters) [2762 2767])
+                ("pulse_type" variable nil (reparse-symbol function_parameters) [2777 2787]))              ) nil [2716 3007])
+            ("beep" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [3017 3018])
+                ("b" variable nil (reparse-symbol function_parameters) [3024 3025]))              ) nil [3008 3338])
+            ("list_sound_cards" function nil nil [3339 3438])
+            ("if" code nil nil [3439 3674]))          
+    :file "soundout_tools.py"
+    :pointmax 4081
+    :fsize 4080
+    :lastmodtime '(21977 13143 30358 631000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "usb_tools.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("subprocess" include nil nil [1 18])
+            ("glob" include nil nil [19 31])
+            ("os" include nil nil [32 42])
+            ("re" include nil nil [43 53])
+            ("serial" include nil nil [54 67])
+            ("alsaaudio" include nil nil [68 90])
+            ("pdb" include nil nil [91 101])
+            ("serial_tools" include nil nil [141 166])
+            ("soundout_tools" include nil nil [168 195])
+            ("return_list_of_boxes" function nil nil [198 884])
+            ("return_list_of_usb_serial_ports" function nil nil [885 1779])
+            ("return_list_of_named_arduinos" function nil nil [1780 2042])
+            ("if" code nil nil [4236 4294]))          
+    :file "usb_tools.py"
+    :pointmax 4368
+    :fsize 4293
+    :lastmodtime '(21983 28999 337760 264000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "arduino_tools.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("subprocess" include nil nil [1 35])
+            ("os" include nil nil [36 45])
+            ("time" include nil nil [46 57])
+            ("build_and_upload" function (:arguments 
+              ( ("arduino_port" variable nil (reparse-symbol function_parameters) [165 177])
+                ("arduino_model" variable nil (reparse-symbol function_parameters) [179 192]))              ) nil [144 693])
+            ("if" code nil nil [695 763]))          
+    :file "arduino_tools.py"
+    :pointmax 763
+    :fsize 762
+    :lastmodtime '(21975 51209 555870 352000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "serial_tools.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("serial" include nil nil [11 24])
+            ("serial.tools" include nil nil [25 60])
+            ("os.path" include nil nil [61 85])
+            ("subprocess" include nil nil [86 103])
+            ("pdb" include nil nil [104 114])
+            ("return_list_of_usb_serial_ports" function nil nil [116 1095])
+            ("return_list_of_named_arduinos" function nil nil [1096 1358])
+            ("SerialError" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [1395 1399]))                  
+                :type "class")
+                nil [1361 1400])
+            ("if" code nil nil [3403 3470]))          
+    :file "serial_tools.py"
+    :pointmax 3470
+    :fsize 3469
+    :lastmodtime '(21975 41563 824063 471000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "audiorecord.py~"
+    :major-mode 'python-mode
+    :tags 
+        '( ("alsaaudio" include nil nil [1 23])
+            ("wave" include nil nil [24 35])
+            ("audioop" include nil nil [36 50])
+            ("collections" include nil nil [51 80])
+            ("os" include nil nil [81 90])
+            ("time" include nil nil [91 102])
+            ("math" include nil nil [103 114])
+            ("CHUNK" variable nil nil [118 129])
+            ("FORMAT" variable nil nil [175 204])
+            ("CHANNELS" variable nil nil [265 277])
+            ("RATE" variable nil nil [298 310])
+            ("THRESHOLD" variable nil nil [331 347])
+            ("SILENCE_LIMIT" variable nil nil [370 387])
+            ("PREV_AUDIO" variable nil nil [446 462])
+            ("MIN_DUR" variable nil nil [504 513])
+            ("INPUT" variable nil nil [542 556])
+            ("OUTPUT_DIR" variable nil nil [557 578])
+            ("audio_int" function
+               (:documentation " Gets max audio intensity for a bunch of chunks of data. Useful for setting threshold.
+ "
+                :arguments 
+                  ( ("num_samples" variable nil (reparse-symbol function_parameters) [594 605]))                  )
+                nil [580 1239])
+            ("record_song" function (:arguments 
+              ( ("threshold" variable nil (reparse-symbol function_parameters) [1257 1266]))              ) nil [1241 2897])
+            ("save_audio" function
+               (:documentation " Saves mic data to  WAV file. Returns filename of saved
+ file "
+                :arguments 
+                  ( ("data" variable nil (reparse-symbol function_parameters) [2913 2917]))                  )
+                nil [2898 3293])
+            ("if" code nil nil [3295 3411]))          
+    :file "audiorecord.py~"
+    :pointmax 3411
+    :fsize 3410
+    :lastmodtime '(21977 2002 590157 59000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "audiorecord.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("wave" include nil nil [25 36])
+            ("audioop" include nil nil [37 51])
+            ("os" include nil nil [52 61])
+            ("sys" include nil nil [62 72])
+            ("time" include nil nil [73 84])
+            ("math" include nil nil [85 96])
+            ("pdb" include nil nil [97 107])
+            ("ConfigParser" include nil nil [108 127])
+            ("numpy" include nil nil [128 146])
+            ("multiprocessing" include nil nil [147 175])
+            ("sys" code nil nil [177 230])
+            ("lib.soundout_tools" include nil nil [231 262])
+            ("collections" include nil nil [263 292])
+            ("uname" variable nil nil [294 315])
+            ("if" code nil nil [316 444])
+            ("AudioRecord" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [496 511])
+                            ("self" variable nil (reparse-symbol indented_block_body) [520 543])
+                            ("self" variable nil (reparse-symbol indented_block_body) [552 579])
+                            ("self" variable nil (reparse-symbol indented_block_body) [589 605])
+                            ("self" variable nil (reparse-symbol indented_block_body) [614 644])
+                            ("self" variable nil (reparse-symbol indented_block_body) [653 680])
+                            ("self" variable nil (reparse-symbol indented_block_body) [689 733])
+                            ("self" variable nil (reparse-symbol indented_block_body) [742 769])
+                            ("self" variable nil (reparse-symbol indented_block_body) [778 805])
+                            ("self" variable nil (reparse-symbol indented_block_body) [814 845])
+                            ("self" variable nil (reparse-symbol indented_block_body) [854 889])
+                            ("self" variable nil (reparse-symbol indented_block_body) [898 930])
+                            ("self" variable nil (reparse-symbol indented_block_body) [939 968])
+                            ("self" variable nil (reparse-symbol indented_block_body) [977 1005]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [481 485]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [468 1006])
+                    ("test_config" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1027 1031]))                          )
+                        (reparse-symbol indented_block_body) [1011 1393])
+                    ("init_config" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1414 1418])
+                            ("config_file" variable nil (reparse-symbol function_parameters) [1420 1431]))                          )
+                        (reparse-symbol indented_block_body) [1398 2357])
+                    ("set_sound_card" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2381 2385])
+                            ("attr" variable nil (reparse-symbol function_parameters) [2387 2391]))                          )
+                        (reparse-symbol indented_block_body) [2362 2439])
+                    ("list_sound_cards" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2465 2469]))                          )
+                        (reparse-symbol indented_block_body) [2444 2509])
+                    ("audio_int" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2528 2532])
+                            ("num_samples" variable nil (reparse-symbol function_parameters) [2534 2545]))                          
+                        :documentation " Gets max audio intensity for a bunch of chunks of data. Useful for setting threshold.
+        ")
+                        (reparse-symbol indented_block_body) [2514 3951])
+                    ("set_threshold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3974 3978]))                          )
+                        (reparse-symbol indented_block_body) [3956 4184])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4199 4203]))                          )
+                        (reparse-symbol indented_block_body) [4189 5313])
+                    ("start_return_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5340 5344]))                          )
+                        (reparse-symbol indented_block_body) [5318 6408])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6422 6426]))                          )
+                        (reparse-symbol indented_block_body) [6413 6461]))                  
+                :type "class")
+                nil [445 6461])
+            ("start_recording" function (:arguments 
+              ( ("queue" variable nil (reparse-symbol function_parameters) [6482 6487])
+                ("pcm" variable nil (reparse-symbol function_parameters) [6489 6492])
+                ("bird" variable nil (reparse-symbol function_parameters) [6494 6498])
+                ("channels" variable nil (reparse-symbol function_parameters) [6500 6508])
+                ("rate" variable nil (reparse-symbol function_parameters) [6510 6514])
+                ("format" variable nil (reparse-symbol function_parameters) [6516 6522])
+                ("chunk" variable nil (reparse-symbol function_parameters) [6524 6529])
+                ("silence_limit" variable nil (reparse-symbol function_parameters) [6551 6564])
+                ("prev_audio_time" variable nil (reparse-symbol function_parameters) [6566 6581])
+                ("min_dur" variable nil (reparse-symbol function_parameters) [6583 6590])
+                ("threshold" variable nil (reparse-symbol function_parameters) [6592 6601])
+                ("outdir" variable nil (reparse-symbol function_parameters) [6603 6609]))              ) nil [6462 9389])
+            ("start_recording_return_data" function (:arguments 
+              ( ("event_queue" variable nil (reparse-symbol function_parameters) [9422 9433])
+                ("recording_queue" variable nil (reparse-symbol function_parameters) [9435 9450])
+                ("error_queue" variable nil (reparse-symbol function_parameters) [9452 9463])
+                ("pcm" variable nil (reparse-symbol function_parameters) [9465 9468])
+                ("channels" variable nil (reparse-symbol function_parameters) [9470 9478])
+                ("rate" variable nil (reparse-symbol function_parameters) [9480 9484])
+                ("format" variable nil (reparse-symbol function_parameters) [9486 9492])
+                ("chunk" variable nil (reparse-symbol function_parameters) [9494 9499]))              ) nil [9390 11050])
+            ("save_audio" function
+               (:documentation " Saves mic data to  WAV file. Returns filename of saved file "
+                :arguments 
+                  ( ("data" variable nil (reparse-symbol function_parameters) [11066 11070])
+                    ("outdir" variable nil (reparse-symbol function_parameters) [11072 11078])
+                    ("rate" variable nil (reparse-symbol function_parameters) [11080 11084]))                  )
+                nil [11051 11492])
+            ("get_audio_power" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [11513 11517]))              ) nil [11493 11568])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [11578 11582]))              ) nil [11569 11736])
+            ("if" code nil nil [11737 11784]))          
+    :file "audiorecord.py"
+    :pointmax 11784
+    :fsize 11783
+    :lastmodtime '(22016 43266 541284 384000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AudioRecorderFunctions.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("PyQt4" include nil nil [2 25])
+            ("pyaudio" include nil nil [26 40])
+            ("wave" include nil nil [42 53])
+            ("audioop" include nil nil [54 68])
+            ("collections" include nil nil [69 98])
+            ("os" include nil nil [99 108])
+            ("time" include nil nil [109 120])
+            ("math" include nil nil [121 132])
+            ("GlobalVars" include nil nil [133 150])
+            ("CHUNK" variable nil nil [153 165])
+            ("FORMAT" variable nil nil [211 235])
+            ("CHANNELS" variable nil nil [296 308])
+            ("RATE" variable nil nil [329 341])
+            ("MIN_DUR" variable nil nil [539 548])
+            ("MAX_DUR" variable nil nil [578 588])
+            ("RescanInputs" function nil nil [610 1234])
+            ("TriggeredRecordAudio" function (:arguments 
+              ( ("ui" variable nil (reparse-symbol function_parameters) [1260 1262]))              ) nil [1235 3390])
+            ("save_audio" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [3406 3410]))              ) nil [3391 3969]))          
+    :file "AudioRecorderFunctions.py"
+    :pointmax 4024
+    :fsize 4178
+    :lastmodtime '(22073 4324 804778 540000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!behavior_controller!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

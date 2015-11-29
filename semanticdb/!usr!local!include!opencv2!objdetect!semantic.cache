@@ -1,0 +1,32 @@
+;; Object objdetect/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "objdetect/"
+  :tables (list 
+   (semanticdb-table "detection_based_tracker.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__OPENCV_OBJDETECT_DBT_HPP__" variable (:constant-flag t) nil [2265 2293])
+            ("vector" include (:system-flag t) nil [2482 2499])
+            ("cv" type
+               (:members 
+                  ( ("DetectionBasedTracker" variable (:type ("CV_EXPORTS" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2516 7497]))                  
+                :type "namespace")
+                nil [2501 7499]))          
+    :file "detection_based_tracker.hpp"
+    :pointmax 7537
+    :fsize 7536
+    :lastmodtime '(21596 61910 0 0)
+    :unmatched-syntax '((semantic-list 2441 . 2480) (punctuation 2439 . 2440) (punctuation 2438 . 2439) (semantic-list 2389 . 2437))
+    :lexical-table 
+        '(("__OPENCV_OBJDETECT_DBT_HPP__")
+          )
+
+    )
+   )
+  :file "!usr!local!include!opencv2!objdetect!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,455 @@
+;; Object align/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "align/"
+  :tables (list 
+   (semanticdb-table "lavFilter.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [235 245])
+            ("os" include nil nil [246 255])
+            ("pdb" include nil nil [256 266])
+            ("numpy" include nil nil [267 285])
+            ("pandas" include nil nil [286 305])
+            ("multiprocessing" include nil nil [306 334])
+            ("bx_lav" include nil nil [335 355])
+            ("fasta_utils" include nil nil [356 383])
+            ("operator" include nil nil [384 415])
+            ("fastahack" include nil nil [416 447])
+            ("matplotlib.pyplot" include nil nil [449 480])
+            ("PIL" include nil nil [481 502])
+            ("PIL" include nil nil [503 528])
+            ("plot_align" function (:arguments 
+              ( ("lav_file" variable nil (reparse-symbol function_parameters) [560 568]))              ) nil [545 1048])
+            ("lav_to_df" function (:arguments 
+              ( ("lav_file" variable nil (reparse-symbol function_parameters) [1063 1071])
+                ("out" variable nil (reparse-symbol function_parameters) [1073 1076]))              ) nil [1049 1351])
+            ("LavProcess" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1489 1528])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1537 1617])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1626 1645])
+                            ("fnames_query" variable nil (reparse-symbol indented_block_body) [1703 1720])
+                            ("for" code nil (reparse-symbol indented_block_body) [1729 1879])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1887 1921])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1956 2027])
+                            ("if" code nil (reparse-symbol indented_block_body) [2036 2096]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1414 1418])
+                            ("lav_dir" variable nil (reparse-symbol function_parameters) [1420 1427]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1401 2096])
+                    ("find_best_targets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2123 2127]))                          
+                        :documentation "Find best query-target pair as determined by sum of alignment block scores
+        Returns:
+            best_target (dict): score, best target, query start on target, query stop on target
+        Side effect:
+            Writes best_target to tabbed text file
+        ")
+                        (reparse-symbol indented_block_body) [2101 4104])
+                    ("find_longest_alignments" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4137 4141]))                          
+                        :documentation "Groups alignment blocks into larget segments
+        Returns:
+            longest_alignments (dict):
+                key - query name
+                value (tuple) -
+                    target-based start of longest segment
+                    target-based end of longest segment
+                    fraction coverage of longest segment over whole query
+        ")
+                        (reparse-symbol indented_block_body) [4109 7955])
+                    ("merge_segments" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7979 7983])
+                            ("segments" variable nil (reparse-symbol function_parameters) [7985 7993])
+                            ("query_length" variable nil (reparse-symbol function_parameters) [7995 8007]))                          )
+                        (reparse-symbol indented_block_body) [7960 8877])
+                    ("create_merged_seq" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8904 8908]))                          
+                        :documentation "Writes merged target-ordered query sequence")
+                        (reparse-symbol indented_block_body) [8882 10059]))                  
+                :type "class")
+                nil [1379 10059])
+            ("_find_highest_score" function (:arguments 
+              ( ("tup" variable nil (reparse-symbol function_parameters) [10084 10087]))              ) nil [10060 10196])
+            ("find_highest_score" function (:arguments 
+              ( ("query" variable nil (reparse-symbol function_parameters) [10220 10225])
+                ("fnames_wquery" variable nil (reparse-symbol function_parameters) [10227 10240]))              ) nil [10197 10900])
+            ("sum_scores" function
+               (:documentation " Sum scores and find minimum start and maximum end of lav file
+    Args:
+        aligns (lav.Reader record) alignment blocks(as structured by bx.align)
+
+    Returns:
+        tuple:
+            summed scores of all alignment blocks
+            minimum start position of query on target
+            maximum end position of query on target
+    "
+                :arguments 
+                  ( ("aligns" variable nil (reparse-symbol function_parameters) [10916 10922]))                  )
+                nil [10901 11592])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [11602 11606]))              ) nil [11593 11903])
+            ("if" code nil nil [11905 11951]))          
+    :file "lavFilter.py"
+    :pointmax 11951
+    :fsize 11950
+    :lastmodtime '(21722 34004 380818 112000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bx_lav.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Support for reading and writing the LAV format produced by the `blastz`_
+pairwise aligner.
+
+.. _blastz: http://www.bx.psu.edu/miller_lab/
+
+Brad: Stripped down to remove sequence readings
+\"\"\"" code nil nil [1 195])
+            ("bx.align" include nil nil [197 219])
+            ("bx.seq" include nil nil [220 233])
+            ("pdb" include nil nil [235 245])
+            ("sys" include nil nil [247 271])
+            ("math" include nil nil [247 271])
+            ("StringIO" include nil nil [247 271])
+            ("itertools" include nil nil [272 288])
+            ("bx" include nil nil [289 323])
+            ("Reader" type
+               (:documentation "Iterate over all lav blocks in a file in order"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [462 478])
+                            ("self" variable nil (reparse-symbol indented_block_body) [481 500])
+                            ("self" variable nil (reparse-symbol indented_block_body) [503 530])
+                            ("if" code nil (reparse-symbol indented_block_body) [575 701])
+                            ("self" variable nil (reparse-symbol indented_block_body) [703 731])
+                            ("self" variable nil (reparse-symbol indented_block_body) [844 869])
+                            ("self" variable nil (reparse-symbol indented_block_body) [873 898])
+                            ("self" variable nil (reparse-symbol indented_block_body) [901 926])
+                            ("self" variable nil (reparse-symbol indented_block_body) [929 954])
+                            ("self" variable nil (reparse-symbol indented_block_body) [957 982])
+                            ("self" variable nil (reparse-symbol indented_block_body) [985 1010])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1013 1038])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1041 1066])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1069 1094])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1097 1122])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1126 1151])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1154 1179])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1182 1207])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1210 1235])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1238 1263])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1266 1291])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1294 1319])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1322 1347])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1350 1375]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [416 420])
+                            ("file" variable nil (reparse-symbol function_parameters) [421 425])
+                            ("path_subs" variable nil (reparse-symbol function_parameters) [426 435])
+                            ("fail_to_ns" variable nil (reparse-symbol function_parameters) [441 451]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [403 1376])
+                    ("next" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1387 1391]))                          )
+                        (reparse-symbol indented_block_body) [1378 2401])
+                    ("__iter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2416 2420]))                          )
+                        (reparse-symbol indented_block_body) [2403 2449])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2461 2465]))                          )
+                        (reparse-symbol indented_block_body) [2451 2488])
+                    ("close_seqs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8391 8395]))                          )
+                        (reparse-symbol indented_block_body) [8376 8562])
+                    ("parse_s_stanza" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8583 8587]))                          )
+                        (reparse-symbol indented_block_body) [8564 9119])
+                    ("parse_s_seq" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9137 9141])
+                            ("line" variable nil (reparse-symbol function_parameters) [9142 9146]))                          )
+                        (reparse-symbol indented_block_body) [9121 9587])
+                    ("parse_h_stanza" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9609 9613]))                          )
+                        (reparse-symbol indented_block_body) [9590 10575])
+                    ("parse_a_stanza" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10597 10601]))                          
+                        :documentation "returns the pair (score,pieces)
+		   where pieces is a list of ungapped segments (start1,start2,length,pctId)
+		   with start1,start2 origin-0")
+                        (reparse-symbol indented_block_body) [10578 12261])
+                    ("parse_unknown_stanza" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12288 12292]))                          )
+                        (reparse-symbol indented_block_body) [12263 12502])
+                    ("fetch_line" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12519 12523])
+                            ("strip" variable nil (reparse-symbol function_parameters) [12524 12529])
+                            ("requireLine" variable nil (reparse-symbol function_parameters) [12535 12546])
+                            ("report" variable nil (reparse-symbol function_parameters) [12552 12558]))                          )
+                        (reparse-symbol indented_block_body) [12504 12924])
+                    ("d_stanza" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12940 12944]))                          )
+                        (reparse-symbol indented_block_body) [12927 13033])
+                    ("s_stanza" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13048 13052]))                          )
+                        (reparse-symbol indented_block_body) [13035 13583])
+                    ("h_stanza" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13598 13602]))                          )
+                        (reparse-symbol indented_block_body) [13585 13806])
+                    ("build_alignment" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13828 13832])
+                            ("score" variable nil (reparse-symbol function_parameters) [13833 13838])
+                            ("pieces" variable nil (reparse-symbol function_parameters) [13839 13845]))                          
+                        :documentation "converts a score and pieces to an alignment")
+                        (reparse-symbol indented_block_body) [13808 15778])
+                    ("path_to_src_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15801 15805])
+                            ("path_name" variable nil (reparse-symbol function_parameters) [15806 15815]))                          )
+                        (reparse-symbol indented_block_body) [15780 16447])
+                    ("header_to_src_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16472 16476])
+                            ("header" variable nil (reparse-symbol function_parameters) [16477 16483]))                          )
+                        (reparse-symbol indented_block_body) [16449 16888]))                  
+                :type "class")
+                nil [325 16888])
+            ("ReaderIter" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [13504 13524]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16929 16933])
+                            ("reader" variable nil (reparse-symbol function_parameters) [16934 16940]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [16916 16966])
+                    ("__iter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16980 16984]))                          )
+                        (reparse-symbol indented_block_body) [16967 17001])
+                    ("next" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17011 17015]))                          )
+                        (reparse-symbol indented_block_body) [17002 17088]))                  
+                :type "class")
+                nil [16889 17088])
+            ("LavAsPiecesReader" type
+               (:documentation "Iterate over all lav blocks in a file in order, returning alignments
+	   as score and pieces, as returned by Reader.parse_a_stanza"
+                :superclasses ("Reader")
+                :members 
+                  ( ("build_alignment" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17283 17287])
+                            ("score" variable nil (reparse-symbol function_parameters) [17288 17293])
+                            ("pieces" variable nil (reparse-symbol function_parameters) [17294 17300]))                          )
+                        (reparse-symbol indented_block_body) [17263 17327]))                  
+                :type "class")
+                nil [17090 17327])
+            ("Writer" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [14140 14158])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14161 14179])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14182 14200])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14203 14218])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14221 14240])
+                            ("if" code nil (reparse-symbol indented_block_body) [14265 14346])
+                            ("if" code nil (reparse-symbol indented_block_body) [14348 14429])
+                            ("if" code nil (reparse-symbol indented_block_body) [14432 14585]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17553 17557])
+                            ("file" variable nil (reparse-symbol function_parameters) [17558 17562])
+                            ("attributes" variable nil (reparse-symbol function_parameters) [17563 17573]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [17540 18026])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18038 18042])
+                            ("alignment" variable nil (reparse-symbol function_parameters) [18043 18052]))                          )
+                        (reparse-symbol indented_block_body) [18028 18429])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18441 18445]))                          )
+                        (reparse-symbol indented_block_body) [18431 19004])
+                    ("write_s_stanza" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19025 19029]))                          )
+                        (reparse-symbol indented_block_body) [19006 19510])
+                    ("write_h_stanza" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19531 19535]))                          )
+                        (reparse-symbol indented_block_body) [19512 19782])
+                    ("write_a_stanza" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19803 19807])
+                            ("alignment" variable nil (reparse-symbol function_parameters) [19808 19817]))                          )
+                        (reparse-symbol indented_block_body) [19784 21247])
+                    ("write_lav_marker" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21270 21274]))                          )
+                        (reparse-symbol indented_block_body) [21249 21305])
+                    ("write_trailer" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21325 21329]))                          )
+                        (reparse-symbol indented_block_body) [21307 21360]))                  
+                :type "class")
+                nil [17329 21360])
+            ("sort_keys_by_chrom" function (:arguments 
+              ( ("keys" variable nil (reparse-symbol function_parameters) [21385 21389]))              ) nil [21361 21622])
+            ("chrom_key" function (:arguments 
+              ( ("src" variable nil (reparse-symbol function_parameters) [21638 21641]))              ) nil [21623 21816])
+            ("build_filename" function (:arguments 
+              ( ("fmt" variable nil (reparse-symbol function_parameters) [21836 21839])
+                ("src" variable nil (reparse-symbol function_parameters) [21840 21843]))              ) nil [21817 22025])
+            ("minus_or_nothing" function (:arguments 
+              ( ("strand" variable nil (reparse-symbol function_parameters) [22047 22053]))              ) nil [22026 22127])
+            ("rc_or_nothing" function (:arguments 
+              ( ("strand" variable nil (reparse-symbol function_parameters) [22146 22152]))              ) nil [22128 22238])
+            ("do_path_subs" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [22256 22260])
+                ("path_subs" variable nil (reparse-symbol function_parameters) [22261 22270]))              ) nil [22239 22401]))          
+    :file "bx_lav.py"
+    :pointmax 18960
+    :fsize 22400
+    :lastmodtime '(21719 57007 196747 327000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "mafToBed.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [25 35])
+            ("os.path" include nil nil [36 50])
+            ("re" include nil nil [51 60])
+            ("pdb" include nil nil [61 71])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [82 86]))              ) nil [73 1208])
+            ("if" code nil nil [1209 1255]))          
+    :file "mafToBed.py"
+    :pointmax 804
+    :fsize 1254
+    :lastmodtime '(21725 6618 564887 111000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "mafToSeq.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"Extract query sequence from a MAF file. Expects MAF to be sorted by target\"\"\"" code nil nil [25 105])
+            ("sys" include nil nil [107 117])
+            ("os.path" include nil nil [118 132])
+            ("re" include nil nil [133 142])
+            ("fasta_utils" include nil nil [143 170])
+            ("pdb" include nil nil [171 181])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [191 195]))              ) nil [182 1196])
+            ("if" code nil nil [1197 1243]))          
+    :file "mafToSeq.py"
+    :pointmax 1243
+    :fsize 1242
+    :lastmodtime '(21725 19116 480892 207000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "mafName.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Adds species names to a MAF file
+
+Usage: mafName.py file.maf src1 src2
+
+Write new file \"_named.maf\"
+\"\"\"" code nil nil [25 132])
+            ("sys" include nil nil [134 144])
+            ("os" include nil nil [145 154])
+            ("re" include nil nil [155 164])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [175 179]))              ) nil [166 1201])
+            ("if" code nil nil [1202 1248]))          
+    :file "mafName.py"
+    :pointmax 873
+    :fsize 1247
+    :lastmodtime '(21777 60149 906068 908000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "maf_best_score.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [25 43])
+            ("os" include nil nil [25 43])
+            ("re" include nil nil [25 43])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [54 58]))              ) nil [45 561])
+            ("if" code nil nil [562 608]))          
+    :file "maf_best_score.py"
+    :pointmax 561
+    :fsize 607
+    :lastmodtime '(21832 58118 155734 623000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!seqAnalysis!python!align!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

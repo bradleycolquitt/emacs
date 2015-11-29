@@ -1,0 +1,24 @@
+;; Object gmap-2014-12-21/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gmap-2014-12-21/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("src" "util" "tests")) nil [2 27])
+            ("EXTRA_DIST" variable (:default-value ("VERSION" "NOTICE" "config.site")) nil [28 68])
+            ("CLEANFILES" variable (:default-value ("so_locations")) nil [69 95])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "config")) nil [96 124])
+            ("install-data-local" function nil nil [125 145])
+            ("dist-hook" function nil nil [175 186]))          
+    :file "Makefile.am"
+    :pointmax 231
+    :fsize 230
+    :lastmodtime '(21688 28240 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!gmap-2014-12-21!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

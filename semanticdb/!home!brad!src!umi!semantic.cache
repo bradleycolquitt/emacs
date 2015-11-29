@@ -1,0 +1,32 @@
+;; Object umi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "umi/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CC" variable (:default-value ("g++")) nil [1 8])
+            ("SRC_DIR" variable (:default-value ("src")) nil [8 22])
+            (".PHONY" function (:arguments ("target" "test" "test_bam_utils" "thread" "hash" "test_hash" "hash2" "test_hash2" "filter" "test_filter")) nil [23 116])
+            ("target" function nil nil [117 151])
+            ("test" function nil nil [152 186])
+            ("test_bam_utils" function nil nil [187 241])
+            ("thread" function nil nil [242 280])
+            ("hash" function nil nil [281 313])
+            ("test_hash" function nil nil [314 351])
+            ("hash2" function nil nil [352 385])
+            ("test_hash2" function nil nil [386 424])
+            ("filter" function nil nil [425 463])
+            ("test_filter" function nil nil [464 512])
+            ("clean" function nil nil [513 549]))          
+    :file "Makefile"
+    :pointmax 549
+    :fsize 548
+    :lastmodtime '(21877 4956 606540 779000)
+    :unmatched-syntax '((shell-command 521 . 548) (bol 520 . 520) (shell-command 399 . 423) (bol 398 . 398))
+    )
+   )
+  :file "!home!brad!src!umi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

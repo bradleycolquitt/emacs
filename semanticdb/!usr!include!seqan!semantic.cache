@@ -1,0 +1,140 @@
+;; Object seqan/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "seqan/"
+  :tables (list 
+   (semanticdb-table "sequence.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_HEADER_SEQUENCE_H" variable (:constant-flag t) nil [2514 2537])
+            ("seqan/basic.h" include (:system-flag t) nil [2636 2660])
+            ("cassert" include (:system-flag t) nil [2662 2680])
+            ("map" include (:system-flag t) nil [2682 2696])
+            ("string" include (:system-flag t) nil [2805 2822])
+            ("list" include (:system-flag t) nil [2823 2838])
+            ("vector" include (:system-flag t) nil [2839 2856])
+            ("seqan/sequence/sequence_forwards.h" include (:system-flag t) nil [2938 2983])
+            ("seqan/sequence/sequence_stream.h" include (:system-flag t) nil [3202 3245])
+            ("seqan/sequence/sequence_lexical.h" include (:system-flag t) nil [3246 3290])
+            ("seqan/sequence/sequence_interface.h" include (:system-flag t) nil [3414 3460])
+            ("seqan/sequence/segment_base.h" include (:system-flag t) nil [3461 3501])
+            ("seqan/sequence/segment_infix.h" include (:system-flag t) nil [3502 3543])
+            ("seqan/sequence/segment_suffix.h" include (:system-flag t) nil [3544 3586])
+            ("seqan/sequence/segment_prefix.h" include (:system-flag t) nil [3587 3629])
+            ("seqan/sequence/string_base.h" include (:system-flag t) nil [3722 3761])
+            ("seqan/sequence/string_array.h" include (:system-flag t) nil [3762 3802])
+            ("seqan/sequence/string_alloc.h" include (:system-flag t) nil [3803 3843])
+            ("seqan/sequence/string_cstyle.h" include (:system-flag t) nil [3844 3885])
+            ("seqan/sequence/string_block.h" include (:system-flag t) nil [3886 3926])
+            ("seqan/sequence/string_packed.h" include (:system-flag t) nil [3927 3968])
+            ("seqan/sequence/sequence_shortcuts.h" include (:system-flag t) nil [3970 4016])
+            ("seqan/sequence/iter_concat_virtual.h" include (:system-flag t) nil [4111 4158])
+            ("seqan/sequence/sequence_concatenator.h" include (:system-flag t) nil [4159 4208])
+            ("seqan/sequence/string_set_base.h" include (:system-flag t) nil [4209 4252])
+            ("seqan/sequence/string_set_concat_direct.h" include (:system-flag t) nil [4253 4305])
+            ("seqan/sequence/string_set_dependent_tight.h" include (:system-flag t) nil [4306 4360])
+            ("seqan/sequence/string_set_dependent_generous.h" include (:system-flag t) nil [4361 4418])
+            ("seqan/sequence/string_set_owner.h" include (:system-flag t) nil [4419 4463])
+            ("seqan/sequence/adapt_std_list.h" include (:system-flag t) nil [4558 4600])
+            ("seqan/sequence/adapt_std_string.h" include (:system-flag t) nil [4601 4645])
+            ("seqan/sequence/adapt_std_vector.h" include (:system-flag t) nil [4646 4690])
+            ("seqan/sequence/adapt_array_pointer.h" include (:system-flag t) nil [4691 4738]))          
+    :file "sequence.h"
+    :pointmax 4774
+    :fsize 4773
+    :lastmodtime '(20320 47783 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEQAN_HEADER_SEQUENCE_H")
+          )
+
+    )
+   (semanticdb-table "basic.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_HEADER_BASIC_H" variable (:constant-flag t) nil [1950 1970])
+            ("seqan/platform.h" include (:system-flag t) nil [2069 2096])
+            ("cstddef" include (:system-flag t) nil [2219 2237])
+            ("cstdio" include (:system-flag t) nil [2248 2265])
+            ("cstdlib" include (:system-flag t) nil [2287 2305])
+            ("ctime" include (:system-flag t) nil [2324 2340])
+            ("iterator" include (:system-flag t) nil [2341 2360])
+            ("algorithm" include (:system-flag t) nil [2361 2381])
+            ("cstring" include (:system-flag t) nil [2382 2400])
+            ("string" include (:system-flag t) nil [2420 2437])
+            ("SEQAN_NAMESPACE_MAIN" variable (:constant-flag t) nil [2555 2575])
+            ("seqan/basic/basic_forwards.h" include (:system-flag t) nil [2663 2702])
+            ("seqan/basic/basic_testing.h" include (:system-flag t) nil [2794 2832])
+            ("seqan/basic/basic_debug.h" include (:system-flag t) nil [2833 2869])
+            ("seqan/basic/basic_testing.h" include (:system-flag t) nil [2870 2908])
+            ("seqan/basic/basic_profile.h" include (:system-flag t) nil [2931 2969])
+            ("seqan/basic/basic_parallelism.h" include (:system-flag t) nil [2970 3012])
+            ("seqan/basic/basic_metaprogramming.h" include (:system-flag t) nil [3048 3094])
+            ("seqan/basic/basic_definition.h" include (:system-flag t) nil [3095 3136])
+            ("seqan/basic/basic_type.h" include (:system-flag t) nil [3137 3172])
+            ("seqan/basic/basic_tag.h" include (:system-flag t) nil [3173 3207])
+            ("seqan/basic/basic_allocator_interface.h" include (:system-flag t) nil [3303 3353])
+            ("seqan/basic/basic_allocator_to_std.h" include (:system-flag t) nil [3354 3401])
+            ("seqan/basic/basic_holder.h" include (:system-flag t) nil [3403 3440])
+            ("seqan/basic/basic_allocator_simple.h" include (:system-flag t) nil [3442 3489])
+            ("seqan/basic/basic_allocator_singlepool.h" include (:system-flag t) nil [3490 3541])
+            ("seqan/basic/basic_allocator_multipool.h" include (:system-flag t) nil [3542 3592])
+            ("seqan/basic/basic_allocator_chunkpool.h" include (:system-flag t) nil [3593 3643])
+            ("seqan/basic/basic_converter.h" include (:system-flag t) nil [3725 3765])
+            ("seqan/basic/basic_compare.h" include (:system-flag t) nil [3766 3804])
+            ("seqan/basic/basic_operator.h" include (:system-flag t) nil [3805 3844])
+            ("seqan/basic/basic_host.h" include (:system-flag t) nil [3846 3881])
+            ("seqan/basic/basic_iterator.h" include (:system-flag t) nil [3976 4015])
+            ("seqan/basic/basic_iterator_base.h" include (:system-flag t) nil [4016 4060])
+            ("seqan/basic/basic_transport.h" include (:system-flag t) nil [4062 4102])
+            ("seqan/basic/basic_iterator_simple.h" include (:system-flag t) nil [4104 4150])
+            ("seqan/basic/basic_iterator_adaptor.h" include (:system-flag t) nil [4151 4198])
+            ("seqan/basic/basic_iterator_position.h" include (:system-flag t) nil [4199 4247])
+            ("seqan/basic/basic_iterator_adapt_std.h" include (:system-flag t) nil [4248 4297])
+            ("seqan/basic/basic_proxy.h" include (:system-flag t) nil [4337 4373])
+            ("seqan/basic/basic_pointer.h" include (:system-flag t) nil [4375 4413])
+            ("seqan/basic/basic_alphabet_interface.h" include (:system-flag t) nil [4508 4557])
+            ("seqan/basic/basic_alphabet_trait_basic.h" include (:system-flag t) nil [4558 4609])
+            ("seqan/basic/basic_alphabet_interface2.h" include (:system-flag t) nil [4611 4661])
+            ("seqan/basic/basic_alphabet_simple_tabs.h" include (:system-flag t) nil [4663 4714])
+            ("seqan/basic/basic_alphabet_simple.h" include (:system-flag t) nil [4715 4761])
+            ("seqan/basic/basic_sse2.h" include (:system-flag t) nil [4763 4798])
+            ("seqan/basic/basic_profchar.h" include (:system-flag t) nil [4800 4839])
+            ("seqan/basic/basic_holder_dynamic.h" include (:system-flag t) nil [4921 4966])
+            ("seqan/basic/basic_volatile_ptr.h" include (:system-flag t) nil [5091 5134])
+            ("seqan/basic/basic_aggregates.h" include (:system-flag t) nil [5136 5177]))          
+    :file "basic.h"
+    :pointmax 5213
+    :fsize 5212
+    :lastmodtime '(20320 47783 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEQAN_HEADER_BASIC_H")
+          ("SEQAN_NAMESPACE_MAIN" . ((symbol "seqan" 2576 . 2581)))
+          )
+
+    )
+   (semanticdb-table "map"
+    :file "map"
+    :fsize 4096
+    :lastmodtime '(21578 39472 685299 325000)
+    )
+   (semanticdb-table "platform.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_PLATFORM_H" variable (:constant-flag t) nil [1946 1962])
+            ("platform/platform_gcc.h" include nil nil [2139 2174]))          
+    :file "platform.h"
+    :pointmax 2190
+    :fsize 2189
+    :lastmodtime '(20320 47777 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEQAN_PLATFORM_H")
+          )
+
+    )
+   )
+  :file "!usr!include!seqan!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

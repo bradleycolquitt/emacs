@@ -1,0 +1,206 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables (list 
+   (semanticdb-table "auto_link.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_AUTO_LINK_HPP_INCLUDED" variable (:constant-flag t) nil [521 566])
+            ("BOOST_LIB_NAME" variable (:constant-flag t) nil [1322 1336])
+            ("boost/config/auto_link.hpp" include (:system-flag t) nil [1577 1615]))          
+    :file "auto_link.hpp"
+    :pointmax 1714
+    :fsize 1713
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax '((semantic-list 1177 . 1201) (symbol 1170 . 1177) (punctuation 1169 . 1170) (punctuation 1161 . 1162) (punctuation 1160 . 1161) (semantic-list 1141 . 1159) (symbol 1134 . 1141) (punctuation 1133 . 1134))
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_DETAIL_AUTO_LINK_HPP_INCLUDED")
+          ("BOOST_LIB_NAME" . ((symbol "boost_iostreams" 1337 . 1352)))
+          )
+
+    )
+   (semanticdb-table "dyn_link.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_CONFIG_DYN_LINK_HPP_INCLUDED" variable (:constant-flag t) nil [489 540])
+            ("boost/config.hpp" include (:system-flag t) nil [622 649])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [650 688])
+            ("BOOST_IOSTREAMS_DECL" variable (:constant-flag t) nil [1086 1106]))          
+    :file "dyn_link.hpp"
+    :pointmax 1185
+    :fsize 1184
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_DETAIL_CONFIG_DYN_LINK_HPP_INCLUDED")
+          ("BOOST_IOSTREAMS_DECL")
+          )
+
+    )
+   (semanticdb-table "wide_streams.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_CONFIG_WIDE_STREAMS_HPP_INCLUDED" variable (:constant-flag t) nil [493 548])
+            ("boost/config.hpp" include (:system-flag t) nil [550 577])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [578 616])
+            ("cstddef" include (:system-flag t) nil [617 635]))          
+    :file "wide_streams.hpp"
+    :pointmax 1964
+    :fsize 1963
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_DETAIL_CONFIG_WIDE_STREAMS_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "zlib.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_CONFIG_ZLIB_HPP_INCLUDED" variable (:constant-flag t) nil [523 570])
+            ("boost/config.hpp" include (:system-flag t) nil [638 665])
+            ("BOOST_LIB_NAME" variable (:constant-flag t) nil [1294 1308])
+            ("boost/config/auto_link.hpp" include (:system-flag t) nil [1547 1586]))          
+    :file "zlib.hpp"
+    :pointmax 1669
+    :fsize 1668
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax '((semantic-list 1147 . 1171) (symbol 1140 . 1147) (punctuation 1139 . 1140) (punctuation 1130 . 1131) (punctuation 1129 . 1130) (semantic-list 1110 . 1128) (symbol 1103 . 1110) (punctuation 1102 . 1103))
+    :lexical-table 
+        '(("BOOST_LIB_NAME" . ((symbol "boost_zlib" 1309 . 1319)))
+          ("BOOST_IOSTREAMS_DETAIL_CONFIG_ZLIB_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "limits.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_CONFIG_LIMITS_HPP_INCLUDED" variable (:constant-flag t) nil [397 446])
+            ("BOOST_IOSTREAMS_MAX_FORWARDING_ARITY" variable (:constant-flag t) nil [502 538])
+            ("BOOST_IOSTREAMS_MAX_EXECUTE_ARITY" variable (:constant-flag t) nil [600 633]))          
+    :file "limits.hpp"
+    :pointmax 712
+    :fsize 711
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_MAX_FORWARDING_ARITY" . ((number "3" 539 . 540)))
+          ("BOOST_IOSTREAMS_MAX_EXECUTE_ARITY" . ((number "5" 634 . 635)))
+          ("BOOST_IOSTREAMS_DETAIL_CONFIG_LIMITS_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "disable_warnings.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("boost/config.hpp" include (:system-flag t) nil [331 358])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [386 424]))          
+    :file "disable_warnings.hpp"
+    :pointmax 1459
+    :fsize 1458
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "enable_warnings.hpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "enable_warnings.hpp"
+    :pointmax 737
+    :fsize 736
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "codecvt.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_CONFIG_CODECVT_HPP_INCLUDED" variable (:constant-flag t) nil [398 448])
+            ("boost/config.hpp" include (:system-flag t) nil [450 477])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [478 516])
+            ("boost/iostreams/detail/config/wide_streams.hpp" include (:system-flag t) nil [517 574])
+            ("cstddef" include (:system-flag t) nil [575 593])
+            ("BOOST_IOSTREAMS_CODECVT_CV_QUALIFIER" variable (:constant-flag t) nil [1651 1687])
+            ("locale" include (:system-flag t) nil [2075 2093])
+            ("std" type (:type "namespace") nil [2156 2432]))          
+    :file "codecvt.hpp"
+    :pointmax 2525
+    :fsize 2524
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax '((semantic-list 1582 . 1632) (punctuation 1574 . 1575) (punctuation 1573 . 1574) (semantic-list 1513 . 1572))
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_DETAIL_CONFIG_CODECVT_HPP_INCLUDED")
+          ("BOOST_IOSTREAMS_CODECVT_CV_QUALIFIER" . ((CONST "const" 1688 . 1693)))
+          )
+
+    )
+   (semanticdb-table "fpos.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_CONFIG_FPOS_HPP_INCLUDED" variable (:constant-flag t) nil [683 730]))          
+    :file "fpos.hpp"
+    :pointmax 1062
+    :fsize 1061
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_DETAIL_CONFIG_FPOS_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "overload_resolution.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_CONFIG_BROKEN_OVERLOAD_RESOLUTION_HPP_INCLUDED" variable (:constant-flag t) nil [545 614])
+            ("boost/config.hpp" include (:system-flag t) nil [695 722])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [738 776])
+            ("boost/iostreams/detail/config/gcc.hpp" include (:system-flag t) nil [777 825]))          
+    :file "overload_resolution.hpp"
+    :pointmax 1252
+    :fsize 1251
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_DETAIL_CONFIG_BROKEN_OVERLOAD_RESOLUTION_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "gcc.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_CONFIG_GCC_HPP_INCLUDED" variable (:constant-flag t) nil [522 568])
+            ("boost/config.hpp" include (:system-flag t) nil [650 677])
+            ("BOOST_IOSTREAMS_GCC" variable (:constant-flag t) nil [751 770])
+            ("BOOST_IOSTREAMS_GCC_WORKAROUND_GUARD" variable (:constant-flag t) nil [814 850]))          
+    :file "gcc.hpp"
+    :pointmax 980
+    :fsize 979
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_GCC_WORKAROUND_GUARD" . ((number "1" 851 . 852)))
+          ("BOOST_IOSTREAMS_GCC" . ((semantic-list "(__GNUC__ * 100 + __GNUC_MINOR__)" 771 . 804)))
+          ("BOOST_IOSTREAMS_DETAIL_CONFIG_GCC_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "unreachable_return.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_UNREACHABLE_RETURN_HPP_INCLUDED" variable (:constant-flag t) nil [325 379])
+            ("boost/config.hpp" include (:system-flag t) nil [461 488])
+            ("BOOST_IOSTREAMS_UNREACHABLE_RETURN" variable (:constant-flag t) nil [592 626]))          
+    :file "unreachable_return.hpp"
+    :pointmax 747
+    :fsize 746
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_UNREACHABLE_RETURN" (spp-arg-list ("x") 626 . 629) . ((symbol "BOOST_UNREACHABLE_RETURN" 636 . 660) (semantic-list "(x)" 660 . 663)))
+          ("BOOST_IOSTREAMS_DETAIL_UNREACHABLE_RETURN_HPP_INCLUDED")
+          )
+
+    )
+   )
+  :file "!usr!include!boost!iostreams!detail!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

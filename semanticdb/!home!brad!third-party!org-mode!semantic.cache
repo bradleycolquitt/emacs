@@ -1,0 +1,64 @@
+;; Object org-mode/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "org-mode/"
+  :tables (list 
+   (semanticdb-table "local.mk"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("EMACS" variable (:default-value ("emacs")) nil [30 44])
+            ("prefix" variable (:default-value ("/usr/share")) nil [77 97])
+            ("lispdir" variable (:default-value ("$(prefix)/emacs/site-lisp/org")) nil [127 166])
+            ("datadir" variable (:default-value ("$(prefix)/emacs/etc/org")) nil [196 230])
+            ("infodir" variable (:default-value ("$(prefix)/info")) nil [254 279])
+            ("GIT_BRANCH" variable nil nil [493 506])
+            ("testdir" variable (:default-value ("$(TMPDIR)/tmp-orgtest")) nil [842 874])
+            ("BTEST_PRE" variable nil nil [943 957])
+            ("BTEST_POST" variable nil nil [996 1010])
+            ("BTEST_OB_LANGUAGES" variable (:default-value ("awk" "C" "fortran" "maxima" "lilypond" "octave" "perl" "python")) nil [1256 1326])
+            ("BTEST_EXTRA" variable nil nil [1539 1553])
+            ("req-ob-lang" variable (:default-value ("--eval" "'(require '\"'\"'ob-$(ob-lang))'")) nil [1811 1863])
+            ("lst-ob-lang" variable (:default-value ("($(ob-lang) . t)")) nil [1863 1894])
+            ("req-extra" variable (:default-value ("--eval" "'(require '\"'\"'$(req))'")) nil [1894 1939])
+            ("BTEST_LOAD" variable (:default-value ("--eval" "'(add-to-list '\"'\"'load-path (concat default-directory \"lisp\"))'" "--eval" "'(add-to-list '\"'\"'load-path (concat default-directory \"testing\"))'")) nil [1968 2135])
+            ("BTEST_INIT" variable (:default-value ("$(BTEST_PRE)" "$(BTEST_LOAD)" "$(BTEST_POST)")) nil [2135 2190])
+            ("BTEST" variable (:default-value ("$(BATCH)" "$(BTEST_INIT)" "-l" "org-batch-test-init" "--eval" "'(setq \\
+		org-batch-test t \\
+		org-babel-load-languages \\
+		  (quote ($(foreach ob-lang,\\
+				$(BTEST_OB_LANGUAGES) emacs-lisp shell org,\\
+				$(lst-ob-lang)))) \\
+		org-test-select-re \"$(BTEST_RE)\" \\
+		)'" "-l" "org-loaddefs.el" "-l" "cl" "-l" "testing/org-test.el" "-l" "ert" "-l" "org" "-l" "ox" "$(foreach req,$(BTEST_EXTRA),$(req-extra))" "--eval" "'(org-test-run-batch-tests org-test-select-re)'")) nil [2191 2659])
+            ("NOBATCH" variable (:default-value ("$(EMACSQ)" "$(BTEST_INIT)" "-l" "org" "-f" "org-version")) nil [2799 2855])
+            ("EMACSQ" variable (:default-value ("$(EMACS)" "-Q")) nil [2935 2958])
+            ("BATCH" variable (:default-value ("$(EMACSQ)" "-batch" "--eval" "'(setq vc-handled-backends nil org-startup-folded nil)'")) nil [2988 3081])
+            ("BATCHO" variable (:default-value ("$(BATCH)" "--eval" "'(add-to-list '\"'\"'load-path \"./lisp\")'")) nil [3128 3198])
+            ("MAKE_LOCAL_MK" variable (:default-value ("$(BATCHO)" "--eval" "'(load \"org-compat.el\")'" "--eval" "'(load \"../mk/org-fixup.el\")'" "--eval" "'(org-make-local-mk)'")) nil [3226 3365])
+            ("BATCHL" variable (:default-value ("$(BATCH)" "--eval" "'(add-to-list '\"'\"'load-path \".\")'")) nil [3408 3473])
+            ("MAKE_ORG_INSTALL" variable (:default-value ("$(BATCHL)" "--eval" "'(load \"org-compat.el\")'" "--eval" "'(load \"../mk/org-fixup.el\")'" "--eval" "'(org-make-org-loaddefs)'")) nil [3508 3654])
+            ("MAKE_ORG_VERSION" variable (:default-value ("$(BATCHL)" "--eval" "'(load \"org-compat.el\")'" "--eval" "'(load \"../mk/org-fixup.el\")'" "--eval" "'(org-make-org-version \"$(ORGVERSION)\" \"$(GITVERSION)\" \"'$(datadir)'\")'")) nil [3688 3880])
+            ("ELCDIR" variable (:default-value ("$(BATCHL)" "--eval" "'(batch-byte-recompile-directory 0)'")) nil [3930 3998])
+            ("ELC" variable (:default-value ("$(BATCHL)" "--eval" "'(batch-byte-compile)'")) nil [4035 4086])
+            ("TEXI2PDF" variable (:default-value ("texi2pdf" "--batch" "--clean" "--expand")) nil [4132 4177])
+            ("PDFTEX" variable (:default-value ("pdftex")) nil [4219 4235])
+            ("MKDIR" variable (:default-value ("install" "-m" "755" "-d")) nil [4353 4379])
+            ("MAKEINFO" variable (:default-value ("makeinfo")) nil [4433 4453])
+            ("TEXI2HTML" variable (:default-value ("makeinfo" "--html" "--number-sections")) nil [4484 4530])
+            ("FIND" variable (:default-value ("find")) nil [4551 4563])
+            ("RM" variable (:default-value ("rm" "-f")) nil [4586 4597])
+            ("RMR" variable (:default-value ("rm" "-fr")) nil [4632 4645])
+            ("CP" variable (:default-value ("install" "-m" "644" "-p")) nil [4758 4781])
+            ("SUDO" variable (:default-value ("sudo")) nil [4870 4882])
+            ("INSTALL_INFO" variable (:default-value ("install-info")) nil [4999 5027])
+            ("ORGCM" variable (:default-value ("dirall")) nil [5058 5073]))          
+    :file "local.mk"
+    :pointmax 5709
+    :fsize 5383
+    :lastmodtime '(21744 45532 436310 521000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!third-party!org-mode!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

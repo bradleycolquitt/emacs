@@ -1,0 +1,27 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables (list 
+   (semanticdb-table "cwchar.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_REGEX_CONFIG_CWCHAR_HPP" variable (:constant-flag t) nil [523 552])
+            ("cwchar" include (:system-flag t) nil [554 571])
+            ("cwctype" include (:system-flag t) nil [572 590])
+            ("boost/config.hpp" include (:system-flag t) nil [591 618])
+            ("std" type (:type "namespace") nil [1044 4056]))          
+    :file "cwchar.hpp"
+    :pointmax 4083
+    :fsize 4082
+    :lastmodtime '(21208 1654 0 0)
+    :unmatched-syntax '((semantic-list 1102 . 4032) (string 1099 . 1102) (EXTERN 1092 . 1098))
+    :lexical-table 
+        '(("BOOST_REGEX_CONFIG_CWCHAR_HPP")
+          )
+
+    )
+   )
+  :file "!usr!include!boost!regex!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,35 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libutil" "-I" "${top_srcdir}/libop" "@OP_CPPFLAGS@")) nil [1 86])
+            ("AM_CFLAGS" variable (:default-value ("@OP_CFLAGS@" "-DOPROFILE_SRCDIR=\\\"@top_srcdir@\\\"")) nil [87 146])
+            ("COMMON_LIBS" variable (:default-value ("../libop.a")) nil [147 196])
+            ("LIBS" variable (:default-value ("@LIBERTY_LIBS@")) nil [197 219])
+            ("check_PROGRAMS" variable (:default-value ("cpu_type_tests")) nil [220 342])
+            ("EXTRA_DIST" variable (:default-value ("utf8_checker.sh")) nil [343 372])
+            ("cpu_type_tests_SOURCES" variable (:default-value ("cpu_type_tests.c")) nil [373 415])
+            ("cpu_type_tests_LDADD" variable (:default-value ("${COMMON_LIBS}")) nil [415 453])
+            ("parse_event_tests_SOURCES" variable (:default-value ("parse_event_tests.c")) nil [454 502])
+            ("parse_event_tests_LDADD" variable (:default-value ("${COMMON_LIBS}")) nil [502 543])
+            ("alloc_counter_tests_SOURCES" variable (:default-value ("alloc_counter_tests.c")) nil [544 596])
+            ("alloc_counter_tests_LDADD" variable (:default-value ("${COMMON_LIBS}")) nil [596 639])
+            ("load_events_files_tests_SOURCES" variable (:default-value ("load_events_files_tests.c")) nil [640 700])
+            ("load_events_files_tests_LDADD" variable (:default-value ("${COMMON_LIBS}")) nil [700 747])
+            ("mangle_tests_SOURCES" variable (:default-value ("mangle_tests.c")) nil [748 786])
+            ("mangle_tests_LDADD" variable (:default-value ("${COMMON_LIBS}")) nil [786 822])
+            ("TESTS" variable (:default-value ("${check_PROGRAMS}" "utf8_checker.sh")) nil [823 865]))          
+    :file "Makefile.am"
+    :pointmax 865
+    :fsize 864
+    :lastmodtime '(21523 1459 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!libop!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -40,12 +40,17 @@
 
 (install-packages)
 
+;; custom theme
+(add-to-list 'load-path "~/.emacs.d")
+(require 'init-themes)
+
 ;; this variables must be set before load helm-gtags
 ;; you can change to any prefix key of your choice
 (setq helm-gtags-prefix-key "\C-cg")
 
 (add-to-list 'load-path "~/.emacs.d/custom")
-
+(add-to-list 'load-path "~/.emacs.d/helm")
+(require 'helm-config)
 (require 'setup-helm)
 (require 'setup-helm-gtags)
 ;; (require 'setup-ggtags)
@@ -60,12 +65,12 @@
 (define-key c-mode-map  [(tab)] 'moo-complete)
 (define-key c++-mode-map  [(tab)] 'moo-complete)
 
-;; company
+;;company
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 (delete 'company-semantic company-backends)
-(define-key c-mode-map  [(control tab)] 'company-complete)
-(define-key c++-mode-map  [(control tab)] 'company-complete)
+(define-key c-mode-map  [(tab)] 'company-complete)
+(define-key c++-mode-map  [(tab)] 'company-complete)
 
 ;; company-c-headers
 (add-to-list 'company-backends 'company-c-headers)
@@ -88,6 +93,14 @@
  c-default-style "linux" ;; set style to "linux"
  )
 
+;; (setq auto-indent-on-visit-file t) ;; If you want auto-indent on for files
+;; (require 'auto-indent-mode)
+;; (auto-indent-global-mode)
+
+(setq-default c-basic-offset 4)
+;;(setq-default tab-width 4 indent-tabs-mode t)
+(define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
+
 (global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
 
 ;; activate whitespace-mode to view all whitespace characters
@@ -101,6 +114,19 @@
 
 ;; set appearance of a tab that is represented by 4 spaces
 (setq-default tab-width 4)
+
+;; Auto-indent yanked text
+;; (dolist (command '(yank yank-pop))
+;;   (eval `(defadvice ,command (after indent-region activate)
+;;            (and (not current-prefix-arg)
+;;                 (member major-mode '(emacs-lisp-mode lisp-mode clojure-mode
+;;                                                      scheme-mode haskell-mode
+;;                                                      ruby-mode rspec-mode
+;;                                                      python-mode c-mode
+;;                                                      c++-mode objc-mode
+;;                                                      latex-mode plain-tex-mode))
+;;                 (let ((mark-even-if-inactive transient-mark-mode))
+;;                   (indent-region (region-beginning) (region-end) nil))))))
 
 ;; Compilation
 (global-set-key (kbd "<f5>") (lambda ()
@@ -150,3 +176,32 @@
 
 ;; Package zygospore
 (global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("1297a022df4228b81bc0436230f211bad168a117282c20ddcba2db8c6a200743" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
+ '(org-agenda-files (quote ("~/Dropbox/projects/agenda.org")))
+ '(org-startup-truncated nil)
+ '(safe-local-variable-values (quote ((company-clang-arguments "-I/home/brad/src/umi/src")))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; Org-mode
+(add-to-list 'load-path "/usr/share/emacs/a/lisp")
+(add-to-list 'load-path "~/third-party/org-mode/contrib/lisp" t)
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+(setq org-log-done 'time)
+(setq org-log-done 'note)
+(setq org-startup-indented t)
+
+;; Package function-args
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))

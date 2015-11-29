@@ -1,0 +1,69 @@
+;; Object gtest-1.7.0/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gtest-1.7.0/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [18 42])
+            ("EXTRA_DIST" variable (:default-value ("CHANGES" "CONTRIBUTORS" "LICENSE" "include/gtest/gtest-param-test.h.pump" "include/gtest/internal/gtest-param-util-generated.h.pump" "include/gtest/internal/gtest-tuple.h.pump" "include/gtest/internal/gtest-type-util.h.pump" "make/Makefile" "scripts/fuse_gtest_files.py" "scripts/gen_gtest_pred_impl.py" "scripts/pump.py" "scripts/test/Makefile")) nil [88 472])
+            ("GTEST_SRC" variable (:default-value ("src/gtest-death-test.cc" "src/gtest-filepath.cc" "src/gtest-internal-inl.h" "src/gtest-port.cc" "src/gtest-printers.cc" "src/gtest-test-part.cc" "src/gtest-typed-test.cc" "src/gtest.cc")) nil [565 780])
+            ("EXTRA_DIST" variable (:default-value ("$(GTEST_SRC)")) nil [781 808])
+            ("EXTRA_DIST" variable (:default-value ("samples/prime_tables.h" "samples/sample2_unittest.cc" "samples/sample3_unittest.cc" "samples/sample4_unittest.cc" "samples/sample5_unittest.cc" "samples/sample6_unittest.cc" "samples/sample7_unittest.cc" "samples/sample8_unittest.cc" "samples/sample9_unittest.cc")) nil [847 1144])
+            ("EXTRA_DIST" variable (:default-value ("test/gtest-death-test_ex_test.cc" "test/gtest-death-test_test.cc" "test/gtest-filepath_test.cc" "test/gtest-linked_ptr_test.cc" "test/gtest-listener_test.cc" "test/gtest-message_test.cc" "test/gtest-options_test.cc" "test/gtest-param-test2_test.cc" "test/gtest-param-test2_test.cc" "test/gtest-param-test_test.cc" "test/gtest-param-test_test.cc" "test/gtest-param-test_test.h" "test/gtest-port_test.cc" "test/gtest_premature_exit_test.cc" "test/gtest-printers_test.cc" "test/gtest-test-part_test.cc" "test/gtest-tuple_test.cc" "test/gtest-typed-test2_test.cc" "test/gtest-typed-test_test.cc" "test/gtest-typed-test_test.h" "test/gtest-unittest-api_test.cc" "test/gtest_break_on_failure_unittest_.cc" "test/gtest_catch_exceptions_test_.cc" "test/gtest_color_test_.cc" "test/gtest_env_var_test_.cc" "test/gtest_environment_test.cc" "test/gtest_filter_unittest_.cc" "test/gtest_help_test_.cc" "test/gtest_list_tests_unittest_.cc" "test/gtest_main_unittest.cc" "test/gtest_no_test_unittest.cc" "test/gtest_output_test_.cc" "test/gtest_pred_impl_unittest.cc" "test/gtest_prod_test.cc" "test/gtest_repeat_test.cc" "test/gtest_shuffle_test_.cc" "test/gtest_sole_header_test.cc" "test/gtest_stress_test.cc" "test/gtest_throw_on_failure_ex_test.cc" "test/gtest_throw_on_failure_test_.cc" "test/gtest_uninitialized_test_.cc" "test/gtest_unittest.cc" "test/gtest_unittest.cc" "test/gtest_xml_outfile1_test_.cc" "test/gtest_xml_outfile2_test_.cc" "test/gtest_xml_output_unittest_.cc" "test/production.cc" "test/production.h")) nil [1194 2818])
+            ("EXTRA_DIST" variable (:default-value ("test/gtest_break_on_failure_unittest.py" "test/gtest_catch_exceptions_test.py" "test/gtest_color_test.py" "test/gtest_env_var_test.py" "test/gtest_filter_unittest.py" "test/gtest_help_test.py" "test/gtest_list_tests_unittest.py" "test/gtest_output_test.py" "test/gtest_output_test_golden_lin.txt" "test/gtest_shuffle_test.py" "test/gtest_test_utils.py" "test/gtest_throw_on_failure_test.py" "test/gtest_uninitialized_test.py" "test/gtest_xml_outfiles_test.py" "test/gtest_xml_output_unittest.py" "test/gtest_xml_test_utils.py")) nil [2853 3427])
+            ("EXTRA_DIST" variable (:default-value ("CMakeLists.txt" "cmake/internal_utils.cmake")) nil [3443 3507])
+            ("EXTRA_DIST" variable (:default-value ("msvc/gtest-md.sln" "msvc/gtest-md.vcproj" "msvc/gtest.sln" "msvc/gtest.vcproj" "msvc/gtest_main-md.vcproj" "msvc/gtest_main.vcproj" "msvc/gtest_prod_test-md.vcproj" "msvc/gtest_prod_test.vcproj" "msvc/gtest_unittest-md.vcproj" "msvc/gtest_unittest.vcproj")) nil [3529 3820])
+            ("EXTRA_DIST" variable (:default-value ("xcode/Config/DebugProject.xcconfig" "xcode/Config/FrameworkTarget.xcconfig" "xcode/Config/General.xcconfig" "xcode/Config/ReleaseProject.xcconfig" "xcode/Config/StaticLibraryTarget.xcconfig" "xcode/Config/TestTarget.xcconfig" "xcode/Resources/Info.plist" "xcode/Scripts/runtests.sh" "xcode/Scripts/versiongenerate.py" "xcode/gtest.xcodeproj/project.pbxproj")) nil [3843 4236])
+            ("EXTRA_DIST" variable (:default-value ("xcode/Samples/FrameworkSample/Info.plist" "xcode/Samples/FrameworkSample/WidgetFramework.xcodeproj/project.pbxproj" "xcode/Samples/FrameworkSample/runtests.sh" "xcode/Samples/FrameworkSample/widget.cc" "xcode/Samples/FrameworkSample/widget.h" "xcode/Samples/FrameworkSample/widget_test.cc")) nil [4258 4575])
+            ("EXTRA_DIST" variable (:default-value ("codegear/gtest.cbproj" "codegear/gtest.groupproj" "codegear/gtest_all.cc" "codegear/gtest_link.cc" "codegear/gtest_main.cbproj" "codegear/gtest_unittest.cbproj")) nil [4603 4791])
+            ("m4datadir" variable (:default-value ("$(datadir)/aclocal")) nil [4826 4857])
+            ("m4data_DATA" variable (:default-value ("m4/gtest.m4")) nil [4857 4883])
+            ("EXTRA_DIST" variable (:default-value ("$(m4data_DATA)")) nil [4883 4912])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(srcdir)" "-I$(srcdir)/include")) nil [5008 5054])
+            ("lib_LTLIBRARIES" variable (:default-value ("lib/libgtest.la")) nil [5298 5353])
+            ("lib_libgtest_la_SOURCES" variable (:default-value ("src/gtest-all.cc")) nil [5354 5397])
+            ("pkginclude_HEADERS" variable (:default-value ("include/gtest/gtest-death-test.h" "include/gtest/gtest-message.h" "include/gtest/gtest-param-test.h" "include/gtest/gtest-printers.h" "include/gtest/gtest-spi.h" "include/gtest/gtest-test-part.h" "include/gtest/gtest-typed-test.h" "include/gtest/gtest.h" "include/gtest/gtest_pred_impl.h" "include/gtest/gtest_prod.h")) nil [5398 5758])
+            ("pkginclude_internaldir" variable (:default-value ("$(pkgincludedir)/internal")) nil [5759 5810])
+            ("pkginclude_internal_HEADERS" variable (:default-value ("include/gtest/internal/gtest-death-test-internal.h" "include/gtest/internal/gtest-filepath.h" "include/gtest/internal/gtest-internal.h" "include/gtest/internal/gtest-linked_ptr.h" "include/gtest/internal/gtest-param-util-generated.h" "include/gtest/internal/gtest-param-util.h" "include/gtest/internal/gtest-port.h" "include/gtest/internal/gtest-string.h" "include/gtest/internal/gtest-tuple.h" "include/gtest/internal/gtest-type-util.h")) nil [5810 6299])
+            ("lib_libgtest_main_la_SOURCES" variable (:default-value ("src/gtest_main.cc")) nil [6300 6349])
+            ("lib_libgtest_main_la_LIBADD" variable (:default-value ("lib/libgtest.la")) nil [6349 6395])
+            ("noinst_LTLIBRARIES" variable (:default-value ("samples/libsamples.la")) nil [6669 6712])
+            ("samples_libsamples_la_SOURCES" variable (:default-value ("samples/sample1.cc" "samples/sample1.h" "samples/sample2.cc" "samples/sample2.h" "samples/sample3-inl.h" "samples/sample4.cc" "samples/sample4.h")) nil [6713 6906])
+            ("TESTS" variable nil nil [6907 6914])
+            ("TESTS_ENVIRONMENT" variable (:default-value ("GTEST_SOURCE_DIR=\"$(srcdir)/test\"" "GTEST_BUILD_DIR=\"$(top_builddir)/test\"")) nil [6914 7029])
+            ("check_PROGRAMS" variable nil nil [7029 7045])
+            ("TESTS" variable (:default-value ("samples/sample1_unittest")) nil [7080 7114])
+            ("check_PROGRAMS" variable (:default-value ("samples/sample1_unittest")) nil [7114 7157])
+            ("samples_sample1_unittest_SOURCES" variable (:default-value ("samples/sample1_unittest.cc")) nil [7157 7220])
+            ("samples_sample1_unittest_LDADD" variable (:default-value ("lib/libgtest_main.la" "lib/libgtest.la" "samples/libsamples.la")) nil [7220 7382])
+            ("TESTS" variable (:default-value ("samples/sample10_unittest")) nil [7440 7475])
+            ("check_PROGRAMS" variable (:default-value ("samples/sample10_unittest")) nil [7475 7519])
+            ("samples_sample10_unittest_SOURCES" variable (:default-value ("samples/sample10_unittest.cc")) nil [7519 7584])
+            ("samples_sample10_unittest_LDADD" variable (:default-value ("lib/libgtest.la")) nil [7584 7634])
+            ("TESTS" variable (:default-value ("test/gtest_all_test")) nil [7726 7755])
+            ("check_PROGRAMS" variable (:default-value ("test/gtest_all_test")) nil [7755 7793])
+            ("test_gtest_all_test_SOURCES" variable (:default-value ("test/gtest_all_test.cc")) nil [7793 7846])
+            ("test_gtest_all_test_LDADD" variable (:default-value ("lib/libgtest_main.la" "lib/libgtest.la")) nil [7846 7941])
+            ("FUSED_GTEST_SRC" variable (:default-value ("fused-src/gtest/gtest-all.cc" "fused-src/gtest/gtest.h" "fused-src/gtest/gtest_main.cc")) nil [7991 8104])
+            ("TESTS" variable (:default-value ("test/fused_gtest_test")) nil [8120 8151])
+            ("check_PROGRAMS" variable (:default-value ("test/fused_gtest_test")) nil [8151 8191])
+            ("test_fused_gtest_test_SOURCES" variable (:default-value ("$(FUSED_GTEST_SRC)" "samples/sample1.cc" "samples/sample1_unittest.cc")) nil [8191 8323])
+            ("test_fused_gtest_test_CPPFLAGS" variable (:default-value ("-I\"$(srcdir)/fused-src\"")) nil [8323 8380])
+            ("$(test_fused_gtest_test_SOURCES)" function (:arguments ("fused-gtest")) nil [8552 8598])
+            ("fused-gtest" function (:arguments ("$(pkginclude_HEADERS)" "$(pkginclude_internal_HEADERS)" "$(GTEST_SRC)" "src/gtest-all.cc" "src/gtest_main.cc" "scripts/fuse_gtest_files.py")) nil [8599 9059])
+            ("maintainer-clean-local" function nil nil [9060 9114])
+            ("CLEANFILES" variable (:default-value ("core")) nil [9247 9265])
+            ("install-exec-local" function nil nil [9421 9580])
+            ("install-data-local" function nil nil [9581 9740]))          
+    :file "Makefile.am"
+    :pointmax 9740
+    :fsize 9739
+    :lastmodtime '(21049 59248 0 0)
+    :unmatched-syntax '((shell-command 9734 . 9739) (bol 9733 . 9733) (symbol 5260 . 5261) (punctuation 5259 . 5260) (symbol 5240 . 5259) (punctuation 5238 . 5239) (symbol 5226 . 5237) (bol 5224 . 5224) (punctuation 5217 . 5218) (symbol 5205 . 5217) (punctuation 5204 . 5205) (punctuation 5202 . 5203) (symbol 5194 . 5201) (bol 5192 . 5192) (symbol 5190 . 5191) (punctuation 5189 . 5190) (symbol 5170 . 5189) (punctuation 5168 . 5169) (symbol 5154 . 5168) (punctuation 5153 . 5154) (punctuation 5151 . 5152) (symbol 5139 . 5150) (bol 5137 . 5137))
+    )
+   )
+  :file "!home!brad!third-party!gtest-1.7.0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

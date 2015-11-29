@@ -1,0 +1,400 @@
+;; Object zlib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "zlib/"
+  :tables (list 
+   (semanticdb-table "gzlib.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("gzguts.h" include nil nil [207 226])
+            ("LSEEK" variable (:constant-flag t) nil [401 406])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gz_reset" type (:type "class") nil nil))
+                nil [461 486])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gz_open" type (:type "class") nil nil))
+                nil [500 546])
+            ("gz_reset" function
+               (:arguments 
+                  ( ("state" variable (:type ("gz_statep" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [1943 2559])
+            ("gz_open" function
+               (:arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "void")
+                        nil nil)
+                    ("fd" variable (:type "int") nil nil)
+                    ("mode" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type ("gzFile" type (:type "class") nil nil))
+                nil [2625 7020])
+            ("gzopen" function
+               (:arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("mode" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [7052 7162])
+            ("gzopen64" function
+               (:arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("mode" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [7194 7306])
+            ("gzdopen" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") nil nil)
+                    ("mode" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [7338 7834])
+            ("gzbuffer" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil)
+                    ("size" variable (:type "unsigned int") nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [8031 8595])
+            ("gzrewind" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [8624 9114])
+            ("gzseek64" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil)
+                    ("offset" variable (:type ("z_off64_t" type (:type "class") nil nil)) nil nil)
+                    ("whence" variable (:type "int") nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [9149 11390])
+            ("gzseek" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil)
+                    ("offset" variable (:type ("z_off_t" type (:type "class") nil nil)) nil nil)
+                    ("whence" variable (:type "int") nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [11423 11641])
+            ("gztell64" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [11676 12028])
+            ("gztell" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [12061 12200])
+            ("gzoffset64" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [12235 12819])
+            ("gzoffset" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [12852 12995])
+            ("gzeof" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [13024 13374])
+            ("gzerror" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil)
+                    ("errnum" variable
+                       (:pointer 1
+                        :type "int")
+                        nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [13412 13932])
+            ("gzclearerr" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [13962 14385])
+            ("gz_error" function
+               (:arguments 
+                  ( ("state" variable (:type ("gz_statep" type (:type "class") nil nil)) nil nil)
+                    ("err" variable (:type "int") nil nil)
+                    ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type ("ZLIB_INTERNAL" type (:type "class") nil nil))
+                nil [14794 15946])
+            ("gz_intmax" function (:type ("ZLIB_INTERNAL" type (:type "class") nil nil)) nil [16254 16408]))          
+    :file "gzlib.c"
+    :pointmax 16416
+    :fsize 16415
+    :lastmodtime '(21643 30698 10683 121000)
+    :unmatched-syntax '((UNSIGNED 16245 . 16253) (VOID 14789 . 14793) (VOID 13957 . 13961) (punctuation 13410 . 13411) (CHAR 13405 . 13409) (CONST 13399 . 13404) (INT 13020 . 13023) (symbol 12844 . 12851) (symbol 12225 . 12234) (symbol 12053 . 12060) (symbol 11666 . 11675) (symbol 11415 . 11422) (symbol 9139 . 9148) (INT 8620 . 8623) (INT 8027 . 8030) (symbol 7331 . 7337) (symbol 7187 . 7193) (symbol 7045 . 7051) (symbol 2619 . 2624) (symbol 1937 . 1942) (semantic-list 511 . 544) (symbol 493 . 499) (symbol 487 . 492) (semantic-list 473 . 484) (VOID 456 . 460) (symbol 450 . 455))
+    :lexical-table 
+        '(("LSEEK" . ((symbol "lseek" 407 . 412)))
+          )
+
+    )
+   (semanticdb-table "gzguts.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ZLIB_INTERNAL" variable (:constant-flag t) nil [477 490])
+            ("stdio.h" include (:system-flag t) nil [499 517])
+            ("zlib.h" include nil nil [518 535])
+            ("fcntl.h" include (:system-flag t) nil [621 639])
+            ("local" variable (:constant-flag t) nil [2434 2439])
+            ("OF" function
+               (:prototype-flag t
+                :type ("malloc" type (:type "class") nil nil))
+                nil [2614 2637])
+            ("OF" function
+               (:prototype-flag t
+                :type ("free" type (:type "class") nil nil))
+                nil [2654 2678])
+            ("errno.h" include (:system-flag t) nil [2859 2881])
+            ("zstrerror" variable (:constant-flag t) nil [2894 2903])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gzopen64" type (:type "class") nil nil))
+                nil [3155 3197])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gzseek64" type (:type "class") nil nil))
+                nil [3228 3266])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gztell64" type (:type "class") nil nil))
+                nil [3297 3319])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gzoffset64" type (:type "class") nil nil))
+                nil [3350 3374])
+            ("DEF_MEM_LEVEL" variable (:constant-flag t) nil [3471 3484])
+            ("GZBUFSIZE" variable (:constant-flag t) nil [3650 3659])
+            ("GZ_NONE" variable (:constant-flag t) nil [3754 3761])
+            ("GZ_READ" variable (:constant-flag t) nil [3772 3779])
+            ("GZ_WRITE" variable (:constant-flag t) nil [3793 3801])
+            ("GZ_APPEND" variable (:constant-flag t) nil [3816 3825])
+            ("LOOK" variable (:constant-flag t) nil [3923 3927])
+            ("COPY" variable (:constant-flag t) nil [3972 3976])
+            ("GZIP" variable (:constant-flag t) nil [4018 4022])
+            ("gz_state" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("x" variable (:type ("gzFile_s" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [4179 4197])
+                          ("mode" variable (:type "int") (reparse-symbol classsubparts) [4513 4522])
+                          ("fd" variable (:type "int") (reparse-symbol classsubparts) [4568 4575])
+                          ("path" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [4618 4629])
+                          ("size" variable (:type "unsigned int") (reparse-symbol classsubparts) [4682 4696])
+                          ("want" variable (:type "unsigned int") (reparse-symbol classsubparts) [4755 4769])
+                          ("in" variable
+                             (:pointer 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [4833 4851])
+                          ("out" variable
+                             (:pointer 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [4880 4899])
+                          ("direct" variable (:type "int") (reparse-symbol classsubparts) [4956 4967])
+                          ("how" variable (:type "int") (reparse-symbol classsubparts) [5060 5068])
+                          ("start" variable (:type ("z_off64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5132 5148])
+                          ("eof" variable (:type "int") (reparse-symbol classsubparts) [5209 5217])
+                          ("past" variable (:type "int") (reparse-symbol classsubparts) [5277 5286])
+                          ("level" variable (:type "int") (reparse-symbol classsubparts) [5374 5384])
+                          ("strategy" variable (:type "int") (reparse-symbol classsubparts) [5426 5439])
+                          ("skip" variable (:type ("z_off64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5508 5523])
+                          ("seek" variable (:type "int") (reparse-symbol classsubparts) [5588 5597])
+                          ("err" variable (:type "int") (reparse-symbol classsubparts) [5683 5691])
+                          ("msg" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [5728 5738])
+                          ("strm" variable (:type ("z_stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5821 5835]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [4108 5904])
+            ("gz_statep" variable
+               (:pointer 1
+                :type ((((0) "FAR")) type (:superclasses ("gz_state" type (:type "class") nil nil) :type "typedef") nil nil))
+                nil [5905 5937])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gz_error" type (:type "class") nil nil))
+                nil [5981 6025])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gz_intmax" type (:type "class") nil nil))
+                nil [6448 6469])
+            ("GT_OFF" variable (:constant-flag t) nil [6480 6486]))          
+    :file "gzguts.h"
+    :pointmax 6553
+    :fsize 6552
+    :lastmodtime '(21643 30698 14683 121000)
+    :unmatched-syntax '((semantic-list 6461 . 6467) (UNSIGNED 6425 . 6433) (semantic-list 5993 . 6023) (VOID 5962 . 5966) (semantic-list 3364 . 3372) (symbol 3342 . 3349) (symbol 3332 . 3341) (symbol 3324 . 3331) (semantic-list 3309 . 3317) (symbol 3289 . 3296) (symbol 3279 . 3288) (symbol 3271 . 3278) (semantic-list 3240 . 3264) (symbol 3220 . 3227) (symbol 3210 . 3219) (symbol 3202 . 3209) (semantic-list 3167 . 3195) (symbol 3147 . 3154) (symbol 3140 . 3146) (symbol 3132 . 3139) (semantic-list 2664 . 2676) (VOID 2647 . 2651) (EXTERN 2640 . 2646) (semantic-list 2624 . 2635) (symbol 2607 . 2612) (EXTERN 2600 . 2606))
+    :lexical-table 
+        '(("GZBUFSIZE" . ((number "8192" 3660 . 3664)))
+          ("GZ_READ" . ((number "7247" 3780 . 3784)))
+          ("GT_OFF" (spp-arg-list ("x") 6486 . 6489) . ((semantic-list "(sizeof(int) == sizeof(z_off64_t) && (x) > gz_intmax())" 6490 . 6545)))
+          ("COPY" . ((number "1" 3977 . 3978)))
+          ("zstrerror" (spp-arg-list nil 2903 . 2905) . ((symbol "strerror" 2906 . 2914) (semantic-list "(errno)" 2914 . 2921)))
+          ("ZLIB_INTERNAL")
+          ("DEF_MEM_LEVEL" . ((symbol "MAX_MEM_LEVEL" 3486 . 3499)))
+          ("LOOK" . ((number "0" 3928 . 3929)))
+          ("local" . ((STATIC "static" 2440 . 2446)))
+          ("GZ_NONE" . ((number "0" 3762 . 3763)))
+          ("GZ_WRITE" . ((number "31153" 3802 . 3807)))
+          ("GZIP" . ((number "2" 4023 . 4024)))
+          ("GZ_APPEND" . ((number "1" 3826 . 3827)))
+          )
+
+    )
+   (semanticdb-table "gzread.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("gzguts.h" include nil nil [196 215])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gz_load" type (:type "class") nil nil))
+                nil [249 312])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gz_avail" type (:type "class") nil nil))
+                nil [323 348])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gz_look" type (:type "class") nil nil))
+                nil [359 383])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gz_decomp" type (:type "class") nil nil))
+                nil [394 420])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gz_fetch" type (:type "class") nil nil))
+                nil [431 456])
+            ("OF" function
+               (:prototype-flag t
+                :type ("gz_skip" type (:type "class") nil nil))
+                nil [467 502])
+            ("gz_load" function
+               (:arguments 
+                  ( ("state" variable (:type ("gz_statep" type (:type "class") nil nil)) nil nil)
+                    ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        nil nil)
+                    ("len" variable (:type "unsigned int") nil nil)
+                    ("have" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        nil nil))                  
+                :type "int")
+                nil [823 1276])
+            ("gz_avail" function
+               (:arguments 
+                  ( ("state" variable (:type ("gz_statep" type (:type "class") nil nil)) nil nil))                  
+                :type "int")
+                nil [1792 2513])
+            ("gz_look" function
+               (:arguments 
+                  ( ("state" variable (:type ("gz_statep" type (:type "class") nil nil)) nil nil))                  
+                :type "int")
+                nil [3206 5987])
+            ("gz_decomp" function
+               (:arguments 
+                  ( ("state" variable (:type ("gz_statep" type (:type "class") nil nil)) nil nil))                  
+                :type "int")
+                nil [6343 7810])
+            ("gz_fetch" function
+               (:arguments 
+                  ( ("state" variable (:type ("gz_statep" type (:type "class") nil nil)) nil nil))                  
+                :type "int")
+                nil [8285 9177])
+            ("gz_skip" function
+               (:arguments 
+                  ( ("state" variable (:type ("gz_statep" type (:type "class") nil nil)) nil nil)
+                    ("len" variable (:type ("z_off64_t" type (:type "class") nil nil)) nil nil))                  
+                :type "int")
+                nil [9265 10158])
+            ("gzread" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil)
+                    ("buf" variable (:type ("voidp" type (:type "class") nil nil)) nil nil)
+                    ("len" variable (:type "unsigned int") nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [10187 13089])
+            ("gzgetc" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [13185 13861])
+            ("gzgetc_" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [13867 13930])
+            ("gzungetc" function
+               (:arguments 
+                  ( ("c" variable (:type "int") nil nil)
+                    ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [13959 15508])
+            ("gzgets" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil)
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("len" variable (:type "int") nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [15540 17494])
+            ("gzdirect" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [17523 18022])
+            ("gzclose_r" function
+               (:arguments 
+                  ( ("file" variable (:type ("gzFile" type (:type "class") nil nil)) nil nil))                  
+                :type ("ZEXPORT" type (:type "class") nil nil))
+                nil [18051 18694]))          
+    :file "gzread.c"
+    :pointmax 18695
+    :fsize 18694
+    :lastmodtime '(21643 30698 10683 121000)
+    :unmatched-syntax '((INT 18047 . 18050) (INT 17519 . 17522) (punctuation 15538 . 15539) (CHAR 15533 . 15537) (INT 13955 . 13958) (INT 13863 . 13866) (INT 13181 . 13184) (INT 10183 . 10186) (symbol 9259 . 9264) (symbol 8279 . 8284) (symbol 6337 . 6342) (symbol 3200 . 3205) (symbol 1786 . 1791) (symbol 817 . 822) (semantic-list 478 . 500) (INT 463 . 466) (symbol 457 . 462) (semantic-list 443 . 454) (INT 427 . 430) (symbol 421 . 426) (semantic-list 407 . 418) (INT 390 . 393) (symbol 384 . 389) (semantic-list 370 . 381) (INT 355 . 358) (symbol 349 . 354) (semantic-list 335 . 346) (INT 319 . 322) (symbol 313 . 318) (semantic-list 260 . 310) (INT 245 . 248) (symbol 239 . 244))
+    )
+   (semanticdb-table "zlib.h"
+    :file "zlib.h"
+    :fsize 87883
+    :lastmodtime '(21643 30698 14683 121000)
+    )
+   )
+  :file "!usr!local!khmer!third-party!zlib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,21 @@
+;; Object allpathslg-50378/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "allpathslg-50378/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [2 29])
+            ("SUBDIRS" variable (:default-value ("src")) nil [29 43])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [43 67]))          
+    :file "Makefile.am"
+    :pointmax 67
+    :fsize 66
+    :lastmodtime '(21475 10806 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!allpathslg-50378!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

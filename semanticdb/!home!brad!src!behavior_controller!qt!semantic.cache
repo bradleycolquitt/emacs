@@ -1,0 +1,345 @@
+;; Object qt/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "qt/"
+  :tables (list 
+   (semanticdb-table "liveaudio.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [26 36])
+            ("time" include nil nil [37 48])
+            ("pylab" include nil nil [49 61])
+            ("PyQt4" include nil nil [62 93])
+            ("pyqtgraph" include nil nil [94 116])
+            ("lib.audiorecord" include nil nil [117 145])
+            ("numpy" include nil nil [146 164])
+            ("collections" include nil nil [165 194])
+            ("try" code nil nil [197 304])
+            ("try" code nil nil [305 619])
+            ("AudioPlotWidget" type
+               (:superclasses ("pg.PlotWidget")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [708 753])
+                            ("self" variable nil (reparse-symbol indented_block_body) [762 783])
+                            ("self" variable nil (reparse-symbol indented_block_body) [792 881]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [675 679])
+                            ("layout" variable nil (reparse-symbol function_parameters) [681 687])
+                            ("recorder" variable nil (reparse-symbol function_parameters) [689 697]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [662 882]))                  
+                :type "class")
+                nil [620 882])
+            ("AudioThread" type
+               (:superclasses ("QtCore.QThread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("QtCore" code nil (reparse-symbol indented_block_body) [959 1003])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1012 1032])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1041 1061])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1070 1130]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [936 940])
+                            ("parent" variable nil (reparse-symbol function_parameters) [942 948]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [923 1131])
+                    ("__del__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1148 1152]))                          )
+                        (reparse-symbol indented_block_body) [1136 1203])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1216 1220]))                          )
+                        (reparse-symbol indented_block_body) [1208 1603])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1617 1621]))                          )
+                        (reparse-symbol indented_block_body) [1608 1672]))                  
+                :type "class")
+                nil [884 1672])
+            ("SpecThread" type
+               (:superclasses ("QtCore.QThread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("QtCore" code nil (reparse-symbol indented_block_body) [1747 1791])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1800 1820])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1829 1849]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1724 1728])
+                            ("parent" variable nil (reparse-symbol function_parameters) [1730 1736]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1711 1850])
+                    ("__del__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1867 1871]))                          )
+                        (reparse-symbol indented_block_body) [1855 1922])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1935 1939]))                          )
+                        (reparse-symbol indented_block_body) [1927 2316])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2330 2334]))                          )
+                        (reparse-symbol indented_block_body) [2321 2385]))                  
+                :type "class")
+                nil [1673 2385])
+            ("AudioManager" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2446 2466])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2475 2528])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2537 2556])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2565 2585]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2423 2427])
+                            ("parent" variable nil (reparse-symbol function_parameters) [2429 2435]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2410 2586])
+                    ("setup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2601 2605]))                          )
+                        (reparse-symbol indented_block_body) [2591 3110])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3126 3130])
+                            ("y" variable nil (reparse-symbol function_parameters) [3132 3133]))                          )
+                        (reparse-symbol indented_block_body) [3115 3608])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3623 3627]))                          )
+                        (reparse-symbol indented_block_body) [3613 3679])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3693 3697]))                          )
+                        (reparse-symbol indented_block_body) [3684 3727])
+                    ("start_write_to_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3756 3760]))                          )
+                        (reparse-symbol indented_block_body) [3732 3842])
+                    ("stop_write_to_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3870 3874]))                          )
+                        (reparse-symbol indented_block_body) [3847 3956]))                  
+                :type "class")
+                nil [2386 3956])
+            ("SpecManager" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3733 3753])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3762 3815]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3996 4000])
+                            ("parent" variable nil (reparse-symbol function_parameters) [4002 4008]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3983 4102])
+                    ("setup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4117 4121]))                          )
+                        (reparse-symbol indented_block_body) [4107 4426])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4442 4446])
+                            ("data" variable nil (reparse-symbol function_parameters) [4448 4452]))                          )
+                        (reparse-symbol indented_block_body) [4431 4827])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4842 4846]))                          )
+                        (reparse-symbol indented_block_body) [4832 4898])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4912 4916]))                          )
+                        (reparse-symbol indented_block_body) [4903 4946]))                  
+                :type "class")
+                nil [3960 4946])
+            ("SoundCardBox" type
+               (:superclasses ("QtGui.QSpinBox")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [4747 4789])
+                            ("soundcard_names" variable nil (reparse-symbol indented_block_body) [4798 4843])
+                            ("self" code nil (reparse-symbol indented_block_body) [4852 4884]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5000 5004])
+                            ("parent" variable nil (reparse-symbol function_parameters) [5006 5012])
+                            ("recorder" variable nil (reparse-symbol function_parameters) [5014 5022]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4987 5171])
+                    ("strings" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5188 5192]))                          )
+                        (reparse-symbol indented_block_body) [5176 5224])
+                    ("setStrings" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5244 5248])
+                            ("strings" variable nil (reparse-symbol function_parameters) [5250 5257]))                          )
+                        (reparse-symbol indented_block_body) [5229 5405])
+                    ("textFromValue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5428 5432])
+                            ("value" variable nil (reparse-symbol function_parameters) [5434 5439]))                          )
+                        (reparse-symbol indented_block_body) [5410 5478])
+                    ("valueFromText" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5501 5505])
+                            ("text" variable nil (reparse-symbol function_parameters) [5507 5511]))                          )
+                        (reparse-symbol indented_block_body) [5483 5548]))                  
+                :type "class")
+                nil [4947 5548])
+            ("Ui_LiveAudio" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__del__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5593 5597]))                          )
+                        (reparse-symbol indented_block_body) [5581 5629])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [5384 5420])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5429 5449])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5458 5486]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5647 5651])
+                            ("config" variable nil (reparse-symbol function_parameters) [5653 5659]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5634 5773])
+                    ("setupUi" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5790 5794])
+                            ("LiveAudio" variable nil (reparse-symbol function_parameters) [5796 5805]))                          )
+                        (reparse-symbol indented_block_body) [5778 9382])
+                    ("retranslateUi" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9406 9410])
+                            ("LiveAudio" variable nil (reparse-symbol function_parameters) [9412 9421]))                          )
+                        (reparse-symbol indented_block_body) [9388 9998])
+                    ("setup_audio_recorder" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10028 10032]))                          )
+                        (reparse-symbol indented_block_body) [10003 10123])
+                    ("start_recording" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10148 10152]))                          )
+                        (reparse-symbol indented_block_body) [10128 10524])
+                    ("stop_recording" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10548 10552]))                          )
+                        (reparse-symbol indented_block_body) [10529 10712])
+                    ("" code nil (reparse-symbol indented_block_body) [10733 10739])
+                    ("write_to_file_clicked" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10794 10798])
+                            ("checked" variable nil (reparse-symbol function_parameters) [10800 10807]))                          )
+                        (reparse-symbol indented_block_body) [10768 11106])
+                    ("updateUi" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11124 11128]))                          )
+                        (reparse-symbol indented_block_body) [11111 11228])
+                    ("update_selected_soundcard" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11263 11267])
+                            ("i" variable nil (reparse-symbol function_parameters) [11269 11270]))                          )
+                        (reparse-symbol indented_block_body) [11233 11330])
+                    ("quit_program" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11434 11438]))                          )
+                        (reparse-symbol indented_block_body) [11417 11527]))                  
+                :type "class")
+                nil [5549 11527]))          
+    :file "liveaudio.py"
+    :pointmax 11101
+    :fsize 11526
+    :lastmodtime '(21991 32021 746961 577000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_qt.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [1 11])
+            ("PyQt4.QtGui" include nil nil [13 57])
+            ("PyQt4" include nil nil [58 89])
+            ("qt.liveaudio" include nil nil [90 127])
+            ("main" function nil nil [242 438])
+            ("if" code nil nil [439 477]))          
+    :file "test_qt.py"
+    :pointmax 413
+    :fsize 3736
+    :lastmodtime '(21981 4977 502954 42000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "liveaudio_new.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("PyQt4" include nil nil [232 263])
+            ("try" code nil nil [265 372])
+            ("try" code nil nil [373 687])
+            ("Ui_LiveAudio" type
+               (:superclasses ("object")
+                :members 
+                  ( ("setupUi" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [732 736])
+                            ("LiveAudio" variable nil (reparse-symbol function_parameters) [738 747]))                          )
+                        (reparse-symbol indented_block_body) [720 3147])
+                    ("retranslateUi" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3170 3174])
+                            ("LiveAudio" variable nil (reparse-symbol function_parameters) [3176 3185]))                          )
+                        (reparse-symbol indented_block_body) [3152 3762]))                  
+                :type "class")
+                nil [688 3762]))          
+    :file "liveaudio_new.py"
+    :pointmax 3763
+    :fsize 3762
+    :lastmodtime '(21991 15566 374663 838000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!behavior_controller!qt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

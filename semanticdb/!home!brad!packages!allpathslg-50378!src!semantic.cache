@@ -1,0 +1,1320 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "FastaFilestream.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FastaFilestream.h" include nil nil [563 591])
+            ("STLExtensions.h" include nil nil [592 618])
+            ("system/System.h" include nil nil [619 645])
+            ("strstream" include (:system-flag t) nil [647 667])
+            ("FastaFilestream" function
+               (:template 
+                  ( ("vecT" type (:type "class") nil nil)
+                    ("seqT" type (:type "class") nil nil)
+                    ("convT" type (:type "class") nil nil)
+                    ("verifT" type (:type "class") nil nil))                  
+                :type ("FastaFilestream" type (:type "class") nil nil)
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [800 823])
+                    ("name_parser" variable
+                       (:pointer 1
+                        :type ("FastaNameParser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [882 912]))                  
+                :parent "FastaFilestream"
+                :constructor-flag t)
+                nil [669 1276])
+            ("FastaFilestream" function
+               (:template 
+                  ( ("vecT" type (:type "class") nil nil)
+                    ("seqT" type (:type "class") nil nil)
+                    ("convT" type (:type "class") nil nil)
+                    ("verifT" type (:type "class") nil nil))                  
+                :type ("FastaFilestream" type (:type "class") nil nil)
+                :arguments 
+                  ( ("original" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FastaFilestream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1409 1442]))                  
+                :parent "FastaFilestream"
+                :constructor-flag t)
+                nil [1278 1727])
+            ("=" function
+               (:template 
+                  ( ("vecT" type (:type "class") nil nil)
+                    ("seqT" type (:type "class") nil nil)
+                    ("convT" type (:type "class") nil nil)
+                    ("verifT" type (:type "class") nil nil))                  
+                :type ("FastaFilestream" type
+                     (:template-specifier 
+                        ( ("vecT" type nil nil nil)
+                          ("seqT" type nil nil nil)
+                          ("convT" type nil nil nil)
+                          ("verifT" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("original" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FastaFilestream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1898 1931]))                  
+                :parent "FastaFilestream"
+                :operator-flag t)
+                nil [1730 2229])
+            ("estimatedSize" function
+               (:template 
+                  ( ("vecT" type (:type "class") nil nil)
+                    ("seqT" type (:type "class") nil nil)
+                    ("convT" type (:type "class") nil nil)
+                    ("verifT" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "FastaFilestream")
+                nil [2235 2558])
+            ("estimatedData" function
+               (:template 
+                  ( ("vecT" type (:type "class") nil nil)
+                    ("seqT" type (:type "class") nil nil)
+                    ("convT" type (:type "class") nil nil)
+                    ("verifT" type (:type "class") nil nil))                  
+                :type ("longlong" type (:type "class") nil nil)
+                :parent "FastaFilestream")
+                nil [2561 2997])
+            ("verify" function
+               (:template 
+                  ( ("vecT" type (:type "class") nil nil)
+                    ("seqT" type (:type "class") nil nil)
+                    ("convT" type (:type "class") nil nil)
+                    ("verifT" type (:type "class") nil nil))                  
+                :type "bool"
+                :parent "FastaFilestream")
+                nil [3000 3968])
+            ("parse_" function
+               (:template 
+                  ( ("vecT" type (:type "class") nil nil)
+                    ("seqT" type (:type "class") nil nil)
+                    ("convT" type (:type "class") nil nil)
+                    ("verifT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("names" variable
+                       (:reference 1
+                        :type ("vecString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4097 4114])
+                    ("p_sequences" variable
+                       (:pointer 1
+                        :type ("vecT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4165 4183])
+                    ("p_indices" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("vec" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4234 4261]))                  
+                :parent "FastaFilestream")
+                nil [3970 7902])
+            ("getBasename_" function
+               (:template 
+                  ( ("vecT" type (:type "class") nil nil)
+                    ("seqT" type (:type "class") nil nil)
+                    ("convT" type (:type "class") nil nil)
+                    ("verifT" type (:type "class") nil nil))                  
+                :type ("String" type (:type "class") nil nil)
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8047 8071]))                  
+                :constant-flag t
+                :parent "FastaFilestream")
+                nil [7905 8241])
+            ("preview_" function
+               (:template 
+                  ( ("vecT" type (:type "class") nil nil)
+                    ("seqT" type (:type "class") nil nil)
+                    ("convT" type (:type "class") nil nil)
+                    ("verifT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("fasta_istream" variable
+                       (:pointer 1
+                        :type ("istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8372 8396]))                  
+                :parent "FastaFilestream")
+                nil [8243 8663])
+            ("getIstream_" function
+               (:template 
+                  ( ("vecT" type (:type "class") nil nil)
+                    ("seqT" type (:type "class") nil nil)
+                    ("convT" type (:type "class") nil nil)
+                    ("verifT" type (:type "class") nil nil))                  
+                :type ("istream" type (:type "class") nil nil)
+                :parent "FastaFilestream"
+                :pointer 1)
+                nil [8665 9207])
+            ("resetIstream_" function
+               (:template 
+                  ( ("vecT" type (:type "class") nil nil)
+                    ("seqT" type (:type "class") nil nil)
+                    ("convT" type (:type "class") nil nil)
+                    ("verifT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9343 9352])
+                    ("" variable (:type ("fasta_istream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9353 9368]))                  
+                :parent "FastaFilestream")
+                nil [9209 9576])
+            ("closeIstream_" function
+               (:template 
+                  ( ("vecT" type (:type "class") nil nil)
+                    ("seqT" type (:type "class") nil nil)
+                    ("convT" type (:type "class") nil nil)
+                    ("verifT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("fasta_istream" variable
+                       (:pointer 1
+                        :type ("istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9712 9736]))                  
+                :parent "FastaFilestream")
+                nil [9578 9832])
+            ("INSTANTIATE" variable (:constant-flag t) nil [9842 9853])
+            ("FastaFilestream" function
+               (:prototype-flag t
+                :constructor-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("FastaNameParser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("FastaFilestream" type (:type "class") nil nil))
+                nil [10437 10529])
+            ("FastaFilestream" function
+               (:prototype-flag t
+                :constructor-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FastaFilestream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("FastaFilestream" type (:type "class") nil nil))
+                nil [10437 10529])
+            ("=" function
+               (:prototype-flag t
+                :operator-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FastaFilestream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("FastaFilestream" type
+                     (:template-specifier 
+                        ( ("veccompseq" type nil nil nil)
+                          ("CompressedSequence" type nil nil nil)
+                          ("FastaSequenceConverter" type nil nil nil)
+                          ("FastaSequenceVerifier" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10437 10529])
+            ("estimatedSize" function
+               (:prototype-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [10437 10529])
+            ("estimatedData" function
+               (:prototype-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) nil))                  
+                :type ("longlong" type (:type "class") nil nil))
+                nil [10437 10529])
+            ("parse_" function
+               (:prototype-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("vecString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("veccompseq" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("vec" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [10437 10529])
+            ("verify" function
+               (:prototype-flag t
+                :parent "FastaFilestream"
+                :type "bool")
+                nil [10437 10529])
+            ("FastaFilestream" function
+               (:prototype-flag t
+                :constructor-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("FastaNameParser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("FastaFilestream" type (:type "class") nil nil))
+                nil [10531 10604])
+            ("FastaFilestream" function
+               (:prototype-flag t
+                :constructor-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FastaFilestream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("FastaFilestream" type (:type "class") nil nil))
+                nil [10531 10604])
+            ("=" function
+               (:prototype-flag t
+                :operator-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FastaFilestream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("FastaFilestream" type
+                     (:template-specifier 
+                        ( ("VecCharVec" type nil nil nil)
+                          ("CharVec" type nil nil nil)
+                          ("FastaNullConverter" type nil nil nil)
+                          ("FastaNullVerifier" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10531 10604])
+            ("estimatedSize" function
+               (:prototype-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [10531 10604])
+            ("estimatedData" function
+               (:prototype-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) nil))                  
+                :type ("longlong" type (:type "class") nil nil))
+                nil [10531 10604])
+            ("parse_" function
+               (:prototype-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("vecString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("VecCharVec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("vec" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [10531 10604])
+            ("verify" function
+               (:prototype-flag t
+                :parent "FastaFilestream"
+                :type "bool")
+                nil [10531 10604])
+            ("FastaFilestream" function
+               (:prototype-flag t
+                :constructor-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("FastaNameParser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("FastaFilestream" type (:type "class") nil nil))
+                nil [10606 10691])
+            ("FastaFilestream" function
+               (:prototype-flag t
+                :constructor-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FastaFilestream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("FastaFilestream" type (:type "class") nil nil))
+                nil [10606 10691])
+            ("=" function
+               (:prototype-flag t
+                :operator-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FastaFilestream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("FastaFilestream" type
+                     (:template-specifier 
+                        ( ("vecqualvector" type nil nil nil)
+                          ("qualvector" type nil nil nil)
+                          ("FastaQualityConverter" type nil nil nil)
+                          ("FastaQualityVerifier" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10606 10691])
+            ("estimatedSize" function
+               (:prototype-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [10606 10691])
+            ("estimatedData" function
+               (:prototype-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) nil))                  
+                :type ("longlong" type (:type "class") nil nil))
+                nil [10606 10691])
+            ("parse_" function
+               (:prototype-flag t
+                :parent "FastaFilestream"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("vecString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("vecqualvector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("vec" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [10606 10691])
+            ("verify" function
+               (:prototype-flag t
+                :parent "FastaFilestream"
+                :type "bool")
+                nil [10606 10691]))          
+    :file "FastaFilestream.cc"
+    :pointmax 10693
+    :fsize 10692
+    :lastmodtime '(21475 10806 0 0)
+    :unmatched-syntax '((TEMPLATE "template" 10606 . 10691) (TEMPLATE "template" 10606 . 10691) (TEMPLATE "template" 10606 . 10691) (TEMPLATE "template" 10606 . 10691) (TEMPLATE "template" 10606 . 10691) (TEMPLATE "template" 10606 . 10691) (TEMPLATE "template" 10606 . 10691) (TEMPLATE "template" 10531 . 10604) (TEMPLATE "template" 10531 . 10604) (TEMPLATE "template" 10531 . 10604) (TEMPLATE "template" 10531 . 10604) (TEMPLATE "template" 10531 . 10604) (TEMPLATE "template" 10531 . 10604) (TEMPLATE "template" 10531 . 10604) (TEMPLATE "template" 10437 . 10529) (TEMPLATE "template" 10437 . 10529) (TEMPLATE "template" 10437 . 10529) (TEMPLATE "template" 10437 . 10529) (TEMPLATE "template" 10437 . 10529) (TEMPLATE "template" 10437 . 10529) (TEMPLATE "template" 10437 . 10529) (punctuation 9351 . 9352))
+    :lexical-table 
+        '(("INSTANTIATE" (spp-arg-list ("aT" "bT" "cT" "dT") 9853 . 9866) . 
+              ((TEMPLATE "template" 9869 . 9877) (symbol "FastaFilestream" 9878 . 9893) (punctuation "<" 9893 . 9894) (symbol "aT" 9894 . 9896) (punctuation "," 9896 . 9897) (symbol "bT" 9897 . 9899) (punctuation "," 9899 . 9900) (symbol "cT" 9900 . 9902) (punctuation "," 9902 . 9903) (symbol "dT" 9903 . 9905) (punctuation ">" 9905 . 9906) (punctuation ":" 9906 . 9907) (punctuation ":" 9907 . 9908) (symbol "FastaFilestream" 9908 . 9923) (semantic-list "( const String&, FastaNameParser* )" 9923 . 9958) (punctuation ";" 9958 . 9959) (TEMPLATE "template" 9962 . 9970) (symbol "FastaFilestream" 9971 . 9986) (punctuation "<" 9986 . 9987) (symbol "aT" 9987 . 9989) (punctuation "," 9989 . 9990) (symbol "bT" 9990 . 9992) (punctuation "," 9992 . 9993) (symbol "cT" 9993 . 9995) (punctuation "," 9995 . 9996) (symbol "dT" 9996 . 9998) (punctuation ">" 9998 . 9999) (punctuation ":" 9999 . 10000) (punctuation ":" 10000 . 10001) (symbol "FastaFilestream" 10001 . 10016) (semantic-list "( const FastaFilestream& )" 10016 . 10042) (punctuation ";" 10042 . 10043) (TEMPLATE "template" 10046 . 10054) (symbol "FastaFilestream" 10055 . 10070) (punctuation "<" 10070 . 10071) (symbol "aT" 10071 . 10073) (punctuation "," 10073 . 10074) (symbol "bT" 10074 . 10076) (punctuation "," 10076 . 10077) (symbol "cT" 10077 . 10079) (punctuation "," 10079 . 10080) (symbol "dT" 10080 . 10082) (punctuation ">" 10082 . 10083) (punctuation "&" 10083 . 10084) (symbol "FastaFilestream" 10085 . 10100) (punctuation "<" 10100 . 10101) (symbol "aT" 10101 . 10103) (punctuation "," 10103 . 10104) (symbol "bT" 10104 . 10106) (punctuation "," 10106 . 10107) (symbol "cT" 10107 . 10109) (punctuation "," 10109 . 10110) (symbol "dT" 10110 . 10112) (punctuation ">" 10112 . 10113) (punctuation ":" 10113 . 10114) (punctuation ":" 10114 . 10115) (OPERATOR "operator" 10115 . 10123) (punctuation "=" 10123 . 10124) (semantic-list "( const FastaFilestream& )" 10125 . 10151) (punctuation ";" 10151 . 10152) (TEMPLATE "template" 10155 . 10163) (INT "int" 10164 . 10167) (symbol "FastaFilestream" 10168 . 10183) (punctuation "<" 10183 . 10184) (symbol "aT" 10184 . 10186) (punctuation "," 10186 . 10187) (symbol "bT" 10187 . 10189) (punctuation "," 10189 . 10190) (symbol "cT" 10190 . 10192) (punctuation "," 10192 . 10193) (symbol "dT" 10193 . 10195) (punctuation ">" 10195 . 10196) (punctuation ":" 10196 . 10197) (punctuation ":" 10197 . 10198) (symbol "estimatedSize" 10198 . 10211) (semantic-list "(void)" 10211 . 10217) (punctuation ";" 10217 . 10218) (TEMPLATE "template" 10221 . 10229) (symbol "longlong" 10230 . 10238) (symbol "FastaFilestream" 10239 . 10254) (punctuation "<" 10254 . 10255) (symbol "aT" 10255 . 10257) (punctuation "," 10257 . 10258) (symbol "bT" 10258 . 10260) (punctuation "," 10260 . 10261) (symbol "cT" 10261 . 10263) (punctuation "," 10263 . 10264) (symbol "dT" 10264 . 10266) (punctuation ">" 10266 . 10267) (punctuation ":" 10267 . 10268) (punctuation ":" 10268 . 10269) (symbol "estimatedData" 10269 . 10282) (semantic-list "(void)" 10282 . 10288) (punctuation ";" 10288 . 10289) (TEMPLATE "template" 10292 . 10300) (VOID "void" 10301 . 10305) (symbol "FastaFilestream" 10306 . 10321) (punctuation "<" 10321 . 10322) (symbol "aT" 10322 . 10324) (punctuation "," 10324 . 10325) (symbol "bT" 10325 . 10327) (punctuation "," 10327 . 10328) (symbol "cT" 10328 . 10330) (punctuation "," 10330 . 10331) (symbol "dT" 10331 . 10333) (punctuation ">" 10333 . 10334) (punctuation ":" 10334 . 10335) (punctuation ":" 10335 . 10336) (symbol "parse_" 10336 . 10342) (semantic-list "( vecString&, aT*, const vec<int>* )" 10342 . 10378) (punctuation ";" 10378 . 10379) (TEMPLATE "template" 10382 . 10390) (BOOL "bool" 10391 . 10395) (symbol "FastaFilestream" 10396 . 10411) (punctuation "<" 10411 . 10412) (symbol "aT" 10412 . 10414) (punctuation "," 10414 . 10415) (symbol "bT" 10415 . 10417) (punctuation "," 10417 . 10418) (symbol "cT" 10418 . 10420) (punctuation "," 10420 . 10421) (symbol "dT" 10421 . 10423) (punctuation ">" 10423 . 10424) (punctuation ":" 10424 . 10425) (punctuation ":" 10425 . 10426) (symbol "verify" 10426 . 10432) (semantic-list "()" 10432 . 10434) (punctuation ";" 10434 . 10435)))
+          )
+
+    )
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EfastaToFasta_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [1 43])
+            ("ValidateAllPathsInputs_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [43 94])
+            ("FixPrecompute_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [94 132])
+            ("CreateLookupTab_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [132 172])
+            ("SplitUnibases_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [172 214])
+            ("SuperbsToAgp_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [214 255])
+            ("CleanAssembly_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [255 297])
+            ("Jumpomatic_SOURCES" variable (:default-value ("paths/Jumpomatic.cc")) nil [297 338])
+            ("RecoverUnipaths_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [338 378])
+            ("GenomeToPaths_SOURCES" variable (:default-value ("paths/simulation/GenomeToPaths.cc")) nil [378 436])
+            ("CreateLookupTab_SOURCES" variable (:default-value ("lookup/CreateLookupTab.cc")) nil [436 488])
+            ("ScaffoldAccuracy_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [488 533])
+            ("Fastb_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [533 563])
+            ("CorrectLongReads_SOURCES" variable (:default-value ("paths/CorrectLongReads.cc")) nil [563 616])
+            ("ScaffoldLayout_SOURCES" variable (:default-value ("reporting/ScaffoldLayout.cc")) nil [616 669])
+            ("FastbQualbToFastq_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [669 711])
+            ("UniquifyAligns2_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [711 755])
+            ("MergeNeighborhoods1_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [755 803])
+            ("RemoveHighCNAligns_SOURCES" variable (:default-value ("paths/RemoveHighCNAligns.cc")) nil [803 860])
+            ("ApplyAssemblyEdits_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [860 903])
+            ("AlignUnibasesToRef_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [903 950])
+            ("MemHogger_SOURCES" variable (:default-value ("test/MemHogger.cc")) nil [950 988])
+            ("FastbStats_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [988 1023])
+            ("MemMonitor_SOURCES" variable (:default-value ("util/MemMonitor.cc")) nil [1023 1063])
+            ("AgpToAllPaths_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [1063 1105])
+            ("DisplayLibraryStats_SOURCES" variable (:default-value ("util/DisplayLibraryStats.cc")) nil [1105 1163])
+            ("ReadTrack_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [1163 1201])
+            ("GenomeReadLocsLG_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [1201 1246])
+            ("DisplayLocs_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [1246 1286])
+            ("SplitReadsByLibrary_SOURCES" variable (:default-value ("util/SplitReadsByLibrary.cc")) nil [1286 1344])
+            ("LongReadPostPatcher_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [1344 1392])
+            ("MakeScaffoldsLG_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [1392 1436])
+            ("AlignReads_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [1436 1475])
+            ("MergeNeighborhoods3_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [1475 1519])
+            ("ReplacePairsStats_SOURCES" variable (:default-value ("util/ReplacePairsStats.cc")) nil [1519 1573])
+            ("UniquifyAligns2_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [1573 1613])
+            ("MergeReadSets_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [1613 1651])
+            ("ShortQueryLookup_SOURCES" variable (:default-value ("lookup/ShortQueryLookup.cc")) nil [1651 1705])
+            ("FastbStats_SOURCES" variable (:default-value ("util/FastbStats.cc")) nil [1705 1745])
+            ("noinst_LIBRARIES" variable (:default-value ("libAllPathsLG.a")) nil [1745 1780])
+            ("FastbQualbToFastq_SOURCES" variable (:default-value ("util/FastbQualbToFastq.cc")) nil [1780 1834])
+            ("UnipathEval_SOURCES" variable (:default-value ("paths/UnipathEval.cc")) nil [1834 1877])
+            ("RecoverPunchTandem_SOURCES" variable (:default-value ("paths/RecoverPunchTandem.cc")) nil [1877 1934])
+            ("FindErrors_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [1934 1973])
+            ("SamplePairedReadStats_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [1973 2023])
+            ("CloseUnipathGaps_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [2023 2064])
+            ("PathReads_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [2064 2102])
+            ("LongReadsToUnipaths_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [2102 2146])
+            ("UnipathBabyStats_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [2146 2187])
+            ("GenomeToPaths_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [2187 2225])
+            ("GenerateMapUnibasesToContigs_SOURCES" variable (:default-value ("paths/GenerateMapUnibasesToContigs.cc")) nil [2225 2302])
+            ("ShortQueryLookup_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [2302 2343])
+            ("FlattenHKP_SOURCES" variable (:default-value ("paths/FlattenHKP.cc")) nil [2343 2384])
+            ("SplitUnibases_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [2384 2422])
+            ("Mixmer_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [2422 2457])
+            ("AM_CPPFLAGS" variable (:default-value ("-DRELEASE=3.0" "-DMAKE_OS_RELEASE=@OS_RELEASE@" "-DMAKE_RELEASE=3.0" "-DSVN_VERSION=@VERSION@")) nil [2457 2559])
+            ("SubmissionPrep_SOURCES" variable (:default-value ("paths/SubmissionPrep.cc")) nil [2559 2608])
+            ("MakeLookupTable_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [2608 2652])
+            ("bin_PROGRAMS" variable (:default-value ("RemodelGaps")) nil [2652 4793])
+            ("LittleHelpsBig_SOURCES" variable (:default-value ("paths/LittleHelpsBig.cc")) nil [4793 4842])
+            ("ErrorCorrectJump_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [4842 4883])
+            ("QueryLookupTable_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [4883 4924])
+            ("Unipather_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [4924 4962])
+            ("TagCircularScaffolds_SOURCES" variable (:default-value ("paths/TagCircularScaffolds.cc")) nil [4962 5023])
+            ("RemodelGaps_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [5023 5059])
+            ("RebuildAssemblyFiles_SOURCES" variable (:default-value ("util/RebuildAssemblyFiles.cc")) nil [5059 5119])
+            ("MapSeeds_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [5119 5152])
+            ("CommonPather_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [5152 5193])
+            ("HyperToReftigs_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [5193 5236])
+            ("MergeReadSets_SOURCES" variable (:default-value ("paths/MergeReadSets.cc")) nil [5236 5283])
+            ("PathReads_SOURCES" variable (:default-value ("paths/PathReads.cc")) nil [5283 5322])
+            ("LongReadPostPatcher_SOURCES" variable (:default-value ("paths/LongReadPostPatcher.cc")) nil [5322 5381])
+            ("KmerSpectrum_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [5381 5422])
+            ("BuildUnipathLinkGraphsLG_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [5422 5475])
+            ("ShaveUnipathGraph_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [5475 5517])
+            ("AM_CXXFLAGS" variable (:default-value ("$(OPENMP_CFLAGS)")) nil [5517 5548])
+            ("MergeNeighborhoods1_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [5548 5592])
+            ("TagCircularScaffolds_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [5592 5641])
+            ("UnipathLocsLG_SOURCES" variable (:default-value ("paths/UnipathLocsLG.cc")) nil [5641 5688])
+            ("EvaluateGaps_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [5688 5729])
+            ("MakeRcDb_SOURCES" variable (:default-value ("paths/MakeRcDb.cc")) nil [5729 5766])
+            ("FixLocal_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [5766 5803])
+            ("MergeNeighborhoods2_SOURCES" variable (:default-value ("paths/MergeNeighborhoods2.cc")) nil [5803 5862])
+            ("Fastb2Fasta_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [5862 5902])
+            ("ScaffoldGraphToGnuplot_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [5902 5953])
+            ("Qualb2Quala_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [5953 5989])
+            ("SubmissionPrep_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [5989 6028])
+            ("GenerateMapUnibasesToContigs_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [6028 6085])
+            ("RecoverUnipaths_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [6085 6129])
+            ("EvalUnipathLinkGraphs_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [6129 6175])
+            ("ValidateAllPathsInputs_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [6175 6222])
+            ("ChangeLibraryStats_SOURCES" variable (:default-value ("paths/ChangeLibraryStats.cc")) nil [6222 6279])
+            ("SimpleGapCloser_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [6279 6319])
+            ("AddUnibaseJunctions_SOURCES" variable (:default-value ("paths/AddUnibaseJunctions.cc")) nil [6319 6378])
+            ("PathsToLocs_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [6378 6418])
+            ("FilterPrunedReads_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [6418 6464])
+            ("dist_doc_DATA" variable (:default-value ("../LICENSE" "../docs/AllPaths-LG_Manual.pdf")) nil [6464 6522])
+            ("FastaToEfasta_SOURCES" variable (:default-value ("efasta/FastaToEfasta.cc")) nil [6522 6570])
+            ("FixPrecompute_SOURCES" variable (:default-value ("paths/FixPrecompute.cc")) nil [6570 6617])
+            ("PathsToLocs_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [6617 6653])
+            ("PathReads_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [6653 6687])
+            ("EvalUnipathLinkGraphs_SOURCES" variable (:default-value ("paths/reporting/EvalUnipathLinkGraphs.cc")) nil [6687 6760])
+            ("RemodelGaps_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [6760 6800])
+            ("LongReadPostPatcher_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [6800 6844])
+            ("MakeLookupTable_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [6844 6884])
+            ("FastbMerge_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [6884 6923])
+            ("ErrorCorrectJump_SOURCES" variable (:default-value ("paths/ErrorCorrectJump.cc")) nil [6923 6976])
+            ("SelectRandomPairs_SOURCES" variable (:default-value ("select/SelectRandomPairs.cc")) nil [6976 7032])
+            ("EvalScaffolds_SOURCES" variable (:default-value ("reporting/EvalScaffolds.cc")) nil [7032 7083])
+            ("PostPatcherBuildJoins_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [7083 7133])
+            ("SubmissionPrep_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [7133 7176])
+            ("UnipathEval_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [7176 7216])
+            ("SimpleGapCloser_SOURCES" variable (:default-value ("paths/SimpleGapCloser.cc")) nil [7216 7267])
+            ("CleanLongReadPatches_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [7267 7316])
+            ("UnipathLocsLG_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [7316 7354])
+            ("Fasta2Fastb_SOURCES" variable (:default-value ("util/Fasta2Fastb.cc")) nil [7354 7396])
+            ("HyperToReftigs_SOURCES" variable (:default-value ("paths/reporting/HyperToReftigs.cc")) nil [7396 7455])
+            ("AgpToAllPaths_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [7455 7493])
+            ("ScaffoldLayout_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [7493 7532])
+            ("ConnectScaffolds_SOURCES" variable (:default-value ("paths/ConnectScaffolds.cc")) nil [7532 7585])
+            ("FastbStats_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [7585 7624])
+            ("SelectRandomPairs_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [7624 7666])
+            ("FixLocal_SOURCES" variable (:default-value ("paths/FixLocal.cc")) nil [7666 7703])
+            ("PairsFake_SOURCES" variable (:default-value ("util/PairsFake.cc")) nil [7703 7741])
+            ("PostPatcherBuildJoins_SOURCES" variable (:default-value ("paths/PostPatcherBuildJoins.cc")) nil [7741 7804])
+            ("PairsFake_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [7804 7842])
+            ("Quala2Qualb_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [7842 7882])
+            ("UnipathBabyStats_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [7882 7927])
+            ("DisplayLibraryStats_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [7927 7971])
+            ("FastaToEfasta_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [7971 8013])
+            ("FixAssemblyBaseErrors_SOURCES" variable (:default-value ("paths/FixAssemblyBaseErrors.cc")) nil [8013 8076])
+            ("CorrectLongReads_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [8076 8117])
+            ("TrivialSupersFromContigs_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [8117 8166])
+            ("RunAllPathsLG_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [8166 8204])
+            ("FakeQualb_SOURCES" variable (:default-value ("FakeQualb.cc")) nil [8204 8237])
+            ("CleanAssembly_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [8237 8275])
+            ("RunAllPathsLG_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [8275 8317])
+            ("FindUnipathGaps_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [8317 8361])
+            ("PickTheRightBranch_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [8361 8404])
+            ("FindErrors_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [8404 8439])
+            ("KPatch_SOURCES" variable (:default-value ("paths/KPatch.cc")) nil [8439 8472])
+            ("ScaffoldContigsOnReference_SOURCES" variable (:default-value ("util/ScaffoldContigsOnReference.cc")) nil [8472 8544])
+            ("ScaffoldAccuracy_SOURCES" variable (:default-value ("reporting/ScaffoldAccuracy.cc")) nil [8544 8601])
+            ("PatcherCottage_SOURCES" variable (:default-value ("paths/PatcherCottage.cc")) nil [8601 8650])
+            ("MergeNeighborhoods2_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [8650 8698])
+            ("FastbMerge_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [8698 8733])
+            ("ApplyAssemblyEdits_SOURCES" variable (:default-value ("paths/ApplyAssemblyEdits.cc")) nil [8733 8790])
+            ("FillFragments_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [8790 8828])
+            ("MemHogger_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [8828 8866])
+            ("TrivialSupersFromContigs_SOURCES" variable (:default-value ("util/TrivialSupersFromContigs.cc")) nil [8866 8934])
+            ("ApplyGapPatches_SOURCES" variable (:default-value ("paths/ApplyGapPatches.cc")) nil [8934 8985])
+            ("ScaffoldGraphToGnuplot_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [8985 9032])
+            ("QualbStats_SOURCES" variable (:default-value ("util/QualbStats.cc")) nil [9032 9072])
+            ("LocalizeReadsLG_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [9072 9116])
+            ("UnibaseCopyNumber3_SOURCES" variable (:default-value ("paths/UnibaseCopyNumber3.cc")) nil [9116 9173])
+            ("PathsToLocs_SOURCES" variable (:default-value ("paths/simulation/PathsToLocs.cc")) nil [9173 9227])
+            ("CleanLongReadPatches_SOURCES" variable (:default-value ("paths/CleanLongReadPatches.cc")) nil [9227 9288])
+            ("SplitUnibases_SOURCES" variable (:default-value ("split/SplitUnibases.cc")) nil [9288 9335])
+            ("MemMonitor_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [9335 9370])
+            ("UnipatherBig_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [9370 9411])
+            ("PatcherCottage_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [9411 9450])
+            ("AllPathsReport_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [9450 9493])
+            ("AlignReads_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [9493 9528])
+            ("MakeRcDb_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [9528 9561])
+            ("MakeScaffoldsLG_SOURCES" variable (:default-value ("paths/MakeScaffoldsLG.cc")) nil [9561 9612])
+            ("RebuildAssemblyFiles_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [9612 9661])
+            ("BreakUnlinkedAssisted_SOURCES" variable (:default-value ("paths/assisted/BreakUnlinkedAssisted.cc")) nil [9661 9733])
+            ("SelectSeeds_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [9733 9769])
+            ("FindErrors_SOURCES" variable (:default-value ("paths/FindErrors.cc")) nil [9769 9810])
+            ("ChangeLibraryStats_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [9810 9853])
+            ("RemoveDodgyReads_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [9853 9898])
+            ("LocalizeReadsLG_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [9898 9938])
+            ("GenomeToPaths_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [9938 9980])
+            ("LongReadConsensus_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [9980 10026])
+            ("ShaveUnipathGraph_SOURCES" variable (:default-value ("paths/ShaveUnipathGraph.cc")) nil [10026 10081])
+            ("BigMap_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [10081 10116])
+            ("MakeScaffoldsLG_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [10116 10156])
+            ("AlignUnibasesToRef_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [10156 10199])
+            ("GenomeReadLocsLG_SOURCES" variable (:default-value ("paths/GenomeReadLocsLG.cc")) nil [10199 10252])
+            ("EvalScaffolds_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [10252 10290])
+            ("ErrorCorrectJump_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [10290 10335])
+            ("RemodelGaps_SOURCES" variable (:default-value ("paths/RemodelGaps.cc")) nil [10335 10378])
+            ("FastbQualbTrimReverse_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [10378 10424])
+            ("ScaffoldLayout_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [10424 10467])
+            ("FastqToFastbQualb_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [10467 10509])
+            ("MakeRcDb_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [10509 10546])
+            ("RemoveDodgyReads_SOURCES" variable (:default-value ("fix_input/RemoveDodgyReads.cc")) nil [10546 10603])
+            ("AssemblyAccuracy_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [10603 10648])
+            ("PostPatcherBuildJoins_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [10648 10694])
+            ("AlignPairsToFasta_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [10694 10740])
+            ("ReadTrack_SOURCES" variable (:default-value ("util/ReadTrack.cc")) nil [10740 10778])
+            ("LongReadsToUnipaths_SOURCES" variable (:default-value ("paths/LongReadsToUnipaths.cc")) nil [10778 10837])
+            ("KmerSpectrum_SOURCES" variable (:default-value ("kmers/KmerSpectrum.cc")) nil [10837 10882])
+            ("SamplePairedReadStats_SOURCES" variable (:default-value ("paths/SamplePairedReadStats.cc")) nil [10882 10945])
+            ("PickTheRightBranch_SOURCES" variable (:default-value ("paths/PickTheRightBranch.cc")) nil [10945 11002])
+            ("ValidateReadLengths_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [11002 11050])
+            ("EvalUnipathLinkGraphs_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [11050 11100])
+            ("ReplacePairsStats_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [11100 11146])
+            ("FastbQualbTrimReverse_SOURCES" variable (:default-value ("util/FastbQualbTrimReverse.cc")) nil [11146 11208])
+            ("FixAssemblyBaseErrors_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [11208 11258])
+            ("UnibaseCopyNumber3_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [11258 11301])
+            ("SuperbStats_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [11301 11337])
+            ("EvaluateGaps_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [11337 11374])
+            ("PostPatcher_SOURCES" variable (:default-value ("paths/PostPatcher.cc")) nil [11374 11417])
+            ("Fasta2Fastb_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [11417 11457])
+            ("LongReadUnipathPatcher_SOURCES" variable (:default-value ("paths/LongReadUnipathPatcher.cc")) nil [11457 11522])
+            ("LibCoverage_SOURCES" variable (:default-value ("paths/LibCoverage.cc")) nil [11522 11565])
+            ("MergeContigsOnReference_SOURCES" variable (:default-value ("paths/MergeContigsOnReference.cc")) nil [11565 11632])
+            ("RecoverPunchTandem_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [11632 11675])
+            ("CleanCorrectedReads_SOURCES" variable (:default-value ("paths/CleanCorrectedReads.cc")) nil [11675 11734])
+            ("UnipathPatcher_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [11734 11773])
+            ("MakeLookupTable_SOURCES" variable (:default-value ("lookup/MakeLookupTable.cc")) nil [11773 11825])
+            ("AlignReads_SOURCES" variable (:default-value ("paths/AlignReads.cc")) nil [11825 11866])
+            ("SplitReadsByLibrary_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [11866 11910])
+            ("PrepareGenome_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [11910 11948])
+            ("UnipathLocsLG_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [11948 11990])
+            ("DisplayLocs_SOURCES" variable (:default-value ("paths/probe/DisplayLocs.cc")) nil [11990 12039])
+            ("TrueUnipathCoverage_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [12039 12083])
+            ("Fastb_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [12083 12117])
+            ("BigMap_SOURCES" variable (:default-value ("paths/BigMap.cc")) nil [12117 12150])
+            ("CacheReadsMerge_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [12150 12194])
+            ("LittleHelpsBig_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [12194 12233])
+            ("CloseUnipathGaps_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [12233 12278])
+            ("Happening_SOURCES" variable (:default-value ("util/Happening.cc")) nil [12278 12316])
+            ("CleanLongReadPatches_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [12316 12361])
+            ("LongReadUnipathPatcher_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [12361 12408])
+            ("Fastb_SOURCES" variable (:default-value ("util/Fastb.cc")) nil [12408 12438])
+            ("ParallelSortTest_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [12438 12483])
+            ("BreakUnlinkedAssisted_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [12483 12529])
+            ("LittleHelpsBig_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [12529 12572])
+            ("BuildUnipathLinkGraphsLG_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [12572 12621])
+            ("Mixmer_SOURCES" variable (:default-value ("paths/Mixmer.cc")) nil [12621 12654])
+            ("AddUnibaseJunctions_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [12654 12698])
+            ("DumpHyper_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [12698 12736])
+            ("PatcherCottage_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [12736 12779])
+            ("ReadFilterByKmerFreq_SOURCES" variable (:default-value ("kmers/ReadFilterByKmerFreq.cc")) nil [12779 12840])
+            ("MemHogger_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [12840 12874])
+            ("Unipather_SOURCES" variable (:default-value ("paths/Unipather.cc")) nil [12874 12913])
+            ("AssemblyAccuracy_SOURCES" variable (:default-value ("reporting/AssemblyAccuracy.cc")) nil [12913 12970])
+            ("libAllPathsLG_a_SOURCES" variable (:default-value ("paths/long/CleanEfasta.cc" "CommonSemanticTypes.h" "paths/simulation/VCF.h" "paths/HyperBasevector.cc" "system/AllOfOutput.cc" "paths/ScaffoldGraphIntegrity.cc" "system/ErrNo.cc" "paths/ContigsManager.h" "math/Combinatorics.cc" "paths/long/ultra/MultipleAligner.h" "pairwise_aligners/Mutmer.cc" "paths/UnipathScaffold.h" "feudal/TrackingAllocator.h" "paths/reporting/EvalScaffoldsUtils.cc" "pairwise_aligners/AlignFromMutmers.h" "paths/AlignReadsOnUnibases.h" "paths/EvalUtils.cc" "paths/Jumpster.h" "VecInserts.h" "Floatvector.cc" "paths/OffsetDistributionInterface.h" "system/SpinLockedData.h" "system/Parallel.h" "feudal/Mempool.cc" "paths/long/SupportedHyperBasevector4.cc" "paths/CorrectPatch.cc" "graph/FindCells.h" "Basevector.cc" "VecOverlap.cc" "paths/HKPMerger.cc" "reporting/PerfStat.cc" "TrimsFile.h" "paths/FindUnipathSeedsLG.cc" "pairwise_aligners/AffineRefiner.cc" "paths/ExtendUnipathSeqs.cc" "paths/SimpleWalk.h" "fastg/FastgGraph.cc" "paths/long/SupportedHyperBasevector8.h" "paths/HyperKmerPath.h" "system/ParsedArgs.cc" "VecInserts.cc" "feudal/FeudalFileWriter.cc" "paths/long/RefTraceControl.cc" "paths/Jumpster.cc" "lookup/PerfectLookup.h" "TrimsFile.cc" "lookup/PerfectLookup.cc" "paths/AddSuperReads.cc" "paths/long/VariantFilters.h" "paths/long/SupportedHyperBasevector3.h" "AnnotatedContig.h" "paths/reporting/CGapStats.h" "paths/IdentifyCircularScaffolds.h" "Badness.h" "sort_kmers/SortKmersD.h" "feudal/TrackingAllocator.cc" "paths/PseudoUnipatherLib.cc" "paths/PseudoUnipatherLib.h" "lookup/FirstLookupPerfect.h" "pairwise_aligners/AffineRefiner.h" "Basevector.h" "lookup/LookAlign.h" "math/Permutation.h" "paths/long/RefTrace.cc" "paths/SimpleLoop.h" "paths/long/LongProtoTools.h" "paths/MuxSearchResult.h" "dna/CanonicalForm.h" "paths/UnibaseCopyNumber2Core.h" "paths/SaveScaffoldGraph.h" "random/Bernoulli.h" "InsertEnds.h" "math/Array.cc" "graph/Digraph.cc" "paths/long/SupportedHyperBasevector5.h" "system/file/FileReader.cc" "Equiv.cc" "lookup/FirstLookup.cc" "efasta/AmbiguityScore.h" "system/file/TempFile.h" "feudal/SerfVec.h" "IndexedAlignmentPlusVector.cc" "paths/reporting/CLinkBundle.cc" "lookup/PerfectCount.cc" "FetchReads.h" "sort_kmers/SortKmersB.h" "system/ThreadsafeIO.h" "ContigEvent.h" "SupersHandler.cc" "paths/MergeReadSetsCore.h" "paths/ScaffoldGraphIntegrity.h" "paths/long/ultra/ConsensusScoreModel.h" "paths/HyperBasevector.h" "paths/long/SupportedHyperBasevector7.h" "paths/reporting/CBundle.h" "AnAssemblyClass.h" "PrintAlignment.h" "lookup/LookAlign.cc" "paths/CorrectPatch.h" "paths/CSublink.cc" "paths/ImproperMerge.h" "paths/long/SupportedHyperBasevector2.cc" "paths/PatcherCottageCore.cc" "kmers/KmerShape.h" "system/ID.h" "paths/LongReadUnipathPatcherUtils.cc" "paths/CorrectLongReadsTools2.h" "graphics/Eps.cc" "paths/long/CreateGenome.h" "Quality.cc" "math/Hash.h" "paths/RunAllPathsCommon.h" "math/Arith.h" "system/RunTime.h" "system/file/FileWriter.cc" "paths/UnipathFixerTools.h" "paths/long/EvalCorrected.h" "lookup/LookupTabBuilder.cc" "paths/CommonPatherCore.h" "ShortVector.h" "Bitvector.h" "math/Functions.h" "paths/RemodelGapTools.h" "paths/CorrectLongReadsTools2.cc" "paths/CAltFasta.h" "paths/long/AssessBestAlignCore.h" "paths/AssemblyCleanupTools.h" "feudal/Generic.h" "paths/MuxSearchPolicy.cc" "LocsHandlerLG.h" "paths/BigMapDot.cc" "Misc.cc" "random/RNGen.h" "util/Logger.cc" "AnAssemblyClass.cc" "feudal/Mempool.h" "paths/UnibaseCopyNumber3Core.cc" "pairwise_aligners/AlignTwoBasevectors.cc" "paths/UnipathSeqBuilder.cc" "system/file/FileReader.h" "paths/RemoveDuplicateAligns.cc" "Loader.h" "paths/LongReadTools.cc" "paths/FindUnipathSeedsLG.h" "paths/GetHomes.cc" "paths/UnibaseCopyNumber3LowerCN.h" "paths/HKPMerger.h" "graphics/Color.cc" "sort_kmers/SortKmersB.cc" "kmers/SortKmers.cc" "paths/FindErrorsCore.h" "math/HoInterval.h" "paths/reporting/ReportWalkingRatesCore.cc" "feudal/FeudalFileReader.h" "system/ThreadsafeIO.cc" "random/Shuffle.cc" "reporting/ScaffoldAccuracyCore.cc" "paths/long/CleanEfasta.h" "system/Assert.cc" "feudal/IsSizeT.h" "Floatvector.h" "kmers/KMer.h" "FastaConverter.cc" "Charvector.h" "random/NormalRandom.cc" "paths/long/LongProtoTools.cc" "paths/RunAllPathsCommonRules.h" "HashSimple.h" "Vec.h" "lookup/ImperfectLookup.h" "system/file/File.cc" "paths/HyperEfasta.cc" "graph/CGraphMass.h" "paths/long/SupportedHyperBasevector4.h" "paths/ContigsManager.cc" "system/SysConf.cc" "system/UseGDB.h" "VecOverlap.h" "paths/SeqOnHyper.cc" "PackAlign.h" "pairwise_aligners/MakeAlignsStatic.cc" "paths/long/SupportedHyperBasevector6.cc" "paths/GetHomes.h" "system/file/SymLink.cc" "paths/CloseUnipathGapsCore.h" "kmers/ReadPatherDefs.h" "paths/SaveScaffoldGraph.cc" "FastaFileset.cc" "paths/long/KmerCount.h" "paths/HyperKmerPath.cc" "paths/OrientedKmerPathId.h" "math/PowerOf2.cc" "math/Calculator.cc" "kmers/KmerParcels.cc" "paths/CorrectLongReads1.h" "paths/long/Variants.cc" "paths/UnibaseCopyNumber3LowerCN.cc" "paths/CSublink.h" "Qualvector.h" "util/ReadTracker.cc" "pairwise_aligners/AlignFromMutmersAndSW.h" "paths/AlignAndMerge.h" "paths/MuxWalkGraph.h" "TokenizeString.cc" "kmers/kmer_parcels/KmerParcelsBuilder.cc" "ReadPairing.h" "Quality.h" "feudal/QualNibbleVec.h" "system/file/Directory.h" "system/Crash.cc" "ScoreAlignment.h" "paths/long/SupportedHyperBasevector7.cc" "kmers/naif_kmer/LockedBlocks.h" "paths/Useq.cc" "feudal/FieldVec.h" "lookup/QueryLookupTableCore.cc" "random/NormalDistribution.h" "kmers/KmerSpectrumCore.h" "paths/ReadHBVs.h" "paths/KmerPath.h" "FindGaps.cc" "paths/FixSomeIndelsUtils.cc" "efasta/EfastaTools.h" "kmers/KmerParcelsTools.h" "MainTools.h" "kmers/KmerShape.cc" "graph/CGraphMass.cc" "IteratorRange.h" "math/Matrix.h" "polymorphism/Edit.h" "paths/UnipathScaffold.cc" "math/Arith.cc" "pairwise_aligners/ClusterAligner.cc" "kmers/KmerParcels.h" "BasevectorTools.cc" "system/WorklistUtils.h" "feudal/MasterVec.h" "util/FastaParser.h" "lookup/LookupTableBuilder.h" "util/Fastq.h" "paths/UnibaseCopyNumberCommon.h" "paths/GapSkip.cc" "BlockAlign.h" "VecAlignmentPlus.cc" "paths/UnibaseCopyNumber2Core.cc" "paths/long/Friends.h" "graphics/Eps.h" "paths/MuxSearchAgent.cc" "paths/BigMapTools.h" "paths/PolymorphismRemoveCore.h" "lookup/Hit.h" "paths/PairDistCorrection.cc" "system/Exit.cc" "VecString.h" "BasevectorTools.h" "feudal/HugeBVec.h" "layout/ContigActualloc.cc" "paths/PolymorphismRemoveCore.cc" "lookup/FirstLookupFinderECJ.cc" "paths/SuckScaffolds.cc" "system/StaticAssert.h" "PackAlign.cc" "paths/MuxWalkGraph.cc" "kmers/GetNextKmerPair.h" "Fastavector.h" "paths/ReadsToPathsCoreX.cc" "paths/UnibaseUtils.h" "sort_kmers/SortKmersA.cc" "paths/long/DigraphFromWords.cc" "paths/GapSkip.h" "system/RunTime.cc" "paths/long/SupportedHyperBasevector3.cc" "kmers/naif_kmer/Kmers.h" "paths/Periodic.h" "paths/PdfEntry.h" "paths/SeedNeighborhoodAnnex.cc" "paths/IdentifyCircularScaffolds.cc" "ParseSet.cc" "paths/AssemblyEdit.h" "efasta/AmbiguityScore.cc" "paths/FragmentFiller.h" "FastaFileset.h" "paths/long/Fix64_6.h" "graphics/Whiteboard.h" "feudal/OuterVecDefs.h" "pairwise_aligners/CRefMerger.h" "fastg/FastgTools.h" "paths/Alignlet.h" "ParseRange.h" "paths/CommonPatherCore.cc" "kmers/naif_kmer/KmerFunctions.h" "feudal/OuterVec.h" "paths/ImproperMerge.cc" "pairwise_aligners/AlignConsecutiveContigs.h" "agp/AgpMods.h" "paths/simulation/GenomePlacement.h" "paths/MergeReadSetsCore.cc" "paths/SeedNeighborhood.cc" "util/TextTable.cc" "kmers/kmer_parcels/KmerParcelAccessor.h" "dna/Bases.h" "util/FastaParser.cc" "lookup/AlignCollector.h" "kmers/SupportedKmerShapes.h" "paths/PseudoUnipathGapCloser.h" "pairwise_aligners/MakeAlignsMethod.h" "SeqInterval.h" "LinkTimestamp.cc" "random/NormalDistribution.cc" "system/MemTracker.cc" "SemanticTypes.h" "lookup/FlowAlignSummary.h" "TokenizeString.h" "paths/PathEmbedding.cc" "Qualvector.cc" "feudal/FeudalControlBlock.h" "paths/FlattenHyperFastavector.cc" "lookup/FirstLookupPerfect.cc" "paths/ReadHBVs.cc" "paths/InsertWalker.cc" "IndexedAlignmentPlusVector.h" "paths/long/ReadOriginTracker.cc" "IntPairVec.cc" "paths/FindClosures.cc" "system/Worklist.h" "paths/reporting/COffset.h" "paths/reporting/CSuperLinks.cc" "paths/Mux.h" "paths/MapAligns.cc" "FastaNameParser.h" "paths/long/ultra/Prefab.cc" "pairwise_aligners/SmithWatBandedA.h" "system/Assert.h" "PrettyPrintTable.h" "paths/FindClosures.h" "MemberOf.cc" "paths/MuxSearchPolicy.h" "Equiv.h" "system/System.cc" "paths/long/fosmid/Fosmids.h" "paths/long/KmerAlign.h" "FindGaps.h" "paths/SubsumptionList.cc" "system/file/File.h" "MemberOf.h" "feudal/BitVec.h" "system/TraceVal.h" "paths/InternalMergeImpl.cc" "system/SysConf.h" "kmers/naif_kmer/KernelKmerSpectralizer.h" "lookup/HitReceiver.h" "FastIfstream.h" "util/RefDesc.cc" "paths/UnipathSeq.h" "paths/KmerPathDatabase.h" "random/MersenneTwister.h" "paths/long/ultra/ThreadedBlocks.cc" "system/SharedMem.h" "paths/long/RefTraceTools.cc" "feudal/Algorithms.h" "paths/BreakBadScaffolds.cc" "pairwise_aligners/MatchList.cc" "agp/AgpMods.cc" "paths/RunAllPathsCommon.cc" "feudal/BinaryStream.cc" "paths/long/ReadOriginTracker.h" "paths/KmerAlignSet.cc" "feudal/BaseVec.cc" "FastaFilestreamPreview.h" "paths/Uniseq.cc" "Map.h" "system/MemTracker.h" "paths/InternalMerge.h" "system/AllOfOutput.h" "feudal/BinaryStream.h" "paths/long/Variants.h" "FeudalMimic.h" "paths/ReadLoc.h" "feudal/FeudalString.h" "ReadLocationLG.h" "random/MersenneTwister.cc" "system/file/SymLink.h" "paths/SimpleLoop.cc" "feudal/Iterator.h" "paths/SInsertion.h" "paths/UnipathSeqDatabase.h" "paths/KmerPath.cc" "FastaConverter.h" "math/IntFrequencies.h" "paths/long/VariantCallTools.cc" "paths/CorrectLongReadsTools.cc" "pairwise_aligners/ClusterAligner.h" "lookup/FirstLookupFilterECJ.h" "FastaNameParser.cc" "SeqInterval.cc" "paths/long/ultra/Prefab.h" "kmers/KMerContext.h" "math/MatrixTemplate.h" "lookup/AlignCollector.cc" "paths/long/SupportedHyperBasevector2.h" "paths/long/LargeKDispatcher.h" "util/RunCommand.h" "paths/FixScaffoldsCore.cc" "paths/MuxGraph.h" "paths/KmerPathMuxSearcher.h" "Overlap.cc" "feudal/Generic.cc" "paths/VerifyGapLengths.cc" "ReadLocation.h" "paths/long/Friends.cc" "FetchReadsAmb.cc" "polymorphism/DumbCall.h" "paths/Uniseq.h" "system/ErrNo.h" "TaskTimer.h" "util/RunCommand.cc" "ScoreAlignment.cc" "paths/AssemblyCleanupTools.cc" "paths/long/SupportedHyperBasevector.cc" "kmers/kmer_parcels/KmerParcelsStatistics.h" "system/WorklistN.h" "paths/simulation/Placement.cc" "paths/reporting/EvalScaffoldsUtils.h" "polymorphism/DumbCall.cc" "paths/long/EvalCorrected.cc" "paths/BuildScaffoldGraph.cc" "paths/KmerBaseBroker.cc" "random/Bernoulli.cc" "paths/PairDistModels.h" "lookup/LookupTools.h" "feudal/IncrementalWriter.h" "math/NStatsTools.cc" "random/Shuffle.h" "system/System.h" "paths/PdfEntry.cc" "math/PowerOf2.h" "paths/long/SupportedHyperBasevector6.h" "util/MD5.h" "math/Permutation.cc" "system/ParsedArgs.h" "FastaVerifier.cc" "paths/UnibaseUtils.cc" "feudal/SmallVec.h" "paths/OffsetDistributionInterface.cc" "polymorphism/Edit.cc" "paths/PairedPair.cc" "STLExtensions.h" "Overlap.h" "paths/ProcessGap.cc" "graph/FindCells.cc" "paths/ExtendUnipathSeqs.h" "paths/HyperFastavector.h" "system/Exit.h" "pairwise_aligners/MutmerGraph.h" "math/Combinatorics.h" "paths/long/VariantPostProcess.h" "dna/Bases.cc" "lookup/FirstLookupFinderECJ.h" "paths/KmerPathMuxSearcher.cc" "util/SearchFastb2Core.h" "feudal/FeudalControlBlock.cc" "paths/MuxSearchState.h" "paths/EvalUtils.h" "paths/BuildScaffoldGraph.h" "system/SortInPlace.h" "system/HTMLUtils.cc" "paths/long/RefTrace.h" "PairsHandler.cc" "math/HoInterval.cc" "pairwise_aligners/PerfectAlignerLG.h" "kmers/SortKmers.h" "kmers/naif_kmer/NaifKmerizer.h" "paths/PostPatcherBridgeGap.cc" "lookup/SAM.h" "ParseSet.h" "MergeReads2.cc" "ParseRange.cc" "paths/SuperBaseVector.h" "feudal/FeudalTools.h" "paths/Unipath.h" "paths/long/ultra/MultipleAligner.cc" "agp/AgpFile.cc" "paths/KmerAlignSet.h" "system/WorklistMP.cc" "Vec.cc" "PairsManager.cc" "pairwise_aligners/Mutmer.h" "kmers/naif_kmer/KernelUniqueFinder.h" "paths/NegativeGapValidator.h" "feudal/BaseVec.h" "paths/long/ultra/MakeBlocks.cc" "Loader.cc" "paths/MakeAlignsPathsParallelX.h" "paths/OffsetDistribution.h" "random/NormalRandom.h" "random/RandomSampleFromStream.h" "Superb.h" "system/SysIncludes.h" "sort_kmers/SortKmersC.h" "paths/SeqOnHyper.h" "paths/FindErrorsCore.cc" "feudal/FieldVec.cc" "paths/AlignReadsOnUnibases.cc" "paths/reporting/ReftigUtils.h" "system/ParsedArgsAuto.h" "paths/long/RefTraceControl.h" "VecAlignmentPlus.h" "pairwise_aligners/MakeAlignsMethod.cc" "SupersHandler.h" "paths/SeedNeighborhood.h" "math/IntDistribution.h" "feudal/HashSet.h" "paths/FixSomeIndelsUtils.h" "paths/AddSuperReads.h" "paths/CorrectLongReadsTools.h" "fastg/FastgGraph.h" "lookup/FirstLookupFilter.h" "paths/long/RefTraceTools.h" "paths/PairDistFitting.h" "system/ProcBuf.h" "paths/RemodelGapTools.cc" "paths/CAltFasta.cc" "paths/AlignAndMerge.cc" "util/ReadTracker.h" "ReadPairing.cc" "paths/long/OverlapReads.h" "system/HostName.h" "util/ScaffoldContigsOnRef.h" "sort_kmers/SortKmersA.h" "pairwise_aligners/PerfectAlignerLG.cc" "CoreTools.h" "StdMethods.h" "pairwise_aligners/SmithWatFree.h" "FetchReads.cc" "ReadLocationUtil.h" "system/TraceVal.cc" "paths/KmerBaseBroker.h" "util/NullOStream.h" "AnAssemblyClassUtil.cc" "lookup/FirstLookAlign.h" "paths/CloseUnipathGapsCore.cc" "ParallelVecUtilities.h" "paths/InsertWalker.h" "system/file/TempFile.cc" "paths/MakeScaffoldsCloseBest.h" "system/HostName.cc" "ContigEvent.cc" "paths/DigraphVTripleIIB.h" "feudal/VirtualMasterVec.h" "paths/CorrectPatch3.cc" "pairwise_aligners/SmithWatAffine.h" "paths/VerifyGapLengths.h" "system/HTMLUtils.h" "feudal/CharString.h" "paths/Periodic.cc" "FastIfstream.cc" "util/Logger.h" "lookup/QueryLookupTableCore.h" "IntPairVec.h" "Superb.cc" "paths/SuckScaffolds.h" "util/ScaffoldContigsOnRef.cc" "kmers/KmerRecord.cc" "kmers/naif_kmer/KmerFreqAffixesMap.h" "lookup/LookupTable.cc" "paths/ReadLoc.cc" "paths/long/Heuristics.h" "FastaFilestream.h" "kmers/KmerSpectrumCore.cc" "paths/reporting/ReportWalkingRatesCore.h" "system/LockedData.h" "agp/AgpFile.h" "paths/long/EvalByReads.cc" "paths/long/AssessBestAlignCore.cc" "math/IntDistribution.cc" "paths/SquashHyperFastavector.cc" "PairsManager.h" "random/RNGen.cc" "paths/ScaffoldsUtils.cc" "paths/simulation/Placement.h" "solid/Solid.h" "kmers/KmerSpectra.h" "Set.h" "paths/RegapSupers.h" "paths/PseudoUnipathGapCloser.cc" "paths/MakeScaffoldsCloseBest.cc" "feudal/FeudalFileWriter.h" "paths/MapAligns.h" "paths/SubsumptionList.h" "feudal/QualNibbleVec.cc" "HashSimple.cc" "paths/MapUnibasesToContigs.h" "util/TextTable.h" "paths/LongReadTools.h" "paths/reporting/CSuperLinks.h" "paths/ReadsToPathsCoreX.h" "paths/long/fosmid/Fosmids.cc" "paths/BigMapTools.cc" "paths/FragmentFillerDefs.h" "graph/GraphAlgorithms.h" "paths/CorrectPatch3.h" "paths/long/ultra/GetFriendsAndAlignsInitial.cc" "lookup/LookupTable.h" "Fastavector.cc" "paths/CLinFastavec.h" "paths/OffsetDistribution.cc" "paths/PostPatcherBridgeGap.h" "graph/DotUtils.h" "kmers/ReadPather.h" "ReadLocation.cc" "Alignment.h" "system/UseGDB.cc" "BriefAlign.h" "VecUtilities.h" "lookup/KmerIndex.h" "paths/long/VariantCallTools.h" "lookup/ImperfectLookup.cc" "lookup/LookupTabBuilder.h" "feudal/FeudalFileReader.cc" "paths/MakeScaffoldsScoredBest.cc" "paths/SInsertion.cc" "lookup/LookupTableBuilder.cc" "ReadLocationUtil.cc" "paths/FixScaffoldsCore.h" "VecString.cc" "paths/BreakBadScaffolds.h" "system/MiscUtil.h" "paths/Useq.h" "paths/LinkingPairs.h" "paths/LongReadUnipathPatcherUtils.h" "paths/ProcessGap.h" "paths/UnipathNhoodLG.cc" "paths/ReadFillRecord.h" "paths/MapUnibasesToContigs.cc" "math/Array.h" "system/ProcBuf.cc" "paths/SimpleWalk.cc" "paths/long/VariantPostProcess.cc" "graph/DigraphTemplate.h" "LinkTime.h" "pairwise_aligners/BalancedMutmerGraph.h" "paths/LongReadPatchOptimizer.h" "paths/KmerPathInterval.cc" "Block.h" "paths/UnipathSeq.cc" "kmers/kmer_parcels/KmerParcelsClasses.h" "system/WorklistMP.h" "paths/long/SupportedHyperBasevector.h" "paths/long/ultra/FounderAlignment.cc" "Charvector.cc" "Compare.h" "kmers/SortKmersImpl.h" "kmers/GetNextKmerPair.cc" "paths/simulation/VCF.cc" "kmers/naif_kmer/KmerMap.h" "FastaFilestream.cc" "paths/long/KmerAlign.cc" "LocsHandlerLG.cc" "paths/UnipathNhoodLG.h" "AnAssemblyClassUtil.h" "paths/ReadFillDatabase.cc" "lookup/FirstLookup.h" "paths/Ulink.cc" "lookup/SAM.cc" "paths/Ulink.h" "lookup/FlowAlignSummary.cc" "paths/PairedPair.h" "PrettyPrintTable.cc" "paths/long/PairInfo.h" "PrintAlignment.cc" "paths/DigraphVTripleIIB.cc" "system/AlignmentCalculator.h" "CompressedSequence.cc" "paths/OffsetTracker.cc" "paths/long/ultra/MakeBlocks.h" "paths/reporting/CLinkBundle.h" "paths/SquashHyperFastavector.h" "paths/long/fosmid/FosmidPool.h" "ContigPair.h" "lookup/HitReceiver.cc" "sort_kmers/SortKmersD.cc" "kmers/naif_kmer/KernelPreCorrector.h" "paths/long/Logging.h" "paths/UnibaseCopyNumberCommon.cc" "pairwise_aligners/ProcessFrequentKmers.cc" "kmers/naif_kmer/KernelKmerStorer.h" "pairwise_aligners/AlignConsecutiveContigs.cc" "paths/reporting/ReftigUtils.cc" "system/Types.h" "pairwise_aligners/AlignTwoBasevectors.h" "paths/long/MakeKmerStuff.h" "paths/PairDistModels.cc" "paths/long/SupportedHyperBasevector5.cc" "pairwise_aligners/MaxMutmerFromMer.cc" "reporting/ScaffoldAccuracyCore.h" "paths/MakeScaffoldsScoredBest.h" "math/Functions.cc" "feudal/ChunkDumper.h" "paths/PatcherCottageCore.h" "solid/Solid.cc" "paths/long/DiscovarTools.h" "paths/UnibaseCopyNumber3Core.h" "random/Random.h" "paths/ReadFillDatabase.h" "fastg/FastgTools.cc" "ParallelVecUtilities.cc" "paths/long/VariantFilters.cc" "random/SequenceEntropy.cc" "paths/InternalMergeImpl.h" "system/Utils.cc" "feudal/BitVec.cc" "kmers/kmer_parcels/KmerParcelsBuilder.h" "feudal/Oob.cc" "paths/RunAllPathsCommonRules.cc" "pairwise_aligners/SmithWatBandedA.cc" "pairwise_aligners/SmithWatAffine.cc" "BinsVec.h" "Alignment.cc" "pairwise_aligners/MakeAlignsToCompare.h" "system/Utils.h" "paths/FlattenHyperFastavector.h" "lookup/Hit.cc" "feudal/CharString.cc" "pairwise_aligners/ProcessFrequentKmers.h" "CompressedSequence.h" "paths/GetNexts.h" "system/MiscUtil.cc" "math/NStatsTools.h" "paths/OffsetTracker.h" "paths/MuxSearchAgent.h" "pairwise_aligners/SmithWatFree.cc" "MergeReads2.h" "util/SearchFastb2Core.cc" "paths/KmerPathInterval.h" "paths/ScaffoldsUtils.h" "FetchReadsAmb.h" "paths/UnipathNhoodCommon.h" "system/file/FileWriter.h" "pairwise_aligners/MatchList.h" "FastaFilestreamPreview.cc" "paths/long/SupportedHyperBasevector8.cc" "paths/long/ultra/GetFriendsAndAlignsInitial.h" "feudal/Oob.h" "paths/long/ultra/FounderAlignment.h" "kmers/KmerSpectra.cc" "math/Matrix.cc" "pairwise_aligners/MakeAlignsStatic.h" "pairwise_aligners/CRefMerger.cc" "PredictionStats.h" "String.h" "paths/HyperFastavector.cc" "reporting/PerfStat.h" "paths/MuxToPath.h" "system/WorklistUtils.cc" "paths/UnipathFixerTools.cc" "paths/HyperKmerPathCleaner.h" "kmers/ReadPather.cc" "paths/long/OverlapReads.cc" "paths/long/DigraphFromWords.h" "SuperMap.h" "paths/SeedNeighborhoodAnnex.h" "paths/InternalMerge.cc" "util/MD5.cc" "paths/AlignHyperKmerPath.h" "paths/Unipath.cc" "paths/NegativeGapValidator.cc" "paths/long/KmerCount.cc" "paths/long/VariantReadSupport.cc" "paths/UnipathNhoodCommon.cc" "Intvector.cc" "pairwise_aligners/AlignFromMutmersAndSW.cc" "layout/ContigActualloc.h" "system/Types.cc" "feudal/BinaryStreamTraits.h" "lookup/FirstLookupFinder.cc" "lookup/LookupTab.cc" "paths/CLinFastavec.cc" "BlockAlign.cc" "feudal/FeudalStringDefs.h" "paths/Sepdev.cc" "FastaVerifier.h" "graph/DotUtils.cc" "efasta/EfastaTools.cc" "AnnotatedContig.cc" "Intvector.h" "kmers/KmerRecord.h" "BinsVec.cc" "lookup/LookupTab.h" "lookup/LibInfo.h" "paths/MakeAlignsPathsParallelX.cc" "paths/long/ultra/ConsensusScoreModel.cc" "feudal/FieldVecDefs.h" "kmers/KMerContext.cc" "math/Calculator.h" "paths/long/LargeKDispatcher.cc" "SuperMap.cc" "paths/reporting/COffset.cc" "graph/Digraph.h" "Misc.h" "paths/LongReadPatchOptimizer.cc" "paths/LinkingPairs.cc" "paths/long/ultra/ThreadedBlocks.h" "random/SequenceEntropy.h" "util/RefDesc.h" "paths/RemoveDuplicateAligns.h" "feudal/SmallVecDefs.h" "paths/MuxToPath.cc" "paths/Sepdev.h" "paths/AlignHyperKmerPath.cc" "paths/RegapSupers.cc" "sort_kmers/SortKmersC.cc" "math/MapIntInt.h" "kmers/naif_kmer/KernelErrorFinder.h" "paths/PairDistCorrection.h" "paths/long/DiscovarTools.cc" "graphics/Color.h" "paths/PathEmbedding.h" "util/Fastq.cc" "pairwise_aligners/MaxMutmerFromMer.h" "paths/long/EvalByReads.h" "system/Parallel.cc" "feudal/FeudalTools.cc" "kmers/naif_kmer/KernelReadKmerFreqFinder.h" "lookup/FirstLookupFinder.h" "paths/HyperEfasta.h" "paths/long/VariantReadSupport.h" "math/IntFunction.h" "paths/BigMapDot.h" "paths/long/fosmid/FosmidPool.cc" "system/file/Directory.cc" "paths/KmerPathDatabase.cc" "PairsHandler.h" "paths/MuxGraph.cc" "paths/CorrectLongReads1.cc" "feudal/Atomic.h" "lookup/PerfectCount.h" "system/Crash.h" "paths/HyperKmerPathCleaner.cc" "paths/UnipathSeqBuilder.h" "paths/long/CreateGenome.cc")) nil [12970 32322])
+            ("TrivialSupersFromContigs_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [32322 32375])
+            ("Fastb2Fasta_SOURCES" variable (:default-value ("util/Fastb2Fasta.cc")) nil [32375 32417])
+            ("Unipather_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [32417 32451])
+            ("DumpHyper_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [32451 32485])
+            ("MemMonitor_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [32485 32524])
+            ("SuperbStats_SOURCES" variable (:default-value ("reporting/SuperbStats.cc")) nil [32524 32571])
+            ("CreateLookupTab_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [32571 32615])
+            ("CacheReadsMerge_SOURCES" variable (:default-value ("allpaths_cache/CacheReadsMerge.cc")) nil [32615 32675])
+            ("FilterPrunedReads_SOURCES" variable (:default-value ("paths/FilterPrunedReads.cc")) nil [32675 32730])
+            ("Jumpomatic_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [32730 32769])
+            ("MergeNeighborhoods2_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [32769 32813])
+            ("SelectSeeds_SOURCES" variable (:default-value ("paths/SelectSeeds.cc")) nil [32813 32856])
+            ("QueryLookupTable_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [32856 32901])
+            ("HyperToReftigs_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [32901 32940])
+            ("SamplePairedReadDistributions_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [32940 32998])
+            ("CommonPather_SOURCES" variable (:default-value ("paths/CommonPather.cc")) nil [32998 33043])
+            ("AssemblyAccuracy_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [33043 33084])
+            ("Happening_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [33084 33118])
+            ("ValidateReadLengths_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [33118 33162])
+            ("FixLocal_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [33162 33195])
+            ("RunAllPathsLG_SOURCES" variable (:default-value ("paths/RunAllPathsLG.cc")) nil [33195 33242])
+            ("ParallelSortTest_SOURCES" variable (:default-value ("system/ParallelSortTest.cc")) nil [33242 33296])
+            ("MapSeeds_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [33296 33333])
+            ("FastqToFastbQualb_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [33333 33379])
+            ("FastbMerge_SOURCES" variable (:default-value ("util/FastbMerge.cc")) nil [33379 33419])
+            ("TagCircularScaffolds_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [33419 33464])
+            ("UnipathPatcher_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [33464 33507])
+            ("UnipathEval_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [33507 33543])
+            ("FillFragments_SOURCES" variable (:default-value ("paths/FillFragments.cc")) nil [33543 33590])
+            ("DumpHyper_SOURCES" variable (:default-value ("paths/DumpHyper.cc")) nil [33590 33629])
+            ("CleanAssembly_SOURCES" variable (:default-value ("paths/CleanAssembly.cc")) nil [33629 33676])
+            ("MergePairedFastbs_SOURCES" variable (:default-value ("util/MergePairedFastbs.cc")) nil [33676 33730])
+            ("ReadFilterByKmerFreq_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [33730 33779])
+            ("PunchTandemHoles_SOURCES" variable (:default-value ("paths/PunchTandemHoles.cc")) nil [33779 33832])
+            ("AllPathsReport_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [33832 33871])
+            ("FindUnipathGaps_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [33871 33911])
+            ("FastbQualbTrimReverse_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [33911 33961])
+            ("ShaveUnipathGraph_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [33961 34007])
+            ("MapSeeds_SOURCES" variable (:default-value ("paths/reporting/MapSeeds.cc")) nil [34007 34054])
+            ("LongReadUnipathPatcher_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [34054 34105])
+            ("EfastaToFasta_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [34105 34143])
+            ("DisplayPairs_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [34143 34180])
+            ("RemoveDodgyReads_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [34180 34221])
+            ("SuperbsToAgp_SOURCES" variable (:default-value ("agp/SuperbsToAgp.cc")) nil [34221 34264])
+            ("RebuildAssemblyFiles_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [34264 34309])
+            ("UnipatherBig_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [34309 34346])
+            ("ReplacePairsStats_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [34346 34388])
+            ("ScaffoldAccuracy_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [34388 34429])
+            ("UnipathBabyStats_SOURCES" variable (:default-value ("paths/reporting/UnipathBabyStats.cc")) nil [34429 34492])
+            ("LibCoverage_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [34492 34532])
+            ("SelectSeeds_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [34532 34572])
+            ("dist_bin_SCRIPTS" variable (:default-value ("allpaths_cache/PrepareAllPathsInputs.pl" "util/HelpMe.pl" "allpaths_cache/naifdb-test.pl" "paths/HaploidifyStatsPlot.pl" "reporting/ParseMemMonitorOutput.pl" "allpaths_cache/QualsStatsAddToCache.pl" "allpaths_cache/ConvertToFastbQualb.pl" "PerlUtils.pm" "allpaths_cache/CacheToReads.pl" "allpaths_cache/CacheLibs.pl" "allpaths_cache/CacheGroups.pl" "allpaths_cache/CacheToAllPathsInputs.pl" "paths/ErrorCorrectReads.pl" "ArachneArgs.pm" "allpaths_cache/PicardToCache.pl" "allpaths_cache/OldPicardCacheToCache.pl" "allpaths_cache/AllPathsCache.pm" "reporting/CompileAssemblyReport.pl" "util/QualbStatsPlot.pl" "PerlRunTime.pm" "allpaths_cache/NaifDB.pm" "kmers/KmerSpectrumPlot.pl")) nil [34572 35229])
+            ("UnibaseCopyNumber3_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [35229 35276])
+            ("PrepareGenome_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [35276 35318])
+            ("DisplayLibraryStats_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [35318 35366])
+            ("LongReadsToUnipaths_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [35366 35414])
+            ("FastaToEfasta_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [35414 35452])
+            ("PostPatcher_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [35452 35488])
+            ("MergePairedFastbs_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [35488 35530])
+            ("QualbStats_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [35530 35565])
+            ("EvaluateCorrectedPairs_SOURCES" variable (:default-value ("paths/EvaluateCorrectedPairs.cc")) nil [35565 35630])
+            ("FixAssemblyBaseErrors_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [35630 35676])
+            ("FastbQualbToFastq_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [35676 35722])
+            ("ScaffoldContigsOnReference_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [35722 35777])
+            ("EfastaToFasta_SOURCES" variable (:default-value ("efasta/EfastaToFasta.cc")) nil [35777 35825])
+            ("Quala2Qualb_SOURCES" variable (:default-value ("util/Quala2Qualb.cc")) nil [35825 35867])
+            ("PostPatcher_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [35867 35907])
+            ("AgpToAllPaths_SOURCES" variable (:default-value ("agp/AgpToAllPaths.cc")) nil [35907 35952])
+            ("ApplyAssemblyEdits_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [35952 35999])
+            ("Fasta2Fastb_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [35999 36035])
+            ("PunchTandemHoles_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [36035 36076])
+            ("KPatch_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [36076 36111])
+            ("PrepareGenome_SOURCES" variable (:default-value ("paths/simulation/PrepareGenome.cc")) nil [36111 36169])
+            ("AlignUnibasesToRef_SOURCES" variable (:default-value ("paths/reporting/AlignUnibasesToRef.cc")) nil [36169 36236])
+            ("AlignPairsToFasta_SOURCES" variable (:default-value ("paths/AlignPairsToFasta.cc")) nil [36236 36291])
+            ("AlignPairsToFasta_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [36291 36333])
+            ("UnipatherBig_SOURCES" variable (:default-value ("paths/UnipatherBig.cc")) nil [36333 36378])
+            ("FixSomeIndels_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [36378 36416])
+            ("AssemblyCoverage_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [36416 36461])
+            ("EvalScaffolds_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [36461 36503])
+            ("AllPathsReport_SOURCES" variable (:default-value ("paths/reporting/AllPathsReport.cc")) nil [36503 36562])
+            ("KPatch_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [36562 36593])
+            ("FakeQualb_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [36593 36631])
+            ("ValidateReadLengths_SOURCES" variable (:default-value ("util/ValidateReadLengths.cc")) nil [36631 36689])
+            ("SuperbsToAgp_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [36689 36726])
+            ("BigMap_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [36726 36757])
+            ("RecoverPunchTandem_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [36757 36804])
+            ("MergeNeighborhoods3_SOURCES" variable (:default-value ("paths/MergeNeighborhoods3.cc")) nil [36804 36863])
+            ("ConnectScaffolds_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [36863 36908])
+            ("ShortQueryLookup_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [36908 36953])
+            ("BreakUnlinkedAssisted_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [36953 37003])
+            ("DisplayLocs_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [37003 37039])
+            ("AssemblyCoverage_SOURCES" variable (:default-value ("reporting/AssemblyCoverage.cc")) nil [37039 37096])
+            ("MergeContigsOnReference_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [37096 37148])
+            ("LibCoverage_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [37148 37184])
+            ("CorrectLongReads_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [37184 37229])
+            ("CleanCorrectedReads_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [37229 37277])
+            ("DisplayPairs_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [37277 37318])
+            ("SplitReadsByLibrary_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [37318 37366])
+            ("RecoverUnipaths_SOURCES" variable (:default-value ("paths/RecoverUnipaths.cc")) nil [37366 37417])
+            ("FlattenHKP_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [37417 37452])
+            ("FlattenHKP_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [37452 37491])
+            ("SamplePairedReadDistributions_SOURCES" variable (:default-value ("paths/SamplePairedReadDistributions.cc")) nil [37491 37570])
+            ("EvaluateCorrectedPairs_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [37570 37617])
+            ("ReadTrack_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [37617 37651])
+            ("BuildUnipathLinkGraphsLG_SOURCES" variable (:default-value ("paths/BuildUnipathLinkGraphsLG.cc")) nil [37651 37720])
+            ("EvaluateGaps_SOURCES" variable (:default-value ("reporting/EvaluateGaps.cc")) nil [37720 37769])
+            ("ChangeLibraryStats_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [37769 37816])
+            ("PickTheRightBranch_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [37816 37863])
+            ("ReadFilterByKmerFreq_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [37863 37908])
+            ("MergeNeighborhoods1_SOURCES" variable (:default-value ("paths/MergeNeighborhoods1.cc")) nil [37908 37967])
+            ("GenomeReadLocsLG_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [37967 38008])
+            ("PunchTandemHoles_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [38008 38053])
+            ("MergeNeighborhoods3_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [38053 38101])
+            ("LongReadConsensus_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [38101 38143])
+            ("FastqToFastbQualb_SOURCES" variable (:default-value ("util/FastqToFastbQualb.cc")) nil [38143 38197])
+            ("CacheReadsMerge_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [38197 38237])
+            ("FakeQualb_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [38237 38271])
+            ("FindUnipathGaps_SOURCES" variable (:default-value ("paths/FindUnipathGaps.cc")) nil [38271 38322])
+            ("AssemblyCoverage_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [38322 38363])
+            ("QualbStats_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [38363 38402])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [38402 38426])
+            ("LongReadConsensus_SOURCES" variable (:default-value ("paths/LongReadConsensus.cc")) nil [38426 38481])
+            ("AddUnibaseJunctions_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [38481 38529])
+            ("PairsFake_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [38529 38563])
+            ("Happening_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [38563 38601])
+            ("MergePairedFastbs_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [38601 38647])
+            ("KmerSpectrum_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [38647 38684])
+            ("ValidateAllPathsInputs_SOURCES" variable (:default-value ("paths/ValidateAllPathsInputs.cc")) nil [38684 38749])
+            ("RemoveHighCNAligns_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [38749 38796])
+            ("MergeReadSets_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [38796 38838])
+            ("FillFragments_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [38838 38880])
+            ("Qualb2Quala_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [38880 38920])
+            ("ScaffoldGraphToGnuplot_SOURCES" variable (:default-value ("paths/reporting/ScaffoldGraphToGnuplot.cc")) nil [38920 38995])
+            ("Quala2Qualb_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [38995 39031])
+            ("CommonPather_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [39031 39068])
+            ("CloseUnipathGaps_SOURCES" variable (:default-value ("paths/CloseUnipathGaps.cc")) nil [39068 39121])
+            ("SuperbStats_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [39121 39161])
+            ("ApplyGapPatches_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [39161 39201])
+            ("GenerateMapUnibasesToContigs_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [39201 39254])
+            ("SamplePairedReadStats_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [39254 39300])
+            ("Qualb2Quala_SOURCES" variable (:default-value ("util/Qualb2Quala.cc")) nil [39300 39342])
+            ("UniquifyAligns2_SOURCES" variable (:default-value ("lookup/UniquifyAligns2.cc")) nil [39342 39394])
+            ("SamplePairedReadDistributions_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [39394 39448])
+            ("RemoveHighCNAligns_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [39448 39491])
+            ("SelectRandomPairs_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [39491 39537])
+            ("Mixmer_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [39537 39568])
+            ("FixSomeIndels_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [39568 39610])
+            ("QueryLookupTable_SOURCES" variable (:default-value ("lookup/QueryLookupTable.cc")) nil [39610 39664])
+            ("ConnectScaffolds_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [39664 39705])
+            ("TrueUnipathCoverage_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [39705 39753])
+            ("ApplyGapPatches_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [39753 39797])
+            ("ParallelSortTest_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [39797 39838])
+            ("LocalizeReadsLG_SOURCES" variable (:default-value ("paths/LocalizeReadsLG.cc")) nil [39838 39889])
+            ("Jumpomatic_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [39889 39924])
+            ("CleanCorrectedReads_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [39924 39968])
+            ("MergeContigsOnReference_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [39968 40016])
+            ("FilterPrunedReads_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [40016 40058])
+            ("EvaluateCorrectedPairs_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [40058 40109])
+            ("TrueUnipathCoverage_SOURCES" variable (:default-value ("paths/simulation/TrueUnipathCoverage.cc")) nil [40109 40179])
+            ("Fastb2Fasta_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [40179 40215])
+            ("SimpleGapCloser_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [40215 40259])
+            ("UnipathPatcher_SOURCES" variable (:default-value ("paths/UnipathPatcher.cc")) nil [40259 40308])
+            ("DisplayPairs_SOURCES" variable (:default-value ("util/DisplayPairs.cc")) nil [40308 40352])
+            ("ScaffoldContigsOnReference_LDADD" variable (:default-value ("libAllPathsLG.a")) nil [40352 40403])
+            ("FixPrecompute_LDFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [40403 40445])
+            ("FixSomeIndels_SOURCES" variable (:default-value ("paths/FixSomeIndels.cc")) nil [40445 40492]))          
+    :file "Makefile.am"
+    :pointmax 40492
+    :fsize 40491
+    :lastmodtime '(21475 10806 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "FastaFilestream.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("FASTAFILESTREAM_H" variable (:constant-flag t) nil [597 614])
+            ("FastaFilestreamPreview.h" include nil nil [616 651])
+            ("FastaConverter.h" include nil nil [652 679])
+            ("FastaVerifier.h" include nil nil [680 706])
+            ("Charvector.h" include nil nil [707 730])
+            ("VecString.h" include nil nil [731 753])
+            ("functional" include (:system-flag t) nil [755 776])
+            ("FastaFilestream" type
+               (:template 
+                  ( ("vecT" type (:type "class") nil nil)
+                    ("seqT" type (:type "class") nil nil)
+                    ("converterT" type (:type "class") nil nil)
+                    ("verifierT" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [968 975])
+                    ("FastaFilestream" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [995 1018])
+                            ("name_parser" variable
+                               (:pointer 1
+                                :type ("FastaNameParser" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1024 1054]))                          
+                        :type ("FastaFilestream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [978 1055])
+                    ("FastaFilestream" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("original" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FastaFilestream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1076 1109]))                          
+                        :type ("FastaFilestream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1059 1110])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("original" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FastaFilestream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1142 1175]))                          
+                        :type ("FastaFilestream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1113 1176])
+                    ("FastaFilestream" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1180 1266])
+                    ("estimatedSize" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1311 1331])
+                    ("estimatedData" function
+                       (:prototype-flag t
+                        :type ("longlong" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1380 1405])
+                    ("verify" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1476 1490])
+                    ("getOnlyNames" function
+                       (:arguments 
+                          ( ("names" variable
+                               (:reference 1
+                                :type ("vecString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1710 1728]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1691 1764])
+                    ("parse" function
+                       (:arguments 
+                          ( ("names" variable
+                               (:reference 1
+                                :type ("vecString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1999 2016])
+                            ("sequences" variable
+                               (:reference 1
+                                :type ("vecT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2017 2034]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1987 2079])
+                    ("parseSubset" function
+                       (:arguments 
+                          ( ("indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2435 2459])
+                            ("names" variable
+                               (:reference 1
+                                :type ("vecString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2460 2477])
+                            ("sequences" variable
+                               (:reference 1
+                                :type ("vecT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2478 2495]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2417 2546])
+                    ("private" label nil (reparse-symbol classsubparts) [2549 2557])
+                    ("filename_" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2560 2577])
+                    ("preview_ptr_" variable
+                       (:pointer 1
+                        :type ("FastaFilestreamPreview" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2580 2617])
+                    ("parsed_" variable (:type "bool") (reparse-symbol classsubparts) [2620 2633])
+                    ("needs_pipe_" variable (:type "bool") (reparse-symbol classsubparts) [2636 2653])
+                    ("name_parser_" variable
+                       (:pointer 1
+                        :type ("FastaNameParser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2657 2687])
+                    ("preview_" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fasta_istream" variable
+                               (:pointer 1
+                                :type ("istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2708 2732]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2693 2733])
+                    ("parse_" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("names" variable
+                               (:reference 1
+                                :type ("vecString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3005 3022])
+                            ("p_sequences" variable
+                               (:pointer 1
+                                :type ("vecT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3023 3041])
+                            ("p_indices" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3042 3069]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2992 3070])
+                    ("getIstream_" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("istream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3074 3103])
+                    ("resetIstream_" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3126 3135])
+                            ("" variable (:type ("fasta_istream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3136 3151]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3106 3158])
+                    ("closeIstream_" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fasta_istream" variable
+                               (:pointer 1
+                                :type ("istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3181 3205]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3161 3212])
+                    ("getBasename_" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3243 3267]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3216 3274]))                  )
+                nil [862 3277])
+            ("FastaRawFilestream" type
+               (:typedef ("FastaFilestream" type
+                     (:template-specifier 
+                        ( ("VecCharVec" type nil nil nil)
+                          ("CharVec" type nil nil nil)
+                          ("FastaNullConverter" type nil nil nil)
+                          ("FastaNullVerifier" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "FastaFilestream"
+                :type "typedef")
+                nil [3280 3381])
+            ("FastaSequenceFilestream" type
+               (:typedef ("FastaFilestream" type
+                     (:template-specifier 
+                        ( ("veccompseq" type nil nil nil)
+                          ("CompressedSequence" type nil nil nil)
+                          ("FastaSequenceConverter" type nil nil nil)
+                          ("FastaSequenceVerifier" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "FastaFilestream"
+                :type "typedef")
+                nil [3383 3507])
+            ("FastaQualityFilestream" type
+               (:typedef ("FastaFilestream" type
+                     (:template-specifier 
+                        ( ("vecqualvector" type nil nil nil)
+                          ("qualvector" type nil nil nil)
+                          ("FastaQualityConverter" type nil nil nil)
+                          ("FastaQualityVerifier" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "FastaFilestream"
+                :type "typedef")
+                nil [3509 3625])
+            ("FastaFilestreamBuilder" type
+               (:template 
+                  ( ("filestreamT" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3731 3738])
+                    ("FastaFilestreamBuilder" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("name_parser" variable
+                               (:pointer 1
+                                :type ("FastaNameParser" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3765 3795]))                          
+                        :type ("FastaFilestreamBuilder" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3741 3831])
+                    ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3861 3884]))                          
+                        :type ("filestreamT" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3837 3944])
+                    ("private" label nil (reparse-symbol classsubparts) [3949 3957])
+                    ("name_parser_" variable
+                       (:pointer 1
+                        :type ("FastaNameParser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3960 3990]))                  
+                :superclasses 
+                  ( ("unary_function" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  )
+                nil [3629 3993])
+            ("FastaRawFilestreamBuilder" type
+               (:typedef ("FastaFilestreamBuilder" type
+                     (:template-specifier 
+                        ( ("FastaRawFilestream" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "FastaFilestreamBuilder"
+                :type "typedef")
+                nil [3996 4078])
+            ("FastaSequenceFilestreamBuilder" type
+               (:typedef ("FastaFilestreamBuilder" type
+                     (:template-specifier 
+                        ( ("FastaSequenceFilestream" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "FastaFilestreamBuilder"
+                :type "typedef")
+                nil [4079 4166])
+            ("FastaQualityFilestreamBuilder" type
+               (:typedef ("FastaFilestreamBuilder" type
+                     (:template-specifier 
+                        ( ("FastaQualityFilestream" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "FastaFilestreamBuilder"
+                :type "typedef")
+                nil [4167 4253]))          
+    :file "FastaFilestream.h"
+    :pointmax 4263
+    :fsize 4262
+    :lastmodtime '(21475 10806 0 0)
+    :unmatched-syntax '((punctuation 3134 . 3135))
+    :lexical-table 
+        '(("FASTAFILESTREAM_H")
+          )
+
+    )
+   (semanticdb-table "STLExtensions.h"
+    :file "STLExtensions.h"
+    :fsize 26949
+    :lastmodtime '(21475 10805 0 0)
+    )
+   (semanticdb-table "FastaFilestreamPreview.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("FASTAFILESTREAMPREVIEW_H" variable (:constant-flag t) nil [604 628])
+            ("Vec.h" include nil nil [630 646])
+            ("FastaFilestreamPreview" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [977 984])
+                    ("FastaFilestreamPreview" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("fasta_istream" variable
+                               (:reference 1
+                                :type ("istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1011 1034]))                          
+                        :type ("FastaFilestreamPreview" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [988 1035])
+                    ("getMaxSequenceSize" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("streampos" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1039 1076])
+                    ("getStartOffset" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("streampos" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1081 1114])
+                    ("getSequenceSizes" function
+                       (:prototype-flag t
+                        :type ("vec" type
+                             (:template-specifier 
+                                ( ("streampos" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1120 1155])
+                    ("private" label nil (reparse-symbol classsubparts) [1157 1165])
+                    ("start_offset_" variable (:type ("streampos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1169 1213])
+                    ("max_sequence_size_" variable (:type ("streampos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1169 1213])
+                    ("sequence_sizes_" variable (:type ("vec" type
+                         (:template-specifier 
+                            ( ("streampos" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1216 1247]))                  
+                :type "class")
+                nil [945 1251]))          
+    :file "FastaFilestreamPreview.h"
+    :pointmax 1260
+    :fsize 1259
+    :lastmodtime '(21475 10806 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FASTAFILESTREAMPREVIEW_H")
+          )
+
+    )
+   (semanticdb-table "FastaConverter.h"
+    :file "FastaConverter.h"
+    :fsize 1978
+    :lastmodtime '(21475 10806 0 0)
+    )
+   (semanticdb-table "FastaVerifier.h"
+    :file "FastaVerifier.h"
+    :fsize 1304
+    :lastmodtime '(21475 10806 0 0)
+    )
+   (semanticdb-table "Charvector.h"
+    :file "Charvector.h"
+    :fsize 1237
+    :lastmodtime '(21475 10806 0 0)
+    )
+   (semanticdb-table "VecString.h"
+    :file "VecString.h"
+    :fsize 739
+    :lastmodtime '(21475 10805 0 0)
+    )
+   (semanticdb-table "Vec.h"
+    :file "Vec.h"
+    :fsize 34027
+    :lastmodtime '(21475 10806 0 0)
+    )
+   (semanticdb-table "FastaFilestreamPreview.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FastaFilestreamPreview.h" include nil nil [563 598])
+            ("algorithm" include (:system-flag t) nil [600 620])
+            ("FastaFilestreamPreview" function
+               (:constructor-flag t
+                :parent "FastaFilestreamPreview"
+                :arguments 
+                  ( ("filestream" variable
+                       (:reference 1
+                        :type ("istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [669 689]))                  
+                :type ("FastaFilestreamPreview" type (:type "class") nil nil))
+                nil [622 4222])
+            ("getMaxSequenceSize" function
+               (:parent "FastaFilestreamPreview"
+                :constant-flag t
+                :type ("streampos" type (:type "class") nil nil))
+                nil [4224 4317])
+            ("getSequenceSizes" function
+               (:parent "FastaFilestreamPreview"
+                :type ("vec" type
+                     (:template-specifier 
+                        ( ("streampos" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4319 4407])
+            ("getStartOffset" function
+               (:parent "FastaFilestreamPreview"
+                :constant-flag t
+                :type ("streampos" type (:type "class") nil nil))
+                nil [4409 4493]))          
+    :file "FastaFilestreamPreview.cc"
+    :pointmax 4495
+    :fsize 4494
+    :lastmodtime '(21475 10806 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!allpathslg-50378!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

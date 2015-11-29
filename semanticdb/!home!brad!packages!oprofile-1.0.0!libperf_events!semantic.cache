@@ -1,0 +1,22 @@
+;; Object libperf_events/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libperf_events/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libabi" "-I" "${top_srcdir}/libutil" "-I" "${top_srcdir}/libutil++" "-I" "${top_srcdir}/libop" "-I" "${top_srcdir}/libdb" "-I" "${top_srcdir}/libperf_events" "-I" "${top_srcdir}/libpe_utils" "@PERF_EVENT_FLAGS@" "@OP_CPPFLAGS@")) nil [26 283])
+            ("AM_CXXFLAGS" variable (:default-value ("@OP_CXXFLAGS@")) nil [284 312])
+            ("noinst_LIBRARIES" variable (:default-value ("libperf_events.a")) nil [313 349])
+            ("libperf_events_a_SOURCES" variable (:default-value ("operf_utils.h" "operf_utils.cpp" "operf_event.h" "operf_counter.h" "operf_counter.cpp" "operf_process_info.h" "operf_process_info.cpp" "operf_kernel.cpp" "operf_kernel.h" "operf_mangling.cpp" "operf_mangling.h" "operf_sfile.cpp" "operf_sfile.h" "operf_stats.cpp" "operf_stats.h")) nil [349 672]))          
+    :file "Makefile.am"
+    :pointmax 679
+    :fsize 678
+    :lastmodtime '(21523 1457 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!libperf_events!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

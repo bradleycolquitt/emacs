@@ -1,0 +1,56 @@
+;; Object bed/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bed/"
+  :tables (list 
+   (semanticdb-table "windowBed.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 34])
+            ("os" include nil nil [35 44])
+            ("argparse" include nil nil [45 60])
+            ("pysam" include nil nil [61 73])
+            ("multiprocessing" include nil nil [74 116])
+            ("chrs" variable nil nil [118 127])
+            ("for" code nil nil [128 206])
+            ("windower" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [285 307])
+                            ("self" variable nil (reparse-symbol indented_block_body) [316 338])
+                            ("self" variable nil (reparse-symbol indented_block_body) [347 367])
+                            ("self" variable nil (reparse-symbol indented_block_body) [376 410])
+                            ("self" variable nil (reparse-symbol indented_block_body) [544 569])
+                            ("for" code nil (reparse-symbol indented_block_body) [578 632]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [244 248])
+                            ("bamfile" variable nil (reparse-symbol function_parameters) [250 257])
+                            ("outpath" variable nil (reparse-symbol function_parameters) [259 266])
+                            ("window" variable nil (reparse-symbol function_parameters) [268 274]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [231 632])
+                    ("window" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [652 656]))                          )
+                        (reparse-symbol indented_block_body) [641 835])
+                    ("window_core" function (:arguments 
+                      ( ("chr" variable nil (reparse-symbol function_parameters) [864 867])
+                        ("out_path" variable nil (reparse-symbol function_parameters) [869 877]))                      ) (reparse-symbol indented_block_body) [848 1471]))                  
+                :type "class")
+                nil [211 1471])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [1481 1485]))              ) nil [1472 1956])
+            ("if" code nil nil [1956 2001]))          
+    :file "windowBed.py"
+    :pointmax 2001
+    :fsize 2000
+    :lastmodtime '(21345 30662 696286 884000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!seqAnalysis!python!bed!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,1970 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("string" include (:system-flag t) nil [1 18])
+            ("iostream" include (:system-flag t) nil [19 38])
+            ("random" include (:system-flag t) nil [39 56])
+            ("sstream" include (:system-flag t) nil [57 75])
+            ("vector" include (:system-flag t) nil [76 93])
+            ("sys/stat.h" include (:system-flag t) nil [94 115])
+            ("getopt.h" include (:system-flag t) nil [116 135])
+            ("thread" include (:system-flag t) nil [136 154])
+            ("time.h" include (:system-flag t) nil [155 172])
+            ("cstdio" include (:system-flag t) nil [174 191])
+            ("zlib.h" include (:system-flag t) nil [193 210])
+            ("common.h" include nil nil [212 231])
+            ("ProcessReads.h" include nil nil [232 257])
+            ("KmerIndex.h" include nil nil [258 280])
+            ("Kmer.hpp" include nil nil [281 300])
+            ("MinCollector.h" include nil nil [301 326])
+            ("EMAlgorithm.h" include nil nil [327 351])
+            ("weights.h" include nil nil [352 372])
+            ("Inspect.h" include nil nil [373 393])
+            ("Bootstrap.h" include nil nil [394 416])
+            ("H5Writer.h" include nil nil [417 438])
+            ("ERROR_STR" variable (:constant-flag t) nil [492 501])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [512 532])
+            ("ParseOptionsIndex" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [558 567])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [568 580])
+                    ("opt" variable
+                       (:reference 1
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [581 601]))                  
+                :type "void")
+                nil [535 1399])
+            ("ParseOptionsInspect" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1426 1435])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1436 1448])
+                    ("opt" variable
+                       (:reference 1
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1449 1469]))                  
+                :type "void")
+                nil [1401 1496])
+            ("ParseOptionsEM" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1520 1529])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1530 1542])
+                    ("opt" variable
+                       (:reference 1
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1543 1563]))                  
+                :type "void")
+                nil [1500 3899])
+            ("ParseOptionsEMOnly" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3925 3934])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3935 3947])
+                    ("opt" variable
+                       (:reference 1
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3948 3968]))                  
+                :type "void")
+                nil [3901 5454])
+            ("ParseOptionsH5Dump" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5480 5489])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5490 5502])
+                    ("opt" variable
+                       (:reference 1
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5503 5523]))                  
+                :type "void")
+                nil [5456 6233])
+            ("CheckOptionsIndex" function
+               (:arguments 
+                  ( ("opt" variable
+                       (:reference 1
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6258 6278]))                  
+                :type "bool")
+                nil [6235 7163])
+            ("CheckOptionsEM" function
+               (:arguments 
+                  ( ("opt" variable
+                       (:reference 1
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7185 7205])
+                    ("emonly" variable (:type "bool") (reparse-symbol arg-sub-list) [7206 7219])
+                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7220 7226]))                  
+                :type "bool")
+                nil [7165 11161])
+            ("CheckOptionsInspect" function
+               (:arguments 
+                  ( ("opt" variable
+                       (:reference 1
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11189 11209]))                  
+                :type "bool")
+                nil [11164 11596])
+            ("CheckOptionsH5Dump" function
+               (:arguments 
+                  ( ("opt" variable
+                       (:reference 1
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11622 11642]))                  
+                :type "bool")
+                nil [11598 12969])
+            ("PrintCite" function (:type "void") nil [12971 13158])
+            ("PrintVersion" function (:type "void") nil [13160 13244])
+            ("usage" function (:type "void") nil [13246 13834])
+            ("usageIndex" function (:type "void") nil [13837 14348])
+            ("usageh5dump" function (:type "void") nil [14350 14699])
+            ("usageInspect" function (:type "void") nil [14701 14846])
+            ("usageEM" function
+               (:arguments 
+                  ( ("valid_input" variable (:type "bool") (reparse-symbol arg-sub-list) [14861 14879])
+                    ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14880 14885]))                  
+                :type "void")
+                nil [14848 16294])
+            ("usageEMOnly" function (:type "void") nil [16296 17098])
+            ("argv_to_string" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [17127 17136])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17137 17150]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [17100 17295])
+            ("get_local_time" function (:type ("std::string" type (:type "class") nil nil)) nil [17297 17534])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [17545 17554])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17555 17568]))                  
+                :type "int")
+                nil [17536 26458]))          
+    :file "main.cpp"
+    :pointmax 26233
+    :fsize 26353
+    :lastmodtime '(21938 57142 224918 89000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ERROR_STR" . ((string "\"Error:\"" 502 . 510)))
+          )
+
+    )
+   (semanticdb-table "kseq.h"
+    :file "kseq.h"
+    :fsize 8797
+    :lastmodtime '(21938 55830 584894 357000)
+    )
+   (semanticdb-table "common.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("KALLISTO_COMMON_H" variable (:constant-flag t) nil [35 52])
+            ("KALLISTO_VERSION" variable (:constant-flag t) nil [62 78])
+            ("string" include (:system-flag t) nil [91 108])
+            ("vector" include (:system-flag t) nil [109 126])
+            ("ProgramOptions" type
+               (:members 
+                  ( ("verbose" variable (:type "bool") (reparse-symbol classsubparts) [154 167])
+                    ("threads" variable (:type "int") (reparse-symbol classsubparts) [170 182])
+                    ("index" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [185 203])
+                    ("k" variable (:type "int") (reparse-symbol classsubparts) [206 212])
+                    ("iterations" variable (:type "int") (reparse-symbol classsubparts) [215 230])
+                    ("output" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [233 252])
+                    ("skip" variable (:type "int") (reparse-symbol classsubparts) [255 264])
+                    ("seed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [267 279])
+                    ("fld" variable (:type "double") (reparse-symbol classsubparts) [282 293])
+                    ("min_range" variable (:type "int") (reparse-symbol classsubparts) [296 310])
+                    ("bootstrap" variable (:type "int") (reparse-symbol classsubparts) [313 327])
+                    ("transfasta" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [330 366])
+                    ("files" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [369 400])
+                    ("plaintext" variable (:type "bool") (reparse-symbol classsubparts) [403 418])
+                    ("write_index" variable (:type "bool") (reparse-symbol classsubparts) [421 438])
+                    ("single_end" variable (:type "bool") (reparse-symbol classsubparts) [441 457])
+                    ("peek" variable (:type "bool") (reparse-symbol classsubparts) [460 470])
+                    ("bias" variable (:type "bool") (reparse-symbol classsubparts) [497 507])
+                    ("pseudobam" variable (:type "bool") (reparse-symbol classsubparts) [510 525])
+                    ("collect_reads" variable (:type "bool") (reparse-symbol classsubparts) [528 547])
+                    ("collect_reads" function
+                       (:arguments 
+                          ( ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [824 830]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [810 835]))                  
+                :type "struct")
+                nil [128 838])
+            ("pretty_num" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("num" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [863 874]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [840 875])
+            ("pretty_num" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [899 907]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [876 908]))          
+    :file "common.h"
+    :pointmax 895
+    :fsize 937
+    :lastmodtime '(21938 57219 592919 489000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("KALLISTO_COMMON_H")
+          ("KALLISTO_VERSION" . ((string "\"0.42.2.1\"" 79 . 89)))
+          )
+
+    )
+   (semanticdb-table "ProcessReads.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("KALLISTO_PROCESSREADS_H" variable (:constant-flag t) nil [41 64])
+            ("zlib.h" include (:system-flag t) nil [66 83])
+            ("kseq.h" include nil nil [84 101])
+            ("string" include (:system-flag t) nil [102 119])
+            ("vector" include (:system-flag t) nil [120 137])
+            ("unordered_map" include (:system-flag t) nil [138 162])
+            ("algorithm" include (:system-flag t) nil [163 183])
+            ("iostream" include (:system-flag t) nil [185 204])
+            ("fstream" include (:system-flag t) nil [205 223])
+            ("MinCollector.h" include nil nil [224 249])
+            ("common.h" include nil nil [251 270])
+            ("KSEQ_INIT_READY" variable (:constant-flag t) nil [304 319])
+            ("ProcessReads" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("index" variable
+                       (:reference 1
+                        :type ("KmerIndex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [373 390])
+                    ("opt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [391 417])
+                    ("tc" variable
+                       (:reference 1
+                        :type ("MinCollector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [418 435]))                  
+                :type "void")
+                nil [355 436]))          
+    :file "ProcessReads.h"
+    :pointmax 472
+    :fsize 471
+    :lastmodtime '(21938 55830 584894 357000)
+    :unmatched-syntax '((semantic-list 329 . 345) (symbol 320 . 329))
+    :lexical-table 
+        '(("KALLISTO_PROCESSREADS_H")
+          ("KSEQ_INIT_READY")
+          )
+
+    )
+   (semanticdb-table "KmerIndex.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("KALLISTO_KMERINDEX_H" variable (:constant-flag t) nil [38 58])
+            ("iostream" include (:system-flag t) nil [61 80])
+            ("fstream" include (:system-flag t) nil [81 99])
+            ("vector" include (:system-flag t) nil [100 117])
+            ("unordered_map" include (:system-flag t) nil [118 142])
+            ("stdint.h" include (:system-flag t) nil [143 162])
+            ("common.h" include nil nil [183 202])
+            ("Kmer.hpp" include nil nil [203 222])
+            ("KmerIterator.hpp" include nil nil [223 250])
+            ("KmerHashTable.h" include nil nil [252 278])
+            ("hash.hpp" include nil nil [280 299])
+            ("TRInfo" type
+               (:members 
+                  ( ("trid" variable (:type "int") (reparse-symbol classsubparts) [321 330])
+                    ("start" variable (:type "int") (reparse-symbol classsubparts) [333 343])
+                    ("stop" variable (:type "int") (reparse-symbol classsubparts) [346 355]))                  
+                :type "struct")
+                nil [303 383])
+            ("std::vector" variable (:type "int") nil [399 429])
+            ("SortedVectorHasher" type
+               (:members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [524 550]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [506 771]))                  
+                :type "struct")
+                nil [476 774])
+            ("KmerEntry" type
+               (:members 
+                  ( ("contig" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [797 812])
+                    ("_pos" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [831 845])
+                    ("contig_length" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [891 913])
+                    ("ec" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [916 927])
+                    ("KmerEntry" function
+                       (:constructor-flag t
+                        :type ("KmerEntry" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [931 1001])
+                    ("KmerEntry" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1014 1021])
+                            ("length" variable (:type "int") (reparse-symbol arg-sub-list) [1022 1033])
+                            ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [1034 1042])
+                            ("isFw" variable (:type "bool") (reparse-symbol arg-sub-list) [1043 1053]))                          
+                        :type ("KmerEntry" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1004 1130])
+                    ("getPos" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1134 1189])
+                    ("isFw" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1192 1252])
+                    ("setPos" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable (:type "int") (reparse-symbol arg-sub-list) [1274 1280]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1255 1329])
+                    ("setDir" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("_isFw" variable (:type "bool") (reparse-symbol arg-sub-list) [1351 1362]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1332 1421])
+                    ("getDist" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("fw" variable (:type "bool") (reparse-symbol arg-sub-list) [1443 1451]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1424 1574]))                  
+                :type "struct")
+                nil [776 1577])
+            ("Contig" type
+               (:members 
+                  ( ("id" variable (:type "int") (reparse-symbol classsubparts) [1597 1604])
+                    ("length" variable (:type "int") (reparse-symbol classsubparts) [1622 1633])
+                    ("seq" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1656 1672]))                  
+                :type "struct")
+                nil [1579 1687])
+            ("DBGraph" type
+               (:members 
+                  ( ("ecs" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1708 1729])
+                    ("contigs" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Contig" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1754 1782]))                  
+                :type "struct")
+                nil [1689 1870])
+            ("KmerIndex" type
+               (:members 
+                  ( ("KmerIndex" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("opt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ProgramOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1905 1931]))                          
+                        :type ("KmerIndex" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1895 2017])
+                    ("KmerIndex" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2021 2036])
+                    ("match" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2051 2065])
+                            ("l" variable (:type "int") (reparse-symbol arg-sub-list) [2066 2072])
+                            ("v" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2073 2109]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2040 2116])
+                    ("matchEnd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2133 2147])
+                            ("l" variable (:type "int") (reparse-symbol arg-sub-list) [2148 2154])
+                            ("v" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2155 2191])
+                            ("p" variable (:type "int") (reparse-symbol arg-sub-list) [2192 2198]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2119 2205])
+                    ("mapPair" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("s1" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2220 2235])
+                            ("l1" variable (:type "int") (reparse-symbol arg-sub-list) [2236 2243])
+                            ("s2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2244 2259])
+                            ("l2" variable (:type "int") (reparse-symbol arg-sub-list) [2260 2267])
+                            ("ec" variable (:type "int") (reparse-symbol arg-sub-list) [2268 2275]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2208 2282])
+                    ("intersect" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ec" variable (:type "int") (reparse-symbol arg-sub-list) [2312 2319])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2320 2346]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2285 2353])
+                    ("BuildTranscripts" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("opt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ProgramOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2382 2408]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2360 2409])
+                    ("BuildDeBruijnGraph" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("opt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ProgramOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2436 2462])
+                            ("seqs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2463 2500]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2412 2501])
+                    ("BuildEquivalenceClasses" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("opt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ProgramOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2533 2559])
+                            ("seqs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2560 2597]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2504 2598])
+                    ("FixSplitContigs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("opt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ProgramOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2622 2648])
+                            ("trinfos" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2649 2691]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2601 2692])
+                    ("fwStep" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("km" variable (:type ("Kmer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2707 2715])
+                            ("end" variable
+                               (:reference 1
+                                :type ("Kmer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2716 2726]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2695 2733])
+                    ("write" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("index_out" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2747 2776])
+                            ("writeKmerTable" variable (:type "bool") (reparse-symbol arg-sub-list) [2777 2798])
+                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2799 2804]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2736 2805])
+                    ("load" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("opt" variable
+                               (:reference 1
+                                :type ("ProgramOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2845 2865])
+                            ("loadKmerTable" variable (:type "bool") (reparse-symbol arg-sub-list) [2866 2886])
+                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2887 2892]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2835 2893])
+                    ("k" variable (:type "int") (reparse-symbol classsubparts) [2897 2903])
+                    ("num_trans" variable (:type "int") (reparse-symbol classsubparts) [2925 2939])
+                    ("skip" variable (:type "int") (reparse-symbol classsubparts) [2963 2972])
+                    ("kmap" variable (:type ("KmerHashTable" type
+                         (:template-specifier 
+                            ( ("KmerEntry" type nil nil nil)
+                              ("KmerHash" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2976 3016])
+                    ("ecmap" variable (:type ("EcMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3019 3031])
+                    ("dbGraph" variable (:type ("DBGraph" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3034 3050])
+                    ("ecmapinv" variable (:type ("std::unordered_map" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil)
+                              ("int" type nil nil nil)
+                              ("SortedVectorHasher" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3053 3124])
+                    ("INDEX_VERSION" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3127 3158])
+                    ("trans_lens_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3216 3245])
+                    ("target_names_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3249 3288]))                  
+                :type "struct")
+                nil [1874 3293]))          
+    :file "KmerIndex.h"
+    :pointmax 3333
+    :fsize 3947
+    :lastmodtime '(21938 55830 584894 357000)
+    :unmatched-syntax '((punctuation 2885 . 2886) (punctuation 2797 . 2798) (USING 385 . 390))
+    :lexical-table 
+        '(("KALLISTO_KMERINDEX_H")
+          )
+
+    )
+   (semanticdb-table "Kmer.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BFG_KMER_HPP" variable (:constant-flag t) nil [30 42])
+            ("MAX_KMER_SIZE" variable (:constant-flag t) nil [74 87])
+            ("stdio.h" include (:system-flag t) nil [99 117])
+            ("stdint.h" include (:system-flag t) nil [118 137])
+            ("cassert" include (:system-flag t) nil [138 156])
+            ("cstring" include (:system-flag t) nil [157 175])
+            ("string" include (:system-flag t) nil [176 193])
+            ("hash.hpp" include nil nil [195 214])
+            ("Kmer" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [513 520])
+                    ("Kmer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Kmer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [524 531])
+                    ("Kmer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Kmer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [539 553]))                          
+                        :type ("Kmer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [534 554])
+                    ("Kmer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [571 585]))                          
+                        :type ("Kmer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [566 586])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Kmer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [608 622]))                          
+                        :type ("Kmer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [592 623])
+                    ("set_empty" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [627 644])
+                    ("set_deleted" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [647 666])
+                    ("<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Kmer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [686 700]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [671 707])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Kmer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [840 854]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [817 1048])
+                    ("!=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Kmer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1068 1082]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1052 1120])
+                    ("set_kmer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1138 1152]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1124 1153])
+                    ("hash" function
+                       (:prototype-flag t
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1157 1179])
+                    ("twin" function
+                       (:prototype-flag t
+                        :type ("Kmer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1185 1203])
+                    ("rep" function
+                       (:prototype-flag t
+                        :type ("Kmer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1206 1223])
+                    ("getLink" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("index" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1240 1259]))                          
+                        :type ("Kmer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1227 1266])
+                    ("forwardBase" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("b" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1287 1300]))                          
+                        :type ("Kmer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1270 1307])
+                    ("backwardBase" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("b" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1329 1342]))                          
+                        :type ("Kmer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1311 1349])
+                    ("getBinary" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1353 1383])
+                    ("toString" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1401 1409]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1387 1416])
+                    ("toString" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1419 1448])
+                    ("set_k" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("_k" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1492 1508]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1474 1509])
+                    ("MAX_K" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1514 1562])
+                    ("k" variable
+                       (:typemodifiers ("static")
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1565 1587])
+                    ("private" label nil (reparse-symbol classsubparts) [1590 1598])
+                    ("k_bytes" variable
+                       (:typemodifiers ("static")
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1601 1629])
+                    ("k_longs" variable
+                       (:typemodifiers ("static")
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1632 1660])
+                    ("k_modmask" variable
+                       (:typemodifiers ("static")
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1663 1693])
+                    ("" type
+                       (:members 
+                          ( ("bytes" variable
+                               (:dereference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1734 1757])
+                            ("longs" variable
+                               (:dereference 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1762 1787]))                          
+                        :type "union")
+                        (reparse-symbol classsubparts) [1722 1792]))                  
+                :type "class")
+                nil [499 2011])
+            ("KmerHash" type
+               (:members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("km" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Kmer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2052 2067]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2034 2101]))                  
+                :type "struct")
+                nil [2014 2104]))          
+    :file "Kmer.hpp"
+    :pointmax 2130
+    :fsize 2129
+    :lastmodtime '(21938 55830 584894 357000)
+    :unmatched-syntax '((EXPLICIT 557 . 565))
+    :lexical-table 
+        '(("MAX_KMER_SIZE" . ((number "32" 88 . 90)))
+          ("BFG_KMER_HPP")
+          )
+
+    )
+   (semanticdb-table "MinCollector.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("KALLISTO_MINCOLLECTOR_H" variable (:constant-flag t) nil [41 64])
+            ("common.h" include nil nil [66 85])
+            ("iostream" include (:system-flag t) nil [86 105])
+            ("fstream" include (:system-flag t) nil [106 124])
+            ("sstream" include (:system-flag t) nil [125 143])
+            ("vector" include (:system-flag t) nil [144 161])
+            ("unordered_map" include (:system-flag t) nil [162 186])
+            ("KmerIndex.h" include nil nil [188 210])
+            ("MinCollector" type
+               (:members 
+                  ( ("MinCollector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("ind" variable
+                               (:reference 1
+                                :type ("KmerIndex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [251 266])
+                            ("opt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ProgramOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [267 293]))                          
+                        :type ("MinCollector" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [238 449])
+                    ("collect" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [465 507])
+                            ("v2" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [522 564])
+                            ("nonpaired" variable (:type "bool") (reparse-symbol arg-sub-list) [579 594])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [594 600]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [453 601])
+                    ("collectReads" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [622 664])
+                            ("v2" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [684 726])
+                            ("seq1_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [746 768])
+                            ("nonpaired" variable (:type "bool") (reparse-symbol arg-sub-list) [788 803])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [803 809]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [605 810])
+                    ("collect" function
+                       (:arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [826 868]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [814 959])
+                    ("increaseCount" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("u" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [980 1006]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [962 1007])
+                    ("decreaseCount" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ec" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1028 1041]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1010 1042])
+                    ("addReads" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("u" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1059 1085])
+                            ("seq1_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1101 1123]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1046 1124])
+                    ("intersectECs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1158 1199]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1128 1206])
+                    ("write" function
+                       (:arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1222 1238]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1211 1344])
+                    ("writeReads" function
+                       (:arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1364 1380]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1348 1548])
+                    ("loadCounts" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("opt" variable
+                               (:reference 1
+                                :type ("ProgramOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1568 1588]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1552 1589])
+                    ("countBias" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("s1" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1608 1623])
+                            ("s2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1624 1639])
+                            ("v1" variable
+                               (:constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1640 1687])
+                            ("v2" variable
+                               (:constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1688 1735])
+                            ("paired" variable (:type "bool") (reparse-symbol arg-sub-list) [1736 1748]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1593 1749])
+                    ("get_mean_frag_len" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [1753 1786])
+                    ("index" variable (:type ("KmerIndex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1795 1812])
+                    ("counts" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1815 1839])
+                    ("reads" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1842 1887])
+                    ("flens" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1890 1913])
+                    ("bias5" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1916 1946])
+                    ("bias3" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1916 1946])
+                    ("min_range" variable (:type "int") (reparse-symbol classsubparts) [1949 1963])
+                    ("k" variable (:type "int") (reparse-symbol classsubparts) [1966 1972])
+                    ("mean_fl" variable (:type "double") (reparse-symbol classsubparts) [1975 1990])
+                    ("has_mean_fl" variable (:type "bool") (reparse-symbol classsubparts) [1993 2010]))                  
+                :type "struct")
+                nil [213 2013])
+            ("intersect" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2042 2068])
+                    ("y" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2069 2095]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2015 2096])
+            ("hexamerToInt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2174 2188])
+                    ("revcomp" variable (:type "bool") (reparse-symbol arg-sub-list) [2189 2202]))                  
+                :type "int")
+                nil [2157 2203]))          
+    :file "MinCollector.h"
+    :pointmax 2173
+    :fsize 2239
+    :lastmodtime '(21938 56929 600914 242000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("KALLISTO_MINCOLLECTOR_H")
+          )
+
+    )
+   (semanticdb-table "EMAlgorithm.h"
+    :file "EMAlgorithm.h"
+    :fsize 8442
+    :lastmodtime '(21938 55830 584894 357000)
+    )
+   (semanticdb-table "weights.h"
+    :file "weights.h"
+    :fsize 620
+    :lastmodtime '(21938 55830 588894 357000)
+    )
+   (semanticdb-table "Inspect.h"
+    :file "Inspect.h"
+    :fsize 6058
+    :lastmodtime '(21938 55830 584894 357000)
+    )
+   (semanticdb-table "Bootstrap.h"
+    :file "Bootstrap.h"
+    :fsize 2245
+    :lastmodtime '(21938 55830 580894 357000)
+    )
+   (semanticdb-table "H5Writer.h"
+    :file "H5Writer.h"
+    :fsize 1631
+    :lastmodtime '(21938 55830 584894 357000)
+    )
+   (semanticdb-table "Multinomial.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("KALLISTO_MULTINOMIAL_H" variable (:constant-flag t) nil [40 62])
+            ("stdexcept" include (:system-flag t) nil [64 84])
+            ("random" include (:system-flag t) nil [85 102])
+            ("Multinomial" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [128 135])
+                    ("Multinomial" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("counts" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [156 187])
+                            ("seed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [188 201]))                          
+                        :type ("Multinomial" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [144 423])
+                    ("sample" function
+                       (:arguments 
+                          ( ("nsamp" variable (:type "int") (reparse-symbol arg-sub-list) [1015 1025]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [991 1327])
+                    ("sample" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1415 1483])
+                    ("n" function (:type "int") (reparse-symbol classsubparts) [1493 1521])
+                    ("counts" function
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1530 1582])
+                    ("private" label nil (reparse-symbol classsubparts) [1588 1596])
+                    ("counts_" variable
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1605 1637])
+                    ("gen_" variable (:type ("std::default_random_engine" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1646 1678])
+                    ("dd_" variable (:type ("std::discrete_distribution" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1687 1723])
+                    ("n_" variable (:type "int") (reparse-symbol classsubparts) [1732 1739]))                  
+                :type "class")
+                nil [104 1742]))          
+    :file "Multinomial.hpp"
+    :pointmax 1751
+    :fsize 1750
+    :lastmodtime '(21938 55830 584894 357000)
+    :unmatched-syntax '((number 202 . 204) (punctuation 200 . 201))
+    :lexical-table 
+        '(("KALLISTO_MULTINOMIAL_H")
+          )
+
+    )
+   (semanticdb-table "MinCollector.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("MinCollector.h" include nil nil [1 26])
+            ("algorithm" include (:system-flag t) nil [27 47])
+            ("intersect" function
+               (:arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [98 124])
+                    ("y" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [125 151]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [71 409])
+            ("collect" function
+               (:parent "MinCollector"
+                :arguments 
+                  ( ("v1" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [438 480])
+                    ("v2" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [507 549])
+                    ("nonpaired" variable (:type "bool") (reparse-symbol arg-sub-list) [550 565]))                  
+                :type "int")
+                nil [412 1163])
+            ("collectReads" function
+               (:parent "MinCollector"
+                :arguments 
+                  ( ("v1" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1196 1238])
+                    ("v2" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1265 1307])
+                    ("seq1_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1334 1356])
+                    ("nonpaired" variable (:type "bool") (reparse-symbol arg-sub-list) [1383 1398]))                  
+                :type "int")
+                nil [1165 2031])
+            ("increaseCount" function
+               (:parent "MinCollector"
+                :arguments 
+                  ( ("u" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2065 2091]))                  
+                :type "int")
+                nil [2033 2633])
+            ("decreaseCount" function
+               (:parent "MinCollector"
+                :arguments 
+                  ( ("ec" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2667 2680]))                  
+                :type "int")
+                nil [2635 2760])
+            ("addReads" function
+               (:parent "MinCollector"
+                :arguments 
+                  ( ("u" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2789 2815])
+                    ("seq1_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2843 2865]))                  
+                :type "int")
+                nil [2762 3545])
+            ("ComparePairsBySecond" type
+               (:members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("a" variable (:type ("std::pair" type
+                                 (:template-specifier 
+                                    ( ("KmerEntry" type nil nil nil)
+                                      ("int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3595 3622])
+                            ("b" variable (:type ("std::pair" type
+                                 (:template-specifier 
+                                    ( ("KmerEntry" type nil nil nil)
+                                      ("int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3623 3650]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3579 3688]))                  
+                :type "struct")
+                nil [3547 3691])
+            ("intersectECs" function
+               (:parent "MinCollector"
+                :arguments 
+                  ( ("v" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3737 3778]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3693 5106])
+            ("loadCounts" function
+               (:parent "MinCollector"
+                :arguments 
+                  ( ("opt" variable
+                       (:reference 1
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5139 5159]))                  
+                :type "void")
+                nil [5109 5973])
+            ("get_mean_frag_len" function
+               (:parent "MinCollector"
+                :type "double")
+                nil [5975 6734])
+            ("hexamerToInt" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6754 6768])
+                    ("revcomp" variable (:type "bool") (reparse-symbol arg-sub-list) [6769 6782]))                  
+                :type "int")
+                nil [6737 7353])
+            ("countBias" function
+               (:parent "MinCollector"
+                :arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7384 7399])
+                    ("s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7400 7415])
+                    ("v1" variable
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7416 7463])
+                    ("v2" variable
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7464 7511])
+                    ("paired" variable (:type "bool") (reparse-symbol arg-sub-list) [7512 7524]))                  
+                :type "bool")
+                nil [7355 9467]))          
+    :file "MinCollector.cpp"
+    :pointmax 8680
+    :fsize 9467
+    :lastmodtime '(21938 56500 872906 485000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hash.hpp"
+    :file "hash.hpp"
+    :fsize 706
+    :lastmodtime '(21938 55830 584894 357000)
+    )
+   (semanticdb-table "KmerIterator.hpp"
+    :file "KmerIterator.hpp"
+    :fsize 1105
+    :lastmodtime '(21938 55830 584894 357000)
+    )
+   (semanticdb-table "KmerHashTable.h"
+    :file "KmerHashTable.h"
+    :fsize 6484
+    :lastmodtime '(21938 55830 584894 357000)
+    )
+   (semanticdb-table "KmerIndex.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("KmerIndex.h" include nil nil [1 23])
+            ("algorithm" include (:system-flag t) nil [24 44])
+            ("random" include (:system-flag t) nil [45 62])
+            ("ctype.h" include (:system-flag t) nil [63 81])
+            ("zlib.h" include (:system-flag t) nil [83 100])
+            ("kseq.h" include nil nil [101 118])
+            ("KSEQ_INIT_READY" variable (:constant-flag t) nil [152 167])
+            ("isUnique" function
+               (:arguments 
+                  ( ("u" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [256 282]))                  
+                :type "bool")
+                nil [242 396])
+            ("unique" function
+               (:arguments 
+                  ( ("u" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [422 448]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [398 630])
+            ("Dna" function
+               (:constant-flag t
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [647 653]))                  
+                :type "char")
+                nil [632 716])
+            ("hamming" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [730 744])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [745 759]))                  
+                :type "int")
+                nil [718 878])
+            ("revcomp" function
+               (:arguments 
+                  ( ("s" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [900 920]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [880 1210])
+            ("BuildTranscripts" function
+               (:parent "KmerIndex"
+                :arguments 
+                  ( ("opt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1245 1271]))                  
+                :type "void")
+                nil [1212 3870])
+            ("BuildDeBruijnGraph" function
+               (:parent "KmerIndex"
+                :arguments 
+                  ( ("opt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3907 3933])
+                    ("seqs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3934 3971]))                  
+                :type "void")
+                nil [3872 6749])
+            ("BuildEquivalenceClasses" function
+               (:parent "KmerIndex"
+                :arguments 
+                  ( ("opt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6791 6817])
+                    ("seqs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6818 6855]))                  
+                :type "void")
+                nil [6751 11123])
+            ("FixSplitContigs" function
+               (:parent "KmerIndex"
+                :arguments 
+                  ( ("opt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11157 11183])
+                    ("trinfos" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11184 11226]))                  
+                :type "void")
+                nil [11125 14023])
+            ("write" function
+               (:parent "KmerIndex"
+                :arguments 
+                  ( ("index_out" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14050 14079])
+                    ("writeKmerTable" variable (:type "bool") (reparse-symbol arg-sub-list) [14080 14100]))                  
+                :type "void")
+                nil [14028 17023])
+            ("fwStep" function
+               (:parent "KmerIndex"
+                :arguments 
+                  ( ("km" variable (:type ("Kmer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17048 17056])
+                    ("end" variable
+                       (:reference 1
+                        :type ("Kmer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17057 17067]))                  
+                :type "bool")
+                nil [17025 17823])
+            ("load" function
+               (:parent "KmerIndex"
+                :arguments 
+                  ( ("opt" variable
+                       (:reference 1
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17846 17866])
+                    ("loadKmerTable" variable (:type "bool") (reparse-symbol arg-sub-list) [17867 17886]))                  
+                :type "void")
+                nil [17825 22369])
+            ("mapPair" function
+               (:parent "KmerIndex"
+                :arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22394 22409])
+                    ("l1" variable (:type "int") (reparse-symbol arg-sub-list) [22410 22417])
+                    ("s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22418 22433])
+                    ("l2" variable (:type "int") (reparse-symbol arg-sub-list) [22434 22441])
+                    ("ec" variable (:type "int") (reparse-symbol arg-sub-list) [22442 22449]))                  
+                :type "int")
+                nil [22371 23923])
+            ("match" function
+               (:parent "KmerIndex"
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24053 24067])
+                    ("l" variable (:type "int") (reparse-symbol arg-sub-list) [24068 24074])
+                    ("v" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24075 24111]))                  
+                :type "void")
+                nil [24031 28032])
+            ("matchEnd" function
+               (:parent "KmerIndex"
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28272 28286])
+                    ("l" variable (:type "int") (reparse-symbol arg-sub-list) [28287 28293])
+                    ("v" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28294 28329])
+                    ("maxPos" variable (:type "int") (reparse-symbol arg-sub-list) [28330 28341]))                  
+                :type "bool")
+                nil [28247 30542])
+            ("intersect" function
+               (:parent "KmerIndex"
+                :arguments 
+                  ( ("ec" variable (:type "int") (reparse-symbol arg-sub-list) [30831 30838])
+                    ("v" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30839 30865]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [30793 31364]))          
+    :file "KmerIndex.cpp"
+    :pointmax 31365
+    :fsize 38190
+    :lastmodtime '(21938 55830 584894 357000)
+    :unmatched-syntax '((semantic-list 177 . 193) (symbol 168 . 177))
+    :lexical-table 
+        '(("KSEQ_INIT_READY")
+          )
+
+    )
+   (semanticdb-table "ProcessReads.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ProcessReads.h" include nil nil [214 239])
+            ("kseq.h" include nil nil [240 257])
+            ("KSEQ_INIT_READY" variable (:constant-flag t) nil [290 305])
+            ("outputPseudoBam" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("index" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("KmerIndex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [361 384])
+                    ("ec" variable (:type "int") (reparse-symbol arg-sub-list) [385 392])
+                    ("seq1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("kseq_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [393 412])
+                    ("v1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [413 461])
+                    ("seq2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("kseq_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [462 481])
+                    ("v2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [482 530])
+                    ("paired" variable (:type "bool") (reparse-symbol arg-sub-list) [531 543]))                  
+                :type "void")
+                nil [340 544])
+            ("revseq" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("b1" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [557 566])
+                    ("b2" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [567 576])
+                    ("seq" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("kseq_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [577 595]))                  
+                :type "void")
+                nil [545 596])
+            ("getCIGARandSoftClip" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cig" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [622 632])
+                    ("strand" variable (:type "bool") (reparse-symbol arg-sub-list) [633 645])
+                    ("mapped" variable (:type "bool") (reparse-symbol arg-sub-list) [646 658])
+                    ("posread" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [659 672])
+                    ("posmate" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [673 686])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [687 698])
+                    ("targetlength" variable (:type "int") (reparse-symbol arg-sub-list) [699 716]))                  
+                :type "void")
+                nil [597 717])
+            ("printVector" function
+               (:arguments 
+                  ( ("v" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [736 762])
+                    ("o" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [763 779]))                  
+                :type "void")
+                nil [719 904])
+            ("isSubset" function
+               (:arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [920 946])
+                    ("y" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [947 973]))                  
+                :type "bool")
+                nil [906 1206])
+            ("ProcessReads" function
+               (:arguments 
+                  ( ("index" variable
+                       (:reference 1
+                        :type ("KmerIndex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1227 1244])
+                    ("opt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ProgramOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1245 1271])
+                    ("tc" variable
+                       (:reference 1
+                        :type ("MinCollector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1272 1289]))                  
+                :type "void")
+                nil [1209 8030])
+            ("outputPseudoBam" function
+               (:arguments 
+                  ( ("index" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("KmerIndex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8055 8078])
+                    ("ec" variable (:type "int") (reparse-symbol arg-sub-list) [8079 8086])
+                    ("seq1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("kseq_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8087 8106])
+                    ("v1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8107 8155])
+                    ("seq2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("kseq_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8156 8175])
+                    ("v2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8176 8224])
+                    ("paired" variable (:type "bool") (reparse-symbol arg-sub-list) [8225 8237]))                  
+                :type "void")
+                nil [8034 14347])
+            ("revseq" function
+               (:arguments 
+                  ( ("b1" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14362 14371])
+                    ("b2" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14372 14381])
+                    ("seq" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("kseq_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14382 14400]))                  
+                :type "void")
+                nil [14350 14821])
+            ("getCIGARandSoftClip" function
+               (:arguments 
+                  ( ("cig" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14850 14860])
+                    ("strand" variable (:type "bool") (reparse-symbol arg-sub-list) [14861 14873])
+                    ("mapped" variable (:type "bool") (reparse-symbol arg-sub-list) [14874 14886])
+                    ("posread" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14887 14900])
+                    ("posmate" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14901 14914])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [14915 14926])
+                    ("targetlength" variable (:type "int") (reparse-symbol arg-sub-list) [14927 14944]))                  
+                :type "void")
+                nil [14825 15537]))          
+    :file "ProcessReads.cpp"
+    :pointmax 15234
+    :fsize 15538
+    :lastmodtime '(21938 56819 320912 247000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("KSEQ_INIT_READY")
+          )
+
+    )
+   )
+  :file "!home!brad!third-party!kallisto!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

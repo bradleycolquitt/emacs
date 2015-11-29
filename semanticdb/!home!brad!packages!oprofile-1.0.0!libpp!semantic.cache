@@ -1,0 +1,22 @@
+;; Object libpp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libpp/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libop" "-I" "${top_srcdir}/libutil" "-I" "${top_srcdir}/libdb" "-I" "${top_srcdir}/libopt++" "-I" "${top_srcdir}/libutil++" "-I" "${top_srcdir}/libop++" "-I" "${top_srcdir}/libregex" "@OP_CPPFLAGS@")) nil [1 228])
+            ("AM_CXXFLAGS" variable (:default-value ("@OP_CXXFLAGS@")) nil [229 257])
+            ("noinst_LIBRARIES" variable (:default-value ("libpp.a")) nil [258 285])
+            ("libpp_a_SOURCES" variable (:default-value ("arrange_profiles.cpp" "arrange_profiles.h" "callgraph_container.h" "callgraph_container.cpp" "diff_container.cpp" "diff_container.h" "filename_spec.cpp" "filename_spec.h" "format_flags.h" "format_output.cpp" "format_output.h" "image_errors.h" "image_errors.cpp" "locate_images.cpp" "locate_images.h" "name_storage.cpp" "name_storage.h" "op_header.cpp" "op_header.h" "symbol.cpp" "symbol.h" "parse_filename.cpp" "parse_filename.h" "populate.h" "populate.cpp" "profile.cpp" "profile.h" "profile_container.cpp" "profile_container.h" "profile_spec.cpp" "profile_spec.h" "sample_container.cpp" "sample_container.h" "symbol_container.cpp" "symbol_container.h" "symbol_functors.cpp" "symbol_functors.h" "symbol_sort.cpp" "symbol_sort.h" "xml_utils.h" "xml_utils.cpp")) nil [285 1105]))          
+    :file "Makefile.am"
+    :pointmax 1106
+    :fsize 1105
+    :lastmodtime '(21523 1458 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!libpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

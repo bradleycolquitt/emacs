@@ -1,0 +1,34 @@
+;; Object make/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "make/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("GTEST_DIR" variable (:default-value ("..")) nil [623 638])
+            ("USER_DIR" variable (:default-value ("../samples")) nil [666 688])
+            ("CPPFLAGS" variable (:default-value ("-isystem" "$(GTEST_DIR)/include")) nil [860 902])
+            ("CXXFLAGS" variable (:default-value ("-g" "-Wall" "-Wextra" "-pthread")) nil [939 977])
+            ("TESTS" variable (:default-value ("sample1_unittest")) nil [1071 1096])
+            ("GTEST_HEADERS" variable (:default-value ("$(GTEST_DIR)/include/gtest/*.h" "$(GTEST_DIR)/include/gtest/internal/*.h")) nil [1173 1278])
+            ("all" function (:arguments ("$(TESTS)")) nil [1311 1326])
+            ("clean" function nil nil [1327 1376])
+            ("GTEST_SRCS_" variable (:default-value ("$(GTEST_DIR)/src/*.cc" "$(GTEST_DIR)/src/*.h" "$(GTEST_HEADERS)")) nil [1497 1571])
+            ("gtest-all.o" function (:arguments ("$(GTEST_SRCS_)")) nil [1821 1944])
+            ("gtest_main.o" function (:arguments ("$(GTEST_SRCS_)")) nil [1945 2070])
+            ("gtest.a" function (:arguments ("gtest-all.o")) nil [2071 2117])
+            ("gtest_main.a" function (:arguments ("gtest-all.o" "gtest_main.o")) nil [2118 2182])
+            ("sample1.o" function (:arguments ("$(USER_DIR)/sample1.cc" "$(USER_DIR)/sample1.h" "$(GTEST_HEADERS)")) nil [2326 2458])
+            ("sample1_unittest.o" function (:arguments ("$(USER_DIR)/sample1_unittest.cc" "$(USER_DIR)/sample1.h" "$(GTEST_HEADERS)")) nil [2459 2641])
+            ("sample1_unittest" function (:arguments ("sample1.o" "sample1_unittest.o" "gtest_main.a")) nil [2642 2754]))          
+    :file "Makefile"
+    :pointmax 2754
+    :fsize 2753
+    :lastmodtime '(21794 54513 950125 346000)
+    :unmatched-syntax '((shell-command 2704 . 2753) (bol 2703 . 2703))
+    )
+   )
+  :file "!home!brad!third-party!gtest-svn!make!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

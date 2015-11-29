@@ -1,0 +1,134 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Scaffolder.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("graphs.MyEdge" include nil nil [1 22])
+            ("graphs.MyGraph" include nil nil [23 45])
+            ("graphs.MyNode" include nil nil [46 67])
+            ("java.io.BufferedReader" include nil nil [69 99])
+            ("java.io.File" include nil nil [100 120])
+            ("java.io.FileWriter" include nil nil [121 147])
+            ("java.io.FilenameFilter" include nil nil [148 178])
+            ("java.io.InputStreamReader" include nil nil [179 212])
+            ("java.io.PrintWriter" include nil nil [213 240])
+            ("java.util.ArrayList" include nil nil [241 268])
+            ("java.util.Collections" include nil nil [269 298])
+            ("java.util.HashMap" include nil nil [299 324])
+            ("java.util.LinkedHashMap" include nil nil [325 356])
+            ("java.util.Map.Entry" include nil nil [357 384])
+            ("org.apache.commons.cli.BasicParser" include nil nil [386 428])
+            ("org.apache.commons.cli.CommandLine" include nil nil [429 471])
+            ("org.apache.commons.cli.HelpFormatter" include nil nil [472 516])
+            ("org.apache.commons.cli.Option" include nil nil [517 554])
+            ("org.apache.commons.cli.OptionBuilder" include nil nil [555 599])
+            ("org.apache.commons.cli.Options" include nil nil [600 638])
+            ("org.apache.commons.cli.UnrecognizedOptionException" include nil nil [639 697])
+            ("org.biojava3.core.sequence.ProteinSequence" include nil nil [698 748])
+            ("org.biojava3.core.sequence.io.FastaReaderHelper" include nil nil [749 804])
+            ("utilities.GexfReader" include nil nil [806 834])
+            ("utilities.GexfWriter" include nil nil [835 863])
+            ("utilities.N50" include nil nil [864 885])
+            ("Scaffolder" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("VERSION_MAJOR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [914 956])
+                    ("VERSION_MINOR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [958 1000])
+                    ("main" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1027 1040]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1003 1087])
+                    ("Scaffolder" function
+                       (:constructor-flag t
+                        :throws ("Exception")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1108 1121]))                          )
+                        (reparse-symbol class_member_declaration) [1090 1167])
+                    ("runOnTerminal" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1233 1246]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1206 5140])
+                    ("printHelp" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("opts" variable (:type "Options") (reparse-symbol formal_parameters) [5166 5178]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5143 5415])
+                    ("computeLenght" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("" variable (:type "paths") (reparse-symbol formal_parameters) [5462 5467]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5418 5721])
+                    ("scaffolder" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("cl" variable (:type "CommandLine") (reparse-symbol formal_parameters) [5748 5762]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5724 16650])
+                    ("greedyCoverRandom" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("network" variable (:type "MyGraph") (reparse-symbol formal_parameters) [16953 16968])
+                            ("factor" variable (:type "double") (reparse-symbol formal_parameters) [16970 16983]))                          
+                        :type "MyGraph")
+                        (reparse-symbol class_member_declaration) [16919 18669])
+                    ("greedyCover" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("network" variable (:type "MyGraph") (reparse-symbol formal_parameters) [18708 18723])
+                            ("factor" variable (:type "double") (reparse-symbol formal_parameters) [18725 18738]))                          
+                        :type "MyGraph")
+                        (reparse-symbol class_member_declaration) [18673 20852])
+                    ("n50avaluation" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("cl" variable (:type "CommandLine") (reparse-symbol formal_parameters) [21070 21084]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21043 21595])
+                    ("n50avaluation" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("scaffoldsfilename" variable (:type "String") (reparse-symbol formal_parameters) [21628 21652]))                          
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [21599 22182]))                  
+                :type "class")
+                nil [887 22184]))          
+    :file "Scaffolder.java"
+    :pointmax 21655
+    :fsize 22175
+    :lastmodtime '(21823 53387 700377 505000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!third-party!medusa!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

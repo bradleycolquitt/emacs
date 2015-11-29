@@ -18,6 +18,13 @@
 (delete-selection-mode)
 (global-set-key (kbd "RET") 'newline-and-indent)
 
+
+
+;; no indenting in C
+ (require 'cc-mode)
+    (add-to-list 'c-mode-common-hook
+                       (lambda () (setq c-syntactic-indentation nil)))
+
 ;; GROUP: Editing -> Killing
 (setq kill-ring-max 5000 ; increase kill-ring capacity
       kill-whole-line t  ; if NIL, kill whole line and move the next line up
@@ -45,14 +52,14 @@
 
 ;; Package: clean-aindent-mode
 ;; GROUP: Editing -> Indent -> Clean Aindent
-(require 'clean-aindent-mode)
-(add-hook 'prog-mode-hook 'clean-aindent-mode)
+;; (require 'clean-aindent-mode)
+;; (add-hook 'prog-mode-hook 'clean-aindent-mode)
 
 
 ;; PACKAGE: dtrt-indent
-(require 'dtrt-indent)
-(dtrt-indent-mode 1)
-(setq dtrt-indent-verbosity 0)
+;; (require 'dtrt-indent)
+;; (dtrt-indent-mode 1)
+;; (setq dtrt-indent-verbosity 0)
 
 ;; PACKAGE: ws-butler
 (require 'ws-butler)
@@ -192,32 +199,33 @@ line instead."
 
 ;; taken from prelude-editor.el
 ;; automatically indenting yanked text if in programming-modes
-(defvar yank-indent-modes
-  '(LaTeX-mode TeX-mode)
-  "Modes in which to indent regions that are yanked (or yank-popped).
-Only modes that don't derive from `prog-mode' should be listed here.")
+;; (defvar yank-indent-modes
+;;   '(LaTeX-mode TeX-mode)
+;;   "Modes in which to indent regions that are yanked (or yank-popped).
+;; Only modes that don't derive from `prog-mode' should be listed here.")
 
-(defvar yank-indent-blacklisted-modes
-  '(python-mode slim-mode haml-mode)
-  "Modes for which auto-indenting is suppressed.")
+;; (defvar yank-indent-blacklisted-modes
+;;   ;;'(python-mode slim-mode haml-mode)
+;;   '(python-mode)
+;;   "Modes for which auto-indenting is suppressed.")
 
-(defvar yank-advised-indent-threshold 1000
-  "Threshold (# chars) over which indentation does not automatically occur.")
+;; (defvar yank-advised-indent-threshold 1000
+;;   "Threshold (# chars) over which indentation does not automatically occur.")
 
-(defun yank-advised-indent-function (beg end)
-  "Do indentation, as long as the region isn't too large."
-  (if (<= (- end beg) yank-advised-indent-threshold)
-      (indent-region beg end nil)))
+;; (defun yank-advised-indent-function (beg end)
+;;   "Do indentation, as long as the region isn't too large."
+;;   (if (<= (- end beg) yank-advised-indent-threshold)
+;;       (indent-region beg end nil)))
 
-(defadvice yank (after yank-indent activate)
-  "If current mode is one of 'yank-indent-modes,
-indent yanked text (with prefix arg don't indent)."
-  (if (and (not (ad-get-arg 0))
-           (not (member major-mode yank-indent-blacklisted-modes))
-           (or (derived-mode-p 'prog-mode)
-               (member major-mode yank-indent-modes)))
-      (let ((transient-mark-mode nil))
-        (yank-advised-indent-function (region-beginning) (region-end)))))
+;; (defadvice yank (after yank-indent activate)
+;;   "If current mode is one of 'yank-indent-modes,
+;; indent yanked text (with prefix arg don't indent)."
+;;   (if (and (not (ad-get-arg 0))
+;;            (not (member major-mode yank-indent-blacklisted-modes))
+;;            (or (derived-mode-p 'prog-mode)
+;;                (member major-mode yank-indent-modes)))
+;;       (let ((transient-mark-mode nil))
+;;         (yank-advised-indent-function (region-beginning) (region-end)))))
 
 (defadvice yank-pop (after yank-pop-indent activate)
   "If current mode is one of `yank-indent-modes',

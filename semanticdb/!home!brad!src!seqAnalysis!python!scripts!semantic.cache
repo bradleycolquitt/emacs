@@ -1,0 +1,91 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables (list 
+   (semanticdb-table "bowtie2.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [24 38])
+            ("sys" include nil nil [24 38])
+            ("argparse" include nil nil [39 54])
+            ("pysam" include nil nil [55 67])
+            ("bam2bed" include nil nil [68 82])
+            ("sam" include nil nil [83 93])
+            ("pdb" include nil nil [94 104])
+            ("datetime" include nil nil [105 120])
+            ("subprocess" include nil nil [121 149])
+            ("subprocess" include nil nil [150 177])
+            ("fastq_dir" variable nil nil [179 219])
+            ("sam_dir" variable nil nil [220 256])
+            ("bam_dir" variable nil nil [290 326])
+            ("bed_dir" variable nil nil [327 363])
+            ("bowtie_class" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [480 496])
+                            ("self" variable nil (reparse-symbol indented_block_body) [505 521])
+                            ("self" variable nil (reparse-symbol indented_block_body) [670 698])
+                            ("self" variable nil (reparse-symbol indented_block_body) [707 733])
+                            ("self" variable nil (reparse-symbol indented_block_body) [808 824])
+                            ("self" variable nil (reparse-symbol indented_block_body) [833 849])
+                            ("fastq_date_dir" variable nil (reparse-symbol indented_block_body) [858 902])
+                            ("now" variable nil (reparse-symbol indented_block_body) [920 949])
+                            ("self" variable nil (reparse-symbol indented_block_body) [959 1023])
+                            ("if" code nil (reparse-symbol indented_block_body) [1033 1473])
+                            ("sam_date_dir" variable nil (reparse-symbol indented_block_body) [1713 1758])
+                            ("if" code nil (reparse-symbol indented_block_body) [1767 1827])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1835 1904])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1922 1987])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1996 2070])
+                            ("if" code nil (reparse-symbol indented_block_body) [2079 2152])
+                            ("bam_date_log_dir" variable nil (reparse-symbol indented_block_body) [2229 2285])
+                            ("if" code nil (reparse-symbol indented_block_body) [2294 2362])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2370 2458])
+                            ("header" variable nil (reparse-symbol indented_block_body) [2476 2693])
+                            ("self" code nil (reparse-symbol indented_block_body) [2702 2729]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [403 407])
+                            ("date" variable nil (reparse-symbol function_parameters) [409 413])
+                            ("sample" variable nil (reparse-symbol function_parameters) [415 421])
+                            ("single_end" variable nil (reparse-symbol function_parameters) [423 433])
+                            ("subsample" variable nil (reparse-symbol function_parameters) [435 444]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [390 2730])
+                    ("map" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2770 2774]))                          )
+                        (reparse-symbol indented_block_body) [2762 4032])
+                    ("sam2bam" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4061 4065]))                          )
+                        (reparse-symbol indented_block_body) [4049 4956])
+                    ("proc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4982 4986]))                          )
+                        (reparse-symbol indented_block_body) [4973 5037]))                  
+                :type "class")
+                nil [366 5037])
+            ("bowtie" function (:arguments 
+              ( ("date" variable nil (reparse-symbol function_parameters) [5049 5053])
+                ("sample" variable nil (reparse-symbol function_parameters) [5055 5061])
+                ("single_end" variable nil (reparse-symbol function_parameters) [5063 5073])
+                ("subsample" variable nil (reparse-symbol function_parameters) [5075 5084]))              ) nil [5038 5244])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [5263 5267]))              ) nil [5254 5920])
+            ("if" code nil nil [5921 5967]))          
+    :file "bowtie2.py"
+    :pointmax 5967
+    :fsize 5966
+    :lastmodtime '(21345 30662 416286 879000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!seqAnalysis!python!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

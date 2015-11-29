@@ -1,0 +1,25 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("subdir-objects")) nil [1 35])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4" "${ACLOCAL_FLAGS}")) nil [35 76])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src/inc" "-I$(top_srcdir)/src" "@AM_CPPFLAGS@")) nil [141 211])
+            ("AM_CXXFLAGS" variable (:default-value ("-Wno-conversion-null" "-Wno-unused-result" "-Wno-unused-function" "-Wno-sign-compare" "-Wnon-virtual-dtor" "@AM_CXXFLAGS@")) nil [211 335])
+            ("LIBS" variable (:default-value ("@MAIN_LIBS@")) nil [335 352])
+            ("bin_PROGRAMS" variable (:default-value ("kat")) nil [353 372])
+            ("kat_SOURCES" variable (:default-value ("inc/gnuplot/gnuplot_i.cc" "inc/gnuplot/gnuplot_i.hpp" "inc/jellyfish/fstream_default.hpp" "inc/jellyfish/jellyfish_helper.hpp" "inc/matrix/sparse_matrix.hpp" "inc/matrix/threaded_sparse_matrix.hpp" "inc/matrix/matrix_metadata_extractor.hpp" "inc/matrix/matrix_metadata_extractor.cc" "inc/str_utils.hpp" "inc/file_utils.hpp" "inc/common_args.hpp" "sect/sect_main.cc" "sect/sect.hpp" "sect/sect_args.hpp" "sect/sect_main.hpp" "comp/comp_main.cc" "comp/comp.hpp" "comp/comp_args.hpp" "comp/comp_main.hpp" "gcp/gcp_main.cc" "gcp/gcp.hpp" "gcp/gcp_args.hpp" "gcp/gcp_main.hpp" "hist/hist_main.cc" "hist/histogram.hpp" "hist/hist_args.hpp" "hist/hist_main.hpp" "plot/plot_main.cc" "plot/plot_args.hpp" "plot/plot_main.hpp" "plot/common_plot_args.hpp" "plot/density/density_plot_main.cc" "plot/density/density_plot_args.hpp" "plot/density/density_plot_main.hpp" "plot/spectra-cn/spectra_cn_plot_main.cc" "plot/spectra-cn/spectra_cn_plot_args.hpp" "plot/spectra-cn/spectra_cn_plot_main.hpp" "plot/profile/profile_plot_main.cc" "plot/profile/profile_plot_main.hpp" "plot/profile/profile_plot_args.hpp" "plot/spectra-hist/spectra_hist_plot_main.cc" "plot/spectra-hist/spectra_hist_plot_args.hpp" "plot/spectra-hist/spectra_hist_plot_main.hpp" "plot/spectra-mx/spectra_mx_plot_main.cc" "plot/spectra-mx/spectra_mx_plot_args.hpp" "plot/spectra-mx/spectra_mx_plot_main.hpp" "kat.cc" "kat_args.hpp")) nil [373 2079]))          
+    :file "Makefile.am"
+    :pointmax 2080
+    :fsize 2079
+    :lastmodtime '(21643 8732 106202 116000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!KAT!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

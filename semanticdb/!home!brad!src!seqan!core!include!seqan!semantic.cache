@@ -1,0 +1,51 @@
+;; Object seqan/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "seqan/"
+  :tables (list 
+   (semanticdb-table "find.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_HEADER_FIND_H" variable (:constant-flag t) nil [1949 1968])
+            ("cmath" include (:system-flag t) nil [2067 2083])
+            ("deque" include (:system-flag t) nil [2085 2101])
+            ("seqan/sequence.h" include (:system-flag t) nil [2103 2130])
+            ("seqan/modifier.h" include (:system-flag t) nil [2131 2158])
+            ("seqan/score.h" include (:system-flag t) nil [2159 2183])
+            ("seqan/graph_types.h" include (:system-flag t) nil [2184 2214])
+            ("seqan/graph_algorithms.h" include (:system-flag t) nil [2215 2250])
+            ("seqan/map.h" include (:system-flag t) nil [2251 2273])
+            ("seqan/find/find_base.h" include (:system-flag t) nil [2355 2388])
+            ("seqan/find/find_pattern_base.h" include (:system-flag t) nil [2389 2430])
+            ("seqan/find/find_simple.h" include (:system-flag t) nil [2537 2572])
+            ("seqan/find/find_horspool.h" include (:system-flag t) nil [2573 2610])
+            ("seqan/find/find_shiftand.h" include (:system-flag t) nil [2611 2648])
+            ("seqan/find/find_shiftor.h" include (:system-flag t) nil [2649 2685])
+            ("seqan/find/find_bndm.h" include (:system-flag t) nil [2686 2719])
+            ("seqan/find/find_bom.h" include (:system-flag t) nil [2720 2752])
+            ("seqan/find/find_wild_shiftand.h" include (:system-flag t) nil [2860 2902])
+            ("seqan/find/find_ahocorasick.h" include (:system-flag t) nil [3009 3049])
+            ("seqan/find/find_multiple_shiftand.h" include (:system-flag t) nil [3050 3096])
+            ("seqan/find/find_set_horspool.h" include (:system-flag t) nil [3097 3138])
+            ("seqan/find/find_wumanber.h" include (:system-flag t) nil [3189 3226])
+            ("seqan/find/find_multiple_bfam.h" include (:system-flag t) nil [3228 3270])
+            ("seqan/find/find_begin.h" include (:system-flag t) nil [3383 3417])
+            ("seqan/find/find_score.h" include (:system-flag t) nil [3419 3453])
+            ("seqan/find/find_myers_ukkonen.h" include (:system-flag t) nil [3454 3496])
+            ("seqan/find/find_abndm.h" include (:system-flag t) nil [3497 3531])
+            ("seqan/find/find_pex.h" include (:system-flag t) nil [3532 3564])
+            ("seqan/find/find_hamming_simple.h" include (:system-flag t) nil [3566 3609]))          
+    :file "find.h"
+    :pointmax 3725
+    :fsize 3724
+    :lastmodtime '(21578 59088 617014 173000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEQAN_HEADER_FIND_H")
+          )
+
+    )
+   )
+  :file "!home!brad!src!seqan!core!include!seqan!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

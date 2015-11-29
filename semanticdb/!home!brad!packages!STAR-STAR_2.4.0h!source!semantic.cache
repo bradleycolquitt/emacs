@@ -1,0 +1,1721 @@
+;; Object source/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "source/"
+  :tables (list 
+   (semanticdb-table "genomeGenerate.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("Parameters.h" include nil nil [1 24])
+            ("genomeGenerate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46 60]))                  
+                :type "void")
+                nil [26 61]))          
+    :file "genomeGenerate.h"
+    :pointmax 63
+    :fsize 62
+    :lastmodtime '(21639 25161 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Parameters.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PARAMETERS_DEF" variable (:constant-flag t) nil [32 46])
+            ("IncludeDefine.h" include nil nil [48 74])
+            ("InOutStreams.h" include nil nil [75 100])
+            ("ParameterInfo.h" include nil nil [101 127])
+            ("map" include (:system-flag t) nil [128 142])
+            ("TimeFunctions.h" include nil nil [143 169])
+            ("unistd.h" include (:system-flag t) nil [170 189])
+            ("signal.h" include (:system-flag t) nil [190 209])
+            ("Parameters" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [239 246])
+                    ("parArrayInitial" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("ParameterInfoBase" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [255 309])
+                    ("parArray" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("ParameterInfoBase" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [255 309])
+                    ("parameterInputName" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [318 353])
+                    ("commandLineFull" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [371 407])
+                    ("commandLine" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [371 407])
+                    ("versionSTAR" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [443 460])
+                    ("versionGenome" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("uint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [469 497])
+                    ("sysShell" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [543 559])
+                    ("runMode" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [641 656])
+                    ("runThreadN" variable (:type "int") (reparse-symbol classsubparts) [665 682])
+                    ("parametersFiles" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [717 749])
+                    ("inputBAMfile" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [783 803])
+                    ("chrLength" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("uint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [847 881])
+                    ("chrStart" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("uint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [847 881])
+                    ("genomeLoad" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [890 918])
+                    ("genomeDir" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [890 918])
+                    ("genomeFastaFiles" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [927 960])
+                    ("genomeSAsparseD" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [970 991])
+                    ("chrBin" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1069 1130])
+                    ("chrBinN" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1069 1130])
+                    ("genomeChrBinNbases" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1069 1130])
+                    ("genomeChrBinNbits" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1069 1130])
+                    ("winBinN" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1139 1216])
+                    ("winFlankNbins" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1139 1216])
+                    ("winAnchorDistNbins" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1139 1216])
+                    ("winBinNbits" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1139 1216])
+                    ("winBinChrNbits" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1139 1216])
+                    ("winAnchorMultimapNmax" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1225 1252])
+                    ("genomeSAindexNbases" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1301 1326])
+                    ("genomeSAindexStart" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1372 1397])
+                    ("genomeNumToNT" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1486 1508])
+                    ("readMapNumber" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1543 1562])
+                    ("iReadAll" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1571 1585])
+                    ("readFilesIndex" variable (:type "int") (reparse-symbol classsubparts) [1594 1613])
+                    ("readFilesN" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1622 1640])
+                    ("readFilesInTmp" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1649 1693])
+                    ("readFilesIn" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1649 1693])
+                    ("readFilesNames" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1702 1742])
+                    ("readNmates" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1751 1767])
+                    ("readMatesLengthsIn" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1776 1802])
+                    ("readFilesCommand" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1811 1844])
+                    ("readFilesCommandPID" variable
+                       (:dereference 1
+                        :type ("pid_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1853 1892])
+                    ("outSAMreadID" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1910 1930])
+                    ("clip3pAfterAdapterNbases" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("uint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1948 2015])
+                    ("clip3pNbases" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("uint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1948 2015])
+                    ("clip5pNbases" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("uint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1948 2015])
+                    ("clip3pAdapterMMp" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2028 2061])
+                    ("clip3pAdapterSeq" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2070 2103])
+                    ("clip3pAdapterSeqNum" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2112 2151])
+                    ("readMatesEqualLengths" variable (:type "bool") (reparse-symbol classsubparts) [2190 2217])
+                    ("alignSplicedMateMapLmin" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2338 2407])
+                    ("alignSJDBoverhangMin" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2338 2407])
+                    ("alignSJoverhangMin" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2338 2407])
+                    ("alignSplicedMateMapLminOverLmate" variable (:type "double") (reparse-symbol classsubparts) [2447 2487])
+                    ("alignWindowsPerReadNmax" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2496 2525])
+                    ("alignTranscriptsPerWindowNmax" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2577 2612])
+                    ("alignTranscriptsPerReadNmax" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2673 2706])
+                    ("alignIntronMin" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2758 2778])
+                    ("alignIntronMax" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2823 2843])
+                    ("alignMatesGapMax" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2873 2895])
+                    ("alignSoftClipAtReferenceEnds" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2947 2998])
+                    ("alignEndsType" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2947 2998])
+                    ("seedMultimapNmax" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3042 3064])
+                    ("seedSearchLmax" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3129 3149])
+                    ("seedPerReadNmax" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3183 3204])
+                    ("seedPerWindowNmax" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3245 3268])
+                    ("seedNoneLociPerWindow" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3311 3338])
+                    ("seedSearchStartLmax" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3396 3421])
+                    ("seedSearchStartLmaxOverLread" variable (:type "double") (reparse-symbol classsubparts) [3430 3466])
+                    ("chunkOutBAMsizeBytes" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3534 3599])
+                    ("chunkInSizeBytesArray" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3534 3599])
+                    ("chunkInSizeBytes" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3534 3599])
+                    ("outTmpDir" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3634 3678])
+                    ("outStd" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3634 3678])
+                    ("outFileNamePrefix" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3634 3678])
+                    ("outQuantBAMfileName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3717 3789])
+                    ("outBAMfileUnsortedName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3717 3789])
+                    ("outBAMfileCoordName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3717 3789])
+                    ("samHeaderSortedCoord" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3806 3858])
+                    ("samHeaderHD" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3806 3858])
+                    ("samHeader" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3806 3858])
+                    ("outSAMprimaryFlag" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3867 3953])
+                    ("outSAMorder" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3867 3953])
+                    ("outSAMunmapped" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3867 3953])
+                    ("outSAMstrandField" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3867 3953])
+                    ("outSAMmode" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3867 3953])
+                    ("outSAMheaderPG" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3962 4026])
+                    ("outSAMheaderHD" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3962 4026])
+                    ("outSAMattributes" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3962 4026])
+                    ("outSAMattrRG" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4035 4102])
+                    ("outSAMattrRGlineSplit" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4035 4102])
+                    ("outSAMattrRGline" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4035 4102])
+                    ("outSAMheaderCommentFile" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4111 4142])
+                    ("outSAMmapqUnique" variable (:type "int") (reparse-symbol classsubparts) [4151 4172])
+                    ("outSAMattrPresentQuant" variable (:type ("" type
+                         (:members 
+                            ( ("XS" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("RG" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("jI" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("jM" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("nM" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("MD" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("NM" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("AS" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("HI" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("NH" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4181 4268])
+                    ("outSAMattrPresent" variable (:type ("" type
+                         (:members 
+                            ( ("XS" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("RG" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("jI" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("jM" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("nM" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("MD" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("NM" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("AS" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("HI" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224])
+                              ("NH" variable (:type "bool") (reparse-symbol classsubparts) [4189 4224]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4181 4268])
+                    ("outSAMattrOrderQuant" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4277 4328])
+                    ("outSAMattrOrder" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4277 4328])
+                    ("quantTranscriptomeBAMcompression" variable (:type "int") (reparse-symbol classsubparts) [4337 4393])
+                    ("outBAMcompression" variable (:type "int") (reparse-symbol classsubparts) [4337 4393])
+                    ("outSAMtype" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4402 4429])
+                    ("outSAMbool" variable (:type "bool") (reparse-symbol classsubparts) [4438 4483])
+                    ("outBAMcoord" variable (:type "bool") (reparse-symbol classsubparts) [4438 4483])
+                    ("outBAMunsorted" variable (:type "bool") (reparse-symbol classsubparts) [4438 4483])
+                    ("outBAMcoordNbins" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4492 4516])
+                    ("outBAMsortTmpDir" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4525 4549])
+                    ("bamRemoveDuplicatesType" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4558 4589])
+                    ("bamRemoveDuplicatesMate2basesN" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4598 4634])
+                    ("outBAMsortingThreadNactual" variable (:type "int") (reparse-symbol classsubparts) [4643 4696])
+                    ("outBAMsortingThreadN" variable (:type "int") (reparse-symbol classsubparts) [4643 4696])
+                    ("outSAMflagAND" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4705 4740])
+                    ("outSAMflagOR" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4705 4740])
+                    ("outReadsUnmapped" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4758 4782])
+                    ("outQSconversionAdd" variable (:type "int") (reparse-symbol classsubparts) [4791 4814])
+                    ("outFileTmp" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4823 4841])
+                    ("outFilterMismatchNmax" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4886 4913])
+                    ("outFilterMismatchNoverLmax1" variable (:type "double") (reparse-symbol classsubparts) [4922 5017])
+                    ("outFilterMismatchNoverReadLmax" variable (:type "double") (reparse-symbol classsubparts) [4922 5017])
+                    ("outFilterMismatchNoverLmax" variable (:type "double") (reparse-symbol classsubparts) [4922 5017])
+                    ("outFilterMultimapNmax" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5079 5125])
+                    ("outFilterMatchNmin" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5079 5125])
+                    ("outFilterMatchNminOverLread" variable (:type "double") (reparse-symbol classsubparts) [5157 5220])
+                    ("outFilterScoreMinOverLread" variable (:type "double") (reparse-symbol classsubparts) [5157 5220])
+                    ("outFilterMultimapScoreRange" variable (:type ("intScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5256 5311])
+                    ("outFilterScoreMin" variable (:type ("intScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5256 5311])
+                    ("outFilterIntronMotifs" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5341 5370])
+                    ("outFilterType" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5379 5400])
+                    ("outFilterBySJoutStage" variable (:type "int") (reparse-symbol classsubparts) [5430 5456])
+                    ("outSJfilterReads" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5550 5574])
+                    ("outSJfilterCountTotalMin" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int32" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5583 5650])
+                    ("outSJfilterCountUniqueMin" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int32" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5583 5650])
+                    ("outSJfilterOverhangMin" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int32" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5659 5697])
+                    ("outSJfilterDistToOtherSJmin" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int32" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5706 5749])
+                    ("outSJfilterIntronMaxVsReadN" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int32" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5810 5853])
+                    ("outWigNorm" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5895 5948])
+                    ("outWigStrand" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5895 5948])
+                    ("outWigType" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5895 5948])
+                    ("outWigReferencesPrefix" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5957 5987])
+                    ("outWigFlags" variable (:type ("" type
+                         (:members 
+                            ( ("yes" variable (:type "bool") (reparse-symbol classsubparts) [6017 6026])
+                              ("strand" variable (:type "bool") (reparse-symbol classsubparts) [6039 6051])
+                              ("type" variable (:type "int") (reparse-symbol classsubparts) [6064 6073])
+                              ("format" variable (:type "int") (reparse-symbol classsubparts) [6086 6097])
+                              ("norm" variable (:type "int") (reparse-symbol classsubparts) [6110 6119]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5996 6142])
+                    ("twopassSJlimit" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6178 6214])
+                    ("twopass1readsN" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6178 6214])
+                    ("twopassSJpass1file" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6223 6260])
+                    ("twopassDir" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6223 6260])
+                    ("limitGenomeGenerateRAM" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6303 6331])
+                    ("limitIObufferSize" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6340 6363])
+                    ("limitOutSAMoneReadBytes" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6411 6440])
+                    ("limitOutSJcollapsed" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6449 6493])
+                    ("limitOutSJoneRead" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6449 6493])
+                    ("limitBAMsortRAM" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6502 6523])
+                    ("scoreInsOpen" variable (:type ("intScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6562 6680])
+                    ("scoreInsBase" variable (:type ("intScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6562 6680])
+                    ("scoreDelOpen" variable (:type ("intScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6562 6680])
+                    ("scoreDelBase" variable (:type ("intScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6562 6680])
+                    ("scoreGapATAC" variable (:type ("intScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6562 6680])
+                    ("scoreGapGCAG" variable (:type ("intScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6562 6680])
+                    ("scoreGapNoncan" variable (:type ("intScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6562 6680])
+                    ("scoreGap" variable (:type ("intScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6562 6680])
+                    ("scoreStitchSJshift" variable (:type ("intScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6690 6718])
+                    ("scoreGenomicLengthLog2scale" variable (:type "double") (reparse-symbol classsubparts) [6752 6787])
+                    ("outputBED" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6846 6878])
+                    ("swWinCoverageMinP" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6931 6962])
+                    ("swMode" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6931 6962])
+                    ("swPenGapExtend" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6994 7067])
+                    ("swPenGapOpen" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6994 7067])
+                    ("swPenMismatch" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6994 7067])
+                    ("swPeoutFilterMatchNmin" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6994 7067])
+                    ("swHsize" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7076 7089])
+                    ("annotScoreScale" variable (:type "int") (reparse-symbol classsubparts) [7115 7135])
+                    ("annotSignalFile" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7194 7217])
+                    ("sjdbFileChrStartEnd" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7300 7336])
+                    ("sjdbGTFtagExonParentGene" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7345 7460])
+                    ("sjdbGTFtagExonParentTranscript" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7345 7460])
+                    ("sjdbGTFfeatureExon" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7345 7460])
+                    ("sjdbGTFchrPrefix" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7345 7460])
+                    ("sjdbGTFfile" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7345 7460])
+                    ("sjdbLength" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7469 7498])
+                    ("sjdbOverhang" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7469 7498])
+                    ("sjdbScore" variable (:type "int") (reparse-symbol classsubparts) [7604 7618])
+                    ("sjdbN" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7644 7666])
+                    ("sjChrStart" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7644 7666])
+                    ("sjGstart" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7693 7707])
+                    ("sjdbEnd" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7753 7807])
+                    ("sjdbStart" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7753 7807])
+                    ("sjStr" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7753 7807])
+                    ("sjAstart" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7753 7807])
+                    ("sjDstart" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7753 7807])
+                    ("sjdbMotif" variable
+                       (:pointer 1
+                        :type ("uint8" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7828 7845])
+                    ("sjdbShiftRight" variable
+                       (:pointer 1
+                        :type ("uint8" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7886 7924])
+                    ("sjdbShiftLeft" variable
+                       (:pointer 1
+                        :type ("uint8" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7886 7924])
+                    ("sjdbStrand" variable
+                       (:pointer 1
+                        :type ("uint8" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7955 7973])
+                    ("sjNovelEnd" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8024 8066])
+                    ("sjNovelStart" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8024 8066])
+                    ("sjNovelN" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8024 8066])
+                    ("quantMode" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8182 8208])
+                    ("quant" variable (:type ("" type
+                         (:members 
+                            ( ("yes" variable (:type "bool") (reparse-symbol classsubparts) [8271 8280])
+                              ("trSAM" variable (:type ("" type
+                                   (:members 
+                                      ( ("yes" variable (:type "bool") (reparse-symbol classsubparts) [8331 8340]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [8323 8348])
+                              ("geCount" variable (:type ("" type
+                                   (:members 
+                                      ( ("yes" variable (:type "bool") (reparse-symbol classsubparts) [8367 8376]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [8359 8386]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8252 8403])
+                    ("chimJunctionOverhangMin" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8440 8485])
+                    ("chimSegmentMin" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8440 8485])
+                    ("maxChimReadGap" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8531 8551])
+                    ("chimScoreJunctionNonGTAG" variable (:type "int") (reparse-symbol classsubparts) [8606 8686])
+                    ("chimScoreSeparation" variable (:type "int") (reparse-symbol classsubparts) [8606 8686])
+                    ("chimScoreDropMax" variable (:type "int") (reparse-symbol classsubparts) [8606 8686])
+                    ("chimScoreMin" variable (:type "int") (reparse-symbol classsubparts) [8606 8686])
+                    ("Qsplit" variable (:type "char") (reparse-symbol classsubparts) [8745 8757])
+                    ("minLmap" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8766 8801])
+                    ("minLsplit" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8766 8801])
+                    ("maxNsplit" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8766 8801])
+                    ("inOut" variable
+                       (:pointer 1
+                        :type ("InOutStreams" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8889 8909])
+                    ("Lread" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8943 8954])
+                    ("nChrReal" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8996 9033])
+                    ("nSAbyte" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8996 9033])
+                    ("nSA" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8996 9033])
+                    ("nGenome" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8996 9033])
+                    ("nChrReal2" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9115 9156])
+                    ("nSAbyte2" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9115 9156])
+                    ("nSA2" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9115 9156])
+                    ("nGenome2" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9115 9156])
+                    ("nSAi" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9185 9195])
+                    ("chrName" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [9222 9246])
+                    ("chrNameIndex" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("uint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [9251 9282])
+                    ("SAiMarkAbsentBit" variable (:type "unsigned char") (reparse-symbol classsubparts) [9287 9343])
+                    ("SAiMarkNbit" variable (:type "unsigned char") (reparse-symbol classsubparts) [9287 9343])
+                    ("GstrandBit" variable (:type "unsigned char") (reparse-symbol classsubparts) [9287 9343])
+                    ("SAiMarkNmaskC" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9386 9471])
+                    ("SAiMarkNmask" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9386 9471])
+                    ("SAiMarkAbsentMaskC" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9386 9471])
+                    ("SAiMarkAbsentMask" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9386 9471])
+                    ("GstrandMask" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9386 9471])
+                    ("Parameters" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9559 9572])
+                    ("chrInfoLoad" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9577 9596])
+                    ("chrBinFill" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9638 9656])
+                    ("readParsFromFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("ifstream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9701 9711])
+                            ("" variable
+                               (:pointer 1
+                                :type ("ofstream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9712 9722])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [9723 9727]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9680 9728])
+                    ("readPars" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [9765 9780])
+                    ("scanOneLine" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lineIn" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9836 9851])
+                            ("inputLevel" variable (:type "int") (reparse-symbol arg-sub-list) [9852 9867])
+                            ("inputLevelRequested" variable (:type "int") (reparse-symbol arg-sub-list) [9868 9892]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9819 9893])
+                    ("scanAllLines" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("streamIn" variable
+                               (:reference 1
+                                :type ("istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9917 9935])
+                            ("inputLevel" variable (:type "int") (reparse-symbol arg-sub-list) [9936 9951])
+                            ("inputLevelRequested" variable (:type "int") (reparse-symbol arg-sub-list) [9952 9976]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9898 9977])
+                    ("inputParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("argInN" variable (:type "int") (reparse-symbol arg-sub-list) [10004 10015])
+                            ("argIn" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10016 10030]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9982 10031])
+                    ("openReadsFiles" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10099 10121])
+                    ("closeReadsFiles" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10126 10149]))                  
+                :type "class")
+                nil [211 10153]))          
+    :file "Parameters.h"
+    :pointmax 10178
+    :fsize 10177
+    :lastmodtime '(21639 25161 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PARAMETERS_DEF")
+          )
+
+    )
+   (semanticdb-table "genomeGenerate.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("IncludeDefine.h" include nil nil [1 27])
+            ("Parameters.h" include nil nil [28 51])
+            ("SuffixArrayFuns.h" include nil nil [52 80])
+            ("PackedArray.h" include nil nil [81 105])
+            ("math.h" include (:system-flag t) nil [106 123])
+            ("TimeFunctions.h" include nil nil [124 150])
+            ("ErrorWarning.h" include nil nil [151 176])
+            ("loadGTF.h" include nil nil [177 197])
+            ("SjdbClass.h" include nil nil [198 220])
+            ("sjdbLoadFromFiles.h" include nil nil [221 251])
+            ("sjdbPrepare.h" include nil nil [252 276])
+            ("serviceFuns.cpp" include nil nil [278 304])
+            ("streamFuns.h" include nil nil [305 328])
+            ("globalG" variable
+               (:pointer 1
+                :type "char")
+                nil [330 344])
+            ("globalL" variable (:type ("uint" type (:type "class") nil nil)) nil [345 358])
+            ("funCompareSuffixes" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [393 407])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [408 422]))                  
+                :type "int")
+                nil [361 730])
+            ("funCompareSuffixesBool" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [770 784])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [785 799]))                  
+                :type "bool")
+                nil [733 1087])
+            ("funG2strLocus" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("SAstr" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1118 1129])
+                    ("N" variable
+                       (:constant-flag t
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1130 1143])
+                    ("GstrandBit" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1144 1166])
+                    ("GstrandMask" variable
+                       (:constant-flag t
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1167 1190]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [1091 1315])
+            ("genomeScanFastaFiles" function
+               (:arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1345 1359])
+                    ("G" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1360 1368])
+                    ("flagRun" variable (:type "bool") (reparse-symbol arg-sub-list) [1369 1382]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [1318 3771])
+            ("genomeGenerate" function
+               (:arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3802 3816]))                  
+                :type "void")
+                nil [3782 27095]))          
+    :file "genomeGenerate.cpp"
+    :pointmax 27097
+    :fsize 27096
+    :lastmodtime '(21639 25161 0 0)
+    :unmatched-syntax '((punctuation 27095 . 27096) (punctuation 3771 . 3772) (punctuation 1315 . 1316) (punctuation 1087 . 1088) (punctuation 730 . 731))
+    )
+   (semanticdb-table "IncludeDefine.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("INCLUDEDEFINE_DEF" variable (:constant-flag t) nil [35 52])
+            ("algorithm" include (:system-flag t) nil [70 90])
+            ("cstring" include (:system-flag t) nil [91 109])
+            ("string" include (:system-flag t) nil [110 127])
+            ("iostream" include (:system-flag t) nil [128 147])
+            ("fstream" include (:system-flag t) nil [148 166])
+            ("sstream" include (:system-flag t) nil [167 185])
+            ("time.h" include (:system-flag t) nil [186 203])
+            ("ctime" include (:system-flag t) nil [204 220])
+            ("iomanip" include (:system-flag t) nil [229 247])
+            ("vector" include (:system-flag t) nil [248 265])
+            ("sys/types.h" include (:system-flag t) nil [266 288])
+            ("sys/ipc.h" include (:system-flag t) nil [289 309])
+            ("sys/shm.h" include (:system-flag t) nil [310 330])
+            ("sys/mman.h" include (:system-flag t) nil [331 352])
+            ("errno.h" include (:system-flag t) nil [353 371])
+            ("limits" include (:system-flag t) nil [372 389])
+            ("stdint.h" include (:system-flag t) nil [390 409])
+            ("omp.h" include (:system-flag t) nil [410 426])
+            ("VERSION" include nil nil [428 446])
+            ("SAMTOOLS_BGZF_H" variable (:constant-flag t) nil [472 487])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [512 532])
+            ("int8" type
+               (:typedef ("int8_t" type (:type "class") nil nil)
+                :superclasses "int8_t"
+                :type "typedef")
+                nil [687 707])
+            ("uint8" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :superclasses "uint8_t"
+                :type "typedef")
+                nil [708 730])
+            ("uint" variable (:constant-flag t) nil [741 745])
+            ("sint" variable (:constant-flag t) nil [773 777])
+            ("uint64" variable (:constant-flag t) nil [803 809])
+            ("uint32" variable (:constant-flag t) nil [837 843])
+            ("uint16" variable (:constant-flag t) nil [865 871])
+            ("uchar" variable (:constant-flag t) nil [899 904])
+            ("int64" variable (:constant-flag t) nil [927 932])
+            ("int32" variable (:constant-flag t) nil [951 956])
+            ("GENOME_spacingChar" variable (:constant-flag t) nil [970 988])
+            ("uintWinBin" variable (:constant-flag t) nil [1000 1010])
+            ("uintWinBinMax" variable (:constant-flag t) nil [1034 1047])
+            ("intSWscore" variable (:constant-flag t) nil [1088 1098])
+            ("intScore" variable (:constant-flag t) nil [1111 1119])
+            ("BAMoutput_oneAlignMaxBytes" variable (:constant-flag t) nil [1152 1178])
+            ("ATTR_Nmax" variable (:constant-flag t) nil [1213 1222])
+            ("ATTR_NH" variable (:constant-flag t) nil [1233 1240])
+            ("ATTR_HI" variable (:constant-flag t) nil [1251 1258])
+            ("ATTR_AS" variable (:constant-flag t) nil [1269 1276])
+            ("ATTR_NM" variable (:constant-flag t) nil [1287 1294])
+            ("ATTR_MD" variable (:constant-flag t) nil [1305 1312])
+            ("ATTR_nM" variable (:constant-flag t) nil [1323 1330])
+            ("ATTR_jM" variable (:constant-flag t) nil [1341 1348])
+            ("ATTR_jI" variable (:constant-flag t) nil [1359 1366])
+            ("ATTR_XS" variable (:constant-flag t) nil [1377 1384])
+            ("ATTR_RG" variable (:constant-flag t) nil [1395 1402])
+            ("BAM_CIGAR_MaxSize" variable (:constant-flag t) nil [1434 1451])
+            ("BAM_CIGAR_OperationShift" variable (:constant-flag t) nil [1466 1490])
+            ("BAM_CIGAR_M" variable (:constant-flag t) nil [1501 1512])
+            ("BAM_CIGAR_I" variable (:constant-flag t) nil [1523 1534])
+            ("BAM_CIGAR_D" variable (:constant-flag t) nil [1545 1556])
+            ("BAM_CIGAR_N" variable (:constant-flag t) nil [1567 1578])
+            ("BAM_CIGAR_S" variable (:constant-flag t) nil [1589 1600])
+            ("BAM_CIGAR_H" variable (:constant-flag t) nil [1611 1622])
+            ("BAM_CIGAR_P" variable (:constant-flag t) nil [1633 1644])
+            ("BAM_CIGAR_EQ" variable (:constant-flag t) nil [1655 1667])
+            ("BAM_CIGAR_X" variable (:constant-flag t) nil [1678 1689])
+            ("BAM_ATTR_MaxSize" variable (:constant-flag t) nil [1701 1717])
+            ("MAX_N_EXONS" variable (:constant-flag t) nil [1805 1816])
+            ("MAX_N_MATES" variable (:constant-flag t) nil [1855 1866])
+            ("DEF_readNameLengthMax" variable (:constant-flag t) nil [1877 1898])
+            ("DEF_readSeqLengthMax" variable (:constant-flag t) nil [1997 2017])
+            ("DEF_readNameSeqLengthMax" variable (:constant-flag t) nil [2097 2121])
+            ("EXIT_CODE_BUG" variable (:constant-flag t) nil [2228 2241])
+            ("EXIT_CODE_PARAMETER" variable (:constant-flag t) nil [2254 2273])
+            ("EXIT_CODE_RUNTIME" variable (:constant-flag t) nil [2286 2303])
+            ("EXIT_CODE_INPUT_FILES" variable (:constant-flag t) nil [2316 2337])
+            ("EXIT_CODE_GENOME_FILES" variable (:constant-flag t) nil [2350 2372])
+            ("EXIT_CODE_SHM" variable (:constant-flag t) nil [2385 2398])
+            ("EXIT_CODE_GenomeLoadingWaitedTooLong" variable (:constant-flag t) nil [2411 2447])
+            ("EXIT_CODE_MemoryAllocation" variable (:constant-flag t) nil [2460 2486])
+            ("EXIT_CODE_FILE_OPEN" variable (:constant-flag t) nil [2499 2518])
+            ("EXIT_CODE_FILE_WRITE" variable (:constant-flag t) nil [2531 2551])
+            ("EXIT_createExtendWindowsWithAlign_TOO_MANY_WINDOWS" variable (:constant-flag t) nil [2594 2644])
+            ("SJ_MOTIF_SIZE" variable (:constant-flag t) nil [2658 2671])
+            ("SJ_SAM_AnnotatedMotifShift" variable (:constant-flag t) nil [2713 2739])
+            ("EXTEND_ORDER" variable (:constant-flag t) nil [2752 2764])
+            ("MAX_N_FRAG" variable (:constant-flag t) nil [2872 2882])
+            ("MARK_FRAG_SPACER_BASE" variable (:constant-flag t) nil [2893 2914])
+            ("MAX_N_CHIMERAS" variable (:constant-flag t) nil [2926 2940])
+            ("MAX_N_MULTMAP" variable (:constant-flag t) nil [2951 2964])
+            ("MAX_SJ_REPEAT_SEARCH" variable (:constant-flag t) nil [3013 3033])
+            ("MAX_QS_VALUE" variable (:constant-flag t) nil [3093 3105])
+            ("MAX_OUTPUT_FLAG" variable (:constant-flag t) nil [3117 3132])
+            ("PC_rStart" variable (:constant-flag t) nil [3145 3154])
+            ("PC_Length" variable (:constant-flag t) nil [3165 3174])
+            ("PC_Str" variable (:constant-flag t) nil [3185 3191])
+            ("PC_Dir" variable (:constant-flag t) nil [3202 3208])
+            ("PC_Nrep" variable (:constant-flag t) nil [3219 3226])
+            ("PC_SAstart" variable (:constant-flag t) nil [3237 3247])
+            ("PC_SAend" variable (:constant-flag t) nil [3258 3266])
+            ("PC_iFrag" variable (:constant-flag t) nil [3277 3285])
+            ("PC_SIZE" variable (:constant-flag t) nil [3296 3303])
+            ("WC_Str" variable (:constant-flag t) nil [3315 3321])
+            ("WC_Chr" variable (:constant-flag t) nil [3332 3338])
+            ("WC_gStart" variable (:constant-flag t) nil [3349 3358])
+            ("WC_gEnd" variable (:constant-flag t) nil [3369 3376])
+            ("WC_SIZE" variable (:constant-flag t) nil [3387 3394])
+            ("WA_Length" variable (:constant-flag t) nil [3406 3415])
+            ("WA_rStart" variable (:constant-flag t) nil [3426 3435])
+            ("WA_gStart" variable (:constant-flag t) nil [3446 3455])
+            ("WA_Nrep" variable (:constant-flag t) nil [3466 3473])
+            ("WA_Anchor" variable (:constant-flag t) nil [3484 3493])
+            ("WA_iFrag" variable (:constant-flag t) nil [3504 3512])
+            ("WA_sjA" variable (:constant-flag t) nil [3523 3529])
+            ("WA_SIZE" variable (:constant-flag t) nil [3540 3547])
+            ("EX_R" variable (:constant-flag t) nil [3559 3563])
+            ("EX_G" variable (:constant-flag t) nil [3574 3578])
+            ("EX_L" variable (:constant-flag t) nil [3589 3593])
+            ("EX_iFrag" variable (:constant-flag t) nil [3604 3612])
+            ("EX_sjA" variable (:constant-flag t) nil [3623 3629])
+            ("EX_SIZE" variable (:constant-flag t) nil [3640 3647])
+            ("MT_PE" variable (:constant-flag t) nil [3669 3674])
+            ("MT_SIZE" variable (:constant-flag t) nil [3703 3710])
+            ("MARKER_ALL_PIECES_EXCEED_seedMultimapNmax" variable (:constant-flag t) nil [3722 3763])
+            ("MARKER_NO_UNIQUE_PIECES" variable (:constant-flag t) nil [3848 3871])
+            ("MARKER_NO_GOOD_WINDOW" variable (:constant-flag t) nil [3944 3965])
+            ("MARKER_NO_GOOD_PIECES" variable (:constant-flag t) nil [4013 4034])
+            ("MARKER_TOO_MANY_ANCHORS_PER_WINDOW" variable (:constant-flag t) nil [4050 4084])
+            ("MARKER_MAX_N_MULT_EXCEEDED" variable (:constant-flag t) nil [4100 4126])
+            ("MARKER_FULL_LENGTH_MULTIMAPPER_EXCEEDED_alignWindowsPerReadNmax" variable (:constant-flag t) nil [4142 4205])
+            ("MARKER_ALL_PIECES_EXCEEDED_winAnchorMultimapNmax" variable (:constant-flag t) nil [4221 4269])
+            ("MARKER_TOO_MANY_CHIMERAS" variable (:constant-flag t) nil [4285 4309])
+            ("MARKER_READ_TOO_SHORT" variable (:constant-flag t) nil [4325 4346])
+            ("PEMARKER_SINGLE_END" variable (:constant-flag t) nil [4363 4382])
+            ("PEMARKER_PAIR" variable (:constant-flag t) nil [4393 4406])
+            ("PEMARKER_ONE_END" variable (:constant-flag t) nil [4417 4433])
+            ("PEMARKER_TOO_MANY_PAIRS" variable (:constant-flag t) nil [4444 4467])
+            ("PEMARKER_CHIMERIC_PAIRS" variable (:constant-flag t) nil [4478 4501])
+            ("PEMARKER_CHIMERIC_SJ_READ1" variable (:constant-flag t) nil [4512 4538])
+            ("PEMARKER_CHIMERIC_SJ_READ2" variable (:constant-flag t) nil [4551 4577])
+            ("PEMARKER_CHIMERIC_SJ_READ1and2" variable (:constant-flag t) nil [4590 4620])
+            ("PEMARKER_SINGLE_END_NOTMAPPED" variable (:constant-flag t) nil [4633 4662])
+            ("uiPC" type
+               (:typedef ("unsigned long long")
+                :superclasses "unsigned long long"
+                :type "typedef")
+                nil [4670 4697])
+            ("uiWC" type
+               (:typedef ("unsigned long long")
+                :superclasses "unsigned long long"
+                :type "typedef")
+                nil [4698 4725])
+            ("uiWA" type
+               (:typedef ("unsigned long long")
+                :superclasses "unsigned long long"
+                :type "typedef")
+                nil [4726 4753]))          
+    :file "IncludeDefine.h"
+    :pointmax 5003
+    :fsize 5002
+    :lastmodtime '(21639 25161 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("uint" . 
+              ((UNSIGNED "unsigned" 746 . 754) (LONG "long" 755 . 759) (LONG "long" 760 . 764)))
+          ("ATTR_AS" . ((number "3" 1277 . 1278)))
+          ("ATTR_jM" . ((number "7" 1349 . 1350)))
+          ("ATTR_RG" . ((number "10" 1403 . 1405)))
+          ("BAM_CIGAR_X" . ((number "8" 1690 . 1691)))
+          ("DEF_readSeqLengthMax" . ((number "500" 2018 . 2021)))
+          ("MAX_SJ_REPEAT_SEARCH" . ((number "255" 3034 . 3037)))
+          ("WC_Str" . ((number "0" 3322 . 3323)))
+          ("WC_SIZE" . ((number "4" 3395 . 3396)))
+          ("WA_Length" . ((number "0" 3416 . 3417)))
+          ("EX_L" . ((number "2" 3594 . 3595)))
+          ("MT_SIZE" . ((number "5" 3711 . 3712)))
+          ("MARKER_ALL_PIECES_EXCEEDED_winAnchorMultimapNmax" . ((number "999908" 4270 . 4276)))
+          ("MAX_N_FRAG" . ((number "2" 2883 . 2884)))
+          ("MAX_QS_VALUE" . ((number "60" 3106 . 3108)))
+          ("MARKER_MAX_N_MULT_EXCEEDED" . ((number "999906" 4127 . 4133)))
+          ("PEMARKER_PAIR" . ((number "1" 4407 . 4408)))
+          ("BAMoutput_oneAlignMaxBytes" . ((number "100000" 1179 . 1185)))
+          ("ATTR_NH" . ((number "1" 1241 . 1242)))
+          ("BAM_CIGAR_M" . ((number "0" 1513 . 1514)))
+          ("MAX_N_EXONS" . ((number "20" 1817 . 1819)))
+          ("EXIT_CODE_PARAMETER" . ((number "102" 2274 . 2277)))
+          ("EXIT_CODE_SHM" . ((number "106" 2399 . 2402)))
+          ("EXIT_CODE_GenomeLoadingWaitedTooLong" . ((number "107" 2448 . 2451)))
+          ("EXTEND_ORDER" . ((number "1" 2765 . 2766)))
+          ("MAX_N_CHIMERAS" . ((number "5" 2941 . 2942)))
+          ("PC_Str" . ((number "2" 3192 . 3193)))
+          ("WC_Chr" . ((number "1" 3339 . 3340)))
+          ("EX_SIZE" . ((number "5" 3648 . 3649)))
+          ("MARKER_FULL_LENGTH_MULTIMAPPER_EXCEEDED_alignWindowsPerReadNmax" . ((number "999907" 4206 . 4212)))
+          ("uintWinBinMax" . 
+              ((symbol "numeric_limits" 1048 . 1062) (punctuation "<" 1062 . 1063) (symbol "uint16" 1063 . 1069) (punctuation ">" 1069 . 1070) (punctuation ":" 1070 . 1071) (punctuation ":" 1071 . 1072) (symbol "max" 1072 . 1075) (semantic-list "()" 1075 . 1077)))
+          ("BAM_CIGAR_MaxSize" . ((number "10000" 1452 . 1457)))
+          ("BAM_CIGAR_N" . ((number "3" 1579 . 1580)))
+          ("EXIT_CODE_FILE_OPEN" . ((number "109" 2519 . 2522)))
+          ("MARK_FRAG_SPACER_BASE" . ((number "11" 2915 . 2917)))
+          ("PC_Dir" . ((number "3" 3209 . 3210)))
+          ("PC_iFrag" . ((number "7" 3286 . 3287)))
+          ("PEMARKER_CHIMERIC_SJ_READ1and2" . ((number "225" 4621 . 4624)))
+          ("uintWinBin" . ((UNSIGNED "unsigned" 1011 . 1019) (SHORT "short" 1020 . 1025)))
+          ("ATTR_XS" . ((number "9" 1385 . 1386)))
+          ("DEF_readNameSeqLengthMax" . ((symbol "DEF_readNameLengthMax" 2122 . 2143)))
+          ("EXIT_CODE_RUNTIME" . ((number "103" 2304 . 2307)))
+          ("MAX_OUTPUT_FLAG" . ((number "10" 3133 . 3135)))
+          ("PC_Nrep" . ((number "4" 3227 . 3228)))
+          ("WA_gStart" . ((number "2" 3456 . 3457)))
+          ("EX_iFrag" . ((number "3" 3613 . 3614)))
+          ("MARKER_ALL_PIECES_EXCEED_seedMultimapNmax" . ((number "999901" 3764 . 3770)))
+          ("PEMARKER_ONE_END" . ((number "3" 4434 . 4435)))
+          ("PEMARKER_TOO_MANY_PAIRS" . ((number "5" 4468 . 4469)))
+          ("PEMARKER_CHIMERIC_SJ_READ1" . ((number "221" 4539 . 4542)))
+          ("BAM_CIGAR_P" . ((number "6" 1645 . 1646)))
+          ("MARKER_NO_UNIQUE_PIECES" . ((number "999902" 3872 . 3878)))
+          ("MARKER_TOO_MANY_ANCHORS_PER_WINDOW" . ((number "999905" 4085 . 4091)))
+          ("PEMARKER_CHIMERIC_SJ_READ2" . ((number "223" 4578 . 4581)))
+          ("uint64" . 
+              ((UNSIGNED "unsigned" 810 . 818) (LONG "long" 819 . 823) (LONG "long" 824 . 828)))
+          ("uint16" . 
+              ((UNSIGNED "unsigned" 872 . 880) (SHORT "short" 881 . 886) (INT "int" 887 . 890)))
+          ("int64" . ((LONG "long" 933 . 937) (LONG "long" 938 . 942)))
+          ("BAM_CIGAR_D" . ((number "2" 1557 . 1558)))
+          ("SJ_SAM_AnnotatedMotifShift" . ((number "20" 2740 . 2742)))
+          ("PC_SIZE" . ((number "8" 3304 . 3305)))
+          ("WA_Nrep" . ((number "3" 3474 . 3475)))
+          ("EX_R" . ((number "0" 3564 . 3565)))
+          ("EX_sjA" . ((number "4" 3630 . 3631)))
+          ("ATTR_NM" . ((number "4" 1295 . 1296)))
+          ("SJ_MOTIF_SIZE" . ((number "7" 2672 . 2673)))
+          ("PC_rStart" . ((number "0" 3155 . 3156)))
+          ("PC_SAend" . ((number "6" 3267 . 3268)))
+          ("MARKER_NO_GOOD_WINDOW" . ((number "999903" 3966 . 3972)))
+          ("MARKER_TOO_MANY_CHIMERAS" . ((number "999909" 4310 . 4316)))
+          ("uint32" . ((UNSIGNED "unsigned" 844 . 852) (INT "int" 853 . 856)))
+          ("int32" . ((INT "int" 957 . 960)))
+          ("ATTR_Nmax" . ((number "9" 1223 . 1224)))
+          ("ATTR_MD" . ((number "5" 1313 . 1314)))
+          ("BAM_CIGAR_S" . ((number "4" 1601 . 1602)))
+          ("MAX_N_MATES" . ((number "2" 1867 . 1868)))
+          ("EXIT_CODE_MemoryAllocation" . ((number "108" 2487 . 2490)))
+          ("EXIT_CODE_FILE_WRITE" . ((number "110" 2552 . 2555)))
+          ("EXIT_createExtendWindowsWithAlign_TOO_MANY_WINDOWS" . ((number "101" 2645 . 2648)))
+          ("PC_Length" . ((number "1" 3175 . 3176)))
+          ("WA_sjA" . ((number "6" 3530 . 3531)))
+          ("WA_SIZE" . ((number "7" 3548 . 3549)))
+          ("EX_G" . ((number "1" 3579 . 3580)))
+          ("INCLUDEDEFINE_DEF")
+          ("intSWscore" . ((INT "int" 1099 . 1102)))
+          ("intScore" . ((INT "int" 1120 . 1123)))
+          ("ATTR_jI" . ((number "8" 1367 . 1368)))
+          ("DEF_readNameLengthMax" . ((number "50000" 1899 . 1904)))
+          ("EXIT_CODE_INPUT_FILES" . ((number "104" 2338 . 2341)))
+          ("MAX_N_MULTMAP" . ((number "100000" 2965 . 2971)))
+          ("PC_SAstart" . ((number "5" 3248 . 3249)))
+          ("WA_iFrag" . ((number "5" 3513 . 3514)))
+          ("MARKER_NO_GOOD_PIECES" . ((number "999904" 4035 . 4041)))
+          ("MARKER_READ_TOO_SHORT" . ((number "999910" 4347 . 4353)))
+          ("uchar" . ((UNSIGNED "unsigned" 905 . 913) (CHAR "char" 914 . 918)))
+          ("BAM_CIGAR_H" . ((number "5" 1623 . 1624)))
+          ("WC_gStart" . ((number "2" 3359 . 3360)))
+          ("WC_gEnd" . ((number "3" 3377 . 3378)))
+          ("MT_PE" . ((number "0" 3675 . 3676)))
+          ("SAMTOOLS_BGZF_H" . ((string "\"htslib/htslib/bgzf.h\"" 488 . 510)))
+          ("sint" . 
+              ((SIGNED "signed" 778 . 784) (LONG "long" 785 . 789) (LONG "long" 790 . 794)))
+          ("ATTR_HI" . ((number "2" 1259 . 1260)))
+          ("BAM_CIGAR_I" . ((number "1" 1535 . 1536)))
+          ("BAM_CIGAR_EQ" . ((number "7" 1668 . 1669)))
+          ("BAM_ATTR_MaxSize" . ((number "1000" 1718 . 1722)))
+          ("EXIT_CODE_GENOME_FILES" . ((number "105" 2373 . 2376)))
+          ("PEMARKER_CHIMERIC_PAIRS" . ((number "7" 4502 . 4503)))
+          ("GENOME_spacingChar" . ((number "5" 989 . 990)))
+          ("ATTR_nM" . ((number "6" 1331 . 1332)))
+          ("BAM_CIGAR_OperationShift" . ((number "4" 1491 . 1492)))
+          ("EXIT_CODE_BUG" . ((number "101" 2242 . 2245)))
+          ("WA_rStart" . ((number "1" 3436 . 3437)))
+          ("WA_Anchor" . ((number "4" 3494 . 3495)))
+          ("PEMARKER_SINGLE_END" . ((number "0" 4383 . 4384)))
+          ("PEMARKER_SINGLE_END_NOTMAPPED" . ((number "1001" 4663 . 4667)))
+          )
+
+    )
+   (semanticdb-table "SuffixArrayFuns.h"
+    :file "SuffixArrayFuns.h"
+    :fsize 836
+    :lastmodtime '(21639 25161 0 0)
+    )
+   (semanticdb-table "PackedArray.h"
+    :file "PackedArray.h"
+    :fsize 804
+    :lastmodtime '(21639 25161 0 0)
+    )
+   (semanticdb-table "TimeFunctions.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("TIME_FUNCTIONS_DEF" variable (:constant-flag t) nil [36 54])
+            ("string" include (:system-flag t) nil [55 72])
+            ("time.h" include (:system-flag t) nil [73 90])
+            ("timeMonthDayTime" function
+               (:prototype-flag t
+                :type ("string" type (:type "class") nil nil))
+                nil [92 118])
+            ("timeMonthDayTime" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rawTime" variable
+                       (:reference 1
+                        :type ("time_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [143 159]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [119 160]))          
+    :file "TimeFunctions.h"
+    :pointmax 169
+    :fsize 168
+    :lastmodtime '(21639 25161 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TIME_FUNCTIONS_DEF")
+          )
+
+    )
+   (semanticdb-table "ErrorWarning.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("DEF_STATS" variable (:constant-flag t) nil [34 43])
+            ("IncludeDefine.h" include nil nil [45 71])
+            ("Parameters.h" include nil nil [72 95])
+            ("exitWithError" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("messageOut" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116 134])
+                    ("streamOut1" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135 155])
+                    ("streamOut2" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [156 176])
+                    ("errorInt" variable (:type "int") (reparse-symbol arg-sub-list) [177 190])
+                    ("P" variable
+                       (:reference 1
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [191 205]))                  
+                :type "void")
+                nil [97 206]))          
+    :file "ErrorWarning.h"
+    :pointmax 214
+    :fsize 213
+    :lastmodtime '(21639 25161 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DEF_STATS")
+          )
+
+    )
+   (semanticdb-table "loadGTF.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("DEF_loadGTF" variable (:constant-flag t) nil [29 40])
+            ("Parameters.h" include nil nil [41 64])
+            ("SjdbClass.h" include nil nil [65 87])
+            ("loadGTF" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sjdbLoci" variable
+                       (:reference 1
+                        :type ("SjdbClass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101 121])
+                    ("P" variable
+                       (:pointer 1
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122 136]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [88 137]))          
+    :file "loadGTF.h"
+    :pointmax 146
+    :fsize 145
+    :lastmodtime '(21639 25161 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DEF_loadGTF")
+          )
+
+    )
+   (semanticdb-table "SjdbClass.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("DEF_SjdbClass" variable (:constant-flag t) nil [31 44])
+            ("IncludeDefine.h" include nil nil [46 72])
+            ("Parameters.h" include nil nil [73 96])
+            ("SjdbClass" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [116 123])
+                    ("chr" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [128 148])
+                    ("end" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("uint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [153 177])
+                    ("start" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("uint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [153 177])
+                    ("str" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("char" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [186 204]))                  
+                :type "class")
+                nil [98 207]))          
+    :file "SjdbClass.h"
+    :pointmax 215
+    :fsize 214
+    :lastmodtime '(21639 25161 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DEF_SjdbClass")
+          )
+
+    )
+   (semanticdb-table "sjdbLoadFromFiles.h"
+    :file "sjdbLoadFromFiles.h"
+    :fsize 198
+    :lastmodtime '(21639 25161 0 0)
+    )
+   (semanticdb-table "sjdbPrepare.h"
+    :file "sjdbPrepare.h"
+    :fsize 203
+    :lastmodtime '(21639 25161 0 0)
+    )
+   (semanticdb-table "serviceFuns.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DEF_serviceFuns" variable (:constant-flag t) nil [33 48])
+            ("sum1D" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81 86])
+                    ("N" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87 94]))                  )
+                nil [50 179])
+            ("funCompareUint2" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [215 229])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [230 244]))                  
+                :type "int")
+                nil [187 520])
+            ("funCompareArrays" function
+               (:template 
+                  ( ("arrayType" type (:type "class") nil nil)
+                    ("int" type nil nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [594 608])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [609 623]))                  
+                :typemodifiers ("inline"))
+                nil [523 879])
+            ("binarySearch1" function
+               (:template 
+                  ( ("argType" type (:type "class") nil nil))                  
+                :type ("uint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("x" variable (:type ("argType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [935 945])
+                    ("X" variable
+                       (:pointer 1
+                        :type ("argType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [946 957])
+                    ("N" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [958 967]))                  
+                :typemodifiers ("inline"))
+                nil [882 1365])
+            ("binarySearch1a" function
+               (:template 
+                  ( ("argType" type (:type "class") nil nil))                  
+                :type ("int32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("x" variable (:type ("argType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1421 1431])
+                    ("X" variable
+                       (:pointer 1
+                        :type ("argType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1432 1443])
+                    ("N" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1444 1452]))                  
+                :typemodifiers ("inline"))
+                nil [1368 1906]))          
+    :file "serviceFuns.cpp"
+    :pointmax 1918
+    :fsize 1917
+    :lastmodtime '(21639 25161 0 0)
+    :unmatched-syntax '((punctuation 1906 . 1907) (punctuation 1365 . 1366) (punctuation 879 . 880) (punctuation 520 . 521) (punctuation 179 . 180))
+    :lexical-table 
+        '(("DEF_serviceFuns")
+          )
+
+    )
+   (semanticdb-table "streamFuns.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CODE_streamFuns" variable (:constant-flag t) nil [33 48])
+            ("Parameters.h" include nil nil [50 73])
+            ("fstream" include (:system-flag t) nil [74 92])
+            ("fstreamReadBig" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("S" variable
+                       (:reference 1
+                        :type ("std::ifstream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128 145])
+                    ("A" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [146 154])
+                    ("N" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [155 176]))                  
+                :type "unsigned long long")
+                nil [94 177])
+            ("fstreamWriteBig" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("S" variable
+                       (:reference 1
+                        :type ("std::ofstream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [199 216])
+                    ("A" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [217 225])
+                    ("N" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [226 247])
+                    ("fileName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [248 269])
+                    ("errorID" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [270 290])
+                    ("P" variable
+                       (:pointer 1
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [291 305]))                  
+                :type "void")
+                nil [178 307])
+            ("ofstrOpen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fileName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [325 346])
+                    ("errorID" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [347 367])
+                    ("P" variable
+                       (:pointer 1
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [368 382])
+                    ("ofStream" variable
+                       (:reference 1
+                        :type ("ofstream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [383 403]))                  
+                :type "void")
+                nil [309 404])
+            ("ifstrOpen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fileName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [421 442])
+                    ("errorID" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [443 463])
+                    ("solutionString" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [464 491])
+                    ("P" variable
+                       (:pointer 1
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [492 506])
+                    ("ofStream" variable
+                       (:reference 1
+                        :type ("ifstream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [507 527]))                  
+                :type "void")
+                nil [405 528])
+            ("ifstrOpenGenomeFile" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fileName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [555 576])
+                    ("errorID" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [577 597])
+                    ("P" variable
+                       (:pointer 1
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [598 612])
+                    ("ifStream" variable
+                       (:reference 1
+                        :type ("ifstream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [613 633]))                  
+                :type "void")
+                nil [529 634]))          
+    :file "streamFuns.h"
+    :pointmax 643
+    :fsize 642
+    :lastmodtime '(21639 25161 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CODE_streamFuns")
+          )
+
+    )
+   (semanticdb-table "loadGTF.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("IncludeDefine.h" include nil nil [1 27])
+            ("Parameters.h" include nil nil [28 51])
+            ("ErrorWarning.h" include nil nil [52 77])
+            ("serviceFuns.cpp" include nil nil [78 104])
+            ("SjdbClass.h" include nil nil [105 127])
+            ("streamFuns.h" include nil nil [128 151])
+            ("TimeFunctions.h" include nil nil [152 178])
+            ("ctime" include (:system-flag t) nil [179 195])
+            ("map" include (:system-flag t) nil [197 211])
+            ("GTF_exonLoci_size" variable (:constant-flag t) nil [222 239])
+            ("GTF_exonTrID" variable (:constant-flag t) nil [250 262])
+            ("GTF_exonStart" variable (:constant-flag t) nil [300 313])
+            ("GTF_exonEnd" variable (:constant-flag t) nil [353 364])
+            ("GTF_exonGeID" variable (:constant-flag t) nil [404 416])
+            ("GTF_extrLoci_size" variable (:constant-flag t) nil [457 474])
+            ("GTF_extrTrStart" variable (:constant-flag t) nil [485 500])
+            ("GTF_extrTrEnd" variable (:constant-flag t) nil [538 551])
+            ("GTF_extrTrID" variable (:constant-flag t) nil [591 603])
+            ("GTF_extrExStart" variable (:constant-flag t) nil [643 658])
+            ("GTF_extrExEnd" variable (:constant-flag t) nil [698 711])
+            ("GTF_exgeLoci_size" variable (:constant-flag t) nil [752 769])
+            ("GTF_exgeExStart" variable (:constant-flag t) nil [780 795])
+            ("GTF_exgeExEnd" variable (:constant-flag t) nil [835 848])
+            ("GTF_exgeExStrand" variable (:constant-flag t) nil [888 904])
+            ("GTF_exgeGeID" variable (:constant-flag t) nil [944 956])
+            ("GTF_exgeTrID" variable (:constant-flag t) nil [996 1008])
+            ("loadGTF" function
+               (:arguments 
+                  ( ("sjdbLoci" variable
+                       (:reference 1
+                        :type ("SjdbClass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1056 1076])
+                    ("P" variable
+                       (:pointer 1
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1077 1091]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [1043 14680]))          
+    :file "loadGTF.cpp"
+    :pointmax 14119
+    :fsize 14713
+    :lastmodtime '(21652 50105 255496 340000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GTF_exonEnd" (spp-arg-list ("ii") 364 . 368) . ((semantic-list "((ii)*GTF_exonLoci_size+2)" 369 . 395)))
+          ("GTF_extrTrID" (spp-arg-list ("ii") 603 . 607) . ((semantic-list "((ii)*GTF_extrLoci_size+2)" 608 . 634)))
+          ("GTF_exgeExStrand" (spp-arg-list ("ii") 904 . 908) . ((semantic-list "((ii)*GTF_exgeLoci_size+2)" 909 . 935)))
+          ("GTF_exgeGeID" (spp-arg-list ("ii") 956 . 960) . ((semantic-list "((ii)*GTF_exgeLoci_size+3)" 961 . 987)))
+          ("GTF_exgeTrID" (spp-arg-list ("ii") 1008 . 1012) . ((semantic-list "((ii)*GTF_exgeLoci_size+4)" 1013 . 1039)))
+          ("GTF_exonLoci_size" . ((number "4" 240 . 241)))
+          ("GTF_extrTrEnd" (spp-arg-list ("ii") 551 . 555) . ((semantic-list "((ii)*GTF_extrLoci_size+1)" 556 . 582)))
+          ("GTF_extrExEnd" (spp-arg-list ("ii") 711 . 715) . ((semantic-list "((ii)*GTF_extrLoci_size+4)" 716 . 742)))
+          ("GTF_exgeExEnd" (spp-arg-list ("ii") 848 . 852) . ((semantic-list "((ii)*GTF_exgeLoci_size+1)" 853 . 879)))
+          ("GTF_extrTrStart" (spp-arg-list ("ii") 500 . 504) . ((semantic-list "((ii)*GTF_extrLoci_size)" 505 . 529)))
+          ("GTF_extrExStart" (spp-arg-list ("ii") 658 . 662) . ((semantic-list "((ii)*GTF_extrLoci_size+3)" 663 . 689)))
+          ("GTF_exgeExStart" (spp-arg-list ("ii") 795 . 799) . ((semantic-list "((ii)*GTF_exgeLoci_size+0)" 800 . 826)))
+          ("GTF_exonStart" (spp-arg-list ("ii") 313 . 317) . ((semantic-list "((ii)*GTF_exonLoci_size+1)" 318 . 344)))
+          ("GTF_extrLoci_size" . ((number "5" 475 . 476)))
+          ("GTF_exgeLoci_size" . ((number "5" 770 . 771)))
+          ("GTF_exonTrID" (spp-arg-list ("ii") 262 . 266) . ((semantic-list "((ii)*GTF_exonLoci_size)" 267 . 291)))
+          ("GTF_exonGeID" (spp-arg-list ("ii") 416 . 420) . ((semantic-list "((ii)*GTF_exonLoci_size+3)" 421 . 447)))
+          )
+
+    )
+   (semanticdb-table "VERSION"
+    :file "VERSION"
+    :fsize 35
+    :lastmodtime '(21639 25161 0 0)
+    )
+   (semanticdb-table "InOutStreams.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("INOUTSTREAMS_DEF" variable (:constant-flag t) nil [34 50])
+            ("IncludeDefine.h" include nil nil [52 78])
+            ("InOutStreams" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [130 137])
+                    ("outSAM" variable
+                       (:pointer 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [142 170])
+                    ("logStdOut" variable
+                       (:pointer 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [142 170])
+                    ("outSAMfile" variable (:type ("ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [175 210])
+                    ("logStdOutFile" variable (:type ("ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [175 210])
+                    ("outQuantBAMfile" variable
+                       (:pointer 1
+                        :type ("BGZF" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [215 276])
+                    ("outBAMfileCoord" variable
+                       (:pointer 1
+                        :type ("BGZF" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [215 276])
+                    ("outBAMfileUnsorted" variable
+                       (:pointer 1
+                        :type ("BGZF" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [215 276])
+                    ("outUnmappedReadsStream" variable
+                       (:dereference 1
+                        :type ("ofstream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [286 392])
+                    ("logFinal" variable (:type ("ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [286 392])
+                    ("logProgress" variable (:type ("ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [286 392])
+                    ("logMain" variable (:type ("ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [286 392])
+                    ("outChimJunction" variable (:type ("ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [286 392])
+                    ("outChimSAM" variable (:type ("ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [286 392])
+                    ("readIn" variable
+                       (:dereference 1
+                        :type ("ifstream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [397 426])
+                    ("outLocalChains" variable (:type ("ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [471 495])
+                    ("InOutStreams" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("InOutStreams" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [501 516])
+                    ("InOutStreams" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [521 537]))                  
+                :type "class")
+                nil [105 540]))          
+    :file "InOutStreams.h"
+    :pointmax 549
+    :fsize 548
+    :lastmodtime '(21639 25161 0 0)
+    :unmatched-syntax '((symbol 88 . 103) (symbol 80 . 87) (punctuation 79 . 80))
+    :lexical-table 
+        '(("INOUTSTREAMS_DEF")
+          )
+
+    )
+   (semanticdb-table "ParameterInfo.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PARAMETERSINFO_DEF" variable (:constant-flag t) nil [36 54])
+            ("ParameterInfoBase" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [82 89])
+                    ("nameString" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [94 112])
+                    ("inputLevel" variable (:type "int") (reparse-symbol classsubparts) [152 167])
+                    ("inputLevelAllowed" variable (:type "int") (reparse-symbol classsubparts) [206 228])
+                    ("inputValues" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("streamIn" variable
+                               (:reference 1
+                                :type ("istringstream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [314 338]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [289 342])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [380 396])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ParameterInfoBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [397 424]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [347 425])
+                    ("ParameterInfoBase" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [434 465])
+                    ("protected" label nil (reparse-symbol classsubparts) [471 481])
+                    ("printValues" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [511 527]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [486 538]))                  
+                :type "class")
+                nil [56 541])
+            ("<<" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("o" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [578 594])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ParameterInfoBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [595 622]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [545 662])
+            ("inputOneValue" function
+               (:template 
+                  ( ("parameterType" type (:type "class") nil nil))                  
+                :type ("parameterType" type (:type "class") nil nil)
+                :arguments 
+                  ( ("streamIn" variable
+                       (:reference 1
+                        :type ("istringstream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [734 758]))                  
+                :typemodifiers ("inline"))
+                nil [666 825])
+            ("inputOneValue" function
+               (:type ("string" type (:type "class") nil nil)
+                :arguments 
+                  ( ("streamIn" variable
+                       (:reference 1
+                        :type ("istringstream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [877 901]))                  
+                :typemodifiers ("inline")
+                :template-specifier 
+                  ( ("string" type nil nil nil))                  )
+                nil [827 1167])
+            ("printOneValue" function
+               (:template 
+                  ( ("parameterType" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type ("parameterType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1230 1251])
+                    ("outStr" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1252 1273]))                  
+                :typemodifiers ("inline"))
+                nil [1171 1299])
+            ("printOneValue" function
+               (:type "void"
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1349 1363])
+                    ("outStr" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1364 1385]))                  
+                :typemodifiers ("inline")
+                :template-specifier 
+                  ( ("string" type nil nil nil))                  )
+                nil [1301 1593])
+            ("ParameterInfoScalar" type
+               (:template 
+                  ( ("parameterType" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1685 1692])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("parameterType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1697 1718])
+                    ("allowedValues" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("parameterType" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1723 1760])
+                    ("ParameterInfoScalar" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("inputLevelIn" variable (:type "int") (reparse-symbol arg-sub-list) [1790 1807])
+                            ("inputLevelAllowedIn" variable (:type "int") (reparse-symbol arg-sub-list) [1808 1832])
+                            ("nameStringIn" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1833 1853])
+                            ("valueIn" variable
+                               (:pointer 1
+                                :type ("parameterType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1854 1877]))                          
+                        :type ("ParameterInfoScalar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1770 2021])
+                    ("inputValues" function
+                       (:arguments 
+                          ( ("streamIn" variable
+                               (:reference 1
+                                :type ("istringstream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2049 2073]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2032 2138])
+                    ("ParameterInfoScalar" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2149 2174])
+                    ("protected" label nil (reparse-symbol classsubparts) [2176 2186])
+                    ("printValues" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("outStr" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2215 2236]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2190 2286]))                  
+                :superclasses 
+                  ( ("ParameterInfoBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [1596 2299])
+            ("ParameterInfoVector" type
+               (:template 
+                  ( ("parameterType" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2390 2397])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("parameterType" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2402 2432])
+                    ("allowedValues" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("parameterType" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2437 2474])
+                    ("ParameterInfoVector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("inputLevelIn" variable (:type "int") (reparse-symbol arg-sub-list) [2504 2521])
+                            ("inputLevelAllowedIn" variable (:type "int") (reparse-symbol arg-sub-list) [2522 2546])
+                            ("nameStringIn" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2547 2567])
+                            ("valueIn" variable
+                               (:pointer 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("parameterType" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2568 2600]))                          
+                        :type ("ParameterInfoVector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2484 2744])
+                    ("inputValues" function
+                       (:arguments 
+                          ( ("streamIn" variable
+                               (:reference 1
+                                :type ("istringstream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2772 2796]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2755 3029])
+                    ("ParameterInfoVector" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3040 3065])
+                    ("protected" label nil (reparse-symbol classsubparts) [3067 3077])
+                    ("printValues" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("outStr" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3106 3127]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3081 3285]))                  
+                :superclasses 
+                  ( ("ParameterInfoBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [2301 3294]))          
+    :file "ParameterInfo.h"
+    :pointmax 3302
+    :fsize 3301
+    :lastmodtime '(21639 25161 0 0)
+    :unmatched-syntax '((punctuation 3285 . 3286) (punctuation 3065 . 3066) (punctuation 3029 . 3030) (punctuation 2744 . 2745) (punctuation 2286 . 2287) (punctuation 2174 . 2175) (punctuation 2138 . 2139) (punctuation 2021 . 2022) (punctuation 1593 . 1594) (punctuation 1299 . 1300) (punctuation 1167 . 1168) (punctuation 825 . 826) (punctuation 662 . 663) (punctuation 465 . 466))
+    :lexical-table 
+        '(("PARAMETERSINFO_DEF")
+          )
+
+    )
+   )
+  :file "!home!brad!packages!STAR-STAR_2.4.0h!source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

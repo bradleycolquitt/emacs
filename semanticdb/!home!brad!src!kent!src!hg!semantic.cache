@@ -1,0 +1,54 @@
+;; Object hg/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hg/"
+  :tables (list 
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("kentSrc" variable (:default-value ("..")) nil [35 48])
+            ("${kentSrc}/inc/localEnvironment.mk" include nil nil [48 91])
+            ("BROWSER_BINS" variable (:default-value ("cartReset" "das" "hgBlat" "makeDb/hgCgiData" "hgConvert" "hgHubConnect" "hgGateway" "hgGene" "hgGenome" "hgLogin" "hgPcr" "hgSession" "hgSuggest" "hgTables" "hgTracks" "hgTrackUi" "hgUserSuggestion" "hgc" "hgApi" "cartDump" "near/hgNear" "hgLiftOver" "hgVai" "visiGene/hgVisiGene" "encode/hgEncodeDataVersions" "encode/hgEncodeVocab" "encode/hgEncodeApi" "phyloGif" "hgCustom" "hgPal" "hgFileUi" "hgFileSearch" "makeDb/hgCgiData" "js" "htdocs/style" "hgMirror")) nil [150 597])
+            ("BROWSER_LOADERS" variable (:default-value ("makeDb/hgLoadBed" "makeDb/hgLoadWiggle" "makeDb/hgLoadMaf")) nil [713 785])
+            ("TEST_DIRS" variable (:default-value ("lib" "autoDtd" "autoSql" "blastToPsl" "checkTableCoords" "embossToPsl" "genePredSingleCover" "genePredHisto" "genePredToBed" "genePredToGtf" "genePredToMafFrames" "gbGetEntries" "hgGetAnn" "liftAcross" "liftOver" "mouseStuff" "mrnaToGene" "pslCDnaFilter" "pslDiff" "pslHisto" "pslPartition" "pslSelect" "pslStats" "pslSwap" "pslToBed" "spideyToPsl" "sqlToXml" "xmlToSql" "utils")) nil [897 1287])
+            ("BROKEN_TEST_DIRS" variable (:default-value ("liftOver" "scaffoldFaToAgp")) nil [1288 1332])
+            ("BAD_DIRS" variable (:default-value ("altGraph" "cgiExample" "geneOverlap" "hgBatch" "makeSeqs" "oneShot" "synMap" "encode" "wikiPlot")) nil [1333 1451])
+            ("UNAME_S" variable (:default-value ("$(shell uname -s)")) nil [1514 1544])
+            ("UTILS_APPLIST" variable (:default-value ("autoDtd" "autoSql" "autoXml" "bedSort" "liftUp" "liftOver" "bedIntersect" "bedItemOverlapCount" "bedToGenePred" "blastToPsl" "checkCoverageGaps" "checkHgFindSpec" "checkTableCoords" "dbTrash" "encode3/validateFiles" "encode3/validateManifest" "estOrient" "featureBits" "genePredHisto" "genePredSingleCover" "genePredToBed" "genePredToFakePsl" "genePredToMafFrames" "gigAssembler/checkAgpAndFa" "hgsql" "hgsqldump" "maskOutFa" "mrnaToGene" "ratStuff/mafsInRegion" "ratStuff/mafSpeciesSubset" "ratStuff/mafToSnpBed" "pslCDnaFilter" "genePredCheck" "genePredToGtf" "pslCat" "pslCheck" "pslDropOverlap" "pslFilter" "pslHisto" "pslPairs" "pslPartition" "pslPretty" "pslRecalcMatch" "pslReps" "pslSelect" "pslSort" "pslStats" "pslSwap" "pslToBed" "pslToChain" "pslxToFa" "qaToQac" "qacAgpLift" "qacToQa" "qacToWig" "sqlToXml" "trfBig" "xmlCat" "xmlToSql")) nil [1664 2589])
+            ("UTIL_DIRS" variable (:default-value ("affyTransciptome" "agpCloneCheck" "agpCloneList" "agpAllToFaFile" "agpToFa" "agpToGl" "altSplice" "bedOrBlocks" "bedSplitOnChrom" "borfBig" "ctgFaToFa" "ctgToChromFa" "embossToPsl" "${buildRefresh}" "fakeFinContigs" "fakeOut" "ffaToFa" "fishClones" "fqToQa" "fqToQac" "fragPart" "gbGetEntries" "gbOneAcc" "gbToFaRa" "geneBounds" "getFeatDna" "getRna" "getRnaPred" "gpStats" "gpToGtf" "gpcrParser" "gsBig" "hgTablesTest" "hgChroms" "hgGetAnn" "hgKnownGeneList" "hgSelect" "hgSpeciesRna" "hgsqlLocal" "hgsqladmin" "hgsqldumpLocal" "hgsqlimport" "hgsqlSwapTables" "hgsqlTableDate" "intronEnds" "lib" "liftAcross" "liftAgp" "liftFrags" "lfsOverlap" "makeDb" "mdToNcbiLift" "mouseStuff" "near/hgCeOrfToGene" "near/hgClusterGenes" "near/hgEmblProtLinks" "near/hgExpDistance" "near/hgGoAssociation" "near/hgKnownToSuper" "near/hgMapToGene" "near/hgMapViaSwissProt" "near/hgProtIdToGenePred" "near/hgWormLinks" "near/pepPredToFa" "near/hgNearTest" "near/hgNetDist" "near/knownToHprd" "nci60" "orthoMap" "patCount" "perf" "pslCoverage" "pslDiff" "pslFilterPrimers" "pslGlue" "pslHitPercent" "pslIntronsOnly" "pslQuickFilter" "pslSimp" "pslSortAcc" "pslSplitOnTarget" "pslUnpile" "qa" "ratStuff" "relPairs" "recycleDb" "reviewSanity" "rnaStructure" "sage" "scanRa" "semiNorm" "sim4big" "snpException" "snp" "spideyToPsl" "splitFa" "splitFaIntoContigs" "test" "txCds" "txGene" "txGraph" "utils" "uniqSize" "updateStsInfo" "visiGene/knownToVisiGene")) nil [2629 4199])
+            ("APPS" variable (:default-value ("$(UTIL_DIRS)" "$(UTILS_APPLIST)")) nil [4200 4237])
+            ("all" function (:arguments ("cgi" "utils")) nil [4238 4257])
+            ("hgLib" function nil nil [4258 4284])
+            ("userApps" function (:arguments ("$(UTILS_APPLIST:%=%.userApp)")) nil [4285 4467])
+            ("%.userApp" function (:arguments ("hgLib")) nil [4468 4514])
+            ("utils" function (:arguments ("$(APPS:%=%.utils)")) nil [4515 4540])
+            ("%.utils" function (:arguments ("hgLib")) nil [4540 4584])
+            ("compile" function (:arguments ("${BROWSER_BINS:%=%.compile}" "${BROWSER_LOADERS:%=%.compile}")) nil [4721 4789])
+            ("%.compile" function (:arguments ("hgLib")) nil [4789 4843])
+            ("cgi" function (:arguments ("${BROWSER_BINS:%=%.bins}" "${BROWSER_LOADERS:%=%.cgi}" "${BROWSER_LOADERS:%=%.cgi}" "${ENCODE_FILES:%=%.cgi}")) nil [4934 5042])
+            ("%.bins" function (:arguments ("hgLib")) nil [5042 5085])
+            ("%.cgi" function (:arguments ("hgLib")) nil [5085 5131])
+            ("alpha" function (:arguments ("${BROWSER_BINS:%=%.alpha}" "${BROWSER_LOADERS:%=%.alpha}" "${ENCODE_FILES:%=%.alpha}")) nil [5203 5292])
+            ("%.alpha" function (:arguments ("hgLib")) nil [5292 5342])
+            ("beta" function (:arguments ("${BROWSER_BINS:%=%.beta}" "${BROWSER_LOADERS:%=%.beta}")) nil [5418 5477])
+            ("%.beta" function (:arguments ("hgLib")) nil [5477 5525])
+            ("install" function (:arguments ("${BROWSER_BINS:%=%.install}" "${BROWSER_LOADERS:%=%.install}")) nil [5606 5674])
+            ("%.install" function (:arguments ("hgLib")) nil [5674 5728])
+            ("clean" function nil nil [5729 5914])
+            ("clean_utils" function nil nil [5915 5998])
+            ("clean" function (:arguments ("${TEST_DIRS:%=%.clean}")) nil [5999 6030])
+            ("%.clean" function nil nil [6031 6064])
+            ("testAll" function (:arguments ("$(APPS:%=%.testAll)")) nil [6065 6094])
+            ("%.testAll" function nil nil [6095 6178])
+            ("test" function (:arguments ("${TEST_DIRS:%=%.test}" "testAll")) nil [6179 6216])
+            ("%.test" function (:arguments ("hgLib")) nil [6217 6254]))          
+    :file "makefile"
+    :pointmax 6254
+    :fsize 6254
+    :lastmodtime '(21696 30712 516122 7000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!kent!src!hg!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,1790 @@
+;; Object seq_io/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "seq_io/"
+  :tables (list 
+   (semanticdb-table "read_fasta_fastq.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_SEQ_IO_READ_FASTA_FASTQ_H_" variable (:constant-flag t) nil [2383 2415])
+            ("seqan" type
+               (:members 
+                  ( ("TagFasta_" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2889 2906])
+                    ("Fasta" type
+                       (:typedef ("Tag" type
+                             (:template-specifier 
+                                ( ("TagFasta_" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Tag"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2907 2936])
+                    ("TagFastq_" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3033 3050])
+                    ("Fastq" type
+                       (:typedef ("Tag" type
+                             (:template-specifier 
+                                ( ("TagFastq_" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Tag"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3051 3080])
+                    ("MetaFirstChar_" type
+                       (:template 
+                          ( ("TTag" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [3306 3353])
+                    ("MetaFirstChar_" type
+                       (:type "struct"
+                        :members 
+                          ( ("VALUE" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [3412 3442]))                          
+                        :template-specifier 
+                          ( ("Tag" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3355 3445])
+                    ("MetaFirstChar_" type
+                       (:type "struct"
+                        :members 
+                          ( ("VALUE" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [3504 3534]))                          
+                        :template-specifier 
+                          ( ("Tag" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3447 3537])
+                    ("AfterSeqFirstChar_" type
+                       (:template 
+                          ( ("TTag" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [3718 3769])
+                    ("AfterSeqFirstChar_" type
+                       (:type "struct"
+                        :members 
+                          ( ("VALUE" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [3832 3862]))                          
+                        :template-specifier 
+                          ( ("Tag" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3771 3865])
+                    ("AfterSeqFirstChar_" type
+                       (:type "struct"
+                        :members 
+                          ( ("VALUE" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [3928 3958]))                          
+                        :template-specifier 
+                          ( ("Tag" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3867 3961])
+                    ("_countSequenceFastAQ" function
+                       (:template 
+                          ( ("TFormatTag" type (:type "class") nil nil)
+                            ("TAlph" type (:type "class") nil nil)
+                            ("TRecordReader" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("count" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [4592 4613])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("TRecordReader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4635 4658])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TFormatTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4680 4715])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TAlph" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4737 4771]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [4489 4929])
+                    ("_countMetaAndSequence" function
+                       (:template 
+                          ( ("TSeqAlph" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TTag" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("metaLength" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [6617 6643])
+                            ("seqLength" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [6666 6691])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("DoublePass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6714 6763])
+                            ("formatTag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6786 6809])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TSeqAlph" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6832 6858]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [6478 7696])
+                    ("_clearAndReserveMemory" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TTag" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("meta" variable
+                               (:reference 1
+                                :type ("TIdString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7885 7902])
+                            ("seq" variable
+                               (:reference 1
+                                :type ("TSeqString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7903 7920])
+                            ("" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("SinglePass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7944 7991])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8015 8036]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [7713 8087])
+                    ("_clearAndReserveMemory" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TTag" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("meta" variable
+                               (:reference 1
+                                :type ("TIdString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8276 8293])
+                            ("seq" variable
+                               (:reference 1
+                                :type ("TSeqString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8294 8311])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("DoublePass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8335 8384])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8408 8429]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [8104 9072])
+                    ("_clearAndReserveMemory" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TQualString" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TTag" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("meta" variable
+                               (:reference 1
+                                :type ("TIdString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9278 9295])
+                            ("seq" variable
+                               (:reference 1
+                                :type ("TSeqString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9296 9313])
+                            ("qual" variable
+                               (:reference 1
+                                :type ("TQualString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9314 9333])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("TSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9357 9393])
+                            ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9417 9434]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [9074 9576])
+                    ("_readSequenceFastAQ" function
+                       (:template 
+                          ( ("TAlph" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TRecordReader" type (:type "class") nil nil)
+                            ("TFormatTag" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("string" variable
+                               (:reference 1
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TAlph" type nil nil nil)
+                                          ("TSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10157 10187])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("TRecordReader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10208 10231])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TFormatTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10252 10285]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [10039 10443])
+                    ("_readSequenceFastAQCharImpl" function
+                       (:template 
+                          ( ("TString" type (:type "class") nil nil)
+                            ("TRecordReader" type (:type "class") nil nil)
+                            ("TFormatTag" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("string" variable
+                               (:reference 1
+                                :type ("TString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10869 10886])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("TRecordReader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10915 10938])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TFormatTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10967 11000]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [10757 11864])
+                    ("_readSequenceFastAQ" function
+                       (:template 
+                          ( ("TSpec" type (:type "class") nil nil)
+                            ("TRecordReader" type (:type "class") nil nil)
+                            ("TFormatTag" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("string" variable
+                               (:reference 1
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("char" type nil nil nil)
+                                          ("TSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11968 11997])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("TRecordReader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12018 12041])
+                            ("formatTag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TFormatTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12062 12091]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [11866 12162])
+                    ("_readSequenceFastAQ" function
+                       (:template 
+                          ( ("TString" type (:type "class") nil nil)
+                            ("TRecordReader" type (:type "class") nil nil)
+                            ("TFormatTag" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("string" variable
+                               (:reference 1
+                                :type ("TString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12268 12285])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("TRecordReader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12306 12329])
+                            ("formatTag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TFormatTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12350 12379]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [12164 12450])
+                    ("_readMetaAndSequence" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TPass" type (:type "class") nil nil)
+                            ("TTag" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("meta" variable
+                               (:reference 1
+                                :type ("TIdString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12654 12671])
+                            ("seq" variable
+                               (:reference 1
+                                :type ("TSeqString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12672 12689])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("TPass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12711 12748])
+                            ("formatTag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12770 12793]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [12484 13466])
+                    ("_skipQualityBlock" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TPass" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("TPass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13756 13791])
+                            ("" variable
+                               (:constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [13810 13830])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fasta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13849 13871]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [13685 13911])
+                    ("_skipQualityBlock" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TPass" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("TPass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13984 14021])
+                            ("seqLength" variable
+                               (:constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [14040 14065])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fastq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14084 14106]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [13913 14663])
+                    ("_readQualityBlockHelper" function
+                       (:template 
+                          ( ("TSeqString" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TPass" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("seq" variable
+                               (:reference 1
+                                :type ("TSeqString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14796 14813])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("TPass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14849 14886])
+                            ("seqLength" variable
+                               (:constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [14922 14947])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("True" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14983 15024]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [14698 15724])
+                    ("_readQualityBlockHelper" function
+                       (:template 
+                          ( ("TQualString" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TPass" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("qual" variable
+                               (:reference 1
+                                :type ("TQualString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15825 15844])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("TPass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15880 15917])
+                            ("seqLength" variable
+                               (:constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [15953 15978])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("False" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16014 16059]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [15726 16168])
+                    ("_readQualityBlock" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TQualString" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TPass" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("qual" variable
+                               (:reference 1
+                                :type ("TQualString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16313 16332])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("TPass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [16351 16388])
+                            ("seqLength" variable
+                               (:constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [16407 16432])
+                            ("meta" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TIdString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16451 16474])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fastq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16493 16515]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [16170 17813])
+                    ("readRecord" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TPass" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("meta" variable
+                               (:reference 1
+                                :type ("TIdString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18638 18655])
+                            ("seq" variable
+                               (:reference 1
+                                :type ("TSeqString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18667 18684])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("TPass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18696 18733])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fasta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18745 18767]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [18503 19025])
+                    ("readRecord" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TQualString" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TPass" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("meta" variable
+                               (:reference 1
+                                :type ("TIdString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19194 19211])
+                            ("seq" variable
+                               (:reference 1
+                                :type ("TSeqString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19223 19240])
+                            ("quals" variable
+                               (:reference 1
+                                :type ("TQualString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19252 19272])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("TPass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19284 19321])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fasta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19333 19355]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [19027 19632])
+                    ("readRecord" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TPass" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("meta" variable
+                               (:reference 1
+                                :type ("TIdString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19769 19786])
+                            ("seq" variable
+                               (:reference 1
+                                :type ("TSeqString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19798 19815])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("TPass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19827 19864])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fastq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19876 19898]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [19634 20307])
+                    ("readRecord" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TQualString" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TPass" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("meta" variable
+                               (:reference 1
+                                :type ("TIdString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21553 21570])
+                            ("seq" variable
+                               (:reference 1
+                                :type ("TSeqString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21582 21599])
+                            ("qual" variable
+                               (:reference 1
+                                :type ("TQualString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21611 21630])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("TPass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [21642 21679])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fastq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21691 21713]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [21386 22069])
+                    ("_readFastAQQualityReadDispatcher" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TQualString" type (:type "class") nil nil)
+                            ("TRecordReader" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("sequenceIds" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TIdString" type nil nil nil)
+                                          ("Owner" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22526 22586])
+                            ("sequences" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TSeqString" type nil nil nil)
+                                          ("Owner" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22620 22679])
+                            ("" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TQualString" type nil nil nil)
+                                          ("Owner" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22713 22777])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("TRecordReader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22811 22834])
+                            ("i" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22868 22879])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("True" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22913 22948]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [22385 23283])
+                    ("_readFastAQQualityReadDispatcher" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TQualString" type (:type "class") nil nil)
+                            ("TRecordReader" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("sequenceIds" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TIdString" type nil nil nil)
+                                          ("Owner" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [23426 23486])
+                            ("sequences" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TSeqString" type nil nil nil)
+                                          ("Owner" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [23520 23579])
+                            ("qualities" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TQualString" type nil nil nil)
+                                          ("Owner" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [23613 23673])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("TRecordReader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23707 23730])
+                            ("i" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23764 23775])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("False" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23809 23850]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [23285 23957])
+                    ("_readFastAQ" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TQualString" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TTag" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("sequenceIds" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TIdString" type nil nil nil)
+                                          ("Owner" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [24145 24205])
+                            ("sequences" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TSeqString" type nil nil nil)
+                                          ("Owner" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [24222 24281])
+                            ("qualities" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TQualString" type nil nil nil)
+                                          ("Owner" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [24298 24358])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("DoublePass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [24375 24424])
+                            ("withQual" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [24441 24461])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24478 24499]))                          )
+                        (reparse-symbol namespacesubparts) [23959 27795])
+                    ("_readFastAQ" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TIdSpec" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TSeqSpec" type (:type "class") nil nil)
+                            ("TQualString" type (:type "class") nil nil)
+                            ("TQualSpec" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TTag" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("sequenceIds" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TIdString" type nil nil nil)
+                                          ("TIdSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [28148 28192])
+                            ("sequences" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TSeqString" type nil nil nil)
+                                          ("TSeqSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [28209 28253])
+                            ("qualities" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TQualString" type nil nil nil)
+                                          ("TQualSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [28270 28316])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("DoublePass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [28333 28382])
+                            ("withQual" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [28399 28419])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28436 28457]))                          )
+                        (reparse-symbol namespacesubparts) [27905 31612])
+                    ("read2" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TIdSpec" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TSeqSpec" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("sequenceIds" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TIdString" type nil nil nil)
+                                          ("TIdSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [32697 32741])
+                            ("sequences" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TSeqString" type nil nil nil)
+                                          ("TSeqSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [32751 32795])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("DoublePass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [32805 32854])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fasta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32864 32886]))                          )
+                        (reparse-symbol namespacesubparts) [32537 33020])
+                    ("read2" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TIdSpec" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TSeqSpec" type (:type "class") nil nil)
+                            ("TQualString" type (:type "class") nil nil)
+                            ("TQualSpec" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("sequenceIds" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TIdString" type nil nil nil)
+                                          ("TIdSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [33234 33278])
+                            ("sequences" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TSeqString" type nil nil nil)
+                                          ("TSeqSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [33288 33332])
+                            ("qualities" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TQualString" type nil nil nil)
+                                          ("TQualSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [33342 33388])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("DoublePass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [33398 33447])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fasta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33457 33479]))                          )
+                        (reparse-symbol namespacesubparts) [33022 33649])
+                    ("read2" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TIdSpec" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TSeqSpec" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("sequenceIds" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TIdString" type nil nil nil)
+                                          ("TIdSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [34055 34099])
+                            ("sequences" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TSeqString" type nil nil nil)
+                                          ("TSeqSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [34109 34153])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("DoublePass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [34163 34212])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fastq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34222 34244]))                          )
+                        (reparse-symbol namespacesubparts) [33895 34451])
+                    ("read2" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TIdSpec" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TSeqSpec" type (:type "class") nil nil)
+                            ("TQualString" type (:type "class") nil nil)
+                            ("TQualSpec" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("sequenceIds" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TIdString" type nil nil nil)
+                                          ("TIdSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [34940 34984])
+                            ("sequences" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TSeqString" type nil nil nil)
+                                          ("TSeqSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [34994 35038])
+                            ("qualities" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TQualString" type nil nil nil)
+                                          ("TQualSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [35048 35094])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("DoublePass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [35104 35153])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fastq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35163 35185]))                          )
+                        (reparse-symbol namespacesubparts) [34728 35271])
+                    ("read2" function
+                       (:arguments 
+                          ( ("sequenceIds" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TIdString" type nil nil nil)
+                                          ("TIdSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [35933 35977])
+                            ("sequences" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TSeqString" type nil nil nil)
+                                          ("TSeqSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [35984 36028])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("SinglePass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [36035 36084])
+                            ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36091 36108]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [35922 36376])
+                    ("read2" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TIdSpec" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TSeqSpec" type (:type "class") nil nil)
+                            ("TQualString" type (:type "class") nil nil)
+                            ("TQualSpec" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TTag" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("sequenceIds" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TIdString" type nil nil nil)
+                                          ("TIdSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [36605 36649])
+                            ("sequences" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TSeqString" type nil nil nil)
+                                          ("TSeqSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [36660 36704])
+                            ("qualities" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TQualString" type nil nil nil)
+                                          ("TQualSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [36715 36761])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("SinglePass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [36772 36821])
+                            ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TTag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36832 36849]))                          )
+                        (reparse-symbol namespacesubparts) [36378 36930])
+                    ("read2" function
+                       (:template 
+                          ( ("TIdString" type (:type "class") nil nil)
+                            ("TIdSpec" type (:type "class") nil nil)
+                            ("TSeqString" type (:type "class") nil nil)
+                            ("TSeqSpec" type (:type "class") nil nil)
+                            ("TQualString" type (:type "class") nil nil)
+                            ("TQualSpec" type (:type "class") nil nil)
+                            ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("sequenceIds" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TIdString" type nil nil nil)
+                                          ("TIdSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [37144 37188])
+                            ("sequences" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TSeqString" type nil nil nil)
+                                          ("TSeqSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [37198 37242])
+                            ("qualities" variable
+                               (:reference 1
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TQualString" type nil nil nil)
+                                          ("TQualSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [37252 37298])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TFile" type nil nil nil)
+                                          ("SinglePass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [37308 37357])
+                            ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fastq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [37367 37385]))                          )
+                        (reparse-symbol namespacesubparts) [36932 37719])
+                    ("guessStreamFormat" function
+                       (:template 
+                          ( ("TStream" type (:type "class") nil nil)
+                            ("TPass" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TStream" type nil nil nil)
+                                          ("TPass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [38338 38376])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fasta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [38377 38399]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [38264 38807])
+                    ("guessStreamFormat" function
+                       (:template 
+                          ( ("TStream" type (:type "class") nil nil)
+                            ("TPass" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("reader" variable
+                               (:reference 1
+                                :type ("RecordReader" type
+                                     (:template-specifier 
+                                        ( ("TStream" type nil nil nil)
+                                          ("TPass" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [38883 38921])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Fastq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [38922 38944]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [38809 39291]))                  
+                :type "namespace")
+                nil [2417 39294]))          
+    :file "read_fasta_fastq.h"
+    :pointmax 39368
+    :fsize 39367
+    :lastmodtime '(21577 15160 894605 419000)
+    :unmatched-syntax '((punctuation 35921 . 35922) (punctuation 35920 . 35921) (punctuation 35919 . 35920) (INT 35916 . 35919) (punctuation 35895 . 35896) (symbol 35891 . 35895) (punctuation 35890 . 35891) (punctuation 35889 . 35890) (punctuation 35888 . 35889) (symbol 35884 . 35888) (punctuation 35883 . 35884) (punctuation 35882 . 35883) (punctuation 35881 . 35882) (symbol 35876 . 35880) (punctuation 35875 . 35876) (punctuation 35874 . 35875) (punctuation 35873 . 35874) (symbol 35868 . 35873) (punctuation 35867 . 35868) (symbol 35855 . 35867) (TYPENAME 35846 . 35854) (punctuation 35844 . 35845) (symbol 35840 . 35844) (punctuation 35839 . 35840) (punctuation 35838 . 35839) (punctuation 35837 . 35838) (symbol 35833 . 35837) (punctuation 35832 . 35833) (symbol 35820 . 35832) (TYPENAME 35811 . 35819) (punctuation 35810 . 35811) (symbol 35800 . 35810) (TYPENAME 35791 . 35799) (punctuation 35759 . 35760) (symbol 35755 . 35759) (punctuation 35754 . 35755) (punctuation 35753 . 35754) (punctuation 35752 . 35753) (symbol 35747 . 35751) (punctuation 35746 . 35747) (punctuation 35745 . 35746) (punctuation 35744 . 35745) (symbol 35739 . 35744) (punctuation 35738 . 35739) (symbol 35726 . 35738) (TYPENAME 35717 . 35725) (punctuation 35715 . 35716) (symbol 35711 . 35715) (punctuation 35710 . 35711) (punctuation 35709 . 35710) (punctuation 35708 . 35709) (symbol 35704 . 35708) (punctuation 35703 . 35704) (symbol 35691 . 35703) (TYPENAME 35682 . 35690) (punctuation 35681 . 35682) (symbol 35671 . 35681) (TYPENAME 35662 . 35670) (punctuation 35661 . 35662) (symbol 35659 . 35661) (TYPENAME 35650 . 35658) (punctuation 35649 . 35650) (symbol 35641 . 35649) (TYPENAME 35632 . 35640) (punctuation 35630 . 35631) (symbol 35626 . 35630) (TYPENAME 35617 . 35625) (punctuation 35615 . 35616) (symbol 35610 . 35615) (TYPENAME 35601 . 35609) (punctuation 35589 . 35590) (symbol 35584 . 35589) (TYPENAME 35575 . 35583) (punctuation 35563 . 35564) (symbol 35555 . 35563) (TYPENAME 35546 . 35554) (punctuation 35544 . 35545) (symbol 35534 . 35544) (TYPENAME 35525 . 35533) (punctuation 35513 . 35514) (symbol 35506 . 35513) (TYPENAME 35497 . 35505) (punctuation 35495 . 35496) (symbol 35486 . 35495) (TYPENAME 35477 . 35485) (punctuation 35476 . 35477) (TEMPLATE 35467 . 35475))
+    :lexical-table 
+        '(("SEQAN_SEQ_IO_READ_FASTA_FASTQ_H_")
+          )
+
+    )
+   (semanticdb-table "sequence_stream_impl.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CORE_INCLUDE_SEQAN_SEQ_IO_SEQ_IO_IMPL_H_" variable (:constant-flag t) nil [2161 2201])
+            ("CORE_INCLUDE_SEQAN_SEQ_IO_SEQ_IO_IMPL_H_" variable (:constant-flag t) nil [2161 2201])
+            ("CORE_INCLUDE_SEQAN_SEQ_IO_SEQ_IO_IMPL_H_" variable (:constant-flag t) nil [2161 2201])
+            ("memory" include (:system-flag t) nil [2203 2220])
+            ("seqan" type
+               (:members 
+                  ( ("SeqIOFileType_" type
+                       (:members 
+                          ( ("Type" type
+                               (:members 
+                                  ( ("FILE_TYPE_AUTO" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2879 2894])
+                                    ("FILE_TYPE_ERROR" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2903 2919])
+                                    ("FILE_TYPE_TEXT_STD" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2928 2947])
+                                    ("FILE_TYPE_TEXT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2979 3241]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2855 3242]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2782 3245])
+                    ("SeqIOFileFormat_" type
+                       (:members 
+                          ( ("Type" type
+                               (:members 
+                                  ( ("FILE_FORMAT_AUTO" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3486 3503])
+                                    ("FILE_FORMAT_ERROR" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3512 3530])
+                                    ("FILE_FORMAT_FASTA" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3539 3557])
+                                    ("FILE_FORMAT_FASTQ" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3566 3584])
+                                    ("FILE_FORMAT_EMBL" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3593 3615]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [3462 3616]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3432 3619])
+                    ("SequenceStreamImpl_" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3988 3995])
+                            ("_mmapString" variable (:type ("std::SEQAN_AUTO_PTR_NAME" type
+                                 (:template-specifier 
+                                    ( ("String" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4217 4278])
+                            ("_mmapReaderSinglePass" variable (:type ("std::SEQAN_AUTO_PTR_NAME" type
+                                 (:template-specifier 
+                                    ( ("RecordReader" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4687 4799])
+                            ("_mmapReaderDoublePass" variable (:type ("std::SEQAN_AUTO_PTR_NAME" type
+                                 (:template-specifier 
+                                    ( ("RecordReader" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4804 4916])
+                            ("_istreamReader" variable (:type ("std::SEQAN_AUTO_PTR_NAME" type
+                                 (:template-specifier 
+                                    ( ("RecordReader" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4921 5005])
+                            ("_filename" variable (:type ("CharString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5011 5032])
+                            ("_fileFormat" variable (:type ("SeqIOFileFormat_::Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5037 5072])
+                            ("_fileType" variable (:type ("SeqIOFileType_::Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5077 5108])
+                            ("_atEnd" variable (:type "bool") (reparse-symbol classsubparts) [5178 5190])
+                            ("_isGood" variable (:type "bool") (reparse-symbol classsubparts) [5237 5250])
+                            ("_isRead" variable (:type "bool") (reparse-symbol classsubparts) [5312 5325])
+                            ("_hintDoublePass" variable (:type "bool") (reparse-symbol classsubparts) [5386 5407])
+                            ("SequenceStreamImpl_" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("filename" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CharString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5433 5461])
+                                    ("fileFormat" variable (:type ("SeqIOFileFormat_::Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5486 5520])
+                                    ("fileType" variable (:type ("SeqIOFileType_::Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5545 5575])
+                                    ("isRead" variable (:type "bool") (reparse-symbol arg-sub-list) [5600 5612])
+                                    ("hintDoublePass" variable (:type "bool") (reparse-symbol arg-sub-list) [5637 5658])
+                                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5659 5665]))                                  
+                                :type ("SequenceStreamImpl_" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5413 6125])
+                            ("atEnd" function (:type "bool") (reparse-symbol classsubparts) [6319 6366])
+                            ("isGood" function (:type "bool") (reparse-symbol classsubparts) [6372 6421])
+                            ("_guessFileTypeAndFormatForReadingAndInitialize" function (:type "void") (reparse-symbol classsubparts) [6881 12036])
+                            ("_checkFormat" function
+                               (:template 
+                                  ( ("TStream" type (:type "class") nil nil)
+                                    ("TSpec" type (:type "class") nil nil))                                  
+                                :type ("SeqIOFileFormat_::Type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("recordReader" variable
+                                       (:reference 1
+                                        :type ("RecordReader" type
+                                             (:template-specifier 
+                                                ( ("TStream" type nil nil nil)
+                                                  ("TSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [12242 12286]))                                  )
+                                (reparse-symbol classsubparts) [12158 12799])
+                            ("_guessFileTypeAndFormatForWriting" function (:type "void") (reparse-symbol classsubparts) [12852 14202])
+                            ("_initializeStreamsForWriting" function (:type "void") (reparse-symbol classsubparts) [14252 15683])
+                            ("readRecord" function
+                               (:template 
+                                  ( ("TId" type (:type "class") nil nil)
+                                    ("TSequence" type (:type "class") nil nil)
+                                    ("TQualities" type (:type "class") nil nil)
+                                    ("TFormatTag" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("id" variable
+                                       (:reference 1
+                                        :type ("TId" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16072 16081])
+                                    ("seq" variable
+                                       (:reference 1
+                                        :type ("TSequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16082 16098])
+                                    ("qual" variable
+                                       (:reference 1
+                                        :type ("TQualities" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16099 16117])
+                                    ("tag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TFormatTag" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16118 16141]))                                  )
+                                (reparse-symbol classsubparts) [15967 17361])
+                            ("readRecord" function
+                               (:template 
+                                  ( ("TId" type (:type "class") nil nil)
+                                    ("TSequence" type (:type "class") nil nil)
+                                    ("TFormatTag" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("id" variable
+                                       (:reference 1
+                                        :type ("TId" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17451 17460])
+                                    ("seq" variable
+                                       (:reference 1
+                                        :type ("TSequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17461 17477])
+                                    ("tag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TFormatTag" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17478 17501]))                                  )
+                                (reparse-symbol classsubparts) [17367 18697])
+                            ("readBatch" function
+                               (:template 
+                                  ( ("TId" type (:type "class") nil nil)
+                                    ("TIdSpec" type (:type "class") nil nil)
+                                    ("TSequence" type (:type "class") nil nil)
+                                    ("TSeqSpec" type (:type "class") nil nil)
+                                    ("TQualities" type (:type "class") nil nil)
+                                    ("TQualSpec" type (:type "class") nil nil)
+                                    ("TFormatTag" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("ids" variable
+                                       (:reference 1
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TId" type nil nil nil)
+                                                  ("TIdSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [19154 19184])
+                                    ("seqs" variable
+                                       (:reference 1
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TSequence" type nil nil nil)
+                                                  ("TSeqSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [19203 19241])
+                                    ("quals" variable
+                                       (:reference 1
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TQualities" type nil nil nil)
+                                                  ("TQualSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [19260 19301])
+                                    ("num" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19320 19333])
+                                    ("tag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TFormatTag" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19352 19375]))                                  )
+                                (reparse-symbol classsubparts) [18979 21985])
+                            ("readBatch" function
+                               (:template 
+                                  ( ("TId" type (:type "class") nil nil)
+                                    ("TIdSpec" type (:type "class") nil nil)
+                                    ("TSequence" type (:type "class") nil nil)
+                                    ("TSeqSpec" type (:type "class") nil nil)
+                                    ("TFormatTag" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("ids" variable
+                                       (:reference 1
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TId" type nil nil nil)
+                                                  ("TIdSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [22111 22141])
+                                    ("seqs" variable
+                                       (:reference 1
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TSequence" type nil nil nil)
+                                                  ("TSeqSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [22160 22198])
+                                    ("num" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22217 22230])
+                                    ("tag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TFormatTag" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22249 22272]))                                  )
+                                (reparse-symbol classsubparts) [21991 24634])
+                            ("readAll" function
+                               (:template 
+                                  ( ("TId" type (:type "class") nil nil)
+                                    ("TIdSpec" type (:type "class") nil nil)
+                                    ("TSequence" type (:type "class") nil nil)
+                                    ("TSeqSpec" type (:type "class") nil nil)
+                                    ("TQualities" type (:type "class") nil nil)
+                                    ("TQualSpec" type (:type "class") nil nil)
+                                    ("TFormatTag" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("ids" variable
+                                       (:reference 1
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TId" type nil nil nil)
+                                                  ("TIdSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [25082 25112])
+                                    ("seqs" variable
+                                       (:reference 1
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TSequence" type nil nil nil)
+                                                  ("TSeqSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [25129 25167])
+                                    ("quals" variable
+                                       (:reference 1
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TQualities" type nil nil nil)
+                                                  ("TQualSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [25184 25225])
+                                    ("tag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TFormatTag" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25242 25265]))                                  )
+                                (reparse-symbol classsubparts) [24909 27738])
+                            ("readAll" function
+                               (:template 
+                                  ( ("TId" type (:type "class") nil nil)
+                                    ("TIdSpec" type (:type "class") nil nil)
+                                    ("TSequence" type (:type "class") nil nil)
+                                    ("TSeqSpec" type (:type "class") nil nil)
+                                    ("TFormatTag" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("ids" variable
+                                       (:reference 1
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TId" type nil nil nil)
+                                                  ("TIdSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [27862 27892])
+                                    ("seqs" variable
+                                       (:reference 1
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TSequence" type nil nil nil)
+                                                  ("TSeqSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [27909 27947])
+                                    ("tag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TFormatTag" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27964 27987]))                                  )
+                                (reparse-symbol classsubparts) [27744 30214])
+                            ("writeRecord" function
+                               (:template 
+                                  ( ("TId" type (:type "class") nil nil)
+                                    ("TSequence" type (:type "class") nil nil)
+                                    ("TQualities" type (:type "class") nil nil)
+                                    ("TFormatTag" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TId" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30607 30622])
+                                    ("seq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TSequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30623 30645])
+                                    ("qual" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TQualities" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30646 30670])
+                                    ("tag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TFormatTag" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30671 30694])
+                                    ("options" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SequenceOutputOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30715 30753]))                                  )
+                                (reparse-symbol classsubparts) [30501 31576])
+                            ("writeRecord" function
+                               (:template 
+                                  ( ("TId" type (:type "class") nil nil)
+                                    ("TSequence" type (:type "class") nil nil)
+                                    ("TFormatTag" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TId" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31667 31682])
+                                    ("seq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TSequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31683 31705])
+                                    ("tag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TFormatTag" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31706 31729])
+                                    ("options" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SequenceOutputOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31750 31788]))                                  )
+                                (reparse-symbol classsubparts) [31582 32593])
+                            ("writeAll" function
+                               (:template 
+                                  ( ("TId" type (:type "class") nil nil)
+                                    ("TIdSpec" type (:type "class") nil nil)
+                                    ("TSequence" type (:type "class") nil nil)
+                                    ("TSeqSpec" type (:type "class") nil nil)
+                                    ("TQualities" type (:type "class") nil nil)
+                                    ("TQualSpec" type (:type "class") nil nil)
+                                    ("TFormatTag" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("ids" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TId" type nil nil nil)
+                                                  ("TIdSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [33058 33094])
+                                    ("seqs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TSequence" type nil nil nil)
+                                                  ("TSeqSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [33112 33156])
+                                    ("quals" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TQualities" type nil nil nil)
+                                                  ("TQualSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [33174 33221])
+                                    ("tag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TFormatTag" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33239 33262])
+                                    ("options" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SequenceOutputOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33280 33318]))                                  )
+                                (reparse-symbol classsubparts) [32884 34135])
+                            ("writeAll" function
+                               (:template 
+                                  ( ("TId" type (:type "class") nil nil)
+                                    ("TIdSpec" type (:type "class") nil nil)
+                                    ("TSequence" type (:type "class") nil nil)
+                                    ("TSeqSpec" type (:type "class") nil nil)
+                                    ("TFormatTag" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("ids" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TId" type nil nil nil)
+                                                  ("TIdSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [34260 34296])
+                                    ("seqs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TSequence" type nil nil nil)
+                                                  ("TSeqSpec" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [34314 34358])
+                                    ("tag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TFormatTag" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34376 34399])
+                                    ("options" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SequenceOutputOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34417 34455]))                                  )
+                                (reparse-symbol classsubparts) [34141 35290])
+                            ("flush" function (:type "void") (reparse-symbol classsubparts) [35494 36131])
+                            ("close" function (:type "void") (reparse-symbol classsubparts) [36137 36762]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3960 36765]))                  
+                :type "namespace")
+                nil [2222 37120]))          
+    :file "sequence_stream_impl.h"
+    :pointmax 37202
+    :fsize 37201
+    :lastmodtime '(21577 15160 894605 419000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CORE_INCLUDE_SEQAN_SEQ_IO_SEQ_IO_IMPL_H_")
+          )
+
+    )
+   )
+  :file "!usr!local!seqan!core!include!seqan!seq_io!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,78 @@
+;; Object features/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "features/"
+  :tables (list 
+   (semanticdb-table "intersectBedBatch.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 38])
+            ("os" include nil nil [24 38])
+            ("subprocess" include nil nil [39 67])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [78 82]))              ) nil [69 539])
+            ("if" code nil nil [544 589]))          
+    :file "intersectBedBatch.py"
+    :pointmax 589
+    :fsize 588
+    :lastmodtime '(21345 30662 416286 879000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "intersectBinomStats.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [277 291])
+            ("os" include nil nil [277 291])
+            ("argparse" include nil nil [292 307])
+            ("itertools" include nil nil [308 324])
+            ("pdb" include nil nil [325 335])
+            ("scipy.stats" include nil nil [336 365])
+            ("rpy2.robjects.packages" include nil nil [366 408])
+            ("rpy2.robjects.vectors" include nil nil [409 454])
+            ("GENOME_SIZE" variable nil nil [485 509])
+            ("padjust" function (:arguments 
+              ( ("pvalues" variable nil (reparse-symbol function_parameters) [523 530])
+                ("method" variable nil (reparse-symbol function_parameters) [532 538]))              ) nil [511 666])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [676 680]))              ) nil [667 1781])
+            ("if" code nil nil [1800 1846]))          
+    :file "intersectBinomStats.py"
+    :pointmax 1846
+    :fsize 1845
+    :lastmodtime '(21345 30662 416286 879000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "intersectFisherStats.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [277 291])
+            ("os" include nil nil [277 291])
+            ("argparse" include nil nil [292 307])
+            ("itertools" include nil nil [308 324])
+            ("pdb" include nil nil [325 335])
+            ("rpy2.robjects" include nil nil [336 368])
+            ("scipy.stats" include nil nil [369 398])
+            ("rpy2.robjects.packages" include nil nil [399 441])
+            ("rpy2.robjects.vectors" include nil nil [442 487])
+            ("GENOME_SIZE" variable nil nil [518 542])
+            ("stats" variable nil nil [544 568])
+            ("padjust" function (:arguments 
+              ( ("pvalues" variable nil (reparse-symbol function_parameters) [582 589])
+                ("method" variable nil (reparse-symbol function_parameters) [591 597]))              ) nil [570 701])
+            ("Rfisher" function (:arguments 
+              ( ("k" variable nil (reparse-symbol function_parameters) [714 715])
+                ("n" variable nil (reparse-symbol function_parameters) [717 718])
+                ("e" variable nil (reparse-symbol function_parameters) [720 721]))              ) nil [702 952])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [962 966]))              ) nil [953 2197])
+            ("if" code nil nil [2216 2262]))          
+    :file "intersectFisherStats.py"
+    :pointmax 2262
+    :fsize 2261
+    :lastmodtime '(21345 30662 420286 879000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!seqAnalysis!python!features!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

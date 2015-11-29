@@ -1,0 +1,27 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libutil" "@OP_CPPFLAGS@")) nil [1 57])
+            ("AM_CFLAGS" variable (:default-value ("@OP_CFLAGS@")) nil [58 82])
+            ("LIBS" variable (:default-value ("@LIBERTY_LIBS@")) nil [83 105])
+            ("check_PROGRAMS" variable (:default-value ("file_tests")) nil [106 147])
+            ("file_tests_SOURCES" variable (:default-value ("file_tests.c")) nil [148 182])
+            ("file_tests_LDADD" variable (:default-value ("../libutil.a")) nil [182 214])
+            ("string_tests_SOURCES" variable (:default-value ("string_tests.c")) nil [214 252])
+            ("string_tests_LDADD" variable (:default-value ("../libutil.a")) nil [252 286])
+            ("TESTS" variable (:default-value ("${check_PROGRAMS}")) nil [287 313]))          
+    :file "Makefile.am"
+    :pointmax 313
+    :fsize 312
+    :lastmodtime '(21523 1458 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!libutil!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

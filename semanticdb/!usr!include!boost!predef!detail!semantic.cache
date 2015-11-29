@@ -1,0 +1,55 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables (list 
+   (semanticdb-table "endian_compat.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_DETAIL_ENDIAN_COMPAT_H" variable (:constant-flag t) nil [246 281])
+            ("boost/predef/other/endian.h" include (:system-flag t) nil [283 321]))          
+    :file "endian_compat.h"
+    :pointmax 622
+    :fsize 621
+    :lastmodtime '(21208 1653 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_PREDEF_DETAIL_ENDIAN_COMPAT_H")
+          )
+
+    )
+   (semanticdb-table "test.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_DETAIL_TEST_H" variable (:constant-flag t) nil [241 267])
+            ("BOOST_PREDEF_DECLARE_TEST" variable (:constant-flag t) nil [329 354]))          
+    :file "test.h"
+    :pointmax 376
+    :fsize 375
+    :lastmodtime '(21208 1653 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_PREDEF_DECLARE_TEST" (spp-arg-list ("x" "s") 354 . 359))
+          ("BOOST_PREDEF_DETAIL_TEST_H")
+          )
+
+    )
+   (semanticdb-table "_cassert.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_DETAIL__CASSERT_H" variable (:constant-flag t) nil [246 276])
+            ("assert.h" include (:system-flag t) nil [327 346]))          
+    :file "_cassert.h"
+    :pointmax 362
+    :fsize 361
+    :lastmodtime '(21208 1653 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_PREDEF_DETAIL__CASSERT_H")
+          )
+
+    )
+   )
+  :file "!usr!include!boost!predef!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,57 @@
+;; Object os/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "os/"
+  :tables (list 
+   (semanticdb-table "macos.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_OS_MACOS_H" variable (:constant-flag t) nil [239 262])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [264 304])
+            ("boost/predef/make.h" include (:system-flag t) nil [305 335])
+            ("BOOST_OS_MACOS" variable (:constant-flag t) nil [751 765])
+            ("BOOST_OS_MACOS_NAME" variable (:constant-flag t) nil [1346 1365])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1376 1413]))          
+    :file "macos.h"
+    :pointmax 1485
+    :fsize 1484
+    :lastmodtime '(21208 1653 0 0)
+    :unmatched-syntax '((semantic-list 1439 . 1475) (symbol 1414 . 1439) (string "\"Mac OS\"" 1455 . 1474))
+    :lexical-table 
+        '(("BOOST_OS_MACOS_NAME" . ((string "\"Mac OS\"" 1366 . 1374)))
+          ("BOOST_PREDEF_OS_MACOS_H")
+          ("BOOST_OS_MACOS" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 766 . 800)))
+          )
+
+    )
+   (semanticdb-table "bsd.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_OS_BSD_H" variable (:constant-flag t) nil [237 258])
+            ("boost/predef/os/macos.h" include (:system-flag t) nil [491 525])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [527 567])
+            ("boost/predef/make.h" include (:system-flag t) nil [568 598])
+            ("boost/predef/os/bsd/bsdi.h" include (:system-flag t) nil [1659 1696])
+            ("boost/predef/os/bsd/dragonfly.h" include (:system-flag t) nil [1697 1739])
+            ("boost/predef/os/bsd/free.h" include (:system-flag t) nil [1740 1777])
+            ("boost/predef/os/bsd/open.h" include (:system-flag t) nil [1778 1815])
+            ("boost/predef/os/bsd/net.h" include (:system-flag t) nil [1816 1852])
+            ("BOOST_OS_BSD" variable (:constant-flag t) nil [1883 1895])
+            ("BOOST_OS_BSD_NAME" variable (:constant-flag t) nil [2770 2787])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [2795 2832]))          
+    :file "bsd.h"
+    :pointmax 2899
+    :fsize 2898
+    :lastmodtime '(21208 1653 0 0)
+    :unmatched-syntax '((semantic-list 2858 . 2890) (symbol 2833 . 2858) (string "\"BSD\"" 2872 . 2889))
+    :lexical-table 
+        '(("BOOST_PREDEF_OS_BSD_H")
+          ("BOOST_OS_BSD" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 1896 . 1930)))
+          ("BOOST_OS_BSD_NAME" . ((string "\"BSD\"" 2788 . 2793)))
+          )
+
+    )
+   )
+  :file "!usr!include!boost!predef!os!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

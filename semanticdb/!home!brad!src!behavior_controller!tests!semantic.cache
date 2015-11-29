@@ -1,0 +1,33 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+   (semanticdb-table "test_stats.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("behavior_controller" include nil nil [1 39])
+            ("json" include nil nil [40 51])
+            ("trial_generators" include nil nil [52 84])
+            ("test_file" variable nil nil [162 245])
+            ("controller" variable nil nil [247 289])
+            ("controller" variable nil nil [290 366])
+            ("controller" variable nil nil [448 577])
+            ("controller" code nil nil [578 604])
+            ("fid" variable nil nil [606 627])
+            ("for" code nil nil [628 711])
+            ("fid" code nil nil [711 722])
+            ("print" code nil nil [723 797])
+            ("controller" variable nil nil [798 849])
+            ("stims" variable nil nil [925 1002])
+            ("for" code nil nil [1021 1084]))          
+    :file "test_stats.py"
+    :pointmax 1084
+    :fsize 1106
+    :lastmodtime '(21971 53677 945069 369000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!behavior_controller!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

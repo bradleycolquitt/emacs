@@ -1,0 +1,67 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("inc/localEnvironment.mk" include nil nil [1 33])
+            ("inc/common.mk" include nil nil [33 55])
+            ("all" function (:arguments ("utils" "cgi" "blatSuite")) nil [56 81])
+            ("alpha" function (:arguments ("clean")) nil [82 136])
+            ("beta" function (:arguments ("check-beta" "clean" "cgi-beta")) nil [137 169])
+            ("update" function nil nil [198 231])
+            ("topLibs" function nil nil [232 348])
+            ("hgLib" function nil nil [349 399])
+            ("libs" function (:arguments ("topLibs" "hgLib")) nil [400 420])
+            ("cgi" function (:arguments ("libs")) nil [421 478])
+            ("cgi-alpha" function (:arguments ("libs")) nil [479 546])
+            ("cgi-beta" function (:arguments ("check-beta" "libs")) nil [547 622])
+            ("check-beta" function nil nil [623 737])
+            ("blatSuite" function (:arguments ("topLibs" "hgLib")) nil [738 1130])
+            ("BLAT_APPLIST" variable (:default-value ("blat" "gfClient" "gfServer")) nil [1226 1264])
+            ("userApps" function (:arguments ("topLibs" "hgLib" "destBin")) nil [1265 1758])
+            ("destBin" function nil nil [1759 1792])
+            ("clean" function nil nil [1793 2315])
+            ("testDirs" variable (:default-value ("lib" "utils" "blat" "gfServer" "hg")) nil [2316 2354])
+            ("test" function (:arguments ("$(testDirs:%=%.test)")) nil [2354 2382])
+            ("%.test" function nil nil [2382 2413])
+            ("LIB_TAGS_IN" variable (:default-value ("lib/*.[hc]" "*/lib/*.[hc]" "*/*/lib/*.[hc]" "*/*/*/lib/*.[hc]" "jkOwnLib/*.c" "inc/*.h" "hg/inc/*.h" "hg/encode3/encodeDataWarehouse/lib/*.c" "hg/encode3/encodeDataWarehouse/inc/*.h" "hg/encode3/eap/inc/*.h")) nil [2414 2617])
+            (".PHONY" function (:arguments ("tags")) nil [2645 2658])
+            ("tags" function nil nil [2658 2686])
+            ("cscope" function nil nil [2687 2782])
+            ("search" function nil nil [2782 2801])
+            (".PHONY" function (:arguments ("etags")) nil [2835 2849])
+            ("etags" function nil nil [2849 2878])
+            (".PHONY" function (:arguments ("tags-all")) nil [2906 2923])
+            ("tags-all" function nil nil [2923 2969])
+            (".PHONY" function (:arguments ("etags-all")) nil [3003 3021])
+            ("etags-all" function nil nil [3021 3065])
+            ("utils" function (:arguments ("libs" "destBin")) nil [3066 3384])
+            ("utils-alpha" function (:arguments ("libs")) nil [3385 3707])
+            ("DIRS" variable (:default-value ("ameme" "blat" "index" "dnaDust" "protDust" "weblet" "aladdin" "primeMate" "fuse" "meta")) nil [3708 3784])
+            ("cellarDirs" variable (:default-value ("cdnaAli" "getgene" "idbQuery" "reformat" "scanIntrons" "tracks" "wormAli" "xenoAli")) nil [3827 3912])
+            ("buildCellar" function (:arguments ("$(cellarDirs:%=%.cellar)")) nil [3913 3951])
+            ("%.cellar" function (:arguments ("libs" "destBin")) nil [3952 4004])
+            ("cleanCellar" function (:arguments ("$(cellarDirs:%=%.cellarClean)")) nil [4005 4048])
+            ("%.cellarClean" function nil nil [4048 4098])
+            ("DOCS_LIST" variable (:default-value ("hg/htdocs" "hg/js" "hg/htdocs/style")) nil [4147 4191])
+            ("doc" function (:arguments ("${DOCS_LIST:%=%.docuser}")) nil [4191 4221])
+            ("%.docuser" function nil nil [4221 4250])
+            ("doc-alpha" function (:arguments ("${DOCS_LIST:%=%.docalpha}")) nil [4251 4288])
+            ("%.docalpha" function nil nil [4288 4324])
+            ("doc-beta" function (:arguments ("${DOCS_LIST:%=%.docbeta}")) nil [4325 4360])
+            ("%.docbeta" function nil nil [4360 4394])
+            ("doc-install" function (:arguments ("${DOCS_LIST:%=%.docinstall}")) nil [4395 4436])
+            ("%.docinstall" function nil nil [4436 4476]))          
+    :file "makefile"
+    :pointmax 4476
+    :fsize 4475
+    :lastmodtime '(21689 48067 805006 941000)
+    :unmatched-syntax '((shell-command 4451 . 4475) (bol 4450 . 4450))
+    )
+   )
+  :file "!home!brad!src!kent!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

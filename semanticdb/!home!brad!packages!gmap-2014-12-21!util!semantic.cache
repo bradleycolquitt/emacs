@@ -1,0 +1,45 @@
+;; Object util/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "util/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("bin_SCRIPTS" variable (:default-value ("gmap_compress" "gmap_uncompress" "gmap_process" "gmap_build" "gmap_reassemble" "md_coords" "fa_coords" "psl_splicesites" "psl_introns" "psl_genes" "ensembl_genes" "gtf_splicesites" "gtf_introns" "gtf_genes" "gff3_splicesites" "gff3_introns" "gff3_genes" "dbsnp_iit" "gvf_iit" "vcf_iit" "sam_merge" "sam_restore")) nil [15 378])
+            ("bin_SCRIPTS" variable (:default-value ("gmap_compress" "gmap_uncompress" "gmap_process" "gmap_build" "gmap_reassemble" "md_coords" "fa_coords" "psl_splicesites" "psl_introns" "psl_genes" "ensembl_genes" "gtf_splicesites" "gtf_introns" "gtf_genes" "gff3_splicesites" "gff3_introns" "gff3_genes" "dbsnp_iit" "gvf_iit" "vcf_iit")) nil [383 724])
+            ("gmap_compress" function (:arguments ("gmap_compress.pl")) nil [731 822])
+            ("gmap_uncompress" function (:arguments ("gmap_uncompress.pl")) nil [823 924])
+            ("gmap_process" function (:arguments ("gmap_process.pl")) nil [925 1011])
+            ("gmap_build" function (:arguments ("gmap_build.pl")) nil [1012 1088])
+            ("gmap_reassemble" function (:arguments ("gmap_reassemble.pl")) nil [1089 1190])
+            ("md_coords" function (:arguments ("md_coords.pl")) nil [1191 1262])
+            ("fa_coords" function (:arguments ("fa_coords.pl")) nil [1263 1334])
+            ("psl_splicesites" function (:arguments ("psl_splicesites.pl")) nil [1335 1436])
+            ("psl_genes" function (:arguments ("psl_genes.pl")) nil [1437 1508])
+            ("psl_introns" function (:arguments ("psl_introns.pl")) nil [1509 1590])
+            ("psl_splices" function (:arguments ("psl_splices.pl")) nil [1591 1672])
+            ("ensembl_genes" function (:arguments ("ensembl_genes.pl")) nil [1673 1764])
+            ("gtf_splicesites" function (:arguments ("gtf_splicesites.pl")) nil [1766 1867])
+            ("gtf_introns" function (:arguments ("gtf_introns.pl")) nil [1868 1949])
+            ("gtf_genes" function (:arguments ("gtf_genes.pl")) nil [1950 2021])
+            ("gff3_splicesites" function (:arguments ("gff3_splicesites.pl")) nil [2022 2128])
+            ("gff3_introns" function (:arguments ("gff3_introns.pl")) nil [2129 2215])
+            ("gff3_genes" function (:arguments ("gff3_genes.pl")) nil [2216 2292])
+            ("dbsnp_iit" function (:arguments ("dbsnp_iit.pl")) nil [2294 2365])
+            ("gvf_iit" function (:arguments ("gvf_iit.pl")) nil [2366 2427])
+            ("vcf_iit" function (:arguments ("vcf_iit.pl")) nil [2428 2489])
+            ("sam_merge" function (:arguments ("sam_merge.pl")) nil [2490 2561])
+            ("sam_restore" function (:arguments ("sam_restore.pl")) nil [2562 2643])
+            ("CLEANFILES" variable (:default-value ("gmap_compress" "gmap_uncompress" "gmap_process" "gmap_build" "gmap_reassemble" "md_coords" "fa_coords" "psl_splicesites" "psl_introns" "psl_genes" "ensembl_genes" "gtf_splicesites" "gtf_introns" "gtf_genes" "gff3_splicesites" "gff3_introns" "gff3_genes" "dbsnp_iit" "gvf_iit" "vcf_iit" "sam_merge" "sam_restore")) nil [2657 3014])
+            ("CLEANFILES" variable (:default-value ("gmap_compress" "gmap_uncompress" "gmap_process" "gmap_build" "gmap_reassemble" "md_coords" "fa_coords" "psl_splicesites" "psl_introns" "psl_genes" "ensembl_genes" "gtf_splicesites" "gtf_introns" "gtf_genes" "gff3_splicesites" "gff3_introns" "gff3_genes" "dbsnp_iit" "gvf_iit" "vcf_iit")) nil [3019 3354]))          
+    :file "Makefile.am"
+    :pointmax 3361
+    :fsize 3360
+    :lastmodtime '(21688 28240 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!gmap-2014-12-21!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

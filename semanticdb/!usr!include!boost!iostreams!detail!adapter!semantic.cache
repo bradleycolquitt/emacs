@@ -1,0 +1,1490 @@
+;; Object adapter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "adapter/"
+  :tables (list 
+   (semanticdb-table "range_adapter.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_RANGE_ADAPTER_HPP_INCLUDED" variable (:constant-flag t) nil [397 446])
+            ("algorithm" include (:system-flag t) nil [528 548])
+            ("boost/assert.hpp" include (:system-flag t) nil [585 612])
+            ("cstddef" include (:system-flag t) nil [613 631])
+            ("iosfwd" include (:system-flag t) nil [676 693])
+            ("boost/detail/iterator.hpp" include (:system-flag t) nil [751 787])
+            ("boost/iostreams/categories.hpp" include (:system-flag t) nil [827 868])
+            ("boost/iostreams/detail/error.hpp" include (:system-flag t) nil [869 912])
+            ("boost/iostreams/positioning.hpp" include (:system-flag t) nil [913 955])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [956 983])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [984 1020])
+            ("boost/type_traits/is_convertible.hpp" include (:system-flag t) nil [1021 1068])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [1069 1107])
+            ("boost/iostreams/detail/config/disable_warnings.hpp" include (:system-flag t) nil [1128 1189])
+            ("boost" type
+               (:members 
+                  ( ("iostreams" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("range_adapter_impl" type
+                                       (:template 
+                                          ( ("Traversal" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1297 1352])
+                                    ("range_adapter" type
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("Range" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [1620 1628])
+                                            ("iterator" type
+                                               (:typedef ("Range::iterator" type (:type "class") nil nil)
+                                                :superclasses "Range::iterator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1633 1692])
+                                            ("iter_traits" type
+                                               (:typedef ("boost::detail::iterator_traits" type
+                                                     (:template-specifier 
+                                                        ( ("iterator" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "boost::detail::iterator_traits"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1697 1759])
+                                            ("iter_cat" type
+                                               (:typedef ("iter_traits::iterator_category" type (:type "class") nil nil)
+                                                :superclasses "iter_traits::iterator_category"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1764 1823])
+                                            ("public" label nil (reparse-symbol classsubparts) [1824 1831])
+                                            ("char_type" type
+                                               (:typedef ("Range::value_type" type (:type "class") nil nil)
+                                                :superclasses "Range::value_type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1836 1896])
+                                            ("category" type
+                                               (:superclasses 
+                                                  ( ("Mode" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil)
+                                                    ("device_tag" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [1901 1940])
+                                            ("tag" type
+                                               (:typedef ("mpl::if_::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::if_::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1945 2266])
+                                            ("impl" type
+                                               (:typedef ("range_adapter_impl" type
+                                                     (:template-specifier 
+                                                        ( ("tag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "range_adapter_impl"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2271 2326])
+                                            ("range_adapter" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("rng" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Range" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2355 2372]))                                                  
+                                                :type ("range_adapter" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2341 2373])
+                                            ("range_adapter" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("first" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2392 2407])
+                                                    ("last" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2408 2422]))                                                  
+                                                :type ("range_adapter" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2378 2423])
+                                            ("read" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("s" variable
+                                                       (:pointer 1
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2449 2462])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2463 2481]))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2428 2482])
+                                            ("write" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("s" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2509 2528])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2529 2547]))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2487 2548])
+                                            ("seek" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2573 2591])
+                                                    ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2592 2615]))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2553 2616])
+                                            ("private" label nil (reparse-symbol classsubparts) [2617 2625])
+                                            ("last_" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2630 2659])
+                                            ("cur_" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2630 2659])
+                                            ("first_" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2630 2659]))                                          )
+                                        (reparse-symbol namespacesubparts) [1558 2662])
+                                    ("range_adapter" function
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("Range" type (:type "class") nil nil))                                          
+                                        :type ("range_adapter" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("rng" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Range" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2828 2845]))                                          
+                                        :parent "range_adapter"
+                                        :constructor-flag t)
+                                        (reparse-symbol namespacesubparts) [2746 2912])
+                                    ("range_adapter" function
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("Range" type (:type "class") nil nil))                                          
+                                        :type ("range_adapter" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("first" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2996 3011])
+                                            ("last" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3012 3026]))                                          
+                                        :parent "range_adapter"
+                                        :constructor-flag t)
+                                        (reparse-symbol namespacesubparts) [2914 3076])
+                                    ("read" function
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("Range" type (:type "class") nil nil))                                          
+                                        :type ("std::streamsize" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:pointer 1
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3179 3192])
+                                            ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3193 3211]))                                          
+                                        :typemodifiers ("inline")
+                                        :parent "range_adapter")
+                                        (reparse-symbol namespacesubparts) [3078 3253])
+                                    ("write" function
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("Range" type (:type "class") nil nil))                                          
+                                        :type ("std::streamsize" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3357 3376])
+                                            ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3377 3395]))                                          
+                                        :typemodifiers ("inline")
+                                        :parent "range_adapter")
+                                        (reparse-symbol namespacesubparts) [3255 3438])
+                                    ("seek" function
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("Range" type (:type "class") nil nil))                                          
+                                        :type ("std::streampos" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3534 3552])
+                                            ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3553 3576]))                                          
+                                        :parent "range_adapter")
+                                        (reparse-symbol namespacesubparts) [3441 3675])
+                                    ("range_adapter_impl" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("read" function
+                                               (:template 
+                                                  ( ("Iter" type (:type "class") nil nil)
+                                                    ("Ch" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("cur" variable
+                                                       (:reference 1
+                                                        :type ("Iter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3907 3917])
+                                                    ("last" variable
+                                                       (:reference 1
+                                                        :type ("Iter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3918 3929])
+                                                    ("s" variable
+                                                       (:pointer 1
+                                                        :type ("Ch" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3930 3936])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3936 3954]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [3829 4126])
+                                            ("write" function
+                                               (:template 
+                                                  ( ("Iter" type (:type "class") nil nil)
+                                                    ("Ch" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("cur" variable
+                                                       (:reference 1
+                                                        :type ("Iter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4211 4221])
+                                                    ("last" variable
+                                                       (:reference 1
+                                                        :type ("Iter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4222 4233])
+                                                    ("s" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("Ch" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4234 4246])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4247 4265]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [4132 4443]))                                          
+                                        :template-specifier 
+                                          ( ("std::forward_iterator_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3759 4446])
+                                    ("range_adapter_impl" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("read" function
+                                               (:template 
+                                                  ( ("Iter" type (:type "class") nil nil)
+                                                    ("Ch" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("cur" variable
+                                                       (:reference 1
+                                                        :type ("Iter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4602 4612])
+                                                    ("last" variable
+                                                       (:reference 1
+                                                        :type ("Iter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4613 4624])
+                                                    ("s" variable
+                                                       (:pointer 1
+                                                        :type ("Ch" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4625 4631])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4631 4649]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [4524 4894])
+                                            ("write" function
+                                               (:template 
+                                                  ( ("Iter" type (:type "class") nil nil)
+                                                    ("Ch" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("cur" variable
+                                                       (:reference 1
+                                                        :type ("Iter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4979 4989])
+                                                    ("last" variable
+                                                       (:reference 1
+                                                        :type ("Iter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4990 5001])
+                                                    ("s" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("Ch" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5002 5014])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5015 5033]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [4900 5308])
+                                            ("seek" function
+                                               (:template 
+                                                  ( ("Iter" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("first" variable
+                                                       (:reference 1
+                                                        :type ("Iter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5369 5381])
+                                                    ("cur" variable
+                                                       (:reference 1
+                                                        :type ("Iter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5382 5392])
+                                                    ("last" variable
+                                                       (:reference 1
+                                                        :type ("Iter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5393 5404])
+                                                    ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5405 5423])
+                                                    ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5434 5458]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [5314 6217]))                                          
+                                        :template-specifier 
+                                          ( ("std::random_access_iterator_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4448 6220]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1241 6223]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1219 6225]))                  
+                :type "namespace")
+                nil [1201 6227])
+            ("boost/iostreams/detail/config/enable_warnings.hpp" include (:system-flag t) nil [6273 6333]))          
+    :file "range_adapter.hpp"
+    :pointmax 6433
+    :fsize 6432
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax '((EXPLICIT 2332 . 2340))
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_DETAIL_RANGE_ADAPTER_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "mode_adapter.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_MODE_ADAPTER_HPP_INCLUDED" variable (:constant-flag t) nil [396 444])
+            ("boost/config.hpp" include (:system-flag t) nil [721 748])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [779 817])
+            ("boost/iostreams/categories.hpp" include (:system-flag t) nil [818 859])
+            ("boost/iostreams/detail/ios.hpp" include (:system-flag t) nil [860 901])
+            ("boost/iostreams/traits.hpp" include (:system-flag t) nil [937 974])
+            ("boost/iostreams/operations.hpp" include (:system-flag t) nil [975 1016])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [1018 1045])
+            ("boost" type
+               (:members 
+                  ( ("iostreams" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("mode_adapter" type
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [1165 1173])
+                                            ("empty_base" type (:type "struct") (reparse-symbol classsubparts) [1178 1200])
+                                            ("public" label nil (reparse-symbol classsubparts) [1201 1208])
+                                            ("component_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1247 1268])
+                                            ("char_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1307 1323])
+                                            ("category" type
+                                               (:superclasses 
+                                                  ( ("Mode" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil)
+                                                    ("device_tag" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil)
+                                                    ("mpl::if_" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil)
+                                                    ("mpl::if_" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil)
+                                                    ("localizable_tag" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [1328 1671])
+                                            ("mode_adapter" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("t" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("component_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1698 1722]))                                                  
+                                                :type ("mode_adapter" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1685 1734])
+                                            ("read" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("s" variable
+                                                       (:pointer 1
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1798 1811])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1812 1830]))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1777 1831])
+                                            ("write" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("s" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1858 1877])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1878 1896]))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1836 1897])
+                                            ("seek" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1923 1941])
+                                                    ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1942 1965])
+                                                    ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1991 2018])
+                                                    ("" variable (:type ("BOOST_IOS::in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2049 2064])
+                                                    ("" variable (:type ("BOOST_IOS::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2065 2081]))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1902 2082])
+                                            ("read" function
+                                               (:template 
+                                                  ( ("Source" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("src" variable
+                                                       (:reference 1
+                                                        :type ("Source" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2286 2298])
+                                                    ("s" variable
+                                                       (:pointer 1
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2299 2312])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2313 2331]))                                                  )
+                                                (reparse-symbol classsubparts) [2235 2378])
+                                            ("write" function
+                                               (:template 
+                                                  ( ("Sink" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("snk" variable
+                                                       (:reference 1
+                                                        :type ("Sink" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2434 2444])
+                                                    ("s" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2445 2464])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2465 2483]))                                                  )
+                                                (reparse-symbol classsubparts) [2384 2531])
+                                            ("seek" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("dev" variable
+                                                       (:reference 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2587 2599])
+                                                    ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2600 2618])
+                                                    ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2619 2642]))                                                  )
+                                                (reparse-symbol classsubparts) [2537 2693])
+                                            ("seek" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("dev" variable
+                                                       (:reference 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2750 2762])
+                                                    ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2763 2781])
+                                                    ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2808 2831])
+                                                    ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2832 2860]))                                                  )
+                                                (reparse-symbol classsubparts) [2699 2918])
+                                            ("close" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("dev" variable
+                                                       (:reference 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2965 2977]))                                                  )
+                                                (reparse-symbol classsubparts) [2924 3013])
+                                            ("close" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("dev" variable
+                                                       (:reference 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3060 3072])
+                                                    ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3073 3099]))                                                  )
+                                                (reparse-symbol classsubparts) [3019 3141])
+                                            ("imbue" function
+                                               (:template 
+                                                  ( ("Locale" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("loc" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Locale" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3188 3206]))                                                  )
+                                                (reparse-symbol classsubparts) [3147 3241])
+                                            ("private" label nil (reparse-symbol classsubparts) [3242 3250])
+                                            ("t_" variable (:type ("component_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3255 3273]))                                          )
+                                        (reparse-symbol namespacesubparts) [1108 3276])
+                                    ("read" function
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type ("std::streamsize" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:pointer 1
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3465 3478])
+                                            ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3479 3497]))                                          
+                                        :parent "mode_adapter")
+                                        (reparse-symbol namespacesubparts) [3380 3542])
+                                    ("write" function
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type ("std::streamsize" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3630 3649])
+                                            ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3650 3668]))                                          
+                                        :parent "mode_adapter")
+                                        (reparse-symbol namespacesubparts) [3544 3714])
+                                    ("seek" function
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type ("std::streampos" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3800 3818])
+                                            ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3819 3842])
+                                            ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3843 3869]))                                          
+                                        :parent "mode_adapter")
+                                        (reparse-symbol namespacesubparts) [3716 3925]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1088 4234]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1066 4236]))                  
+                :type "namespace")
+                nil [1048 4238]))          
+    :file "mode_adapter.hpp"
+    :pointmax 4361
+    :fsize 4360
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax '((punctuation 2063 . 2064) (punctuation 2017 . 2018) (EXPLICIT 1676 . 1684) (punctuation 1306 . 1307) (punctuation 1305 . 1306) (punctuation 1304 . 1305) (symbol 1303 . 1304) (punctuation 1302 . 1303) (symbol 1290 . 1302) (TYPENAME 1281 . 1289) (TYPEDEF 1273 . 1280) (punctuation 1246 . 1247) (punctuation 1245 . 1246) (punctuation 1244 . 1245) (symbol 1243 . 1244) (punctuation 1242 . 1243) (symbol 1230 . 1242) (TYPENAME 1221 . 1229) (TYPEDEF 1213 . 1220))
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_DETAIL_MODE_ADAPTER_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "output_iterator_adapter.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_OUTPUT_ITERATOR_ADAPTER_HPP_INCLUDED" variable (:constant-flag t) nil [407 466])
+            ("algorithm" include (:system-flag t) nil [548 568])
+            ("iosfwd" include (:system-flag t) nil [599 616])
+            ("boost/iostreams/categories.hpp" include (:system-flag t) nil [656 697])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [707 741])
+            ("boost/type_traits/is_convertible.hpp" include (:system-flag t) nil [742 789])
+            ("boost" type
+               (:members 
+                  ( ("iostreams" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("output_iterator_adapter" type
+                                       (:template 
+                                          ( ("Mode" type (:type "class") nil nil)
+                                            ("Ch" type (:type "class") nil nil)
+                                            ("OutIt" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [936 943])
+                                            ("BOOST_STATIC_ASSERT" function
+                                               (:prototype-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [948 1007])
+                                            ("char_type" type
+                                               (:typedef ("Ch" type (:type "class") nil nil)
+                                                :superclasses "Ch"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1012 1040])
+                                            ("category" type
+                                               (:typedef ("sink_tag" type (:type "class") nil nil)
+                                                :superclasses "sink_tag"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1045 1072])
+                                            ("output_iterator_adapter" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("out" variable (:type ("OutIt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1110 1120]))                                                  
+                                                :type ("output_iterator_adapter" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1086 1136])
+                                            ("write" function
+                                               (:arguments 
+                                                  ( ("s" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1163 1182])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1183 1201]))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1141 1270])
+                                            ("private" label nil (reparse-symbol classsubparts) [1271 1279])
+                                            ("out_" variable (:type ("OutIt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1284 1295]))                                          )
+                                        (reparse-symbol namespacesubparts) [851 1298]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [831 1301]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [809 1303]))                  
+                :type "namespace")
+                nil [791 1305]))          
+    :file "output_iterator_adapter.hpp"
+    :pointmax 1439
+    :fsize 1438
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax '((EXPLICIT 1077 . 1085) (semantic-list 968 . 1005))
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_DETAIL_OUTPUT_ITERATOR_ADAPTER_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "concept_adapter.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_CONCEPT_ADAPTER_HPP_INCLUDED" variable (:constant-flag t) nil [399 450])
+            ("boost/config.hpp" include (:system-flag t) nil [452 479])
+            ("boost/iostreams/concepts.hpp" include (:system-flag t) nil [519 558])
+            ("boost/iostreams/categories.hpp" include (:system-flag t) nil [559 600])
+            ("boost/iostreams/detail/adapter/non_blocking_adapter.hpp" include (:system-flag t) nil [601 667])
+            ("boost/iostreams/detail/call_traits.hpp" include (:system-flag t) nil [668 717])
+            ("boost/iostreams/detail/char_traits.hpp" include (:system-flag t) nil [718 767])
+            ("boost/iostreams/detail/dispatch.hpp" include (:system-flag t) nil [768 814])
+            ("boost/iostreams/detail/error.hpp" include (:system-flag t) nil [815 858])
+            ("boost/iostreams/detail/streambuf.hpp" include (:system-flag t) nil [859 906])
+            ("boost/iostreams/detail/config/unreachable_return.hpp" include (:system-flag t) nil [926 989])
+            ("boost/iostreams/device/null.hpp" include (:system-flag t) nil [990 1032])
+            ("boost/iostreams/traits.hpp" include (:system-flag t) nil [1033 1070])
+            ("boost/iostreams/operations.hpp" include (:system-flag t) nil [1071 1112])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [1113 1140])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [1141 1175])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [1176 1212])
+            ("boost/iostreams/detail/config/disable_warnings.hpp" include (:system-flag t) nil [1233 1294])
+            ("boost" type
+               (:members 
+                  ( ("iostreams" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("device_wrapper_impl" type
+                                       (:template 
+                                          ( ("Category" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1367 1422])
+                                    ("flt_wrapper_impl" type
+                                       (:template 
+                                          ( ("Category" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1423 1475])
+                                    ("concept_adapter" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [1522 1530])
+                                            ("value_type" type
+                                               (:typedef ("detail::value_type::type" type (:type "class") nil nil)
+                                                :superclasses "detail::value_type::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1535 1597])
+                                            ("input_tag" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1647 1663])
+                                            ("output_tag" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1713 1730])
+                                            ("input_impl" type
+                                               (:typedef ("mpl::if_::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::if_::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1735 1962])
+                                            ("output_impl" type
+                                               (:typedef ("mpl::if_::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::if_::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1967 2197])
+                                            ("any_impl" type
+                                               (:typedef ("mpl::if_::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::if_::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2202 2423])
+                                            ("public" label nil (reparse-symbol classsubparts) [2424 2431])
+                                            ("char_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2470 2497])
+                                            ("category" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2535 2562])
+                                            ("concept_adapter" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("ref" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("reference_wrapper" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [2593 2625]))                                                  
+                                                :type ("concept_adapter" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2577 2691])
+                                            ("concept_adapter" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("t" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2721 2732]))                                                  
+                                                :type ("concept_adapter" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2705 2791])
+                                            ("" variable
+                                               (:functionpointer-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2797 2826])
+                                            ("->" function
+                                               (:operator-flag t
+                                                :pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2831 2862])
+                                            ("read" function
+                                               (:arguments 
+                                                  ( ("s" variable
+                                                       (:pointer 1
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2889 2902])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2903 2921]))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2868 2989])
+                                            ("read" function
+                                               (:template 
+                                                  ( ("Source" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("s" variable
+                                                       (:pointer 1
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3046 3059])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3060 3078])
+                                                    ("src" variable
+                                                       (:pointer 1
+                                                        :type ("Source" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3079 3091]))                                                  )
+                                                (reparse-symbol classsubparts) [2995 3139])
+                                            ("write" function
+                                               (:arguments 
+                                                  ( ("s" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3167 3186])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3187 3205]))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3145 3272])
+                                            ("write" function
+                                               (:template 
+                                                  ( ("Sink" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("s" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("char_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3328 3347])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3348 3366])
+                                                    ("snk" variable
+                                                       (:pointer 1
+                                                        :type ("Sink" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3367 3377]))                                                  )
+                                                (reparse-symbol classsubparts) [3278 3427])
+                                            ("seek" function
+                                               (:arguments 
+                                                  ( ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3454 3472])
+                                                    ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3473 3496])
+                                                    ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3522 3549]))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3433 3681])
+                                            ("seek" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3738 3756])
+                                                    ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3757 3780])
+                                                    ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3806 3832])
+                                                    ("dev" variable
+                                                       (:pointer 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3833 3846]))                                                  )
+                                                (reparse-symbol classsubparts) [3687 3903])
+                                            ("close" function
+                                               (:arguments 
+                                                  ( ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3920 3946]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3909 4019])
+                                            ("close" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4066 4092])
+                                                    ("dev" variable
+                                                       (:pointer 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4093 4105]))                                                  )
+                                                (reparse-symbol classsubparts) [4025 4146])
+                                            ("flush" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("dev" variable
+                                                       (:pointer 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4194 4207]))                                                  )
+                                                (reparse-symbol classsubparts) [4152 4375])
+                                            ("imbue" function
+                                               (:template 
+                                                  ( ("Locale" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("loc" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Locale" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4454 4472]))                                                  )
+                                                (reparse-symbol classsubparts) [4381 4503])
+                                            ("optimal_buffer_size" function (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4509 4603])
+                                            ("public" label nil (reparse-symbol classsubparts) [4604 4611])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("concept_adapter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4643 4666]))                                                  
+                                                :type ("concept_adapter" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4616 4667])
+                                            ("t_" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4672 4686]))                                          )
+                                        (reparse-symbol namespacesubparts) [1477 4689])
+                                    ("device_wrapper_impl" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("seek" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil)
+                                                    ("Dummy" type (:type "class") nil nil))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("dev" variable
+                                                       (:reference 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4905 4917])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("Dummy" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4918 4925])
+                                                    ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4926 4944])
+                                                    ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4956 4979])
+                                                    ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4980 5007]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [4826 5137])
+                                            ("seek" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5206 5214])
+                                                    ("" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5215 5229])
+                                                    ("" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5230 5249])
+                                                    ("" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5261 5281])
+                                                    ("" variable (:type ("any_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5282 5291]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [5143 5395])
+                                            ("seek" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("dev" variable
+                                                       (:reference 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5464 5476])
+                                                    ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5477 5495])
+                                                    ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5507 5530])
+                                                    ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5531 5557])
+                                                    ("" variable (:type ("random_access" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5569 5584]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [5401 5652])
+                                            ("close" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil)
+                                                    ("Dummy" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("dev" variable
+                                                       (:reference 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5722 5734])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("Dummy" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5735 5742])
+                                                    ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5743 5769]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [5658 5807])
+                                            ("flush" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil)
+                                                    ("Dummy" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("dev" variable
+                                                       (:reference 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5877 5889])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("Dummy" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5890 5897]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [5813 5935]))                                          
+                                        :template-specifier 
+                                          ( ("any_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4773 5938])
+                                    ("device_wrapper_impl" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("read" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil)
+                                                    ("Dummy" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("dev" variable
+                                                       (:reference 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6103 6115])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("Dummy" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6116 6123])
+                                                    ("" variable
+                                                       (:typemodifiers ("typename")
+                                                        :type ("char_type_of" type
+                                                             (:template-specifier 
+                                                                ( ("Device" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6124 6154])
+                                                    ("s" variable
+                                                       (:pointer 1
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6155 6163])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6174 6193]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [6024 6236])
+                                            ("write" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil)
+                                                    ("Dummy" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6323 6331])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("Dummy" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6332 6339])
+                                                    ("" variable
+                                                       (:typemodifiers ("typename")
+                                                        :constant-flag t
+                                                        :type ("char_type_of" type
+                                                             (:template-specifier 
+                                                                ( ("Device" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6340 6376])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6377 6383])
+                                                    ("" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6395 6412]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [6242 6502]))                                          
+                                        :superclasses 
+                                          ( ("device_wrapper_impl" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :template-specifier 
+                                          ( ("input" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5941 6505])
+                                    ("device_wrapper_impl" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("read" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil)
+                                                    ("Dummy" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6637 6645])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("Dummy" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6646 6653])
+                                                    ("" variable
+                                                       (:typemodifiers ("typename")
+                                                        :type ("char_type_of" type
+                                                             (:template-specifier 
+                                                                ( ("Device" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6654 6684])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6685 6691])
+                                                    ("" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6692 6708]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [6559 6797])
+                                            ("write" function
+                                               (:template 
+                                                  ( ("Device" type (:type "class") nil nil)
+                                                    ("Dummy" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("dev" variable
+                                                       (:reference 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6884 6896])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("Dummy" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6897 6904])
+                                                    ("" variable
+                                                       (:typemodifiers ("typename")
+                                                        :constant-flag t
+                                                        :type ("char_type_of" type
+                                                             (:template-specifier 
+                                                                ( ("Device" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6905 6941])
+                                                    ("s" variable
+                                                       (:pointer 1
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6942 6950])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6962 6981]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [6803 7025]))                                          
+                                        :template-specifier 
+                                          ( ("output" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [6507 7028])
+                                    ("flt_wrapper_impl" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("seek" function
+                                               (:template 
+                                                  ( ("Filter" type (:type "class") nil nil)
+                                                    ("Device" type (:type "class") nil nil))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :type ("Filter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7238 7248])
+                                                    ("dev" variable
+                                                       (:pointer 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7249 7261])
+                                                    ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7262 7280])
+                                                    ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7291 7314])
+                                                    ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7315 7342]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [7159 7473])
+                                            ("seek" function
+                                               (:template 
+                                                  ( ("Filter" type (:type "class") nil nil)
+                                                    ("Device" type (:type "class") nil nil))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :type ("Filter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7558 7566])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7567 7575])
+                                                    ("" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7576 7590])
+                                                    ("" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7601 7620])
+                                                    ("" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7621 7641])
+                                                    ("" variable (:type ("any_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7642 7651]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [7479 7740])
+                                            ("seek" function
+                                               (:template 
+                                                  ( ("Filter" type (:type "class") nil nil)
+                                                    ("Device" type (:type "class") nil nil))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :type ("Filter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7825 7835])
+                                                    ("dev" variable
+                                                       (:pointer 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7836 7848])
+                                                    ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7849 7867])
+                                                    ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7878 7901])
+                                                    ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7902 7928])
+                                                    ("tag" variable (:type ("random_access" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7939 7958]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [7746 8094])
+                                            ("seek" function
+                                               (:template 
+                                                  ( ("Filter" type (:type "class") nil nil)
+                                                    ("Device" type (:type "class") nil nil))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :type ("Filter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8179 8189])
+                                                    ("dev" variable
+                                                       (:pointer 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8190 8202])
+                                                    ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8203 8221])
+                                                    ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8232 8255])
+                                                    ("" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8256 8276])
+                                                    ("" variable (:type ("random_access" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8287 8301])
+                                                    ("" variable (:type ("any_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8302 8311]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [8100 8350])
+                                            ("seek" function
+                                               (:template 
+                                                  ( ("Filter" type (:type "class") nil nil)
+                                                    ("Device" type (:type "class") nil nil))                                                  
+                                                :type ("std::streampos" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :type ("Filter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8435 8445])
+                                                    ("dev" variable
+                                                       (:pointer 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8446 8458])
+                                                    ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8459 8477])
+                                                    ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8488 8511])
+                                                    ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8512 8538])
+                                                    ("" variable (:type ("random_access" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8549 8563])
+                                                    ("" variable (:type ("two_sequence" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8564 8578]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [8356 8625])
+                                            ("close" function
+                                               (:template 
+                                                  ( ("Filter" type (:type "class") nil nil)
+                                                    ("Device" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :type ("Filter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8696 8706])
+                                                    ("dev" variable
+                                                       (:pointer 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8707 8719])
+                                                    ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8720 8746]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [8631 8788])
+                                            ("flush" function
+                                               (:template 
+                                                  ( ("Filter" type (:type "class") nil nil)
+                                                    ("Device" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :type ("Filter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8859 8869])
+                                                    ("dev" variable
+                                                       (:pointer 1
+                                                        :type ("Device" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8870 8882]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [8794 8924]))                                          
+                                        :template-specifier 
+                                          ( ("any_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [7109 8927])
+                                    ("flt_wrapper_impl" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("read" function
+                                               (:template 
+                                                  ( ("Filter" type (:type "class") nil nil)
+                                                    ("Source" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :type ("Filter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9057 9067])
+                                                    ("src" variable
+                                                       (:pointer 1
+                                                        :type ("Source" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9068 9080])
+                                                    ("" variable
+                                                       (:typemodifiers ("typename")
+                                                        :type ("char_type_of" type
+                                                             (:template-specifier 
+                                                                ( ("Filter" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [9081 9111])
+                                                    ("s" variable
+                                                       (:pointer 1
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9112 9120])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9131 9150]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [8977 9197])
+                                            ("write" function
+                                               (:template 
+                                                  ( ("Filter" type (:type "class") nil nil)
+                                                    ("Sink" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :type ("Filter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9283 9291])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("Sink" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9292 9298])
+                                                    ("" variable
+                                                       (:typemodifiers ("typename")
+                                                        :constant-flag t
+                                                        :type ("char_type_of" type
+                                                             (:template-specifier 
+                                                                ( ("Filter" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [9299 9335])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9336 9342])
+                                                    ("" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9355 9372]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [9203 9462]))                                          
+                                        :template-specifier 
+                                          ( ("input" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [8929 9465])
+                                    ("flt_wrapper_impl" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("read" function
+                                               (:template 
+                                                  ( ("Filter" type (:type "class") nil nil)
+                                                    ("Source" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :type ("Filter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9595 9603])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("Source" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9604 9612])
+                                                    ("" variable
+                                                       (:typemodifiers ("typename")
+                                                        :type ("char_type_of" type
+                                                             (:template-specifier 
+                                                                ( ("Filter" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [9613 9643])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9644 9650])
+                                                    ("" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9650 9666]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [9516 9755])
+                                            ("write" function
+                                               (:template 
+                                                  ( ("Filter" type (:type "class") nil nil)
+                                                    ("Sink" type (:type "class") nil nil))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :type ("Filter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9841 9851])
+                                                    ("snk" variable
+                                                       (:pointer 1
+                                                        :type ("Sink" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9852 9862])
+                                                    ("" variable
+                                                       (:typemodifiers ("typename")
+                                                        :constant-flag t
+                                                        :type ("char_type_of" type
+                                                             (:template-specifier 
+                                                                ( ("Filter" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [9863 9899])
+                                                    ("s" variable
+                                                       (:pointer 1
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9900 9908])
+                                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9920 9939]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [9761 9987]))                                          
+                                        :template-specifier 
+                                          ( ("output" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [9467 9990]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1347 10075]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1325 10077]))                  
+                :type "namespace")
+                nil [1307 10079])
+            ("boost/iostreams/detail/config/enable_warnings.hpp" include (:system-flag t) nil [10125 10185]))          
+    :file "concept_adapter.hpp"
+    :pointmax 10267
+    :fsize 10266
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax '((punctuation 9899 . 9900) (punctuation 9898 . 9899) (punctuation 9643 . 9644) (punctuation 9642 . 9643) (punctuation 9335 . 9336) (punctuation 9334 . 9335) (punctuation 9111 . 9112) (punctuation 9110 . 9111) (punctuation 6941 . 6942) (punctuation 6940 . 6941) (punctuation 6684 . 6685) (punctuation 6683 . 6684) (punctuation 6376 . 6377) (punctuation 6375 . 6376) (punctuation 6154 . 6155) (punctuation 6153 . 6154) (EXPLICIT 2696 . 2704) (EXPLICIT 2568 . 2576) (punctuation 2534 . 2535) (punctuation 2533 . 2534) (punctuation 2532 . 2533) (symbol 2531 . 2532) (punctuation 2530 . 2531) (symbol 2519 . 2530) (TYPENAME 2510 . 2518) (TYPEDEF 2502 . 2509) (punctuation 2469 . 2470) (punctuation 2468 . 2469) (punctuation 2467 . 2468) (symbol 2466 . 2467) (punctuation 2465 . 2466) (symbol 2453 . 2465) (TYPENAME 2444 . 2452) (TYPEDEF 2436 . 2443) (punctuation 1712 . 1713) (punctuation 1711 . 1712) (punctuation 1710 . 1711) (symbol 1705 . 1710) (punctuation 1703 . 1704) (symbol 1697 . 1703) (punctuation 1695 . 1696) (symbol 1694 . 1695) (punctuation 1693 . 1694) (symbol 1685 . 1693) (TYPENAME 1676 . 1684) (TYPEDEF 1668 . 1675) (punctuation 1646 . 1647) (punctuation 1645 . 1646) (punctuation 1644 . 1645) (symbol 1638 . 1644) (punctuation 1636 . 1637) (symbol 1631 . 1636) (punctuation 1629 . 1630) (symbol 1628 . 1629) (punctuation 1627 . 1628) (symbol 1619 . 1627) (TYPENAME 1610 . 1618) (TYPEDEF 1602 . 1609))
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_DETAIL_CONCEPT_ADAPTER_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "non_blocking_adapter.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_IOSTREAMS_DETAIL_NON_BLOCKING_ADAPTER_HPP_INCLUDED" variable (:constant-flag t) nil [404 460])
+            ("boost/iostreams/detail/ios.hpp" include (:system-flag t) nil [462 503])
+            ("boost/iostreams/read.hpp" include (:system-flag t) nil [539 574])
+            ("boost/iostreams/seek.hpp" include (:system-flag t) nil [575 610])
+            ("boost/iostreams/traits.hpp" include (:system-flag t) nil [611 648])
+            ("boost/iostreams/write.hpp" include (:system-flag t) nil [649 685])
+            ("boost" type
+               (:members 
+                  ( ("iostreams" type
+                       (:members 
+                          ( ("non_blocking_adapter" type
+                               (:template 
+                                  ( ("Device" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [783 790])
+                                    ("char_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [834 849])
+                                    ("category" type
+                                       (:superclasses 
+                                          ( ("mode_of::type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil)
+                                            ("device_tag" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [854 926])
+                                    ("non_blocking_adapter" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("dev" variable
+                                               (:reference 1
+                                                :type ("Device" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [961 973]))                                          
+                                        :type ("non_blocking_adapter" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [940 992])
+                                    ("read" function
+                                       (:arguments 
+                                          ( ("s" variable
+                                               (:pointer 1
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1018 1031])
+                                            ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1032 1050]))                                          
+                                        :type ("std::streamsize" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [997 1323])
+                                    ("write" function
+                                       (:arguments 
+                                          ( ("s" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1350 1369])
+                                            ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1370 1388]))                                          
+                                        :type ("std::streamsize" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1328 1632])
+                                    ("seek" function
+                                       (:arguments 
+                                          ( ("off" variable (:type ("stream_offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1658 1676])
+                                            ("way" variable (:type ("BOOST_IOS::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1677 1700])
+                                            ("which" variable (:type ("BOOST_IOS::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1726 1753])
+                                            ("" variable (:type ("BOOST_IOS::in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1784 1799])
+                                            ("" variable (:type ("BOOST_IOS::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1800 1816]))                                          
+                                        :type ("std::streampos" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1637 1874])
+                                    ("public" label nil (reparse-symbol classsubparts) [1875 1882])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("non_blocking_adapter" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1919 1947]))                                          
+                                        :type ("non_blocking_adapter" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1887 1948])
+                                    ("device_" variable (:type ("Device" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1953 1969]))                                  )
+                                (reparse-symbol namespacesubparts) [728 1972]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [705 1975]))                  
+                :type "namespace")
+                nil [687 1977]))          
+    :file "non_blocking_adapter.hpp"
+    :pointmax 2082
+    :fsize 2081
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax '((punctuation 1798 . 1799) (punctuation 1752 . 1753) (EXPLICIT 931 . 939) (punctuation 833 . 834) (punctuation 832 . 833) (punctuation 831 . 832) (symbol 825 . 831) (punctuation 824 . 825) (symbol 812 . 824) (TYPENAME 803 . 811) (TYPEDEF 795 . 802))
+    :lexical-table 
+        '(("BOOST_IOSTREAMS_DETAIL_NON_BLOCKING_ADAPTER_HPP_INCLUDED")
+          )
+
+    )
+   )
+  :file "!usr!include!boost!iostreams!detail!adapter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

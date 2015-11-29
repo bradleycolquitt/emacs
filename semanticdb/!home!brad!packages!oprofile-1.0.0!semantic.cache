@@ -1,0 +1,21 @@
+;; Object oprofile-1.0.0/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "oprofile-1.0.0/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("." "m4" "libutil" "libop" "libopagent" "libdb" "libutil++" "libopt++" "libabi" "utils" "libregex" "libpp" "opjitconv" "pp" "events" "doc" "libpe_utils" "libperf_events" "pe_profiling" "pe_counting" "agents")) nil [79 318])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [399 423])
+            ("EXTRA_DIST" variable (:default-value ("ChangeLog-2001" "ChangeLog-2002" "ChangeLog-2003" "ChangeLog-2004" "ChangeLog-2005" "ChangeLog-2006" "ChangeLog-2007" "ChangeLog-2008" "ChangeLog-2009" "ChangeLog-2010" "ChangeLog-2011" "autogen.sh" "README_PACKAGERS" "include/sstream")) nil [424 695]))          
+    :file "Makefile.am"
+    :pointmax 695
+    :fsize 694
+    :lastmodtime '(21523 1459 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

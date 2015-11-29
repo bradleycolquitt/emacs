@@ -1,0 +1,221 @@
+;; Object video/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "video/"
+  :tables (list 
+   (semanticdb-table "tracking.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__OPENCV_TRACKING_HPP__" variable (:constant-flag t) nil [2260 2283])
+            ("opencv2/core.hpp" include nil nil [2285 2312])
+            ("opencv2/imgproc.hpp" include nil nil [2313 2343])
+            ("cv" type
+               (:members 
+                  ( ("" type
+                       (:members 
+                          ( ("OPTFLOW_USE_INITIAL_FLOW" variable
+                               (:constant-flag t
+                                :default-value (2399 2400)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2368 2400])
+                            ("OPTFLOW_LK_GET_MIN_EIGENVALS" variable
+                               (:constant-flag t
+                                :default-value (2440 2441)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2409 2441])
+                            ("OPTFLOW_FARNEBACK_GAUSSIAN" variable
+                               (:constant-flag t
+                                :default-value (2481 2484)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2450 2484]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2361 2492])
+                    ("CamShift" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("probImage" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2593 2614])
+                            ("Rect" variable (:type ("CV_IN_OUT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2615 2630])
+                            ("" variable (:type ("window" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2631 2638])
+                            ("criteria" variable (:type ("TermCriteria" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2674 2697]))                          
+                        :type ("RotatedRect" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2571 2698])
+                    ("meanShift" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("probImage" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2793 2814])
+                            ("Rect" variable (:type ("CV_IN_OUT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2815 2830])
+                            ("" variable (:type ("window" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2831 2838])
+                            ("criteria" variable (:type ("TermCriteria" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2839 2862]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2778 2863])
+                    ("buildOpticalFlowPyramid" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("img" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2984 2999])
+                            ("pyramid" variable (:type ("OutputArrayOfArrays" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3000 3028])
+                            ("winSize" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3071 3084])
+                            ("maxLevel" variable (:type "int") (reparse-symbol arg-sub-list) [3085 3098])
+                            ("withDerivatives" variable (:type "bool") (reparse-symbol arg-sub-list) [3099 3121])
+                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3122 3127])
+                            ("pyrBorder" variable (:type "int") (reparse-symbol arg-sub-list) [3170 3185])
+                            ("" variable (:type ("BORDER_REFLECT_101" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3186 3205])
+                            ("derivBorder" variable (:type "int") (reparse-symbol arg-sub-list) [3248 3265])
+                            ("" variable (:type ("BORDER_CONSTANT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3266 3282])
+                            ("tryReuseInputImage" variable (:type "bool") (reparse-symbol arg-sub-list) [3325 3350])
+                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3351 3357]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2955 3358])
+                    ("calcOpticalFlowPyrLK" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("prevImg" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3474 3493])
+                            ("nextImg" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3494 3513])
+                            ("prevPts" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3554 3573])
+                            ("nextPts" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3574 3599])
+                            ("status" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3640 3659])
+                            ("err" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3660 3676])
+                            ("winSize" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3717 3731])
+                            ("" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3732 3743])
+                            ("maxLevel" variable (:type "int") (reparse-symbol arg-sub-list) [3745 3759])
+                            ("criteria" variable (:type ("TermCriteria" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3803 3826])
+                            ("" variable (:type ("TermCriteria" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3827 3888])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [3930 3941])
+                            ("minEigThreshold" variable (:type "double") (reparse-symbol arg-sub-list) [3945 3969]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3447 3977])
+                    ("calcOpticalFlowFarneback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("prev" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4081 4097])
+                            ("next" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4098 4114])
+                            ("flow" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4115 4137])
+                            ("pyr_scale" variable (:type "double") (reparse-symbol arg-sub-list) [4182 4199])
+                            ("levels" variable (:type "int") (reparse-symbol arg-sub-list) [4200 4211])
+                            ("winsize" variable (:type "int") (reparse-symbol arg-sub-list) [4212 4224])
+                            ("iterations" variable (:type "int") (reparse-symbol arg-sub-list) [4269 4284])
+                            ("poly_n" variable (:type "int") (reparse-symbol arg-sub-list) [4285 4296])
+                            ("poly_sigma" variable (:type "double") (reparse-symbol arg-sub-list) [4297 4315])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [4360 4371]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4050 4372])
+                    ("estimateRigidTransform" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4568 4583])
+                            ("dst" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4584 4599])
+                            ("fullAffine" variable (:type "bool") (reparse-symbol arg-sub-list) [4600 4617]))                          
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4540 4618])
+                    ("" type
+                       (:members 
+                          ( ("MOTION_TRANSLATION" variable
+                               (:constant-flag t
+                                :default-value (4653 4654)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4632 4654])
+                            ("MOTION_EUCLIDEAN" variable
+                               (:constant-flag t
+                                :default-value (4681 4682)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4660 4682])
+                            ("MOTION_AFFINE" variable
+                               (:constant-flag t
+                                :default-value (4709 4710)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4688 4710])
+                            ("MOTION_HOMOGRAPHY" variable
+                               (:constant-flag t
+                                :default-value (4737 4738)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4716 4738]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [4621 4741])
+                    ("findTransformECC" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("templateImage" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5149 5174])
+                            ("inputImage" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5175 5197])
+                            ("warpMatrix" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5236 5264])
+                            ("motionType" variable (:type "int") (reparse-symbol arg-sub-list) [5265 5281])
+                            ("" variable (:type ("MOTION_AFFINE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5282 5296])
+                            ("criteria" variable (:type ("TermCriteria" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5335 5358])
+                            ("" variable (:type ("TermCriteria" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5359 5421]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [5124 5423])
+                    ("KalmanFilter" variable (:type ("CV_EXPORTS_W" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [5709 7443])
+                    ("Algorithm" variable (:type "int") (reparse-symbol namespacesubparts) [7492 7651])
+                    ("createOptFlow_DualTVL1" function
+                       (:prototype-flag t
+                        :type ("Ptr" type
+                             (:template-specifier 
+                                ( ("DenseOpticalFlow" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7972 8019]))                  
+                :type "namespace")
+                nil [2345 8022]))          
+    :file "tracking.hpp"
+    :pointmax 8037
+    :fsize 8036
+    :lastmodtime '(21596 61910 0 0)
+    :unmatched-syntax '((symbol 7959 . 7971) (PUBLIC 7485 . 7491) (punctuation 7483 . 7484) (symbol 7466 . 7482) (symbol 7453 . 7465) (CLASS 7447 . 7452) (semantic-list 5371 . 5421) (punctuation 5357 . 5358) (punctuation 5280 . 5281) (symbol 5111 . 5123) (symbol 4527 . 4539) (symbol 4037 . 4049) (number 3970 . 3974) (punctuation 3968 . 3969) (number 3942 . 3943) (punctuation 3940 . 3941) (semantic-list 3839 . 3888) (punctuation 3825 . 3826) (number 3760 . 3761) (punctuation 3758 . 3759) (semantic-list 3736 . 3743) (punctuation 3730 . 3731) (symbol 3434 . 3446) (punctuation 3349 . 3350) (punctuation 3264 . 3265) (punctuation 3184 . 3185) (punctuation 3120 . 3121) (symbol 2942 . 2954) (punctuation 2829 . 2830) (symbol 2765 . 2777) (punctuation 2629 . 2630) (symbol 2558 . 2570))
+    :lexical-table 
+        '(("__OPENCV_TRACKING_HPP__")
+          )
+
+    )
+   (semanticdb-table "background_segm.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__OPENCV_BACKGROUND_SEGM_HPP__" variable (:constant-flag t) nil [2267 2297])
+            ("opencv2/core.hpp" include nil nil [2299 2326])
+            ("cv" type
+               (:members 
+                  ( ("Algorithm" variable (:type "int") (reparse-symbol namespacesubparts) [2583 2947])
+                    ("BackgroundSubtractor" variable (:type "int") (reparse-symbol namespacesubparts) [3262 4737])
+                    ("createBackgroundSubtractorMOG2" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("history" variable (:type "int") (reparse-symbol arg-sub-list) [4817 4829])
+                            ("varThreshold" variable (:type "double") (reparse-symbol arg-sub-list) [4834 4854])
+                            ("detectShadows" variable (:type "bool") (reparse-symbol arg-sub-list) [4893 4912])
+                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4912 4917]))                          
+                        :type ("Ptr" type
+                             (:template-specifier 
+                                ( ("BackgroundSubtractorMOG2" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [4752 4918])
+                    ("BackgroundSubtractor" variable (:type "int") (reparse-symbol namespacesubparts) [5396 6254])
+                    ("createBackgroundSubtractorKNN" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("history" variable (:type "int") (reparse-symbol arg-sub-list) [6332 6344])
+                            ("dist2Threshold" variable (:type "double") (reparse-symbol arg-sub-list) [6349 6371])
+                            ("detectShadows" variable (:type "bool") (reparse-symbol arg-sub-list) [6413 6432])
+                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6432 6437]))                          
+                        :type ("Ptr" type
+                             (:template-specifier 
+                                ( ("BackgroundSubtractorKNN" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6269 6438]))                  
+                :type "namespace")
+                nil [2328 6441]))          
+    :file "background_segm.hpp"
+    :pointmax 6456
+    :fsize 6455
+    :lastmodtime '(21596 61910 0 0)
+    :unmatched-syntax '((punctuation 6431 . 6432) (number 6371 . 6376) (punctuation 6370 . 6371) (number 6344 . 6347) (punctuation 6343 . 6344) (symbol 6256 . 6268) (PUBLIC 5389 . 5395) (punctuation 5387 . 5388) (symbol 5363 . 5386) (symbol 5350 . 5362) (CLASS 5344 . 5349) (punctuation 4911 . 4912) (number 4854 . 4856) (punctuation 4853 . 4854) (number 4829 . 4832) (punctuation 4828 . 4829) (symbol 4739 . 4751) (PUBLIC 3255 . 3261) (punctuation 3253 . 3254) (symbol 3228 . 3252) (symbol 3215 . 3227) (CLASS 3209 . 3214) (PUBLIC 2576 . 2582) (punctuation 2574 . 2575) (symbol 2553 . 2573) (symbol 2540 . 2552) (CLASS 2534 . 2539))
+    :lexical-table 
+        '(("__OPENCV_BACKGROUND_SEGM_HPP__")
+          )
+
+    )
+   )
+  :file "!usr!local!include!opencv2!video!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

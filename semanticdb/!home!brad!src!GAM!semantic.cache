@@ -1,0 +1,25 @@
+;; Object GAM/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "GAM/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("lib" "src")) nil [1 20])
+            ("AM_CXXFLAGS" variable (:default-value ("-Wall" "-O3")) nil [21 46])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [47 72])
+            (".PHONY" function (:arguments ("shiny" "lib" "src")) nil [73 96])
+            ("shiny" function (:arguments ("maintainer-clean")) nil [96 410])
+            ("lib" function nil nil [411 436])
+            ("src" function (:arguments ("lib")) nil [437 466]))          
+    :file "Makefile.am"
+    :pointmax 467
+    :fsize 466
+    :lastmodtime '(21697 58033 196159 868000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!GAM!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

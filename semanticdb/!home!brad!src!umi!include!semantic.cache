@@ -1,0 +1,2787 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "bam_sql_merge.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BAM_SQL_H" variable (:constant-flag t) nil [27 36])
+            ("string_utils.h" include (:system-flag t) nil [38 63])
+            ("bam_utils.h" include (:system-flag t) nil [64 86])
+            ("sql_utils.h" include (:system-flag t) nil [87 109])
+            ("dbrecord.h" include (:system-flag t) nil [110 131])
+            ("sqlite_wrapper.h" include (:system-flag t) nil [132 159])
+            ("timing.h" include (:system-flag t) nil [160 179])
+            ("sqlite3.h" include (:system-flag t) nil [180 200])
+            ("htslib/sam.h" include (:system-flag t) nil [201 224])
+            ("boost/regex.hpp" include (:system-flag t) nil [225 251])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [252 283])
+            ("libgen.h" include (:system-flag t) nil [284 303])
+            ("iostream" include (:system-flag t) nil [304 323])
+            ("fstream" include (:system-flag t) nil [324 342])
+            ("vector" include (:system-flag t) nil [343 360])
+            ("map" include (:system-flag t) nil [361 375])
+            ("sstream" include (:system-flag t) nil [376 394])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [396 416])
+            ("BC_PATH" variable (:constant-flag t) nil [426 433])
+            ("BUFFER_SIZE" variable (:constant-flag t) nil [469 480])
+            ("DEBUG_LOG" variable (:constant-flag t) nil [553 562])
+            ("BamDB" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [695 703])
+                    ("bam_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [716 738])
+                    ("dest_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [751 774])
+                    ("dest_path" variable (:type ("boost::filesystem::path" type (:type "class") nil nil)) (reparse-symbol classsubparts) [897 931])
+                    ("merge_path" variable (:type ("boost::filesystem::path" type (:type "class") nil nil)) (reparse-symbol classsubparts) [944 979])
+                    ("tmp_path" variable (:type ("boost::filesystem::path" type (:type "class") nil nil)) (reparse-symbol classsubparts) [992 1025])
+                    ("just_merge" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1038 1060])
+                    ("just_fill" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1073 1094])
+                    ("bam" variable
+                       (:pointer 1
+                        :type ("samFile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1107 1120])
+                    ("header" variable
+                       (:pointer 1
+                        :type ("bam_hdr_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1133 1151])
+                    ("chroms" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("char" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1164 1186])
+                    ("idx" variable
+                       (:pointer 1
+                        :type ("hts_idx_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1199 1214])
+                    ("conns" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("sqlite3" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1227 1251])
+                    ("stmt" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1264 1283])
+                    ("barcodes" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1297 1327])
+                    ("sequence_pos" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1340 1365])
+                    ("bc_offsets" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1378 1401])
+                    ("bc_min_qual" variable (:type "int") (reparse-symbol classsubparts) [1415 1431])
+                    ("public" label nil (reparse-symbol classsubparts) [1436 1443])
+                    ("BamDB" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bam_fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1462 1484])
+                            ("final_fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1485 1509])
+                            ("barcodes_fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1510 1537])
+                            ("umi_length" variable (:type "int") (reparse-symbol arg-sub-list) [1538 1553])
+                            ("bc_min_qual" variable (:type "int") (reparse-symbol arg-sub-list) [1554 1570])
+                            ("just_merge" variable (:type "bool") (reparse-symbol arg-sub-list) [1571 1587])
+                            ("just_fill" variable (:type "bool") (reparse-symbol arg-sub-list) [1588 1603]))                          
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1456 1604])
+                    ("BamDB" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1618 1627])
+                    ("set_barcodes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1685 1703])
+                            ("vec_p" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1704 1732]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1667 1733])
+                    ("get_bam" function
+                       (:pointer 1
+                        :type ("samFile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1774 1808])
+                    ("get_header" function
+                       (:pointer 1
+                        :type ("bam_hdr_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1821 1863])
+                    ("get_idx" function
+                       (:pointer 1
+                        :type ("hts_idx_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1876 1912])
+                    ("get_rlen" function
+                       (:arguments 
+                          ( ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [1938 1946]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1925 1982])
+                    ("get_chrom" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [2012 2020]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [1995 2044])
+                    ("get_dest_path" function
+                       (:constant-flag t
+                        :type ("boost::filesystem::path" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2057 2124])
+                    ("get_tmp_path" function
+                       (:constant-flag t
+                        :type ("boost::filesystem::path" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2137 2202])
+                    ("get_merge_path" function
+                       (:constant-flag t
+                        :type ("boost::filesystem::path" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2215 2284])
+                    ("get_conn" function
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2298 2338])
+                    ("get_conn" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [2369 2379]))                          
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2351 2404])
+                    ("get_stmt" function
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2417 2458])
+                    ("get_sequence_pos" function
+                       (:arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2493 2499]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2472 2527])
+                    ("get_barcodes" function
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2540 2598])
+                    ("get_bc_offsets" function
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2611 2664])
+                    ("get_bc_min_qual" function (:type "int") (reparse-symbol classsubparts) [2677 2722])
+                    ("merge_only" function (:type "bool") (reparse-symbol classsubparts) [2735 2775])
+                    ("fill_only" function (:type "bool") (reparse-symbol classsubparts) [2788 2826])
+                    ("create_align_table" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2873 2899])
+                    ("create_reftable" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2912 2935])
+                    ("create_rtree" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2948 2968])
+                    ("create_idcollapsed" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2981 3007])
+                    ("index_cluster" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3054 3075])
+                    ("index_merge" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3088 3107])
+                    ("create_read1_index" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3120 3146])
+                    ("create_pos_indices" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3159 3185])
+                    ("create_collapsed_index" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3198 3228])
+                    ("merge_tables" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3271 3291])
+                    ("collapse_positions" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3304 3330])
+                    ("group_umi" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3343 3360])
+                    ("remove_tmp_files" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3405 3429])
+                    ("drop_read_tables" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3442 3466])
+                    ("close_conn" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [3495 3505]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3479 3506])
+                    ("dbRecord" friend nil (reparse-symbol classsubparts) [3518 3539]))                  
+                :type "class")
+                nil [677 3543])
+            ("create_index" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("bamdb" variable
+                       (:pointer 1
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3562 3575]))                  
+                :type "int")
+                nil [3545 3576])
+            ("fill_db" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("bamdb" variable
+                       (:pointer 1
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3589 3602]))                  
+                :type "int")
+                nil [3577 3603]))          
+    :file "bam_sql_merge.h"
+    :pointmax 3731
+    :fsize 3730
+    :lastmodtime '(21835 49136 233007 151000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BUFFER_SIZE" . ((number "256" 481 . 484)))
+          ("BC_PATH" . ((string "\"/home/brad/lib/barcodes/\"" 434 . 460)))
+          ("BAM_SQL_H")
+          ("DEBUG_LOG" (spp-arg-list ("x") 562 . 565))
+          )
+
+    )
+   (semanticdb-table "string_utils.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("STRING_UTILS_H" variable (:constant-flag t) nil [32 46])
+            ("vector" include (:system-flag t) nil [48 65])
+            ("string" include (:system-flag t) nil [66 83])
+            ("sstream" include (:system-flag t) nil [84 102])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [104 124])
+            ("split" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147 163])
+                    ("delim" variable (:type "char") (reparse-symbol arg-sub-list) [164 175])
+                    ("elems" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [176 198]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [125 199])
+            ("split" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [221 237])
+                    ("delim" variable (:type "char") (reparse-symbol arg-sub-list) [238 249]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [200 250]))          
+    :file "string_utils.h"
+    :pointmax 276
+    :fsize 275
+    :lastmodtime '(21799 63231 732143 458000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("STRING_UTILS_H")
+          )
+
+    )
+   (semanticdb-table "bam_utils.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BAM_UTIL_H" variable (:constant-flag t) nil [28 38])
+            ("string_utils.h" include (:system-flag t) nil [40 65])
+            ("htslib/sam.h" include (:system-flag t) nil [90 113])
+            ("fstream" include (:system-flag t) nil [114 132])
+            ("vector" include (:system-flag t) nil [133 150])
+            ("string" include (:system-flag t) nil [151 168])
+            ("cstring" include (:system-flag t) nil [169 187])
+            ("numeric" include (:system-flag t) nil [188 206])
+            ("iostream" include (:system-flag t) nil [207 226])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [227 247])
+            ("count_bam_records" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("idx" variable
+                       (:pointer 1
+                        :type ("hts_idx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [276 291])
+                    ("header" variable
+                       (:pointer 1
+                        :type ("bam_hdr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [292 310]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [249 311])
+            ("seq2int" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [338 353]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [313 354])
+            ("bam_get_seq2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [374 384])
+                    ("seq" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [385 398])
+                    ("qual" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [399 413]))                  
+                :type "void")
+                nil [356 414])
+            ("bam_get_seq_qual" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [437 447])
+                    ("seq" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [448 461])
+                    ("qual" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [462 476]))                  
+                :type "void")
+                nil [415 477])
+            ("bam_revcomp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [495 505])
+                    ("seqlen" variable (:type "int") (reparse-symbol arg-sub-list) [506 517])
+                    ("seq_rc" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [518 534]))                  
+                :type "void")
+                nil [478 535])
+            ("bam_rev_qual" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [554 564])
+                    ("seqlen" variable (:type "int") (reparse-symbol arg-sub-list) [565 576])
+                    ("seq_rev" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [577 594]))                  
+                :type "void")
+                nil [536 595])
+            ("bad_cigar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [610 620]))                  
+                :type "int")
+                nil [596 621])
+            ("filter_multi_reads" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [645 655]))                  
+                :type "int")
+                nil [622 656])
+            ("compare_barcode_local" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [684 705])
+                    ("bc_iter" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [706 723])
+                    ("seq" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [724 737])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [738 748])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [749 757]))                  
+                :type "int")
+                nil [658 758])
+            ("compare_barcode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [936 949])
+                    ("barcodes" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [950 981])
+                    ("bc_offsets" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [982 1006])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [1029 1039])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [1040 1048])
+                    ("used_offset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1049 1066]))                  
+                :type "int")
+                nil [916 1067])
+            ("get_sequence" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1433 1443])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [1444 1454])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [1455 1463])
+                    ("barcodes" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1464 1495])
+                    ("bc_offsets" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1515 1539])
+                    ("min_qual" variable (:type "int") (reparse-symbol arg-sub-list) [1540 1553])
+                    ("used_offset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1554 1571]))                  
+                :type "int")
+                nil [1416 1572])
+            ("get_sequence" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1591 1601])
+                    ("qual" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1602 1613])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [1614 1624])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [1625 1633])
+                    ("barcodes" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("char" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1634 1664])
+                    ("bc_offsets" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1684 1708])
+                    ("min_qual" variable (:type "int") (reparse-symbol arg-sub-list) [1709 1722])
+                    ("used_offset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1723 1740]))                  
+                :type "int")
+                nil [1574 1741])
+            ("get_sequence" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1861 1871])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [1872 1882])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [1883 1891])
+                    ("used_offset" variable (:type "int") (reparse-symbol arg-sub-list) [1892 1908]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1839 1909])
+            ("get_sequence" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1930 1940])
+                    ("qual" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1941 1952])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [1953 1963])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [1964 1972])
+                    ("min_qual" variable (:type "int") (reparse-symbol arg-sub-list) [1973 1986])
+                    ("used_offset" variable (:type "int") (reparse-symbol arg-sub-list) [1987 2003]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [1910 2004])
+            ("shift_add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [2073 2081])
+                    ("digit" variable (:type "int") (reparse-symbol arg-sub-list) [2082 2092]))                  
+                :type "int")
+                nil [2059 2093])
+            ("print_uint8" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2111 2124])
+                    ("seqlen" variable (:type "int") (reparse-symbol arg-sub-list) [2125 2136])
+                    ("convert" variable (:type "bool") (reparse-symbol arg-sub-list) [2137 2150]))                  
+                :type "void")
+                nil [2094 2151]))          
+    :file "bam_utils.h"
+    :pointmax 2159
+    :fsize 2158
+    :lastmodtime '(21925 18806 671056 911000)
+    :unmatched-syntax '((punctuation 705 . 706) (punctuation 704 . 705) (punctuation 705 . 706) (punctuation 704 . 705))
+    :lexical-table 
+        '(("BAM_UTIL_H")
+          )
+
+    )
+   (semanticdb-table "sql_utils.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SQL_UTILS_H" variable (:constant-flag t) nil [29 40])
+            ("bam_sql_merge.h" include (:system-flag t) nil [42 68])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [69 100])
+            ("fstream" include (:system-flag t) nil [101 119])
+            ("string" include (:system-flag t) nil [120 137])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [139 159])
+            ("get_selfpath" function
+               (:prototype-flag t
+                :type ("string" type (:type "class") nil nil))
+                nil [161 183])
+            ("read_sql" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [205 223]))                  
+                :type "char")
+                nil [184 224]))          
+    :file "sql_utils.h"
+    :pointmax 233
+    :fsize 232
+    :lastmodtime '(21799 63231 672143 458000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SQL_UTILS_H")
+          )
+
+    )
+   (semanticdb-table "dbrecord.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DBRECORD_H" variable (:constant-flag t) nil [28 38])
+            ("BamDB" type
+               (:prototype t
+                :type "class")
+                nil [40 52])
+            ("bam_sql_merge.h" include (:system-flag t) nil [54 80])
+            ("string_utils.h" include (:system-flag t) nil [81 106])
+            ("bam_utils.h" include (:system-flag t) nil [107 129])
+            ("htslib/sam.h" include (:system-flag t) nil [131 154])
+            ("sqlite3.h" include (:system-flag t) nil [155 175])
+            ("iostream" include (:system-flag t) nil [176 195])
+            ("vector" include (:system-flag t) nil [196 213])
+            ("cstring" include (:system-flag t) nil [214 232])
+            ("BUFFER_SIZE" variable (:constant-flag t) nil [242 253])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [259 279])
+            ("dbRecord0" type
+               (:members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [303 313])
+                    ("bamdb" variable
+                       (:pointer 1
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [322 335])
+                    ("instrument" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [344 373])
+                    ("flowcell" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [382 409])
+                    ("cluster" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [418 444])
+                    ("chrom" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [453 477])
+                    ("tid" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [486 498])
+                    ("read_pos" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("uint32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [507 533])
+                    ("strand" variable (:type "bool") (reparse-symbol classsubparts) [542 554])
+                    ("public" label nil (reparse-symbol classsubparts) [559 566])
+                    ("dbRecord0" function
+                       (:constructor-flag t
+                        :type ("dbRecord0" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [575 589])
+                    ("dbRecord0" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("bamdb" variable
+                               (:pointer 1
+                                :type ("BamDB" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [608 621]))                          
+                        :type ("dbRecord0" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [598 722])
+                    ("dbRecord0" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [731 754])
+                    ("set_positions" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [804 814]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [786 815])
+                    ("set_tid" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tid" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [837 849]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [824 850])
+                    ("set_chrom" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bamdb" variable
+                               (:pointer 1
+                                :type ("BamDB" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [874 887])
+                            ("tid" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [888 900]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [859 901])
+                    ("get_cluster" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [933 978])
+                    ("insert_to_db" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1009 1040])
+                    ("split_qname" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1066 1076]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1049 1077])
+                    ("BamDB" friend nil (reparse-symbol classsubparts) [1083 1101]))                  
+                :type "class")
+                nil [281 1105])
+            ("dbRecord1" type
+               (:superclasses 
+                  ( ("dbRecord0" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1147 1155])
+                    ("bc" variable (:type "int") (reparse-symbol classsubparts) [1164 1171])
+                    ("umi" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1180 1193])
+                    ("insert_stmt" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1225 1251])
+                    ("public" label nil (reparse-symbol classsubparts) [1256 1263])
+                    ("dbRecord1" function
+                       (:constructor-flag t
+                        :type ("dbRecord1" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1272 1286])
+                    ("dbRecord1" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bamdb" variable
+                               (:pointer 1
+                                :type ("BamDB" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1305 1318]))                          
+                        :type ("dbRecord1" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1295 1319])
+                    ("dbRecord1" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1328 1395])
+                    ("get_tid" function (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1455 1488])
+                    ("set_bc" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bamdb" variable
+                               (:pointer 1
+                                :type ("BamDB" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1509 1522])
+                            ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1523 1533])
+                            ("used_offset" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1534 1551]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1497 1552])
+                    ("set_umi" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bamdb" variable
+                               (:pointer 1
+                                :type ("BamDB" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1574 1587])
+                            ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1588 1598])
+                            ("used_offset" variable (:type "int") (reparse-symbol arg-sub-list) [1599 1615]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1561 1616])
+                    ("insert_to_db" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1625 1644]))                  
+                :type "class")
+                nil [1107 1647])
+            ("dbRecord2" type
+               (:superclasses 
+                  ( ("dbRecord0" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1689 1697])
+                    ("isize" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1729 1743])
+                    ("insert_stmt" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1752 1778])
+                    ("public" label nil (reparse-symbol classsubparts) [1783 1790])
+                    ("dbRecord2" function
+                       (:constructor-flag t
+                        :type ("dbRecord2" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1799 1813])
+                    ("dbRecord2" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bamdb" variable
+                               (:pointer 1
+                                :type ("BamDB" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1832 1845]))                          
+                        :type ("dbRecord2" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1822 1846])
+                    ("dbRecord2" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1855 1922])
+                    ("set_isize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("is" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1947 1958]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1932 1959])
+                    ("insert_to_db" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1968 1987]))                  
+                :type "class")
+                nil [1649 1990]))          
+    :file "dbrecord.h"
+    :pointmax 1999
+    :fsize 1998
+    :lastmodtime '(21806 38899 972029 670000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BUFFER_SIZE" . ((number "256" 254 . 257)))
+          ("DBRECORD_H")
+          )
+
+    )
+   (semanticdb-table "sqlite_wrapper.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SQLITE_WRAPPER_H" variable (:constant-flag t) nil [34 50])
+            ("sqlite3.h" include (:system-flag t) nil [81 101])
+            ("boost/format.hpp" include (:system-flag t) nil [102 129])
+            ("exception" include (:system-flag t) nil [130 150])
+            ("string" include (:system-flag t) nil [151 168])
+            ("pthread.h" include (:system-flag t) nil [169 189])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [191 211])
+            ("sql_exception" type
+               (:superclasses 
+                  ( ("exception" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [349 357])
+                    ("code" variable (:type "int") (reparse-symbol classsubparts) [366 375])
+                    ("message" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [384 399])
+                    ("message2" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [408 424])
+                    ("public" label nil (reparse-symbol classsubparts) [429 436])
+                    ("sql_exception" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("result" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [459 476])
+                            ("text" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [477 495]))                          
+                        :type ("sql_exception" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [445 602])
+                    ("sql_exception" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("result" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [625 642])
+                            ("text" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [643 661])
+                            ("text2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [662 681]))                          
+                        :type ("sql_exception" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [611 790])
+                    ("what" function
+                       (:pointer 1
+                        :typemodifiers ("virtual")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [799 1093]))                  
+                :type "class")
+                nil [305 1096])
+            ("open_connection" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1119 1137])
+                    ("conn" variable
+                       (:pointer 2
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1138 1153])
+                    ("for_speed" variable (:type "bool") (reparse-symbol arg-sub-list) [1154 1169]))                  
+                :type "void")
+                nil [1098 1170])
+            ("execute" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1184 1198])
+                    ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1199 1215]))                  
+                :type "void")
+                nil [1171 1216])
+            ("execute" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 2
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1230 1245])
+                    ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1246 1262]))                  
+                :type "void")
+                nil [1217 1263])
+            ("prepare_statment" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1285 1299])
+                    ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1300 1316])
+                    ("stmt" variable
+                       (:pointer 2
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1317 1337]))                  
+                :type "int")
+                nil [1264 1338])
+            ("prepare_statment" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 2
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1360 1375])
+                    ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1376 1392])
+                    ("stmt" variable
+                       (:pointer 2
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1393 1413])
+                    ("tail" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1414 1432]))                  
+                :type "int")
+                nil [1339 1433])
+            ("bind" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1443 1457])
+                    ("stmt" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1458 1477])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [1478 1488])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [1489 1499]))                  
+                :type "int")
+                nil [1434 1500])
+            ("bind" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1510 1524])
+                    ("stmt" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1525 1544])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [1545 1555])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1556 1573]))                  
+                :type "int")
+                nil [1501 1574])
+            ("step" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1585 1595])
+                    ("" variable (:type ("conn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1596 1601])
+                    ("stmt" variable
+                       (:pointer 2
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1602 1622]))                  
+                :type "bool")
+                nil [1575 1623])
+            ("step_multiple" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1643 1657])
+                    ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1658 1674]))                  
+                :type "bool")
+                nil [1624 1675])
+            ("reset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 2
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1687 1702])
+                    ("stmt_p" variable
+                       (:pointer 2
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1703 1725]))                  
+                :type "void")
+                nil [1676 1726])
+            ("exec_multithread" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1748 1763])
+                    ("stmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1764 1782]))                  
+                :type "int")
+                nil [1727 1783])
+            ("step_multithread" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1805 1820])
+                    ("insert_stmt" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1821 1848]))                  
+                :type "int")
+                nil [1784 1849]))          
+    :file "sqlite_wrapper.h"
+    :pointmax 1857
+    :fsize 1856
+    :lastmodtime '(21983 32531 693484 492000)
+    :unmatched-syntax '((punctuation 1594 . 1595) (punctuation 1594 . 1595) (semantic-list 1747 . 1755) (symbol 1731 . 1747) (INT 1727 . 1730) (punctuation 1594 . 1595) (punctuation 1594 . 1595))
+    :lexical-table 
+        '(("SQLITE_WRAPPER_H")
+          )
+
+    )
+   (semanticdb-table "timing.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("ctime" include (:system-flag t) nil [21 37])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [39 59])
+            ("print_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("start" variable (:type ("clock_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77 91]))                  
+                :type "void")
+                nil [61 92]))          
+    :file "timing.h"
+    :pointmax 93
+    :fsize 92
+    :lastmodtime '(21799 63232 332143 456000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bam_sql.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BAM_SQL_H" variable (:constant-flag t) nil [27 36])
+            ("iostream" include (:system-flag t) nil [38 57])
+            ("fstream" include (:system-flag t) nil [58 76])
+            ("vector" include (:system-flag t) nil [77 94])
+            ("sqlite3.h" include (:system-flag t) nil [95 115])
+            ("htslib/sam.h" include (:system-flag t) nil [116 139])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [141 161])
+            ("BC_PATH" variable (:constant-flag t) nil [171 178])
+            ("BUFFER_SIZE" variable (:constant-flag t) nil [214 225])
+            ("DEBUG_LOG" variable (:constant-flag t) nil [298 307])
+            ("BamDB" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [335 343])
+                    ("bam_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [356 378])
+                    ("dest_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [391 414])
+                    ("paired_end" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [427 449])
+                    ("bam" variable
+                       (:pointer 1
+                        :type ("samFile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [462 475])
+                    ("header" variable
+                       (:pointer 1
+                        :type ("bam_hdr_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [488 506])
+                    ("idx" variable
+                       (:pointer 1
+                        :type ("hts_idx_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [519 534])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [547 561])
+                    ("stmt" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [574 593])
+                    ("barcodes" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [607 637])
+                    ("sequence_pos" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [650 675])
+                    ("bc_offsets" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [688 711])
+                    ("bc_min_qual" variable (:type "int") (reparse-symbol classsubparts) [725 741])
+                    ("public" label nil (reparse-symbol classsubparts) [746 753])
+                    ("BamDB" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bam_fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [772 794])
+                            ("dest_fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [795 818])
+                            ("barcodes_fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [819 846])
+                            ("umi_length" variable (:type "int") (reparse-symbol arg-sub-list) [847 862])
+                            ("bc_min_qual" variable (:type "int") (reparse-symbol arg-sub-list) [863 879])
+                            ("paired_end" variable (:type "bool") (reparse-symbol arg-sub-list) [880 896]))                          
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [766 897])
+                    ("BamDB" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [910 1082])
+                    ("set_barcodes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1140 1158])
+                            ("vec_p" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1159 1187]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1122 1188])
+                    ("is_pe" function (:type "bool") (reparse-symbol classsubparts) [1228 1263])
+                    ("get_bam" function
+                       (:pointer 1
+                        :type ("samFile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1276 1310])
+                    ("get_header" function
+                       (:pointer 1
+                        :type ("bam_hdr_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1323 1365])
+                    ("get_idx" function
+                       (:pointer 1
+                        :type ("hts_idx_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1378 1414])
+                    ("get_rlen" function
+                       (:arguments 
+                          ( ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [1440 1448]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1427 1484])
+                    ("get_conn" function
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1497 1533])
+                    ("get_stmt" function
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1546 1587])
+                    ("get_sequence_pos" function
+                       (:arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1622 1628]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1601 1656])
+                    ("get_barcodes" function
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1669 1727])
+                    ("get_bc_offsets" function
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1740 1793])
+                    ("get_bc_min_qual" function (:type "int") (reparse-symbol classsubparts) [1806 1851])
+                    ("create_reftable" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1889 1912])
+                    ("create_align_table" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1925 1950])
+                    ("index_cluster" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1963 1984])
+                    ("dbRecord" friend nil (reparse-symbol classsubparts) [1990 2011]))                  
+                :type "class")
+                nil [319 2015])
+            ("dbRecord" type
+               (:members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [2038 2048])
+                    ("bamdb" variable
+                       (:pointer 1
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2057 2070])
+                    ("instrument" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2079 2108])
+                    ("flowcell" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2117 2144])
+                    ("cluster" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2153 2179])
+                    ("umi" variable (:type "int") (reparse-symbol classsubparts) [2188 2205])
+                    ("bc" variable (:type "int") (reparse-symbol classsubparts) [2188 2205])
+                    ("tid" variable (:type "int") (reparse-symbol classsubparts) [2188 2205])
+                    ("read_pos" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("uint32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2214 2240])
+                    ("strand" variable (:type "bool") (reparse-symbol classsubparts) [2249 2261])
+                    ("stmt_exists" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2270 2296])
+                    ("public" label nil (reparse-symbol classsubparts) [2302 2309])
+                    ("dbRecord" function
+                       (:constructor-flag t
+                        :type ("dbRecord" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2318 2331])
+                    ("dbRecord" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("bamdb" variable
+                               (:pointer 1
+                                :type ("BamDB" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2349 2362]))                          
+                        :type ("dbRecord" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2340 2833])
+                    ("dbRecord" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2842 2864])
+                    ("set_tid" function
+                       (:arguments 
+                          ( ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [2909 2917]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2896 2932])
+                    ("set_bc" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bamdb" variable
+                               (:pointer 1
+                                :type ("BamDB" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2953 2966])
+                            ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2967 2977])
+                            ("used_offset" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2978 2995]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2941 2996])
+                    ("set_umi" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bamdb" variable
+                               (:pointer 1
+                                :type ("BamDB" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3018 3031])
+                            ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3032 3042])
+                            ("used_offset" variable (:type "int") (reparse-symbol arg-sub-list) [3043 3059]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3005 3060])
+                    ("set_positions" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3095 3105])
+                            ("read_num" variable (:type "int") (reparse-symbol arg-sub-list) [3106 3119]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3069 3124])
+                    ("get_cluster" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3210 3255])
+                    ("insert_to_db" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [3286 3317])
+                    ("exists" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bamdb" variable
+                               (:pointer 1
+                                :type ("BamDB" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3367 3380]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3356 3381])
+                    ("split_qname" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3407 3417]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3390 3418])
+                    ("BamDB" friend nil (reparse-symbol classsubparts) [3424 3442]))                  
+                :type "class")
+                nil [2017 3446])
+            ("dbRecordSe" type
+               (:superclasses 
+                  ( ("dbRecord" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [3488 3498])
+                    ("stmt" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3507 3526])
+                    ("public" label nil (reparse-symbol classsubparts) [3531 3538])
+                    ("dbRecordSe" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("bamdb" variable
+                               (:pointer 1
+                                :type ("BamDB" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3558 3571]))                          
+                        :type ("dbRecordSe" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3547 3950])
+                    ("set_positions" function
+                       (:arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3977 3987])
+                            ("read_num" variable (:type "int") (reparse-symbol arg-sub-list) [3988 4001]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3959 4350])
+                    ("insert_to_db" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4379 4398])
+                    ("BamDB" friend nil (reparse-symbol classsubparts) [4407 4425]))                  
+                :type "class")
+                nil [3448 4429])
+            ("dbRecordPe" type
+               (:superclasses 
+                  ( ("dbRecord" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [4471 4481])
+                    ("insert_stmt" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4490 4516])
+                    ("update_stmt1" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4525 4552])
+                    ("update_stmt2" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4561 4588])
+                    ("insert" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4597 4613])
+                    ("public" label nil (reparse-symbol classsubparts) [4618 4625])
+                    ("dbRecordPe" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("bamdb" variable
+                               (:pointer 1
+                                :type ("BamDB" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4645 4658]))                          
+                        :type ("dbRecordPe" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4634 5897])
+                    ("set_positions" function
+                       (:arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5983 5993])
+                            ("read_num" variable (:type "int") (reparse-symbol arg-sub-list) [5994 6007]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5965 6755])
+                    ("set_insert" function
+                       (:arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6780 6790]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6764 6823])
+                    ("insert_to_db" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [6853 6872])
+                    ("insert_to_db" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("read_num" variable (:type "int") (reparse-symbol arg-sub-list) [6898 6911]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6881 6912])
+                    ("update_record" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("read_num" variable (:type "int") (reparse-symbol arg-sub-list) [6939 6952]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6921 6953])
+                    ("BamDB" friend nil (reparse-symbol classsubparts) [6958 6976]))                  
+                :type "class")
+                nil [4431 6980])
+            ("create_index" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("bamdb" variable
+                       (:pointer 1
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7033 7046]))                  
+                :type "int")
+                nil [7016 7047])
+            ("fill_db" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("bamdb" variable
+                       (:pointer 1
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7060 7073]))                  
+                :type "int")
+                nil [7048 7074])
+            ("fill_db_tid" function
+               (:template 
+                  ( ("TRecord" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("bamdb" variable
+                       (:pointer 1
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7118 7131])
+                    ("record" variable
+                       (:pointer 1
+                        :type ("TRecord" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7132 7148])
+                    ("bam_itr" variable
+                       (:pointer 1
+                        :type ("hts_itr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7149 7168]))                  
+                :prototype-flag t)
+                nil [7075 7169]))          
+    :file "bam_sql.h"
+    :pointmax 7190
+    :fsize 7189
+    :lastmodtime '(21799 63231 72143 459000)
+    :unmatched-syntax '((punctuation 6976 . 6977) (punctuation 4425 . 4426) (punctuation 3442 . 3443) (punctuation 2011 . 2012))
+    :lexical-table 
+        '(("BUFFER_SIZE" . ((number "256" 226 . 229)))
+          ("BC_PATH" . ((string "\"/home/brad/lib/barcodes/\"" 179 . 205)))
+          ("BAM_SQL_H")
+          ("DEBUG_LOG" (spp-arg-list ("x") 307 . 310))
+          )
+
+    )
+   (semanticdb-table "threaded_sql.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("sqlite_wrapper.h" include (:system-flag t) nil [1 28])
+            ("thread_pool.h" include (:system-flag t) nil [29 53])
+            ("sqlite3.h" include (:system-flag t) nil [54 74])
+            ("boost/asio/io_service.hpp" include (:system-flag t) nil [75 111])
+            ("boost/bind.hpp" include (:system-flag t) nil [112 137])
+            ("boost/thread/thread.hpp" include (:system-flag t) nil [138 172])
+            ("boost/exception_ptr.hpp" include (:system-flag t) nil [173 207])
+            ("fstream" include (:system-flag t) nil [208 226])
+            ("mutex" include (:system-flag t) nil [227 243])
+            ("FStreamWriter" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [271 279])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("std::fstream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [288 304])
+                    ("mtx" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [313 328])
+                    ("public" label nil (reparse-symbol classsubparts) [333 340])
+                    ("FStreamWriter" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("f" variable
+                               (:pointer 1
+                                :type ("std::fstream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [363 379]))                          
+                        :type ("FStreamWriter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [349 389])
+                    ("<<" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("FStreamWriter" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [454 465]))                          
+                        :operator-flag t)
+                        (reparse-symbol classsubparts) [398 672])
+                    ("flush" function (:type "void") (reparse-symbol classsubparts) [681 729]))                  
+                :type "class")
+                nil [245 732])
+            ("execute_sql" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [820 828])
+                    ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [829 845])
+                    ("db_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [846 867]))                  
+                :type "void")
+                nil [803 868]))          
+    :file "threaded_sql.h"
+    :pointmax 877
+    :fsize 876
+    :lastmodtime '(21809 5749 165653 536000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "thread_pool.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("boost/asio.hpp" include (:system-flag t) nil [99 124])
+            ("boost/thread.hpp" include (:system-flag t) nil [125 152])
+            ("thread_pool" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [178 186])
+                    ("io_service_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [195 231])
+                    ("work_" variable (:type ("boost::asio::io_service::work" type (:type "class") nil nil)) (reparse-symbol classsubparts) [240 276])
+                    ("threads_" variable (:type ("boost::thread_group" type (:type "class") nil nil)) (reparse-symbol classsubparts) [285 314])
+                    ("available_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [323 346])
+                    ("mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [355 375])
+                    ("public" label nil (reparse-symbol classsubparts) [380 387])
+                    ("thread_pool" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("pool_size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [437 460]))                          
+                        :type ("thread_pool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [424 795])
+                    ("thread_pool" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [836 1119])
+                    ("run_task" function
+                       (:template 
+                          ( ("Task" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("task" variable (:type ("Task" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1264 1275]))                          )
+                        (reparse-symbol classsubparts) [1215 1761])
+                    ("private" label nil (reparse-symbol classsubparts) [1771 1779])
+                    ("wrap_task" function
+                       (:arguments 
+                          ( ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1951 1967])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [1968 1974])
+                            ("" variable (:type ("task" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1977 1983]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1935 2379]))                  
+                :type "class")
+                nil [154 2382]))          
+    :file "thread_pool.h"
+    :pointmax 2352
+    :fsize 2366
+    :lastmodtime '(21809 5749 161653 536000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bamrecord.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BAMRECORD_H" variable (:constant-flag t) nil [29 40])
+            ("BamHash" type
+               (:prototype t
+                :type "class")
+                nil [42 56])
+            ("bam_hash2.h" include (:system-flag t) nil [58 80])
+            ("htslib/sam.h" include (:system-flag t) nil [81 104])
+            ("string" include (:system-flag t) nil [105 122])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [124 144])
+            ("BamRecord" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [168 176])
+                    ("read_id" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [185 200])
+                    ("gene_id" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [209 224])
+                    ("tid" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [233 245])
+                    ("strand" variable (:type "bool") (reparse-symbol classsubparts) [254 266])
+                    ("pos" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [275 288])
+                    ("bc" variable (:type "int") (reparse-symbol classsubparts) [297 304])
+                    ("umi" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [313 326])
+                    ("umi2" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [335 347])
+                    ("public" label nil (reparse-symbol classsubparts) [352 359])
+                    ("BamRecord" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [378 386]))                          
+                        :type ("BamRecord" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [368 387])
+                    ("BamRecord" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("read_id" variable
+                               (:constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [406 427])
+                            ("gene_id" variable
+                               (:constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [428 449]))                          
+                        :type ("BamRecord" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [396 450])
+                    ("get_read_id" function (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [459 499])
+                    ("get_gene_id" function (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [508 548])
+                    ("get_strand" function (:type "bool") (reparse-symbol classsubparts) [557 593])
+                    ("get_pos" function (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [602 636])
+                    ("get_bc" function (:type "int") (reparse-symbol classsubparts) [645 672])
+                    ("get_umi" function (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [681 715])
+                    ("get_umi2" function (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [724 758])
+                    ("set_read_id" function
+                       (:arguments 
+                          ( ("val" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [786 798]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [768 817])
+                    ("set_gene_id" function
+                       (:arguments 
+                          ( ("val" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [844 856]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [826 875])
+                    ("set_strand" function
+                       (:arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [902 913]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [884 960])
+                    ("set_tid" function
+                       (:arguments 
+                          ( ("val" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [982 995]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [969 1010])
+                    ("set_position" function
+                       (:arguments 
+                          ( ("val" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1038 1052]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1019 1067])
+                    ("set_bc" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bamhash" variable
+                               (:pointer 1
+                                :type ("BamHash" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1088 1106])
+                            ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1107 1118])
+                            ("used_offset" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1119 1137]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1076 1138])
+                    ("set_umi" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bamhash" variable
+                               (:pointer 1
+                                :type ("BamHash" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1160 1178])
+                            ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1179 1190])
+                            ("used_offset" variable (:type "int") (reparse-symbol arg-sub-list) [1191 1207]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1147 1208])
+                    ("set_bc" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bamhash" variable
+                               (:pointer 1
+                                :type ("BamHash" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1229 1247])
+                            ("seq" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1248 1259])
+                            ("qual" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1260 1272])
+                            ("used_offset" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1273 1291]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1217 1292])
+                    ("set_umi" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bamhash" variable
+                               (:pointer 1
+                                :type ("BamHash" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1314 1332])
+                            ("seq" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1333 1344])
+                            ("qual" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1345 1357])
+                            ("used_offset" variable (:type "int") (reparse-symbol arg-sub-list) [1358 1374]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1301 1375])
+                    ("is_complete" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1385 1404]))                  
+                :type "class")
+                nil [146 1407]))          
+    :file "bamrecord.h"
+    :pointmax 1416
+    :fsize 1415
+    :lastmodtime '(21920 20102 662923 831000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BAMRECORD_H")
+          )
+
+    )
+   (semanticdb-table "bam_hash.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BAM_HASH_H" variable (:constant-flag t) nil [28 38])
+            ("BamRecord" type
+               (:prototype t
+                :type "class")
+                nil [40 56])
+            ("bamrecord.h" include (:system-flag t) nil [58 80])
+            ("string_utils.h" include (:system-flag t) nil [81 106])
+            ("bam_utils.h" include (:system-flag t) nil [107 129])
+            ("timing.h" include (:system-flag t) nil [130 149])
+            ("htslib/sam.h" include (:system-flag t) nil [150 173])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [174 205])
+            ("iostream" include (:system-flag t) nil [206 225])
+            ("fstream" include (:system-flag t) nil [226 244])
+            ("sstream" include (:system-flag t) nil [245 263])
+            ("vector" include (:system-flag t) nil [264 281])
+            ("map" include (:system-flag t) nil [282 296])
+            ("unordered_map" include (:system-flag t) nil [297 321])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [323 343])
+            ("BC_PATH" variable (:constant-flag t) nil [353 360])
+            ("BUFFER_SIZE" variable (:constant-flag t) nil [396 407])
+            ("DEBUG_LOG" variable (:constant-flag t) nil [480 489])
+            ("UmiHash" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [521 528])
+                    ("update" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("record" variable
+                               (:pointer 1
+                                :type ("BamRecord" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [549 568]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [537 569])
+                    ("begin" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [605 677])
+                    ("end" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [713 781])
+                    ("private" label nil (reparse-symbol classsubparts) [786 794])
+                    ("umi_map" variable (:type ("unordered_map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [803 835]))                  
+                :type "class")
+                nil [501 838])
+            ("BarcodeHash" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [864 871])
+                    ("update" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("record" variable
+                               (:pointer 1
+                                :type ("BamRecord" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [892 911]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [880 912])
+                    ("begin" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [964 1036])
+                    ("end" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1088 1156])
+                    ("private" label nil (reparse-symbol classsubparts) [1162 1170])
+                    ("umi_map" variable (:type ("unordered_map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("unique_ptr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1179 1228]))                  
+                :type "class")
+                nil [840 1231])
+            ("PositionHash" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1258 1265])
+                    ("update" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("record" variable
+                               (:pointer 1
+                                :type ("BamRecord" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1286 1305]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1274 1306])
+                    ("begin" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1362 1438])
+                    ("end" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1494 1566])
+                    ("private" label nil (reparse-symbol classsubparts) [1571 1579])
+                    ("barcode_map" variable (:type ("unordered_map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("unique_ptr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1588 1645]))                  
+                :type "class")
+                nil [1233 1648])
+            ("BamHash" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1670 1678])
+                    ("bam_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1691 1713])
+                    ("anno_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1726 1749])
+                    ("dest_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1762 1785])
+                    ("dest_path" variable (:type ("boost::filesystem::path" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1798 1832])
+                    ("bam" variable
+                       (:pointer 1
+                        :type ("samFile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1846 1859])
+                    ("outbam" variable
+                       (:pointer 1
+                        :type ("samFile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1872 1888])
+                    ("header" variable
+                       (:pointer 1
+                        :type ("bam_hdr_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1901 1919])
+                    ("chroms" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("char" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1932 1954])
+                    ("idx" variable
+                       (:pointer 1
+                        :type ("hts_idx_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1967 1982])
+                    ("barcodes" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1996 2026])
+                    ("sequence_pos" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2039 2064])
+                    ("bc_offsets" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2077 2100])
+                    ("bc_min_qual" variable (:type "int") (reparse-symbol classsubparts) [2113 2129])
+                    ("anno_map" variable (:type ("unordered_map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2143 2182])
+                    ("position_map" variable (:type ("unordered_map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("unique_ptr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2195 2257])
+                    ("strand_position_map" variable (:type ("unordered_map" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil)
+                              ("unique_ptr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2270 2337])
+                    ("public" label nil (reparse-symbol classsubparts) [2343 2350])
+                    ("BamHash" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bam_fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2371 2393])
+                            ("anno_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2394 2416])
+                            ("final_fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2437 2461])
+                            ("barcodes_fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2462 2489])
+                            ("umi_length" variable (:type "int") (reparse-symbol arg-sub-list) [2510 2525])
+                            ("bc_min_qual" variable (:type "int") (reparse-symbol arg-sub-list) [2526 2542]))                          
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2363 2543])
+                    ("BamHash" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2557 2568])
+                    ("outfile" variable (:type ("ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2582 2599])
+                    ("set_barcodes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2657 2675])
+                            ("vec_p" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2676 2704]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2639 2705])
+                    ("get_bam" function
+                       (:pointer 1
+                        :type ("samFile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2745 2779])
+                    ("get_outbam" function
+                       (:pointer 1
+                        :type ("samFile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2792 2832])
+                    ("get_header" function
+                       (:pointer 1
+                        :type ("bam_hdr_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2845 2887])
+                    ("get_idx" function
+                       (:pointer 1
+                        :type ("hts_idx_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2900 2936])
+                    ("get_rlen" function
+                       (:arguments 
+                          ( ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [2962 2970]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2949 3006])
+                    ("get_chrom" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [3036 3044]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [3019 3068])
+                    ("get_anno_fname" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3081 3133])
+                    ("get_dest_path" function
+                       (:constant-flag t
+                        :type ("boost::filesystem::path" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3146 3213])
+                    ("get_sequence_pos" function
+                       (:arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [3247 3253]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3226 3281])
+                    ("get_barcodes" function
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3294 3352])
+                    ("get_bc_offsets" function
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3365 3418])
+                    ("get_bc_min_qual" function (:type "int") (reparse-symbol classsubparts) [3431 3476])
+                    ("get_anno_map" function
+                       (:pointer 1
+                        :type ("unordered_map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3489 3557])
+                    ("run" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3594 3605])
+                    ("hash_reads" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3617 3635])
+                    ("insert_anno" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("read_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3664 3687])
+                            ("gene_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3688 3711]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3647 3712])
+                    ("find_read" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3739 3750])
+                            ("record" variable
+                               (:pointer 1
+                                :type ("BamRecord" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3751 3770]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3724 3771])
+                    ("update_maps" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("record" variable
+                               (:pointer 1
+                                :type ("BamRecord" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3800 3819]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3783 3820])
+                    ("clear_map" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3832 3849])
+                    ("print_results" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3861 3882]))                  
+                :type "class")
+                nil [1650 3886])
+            ("hash_annotation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("bamhash" variable
+                       (:pointer 1
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3909 3926]))                  
+                :type "void")
+                nil [3888 3927])
+            ("hash_reads" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("bamhash" variable
+                       (:pointer 1
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3944 3961]))                  
+                :type "void")
+                nil [3928 3962]))          
+    :file "bam_hash.h"
+    :pointmax 3983
+    :fsize 3982
+    :lastmodtime '(21855 51436 219092 939000)
+    :unmatched-syntax '((punctuation 1493 . 1494) (punctuation 1492 . 1493) (punctuation 1491 . 1492) (punctuation 1489 . 1490) (symbol 1478 . 1489) (punctuation 1477 . 1478) (symbol 1467 . 1477) (punctuation 1465 . 1466) (INT 1462 . 1465) (punctuation 1461 . 1462) (symbol 1448 . 1461) (punctuation 1361 . 1362) (punctuation 1360 . 1361) (punctuation 1359 . 1360) (punctuation 1357 . 1358) (symbol 1346 . 1357) (punctuation 1345 . 1346) (symbol 1335 . 1345) (punctuation 1333 . 1334) (INT 1330 . 1333) (punctuation 1329 . 1330) (symbol 1316 . 1329) (punctuation 1087 . 1088) (punctuation 1086 . 1087) (punctuation 1085 . 1086) (punctuation 1083 . 1084) (symbol 1076 . 1083) (punctuation 1075 . 1076) (symbol 1065 . 1075) (punctuation 1063 . 1064) (INT 1060 . 1063) (punctuation 1059 . 1060) (symbol 1046 . 1059) (punctuation 963 . 964) (punctuation 962 . 963) (punctuation 961 . 962) (punctuation 959 . 960) (symbol 952 . 959) (punctuation 951 . 952) (symbol 941 . 951) (punctuation 939 . 940) (INT 936 . 939) (punctuation 935 . 936) (symbol 922 . 935) (punctuation 712 . 713) (punctuation 711 . 712) (punctuation 710 . 711) (INT 706 . 709) (punctuation 704 . 705) (INT 701 . 704) (punctuation 700 . 701) (symbol 687 . 700) (punctuation 604 . 605) (punctuation 603 . 604) (punctuation 602 . 603) (INT 598 . 601) (punctuation 596 . 597) (INT 593 . 596) (punctuation 592 . 593) (symbol 579 . 592))
+    :lexical-table 
+        '(("BUFFER_SIZE" . ((number "256" 408 . 411)))
+          ("BC_PATH" . ((string "\"/home/brad/lib/barcodes/\"" 361 . 387)))
+          ("BAM_HASH_H")
+          ("DEBUG_LOG" (spp-arg-list ("x") 489 . 492))
+          )
+
+    )
+   (semanticdb-table "bam_hash2.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BAM_HASH_H" variable (:constant-flag t) nil [28 38])
+            ("BamRecord" type
+               (:prototype t
+                :type "class")
+                nil [40 56])
+            ("bamrecord.h" include (:system-flag t) nil [58 80])
+            ("string_utils.h" include (:system-flag t) nil [81 106])
+            ("bam_utils.h" include (:system-flag t) nil [107 129])
+            ("timing.h" include (:system-flag t) nil [130 149])
+            ("htslib/sam.h" include (:system-flag t) nil [150 173])
+            ("sqlite_wrapper.h" include (:system-flag t) nil [174 201])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [202 233])
+            ("zlib.h" include (:system-flag t) nil [234 251])
+            ("iostream" include (:system-flag t) nil [252 271])
+            ("fstream" include (:system-flag t) nil [272 290])
+            ("sstream" include (:system-flag t) nil [291 309])
+            ("vector" include (:system-flag t) nil [310 327])
+            ("map" include (:system-flag t) nil [328 342])
+            ("unordered_map" include (:system-flag t) nil [343 367])
+            ("kseq.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [382 399])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [430 450])
+            ("BC_PATH" variable (:constant-flag t) nil [460 467])
+            ("BUFFER_SIZE" variable (:constant-flag t) nil [503 514])
+            ("DEBUG_LOG" variable (:constant-flag t) nil [587 596])
+            ("UmiHash" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [628 635])
+                    ("update" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("record" variable (:type ("shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("BamRecord" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [699 728]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [687 729])
+                    ("begin" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [862 934])
+                    ("end" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1024 1092])
+                    ("private" label nil (reparse-symbol classsubparts) [1097 1105])
+                    ("umi_map" variable (:type ("unordered_map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1114 1149]))                  
+                :type "class")
+                nil [608 1152])
+            ("BarcodeHash" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1178 1185])
+                    ("update" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("record" variable (:type ("shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("BamRecord" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1249 1278]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1237 1279])
+                    ("begin" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1372 1444])
+                    ("end" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1496 1564])
+                    ("private" label nil (reparse-symbol classsubparts) [1570 1578])
+                    ("umi_map" variable (:type ("unordered_map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("unique_ptr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1587 1636]))                  
+                :type "class")
+                nil [1154 1639])
+            ("PositionHash" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1666 1673])
+                    ("update" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("record" variable (:type ("shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("BamRecord" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1737 1766]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1725 1767])
+                    ("begin" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1864 1940])
+                    ("end" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1996 2068])
+                    ("private" label nil (reparse-symbol classsubparts) [2073 2081])
+                    ("barcode_map" variable (:type ("unordered_map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("unique_ptr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2090 2147]))                  
+                :type "class")
+                nil [1641 2150])
+            ("BamHash" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [2172 2180])
+                    ("fastq_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2230 2254])
+                    ("anno_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2267 2290])
+                    ("dest_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2303 2326])
+                    ("dest_path" variable (:type ("boost::filesystem::path" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2339 2373])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2399 2414])
+                    ("barcodes" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2428 2458])
+                    ("barcodesA" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("char" type
+                                 (:pointer 1
+                                  :constant-flag t)
+                                  nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2471 2501])
+                    ("sequence_pos" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2514 2539])
+                    ("bc_offsets" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2552 2575])
+                    ("bc_min_qual" variable (:type "int") (reparse-symbol classsubparts) [2588 2604])
+                    ("i5" variable (:type "int") (reparse-symbol classsubparts) [2618 2625])
+                    ("i7" variable (:type "int") (reparse-symbol classsubparts) [2638 2645])
+                    ("to_txt" variable (:type "bool") (reparse-symbol classsubparts) [2658 2670])
+                    ("qname_bamrecord" variable (:type ("unordered_map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("shared_ptr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2761 2823])
+                    ("position_map" variable (:type ("unordered_map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("unique_ptr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3031 3092])
+                    ("strand_position_map" variable (:type ("unordered_map" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil)
+                              ("shared_ptr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3105 3172])
+                    ("public" label nil (reparse-symbol classsubparts) [3178 3185])
+                    ("BamHash" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("fastq_fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3462 3486])
+                            ("anno_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3487 3509])
+                            ("final_fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3530 3554])
+                            ("barcodes_fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3555 3582])
+                            ("umi_length" variable (:type "int") (reparse-symbol arg-sub-list) [3603 3618])
+                            ("bc_min_qual" variable (:type "int") (reparse-symbol arg-sub-list) [3619 3635])
+                            ("i5" variable (:type "int") (reparse-symbol arg-sub-list) [3636 3643])
+                            ("i7" variable (:type "int") (reparse-symbol arg-sub-list) [3644 3651])
+                            ("to_txt" variable (:type "bool") (reparse-symbol arg-sub-list) [3652 3664]))                          
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3454 3665])
+                    ("outfile" variable (:type ("ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3706 3723])
+                    ("set_barcodes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3781 3799])
+                            ("vec_p" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3800 3828]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3763 3829])
+                    ("set_barcodesA" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3861 3879])
+                            ("vec_p" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("char" type
+                                             (:pointer 1
+                                              :constant-flag t)
+                                              nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3880 3907]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3842 3908])
+                    ("get_fastq" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3998 4045])
+                    ("get_anno_fname" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [4357 4409])
+                    ("get_dest_path" function
+                       (:constant-flag t
+                        :type ("boost::filesystem::path" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4422 4489])
+                    ("get_sequence_pos" function
+                       (:arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [4523 4529]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4502 4557])
+                    ("get_barcodes" function
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4570 4628])
+                    ("get_barcodesA" function
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("char" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4641 4700])
+                    ("get_bc_offsets" function
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4714 4767])
+                    ("get_bc_min_qual" function (:type "int") (reparse-symbol classsubparts) [4780 4825])
+                    ("get_qname_bamrecord" function
+                       (:pointer 1
+                        :type ("unordered_map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("shared_ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4951 5049])
+                    ("run" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5187 5198])
+                    ("hash_reads" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5210 5228])
+                    ("insert_anno" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("read_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5257 5280])
+                            ("gene_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5281 5304]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5240 5305])
+                    ("find_read" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :type ("bam1_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5393 5404])
+                            ("record" variable
+                               (:reference 1
+                                :type ("shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("BamRecord" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5405 5436]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5378 5437])
+                    ("find_read" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5464 5473])
+                            ("record" variable
+                               (:reference 1
+                                :type ("shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("BamRecord" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5474 5505]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5449 5506])
+                    ("update_maps" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("record" variable (:type ("shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("BamRecord" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [5657 5686]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5640 5687])
+                    ("clear_map" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5699 5716])
+                    ("print_results" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5728 5749])
+                    ("write_to_db" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5761 5780]))                  
+                :type "class")
+                nil [2152 5784])
+            ("hash_annotation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("bamhash" variable
+                       (:pointer 1
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5807 5824]))                  
+                :type "void")
+                nil [5786 5825])
+            ("hash_reads" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("bamhash" variable
+                       (:pointer 1
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5842 5859]))                  
+                :type "void")
+                nil [5826 5860]))          
+    :file "bam_hash2.h"
+    :pointmax 5881
+    :fsize 5868
+    :lastmodtime '(21990 9262 425363 988000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BUFFER_SIZE" . ((number "256" 515 . 518)))
+          ("BC_PATH" . ((string "\"/home/brad/lib/barcodes/\"" 468 . 494)))
+          ("BAM_HASH_H")
+          ("DEBUG_LOG" (spp-arg-list ("x") 596 . 599))
+          )
+
+    )
+   (semanticdb-table "kseq.h"
+    :file "kseq.h"
+    :fsize 8030
+    :lastmodtime '(21920 11923 984621 260000)
+    )
+   )
+  :file "!home!brad!src!umi!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

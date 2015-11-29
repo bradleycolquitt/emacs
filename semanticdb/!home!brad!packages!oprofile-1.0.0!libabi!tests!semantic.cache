@@ -1,0 +1,24 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("LIBS" variable (:default-value ("@POPT_LIBS@" "@LIBERTY_LIBS@")) nil [1 33])
+            ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libabi" "-I" "${top_srcdir}/libop" "-I" "${top_srcdir}/libdb" "-I" "${top_srcdir}/libopt++" "-I" "${top_srcdir}/libutil" "@OP_CPPFLAGS@")) nil [34 201])
+            ("AM_CXXFLAGS" variable (:default-value ("@OP_CXXFLAGS@")) nil [202 230])
+            ("check_PROGRAMS" variable (:default-value ("abi_test")) nil [231 257])
+            ("abi_test_SOURCES" variable (:default-value ("abi_test.cpp")) nil [258 290])
+            ("abi_test_LDADD" variable (:default-value ("../libabi.a" "../../libop/libop.a" "../../libdb/libodb.a" "../../libopt++/libopt++.a" "../../libutil++/libutil++.a" "../../libutil/libutil.a")) nil [290 456]))          
+    :file "Makefile.am"
+    :pointmax 456
+    :fsize 455
+    :lastmodtime '(21523 1457 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!libabi!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,72 @@
+;; Object inc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "inc/"
+  :tables (list 
+   (semanticdb-table "localEnvironment.mk"
+    :major-mode 'makefile-gmake-mode
+    :tags nil
+    :file "localEnvironment.mk"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(21689 48067 769006 940000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "common.mk"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CC" variable (:default-value ("gcc")) nil [1 8])
+            ("HG_DEFS" variable (:default-value ("-D_FILE_OFFSET_BITS=64" "-D_LARGEFILE_SOURCE" "-D_GNU_SOURCE" "-DMACHTYPE_${MACHTYPE}")) nil [411 499])
+            ("HG_INC" variable (:default-value ("-I../inc" "-I../../inc" "-I../../../inc" "-I../../../../inc" "-I../../../../../inc")) nil [499 581])
+            ("UNAME_S" variable (:default-value ("$(shell uname -s)")) nil [623 652])
+            ("FULLWARN" variable (:default-value ("$(shell uname -n)")) nil [684 713])
+            ("L" variable nil nil [742 745])
+            ("L" variable (:default-value ("${PNGLIB}")) nil [6058 6071])
+            ("HG_INC" variable (:default-value ("${PNGINCL}")) nil [6071 6090])
+            ("GBIBDIR" variable (:default-value ("/hive/groups/browser/gbib/")) nil [6593 6630])
+            ("SYS" variable (:default-value ("$(shell uname -s)")) nil [8107 8131])
+            ("CFLAGS" variable (:default-value ("${HG_WARN}")) nil [8936 8957])
+            ("STRINGIFY" variable (:default-value ("${DESTBINDIR}/stringify")) nil [9480 9516])
+            ("MKDIR" variable (:default-value ("mkdir" "-p")) nil [9517 9532])
+            ("CVS" variable (:default-value ("cvs")) nil [9569 9577])
+            ("GIT" variable (:default-value ("git")) nil [9577 9585])
+            ("LOWELAB_WIKI_DEF" variable nil nil [9876 9894])
+            ("LOWELAB_DEF" variable nil nil [9894 9907])
+            ("LOWELAB_DEFS" variable (:default-value ("${LOWELAB_DEF}" "${LOWELAB_WIKI_DEF}")) nil [10033 10081])
+            ("CONFIG_FILES" variable (:default-value ("fields.ra" "labs.ra")) nil [10401 10440])
+            ("CV" variable (:default-value ("cv.ra")) nil [10440 10451])
+            ("CVDIR" variable (:default-value ("${HOME}/src/kent/src/hg/makeDb/trackDb/cv/alpha")) nil [10451 10505])
+            ("PIPELINE_PATH" variable (:default-value ("/hive/groups/encode/dcc/pipeline")) nil [10505 10552])
+            ("CONFIG_DIR" variable (:default-value ("${PIPELINE_PATH}/${PIPELINE_DIR}/config")) nil [10552 10605])
+            ("ENCODEDCC_DIR" variable (:default-value ("${PIPELINE_PATH}/downloads/encodeDCC")) nil [10605 10658])
+            ("%.o" function (:arguments ("%.c")) nil [10659 10761]))          
+    :file "common.mk"
+    :pointmax 10852
+    :fsize 10855
+    :lastmodtime '(21697 30685 296148 717000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "userApp.mk"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("${kentSrc}/inc/localEnvironment.mk" include nil nil [562 605])
+            ("${kentSrc}/inc/common.mk" include nil nil [605 638])
+            ("DEPLIBS" variable (:default-value ("${preMyLibs}" "${kentSrc}/lib/${MACHTYPE}/jkweb.a")) nil [639 697])
+            ("LINKLIBS" variable (:default-value ("${DEPLIBS}" "${MYSQLLIBS}" "-lm")) nil [847 886])
+            ("O" variable (:default-value ("${A}.o")) nil [887 898])
+            ("objects" variable (:default-value ("${O}" "${extraObjects}" "${externObjects}")) nil [898 946])
+            ("${DESTDIR}" function (:arguments ("${DEPLIBS}" "${O}" "${extraObjects}")) nil [947 1133])
+            ("compile" function (:arguments ("${DEPLIBS}" "${O}" "${extraObjects}")) nil [1134 1247])
+            ("install" function (:arguments ("compile")) nil [1248 1428])
+            ("clean" function nil nil [1429 1552])
+            ("test" function nil nil [1553 1718]))          
+    :file "userApp.mk"
+    :pointmax 1718
+    :fsize 1717
+    :lastmodtime '(21689 48067 773006 940000)
+    :unmatched-syntax '((shell-command 1561 . 1717) (bol 1560 . 1560) (symbol 831 . 839) (semantic-list 821 . 831) (punctuation 820 . 821) (symbol 815 . 820) (semantic-list 806 . 815) (punctuation 805 . 806) (symbol 795 . 804) (semantic-list 785 . 795) (punctuation 784 . 785) (symbol 779 . 784) (semantic-list 770 . 779) (punctuation 769 . 770) (semantic-list 757 . 768) (punctuation 756 . 757) (punctuation 754 . 755) (symbol 746 . 753) (bol 744 . 744))
+    )
+   )
+  :file "!home!brad!src!kent!src!inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

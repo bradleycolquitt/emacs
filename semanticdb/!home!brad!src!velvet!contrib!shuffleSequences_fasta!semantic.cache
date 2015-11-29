@@ -1,0 +1,29 @@
+;; Object shuffleSequences_fasta/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "shuffleSequences_fasta/"
+  :tables (list 
+   (semanticdb-table "shuffleSequences_fasta.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [1 11])
+            ("Bio" include nil nil [12 33])
+            ("interleave" function (:arguments 
+              ( ("iter1" variable nil (reparse-symbol function_parameters) [49 54])
+                ("iter2" variable nil (reparse-symbol function_parameters) [56 61]))              ) nil [34 136])
+            ("f1, f2" code nil nil [136 181])
+            ("outfile" variable nil nil [182 214])
+            ("format" variable nil nil [215 231])
+            ("records" variable nil nil [251 321])
+            ("count" variable nil nil [322 367])
+            ("outfile" code nil nil [368 383]))          
+    :file "shuffleSequences_fasta.py"
+    :pointmax 384
+    :fsize 383
+    :lastmodtime '(21643 31702 342671 273000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!velvet!contrib!shuffleSequences_fasta!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

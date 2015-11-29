@@ -1,0 +1,31 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "test_hash2.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("htslib/sam.h" include (:system-flag t) nil [1 24])
+            ("bam_hash2.h" include (:system-flag t) nil [25 47])
+            ("bamrecord.h" include (:system-flag t) nil [48 70])
+            ("bam_utils.h" include (:system-flag t) nil [71 93])
+            ("timing.h" include (:system-flag t) nil [94 113])
+            ("iostream" include (:system-flag t) nil [114 133])
+            ("fstream" include (:system-flag t) nil [134 152])
+            ("ctime" include (:system-flag t) nil [153 169])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [284 304])
+            ("main" function (:type "int") nil [306 1577]))          
+    :file "test_hash2.cpp"
+    :pointmax 1578
+    :fsize 1577
+    :lastmodtime '(21939 51959 753444 770000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!umi!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

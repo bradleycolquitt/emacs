@@ -1,0 +1,31 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "name_usb_port.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [1 11])
+            ("subprocess" include nil nil [12 46])
+            ("os" include nil nil [47 56])
+            ("udev_rules_dir" variable nil nil [58 95])
+            ("udev_rules_name" variable nil nil [96 141])
+            ("udev_rules_num" variable nil nil [142 161])
+            ("udev_rules_fname" code nil nil [162 224])
+            ("udev_rules_fpath" variable nil nil [225 289])
+            ("parse_udev_file" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [312 317]))              ) nil [292 588])
+            ("write_udev_file" function (:arguments 
+              ( ("device_dict" variable nil (reparse-symbol function_parameters) [608 619]))              ) nil [588 935])
+            ("if" code nil nil [937 3596]))          
+    :file "name_usb_port.py"
+    :pointmax 3602
+    :fsize 3601
+    :lastmodtime '(21971 53908 329064 757000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!cbs!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

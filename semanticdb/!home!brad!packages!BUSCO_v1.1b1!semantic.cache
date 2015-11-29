@@ -1,0 +1,148 @@
+;; Object BUSCO_v1.1b1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "BUSCO_v1.1b1/"
+  :tables (list 
+   (semanticdb-table "BUSCO_v1.1b1.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1189 1198])
+            ("argparse" include nil nil [1200 1215])
+            ("collections" include nil nil [1216 1245])
+            ("time" include nil nil [1246 1257])
+            ("queue" include nil nil [1258 1270])
+            ("threading" include nil nil [1271 1287])
+            ("start_time" variable nil nil [1290 1314])
+            ("parser" variable nil nil [1420 1758])
+            ("parser" code nil nil [1759 2014])
+            ("parser" code nil nil [2037 2130])
+            ("parser" code nil nil [2160 2273])
+            ("parser" code nil nil [2329 2450])
+            ("parser" code nil nil [2466 2699])
+            ("parser" code nil nil [2700 2815])
+            ("parser" code nil nil [2825 3009])
+            ("parser" code nil nil [3010 3182])
+            ("parser" code nil nil [3184 3403])
+            ("parser" code nil nil [3404 3538])
+            ("parser" code nil nil [3539 3758])
+            ("args" variable nil nil [3761 3791])
+            ("mainout" code nil nil [3826 3861])
+            ("if" code nil nil [3886 4155])
+            ("target_species" variable nil nil [4156 4180])
+            ("if" code nil nil [4182 5726])
+            ("ev_cut" variable nil nil [5731 5742])
+            ("try" code nil nil [5767 5915])
+            ("valid_clade_info" variable nil nil [5918 6060])
+            ("maxflank" variable nil nil [6061 6075])
+            ("try" code nil nil [6098 6728])
+            ("cpus" variable nil nil [6731 6737])
+            ("try" code nil nil [6754 6841])
+            ("modes" variable nil nil [6842 6945])
+            ("mode" variable nil nil [6959 6972])
+            ("try" code nil nil [7040 7405])
+            ("subprocess" include nil nil [7508 7525])
+            ("cmd_exists" function (:arguments 
+              ( ("cmd" variable nil (reparse-symbol function_parameters) [7541 7544]))              ) nil [7526 7663])
+            ("if" code nil nil [7664 7845])
+            ("if" code nil nil [7847 8439])
+            ("if" code nil nil [8448 8621])
+            ("if" code nil nil [8622 8855])
+            ("if" code nil nil [8860 9036])
+            ("if" code nil nil [9173 9507])
+            ("measuring" function (:arguments 
+              ( ("nested" variable nil (reparse-symbol function_parameters) [9627 9633]))              ) nil [9612 10047])
+            ("extract" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [10060 10064])
+                ("group" variable nil (reparse-symbol function_parameters) [10065 10070]))              ) nil [10048 11093])
+            ("disentangle" function (:arguments 
+              ( ("deck" variable nil (reparse-symbol function_parameters) [11110 11114]))              ) nil [11094 12256])
+            ("gargantua" function (:arguments 
+              ( ("deck" variable nil (reparse-symbol function_parameters) [12281 12285]))              ) nil [12267 12366])
+            ("shrink" function (:arguments 
+              ( ("number" variable nil (reparse-symbol function_parameters) [12379 12385]))              ) nil [12367 12527])
+            ("if" code nil nil [12660 12974])
+            ("if" code nil nil [13014 15544])
+            ("if" code nil nil [15631 17788])
+            ("exitFlag" variable nil nil [17886 17896])
+            ("myThread" type
+               (:superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("threading" code nil (reparse-symbol indented_block_body) [17964 17995])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18004 18028])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18037 18053])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18062 18072]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17950 17954])
+                            ("threadID" variable nil (reparse-symbol function_parameters) [17956 17964])
+                            ("name" variable nil (reparse-symbol function_parameters) [17966 17970])
+                            ("q" variable nil (reparse-symbol function_parameters) [17972 17973]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [17937 18093])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18105 18109]))                          )
+                        (reparse-symbol indented_block_body) [18097 18242]))                  
+                :type "class")
+                nil [17898 18242])
+            ("process_data" function (:arguments 
+              ( ("threadName" variable nil (reparse-symbol function_parameters) [18260 18270])
+                ("q" variable nil (reparse-symbol function_parameters) [18272 18273]))              ) nil [18243 18526])
+            ("if" code nil nil [18697 21663])
+            ("if" code nil nil [21854 23214])
+            ("if" code nil nil [23242 24304])
+            ("if" code nil nil [24337 25512])
+            ("if" code nil nil [25534 26344])
+            ("if" code nil nil [26378 27086])
+            ("leng_dic" variable nil nil [27186 27197])
+            ("complete" variable nil nil [27209 27220])
+            ("cc" variable nil nil [27237 27242])
+            ("if" code nil nil [27266 29067])
+            ("if" code nil nil [29068 31344])
+            ("summary" variable nil nil [31403 31451])
+            ("if" code nil nil [31453 31862])
+            ("print" code nil nil [31862 31912])
+            ("try" code nil nil [31913 32203])
+            ("summary" code nil nil [32205 32321])
+            ("if" code nil nil [32322 33236])
+            ("summary" code nil nil [33237 33269])
+            ("if" code nil nil [33270 33803])
+            ("if" code nil nil [33803 34121])
+            ("summary" code nil nil [34126 34194])
+            ("summary" code nil nil [34195 34210])
+            ("summary" variable nil nil [34211 34260])
+            ("if" code nil nil [34283 34603])
+            ("temp" variable nil nil [34606 34649])
+            ("files" variable nil nil [34658 34666])
+            ("for" code nil nil [34667 34744])
+            ("for" code nil nil [34745 37232])
+            ("summary" code nil nil [37232 37247])
+            ("f" variable nil nil [37260 37303])
+            ("lista" variable nil nil [37304 37312])
+            ("for" code nil nil [37313 37394])
+            ("f" code nil nil [37394 37403])
+            ("out" variable nil nil [37404 37458])
+            ("f" variable nil nil [37493 37536])
+            ("for" code nil nil [37537 37655])
+            ("out" code nil nil [37655 37666])
+            ("exitFlag" variable nil nil [37704 37714])
+            ("if" code nil nil [37719 45077])
+            ("if" code nil nil [45143 45907])
+            ("print" code nil nil [45934 46000])
+            ("leng_dic" variable nil nil [46108 46119])
+            ("complete" variable nil nil [46131 46142])
+            ("cc" variable nil nil [46159 46164])
+            ("if" code nil nil [46188 51724]))          
+    :file "BUSCO_v1.1b1.py"
+    :pointmax 51704
+    :fsize 51723
+    :lastmodtime '(21868 55838 738881 888000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!BUSCO_v1.1b1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

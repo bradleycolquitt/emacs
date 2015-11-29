@@ -1,0 +1,26 @@
+;; Object x86_64-linux-gnu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "x86_64-linux-gnu/"
+  :tables (list 
+   (semanticdb-table "libstdc++.so.6.0.19-gdb.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [711 721])
+            ("gdb" include nil nil [722 732])
+            ("os" include nil nil [733 742])
+            ("os.path" include nil nil [743 757])
+            ("pythondir" variable nil nil [759 798])
+            ("libdir" variable nil nil [799 835])
+            ("if" code nil nil [1054 2349])
+            ("if" code nil nil [2378 2606]))          
+    :file "libstdc++.so.6.0.19-gdb.py"
+    :pointmax 2606
+    :fsize 2605
+    :lastmodtime '(21844 60466 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!share!gdb!auto-load!usr!lib!x86_64-linux-gnu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

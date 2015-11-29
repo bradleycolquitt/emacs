@@ -1,0 +1,23 @@
+;; Object libutil/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libutil/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("." "tests")) nil [1 19])
+            ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libop" "@OP_CPPFLAGS@")) nil [20 69])
+            ("AM_CFLAGS" variable (:default-value ("@OP_CFLAGS@")) nil [69 93])
+            ("noinst_LIBRARIES" variable (:default-value ("libutil.a")) nil [94 123])
+            ("libutil_a_SOURCES" variable (:default-value ("op_deviceio.c" "op_lockfile.c" "op_file.c" "op_fileio.c" "op_get_time.c" "op_libiberty.c" "op_popt.c" "op_string.c" "op_cpufreq.c" "op_deviceio.h" "op_fileio.h" "op_libiberty.h" "op_lockfile.h" "op_types.h" "op_file.h" "op_get_time.h" "op_list.h" "op_popt.h" "op_string.h" "op_cpufreq.h" "op_version.c" "op_version.h" "op_growable_buffer.c" "op_growable_buffer.h")) nil [123 532]))          
+    :file "Makefile.am"
+    :pointmax 532
+    :fsize 531
+    :lastmodtime '(21523 1458 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!libutil!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

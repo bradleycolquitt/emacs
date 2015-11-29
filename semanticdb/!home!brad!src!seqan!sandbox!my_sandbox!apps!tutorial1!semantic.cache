@@ -1,0 +1,629 @@
+;; Object tutorial1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tutorial1/"
+  :tables (list 
+   (semanticdb-table "tutorial1.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/file.h" include (:system-flag t) nil [21 44])
+            ("seqan/sequence.h" include (:system-flag t) nil [45 72])
+            ("main" function (:type "int") nil [74 892]))          
+    :file "tutorial1.cpp"
+    :pointmax 893
+    :fsize 892
+    :lastmodtime '(21575 8563 284606 686000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tutorial1_encap.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/file.h" include (:system-flag t) nil [21 44])
+            ("seqan/sequence.h" include (:system-flag t) nil [45 72])
+            ("seqan/score.h" include (:system-flag t) nil [73 97])
+            ("computeLocalScore" function
+               (:template 
+                  ( ("TText" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("pattern" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("seqan::String" type
+                             (:template-specifier 
+                                ( ("seqan::AminoAcid" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [418 466])
+                    ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [467 486]))                  )
+                nil [201 670])
+            ("computeLocalScore" function
+               (:template 
+                  ( ("TText" type (:type "class") nil nil)
+                    ("TPattern" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("pattern" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TPattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [739 764])
+                    ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [765 784]))                  )
+                nil [672 941])
+            ("computeScore" function
+               (:template 
+                  ( ("TPattern" type (:type "class") nil nil)
+                    ("TText" type (:type "class") nil nil))                  
+                :type ("seqan::String" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("pattern" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TPattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1020 1045])
+                    ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1046 1065]))                  )
+                nil [943 1358])
+            ("scorePrint" function
+               (:template 
+                  ( ("TScore" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("score" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TScore" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1403 1424]))                  )
+                nil [1360 1463])
+            ("scorePrint" function
+               (:arguments 
+                  ( ("score" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("seqan::String" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1482 1515]))                  
+                :type "void")
+                nil [1466 1641])
+            ("main" function (:type "int") nil [1643 2016]))          
+    :file "tutorial1_encap.cpp"
+    :pointmax 2184
+    :fsize 1304
+    :lastmodtime '(21575 5652 840648 994000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "rev_comp.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "rev_comp.cpp"
+    :pointmax 1
+    :fsize 1048
+    :lastmodtime '(21575 54736 419935 479000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sequences.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/sequence.h" include (:system-flag t) nil [21 48])
+            ("seqan/file.h" include (:system-flag t) nil [49 72])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [74 96])
+            ("printAlign" function
+               (:template 
+                  ( ("TText1" type (:type "class") nil nil)
+                    ("TText2" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("genomeFragment" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TText1" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [238 268])
+                    ("read" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TText2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [269 289]))                  )
+                nil [178 506])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [517 521])
+                    ("" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [522 536]))                  
+                :type "int")
+                nil [508 4064])
+            ("bsChr1" variable (:type ("DnaString" type (:type "class") nil nil)) nil [2650 2667])
+            ("resize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("bsChr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2687 2694])
+                    ("" variable (:type ("length" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2695 2707]))                  
+                :type "int")
+                nil [2680 2709])
+            ("std::endl" variable (:type "int") nil [3215 3225]))          
+    :file "sequences.cpp"
+    :pointmax 4015
+    :fsize 4064
+    :lastmodtime '(21575 55907 231918 459000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sort.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/sequence.h" include (:system-flag t) nil [21 48])
+            ("seqan/stream.h" include (:system-flag t) nil [49 74])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [76 98])
+            ("printAlign" function
+               (:template 
+                  ( ("TSegment" type (:type "class") nil nil)
+                    ("TText" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("genomeFragment" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TSegment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [284 316])
+                    ("read" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [317 336]))                  )
+                nil [223 551])
+            ("printAlign" function
+               (:template 
+                  ( ("TText" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("genomeFragment" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [595 624])
+                    ("read" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [625 644]))                  )
+                nil [553 859])
+            ("main" function (:type "int") nil [861 1825]))          
+    :file "sort.cpp"
+    :pointmax 1497
+    :fsize 943
+    :lastmodtime '(21575 56477 943910 163000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "show_alphabet.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("seqan/sequence.h" include (:system-flag t) nil [1 28])
+            ("seqan/basic.h" include (:system-flag t) nil [29 53])
+            ("iostream" include (:system-flag t) nil [54 73])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [75 97])
+            ("showAllLettersOfMyAlphabet" function
+               (:template 
+                  ( ("TAlphabet" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TAlphabet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [242 260]))                  )
+                nil [180 519])
+            ("main" function (:type "int") nil [521 737]))          
+    :file "show_alphabet.cpp"
+    :pointmax 738
+    :fsize 737
+    :lastmodtime '(21575 59650 967864 38000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "stringset.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("seqan/sequence.h" include (:system-flag t) nil [1 28])
+            ("seqan/stream.h" include (:system-flag t) nil [29 54])
+            ("iostream" include (:system-flag t) nil [55 74])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [76 98])
+            ("main" function (:type "int") nil [100 871]))          
+    :file "stringset.cpp"
+    :pointmax 719
+    :fsize 871
+    :lastmodtime '(21575 61578 755836 14000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "stringset_dep.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/sequence.h" include (:system-flag t) nil [21 48])
+            ("seqan/file.h" include (:system-flag t) nil [49 72])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [74 96])
+            ("isElement" function
+               (:arguments 
+                  ( ("ss" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TStringSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [158 180])
+                    ("id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TId" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [181 196]))                  
+                :type "bool")
+                nil [143 344])
+            ("main" function (:type "int") nil [346 1615]))          
+    :file "stringset_dep.cpp"
+    :pointmax 1242
+    :fsize 1615
+    :lastmodtime '(21575 63404 443809 474000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sort_seq.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/sequence.h" include (:system-flag t) nil [21 48])
+            ("seqan/file.h" include (:system-flag t) nil [49 72])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [74 96])
+            ("main" function (:type "int") nil [98 1648]))          
+    :file "sort_seq.cpp"
+    :pointmax 1649
+    :fsize 1648
+    :lastmodtime '(21575 57421 719896 444000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tutorial1_oo.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/file.h" include (:system-flag t) nil [21 44])
+            ("seqan/sequence.h" include (:system-flag t) nil [45 72])
+            ("seqan/score.h" include (:system-flag t) nil [73 97])
+            ("computeLocalScore" function
+               (:template 
+                  ( ("TText" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("pattern" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("seqan::String" type
+                             (:template-specifier 
+                                ( ("seqan::AminoAcid" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [418 466])
+                    ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [467 486]))                  )
+                nil [201 670])
+            ("computeLocalScore" function
+               (:template 
+                  ( ("TText" type (:type "class") nil nil)
+                    ("TPattern" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("pattern" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TPattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [739 764])
+                    ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [765 784]))                  )
+                nil [672 941])
+            ("computeScore" function
+               (:template 
+                  ( ("TPattern" type (:type "class") nil nil)
+                    ("TText" type (:type "class") nil nil))                  
+                :type ("seqan::String" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("pattern" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TPattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1020 1045])
+                    ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1046 1065]))                  )
+                nil [943 1358])
+            ("scorePrint" function
+               (:template 
+                  ( ("TScore" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("score" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TScore" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1403 1424]))                  )
+                nil [1360 1463])
+            ("scorePrint" function
+               (:arguments 
+                  ( ("score" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("seqan::String" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1482 1515]))                  
+                :type "void")
+                nil [1466 1641])
+            ("main" function (:type "int") nil [1643 2016]))          
+    :file "tutorial1_oo.cpp"
+    :pointmax 2017
+    :fsize 2016
+    :lastmodtime '(21575 7187 640626 683000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "iter.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/sequence.h" include (:system-flag t) nil [21 48])
+            ("seqan/stream.h" include (:system-flag t) nil [49 74])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [76 98])
+            ("main" function (:type "int") nil [100 534]))          
+    :file "iter.cpp"
+    :pointmax 598
+    :fsize 597
+    :lastmodtime '(21576 1414 495757 926000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "iter3.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "iter3.cpp"
+    :pointmax 1
+    :fsize 4436
+    :lastmodtime '(21576 2492 879742 250000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "string2.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/sequence.h" include (:system-flag t) nil [21 48])
+            ("seqan/stream.h" include (:system-flag t) nil [49 74])
+            ("seqan/basic.h" include (:system-flag t) nil [75 99])
+            ("ctime" include (:system-flag t) nil [100 116])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [118 138])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [139 161])
+            ("appendMil" function
+               (:template 
+                  ( ("TStrat" type (:type "class") nil nil))                  
+                :type "double"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TStrat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [208 223]))                  )
+                nil [164 498])
+            ("appendMil" function (:type "double") nil [500 767])
+            ("main" function (:type "int") nil [769 1114]))          
+    :file "string2.cpp"
+    :pointmax 1119
+    :fsize 1114
+    :lastmodtime '(21576 6036 39690 744000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "align.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/align.h" include (:system-flag t) nil [21 45])
+            ("seqan/sequence.h" include (:system-flag t) nil [46 73])
+            ("seqan/stream.h" include (:system-flag t) nil [74 99])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [100 122])
+            ("main" function (:type "int") nil [124 2949]))          
+    :file "align.cpp"
+    :pointmax 536
+    :fsize 2949
+    :lastmodtime '(21576 7875 779664 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "align2.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/align.h" include (:system-flag t) nil [21 45])
+            ("seqan/stream.h" include (:system-flag t) nil [46 71])
+            ("seqan/sequence.h" include (:system-flag t) nil [72 99])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [100 122])
+            ("main" function (:type "int") nil [124 1655]))          
+    :file "align2.cpp"
+    :pointmax 777
+    :fsize 949
+    :lastmodtime '(21576 39245 139207 992000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pair_align.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/align.h" include (:system-flag t) nil [21 45])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [47 69])
+            ("main" function (:type "int") nil [71 1864]))          
+    :file "pair_align.cpp"
+    :pointmax 797
+    :fsize 745
+    :lastmodtime '(21576 36635 263245 931000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "align_gotoh.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/align.h" include (:system-flag t) nil [21 45])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [47 69])
+            ("main" function (:type "int") nil [71 765]))          
+    :file "align_gotoh.cpp"
+    :pointmax 766
+    :fsize 765
+    :lastmodtime '(21576 37192 35237 838000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "align_approx.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/align.h" include (:system-flag t) nil [21 45])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [46 68])
+            ("main" function (:type "int") nil [70 3610]))          
+    :file "align_approx.cpp"
+    :pointmax 1069
+    :fsize 3610
+    :lastmodtime '(21576 49130 451064 292000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "indices1.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("seqan/sequence.h" include (:system-flag t) nil [1 28])
+            ("seqan/index.h" include (:system-flag t) nil [29 53])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [55 77])
+            ("main" function (:type "int") nil [79 357]))          
+    :file "indices1.cpp"
+    :pointmax 358
+    :fsize 357
+    :lastmodtime '(21581 9322 786879 567000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "index_iter.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("seqan/sequence.h" include (:system-flag t) nil [1 28])
+            ("seqan/index.h" include (:system-flag t) nil [29 53])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [55 77])
+            ("DFS" function (:type "void") nil [110 581])
+            ("main" function (:type "int") nil [583 663]))          
+    :file "index_iter.cpp"
+    :pointmax 504
+    :fsize 834
+    :lastmodtime '(21581 11525 410847 548000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "index_iter3.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/sequence.h" include (:system-flag t) nil [21 48])
+            ("seqan/index.h" include (:system-flag t) nil [49 73])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [75 97])
+            ("main" function (:type "int") nil [99 558]))          
+    :file "index_iter3.cpp"
+    :pointmax 943
+    :fsize 663
+    :lastmodtime '(21581 17896 534754 933000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pattern1.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("seqan/find.h" include (:system-flag t) nil [21 44])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [46 68])
+            ("main" function (:type "int") nil [70 684]))          
+    :file "pattern1.cpp"
+    :pointmax 390
+    :fsize 684
+    :lastmodtime '(21581 53033 274244 159000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!seqan!sandbox!my_sandbox!apps!tutorial1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

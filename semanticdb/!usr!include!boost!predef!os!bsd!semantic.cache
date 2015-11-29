@@ -1,0 +1,109 @@
+;; Object bsd/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bsd/"
+  :tables (list 
+   (semanticdb-table "bsdi.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_OS_BSD_BSDI_H" variable (:constant-flag t) nil [242 268])
+            ("boost/predef/os/bsd.h" include (:system-flag t) nil [270 302])
+            ("BOOST_OS_BSD_BSDI" variable (:constant-flag t) nil [525 542])
+            ("BOOST_OS_BSD_BSDI_NAME" variable (:constant-flag t) nil [1015 1037])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1053 1090]))          
+    :file "bsdi.h"
+    :pointmax 1167
+    :fsize 1166
+    :lastmodtime '(21208 1656 0 0)
+    :unmatched-syntax '((semantic-list 1116 . 1158) (symbol 1091 . 1116) (string "\"BSDi BSD/OS\"" 1135 . 1157))
+    :lexical-table 
+        '(("BOOST_OS_BSD_BSDI_NAME" . ((string "\"BSDi BSD/OS\"" 1038 . 1051)))
+          ("BOOST_OS_BSD_BSDI" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 543 . 577)))
+          ("BOOST_PREDEF_OS_BSD_BSDI_H")
+          )
+
+    )
+   (semanticdb-table "dragonfly.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_OS_BSD_DRAGONFLY_H" variable (:constant-flag t) nil [247 278])
+            ("boost/predef/os/bsd.h" include (:system-flag t) nil [280 312])
+            ("BOOST_OS_BSD_DRAGONFLY" variable (:constant-flag t) nil [554 576])
+            ("BOOST_OS_BSD_DRAGONFLY_NAME" variable (:constant-flag t) nil [1118 1145])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1163 1200]))          
+    :file "dragonfly.h"
+    :pointmax 1287
+    :fsize 1286
+    :lastmodtime '(21208 1656 0 0)
+    :unmatched-syntax '((semantic-list 1226 . 1278) (symbol 1201 . 1226) (string "\"DragonFly BSD\"" 1250 . 1277))
+    :lexical-table 
+        '(("BOOST_PREDEF_OS_BSD_DRAGONFLY_H")
+          ("BOOST_OS_BSD_DRAGONFLY" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 577 . 611)))
+          ("BOOST_OS_BSD_DRAGONFLY_NAME" . ((string "\"DragonFly BSD\"" 1146 . 1161)))
+          )
+
+    )
+   (semanticdb-table "free.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_OS_BSD_FREE_H" variable (:constant-flag t) nil [242 268])
+            ("boost/predef/os/bsd.h" include (:system-flag t) nil [270 302])
+            ("BOOST_OS_BSD_FREE" variable (:constant-flag t) nil [562 579])
+            ("BOOST_OS_BSD_FREE_NAME" variable (:constant-flag t) nil [1381 1403])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1416 1453]))          
+    :file "free.h"
+    :pointmax 1530
+    :fsize 1529
+    :lastmodtime '(21208 1656 0 0)
+    :unmatched-syntax '((semantic-list 1479 . 1521) (symbol 1454 . 1479) (string "\"Free BSD\"" 1498 . 1520))
+    :lexical-table 
+        '(("BOOST_PREDEF_OS_BSD_FREE_H")
+          ("BOOST_OS_BSD_FREE" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 580 . 614)))
+          ("BOOST_OS_BSD_FREE_NAME" . ((string "\"Free BSD\"" 1404 . 1414)))
+          )
+
+    )
+   (semanticdb-table "open.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_OS_BSD_OPEN_H" variable (:constant-flag t) nil [242 268])
+            ("boost/predef/os/bsd.h" include (:system-flag t) nil [270 302])
+            ("BOOST_OS_BSD_OPEN" variable (:constant-flag t) nil [1396 1413])
+            ("BOOST_OS_BSD_OPEN_NAME" variable (:constant-flag t) nil [5808 5830])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [5842 5879]))          
+    :file "open.h"
+    :pointmax 5956
+    :fsize 5955
+    :lastmodtime '(21208 1656 0 0)
+    :unmatched-syntax '((semantic-list 5905 . 5947) (symbol 5880 . 5905) (string "\"OpenBSD\"" 5924 . 5946))
+    :lexical-table 
+        '(("BOOST_PREDEF_OS_BSD_OPEN_H")
+          ("BOOST_OS_BSD_OPEN" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 1414 . 1448)))
+          ("BOOST_OS_BSD_OPEN_NAME" . ((string "\"OpenBSD\"" 5831 . 5840)))
+          )
+
+    )
+   (semanticdb-table "net.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BOOST_PREDEF_OS_BSD_NET_H" variable (:constant-flag t) nil [241 266])
+            ("boost/predef/os/bsd.h" include (:system-flag t) nil [268 300])
+            ("BOOST_OS_BSD_NET" variable (:constant-flag t) nil [718 734])
+            ("BOOST_OS_BSD_NET_NAME" variable (:constant-flag t) nil [2376 2397])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [2415 2452]))          
+    :file "net.h"
+    :pointmax 2527
+    :fsize 2526
+    :lastmodtime '(21208 1656 0 0)
+    :unmatched-syntax '((semantic-list 2478 . 2518) (symbol 2453 . 2478) (string "\"DragonFly BSD\"" 2496 . 2517))
+    :lexical-table 
+        '(("BOOST_OS_BSD_NET" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 735 . 769)))
+          ("BOOST_OS_BSD_NET_NAME" . ((string "\"DragonFly BSD\"" 2398 . 2413)))
+          ("BOOST_PREDEF_OS_BSD_NET_H")
+          )
+
+    )
+   )
+  :file "!usr!include!boost!predef!os!bsd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

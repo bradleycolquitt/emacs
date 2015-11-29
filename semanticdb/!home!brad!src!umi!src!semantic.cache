@@ -1,0 +1,1359 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "bam_utils.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("bam_utils.h" include (:system-flag t) nil [1 23])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [25 45])
+            ("count_bam_records" function
+               (:arguments 
+                  ( ("idx" variable
+                       (:pointer 1
+                        :type ("hts_idx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74 89])
+                    ("header" variable
+                       (:pointer 1
+                        :type ("bam_hdr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90 108]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [47 562])
+            ("seq2int" function
+               (:arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [584 594]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [564 1074])
+            ("bam_get_seq2" function
+               (:arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1094 1104])
+                    ("seqlen" variable (:type "int") (reparse-symbol arg-sub-list) [1105 1116])
+                    ("seq_p" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1117 1132])
+                    ("qual_p" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1133 1149]))                  
+                :type "void")
+                nil [1076 1315])
+            ("bam_get_seq_qual" function
+               (:arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1339 1349])
+                    ("seq_p" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1350 1365])
+                    ("qual_p" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1366 1382]))                  
+                :type "void")
+                nil [1317 1677])
+            ("bam_revcomp" function
+               (:arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1696 1706])
+                    ("seqlen" variable (:type "int") (reparse-symbol arg-sub-list) [1707 1718])
+                    ("seq_rc" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1719 1735]))                  
+                :type "void")
+                nil [1679 2293])
+            ("bam_rev_qual" function
+               (:arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2313 2323])
+                    ("seqlen" variable (:type "int") (reparse-symbol arg-sub-list) [2324 2335])
+                    ("seq_rev" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2336 2353]))                  
+                :type "void")
+                nil [2295 2489])
+            ("bad_cigar" function
+               (:arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2584 2594]))                  
+                :type "int")
+                nil [2570 2856])
+            ("filter_multi_reads" function
+               (:arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2915 2925]))                  
+                :type "int")
+                nil [2892 3065])
+            ("compare_barcode_local" function
+               (:arguments 
+                  ( ("" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [3093 3114])
+                    ("bc_iter" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3115 3132])
+                    ("seq" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3133 3146])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [3147 3157])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [3158 3166]))                  
+                :type "int")
+                nil [3067 3399])
+            ("compare_barcode_local" function
+               (:arguments 
+                  ( ("" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("char" type
+                                 (:pointer 1
+                                  :constant-flag t)
+                                  nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [3427 3447])
+                    ("bc_iter" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3448 3465])
+                    ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3466 3476])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [3477 3487])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [3488 3496]))                  
+                :type "int")
+                nil [3401 3736])
+            ("compare_barcode" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3914 3927])
+                    ("barcodes" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3928 3959])
+                    ("bc_offsets" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3960 3984])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [3985 3995])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [3996 4004])
+                    ("used_offset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4005 4022]))                  
+                :type "int")
+                nil [3894 4682])
+            ("compare_barcode" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4704 4714])
+                    ("barcodes" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("char" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4715 4745])
+                    ("bc_offsets" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4746 4770])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [4771 4781])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [4782 4790])
+                    ("used_offset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4791 4808]))                  
+                :type "int")
+                nil [4684 5465])
+            ("get_sequence" function
+               (:arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5499 5509])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [5510 5520])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [5521 5529])
+                    ("barcodes" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5530 5561])
+                    ("bc_offsets" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5581 5605])
+                    ("min_qual" variable (:type "int") (reparse-symbol arg-sub-list) [5606 5619])
+                    ("used_offset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5620 5637]))                  
+                :type "int")
+                nil [5482 6187])
+            ("get_sequence" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6206 6216])
+                    ("qual" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6217 6228])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [6229 6239])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [6240 6248])
+                    ("barcodes" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("char" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6249 6279])
+                    ("bc_offsets" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6299 6323])
+                    ("min_qual" variable (:type "int") (reparse-symbol arg-sub-list) [6324 6337])
+                    ("used_offset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6338 6355]))                  
+                :type "int")
+                nil [6189 6826])
+            ("ShiftAdd" function
+               (:arguments 
+                  ( ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [6841 6849])
+                    ("digit" variable (:type "int") (reparse-symbol arg-sub-list) [6850 6860]))                  
+                :type "int")
+                nil [6828 6891])
+            ("get_sequence" function
+               (:arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6934 6944])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [6945 6955])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [6956 6964])
+                    ("used_offset" variable (:type "int") (reparse-symbol arg-sub-list) [6965 6981]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [6912 8285])
+            ("get_sequence" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8326 8336])
+                    ("qual" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8337 8348])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [8349 8359])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [8360 8368])
+                    ("min_qual" variable (:type "int") (reparse-symbol arg-sub-list) [8369 8382])
+                    ("used_offset" variable (:type "int") (reparse-symbol arg-sub-list) [8383 8399]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [8306 9102])
+            ("print_uint8" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9122 9135])
+                    ("seqlen" variable (:type "int") (reparse-symbol arg-sub-list) [9136 9147])
+                    ("convert" variable (:type "bool") (reparse-symbol arg-sub-list) [9148 9161]))                  
+                :type "void")
+                nil [9104 9358]))          
+    :file "bam_utils.cpp"
+    :pointmax 9330
+    :fsize 9358
+    :lastmodtime '(21986 12427 184678 94000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "string_utils.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("string_utils.h" include (:system-flag t) nil [1 26])
+            ("split" function
+               (:arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [168 189])
+                    ("delim" variable (:type "char") (reparse-symbol arg-sub-list) [190 201])
+                    ("elems" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [202 234]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [136 388])
+            ("split" function
+               (:arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [422 443])
+                    ("delim" variable (:type "char") (reparse-symbol arg-sub-list) [444 455]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [391 541]))          
+    :file "string_utils.cpp"
+    :pointmax 502
+    :fsize 541
+    :lastmodtime '(21939 52088 305442 197000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_pe.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("htslib/sam.h" include (:system-flag t) nil [1 24])
+            ("bam_sql_serial.h" include (:system-flag t) nil [25 52])
+            ("bam_utils.h" include (:system-flag t) nil [53 75])
+            ("iostream" include (:system-flag t) nil [76 95])
+            ("gperftools/profiler.h" include (:system-flag t) nil [96 128])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [171 191])
+            ("main" function (:type "int") nil [193 897]))          
+    :file "test_pe.cpp"
+    :pointmax 884
+    :fsize 883
+    :lastmodtime '(21799 63232 92143 457000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dbrecord.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("dbrecord.h" include (:system-flag t) nil [1 22])
+            ("split_qname" function
+               (:parent "dbRecord0"
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52 62]))                  
+                :type "void")
+                nil [24 578])
+            ("set_positions" function
+               (:parent "dbRecord0"
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [609 619]))                  
+                :type "int")
+                nil [580 866])
+            ("set_tid" function
+               (:parent "dbRecord0"
+                :arguments 
+                  ( ("tid" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [892 904]))                  
+                :type "void")
+                nil [868 929])
+            ("set_chrom" function
+               (:parent "dbRecord0"
+                :arguments 
+                  ( ("bamdb" variable
+                       (:pointer 1
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [957 970])
+                    ("tid" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [971 983]))                  
+                :type "void")
+                nil [931 1028])
+            ("dbRecord1" function
+               (:constructor-flag t
+                :parent "dbRecord1"
+                :arguments 
+                  ( ("bamdb" variable
+                       (:pointer 1
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1051 1064]))                  
+                :type ("dbRecord1" type (:type "class") nil nil))
+                nil [1030 1374])
+            ("set_bc" function
+               (:parent "dbRecord1"
+                :arguments 
+                  ( ("bamdb" variable
+                       (:pointer 1
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1399 1412])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1413 1423])
+                    ("used_offset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1424 1441]))                  
+                :type "void")
+                nil [1376 1614])
+            ("set_umi" function
+               (:parent "dbRecord1"
+                :arguments 
+                  ( ("bamdb" variable
+                       (:pointer 1
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1640 1653])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1654 1664])
+                    ("used_offset" variable (:type "int") (reparse-symbol arg-sub-list) [1665 1681]))                  
+                :type "void")
+                nil [1616 1781])
+            ("insert_to_db" function
+               (:parent "dbRecord1"
+                :type "int")
+                nil [1783 2636])
+            ("dbRecord2" function
+               (:constructor-flag t
+                :parent "dbRecord2"
+                :arguments 
+                  ( ("bamdb" variable
+                       (:pointer 1
+                        :type ("BamDB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2659 2672]))                  
+                :type ("dbRecord2" type (:type "class") nil nil))
+                nil [2638 2977])
+            ("insert_to_db" function
+               (:parent "dbRecord2"
+                :type "int")
+                nil [2979 3803])
+            ("set_isize" function
+               (:parent "dbRecord2"
+                :arguments 
+                  ( ("is" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3831 3842]))                  
+                :type "void")
+                nil [3805 3868]))          
+    :file "dbrecord.cpp"
+    :pointmax 3869
+    :fsize 3868
+    :lastmodtime '(21877 14506 162818 240000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sqlite_wrapper.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("sqlite_wrapper.h" include (:system-flag t) nil [1 28])
+            ("open_connection" function
+               (:arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51 69])
+                    ("conn" variable
+                       (:pointer 2
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70 85])
+                    ("for_speed" variable (:type "bool") (reparse-symbol arg-sub-list) [86 101]))                  
+                :type "void")
+                nil [30 353])
+            ("execute" function
+               (:arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [368 382])
+                    ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [383 399]))                  
+                :type "void")
+                nil [355 631])
+            ("execute" function
+               (:arguments 
+                  ( ("conn" variable
+                       (:pointer 2
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [646 661])
+                    ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [662 678]))                  
+                :type "void")
+                nil [633 912])
+            ("prepare_statment" function
+               (:arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [951 965])
+                    ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [966 982])
+                    ("stmt" variable
+                       (:pointer 2
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [983 1003]))                  
+                :type "int")
+                nil [930 1215])
+            ("prepare_statment" function
+               (:arguments 
+                  ( ("conn" variable
+                       (:pointer 2
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1238 1253])
+                    ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1254 1270])
+                    ("stmt" variable
+                       (:pointer 2
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1271 1291])
+                    ("tail" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1292 1310]))                  
+                :type "int")
+                nil [1217 1545])
+            ("bind" function
+               (:arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1556 1570])
+                    ("stmt" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1571 1590])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [1591 1601])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [1602 1612]))                  
+                :type "int")
+                nil [1547 1792])
+            ("bind" function
+               (:arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1819 1833])
+                    ("stmt" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1834 1853])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [1854 1864])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1865 1882]))                  
+                :type "int")
+                nil [1810 2133])
+            ("step" function
+               (:arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2145 2155])
+                    ("" variable (:type ("conn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2156 2161])
+                    ("stmt" variable
+                       (:pointer 2
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2162 2182]))                  
+                :type "bool")
+                nil [2135 2385])
+            ("step_multiple" function
+               (:arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2406 2420])
+                    ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2421 2437]))                  
+                :type "bool")
+                nil [2387 3122])
+            ("reset" function
+               (:arguments 
+                  ( ("conn" variable
+                       (:pointer 2
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3135 3150])
+                    ("stmt_p" variable
+                       (:pointer 2
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3151 3173]))                  
+                :type "void")
+                nil [3124 3334])
+            ("exec_multithread" function
+               (:arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3357 3372])
+                    ("stmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3373 3391]))                  
+                :type "int")
+                nil [3336 4268])
+            ("step_multithread" function
+               (:arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4291 4306])
+                    ("insert_stmt" variable
+                       (:pointer 1
+                        :type ("sqlite3_stmt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4307 4334]))                  
+                :type "int")
+                nil [4270 5194]))          
+    :file "sqlite_wrapper.cpp"
+    :pointmax 5195
+    :fsize 5194
+    :lastmodtime '(21986 12748 864683 914000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "timing.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("timing.h" include (:system-flag t) nil [1 20])
+            ("print_time" function
+               (:arguments 
+                  ( ("start" variable (:type ("clock_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38 52]))                  
+                :type "void")
+                nil [22 195]))          
+    :file "timing.cpp"
+    :pointmax 196
+    :fsize 195
+    :lastmodtime '(21799 63232 256143 457000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CC" variable (:default-value ("g++")) nil [1 8])
+            ("TARGET_NAME" variable (:default-value ("../load2db")) nil [8 33])
+            ("HASH_NAME" variable (:default-value ("../bam_hash")) nil [33 57])
+            ("HASH_TEST_NAME" variable (:default-value ("../test_hash")) nil [57 87])
+            ("HASH2_NAME" variable (:default-value ("../bam_hash2")) nil [87 113])
+            ("HASH2_TEST_NAME" variable (:default-value ("../test_hash2")) nil [113 145])
+            ("FILTER_NAME" variable (:default-value ("../bam_filter")) nil [145 173])
+            ("FILTER_TEST_NAME" variable (:default-value ("../test_filter")) nil [173 207])
+            ("TEST_NAME" variable (:default-value ("../test")) nil [207 227])
+            ("TEST_BAM_UTILS_NAME" variable (:default-value ("../test_bam_utils")) nil [227 267])
+            ("TEST_THREAD_NAME" variable (:default-value ("../test_thread")) nil [267 301])
+            ("TARGET_SRCS" variable (:default-value ("load2db_merge.cpp")) nil [302 334])
+            ("HASH_SRCS" variable (:default-value ("bam_hash_main.cpp" "bam_hash.cpp" "bamrecord.cpp")) nil [334 391])
+            ("HASH_TEST_SRCS" variable (:default-value ("test_hash.cpp" "bam_hash.cpp" "bamrecord.cpp")) nil [391 449])
+            ("HASH2_SRCS" variable (:default-value ("bam_hash2_main.cpp" "bam_hash2.cpp" "bamrecord.cpp")) nil [449 509])
+            ("HASH2_TEST_SRCS" variable (:default-value ("test_hash2.cpp" "bam_hash2.cpp" "bamrecord.cpp")) nil [509 570])
+            ("FILTER_SRCS" variable (:default-value ("bam_filter_main.cpp" "bam_filter.cpp" "bamrecord.cpp")) nil [570 633])
+            ("FILTER_TEST_SRCS" variable (:default-value ("test_filter.cpp" "bam_filter.cpp" "bamrecord.cpp")) nil [633 697])
+            ("TEST_SRCS" variable (:default-value ("test_merge.cpp")) nil [697 724])
+            ("TEST_BAM_UTILS_SRCS" variable (:default-value ("test_bam_utils.cpp")) nil [724 765])
+            ("TEST_THREAD_SRCS" variable (:default-value ("threaded_sql.cpp")) nil [765 801])
+            ("COMMON_SRCS" variable (:default-value ("bam_utils.cpp" "dbrecord.cpp" "sql_utils.cpp" "string_utils.cpp" "sqlite_wrapper.cpp" "timing.cpp" "bam_sql_merge.cpp")) nil [802 922])
+            ("COMMON_OBJS" variable (:default-value ("${COMMON_SRCS:.cpp=.o}")) nil [923 961])
+            ("TARGET_OBJ" variable (:default-value ("${TARGET_SRCS:.cpp=.o}")) nil [961 997])
+            ("HASH_OBJ" variable (:default-value ("${HASH_SRCS:.cpp=.o}")) nil [997 1029])
+            ("HASH_TEST_OBJ" variable (:default-value ("${HASH_TEST_SRCS:.cpp=.o}")) nil [1029 1071])
+            ("HASH2_OBJ" variable (:default-value ("${HASH2_SRCS:.cpp=.o}")) nil [1071 1105])
+            ("HASH2_TEST_OBJ" variable (:default-value ("${HASH2_TEST_SRCS:.cpp=.o}")) nil [1105 1149])
+            ("FILTER_OBJ" variable (:default-value ("${FILTER_SRCS:.cpp=.o}")) nil [1149 1185])
+            ("FILTER_TEST_OBJ" variable (:default-value ("${FILTER_TEST_SRCS:.cpp=.o}")) nil [1185 1231])
+            ("TEST_OBJ" variable (:default-value ("${TEST_SRCS:.cpp=.o}")) nil [1231 1263])
+            ("TEST_BAM_UTILS_OBJ" variable (:default-value ("${TEST_BAM_UTILS_SRCS:.cpp=.o}")) nil [1263 1315])
+            ("TEST_THREAD_OBJ" variable (:default-value ("${TEST_THREAD_SRCS:.cpp=.o}")) nil [1315 1361])
+            ("INCLUDE_DIRS" variable (:default-value ("/usr/local/include" "/home/brad/src/umi/include")) nil [1362 1424])
+            ("CPPFLAGS" variable (:default-value ("$(foreach includedir,$(INCLUDE_DIRS),-I$(includedir))")) nil [1424 1490])
+            ("CPPFLAGS" variable (:default-value ("-std=c++11" "-W" "-Wall" "-Wno-long-long" "-pedantic" "-Wno-variadic-macros" "-fno-omit-frame-pointer")) nil [1490 1592])
+            ("LIBRARY_DIRS" variable (:default-value ("/usr/local/lib")) nil [1593 1624])
+            ("LIBS" variable (:default-value ("hts" "sqlite3" "boost_regex" "boost_program_options" "boost_system" "boost_filesystem" "boost_thread" "rt" "z")) nil [1624 1726])
+            ("LDFLAGS" variable (:default-value ("$(foreach librarydir,$(LIBRARY_DIRS),-L$(librarydir))")) nil [1726 1791])
+            ("LDFLAGS" variable (:default-value ("$(foreach library, $(LIBS), -l$(library))")) nil [1791 1844])
+            ("TEST_LDFLAGS" variable (:default-value ("-lprofiler" "-ltcmalloc")) nil [1844 1881])
+            (".PHONY" function (:arguments ("target" "test" "thread" "hash" "test_hash")) nil [1882 1924])
+            ("target" function (:arguments ("COMMON_SRCS" "+=" "$(TARGET_SRCS)")) nil [1925 1963])
+            ("target" function (:arguments ("$(TARGET_NAME)")) nil [1963 1986])
+            ("test" function (:arguments ("CPPFLAGS" "+=" "-DDEBUG" "-g")) nil [1987 2016])
+            ("test" function (:arguments ("COMMON_SRCS" "+=" "$(TEST_SRCS)")) nil [2016 2050])
+            ("test" function (:arguments ("$(TEST_NAME)")) nil [2050 2069])
+            ("test_bam_utils" function (:arguments ("COMMON_SRCS" "+=" "$(TEST_BAM_UTILS_SRCS)")) nil [2070 2124])
+            ("test_bam_utils" function (:arguments ("$(TEST_BAM_UTILS_NAME)")) nil [2124 2163])
+            ("thread" function (:arguments ("CPPFLAGS" "+=" "-DDEBUG" "-g")) nil [2164 2195])
+            ("thread" function (:arguments ("COMMON_SRCS" "+=" "$(TEST_THREAD_SRCS)")) nil [2195 2238])
+            ("thread" function (:arguments ("$(TEST_THREAD_NAME)")) nil [2238 2266])
+            ("hash" function (:arguments ("CPPFLAGS" "+=" "-O3")) nil [2267 2289])
+            ("hash" function (:arguments ("COMMON_SRCS" "+=" "$(HASH_SRCS)")) nil [2289 2323])
+            ("hash" function (:arguments ("$(HASH_NAME)")) nil [2323 2342])
+            ("test_hash" function (:arguments ("CPPFLAGS" "+=" "-DDEBUG" "-g" "-O3")) nil [2343 2381])
+            ("test_hash" function (:arguments ("COMMON_SRCS" "+=" "$(HASH_TEST_SRCS)")) nil [2381 2425])
+            ("test_hash" function (:arguments ("$(HASH_TEST_NAME)")) nil [2425 2454])
+            ("hash2" function (:arguments ("COMMON_SRCS" "+=" "$(HASH2_SRCS)")) nil [2481 2517])
+            ("hash2" function (:arguments ("$(HASH2_NAME)")) nil [2517 2538])
+            ("test_hash2" function (:arguments ("CPPFLAGS" "+=" "-DDEBUG" "-g" "-O3")) nil [2539 2578])
+            ("test_hash2" function (:arguments ("COMMON_SRCS" "+=" "$(HASH2_TEST_SRCS)")) nil [2578 2624])
+            ("test_hash2" function (:arguments ("$(HASH2_TEST_NAME)")) nil [2624 2655])
+            ("filter" function (:arguments ("CPPFLAGS" "+=" "-O3")) nil [2656 2680])
+            ("filter" function (:arguments ("COMMON_SRCS" "+=" "$(FILTER_SRCS)")) nil [2680 2718])
+            ("filter" function (:arguments ("$(FILTER_NAME)")) nil [2718 2741])
+            ("test_filter" function (:arguments ("CPPFLAGS" "+=" "-DDEBUG" "-g" "-O3")) nil [2742 2782])
+            ("test_filter" function (:arguments ("COMMON_SRCS" "+=" "$(FILTER_TEST_SRCS)")) nil [2782 2830])
+            ("test_filter" function (:arguments ("$(FILTER_TEST_NAME)")) nil [2830 2863])
+            ("$(TARGET_NAME)" function (:arguments ("$(TARGET_OBJ)" "$(COMMON_OBJS)")) nil [2864 2936])
+            ("$(TEST_NAME)" function (:arguments ("$(TEST_OBJ)" "$(COMMON_OBJS)")) nil [2937 3021])
+            ("$(TEST_BAM_UTILS_NAME)" function (:arguments ("$(TEST_BAM_UTILS_OBJ)" "$(COMMON_OBJS)")) nil [3022 3126])
+            ("$(TEST_THREAD_NAME)" function (:arguments ("$(TEST_THREAD_OBJ)" "$(COMMON_OBJS)")) nil [3127 3225])
+            ("$(HASH_NAME)" function (:arguments ("$(HASH_OBJ)" "$(COMMON_OBJS)")) nil [3226 3294])
+            ("$(HASH_TEST_NAME)" function (:arguments ("$(HASH_TEST_OBJ)" "$(COMMON_OBJS)")) nil [3295 3389])
+            ("$(HASH2_NAME)" function (:arguments ("$(HASH2_OBJ)" "$(COMMON_OBJS)")) nil [3390 3460])
+            ("$(HASH2_TEST_NAME)" function (:arguments ("$(HASH2_TEST_OBJ)" "$(COMMON_OBJS)")) nil [3461 3557])
+            ("$(FILTER_NAME)" function (:arguments ("$(FILTER_OBJ)" "$(COMMON_OBJS)")) nil [3558 3630])
+            ("$(FILTER_TEST_NAME)" function (:arguments ("$(FILTER_TEST_OBJ)" "$(COMMON_OBJS)")) nil [3631 3729])
+            ("%.o" function (:arguments ("%.cpp")) nil [3730 3772])
+            ("clean" function nil nil [3773 3972]))          
+    :file "Makefile"
+    :pointmax 3972
+    :fsize 4008
+    :lastmodtime '(21927 54862 75125 55000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_bam_utils.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("bam_utils.h" include (:system-flag t) nil [1 23])
+            ("bam_sql_merge.h" include (:system-flag t) nil [24 50])
+            ("htslib/sam.h" include (:system-flag t) nil [51 74])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [75 95])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [106 115])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [116 129]))                  
+                :type "int")
+                nil [97 1703]))          
+    :file "test_bam_utils.cpp"
+    :pointmax 1336
+    :fsize 1703
+    :lastmodtime '(21806 59413 251731 474000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bamrecord.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("bamrecord.h" include (:system-flag t) nil [1 23])
+            ("BamRecord" function
+               (:constructor-flag t
+                :parent "BamRecord"
+                :arguments 
+                  ( ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [46 54]))                  
+                :type ("BamRecord" type (:type "class") nil nil))
+                nil [25 165])
+            ("BamRecord" function
+               (:constructor-flag t
+                :parent "BamRecord"
+                :arguments 
+                  ( ("read_id" variable
+                       (:constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [188 209])
+                    ("gene_id" variable
+                       (:constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [210 231]))                  
+                :type ("BamRecord" type (:type "class") nil nil))
+                nil [167 351])
+            ("set_bc" function
+               (:parent "BamRecord"
+                :arguments 
+                  ( ("bamhash" variable
+                       (:pointer 1
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [376 393])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [394 404])
+                    ("used_offset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [405 422]))                  
+                :type "void")
+                nil [353 605])
+            ("set_umi" function
+               (:parent "BamRecord"
+                :arguments 
+                  ( ("bamhash" variable
+                       (:pointer 1
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [631 648])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [649 659])
+                    ("used_offset" variable (:type "int") (reparse-symbol arg-sub-list) [660 676]))                  
+                :type "void")
+                nil [607 780])
+            ("set_bc" function
+               (:parent "BamRecord"
+                :arguments 
+                  ( ("bamhash" variable
+                       (:pointer 1
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [805 822])
+                    ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [823 833])
+                    ("qual" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [834 845])
+                    ("used_offset" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [846 863]))                  
+                :type "void")
+                nil [782 1055])
+            ("set_umi" function
+               (:parent "BamRecord"
+                :arguments 
+                  ( ("bamhash" variable
+                       (:pointer 1
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1081 1098])
+                    ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1099 1109])
+                    ("qual" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1110 1121])
+                    ("used_offset" variable (:type "int") (reparse-symbol arg-sub-list) [1122 1138]))                  
+                :type "void")
+                nil [1057 1279])
+            ("is_complete" function
+               (:parent "BamRecord"
+                :type "bool")
+                nil [1281 1343]))          
+    :file "bamrecord.cpp"
+    :pointmax 1344
+    :fsize 1343
+    :lastmodtime '(21925 38531 347064 953000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bam_filter.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("bam_filter.h" include (:system-flag t) nil [1 24])
+            ("BamHash" function
+               (:constructor-flag t
+                :parent "BamHash"
+                :arguments 
+                  ( ("bam_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [74 96])
+                    ("anno_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [97 120])
+                    ("dest_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [121 144])
+                    ("barcodes_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [162 189])
+                    ("umi_length" variable (:type "int") (reparse-symbol arg-sub-list) [190 205])
+                    ("bc_min_qual" variable (:type "int") (reparse-symbol arg-sub-list) [206 222]))                  
+                :type ("BamHash" type (:type "class") nil nil))
+                nil [57 1530])
+            ("BamHash" function
+               (:destructor-flag t
+                :parent "BamHash"
+                :type "void")
+                nil [1532 1653])
+            ("set_barcodes" function
+               (:parent "BamHash"
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1747 1765])
+                    ("vec_p" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1766 1794]))                  
+                :type "void")
+                nil [1720 2218])
+            ("update" function
+               (:parent "UmiHash"
+                :arguments 
+                  ( ("record" variable
+                       (:pointer 1
+                        :type ("BamRecord" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2241 2259]))                  
+                :type "bool")
+                nil [2220 2485])
+            ("update" function
+               (:parent "BarcodeHash"
+                :arguments 
+                  ( ("record" variable
+                       (:pointer 1
+                        :type ("BamRecord" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2512 2531]))                  
+                :type "bool")
+                nil [2487 2831])
+            ("update" function
+               (:parent "PositionHash"
+                :arguments 
+                  ( ("record" variable
+                       (:pointer 1
+                        :type ("BamRecord" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2859 2878]))                  
+                :type "bool")
+                nil [2833 3195])
+            ("update_maps" function
+               (:parent "BamHash"
+                :arguments 
+                  ( ("record" variable
+                       (:pointer 1
+                        :type ("BamRecord" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3223 3242]))                  
+                :type "bool")
+                nil [3197 3631])
+            ("print_bam_record" function
+               (:arguments 
+                  ( ("bamhash" variable
+                       (:pointer 1
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3655 3673])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3674 3684]))                  
+                :type "void")
+                nil [3633 3739])
+            ("process_read1" function
+               (:arguments 
+                  ( ("bamhash" variable
+                       (:pointer 1
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3760 3777])
+                    ("record" variable
+                       (:pointer 1
+                        :type ("BamRecord" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3778 3797])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3798 3808]))                  
+                :type "void")
+                nil [3741 4180])
+            ("hash_reads_tid" function
+               (:arguments 
+                  ( ("bamhash" variable
+                       (:pointer 1
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4201 4218])
+                    ("record" variable
+                       (:pointer 1
+                        :type ("BamRecord" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4219 4238])
+                    ("bam_itr" variable
+                       (:pointer 1
+                        :type ("hts_itr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4239 4258]))                  
+                :type "int")
+                nil [4182 4594])
+            ("hash_reads" function
+               (:parent "BamHash"
+                :type "void")
+                nil [4596 5250])
+            ("clear_map" function
+               (:parent "BamHash"
+                :type "void")
+                nil [5252 5314]))          
+    :file "bam_filter.cpp"
+    :pointmax 5315
+    :fsize 5314
+    :lastmodtime '(21859 43773 190195 150000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bam_hash2.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("bam_hash2.h" include (:system-flag t) nil [1 23])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [25 45])
+            ("update" function
+               (:parent "UmiHash"
+                :arguments 
+                  ( ("record" variable (:type ("shared_ptr" type
+                         (:template-specifier 
+                            ( ("BamRecord" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [150 179]))                  
+                :type "bool")
+                nil [129 586])
+            ("update" function
+               (:parent "BarcodeHash"
+                :arguments 
+                  ( ("record" variable (:type ("shared_ptr" type
+                         (:template-specifier 
+                            ( ("BamRecord" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [613 642]))                  
+                :type "bool")
+                nil [588 858])
+            ("update" function
+               (:parent "PositionHash"
+                :arguments 
+                  ( ("record" variable (:type ("shared_ptr" type
+                         (:template-specifier 
+                            ( ("BamRecord" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [886 915]))                  
+                :type "bool")
+                nil [860 1148])
+            ("BamHash" function
+               (:constructor-flag t
+                :parent "BamHash"
+                :arguments 
+                  ( ("fastq_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1249 1273])
+                    ("anno_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1274 1297])
+                    ("dest_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1323 1346])
+                    ("barcodes_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1347 1374])
+                    ("umi_length" variable (:type "int") (reparse-symbol arg-sub-list) [1397 1412])
+                    ("bc_min_qual" variable (:type "int") (reparse-symbol arg-sub-list) [1471 1487])
+                    ("i5" variable (:type "int") (reparse-symbol arg-sub-list) [1545 1552])
+                    ("i7" variable (:type "int") (reparse-symbol arg-sub-list) [1553 1560])
+                    ("to_txt" variable (:type "bool") (reparse-symbol arg-sub-list) [1561 1573]))                  
+                :type ("BamHash" type (:type "class") nil nil))
+                nil [1232 3801])
+            ("set_barcodes" function
+               (:parent "BamHash"
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3895 3913])
+                    ("vec_p" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3914 3942]))                  
+                :type "void")
+                nil [3868 4367])
+            ("set_barcodesA" function
+               (:parent "BamHash"
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4449 4467])
+                    ("vec_p" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("char" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4468 4495]))                  
+                :type "void")
+                nil [4421 4968])
+            ("insert_anno" function
+               (:parent "BamHash"
+                :arguments 
+                  ( ("read_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4996 5019])
+                    ("gene_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5020 5043]))                  
+                :type "void")
+                nil [4970 5141])
+            ("find_read" function
+               (:parent "BamHash"
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("bam1_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5167 5178])
+                    ("record" variable
+                       (:reference 1
+                        :type ("shared_ptr" type
+                             (:template-specifier 
+                                ( ("BamRecord" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5179 5210]))                  
+                :type "bool")
+                nil [5143 5513])
+            ("find_read" function
+               (:parent "BamHash"
+                :arguments 
+                  ( ("qname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5539 5552])
+                    ("record" variable
+                       (:reference 1
+                        :type ("shared_ptr" type
+                             (:template-specifier 
+                                ( ("BamRecord" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5553 5584]))                  
+                :type "bool")
+                nil [5515 5876])
+            ("update_maps" function
+               (:parent "BamHash"
+                :arguments 
+                  ( ("record" variable (:type ("shared_ptr" type
+                         (:template-specifier 
+                            ( ("BamRecord" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5904 5933]))                  
+                :type "bool")
+                nil [5878 6220])
+            ("hash_annotation" function
+               (:arguments 
+                  ( ("bamhash" variable
+                       (:pointer 1
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6243 6260]))                  
+                :type "void")
+                nil [6222 6873])
+            ("parse_fastq" function
+               (:arguments 
+                  ( ("bamhash" variable
+                       (:pointer 1
+                        :type ("BamHash" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6892 6909]))                  
+                :type "void")
+                nil [6875 7503])
+            ("print_results" function
+               (:parent "BamHash"
+                :type "void")
+                nil [7506 8630])
+            ("write_to_db" function
+               (:parent "BamHash"
+                :type "void")
+                nil [8633 10518])
+            ("hash_reads" function
+               (:parent "BamHash"
+                :type "void")
+                nil [10520 10649]))          
+    :file "bam_hash2.cpp"
+    :pointmax 10650
+    :fsize 10649
+    :lastmodtime '(21990 9279 521364 297000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_hash2.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("htslib/sam.h" include (:system-flag t) nil [1 24])
+            ("bam_hash2.h" include (:system-flag t) nil [25 47])
+            ("bamrecord.h" include (:system-flag t) nil [48 70])
+            ("bam_utils.h" include (:system-flag t) nil [71 93])
+            ("timing.h" include (:system-flag t) nil [94 113])
+            ("iostream" include (:system-flag t) nil [114 133])
+            ("fstream" include (:system-flag t) nil [134 152])
+            ("ctime" include (:system-flag t) nil [153 169])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [284 304])
+            ("main" function (:type "int") nil [306 1464]))          
+    :file "test_hash2.cpp"
+    :pointmax 1476
+    :fsize 1464
+    :lastmodtime '(21939 49934 17973 455000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bam_hash2_main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("htslib/sam.h" include (:system-flag t) nil [1 24])
+            ("bam_hash2.h" include (:system-flag t) nil [25 47])
+            ("bamrecord.h" include (:system-flag t) nil [48 70])
+            ("bam_utils.h" include (:system-flag t) nil [71 93])
+            ("iostream" include (:system-flag t) nil [94 113])
+            ("gperftools/profiler.h" include (:system-flag t) nil [114 146])
+            ("boost/program_options.hpp" include (:system-flag t) nil [147 183])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [185 205])
+            ("po" type
+               (:kind alias
+                :members 
+                  ( ("boost::program_options" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [206 244])
+            ("unnamed" type
+               (:members 
+                  ( ("ERROR_IN_COMMAND_LINE" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [258 297])
+                    ("SUCCESS" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [298 323])
+                    ("ERROR_UNHANDLED_EXCEPTION" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [324 367]))                  
+                :type "namespace")
+                nil [246 369])
+            ("convert_to_cstr" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [412 429]))                  
+                :type "char")
+                nil [384 455])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [466 475])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [476 488]))                  
+                :type "int")
+                nil [457 4169]))          
+    :file "bam_hash2_main.cpp"
+    :pointmax 4074
+    :fsize 4169
+    :lastmodtime '(21925 37929 11064 707000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!umi!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

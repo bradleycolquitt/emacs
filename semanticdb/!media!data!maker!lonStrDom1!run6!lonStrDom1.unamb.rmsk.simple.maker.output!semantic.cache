@@ -1,0 +1,39 @@
+;; Object lonStrDom1.unamb.rmsk.simple.maker.output/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lonStrDom1.unamb.rmsk.simple.maker.output/"
+  :tables (list 
+   (semanticdb-table "replace_all.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 34])
+            ("re" include nil nil [35 44])
+            ("pdb" include nil nil [45 55])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [65 69]))              ) nil [56 1004])
+            ("if" code nil nil [1005 1051]))          
+    :file "replace_all.py"
+    :pointmax 889
+    :fsize 889
+    :lastmodtime '(21946 52490 655403 296000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "replace_all_gtf.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 34])
+            ("re" include nil nil [35 44])
+            ("pdb" include nil nil [45 55])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [65 69]))              ) nil [56 1058])
+            ("if" code nil nil [1059 1105]))          
+    :file "replace_all_gtf.py"
+    :pointmax 1104
+    :fsize 1104
+    :lastmodtime '(21962 9071 173771 435000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!media!data!maker!lonStrDom1!run6!lonStrDom1.unamb.rmsk.simple.maker.output!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

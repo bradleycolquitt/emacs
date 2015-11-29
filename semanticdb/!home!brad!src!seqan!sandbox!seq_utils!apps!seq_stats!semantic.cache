@@ -1,0 +1,78 @@
+;; Object seq_stats/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "seq_stats/"
+  :tables (list 
+   (semanticdb-table "seq_lengths.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("fstream" include (:system-flag t) nil [1 19])
+            ("iostream" include (:system-flag t) nil [20 39])
+            ("seqan/seq_io.h" include (:system-flag t) nil [40 65])
+            ("seqan/sequence.h" include (:system-flag t) nil [66 93])
+            ("zlib.h" include (:system-flag t) nil [213 230])
+            ("seqan" using (:type ("seqan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [240 262])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [263 283])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1239 1248])
+                    ("argv" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1249 1268]))                  
+                :type "int")
+                nil [1230 3006]))          
+    :file "seq_lengths.cpp"
+    :pointmax 3007
+    :fsize 3007
+    :lastmodtime '(21579 58035 992076 795000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "seq_lengths_std.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("fstream" include (:system-flag t) nil [1 19])
+            ("iostream" include (:system-flag t) nil [20 39])
+            ("vector" include (:system-flag t) nil [40 57])
+            ("boost/iostreams/filtering_streambuf.hpp" include (:system-flag t) nil [58 108])
+            ("boost/iostreams/copy.hpp" include (:system-flag t) nil [109 144])
+            ("boost/iostreams/filter/gzip.hpp" include (:system-flag t) nil [145 187])
+            ("readgz" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [246 267])
+                    ("gzs" variable
+                       (:reference 1
+                        :type ("std::ifstream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [268 287]))                  
+                :type "void")
+                nil [234 788])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [799 808])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [809 821]))                  
+                :type "int")
+                nil [789 1688]))          
+    :file "seq_lengths_std.cpp"
+    :pointmax 1372
+    :fsize 1687
+    :lastmodtime '(21580 3629 7915 16000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!seqan!sandbox!seq_utils!apps!seq_stats!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

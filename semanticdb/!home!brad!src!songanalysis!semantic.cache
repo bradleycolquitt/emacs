@@ -1,0 +1,383 @@
+;; Object songanalysis/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "songanalysis/"
+  :tables (list 
+   (semanticdb-table "songtools.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("scipy" include nil nil [20 38])
+            ("numpy" include nil nil [39 57])
+            ("matplotlib.pyplot" include nil nil [84 115])
+            ("scipy" include nil nil [116 136])
+            ("scipy.io" include nil nil [137 165])
+            ("scipy" include nil nil [166 191])
+            ("pylab" include nil nil [192 223])
+            ("matplotlib" include nil nil [224 251])
+            ("itertools" include nil nil [252 275])
+            ("scipy" include nil nil [276 300])
+            ("array" include nil nil [301 324])
+            ("impwav" function
+               (:documentation "Imports a wave file as an array where a[1] 
+ is the sampling frequency and a[0] is the data"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [338 339]))                  )
+                nil [327 511])
+            ("'''def impcbin(a):
+ \"\"\"Imports a cbin as an array where a[1] is the sampling freq and a[0] is the data\"\"\"
+ file=open(a,'r')
+ file=file.read()
+ a=array('h')
+ a.fromstring(file)
+ return[np.asarray(a),32000]'''" code nil nil [512 719])
+            ("impcbin" function
+               (:documentation "Imports a cbin as an array where a[1] is the sampling freq and a[0] is the data"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [733 734]))                  )
+                nil [721 931])
+            ("outwave" function
+               (:documentation "Exports a numpy array (or just a regular python array) 
+ as a wave file. It expects an array of the following format: (sample np.sqrt(sum((np.array(a)-np.array(b))**2))freq, data)"
+                :arguments 
+                  ( ("filename" variable nil (reparse-symbol function_parameters) [944 952])
+                    ("array" variable nil (reparse-symbol function_parameters) [953 958]))                  )
+                nil [932 1197])
+            ("spec1d" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [1209 1210]))              ) nil [1198 1411])
+            ("plot1d" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [1767 1768]))              ) nil [1756 1864])
+            ("scat1d" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [1876 1877]))              ) nil [1865 2033])
+            ("hist" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [2043 2044])
+                ("bins" variable nil (reparse-symbol function_parameters) [2045 2049]))              ) nil [2034 2165])
+            ("histlog" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [2178 2179])
+                ("bins" variable nil (reparse-symbol function_parameters) [2180 2184]))              ) nil [2166 2309])
+            ("threshold" function
+               (:documentation "Returns a thresholded array of the same length as input
+ with everything below a specific threshold set to 0.
+ By default threshold is sigma."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [2324 2325])
+                    ("thresh" variable nil (reparse-symbol function_parameters) [2326 2332]))                  )
+                nil [2310 2587])
+            ("rthreshold" function
+               (:documentation "Returns a reverse thresholded array of the same length as input
+ with everything above a specific threshold set to 0.
+ By default threshold is sigma."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [2603 2604])
+                    ("thresh" variable nil (reparse-symbol function_parameters) [2606 2612]))                  )
+                nil [2588 2875])
+            ("mask" function
+               (:documentation "Returns a masnp.sqrt(sum((np.array(a)-np.array(b))**2))k array 
+ of the same length as input
+ with everything below a specific threshold set to 0 and
+ everything above that threshold set to 1.
+ By default threshold is sigma."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [2885 2886])
+                    ("thresh" variable nil (reparse-symbol function_parameters) [2887 2893]))                  )
+                nil [2876 3271])
+            ("weinent" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [3285 3286])
+                ("range" variable nil (reparse-symbol function_parameters) [3287 3292])
+                ("nfft" variable nil (reparse-symbol function_parameters) [3298 3302])
+                ("fs" variable nil (reparse-symbol function_parameters) [3308 3310]))              ) nil [3273 3659])
+            ("mfreqz" function
+               (:documentation "Plots the frequency and phase response of a filter."
+                :arguments 
+                  ( ("b" variable nil (reparse-symbol function_parameters) [3911 3912])
+                    ("a" variable nil (reparse-symbol function_parameters) [3913 3914]))                  )
+                nil [3900 4543])
+            ("filtercall" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [4559 4560]))              ) nil [4544 4683])
+            ("filtersongpb" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [4701 4702]))              ) nil [4684 4881])
+            ("filtersong" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [4897 4898]))              ) nil [4882 5063])
+            ("smoothrect" function
+               (:documentation "smooths and rectifies a song.  Expects a file format (data,samplerate).
+    If you don't enter a smoothing window size it will use 2ms as a default."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [5079 5080])
+                    ("window" variable nil (reparse-symbol function_parameters) [5081 5087])
+                    ("freq" variable nil (reparse-symbol function_parameters) [5093 5097]))                  )
+                nil [5064 5525])
+            ("comb" function
+               (:documentation "FIX ME! too slow!this is intended to give you a mask that gives 
+ you larger objects it expects a binary mask as input.  It is 
+ equivalent to a convolution of a mask and then thresholding it. 
+ the expected size is in samples"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [5536 5537])
+                    ("size" variable nil (reparse-symbol function_parameters) [5538 5542]))                  )
+                nil [5526 5849])
+            ("remobjmsk" function
+               (:documentation "FIX ME! too slow! removes objects that are too short from a mask"
+                :arguments 
+                  ( ("msk" variable nil (reparse-symbol function_parameters) [5864 5867])
+                    ("size" variable nil (reparse-symbol function_parameters) [5868 5872])
+                    ("freq" variable nil (reparse-symbol function_parameters) [5878 5882]))                  )
+                nil [5850 6256])
+            ("smooth" function
+               (:documentation "smooths a song.  Expects a file format (data,samplerate).
+    If you don't enter a smoothing window size it will use 2ms as a default."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [6268 6269])
+                    ("window" variable nil (reparse-symbol function_parameters) [6270 6276])
+                    ("freq" variable nil (reparse-symbol function_parameters) [6282 6286]))                  )
+                nil [6257 6663])
+            ("specplot" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [6677 6678]))              ) nil [6664 6878])
+            ("songseg" function
+               (:documentation "returns a mask of an array where everything below 2sigma is zero and anything above 2
+ sigma is a number 1 through N which is the number of the syllable.
+ This is really helpful for segmenting data. This expects the song to have been imported using
+ impwav."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [6891 6892])
+                    ("sigma" variable nil (reparse-symbol function_parameters) [6894 6899]))                  )
+                nil [6879 7303])
+            ("songsegrange" function
+               (:documentation "returns a mask of an array where everything below 2sigma is zero and anything above 2
+ sigma is a number 1 through N which is the number of the syllable.
+ This is really helpful for segmenting data. This expects the song to have been imported using
+ impwav."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [7321 7322])
+                    ("cutoff" variable nil (reparse-symbol function_parameters) [7324 7330])
+                    ("smwindow" variable nil (reparse-symbol function_parameters) [7336 7344]))                  )
+                nil [7304 7766])
+            ("sylablelen" function
+               (:documentation "returns an array with the length of all sylables in wave file a.  Expects a
+ to have been created using impwav.  At some point I should probably rewrite this to be faster."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [7782 7783]))                  )
+                nil [7767 8135])
+            ("intersyllen" function
+               (:documentation "returns an array with all intersylable lengths in wave file a.  Expects a
+ to have been created using impwav."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [8152 8153]))                  )
+                nil [8136 8734])
+            ("sylrate" function
+               (:documentation "Returns the rate of sylables in a given song in sylables/sec"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [8747 8748]))                  )
+                nil [8735 9084])
+            ("songleng" function
+               (:documentation "Returns the song length in sylables"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [9098 9099]))                  )
+                nil [9085 9176])
+            ("ffcalc" function
+               (:documentation "Returns the fundamental frequency of a string, a. Expects raw data,  the default frequency is 32,000. This uses brute force correlation which is slow for large data sets but more accurate than fft based methods. Returns the data in wavelength"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [9188 9189])
+                    ("freq" variable nil (reparse-symbol function_parameters) [9191 9195]))                  )
+                nil [9177 9670])
+            ("ffcalcfft" function
+               (:documentation "Returns the fundamental frequency of a string, a. Expects raw data,  the default frequency is 
+ 32000. This method uses ffts."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [9685 9686])
+                    ("freq" variable nil (reparse-symbol function_parameters) [9688 9692]))                  )
+                nil [9671 10185])
+            ("ffqualitymask" function
+               (:documentation "NOT DONE! Returns the fundamental frequency of a string, a. Expects raw data,  the default frequency is 
+ 32000. This method uses ffts."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [10204 10205])
+                    ("freq" variable nil (reparse-symbol function_parameters) [10207 10211]))                  )
+                nil [10186 10714])
+            ("ffcalcfftqual" function
+               (:documentation "Returns the fundamental frequency and the amplitude of the autocorrelation at the first peak, of a string, a.
+ Expects raw data,  the default frequency is 32000. This method uses ffts."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [10733 10734])
+                    ("freq" variable nil (reparse-symbol function_parameters) [10736 10740]))                  )
+                nil [10715 11375])
+            ("ffcalcfftqual2" function
+               (:documentation "Returns the fundamental frequency of a string, and the amplitude of the correlation at the best peak (of the first 4).
+ the default frequency is 32000. This method uses ffts."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [11395 11396])
+                    ("freq" variable nil (reparse-symbol function_parameters) [11398 11402]))                  )
+                nil [11376 12269])
+            ("ffcalcfft2" function
+               (:documentation "Returns the fundamental frequency of a string, corrected to get the best correlation not the first peak
+ Default freq=32000. This method uses ffts."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [12285 12286])
+                    ("freq" variable nil (reparse-symbol function_parameters) [12288 12292]))                  )
+                nil [12270 13080])
+            ("ffprofilequal" function
+               (:documentation "returns a string of local estimates of the fundamental frequency of a string.
+    It also returns the amplitude of the highest peak in the autocorrelation as a quality measure.
+    By default, freq=32000 and window=256."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [13099 13100])
+                    ("freq" variable nil (reparse-symbol function_parameters) [13102 13106])
+                    ("window" variable nil (reparse-symbol function_parameters) [13113 13119]))                  )
+                nil [13081 13494])
+            ("ffprofilequalmask" function
+               (:documentation "returns a string of local estimates of the fundamental frequency of a string.
+    It also returns the amplitude of the highest peak in the autocorrelation as a quality measure.
+    By default, freq=32000 and window=256."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [13517 13518])
+                    ("freq" variable nil (reparse-symbol function_parameters) [13520 13524])
+                    ("window" variable nil (reparse-symbol function_parameters) [13531 13537]))                  )
+                nil [13495 13996])
+            ("ffprofilequal2" function
+               (:documentation "returns a string of local estimates of the fundamental frequency of a string correcting for harmonic errors.
+    It also returns the amplitude of the highest peak in the autocorrelation as a quality measure.
+    By default, freq=32000 and window=256."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [14016 14017])
+                    ("freq" variable nil (reparse-symbol function_parameters) [14019 14023])
+                    ("window" variable nil (reparse-symbol function_parameters) [14030 14036]))                  )
+                nil [13997 14441])
+            ("ffprofile2" function
+               (:documentation "returns a string of local estimates of the fundamental frequency of a string correcting for harmonics
+    By default, freq=32000 and window=256."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [14457 14458])
+                    ("freq" variable nil (reparse-symbol function_parameters) [14460 14464])
+                    ("window" variable nil (reparse-symbol function_parameters) [14471 14477]))                  )
+                nil [14442 14772])
+            ("ffprofilefft" function
+               (:documentation "Returns a string of local estimates of the fundamental frequency of a string."
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [14790 14791])
+                    ("freq" variable nil (reparse-symbol function_parameters) [14793 14797])
+                    ("window" variable nil (reparse-symbol function_parameters) [14804 14810]))                  )
+                nil [14773 15037])
+            ("ffacorr" function
+               (:documentation "Returns the autocorrelation of a. Expects raw data"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [15145 15146]))                  )
+                nil [15133 15316])
+            ("norm" function
+               (:documentation "normalizes a string by it's average"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [15326 15327]))                  )
+                nil [15317 15424])
+            ("maxnorm" function
+               (:documentation "normalizes a string by it's max"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [15437 15438]))                  )
+                nil [15425 15519])
+            ("norment" function
+               (:documentation "returns an entropy calculation for an array normalized to between 0 and 1"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [15532 15533]))                  )
+                nil [15520 15690])
+            ("normmaxent" function
+               (:documentation "returns an entropy calculation for an array normalized to between 0 and 1"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [15706 15707]))                  )
+                nil [15691 15857])
+            ("entropy" function
+               (:documentation "retunrs an entropy calculation for an array"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [15870 15871]))                  )
+                nil [15858 15979])
+            ("shanonent" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [15994 15995]))              ) nil [15980 16143])
+            ("vshannonent" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [16160 16161]))              ) nil [16144 16328])
+            ("prb" function (:arguments 
+              ( ("y" variable nil (reparse-symbol function_parameters) [16337 16338])
+                ("x" variable nil (reparse-symbol function_parameters) [16339 16340]))              ) nil [16329 16428])
+            ("jointent" function (:arguments 
+              ( ("y" variable nil (reparse-symbol function_parameters) [16442 16443])
+                ("x" variable nil (reparse-symbol function_parameters) [16444 16445]))              ) nil [16429 16823])
+            ("window" function
+               (:documentation "produces a string which is the application of func on sliding window on string a."
+                :arguments 
+                  ( ("func" variable nil (reparse-symbol function_parameters) [16836 16840])
+                    ("a" variable nil (reparse-symbol function_parameters) [16841 16842])
+                    ("window" variable nil (reparse-symbol function_parameters) [16844 16850]))                  )
+                nil [16825 17044])
+            ("songfinder" function
+               (:documentation "identifies an imported wav file as a song.  Returns True if it is a song
+ and False if it isn't.  Earliest version based on mean amplitude"
+                :arguments 
+                  ( ("song" variable nil (reparse-symbol function_parameters) [17060 17064]))                  )
+                nil [17045 17311])
+            ("songfinder2" function (:arguments 
+              ( ("song" variable nil (reparse-symbol function_parameters) [17328 17332]))              ) nil [17312 17637])
+            ("eucliddist" function
+               (:documentation "calculates a euclidean distance between two equal length arrays"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [17653 17654])
+                    ("b" variable nil (reparse-symbol function_parameters) [17655 17656]))                  )
+                nil [17638 17781])
+            ("sqformdistmat" function
+               (:documentation "creates a squareform distance matrix for an array.  Currently only
+ uses euclidean dist"
+                :arguments 
+                  ( ("array" variable nil (reparse-symbol function_parameters) [17800 17805]))                  )
+                nil [17782 18026])
+            ("findobject" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [18042 18046]))              ) nil [18027 18200])
+            ("psd_fft" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [18213 18214])
+                ("fs" variable nil (reparse-symbol function_parameters) [18215 18217]))              ) nil [18201 18387])
+            ("psdrange_fft" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [18405 18406])
+                ("fs" variable nil (reparse-symbol function_parameters) [18407 18409])
+                ("frange" variable nil (reparse-symbol function_parameters) [18415 18421]))              ) nil [18388 18717])
+            ("psd_lomb_scargle" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [18739 18740])
+                ("fs" variable nil (reparse-symbol function_parameters) [18741 18743])
+                ("frange" variable nil (reparse-symbol function_parameters) [18749 18755]))              ) nil [18718 18929])
+            ("pltpsd" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [18942 18943])
+                ("fs" variable nil (reparse-symbol function_parameters) [18944 18946])
+                ("frange" variable nil (reparse-symbol function_parameters) [18952 18958]))              ) nil [18931 19500])
+            ("it_otsu" function (:arguments 
+              ( ("input" variable nil (reparse-symbol function_parameters) [19513 19518]))              ) nil [19501 20106])
+            ("songfinder" function
+               (:documentation "identifies an imported wav file as a song.  Returns True if it is a song
+ and False if it isn't.  Earliest version based on mean amplitude"
+                :arguments 
+                  ( ("song" variable nil (reparse-symbol function_parameters) [20123 20127]))                  )
+                nil [20108 20372])
+            ("sylrate" function
+               (:documentation "Returns the rate of sylables in a given song in sylables/sec"
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [20385 20386])
+                    ("thr" variable nil (reparse-symbol function_parameters) [20387 20390]))                  )
+                nil [20373 21304]))          
+    :file "songtools.py"
+    :pointmax 21304
+    :fsize 21303
+    :lastmodtime '(21899 14789 652717 570000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "createSongDB.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [25 35])
+            ("argparse" include nil nil [36 51])
+            ("MySQLdb" include nil nil [52 73])
+            ("create_bird_table_sql" variable nil nil [76 695])
+            ("create_motif_table_sql" variable nil nil [1363 1998])
+            ("create_syllable_table_sql" variable nil nil [2000 2757])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [2768 2772]))              ) nil [2759 3858])
+            ("if" code nil nil [3859 3905]))          
+    :file "createSongDB.py"
+    :pointmax 3905
+    :fsize 3904
+    :lastmodtime '(21907 7937 799751 614000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!src!songanalysis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

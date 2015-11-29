@@ -1,0 +1,27 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I" "${top_srcdir}/libutil++" "-I" "${top_srcdir}/libregex")) nil [1 74])
+            ("AM_CXXFLAGS" variable (:default-value ("@OP_CXXFLAGS@")) nil [75 103])
+            ("check_PROGRAMS" variable (:default-value ("regex_test")) nil [104 142])
+            ("regex_test_SOURCES" variable (:default-value ("regex_test.cpp")) nil [143 179])
+            ("regex_test_LDADD" variable (:default-value ("../libop_regex.a" "../../libutil++/libutil++.a")) nil [179 249])
+            ("java_test_SOURCES" variable (:default-value ("java_test.cpp")) nil [250 284])
+            ("java_test_LDADD" variable (:default-value ("../libop_regex.a" "../../libutil++/libutil++.a")) nil [284 353])
+            ("EXTRA_DIST" variable (:default-value ("mangled-name.in")) nil [354 383])
+            ("TESTS" variable (:default-value ("${check_PROGRAMS}")) nil [384 410]))          
+    :file "Makefile.am"
+    :pointmax 410
+    :fsize 409
+    :lastmodtime '(21523 1471 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!brad!packages!oprofile-1.0.0!libregex!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

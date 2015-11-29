@@ -1,0 +1,735 @@
+;; Object tRNAscan-SE-1.23/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tRNAscan-SE-1.23/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("COV_RELEASE" variable (:default-value ("\"2.4.4\"")) nil [53 78])
+            ("EUFIND_RELEASE" variable (:default-value ("\"1.1\"")) nil [78 101])
+            ("SE_RELEASE" variable (:default-value ("\"1.23\"")) nil [101 121])
+            ("RELEASEDATE" variable (:default-value ("\"April 2002\"")) nil [121 147])
+            ("RFLAGS" variable (:default-value ("-DRELEASE=$(COV_RELEASE)" "-DRELEASEDATE=$(RELEASEDATE)")) nil [147 214])
+            ("PERLDIR" variable (:default-value ("/usr/bin")) nil [438 457])
+            ("PERLBIN" variable (:default-value ("perl")) nil [570 585])
+            ("INSTALL" variable (:default-value ("/usr/local/")) nil [621 643])
+            ("BINDIR" variable (:default-value ("$(INSTALL)/bin")) nil [643 668])
+            ("LIBDIR" variable (:default-value ("$(INSTALL)/lib/tRNAscan-SE")) nil [668 705])
+            ("MANDIR" variable (:default-value ("$(INSTALL)/man")) nil [705 730])
+            ("TEMPDIR" variable (:default-value ("/tmp")) nil [1011 1026])
+            ("CC" variable (:default-value ("gcc")) nil [1044 1105])
+            ("CFLAGS" variable (:default-value ("-O" "-ansi")) nil [1145 1227])
+            ("MDEFS" variable nil nil [1512 1520])
+            ("INSTMAN" variable (:default-value ("cp")) nil [1678 1693])
+            ("MANSUFFIX" variable (:default-value ("1")) nil [1715 1729])
+            ("SHELL" variable (:default-value ("/bin/sh")) nil [1792 1809])
+            ("LIBS" variable (:default-value ("-lm")) nil [1809 1822])
+            (".SUFFIXES" function (:arguments (".c" ".o")) nil [1822 1840])
+            ("DOCS" variable (:default-value ("README" "MANUAL" "INSTALL" "COPYING" "GNULICENSE" "FILES" "Release.history")) nil [1841 1911])
+            ("MANSRC" variable (:default-value ("tRNAscan-SE.man")) nil [1912 1936])
+            ("PROGS" variable (:default-value ("trnascan-1.4" "covels-SE" "coves-SE" "eufindtRNA")) nil [1937 1988])
+            ("UTILS" variable (:default-value ("reformat" "revcomp" "seqstat" "shuffle")) nil [1988 2029])
+            ("SCRIPTS" variable (:default-value ("fasta2gsi.pl" "sstofa.pl" "checkversion.pl" "instman.pl")) nil [2029 2089])
+            ("TSCAN13" variable (:default-value ("trnascan.c" "TPCsignal" "Dsignal")) nil [2090 2129])
+            ("EUFIND" variable (:default-value ("eufind_const.h" "eufind_main.c" "pavesi.c")) nil [2130 2177])
+            ("SQUID-UTILS" variable (:default-value ("seqstat_main.c" "reformat_main.c" "shuffle_main.c" "revcomp_main.c" "getopt.c")) nil [2178 2270])
+            ("COVE_SUITE" variable (:default-value ("covea" "coveb" "covee" "covet" "covels" "coves" "structcheck")) nil [2271 2333])
+            ("MAIN" variable (:default-value ("align_main.c" "build_main.c" "emit_main.c" "learnprior_main.c" "train_main.c" "scan_main.c" "score_main.c" "structcheck_main.c")) nil [2335 2460])
+            ("SQUIDSRC" variable (:default-value ("alignio.c" "sqerror.c" "sqio.c" "iupac.c" "msf.c" "revcomp.c" "selex.c" "sre_ctype.c" "sre_math.c" "sre_string.c" "stack.c" "types.c" "gnuregex.c" "interleaved.c" "getopt.c")) nil [2461 2621])
+            ("SQUIDOBJ" variable (:default-value ("alignio.o" "sqerror.o" "sqio.o" "iupac.o" "msf.o" "revcomp.o" "selex.o" "sre_ctype.o" "sre_math.o" "sre_string.o" "stack.o" "types.o" "gnuregex.o" "interleaved.o" "getopt.o")) nil [2622 2782])
+            ("SQUIDHDRS" variable (:default-value ("squid.h" "sqfuncs.h" "gnuregex.h")) nil [2783 2824])
+            ("SRC" variable (:default-value ("align.c" "dbviterbi.c" "debug.c" "emit.c" "fast-dbviterbi.c" "fastmodelmaker.c" "konings.c" "lengthdist.c" "maxmodelmaker.c" "misc.c" "model.c" "modelmaking.c" "prior.c" "probify.c" "save.c" "smallviterbi.c" "scorestack.c" "structs.c" "trace.c" "viterbi.c" "$(SQUIDSRC)")) nil [2825 3069])
+            ("MPSRC" variable (:default-value ("mpviterbi.m" "mp-dbviterbi.m")) nil [3070 3105])
+            ("OBJ" variable (:default-value ("align.o" "dbviterbi.o" "debug.o" "emit.o" "fast-dbviterbi.o" "fastmodelmaker.o" "konings.o" "lengthdist.o" "maxmodelmaker.o" "misc.o" "model.o" "modelmaking.o" "prior.o" "probify.o" "save.o" "smallviterbi.o" "scorestack.o" "structs.o" "trace.o" "viterbi.o" "$(SQUIDOBJ)")) nil [3106 3350])
+            ("MPOBJ" variable (:default-value ("mpviterbi.o" "mp-dbviterbi.o")) nil [3351 3386])
+            ("all" function (:arguments ("$(PROGS)" "tRNAscanSE" "setpaths")) nil [3387 3422])
+            ("covels-SE" function (:arguments ("$(OBJ)" "scan_main.o")) nil [3423 3521])
+            ("coves-SE" function (:arguments ("$(OBJ)" "score_main.o")) nil [3522 3619])
+            ("eufindtRNA" function (:arguments ("$(SQUIDOBJ)" "pavesi.o" "eufind_main.o")) nil [3620 3745])
+            ("trnascan-1.4" function (:arguments ("trnascan.o")) nil [3746 3840])
+            ("tRNAscanSE" function nil nil [3841 4445])
+            ("setpaths" function nil nil [4446 5231])
+            ("install" function (:arguments ("$(PROGS)" "tRNAscanSE")) nil [5232 5905])
+            ("testrun" function nil nil [5906 6610])
+            ("noambig" function (:arguments ("trnascan-1.4-NA" "eufindtRNA-NA")) nil [6784 6823])
+            ("trnascan-1.4-NA" function (:arguments ("trnascan.o")) nil [6824 6936])
+            ("eufindtRNA-NA" function (:arguments ("$(SQUIDOBJ)" "eufind_main.o")) nil [6937 7118])
+            ("clean" function nil nil [7120 7236])
+            ("uninstall" function nil nil [7237 7443])
+            (".c.o" function nil nil [7444 7484])
+            ("utils" function (:arguments ("$(UTILS)")) nil [7606 7622])
+            ("install-utils" function (:arguments ("$(UTILS)")) nil [7623 7809])
+            ("reformat" function (:arguments ("$(SQUIDOBJ)" "reformat_main.o")) nil [7810 7922])
+            ("revcomp" function (:arguments ("$(SQUIDOBJ)" "revcomp_main.o")) nil [7923 8031])
+            ("seqstat" function (:arguments ("$(SQUIDOBJ)" "seqstat_main.o")) nil [8032 8140])
+            ("shuffle" function (:arguments ("$(SQUIDOBJ)" "shuffle_main.o")) nil [8141 8249])
+            ("all-cove" function (:arguments ("$(COVE_SUITE)")) nil [8407 8431])
+            ("install-cove" function (:arguments ("$(COVE_SUITE)")) nil [8432 8556])
+            ("covea" function (:arguments ("$(OBJ)" "align_main.o")) nil [8557 8648])
+            ("coveb" function (:arguments ("$(OBJ)" "build_main.o")) nil [8649 8740])
+            ("covee" function (:arguments ("$(OBJ)" "emit_main.o")) nil [8741 8830])
+            ("covet" function (:arguments ("$(OBJ)" "train_main.o")) nil [8831 8922])
+            ("covels" function (:arguments ("$(OBJ)" "scan_main.o")) nil [8923 9015])
+            ("coves" function (:arguments ("$(OBJ)" "score_main.o")) nil [9016 9107])
+            ("structcheck" function (:arguments ("$(OBJ)" "structcheck_main.o")) nil [9108 9223])
+            ("CMEM" variable (:default-value ("480K")) nil [9439 9451])
+            ("PMEM" variable (:default-value ("63K")) nil [9451 9462])
+            ("mpcovels" function (:arguments ("$(OBJ)" "$(MPOBJ)" "mpcovels_main.o")) nil [9591 9747]))          
+    :file "Makefile"
+    :pointmax 9742
+    :fsize 9747
+    :lastmodtime '(21694 54009 904078 62000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sqio.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [833 851])
+            ("stdlib.h" include (:system-flag t) nil [852 871])
+            ("string.h" include (:system-flag t) nil [872 891])
+            ("ctype.h" include (:system-flag t) nil [892 910])
+            ("unistd.h" include (:system-flag t) nil [929 948])
+            ("squid.h" include nil nil [996 1014])
+            ("ali_aseqs" variable
+               (:pointer 2
+                :typemodifiers ("static")
+                :type "char")
+                nil [1224 1249])
+            ("ali_rseqs" variable
+               (:pointer 2
+                :typemodifiers ("static")
+                :type "char")
+                nil [1250 1275])
+            ("ali_ainfo" variable
+               (:typemodifiers ("static")
+                :type ("aliinfo_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1276 1310])
+            ("ali_num" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1311 1334])
+            ("curridx" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1335 1358])
+            ("kStartLength" variable (:constant-flag t) nil [1368 1380])
+            ("aminos" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [1387 1441])
+            ("primenuc" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [1442 1478])
+            ("protonly" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [1479 1515])
+            ("allsymbols" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [1562 1628])
+            ("seqsymbols" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [1629 1667])
+            ("FreeSequence" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1891 1901])
+                    ("sqinfo" variable
+                       (:pointer 1
+                        :type ("SQINFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1902 1917]))                  
+                :type "void")
+                nil [1873 2057])
+            ("SetSeqinfoString" function
+               (:arguments 
+                  ( ("sqinfo" variable
+                       (:pointer 1
+                        :type ("SQINFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2080 2095])
+                    ("sptr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2096 2107])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [2108 2117]))                  
+                :type "int")
+                nil [2059 4258])
+            ("SeqinfoCopy" function
+               (:arguments 
+                  ( ("sq1" variable
+                       (:pointer 1
+                        :type ("SQINFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4277 4289])
+                    ("sq2" variable
+                       (:pointer 1
+                        :type ("SQINFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4290 4302]))                  
+                :type "void")
+                nil [4260 5060])
+            ("ToDNA" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5163 5173]))                  
+                :type "void")
+                nil [5152 5299])
+            ("ToRNA" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5402 5412]))                  
+                :type "void")
+                nil [5391 5538])
+            ("isSeqChar" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [5563 5569]))                  
+                :type "int")
+                nil [5541 5691])
+            ("readline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5715 5723])
+                    ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5724 5732]))                  
+                :type "void")
+                nil [5693 5871])
+            ("getline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5894 5916]))                  
+                :type "void")
+                nil [5873 5950])
+            ("addseq" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6067 6075])
+                    ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6076 6098]))                  
+                :type "void")
+                nil [6047 6515])
+            ("addstruc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6538 6546])
+                    ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6547 6569]))                  
+                :type "void")
+                nil [6517 7149])
+            ("readLoop" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addfirst" variable (:type "int") (reparse-symbol arg-sub-list) [7174 7187])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [7188 7202])
+                    ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7218 7240]))                  
+                :type "void")
+                nil [7152 7501])
+            ("endPIR" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7522 7530])
+                    ("addend" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [7531 7544]))                  
+                :type "int")
+                nil [7504 7673])
+            ("readPIR" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7695 7717]))                  
+                :type "void")
+                nil [7675 8865])
+            ("endIG" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8887 8895])
+                    ("addend" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8896 8909]))                  
+                :type "int")
+                nil [8869 9022])
+            ("readIG" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9044 9066]))                  
+                :type "void")
+                nil [9024 9476])
+            ("endStrider" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9501 9509])
+                    ("addend" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9510 9522]))                  
+                :type "int")
+                nil [9478 9578])
+            ("readStrider" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9605 9627]))                  
+                :type "void")
+                nil [9580 10040])
+            ("endGB" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10061 10069])
+                    ("addend" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10070 10082]))                  
+                :type "int")
+                nil [10043 10166])
+            ("readGenBank" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10193 10215]))                  
+                :type "void")
+                nil [10168 11707])
+            ("endNBRF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11728 11736])
+                    ("addend" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11737 11749]))                  
+                :type "int")
+                nil [11709 12036])
+            ("readNBRF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12060 12082]))                  
+                :type "void")
+                nil [12038 12362])
+            ("endGCGdata" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12387 12395])
+                    ("addend" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12396 12408]))                  
+                :type "int")
+                nil [12365 12450])
+            ("readGCGdata" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12476 12498]))                  
+                :type "void")
+                nil [12452 13891])
+            ("endPearson" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13915 13923])
+                    ("addend" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13924 13936]))                  
+                :type "int")
+                nil [13893 13976])
+            ("readPearson" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14003 14025]))                  
+                :type "void")
+                nil [13978 15347])
+            ("endEMBL" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15369 15377])
+                    ("addend" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15378 15390]))                  
+                :type "int")
+                nil [15350 15896])
+            ("readEMBL" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15920 15942]))                  
+                :type "void")
+                nil [15898 17078])
+            ("endZuker" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17101 17109])
+                    ("addend" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [17110 17122]))                  
+                :type "int")
+                nil [17081 17164])
+            ("readZuker" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17188 17210]))                  
+                :type "void")
+                nil [17166 17600])
+            ("readUWGCG" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17625 17647]))                  
+                :type "void")
+                nil [17602 18146])
+            ("readSquid" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("ReadSeqVars" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18175 18197]))                  
+                :type "void")
+                nil [18153 19787])
+            ("SeqfileOpen" function
+               (:pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20191 20206])
+                    ("format" variable (:type "int") (reparse-symbol arg-sub-list) [20207 20218])
+                    ("env" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20219 20229]))                  
+                :type ("SQFILE" type (:type "class") nil nil))
+                nil [20170 21231])
+            ("SeqfilePosition" function
+               (:arguments 
+                  ( ("sqfp" variable
+                       (:pointer 1
+                        :type ("SQFILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21410 21423])
+                    ("offset" variable (:type "long") (reparse-symbol arg-sub-list) [21424 21436]))                  
+                :type "void")
+                nil [21389 21493])
+            ("SeqfileClose" function
+               (:arguments 
+                  ( ("sqfp" variable
+                       (:pointer 1
+                        :type ("SQFILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21514 21527]))                  
+                :type "void")
+                nil [21496 21564])
+            ("ReadSeq" function
+               (:arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("SQFILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22427 22437])
+                    ("format" variable (:type "int") (reparse-symbol arg-sub-list) [22438 22449])
+                    ("ret_seq" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22450 22465])
+                    ("sqinfo" variable
+                       (:pointer 1
+                        :type ("SQINFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22466 22481]))                  
+                :type "int")
+                nil [22415 24563])
+            ("SeqfileFormat" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25181 25196])
+                    ("ret_format" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [25197 25214])
+                    ("env" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25215 25225]))                  
+                :type "int")
+                nil [25163 28804])
+            ("GCGBinaryToSequence" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29139 29149])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [29150 29158]))                  
+                :type "int")
+                nil [29115 29657])
+            ("GCGchecksum" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29676 29686])
+                    ("seqlen" variable (:type "int") (reparse-symbol arg-sub-list) [29687 29700]))                  
+                :type "int")
+                nil [29660 29895])
+            ("GCGMultchecksum" function
+               (:arguments 
+                  ( ("seqs" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30284 30296])
+                    ("nseq" variable (:type "int") (reparse-symbol arg-sub-list) [30297 30306]))                  
+                :type "int")
+                nil [30264 30572])
+            ("Seqtype" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30810 30820]))                  
+                :type "int")
+                nil [30798 31697])
+            ("WriteSeq" function
+               (:arguments 
+                  ( ("outf" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31712 31723])
+                    ("outform" variable (:type "int") (reparse-symbol arg-sub-list) [31724 31736])
+                    ("seq" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31737 31747])
+                    ("sqinfo" variable
+                       (:pointer 1
+                        :type ("SQINFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31748 31763]))                  
+                :type "int")
+                nil [31699 39055])
+            ("ReadMultipleRseqs" function
+               (:arguments 
+                  ( ("seqfile" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39727 39754])
+                    ("fformat" variable (:type "int") (reparse-symbol arg-sub-list) [39759 39786])
+                    ("ret_rseqs" variable
+                       (:pointer 3
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39791 39820])
+                    ("ret_sqinfo" variable
+                       (:pointer 2
+                        :type ("SQINFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39825 39845])
+                    ("ret_num" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [39850 39877]))                  
+                :type "int")
+                nil [39705 41811])
+            ("SeqFormatString" function
+               (:pointer 1
+                :arguments 
+                  ( ("code" variable (:type "int") (reparse-symbol arg-sub-list) [41839 41848]))                  
+                :type "char")
+                nil [41816 42544])
+            ("GSIOpen" function
+               (:pointer 1
+                :arguments 
+                  ( ("gsifile" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42788 42802]))                  
+                :type ("GSIFILE" type (:type "class") nil nil))
+                nil [42770 43419])
+            ("GSIGetOffset" function
+               (:arguments 
+                  ( ("gsi" variable
+                       (:pointer 1
+                        :type ("GSIFILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43966 43979])
+                    ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43980 43990])
+                    ("ret_seqfile" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43991 44009])
+                    ("ret_offset" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [44010 44027]))                  
+                :type "int")
+                nil [43949 45203])
+            ("GSIClose" function
+               (:arguments 
+                  ( ("gsi" variable
+                       (:pointer 1
+                        :type ("GSIFILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45307 45320]))                  
+                :type "void")
+                nil [45293 45359])
+            ("EnvFileOpen" function
+               (:pointer 1
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46055 46067])
+                    ("env" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46068 46078]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [46036 46358]))          
+    :file "sqio.c"
+    :pointmax 46359
+    :fsize 46358
+    :lastmodtime '(15543 16276 0 0)
+    :unmatched-syntax '((semantic-list 7202 . 7216) (semantic-list 7192 . 7202))
+    :lexical-table 
+        '(("kStartLength" . ((number "500" 1382 . 1385)))
+          )
+
+    )
+   (semanticdb-table "squid.h"
+    :file "squid.h"
+    :fsize 13606
+    :lastmodtime '(15543 16276 0 0)
+    )
+   )
+  :file "!home!brad!packages!tRNAscan-SE-1.23!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

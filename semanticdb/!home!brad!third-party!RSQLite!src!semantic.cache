@@ -1,0 +1,1189 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "extension-functions.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("COMPILE_SQLITE_EXTENSIONS_AS_LOADABLE_MODULE" variable (:constant-flag t) nil [4897 4941])
+            ("HAVE_ACOSH" variable (:constant-flag t) nil [4952 4962])
+            ("HAVE_ASINH" variable (:constant-flag t) nil [4973 4983])
+            ("HAVE_ATANH" variable (:constant-flag t) nil [4994 5004])
+            ("HAVE_SINH" variable (:constant-flag t) nil [5015 5024])
+            ("HAVE_COSH" variable (:constant-flag t) nil [5035 5044])
+            ("HAVE_TANH" variable (:constant-flag t) nil [5055 5064])
+            ("HAVE_LOG10" variable (:constant-flag t) nil [5075 5085])
+            ("HAVE_ISBLANK" variable (:constant-flag t) nil [5096 5108])
+            ("SQLITE_SOUNDEX" variable (:constant-flag t) nil [5119 5133])
+            ("HAVE_TRIM" variable (:constant-flag t) nil [5144 5153])
+            ("sqlite3ext.h" include nil nil [5260 5283])
+            ("ctype.h" include (:system-flag t) nil [5342 5360])
+            ("math.h" include (:system-flag t) nil [5377 5394])
+            ("string.h" include (:system-flag t) nil [5395 5414])
+            ("stdio.h" include (:system-flag t) nil [5415 5433])
+            ("errno.h" include (:system-flag t) nil [5434 5452])
+            ("stdlib.h" include (:system-flag t) nil [5476 5495])
+            ("assert.h" include (:system-flag t) nil [5496 5515])
+            ("_MAP_H_" variable (:constant-flag t) nil [5541 5548])
+            ("stdint.h" include (:system-flag t) nil [5550 5569])
+            ("cmp_func" variable
+               (:functionpointer-flag t
+                :type "int")
+                nil [5766 5809])
+            ("map_iterator" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [5818 5861])
+            ("node" type
+               (:typedef ("node" type (:type "struct") nil nil)
+                :superclasses "node"
+                :type "typedef")
+                nil [5863 5958])
+            ("node" type
+               (:members 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5886 5901])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5904 5919])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [5922 5933])
+                    ("count" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5936 5950]))                  
+                :type "struct")
+                nil [5863 5958])
+            ("map" type
+               (:typedef ("map" type (:type "struct") nil nil)
+                :superclasses "map"
+                :type "typedef")
+                nil [5960 6016])
+            ("map" type
+               (:members 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5982 5993])
+                    ("cmp" variable (:type ("cmp_func" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5996 6009]))                  
+                :type "struct")
+                nil [5960 6016])
+            ("map_make" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cmp" variable (:type ("cmp_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6082 6095]))                  
+                :type ("map" type (:type "class") nil nil))
+                nil [6069 6096])
+            ("map_insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("map" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6156 6163])
+                    ("e" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6164 6172]))                  
+                :type "void")
+                nil [6140 6173])
+            ("map_iterate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("map" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6278 6285])
+                    ("iter" variable (:type ("map_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6286 6304])
+                    ("p" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6305 6313]))                  
+                :type "void")
+                nil [6261 6314])
+            ("map_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("map" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6373 6380]))                  
+                :type "void")
+                nil [6356 6381])
+            ("int_cmp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6448 6462])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6463 6477]))                  
+                :type "int")
+                nil [6436 6478])
+            ("double_cmp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6547 6561])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6562 6576]))                  
+                :type "int")
+                nil [6532 6577])
+            ("u8" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :superclasses "uint8_t"
+                :type "typedef")
+                nil [6601 6628])
+            ("u16" type
+               (:typedef ("uint16_t" type (:type "class") nil nil)
+                :superclasses "uint16_t"
+                :type "typedef")
+                nil [6629 6657])
+            ("i64" type
+               (:typedef ("int64_t" type (:type "class") nil nil)
+                :superclasses "int64_t"
+                :type "typedef")
+                nil [6658 6686])
+            ("sqlite3StrDup" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("z" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6716 6731]))                  
+                :type "char")
+                nil [6688 6869])
+            ("xtra_utf8_bytes" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("u8" type (:type "class") nil nil))
+                nil [7189 8144])
+            ("xtra_utf8_bits" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [8423 8647])
+            ("utf_mask" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [8922 9012])
+            ("READ_UTF8" variable (:constant-flag t) nil [9083 9092])
+            ("sqlite3ReadUtf8" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("z" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9876 9899]))                  
+                :type "int")
+                nil [9849 9942])
+            ("SKIP_UTF8" variable (:constant-flag t) nil [9952 9961])
+            ("sqlite3Utf8CharLen" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("z" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10419 10433])
+                    ("nByte" variable (:type "int") (reparse-symbol arg-sub-list) [10434 10444]))                  
+                :type "int")
+                nil [10389 10661])
+            ("sqliteNextChar" variable (:constant-flag t) nil [10861 10875])
+            ("sqliteCharVal" variable (:constant-flag t) nil [10919 10932])
+            ("GEN_MATH_WRAP_DOUBLE_1" variable (:constant-flag t) nil [11652 11674])
+            ("sqrtFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [12377 12415])
+            ("acosFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [12446 12484])
+            ("asinFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [12485 12523])
+            ("atanFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [12524 12562])
+            ("acoshFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [12861 12901])
+            ("asinhFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [12998 13038])
+            ("atanhFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [13138 13178])
+            ("cot" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [13267 13276]))                  
+                :type "double")
+                nil [13249 13300])
+            ("sinFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [13302 13338])
+            ("cosFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [13339 13375])
+            ("tanFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [13376 13412])
+            ("cotFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [13413 13449])
+            ("coth" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [13470 13479]))                  
+                :type "double")
+                nil [13451 13504])
+            ("sinhFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [13754 13792])
+            ("coshFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [13883 13921])
+            ("tanhFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [14007 14045])
+            ("cothFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [14047 14085])
+            ("logFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [14303 14339])
+            ("log10Func" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [14340 14380])
+            ("expFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [14381 14417])
+            ("M_PI" variable (:constant-flag t) nil [14576 14580])
+            ("deg2rad" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [14669 14678]))                  
+                :type "double")
+                nil [14647 14704])
+            ("rad2deg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [14763 14772]))                  
+                :type "double")
+                nil [14741 14798])
+            ("rad2degFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [14800 14844])
+            ("deg2radFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [14845 14889])
+            ("piFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14973 14998])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [14999 15008])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15009 15030]))                  
+                :type "void")
+                nil [14954 15073])
+            ("squareFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15310 15335])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [15336 15345])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15346 15367]))                  
+                :type "void")
+                nil [15287 15816])
+            ("powerFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16253 16278])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [16279 16288])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16289 16310]))                  
+                :type "void")
+                nil [16231 16802])
+            ("atn2Func" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16848 16873])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [16874 16883])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16884 16905]))                  
+                :type "void")
+                nil [16827 17247])
+            ("signFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17501 17526])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [17527 17536])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17537 17558]))                  
+                :type "void")
+                nil [17480 18175])
+            ("ceilFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18254 18279])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [18280 18289])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18290 18311]))                  
+                :type "void")
+                nil [18233 18747])
+            ("floorFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18828 18853])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [18854 18863])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18864 18885]))                  
+                :type "void")
+                nil [18806 19322])
+            ("replicateFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19494 19519])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [19520 19529])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19530 19551]))                  
+                :type "void")
+                nil [19468 20615])
+            ("properFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20897 20922])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [20923 20932])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20933 20954]))                  
+                :type "void")
+                nil [20874 21709])
+            ("padlFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21921 21946])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [21947 21956])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21957 21978]))                  
+                :type "void")
+                nil [21900 23242])
+            ("padrFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23452 23477])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [23478 23487])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23488 23509]))                  
+                :type "void")
+                nil [23431 24808])
+            ("padcFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25120 25145])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [25146 25155])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25156 25177]))                  
+                :type "void")
+                nil [25099 26566])
+            ("strfilterFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26723 26748])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [26749 26758])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26759 26780]))                  
+                :type "void")
+                nil [26697 28062])
+            ("_substr" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("z1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28340 28355])
+                    ("z2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28356 28371])
+                    ("s" variable (:type "int") (reparse-symbol arg-sub-list) [28372 28378])
+                    ("p" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28379 28394]))                  
+                :type "int")
+                nil [28321 29066])
+            ("charindexFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29326 29351])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [29352 29361])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29362 29383]))                  
+                :type "void")
+                nil [29300 29964])
+            ("leftFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30141 30166])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [30167 30176])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30177 30198]))                  
+                :type "void")
+                nil [30120 30932])
+            ("rightFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31111 31136])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [31137 31146])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31147 31168]))                  
+                :type "void")
+                nil [31089 31946])
+            ("reverseFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35595 35620])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [35621 35630])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35631 35652]))                  
+                :type "void")
+                nil [35571 36288])
+            ("StdevCtx" type
+               (:typedef ("StdevCtx" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "StdevCtx"
+                :type "typedef")
+                nil [36540 36573])
+            ("StdevCtx" type
+               (:members 
+                  ( ("rM" variable (:type "double") (reparse-symbol classsubparts) [36594 36604])
+                    ("rS" variable (:type "double") (reparse-symbol classsubparts) [36607 36617])
+                    ("cnt" variable (:type ("i64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [36620 36628]))                  
+                :type "struct")
+                nil [36574 36665])
+            ("ModeCtx" type
+               (:typedef ("ModeCtx" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ModeCtx"
+                :type "typedef")
+                nil [37091 37122])
+            ("ModeCtx" type
+               (:members 
+                  ( ("riM" variable (:type ("i64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [37142 37150])
+                    ("rdM" variable (:type "double") (reparse-symbol classsubparts) [37197 37208])
+                    ("cnt" variable (:type ("i64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [37251 37259])
+                    ("pcnt" variable (:type "double") (reparse-symbol classsubparts) [37305 37317])
+                    ("mcnt" variable (:type ("i64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [37378 37387])
+                    ("mn" variable (:type ("i64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [37447 37454])
+                    ("is_double" variable (:type ("i64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [37524 37538])
+                    ("m" variable
+                       (:pointer 1
+                        :type ("map" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [37624 37631])
+                    ("done" variable (:type "int") (reparse-symbol classsubparts) [37691 37700]))                  
+                :type "struct")
+                nil [37123 37753])
+            ("varianceStep" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37862 37887])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [37888 37897])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37898 37919]))                  
+                :type "void")
+                nil [37837 38277])
+            ("modeStep" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38379 38404])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [38405 38414])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38415 38436]))                  
+                :type "void")
+                nil [38358 39307])
+            ("modeIterate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [39443 39451])
+                    ("c" variable (:type ("i64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39452 39458])
+                    ("pp" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [39459 39468]))                  
+                :type "void")
+                nil [39419 39843])
+            ("medianIterate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [40062 40070])
+                    ("c" variable (:type ("i64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40071 40077])
+                    ("pp" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [40078 40087]))                  
+                :type "void")
+                nil [40036 40555])
+            ("modeFinalize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40614 40639]))                  
+                :type "void")
+                nil [40589 40963])
+            ("_medianFinalize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41037 41062]))                  
+                :type "void")
+                nil [41009 41476])
+            ("medianFinalize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41539 41564]))                  
+                :type "void")
+                nil [41512 41713])
+            ("lower_quartileFinalize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41792 41817]))                  
+                :type "void")
+                nil [41757 41966])
+            ("upper_quartileFinalize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42045 42070]))                  
+                :type "void")
+                nil [42010 42221])
+            ("stdevFinalize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42282 42307]))                  
+                :type "void")
+                nil [42256 42507])
+            ("varianceFinalize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42574 42599]))                  
+                :type "void")
+                nil [42545 42793])
+            ("soundex" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("zIn" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42919 42933])
+                    ("zResult" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42934 42948]))                  
+                :type "void")
+                nil [42899 43774])
+            ("differenceFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("sqlite3_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43895 43920])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [43921 43930])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("sqlite3_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43931 43952]))                  
+                :type "void")
+                nil [43868 44622])
+            ("RegisterExtensionFunctions" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44818 44830]))                  
+                :type "int")
+                nil [44787 50128])
+            ("sqlite3_extension_init" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type ("sqlite3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50214 50226])
+                    ("pzErrMsg" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [50227 50243])
+                    ("pApi" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sqlite3_api_routines" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50244 50277]))                  
+                :type "int")
+                nil [50182 50358])
+            ("map_make" function
+               (:arguments 
+                  ( ("cmp" variable (:type ("cmp_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50431 50444]))                  
+                :type ("map" type (:type "class") nil nil))
+                nil [50418 50496])
+            ("xcalloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("nmemb" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50512 50525])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50526 50538])
+                    ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [50539 50547]))                  
+                :type "void")
+                nil [50498 50599])
+            ("xfree" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [50612 50620]))                  
+                :type "void")
+                nil [50601 50634])
+            ("node_insert" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 2
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50653 50662])
+                    ("cmp" variable (:type ("cmp_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50663 50676])
+                    ("e" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [50677 50685]))                  
+                :type "void")
+                nil [50636 51058])
+            ("map_insert" function
+               (:arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("map" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51076 51083])
+                    ("e" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [51084 51092]))                  
+                :type "void")
+                nil [51060 51133])
+            ("node_iterate" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51153 51161])
+                    ("iter" variable (:type ("map_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51162 51180])
+                    ("p" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [51181 51189]))                  
+                :type "void")
+                nil [51135 51333])
+            ("map_iterate" function
+               (:arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("map" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51352 51359])
+                    ("iter" variable (:type ("map_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51360 51378])
+                    ("p" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [51379 51387]))                  
+                :type "void")
+                nil [51335 51424])
+            ("node_destroy" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51444 51452]))                  
+                :type "void")
+                nil [51426 51584])
+            ("map_destroy" function
+               (:arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("map" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51603 51610]))                  
+                :type "void")
+                nil [51586 51638])
+            ("int_cmp" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [51652 51666])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [51667 51681]))                  
+                :type "int")
+                nil [51640 51869])
+            ("double_cmp" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [51886 51900])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [51901 51915]))                  
+                :type "int")
+                nil [51871 52099]))          
+    :file "extension-functions.c"
+    :pointmax 52042
+    :fsize 52099
+    :lastmodtime '(21804 11104 666339 83000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("HAVE_ACOSH" . ((number "1" 4963 . 4964)))
+          ("sqliteNextChar" (spp-arg-list ("X") 10817 . 10820) . 
+              ((WHILE "while" 10822 . 10827) (semantic-list "( (0xc0&*++(X))==0x80 )" 10827 . 10850) (semantic-list "{}" 10850 . 10852)))
+          ("HAVE_ISBLANK" . ((number "1" 5109 . 5110)))
+          ("HAVE_TANH" . ((number "1" 5065 . 5066)))
+          ("HAVE_TRIM" . ((number "1" 5154 . 5155)))
+          ("HAVE_LOG10" . ((number "1" 5086 . 5087)))
+          ("sqliteCharVal" (spp-arg-list ("X") 10874 . 10877) . ((symbol "sqlite3ReadUtf8" 10880 . 10895) (semantic-list "(X)" 10895 . 10898)))
+          ("HAVE_ATANH" . ((number "1" 5005 . 5006)))
+          ("SQLITE_SOUNDEX" . ((number "1" 5134 . 5135)))
+          ("_MAP_H_")
+          ("HAVE_SINH" . ((number "1" 5025 . 5026)))
+          ("GEN_MATH_WRAP_DOUBLE_1" (spp-arg-list ("name" "function") 11616 . 11632) . 
+              ((STATIC "static" 11635 . 11641) (VOID "void" 11642 . 11646) (symbol "name" 11647 . 11651) (semantic-list "(sqlite3_context *context, int argc, sqlite3_value **argv)" 11651 . 11709) (semantic-list "{\\
+  double rVal = 0.0, val;\\
+  assert( argc==1 );\\
+  switch( sqlite3_value_type(argv[0]) ){\\
+    case SQLITE_NULL: {\\
+      sqlite3_result_null(context);\\
+      break;\\
+    }\\
+    default: {\\
+      rVal = sqlite3_value_double(argv[0]);\\
+      errno = 0;\\
+      val = function(rVal);\\
+      if (errno == 0) {\\
+        sqlite3_result_double(context, val);\\
+      } else {\\
+        sqlite3_result_error(context, strerror(errno), errno);\\
+      }\\
+      break;\\
+    }\\
+  }\\
+}" 11709 . 12181)))
+          ("HAVE_COSH" . ((number "1" 5045 . 5046)))
+          ("M_PI" . ((number "3.14159265358979323846" 14523 . 14545)))
+          ("READ_UTF8" (spp-arg-list ("zIn" "c") 9034 . 9042) . ((semantic-list "{ \\
+  int xtra;                                            \\
+  c = *(zIn)++;                                        \\
+  xtra = xtra_utf8_bytes[c];                           \\
+  switch( xtra ){                                      \\
+    case 4: c = (int)0xFFFD; break;                    \\
+    case 3: c = (c<<6) + *(zIn)++;                     \\
+    case 2: c = (c<<6) + *(zIn)++;                     \\
+    case 1: c = (c<<6) + *(zIn)++;                     \\
+    c -= xtra_utf8_bits[xtra];                         \\
+    if( (utf_mask[xtra]&c)==0                          \\
+        || (c&0xFFFFF800)==0xD800                      \\
+        || (c&0xFFFFFFFE)==0xFFFE ){  c = 0xFFFD; }    \\
+  }                                                    \\
+}" 9043 . 9789)))
+          ("SKIP_UTF8" (spp-arg-list ("zIn") 9903 . 9908) . ((semantic-list "{                               \\
+  zIn += (xtra_utf8_bytes[*(u8 *)zIn] + 1);            \\
+}" 9909 . 10001)))
+          ("COMPILE_SQLITE_EXTENSIONS_AS_LOADABLE_MODULE" . ((number "1" 4942 . 4943)))
+          ("HAVE_ASINH" . ((number "1" 4984 . 4985)))
+          )
+
+    )
+   (semanticdb-table "sqlite3ext.h"
+    :file "sqlite3ext.h"
+    :fsize 27763
+    :lastmodtime '(21804 10613 122346 228000)
+    )
+   )
+  :file "!home!brad!third-party!RSQLite!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
