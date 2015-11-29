@@ -195,6 +195,7 @@
 ;; Org-mode
 (add-to-list 'load-path "/usr/share/emacs/a/lisp")
 (add-to-list 'load-path "~/third-party/org-mode/contrib/lisp" t)
+
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
@@ -202,6 +203,6 @@
 (setq org-log-done 'time)
 (setq org-log-done 'note)
 (setq org-startup-indented t)
-
+(setq org-todo-keywords '("TODO" "STARTED" "WAITING" "DONE"))
 ;; Package function-args
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
