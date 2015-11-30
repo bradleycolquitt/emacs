@@ -207,7 +207,8 @@
 (setq org-todo-keywords
       '((sequence "TODO(t!)" "STARTED(s!)" "WAITING(w!)" "|" "DONE(d@)" "CANCELED(c@)" "DEFFERED(f!)")))
 
-(setq org-agenda-custom-commands
+(setq
+ org-agenda-custom-commands
   '(("D" "Daily Action List"
       ((agenda "" ((org-agenda-ndays 1)
                    (org-agenda-sorting-strategy
