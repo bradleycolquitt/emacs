@@ -41,7 +41,7 @@
 (install-packages)
 
 ;; custom theme
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/themes")
 (require 'init-themes)
 
 ;; this variables must be set before load helm-gtags
@@ -193,9 +193,9 @@
  )
 
 ;; Org-mode
-(add-to-list 'load-path "/usr/share/emacs/a/lisp")
-(add-to-list 'load-path "~/third-party/org-mode/contrib/lisp" t)
-
+;;(add-to-list 'load-path "/usr/share/emacs/a/lisp")
+;;(add-to-list 'load-path "~/third-party/org-mode/contrib/lisp" t)
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
@@ -203,6 +203,21 @@
 (setq org-log-done 'time)
 (setq org-log-done 'note)
 (setq org-startup-indented t)
-(setq org-todo-keywords '("TODO" "STARTED" "WAITING" "DONE"))
+
+(setq org-todo-keywords
+      '((sequence "TODO(t!)" "STARTED(s!)" "WAITING(w!)" "|" "DONE(d@)" "CANCELED(c@)" "DEFFERED(f!)")))
+
+(add-to-list 'org-agenda-custom-commands
+  ("D" "Daily Action List"
+      (
+           (agenda "" ((org-agenda-ndays 1)
+                       (org-agenda-sorting-strategy
+                        (quote ((agenda time-up priority-down tag-up) )))
+                       (org-deadline-warning-days 0)
+		       )
+		   )
+	   )
+    )
+)
 ;; Package function-args
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
