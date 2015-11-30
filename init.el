@@ -215,10 +215,8 @@
                    (org-deadline-warning-days 0)
                   )
        ))
-    ))
-)
-(setq org-agenda-custom-commands
-  '(("W" "Weekly Review"
+    )
+    ("W" "Weekly Review"
        ((agenda "" ((org-agenda-ndays 7))) ;; review upcoming deadlines and appointments
                                              ;; type "l" in the agenda to review logged items
         (stuck "") ;; review stuck projects as designated by org-stuck-projects
@@ -226,8 +224,10 @@
         (todo "WAITING") ;; review someday/maybe items
         (todo "DEFERRED")) ;; review waiting items
          ;; ...other commands here
-    ))
+    )
+    )
 )
+
 
 
 ;; Package function-args
