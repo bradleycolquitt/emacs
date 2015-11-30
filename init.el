@@ -207,17 +207,15 @@
 (setq org-todo-keywords
       '((sequence "TODO(t!)" "STARTED(s!)" "WAITING(w!)" "|" "DONE(d@)" "CANCELED(c@)" "DEFFERED(f!)")))
 
-(add-to-list 'org-agenda-custom-commands
-  ("D" "Daily Action List"
-      (
-           (agenda "" ((org-agenda-ndays 1)
-                       (org-agenda-sorting-strategy
-                        (quote ((agenda time-up priority-down tag-up) )))
-                       (org-deadline-warning-days 0)
-		       )
-		   )
-	   )
-    )
+(setq org-agenda-custom-commands
+  '(("D" "Daily Action List"
+      ((agenda "" ((org-agenda-ndays 1)
+                   (org-agenda-sorting-strategy
+                   (quote ((agenda time-up priority-down tag-up) )))
+                   (org-deadline-warning-days 0)
+                  )
+       ))
+    ))
 )
 ;; Package function-args
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
