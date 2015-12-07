@@ -182,7 +182,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes (quote ("1297a022df4228b81bc0436230f211bad168a117282c20ddcba2db8c6a200743" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
- '(org-agenda-files (quote ("~/Dropbox/projects/agenda.org")))
+ '(org-agenda-files (quote ("~/Dropbox/projects/tasks.org")))
  '(org-startup-truncated nil)
  '(safe-local-variable-values (quote ((company-clang-arguments "-I/home/brad/src/umi/src")))))
 (custom-set-faces
@@ -205,7 +205,7 @@
 (setq org-startup-indented t)
 
 (setq org-todo-keywords
-      '((sequence "TODO(t!)" "STARTED(s!)" "WAITING(w!)" "|" "DONE(d@)" "CANCELED(c@)" "DEFFERED(f!)")))
+      '((sequence "TODO(t!)" "STARTED(s!)" "WAITING(w@)" "|" "DONE(d@)" "CANCELED(c@)" "DEFFERED(f!)")))
 
 (setq org-agenda-custom-commands
   '(("D" "Daily Action List"
@@ -228,7 +228,12 @@
     )
 )
 
-
+;; MobileOrg
+(setq org-mobile-directory "~/Dropbox/MobileOrg")
+(setq org-directory "~/Dropbox/projects")
+(setq org-mobile-inbox-for-pull "~/Dropbox/projects/tasks.org")
+(global-set-key (kbd "C-c e") 'org-mobile-push)
+(global-set-key (kbd "C-c r") 'org-mobile-pull)
 
 ;; Package function-args
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
