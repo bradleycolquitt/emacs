@@ -205,7 +205,7 @@
 (setq org-startup-indented t)
 
 (setq org-todo-keywords
-      '((sequence "TODO(t!)" "STARTED(s!)" "WAITING(w@)" "|" "DONE(d@)" "CANCELED(c@)" "DEFFERED(f!)")))
+      '((sequence "TODO(t!)" "STARTED(s!)" "WAITING(w@)" "|" "DONE(d@)" "CANCELED(c@)" "DEFERRED(f!)")))
 
 (setq org-agenda-custom-commands
   '(("D" "Daily Action List"
