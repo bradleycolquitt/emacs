@@ -228,6 +228,15 @@
     )
 )
 
+;;http://stackoverflow.com/questions/6997387/how-to-archive-all-the-done-tasks-using-a-single-command
+(defun org-archive-done-tasks ()
+  (interactive)
+  (org-map-entries
+   (lambda ()
+     (org-archive-subtree)
+     (setq org-map-continue-from (outline-previous-heading)))
+   "/DONE" 'tree))
+
 ;; MobileOrg
 (setq org-mobile-directory "~/Dropbox/MobileOrg")
 (setq org-directory "~/Dropbox/projects")
@@ -237,3 +246,6 @@
 
 ;; Package function-args
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+
+(setq custom-file "~/.emacs.d/song.el")
+(load custom-file 'noerror)
